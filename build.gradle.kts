@@ -28,6 +28,7 @@ intellij {
     plugins.set(
         listOf(
             "com.intellij.java",
+            "org.jetbrains.plugins.vue:243.21565.42"
         )
     )
 }
