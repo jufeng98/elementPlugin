@@ -1,0 +1,188 @@
+<table>
+    <thead>
+    <tr>
+        <th>参数</th>
+        <th>说明</th>
+        <th>类型</th>
+        <th>可选值</th>
+        <th>默认值</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>value</td>
+        <td>数值内容</td>
+        <td>string | number</td>
+        <td>—</td>
+        <td>—</td>
+    </tr>
+    <tr>
+        <td>decimal-separator</td>
+        <td>设置小数点</td>
+        <td>string</td>
+        <td>—</td>
+        <td>.</td>
+    </tr>
+    <tr>
+        <td>formatter</td>
+        <td>自定义数值展示</td>
+        <td>v-slot |({value}) =&gt; VNode</td>
+        <td>—</td>
+        <td>—</td>
+    </tr>
+    <tr>
+        <td>group-separator</td>
+        <td>设置千分位标识符</td>
+        <td>string</td>
+        <td>—</td>
+        <td>,</td>
+    </tr>
+    <tr>
+        <td>precision</td>
+        <td>数值精度</td>
+        <td>number</td>
+        <td>—</td>
+        <td>—</td>
+    </tr>
+    <tr>
+        <td>prefix</td>
+        <td>设置数值的前缀</td>
+        <td>string | v-slot</td>
+        <td>—</td>
+        <td>—</td>
+    </tr>
+    <tr>
+        <td>suffix</td>
+        <td>设置数值的后缀</td>
+        <td>string | v-slot</td>
+        <td>—</td>
+        <td>—</td>
+    </tr>
+    <tr>
+        <td>title</td>
+        <td>数值的标题</td>
+        <td>string | v-slot</td>
+        <td>—</td>
+        <td>—</td>
+    </tr>
+    <tr>
+        <td>value-style</td>
+        <td>设置数值的样式</td>
+        <td>object</td>
+        <td>—</td>
+        <td>—</td>
+    </tr>
+    <tr>
+        <td>rate</td>
+        <td>设置倍率</td>
+        <td>number</td>
+        <td>—</td>
+        <td>1000</td>
+    </tr>
+    </tbody>
+</table><h3 id="statistic-slots"><a href="https://element.eleme.cn/#/zh-CN/component/statistic#statistic-slots"
+                                    aria-hidden="true" class="header-anchor">¶</a> Statistic Slots</h3>
+<table>
+    <thead>
+    <tr>
+        <th>name</th>
+        <th>说明</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>prefix</td>
+        <td>数值的前缀</td>
+    </tr>
+    <tr>
+        <td>suffix</td>
+        <td>数值的后缀</td>
+    </tr>
+    <tr>
+        <td>formatter</td>
+        <td>数值内容</td>
+    </tr>
+    <tr>
+        <td>title</td>
+        <td>数值的标题</td>
+    </tr>
+    </tbody>
+</table><h3 id="statistic-countdown-attributes"><a
+        href="https://element.eleme.cn/#/zh-CN/component/statistic#statistic-countdown-attributes" aria-hidden="true"
+        class="header-anchor">¶</a> Statistic.Countdown Attributes</h3>
+<table>
+    <thead>
+    <tr>
+        <th>参数</th>
+        <th>说明</th>
+        <th>类型</th>
+        <th>可选值</th>
+        <th>默认值</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>time-indices</td>
+        <td>是否开启倒计时功能</td>
+        <td>boolean</td>
+        <td>true|false</td>
+        <td>false</td>
+    </tr>
+    <tr>
+        <td>value</td>
+        <td>必填值，输入绑定值</td>
+        <td>string</td>
+        <td>—</td>
+        <td>—</td>
+    </tr>
+    <tr>
+        <td>format</td>
+        <td>格式化倒计时展示</td>
+        <td>string</td>
+        <td>—</td>
+        <td>'HH:mm:ss'</td>
+    </tr>
+    </tbody>
+</table><h3 id="statistic-countdown-events"><a
+        href="https://element.eleme.cn/#/zh-CN/component/statistic#statistic-countdown-events" aria-hidden="true"
+        class="header-anchor">¶</a> Statistic.Countdown Events</h3>
+<table>
+    <thead>
+    <tr>
+        <th>事件名称</th>
+        <th>说明</th>
+        <th>回调参数</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>change</td>
+        <td>在<code>倒计时</code>的功能中开启</td>
+        <td>(value: Date)</td>
+    </tr>
+    <tr>
+        <td>finish</td>
+        <td>在<code>倒计时</code> 完成后启动</td>
+        <td>(value: boolean)</td>
+    </tr>
+    </tbody>
+</table><h3 id="statistic-methods"><a href="https://element.eleme.cn/#/zh-CN/component/statistic#statistic-methods"
+                                      aria-hidden="true" class="header-anchor">¶</a> Statistic Methods</h3>
+<table>
+    <thead>
+    <tr>
+        <th>方法名</th>
+        <th>说明</th>
+        <th>参数</th>
+        <th>回调参数</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>suspend</td>
+        <td>暂停倒计时</td>
+        <td>(value:boolean)</td>
+        <td>(value: Date)</td>
+    </tr>
+    </tbody>
+</table>

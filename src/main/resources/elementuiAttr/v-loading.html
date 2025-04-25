@@ -1,0 +1,77 @@
+<p>
+    在绑定了<code>v-loading</code>指令的元素上添加<code>element-loading-text</code>属性，其值会被渲染为加载文案，并显示在加载图标的下方。
+    类似地，<code>element-loading-spinner</code>和<code>element-loading-background</code>属性分别用来设定图标类名和背景色值。
+</p>
+<h3 id="fu-wu"><a href="https://element.eleme.cn/#/zh-CN/component/loading#fu-wu" aria-hidden="true"
+                  class="header-anchor">¶</a> 以服务方式调用时的参数</h3>
+<table>
+    <thead>
+    <tr>
+        <th>参数</th>
+        <th>说明</th>
+        <th>类型</th>
+        <th>可选值</th>
+        <th>默认值</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>target</td>
+        <td>Loading 需要覆盖的 DOM 节点。可传入一个 DOM 对象或字符串；若传入字符串，则会将其作为参数传入 <code>document.querySelector</code>以获取到对应
+            DOM 节点
+        </td>
+        <td>object/string</td>
+        <td>—</td>
+        <td>document.body</td>
+    </tr>
+    <tr>
+        <td>body</td>
+        <td>同 <code>v-loading</code> 指令中的 <code>body</code> 修饰符</td>
+        <td>boolean</td>
+        <td>—</td>
+        <td>false</td>
+    </tr>
+    <tr>
+        <td>fullscreen</td>
+        <td>同 <code>v-loading</code> 指令中的 <code>fullscreen</code> 修饰符</td>
+        <td>boolean</td>
+        <td>—</td>
+        <td>true</td>
+    </tr>
+    <tr>
+        <td>lock</td>
+        <td>同 <code>v-loading</code> 指令中的 <code>lock</code> 修饰符</td>
+        <td>boolean</td>
+        <td>—</td>
+        <td>false</td>
+    </tr>
+    <tr>
+        <td>text</td>
+        <td>显示在加载图标下方的加载文案</td>
+        <td>string</td>
+        <td>—</td>
+        <td>—</td>
+    </tr>
+    <tr>
+        <td>spinner</td>
+        <td>自定义加载图标类名</td>
+        <td>string</td>
+        <td>—</td>
+        <td>—</td>
+    </tr>
+    <tr>
+        <td>background</td>
+        <td>遮罩背景色</td>
+        <td>string</td>
+        <td>—</td>
+        <td>—</td>
+    </tr>
+    <tr>
+        <td>customClass</td>
+        <td>Loading 的自定义类名</td>
+        <td>string</td>
+        <td>—</td>
+        <td>—</td>
+    </tr>
+    </tbody>
+</table>

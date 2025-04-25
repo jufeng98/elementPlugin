@@ -1,0 +1,94 @@
+<table>
+    <thead>
+    <tr>
+        <th>参数</th>
+        <th>说明</th>
+        <th>类型</th>
+        <th>可选值</th>
+        <th>默认值</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>value / v-model</td>
+        <td>选中项绑定值</td>
+        <td>-</td>
+        <td>—</td>
+        <td>—</td>
+    </tr>
+    <tr>
+        <td>options</td>
+        <td>可选项数据源，键名可通过 <code>Props</code> 属性配置</td>
+        <td>array</td>
+        <td>—</td>
+        <td>—</td>
+    </tr>
+    <tr>
+        <td>props</td>
+        <td>配置选项，具体见下表</td>
+        <td>object</td>
+        <td>—</td>
+        <td>—</td>
+    </tr>
+    </tbody>
+</table><h3 id="cascaderpanel-events"><a href="https://element.eleme.cn/#/zh-CN/component/cascader#cascaderpanel-events"
+                                         aria-hidden="true" class="header-anchor">¶</a> CascaderPanel Events</h3>
+<table>
+    <thead>
+    <tr>
+        <th>事件名称</th>
+        <th>说明</th>
+        <th>回调参数</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>change</td>
+        <td>当选中节点变化时触发</td>
+        <td>选中节点的值</td>
+    </tr>
+    <tr>
+        <td>expand-change</td>
+        <td>当展开节点发生变化时触发</td>
+        <td>各父级选项值组成的数组</td>
+    </tr>
+    </tbody>
+</table><h3 id="cascaderpanel-methods"><a
+        href="https://element.eleme.cn/#/zh-CN/component/cascader#cascaderpanel-methods" aria-hidden="true"
+        class="header-anchor">¶</a> CascaderPanel Methods</h3>
+<table>
+    <thead>
+    <tr>
+        <th>方法名</th>
+        <th>说明</th>
+        <th>参数</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>getCheckedNodes</td>
+        <td>获取选中的节点数组</td>
+        <td>(leafOnly) 是否只是叶子节点，默认值为 <code>false</code></td>
+    </tr>
+    <tr>
+        <td>clearCheckedNodes</td>
+        <td>清空选中的节点</td>
+        <td>-</td>
+    </tr>
+    </tbody>
+</table><h3 id="cascaderpanel-slots"><a href="https://element.eleme.cn/#/zh-CN/component/cascader#cascaderpanel-slots"
+                                        aria-hidden="true" class="header-anchor">¶</a> CascaderPanel Slots</h3>
+<table>
+    <thead>
+    <tr>
+        <th>名称</th>
+        <th>说明</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>-</td>
+        <td>自定义备选项的节点内容，参数为 { node, data }，分别为当前节点的 Node 对象和数据</td>
+    </tr>
+    </tbody>
+</table>
