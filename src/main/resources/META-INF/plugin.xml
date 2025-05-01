@@ -7,6 +7,7 @@
 
     <description>
         <![CDATA[
+        <p>
             Provides ElementUI framework support to all JetBrains IDEs that support JavaScript<br>
             Notice: before use this plugin, please install the <a rel="nofollow" href="https://plugins.jetbrains.com/plugin/9442-vue-js" target="_blank">Vue.js</a> plugin first<br>
             <b>features</b>
@@ -18,7 +19,8 @@
                 <li>Support ElementUI tag attribute documentation</li>
                 <li>Suppress the Unknown html tag warnings of ElementUI tags</li>
             <ol>
-
+        </p>
+        <p>
             为所有支持 JavaScript 的 JetBrains IDEs 提供 ElementUI 框架支持<br>
             注意: 在使用插件之前, 请先安装 <a rel="nofollow" href="https://plugins.jetbrains.com/plugin/9442-vue-js" target="_blank">Vue.js</a> 插件<br>
             <b>特性</b>
@@ -30,6 +32,7 @@
                 <li>支持 ElementUI 标签属性文档提示</li>
                 <li>抑制 ElementUI 标签的 Unknown html tag 警告</li>
             <ol>
+        </p>
         ]]>
     </description>
 
