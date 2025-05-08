@@ -6,6 +6,7 @@ import com.intellij.codeInsight.lookup.LookupElementBuilder
 import com.intellij.openapi.vfs.VfsUtil
 import com.intellij.psi.xml.XmlTag
 import com.intellij.xml.XmlTagNameProvider
+import org.javamaster.elementui.nls.NlsBundle
 
 /**
  * @author yudong
@@ -13,7 +14,7 @@ import com.intellij.xml.XmlTagNameProvider
 class ElementUITagNameProvider : XmlTagNameProvider {
 
     private val tagNames by lazy {
-        val url = this::class.java.classLoader.getResource("elementuiDoc/el-alert.html")!!
+        val url = this::class.java.classLoader.getResource("elementui_${NlsBundle.language}/el-alert.json")!!
         val files = VfsUtil.findFileByURL(url)!!.parent.children
 
         files.map {

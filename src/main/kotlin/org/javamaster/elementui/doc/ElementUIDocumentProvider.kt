@@ -6,6 +6,7 @@ import com.intellij.psi.html.HtmlTag
 import com.intellij.psi.xml.XmlAttribute
 import com.intellij.util.SmartList
 import org.javamaster.elementui.enums.AttributeType
+import org.javamaster.elementui.nls.NlsBundle
 import org.javamaster.elementui.support.ElementUITagCacheHelper
 
 /**
@@ -22,7 +23,7 @@ class ElementUIDocumentProvider : AbstractDocumentationProvider() {
                     "loading"
                 }
 
-                ElementUITagCacheHelper.INFINITE_SCROLL -> {
+                ElementUITagCacheHelper.V_INFINITE_SCROLL -> {
                     "infiniteScroll"
                 }
 
@@ -31,25 +32,55 @@ class ElementUIDocumentProvider : AbstractDocumentationProvider() {
                 }
             }
         } else if (element is HtmlTag) {
-            element.name.replace("el-", "")
+            when (val str = element.name.replace("el-", "")) {
+                "form-item" -> "form"
+                "table-column" -> "table"
+                "option" -> "select"
+                "radio-button" -> "radio"
+                "row" -> "layout"
+                "col" -> "layout"
+                "radio-group" -> "radio"
+                "option-group" -> "select"
+                "main" -> "container"
+                "aside" -> "container"
+                "header" -> "container"
+                "footer" -> "container"
+                "autocomplete" -> "input"
+                "input-number" -> "input"
+                "cascader-panel" -> "cascader"
+                "carousel-item" -> "carousel"
+                "checkbox-button" -> "checkbox"
+                "checkbox-group" -> "checkbox"
+                "descriptions-item" -> "descriptions"
+                "dropdown-item" -> "dropdown"
+                "dropdown-menu" -> "dropdown"
+                "menu-item" -> "menu"
+                "menu-item-group" -> "menu"
+                "submenu" -> "menu"
+                "skeleton-item" -> "skeleton"
+                "tab-pane" -> "tab"
+                "breadcrumb-item" -> "breadcrumb"
+                "time-select" -> "time-picker"
+                "timeline-item" -> "timeline"
+                else -> str
+            }
         } else {
             null
         }
 
         name ?: return emptyList()
 
-        return SmartList("https://element.eleme.cn/#/zh-CN/component/$name")
+        return SmartList("https://element.eleme.cn/#/${NlsBundle.region}/component/$name")
     }
 
-    override fun generateDoc(element: PsiElement, originalElement: PsiElement?): String? {
+    override fun generateDoc(element: PsiElement?, originalElement: PsiElement?): String? {
         if (element is HtmlTag) {
             return ElementUITagCacheHelper.getTagHtml(element.name)
         }
 
-        val parent = element.parent
+        val parent = element!!.parent
         if (element is XmlAttribute && parent is HtmlTag) {
             val tagName = parent.name
-            val project = element.project
             val name = element.name
 
             val idx = name.indexOf(':')
@@ -73,66 +104,18 @@ class ElementUIDocumentProvider : AbstractDocumentationProvider() {
             }
 
             if (attrName == ElementUITagCacheHelper.V_LOADING) {
-                return ElementUITagCacheHelper.getTagHtmlMock(attrName)
+                return ElementUITagCacheHelper.getVLoadingAttrHtml()
             }
 
-            val descriptor = ElementUITagCacheHelper.getTagAttr(tagName, attrName, project) ?: return null
+            val descriptor = ElementUITagCacheHelper.getTagAttr(tagName, attrName) ?: return null
 
             return when (descriptor.attributeType) {
                 AttributeType.PARAM -> {
-                    """
-                        <!DOCTYPE html>                
-                        <style>
-                            table {
-                                width: 500px;
-                            }
-                        </style>
-                        <body>
-                            <table>
-                                <thead>
-                                <tr>
-                                    <th>参数</th>
-                                    <th>说明及类型</th>
-                                    <th>可选值</th>
-                                    <th>默认值</th>
-                                </tr>
-                                </thead>   
-                                <tbody>
-                                    <td>${descriptor.name}</td>
-                                    <td>${descriptor.typeName}</td>
-                                    <td>${descriptor.rawAttributeValueHtml}</td>
-                                    <td>${descriptor.defaultValue ?: "—"}</td>                        
-                                </tbody>
-                            </table>
-                        </body>
-                    """.trimIndent()
+                    ElementUITagCacheHelper.getTagAttrHtml(tagName, attrName, descriptor)
                 }
 
                 AttributeType.EVENT -> {
-                    """
-                        <!DOCTYPE html>                
-                        <style>
-                            table {
-                                width: 500px;
-                            }
-                        </style>
-                        <body>
-                            <table>
-                                <thead>
-                                <tr>
-                                    <th>事件名称</th>
-                                    <th>说明</th>
-                                    <th>回调参数</th>
-                                </tr>
-                                </thead>   
-                                <tbody>
-                                    <td>${descriptor.name}</td>
-                                    <td>${descriptor.typeName}</td>
-                                    <td>${descriptor.defaultValue ?: "—"}</td>                        
-                                </tbody>
-                            </table>
-                        </body>
-                    """.trimIndent()
+                    ElementUITagCacheHelper.getTagEventAttrHtml(tagName, attrName, descriptor)
                 }
             }
         }
