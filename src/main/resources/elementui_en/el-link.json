@@ -1,0 +1,57 @@
+{
+  "name": "el-link",
+  "attributes": [
+    {
+      "name": "type",
+      "desc": "type",
+      "type": "string",
+      "optionValue": "primary / success / warning / danger / info",
+      "options": [
+        "primary",
+        "success",
+        "warning",
+        "danger",
+        "info"
+      ],
+      "defaultValue": "default"
+    },
+    {
+      "name": "underline",
+      "desc": "whether the component has underline",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "disabled",
+      "desc": "whether the component is disabled",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "href",
+      "desc": "same as native hyperlink's `href`",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "-"
+    },
+    {
+      "name": "icon",
+      "desc": "class name of icon",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "-"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [],
+  "events": [],
+  "methods": []
+}

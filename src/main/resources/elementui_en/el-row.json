@@ -1,0 +1,61 @@
+{
+  "name": "el-row",
+  "attributes": [
+    {
+      "name": "gutter",
+      "desc": "grid spacing",
+      "type": "number",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "0"
+    },
+    {
+      "name": "type",
+      "desc": "layout mode, you can use flex, works in modern browsers",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "justify",
+      "desc": "horizontal alignment of flex layout",
+      "type": "string",
+      "optionValue": "start/end/center/space-around/space-between",
+      "options": [
+        "start",
+        "end",
+        "center",
+        "space-around",
+        "space-between"
+      ],
+      "defaultValue": "start"
+    },
+    {
+      "name": "align",
+      "desc": "vertical alignment of flex layout",
+      "type": "string",
+      "optionValue": "top/middle/bottom",
+      "options": [
+        "top",
+        "middle",
+        "bottom"
+      ],
+      "defaultValue": "—"
+    },
+    {
+      "name": "tag",
+      "desc": "custom element tag",
+      "type": "string",
+      "optionValue": "*",
+      "options": [],
+      "defaultValue": "div"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [],
+  "events": [],
+  "methods": []
+}

@@ -1,0 +1,41 @@
+{
+  "name": "el-menu-item",
+  "attributes": [
+    {
+      "name": "index",
+      "desc": "unique identification",
+      "type": "string/null",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "null"
+    },
+    {
+      "name": "route",
+      "desc": "Vue Router object",
+      "type": "object",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "disabled",
+      "desc": "whether disabled",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [],
+  "events": [
+    {
+      "name": "@click",
+      "desc": "callback function when menu-item is clicked",
+      "param": "el: menu-item instance"
+    }
+  ],
+  "methods": []
+}

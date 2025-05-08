@@ -1,0 +1,59 @@
+{
+  "name": "el-checkbox-button",
+  "attributes": [
+    {
+      "name": "label",
+      "desc": "value of the checkbox when used inside a `checkbox-group`",
+      "type": "string / number / boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "true-label",
+      "desc": "value of the checkbox if it's checked",
+      "type": "string / number",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "false-label",
+      "desc": "value of the checkbox if it's not checked",
+      "type": "string / number",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "disabled",
+      "desc": "whether the checkbox is disabled",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "name",
+      "desc": "native 'name' attribute",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "checked",
+      "desc": "if the checkbox is checked",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [],
+  "events": [],
+  "methods": []
+}

@@ -1,0 +1,106 @@
+{
+  "name": "el-button",
+  "attributes": [
+    {
+      "name": "size",
+      "desc": "button size",
+      "type": "string",
+      "optionValue": "medium / small / mini",
+      "options": [
+        "medium",
+        "small",
+        "mini"
+      ],
+      "defaultValue": "—"
+    },
+    {
+      "name": "type",
+      "desc": "button type",
+      "type": "string",
+      "optionValue": "primary / success / warning / danger / info / text",
+      "options": [
+        "primary",
+        "success",
+        "warning",
+        "danger",
+        "info",
+        "text"
+      ],
+      "defaultValue": "—"
+    },
+    {
+      "name": "plain",
+      "desc": "determine whether it's a plain button",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "round",
+      "desc": "determine whether it's a round button",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "circle",
+      "desc": "determine whether it's a circle button",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "loading",
+      "desc": "determine whether it's loading",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "disabled",
+      "desc": "disable the button",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "icon",
+      "desc": "icon class name",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "autofocus",
+      "desc": "same as native button's `autofocus`",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "native-type",
+      "desc": "same as native button's `type`",
+      "type": "string",
+      "optionValue": "button / submit / reset",
+      "options": [
+        "button",
+        "submit",
+        "reset"
+      ],
+      "defaultValue": "button"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [],
+  "events": [],
+  "methods": []
+}

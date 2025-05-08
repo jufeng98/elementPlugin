@@ -1,0 +1,91 @@
+{
+  "name": "el-tag",
+  "attributes": [
+    {
+      "name": "type",
+      "desc": "component type",
+      "type": "string",
+      "optionValue": "success/info/warning/danger",
+      "options": [
+        "success",
+        "info",
+        "warning",
+        "danger"
+      ],
+      "defaultValue": "—"
+    },
+    {
+      "name": "closable",
+      "desc": "whether Tag can be removed",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "disable-transitions",
+      "desc": "whether to disable animations",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "hit",
+      "desc": "whether Tag has a highlighted border",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "color",
+      "desc": "background color of the Tag",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "size",
+      "desc": "tag size",
+      "type": "string",
+      "optionValue": "medium / small / mini",
+      "options": [
+        "medium",
+        "small",
+        "mini"
+      ],
+      "defaultValue": "—"
+    },
+    {
+      "name": "effect",
+      "desc": "component theme",
+      "type": "string",
+      "optionValue": "dark / light / plain",
+      "options": [
+        "dark",
+        "light",
+        "plain"
+      ],
+      "defaultValue": "light"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [],
+  "events": [
+    {
+      "name": "@click",
+      "desc": "triggers when Tag is clicked",
+      "param": "—"
+    },
+    {
+      "name": "@close",
+      "desc": "triggers when Tag is removed",
+      "param": "—"
+    }
+  ],
+  "methods": []
+}

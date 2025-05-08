@@ -1,0 +1,103 @@
+{
+  "name": "el-form-item",
+  "attributes": [
+    {
+      "name": "prop",
+      "desc": "a key of `model`. In the use of validate and resetFields method, the attribute is required",
+      "type": "string",
+      "optionValue": "keys of model that passed to `form`",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "label",
+      "desc": "label",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "label-width",
+      "desc": "width of label, e.g. '50px'. Width `auto` is supported.",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "required",
+      "desc": "whether the field is required or not, will be determined by validation rules if omitted",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "rules",
+      "desc": "validation rules of form",
+      "type": "object",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "error",
+      "desc": "field error message, set its value and the field will validate error and show this message immediately",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "show-message",
+      "desc": "whether to show the error message",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "inline-message",
+      "desc": "inline style validate message",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "size",
+      "desc": "control the size of components in this form-item",
+      "type": "string",
+      "optionValue": "medium / small / mini",
+      "options": [
+        "medium",
+        "small",
+        "mini"
+      ],
+      "defaultValue": "-"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "error",
+      "desc": "Custom content to display validation message. The scope parameter is { error }"
+    }
+  ],
+  "events": [],
+  "methods": [
+    {
+      "name": "resetField",
+      "desc": "reset current field and remove validation result",
+      "param": "—"
+    },
+    {
+      "name": "clearValidate",
+      "desc": "remove validation status of the field",
+      "param": "-"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "name": "el-divider",
+  "attributes": [
+    {
+      "name": "direction",
+      "desc": "Set divider's direction",
+      "type": "string",
+      "optionValue": "horizontal / vertical",
+      "options": [
+        "horizontal",
+        "vertical"
+      ],
+      "defaultValue": "horizontal"
+    },
+    {
+      "name": "content-position",
+      "desc": "customize the content on the divider line",
+      "type": "String",
+      "optionValue": "left / right / center",
+      "options": [
+        "left",
+        "right",
+        "center"
+      ],
+      "defaultValue": "center"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [],
+  "events": [],
+  "methods": []
+}

@@ -1,0 +1,28 @@
+{
+  "name": "el-timeline",
+  "attributes": [
+    {
+      "name": "reverse",
+      "desc": "whether the node is ascending or descending, default is ascending",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "—",
+      "desc": "Custom content for timeline item"
+    },
+    {
+      "name": "dot",
+      "desc": "Custom defined node"
+    }
+  ],
+  "events": [],
+  "methods": []
+}

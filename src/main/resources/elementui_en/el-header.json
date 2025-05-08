@@ -1,0 +1,19 @@
+{
+  "name": "el-header",
+  "attributes": [
+    {
+      "name": "height",
+      "desc": "height of the header",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "60px"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [],
+  "events": [],
+  "methods": []
+}

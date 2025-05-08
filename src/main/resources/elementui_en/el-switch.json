@@ -1,0 +1,135 @@
+{
+  "name": "el-switch",
+  "attributes": [
+    {
+      "name": "value",
+      "desc": "binding value",
+      "type": "boolean / string / number",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "v-model",
+      "desc": "binding value",
+      "type": "boolean / string / number",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "disabled",
+      "desc": "whether Switch is disabled",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "width",
+      "desc": "width of Switch",
+      "type": "number",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "40"
+    },
+    {
+      "name": "active-icon-class",
+      "desc": "class name of the icon displayed when in `on` state, overrides `active-text`",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "inactive-icon-class",
+      "desc": "class name of the icon displayed when in `off` state, overrides `inactive-text`",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "active-text",
+      "desc": "text displayed when in `on` state",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "inactive-text",
+      "desc": "text displayed when in `off` state",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "active-value",
+      "desc": "switch value when in `on` state",
+      "type": "boolean / string / number",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "inactive-value",
+      "desc": "switch value when in `off` state",
+      "type": "boolean / string / number",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "active-color",
+      "desc": "background color when in `on` state",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "#409EFF"
+    },
+    {
+      "name": "inactive-color",
+      "desc": "background color when in `off` state",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "#C0CCDA"
+    },
+    {
+      "name": "name",
+      "desc": "input name of Switch",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "validate-event",
+      "desc": "whether to trigger form validation",
+      "type": "boolean",
+      "optionValue": "-",
+      "options": [],
+      "defaultValue": "true"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [],
+  "events": [
+    {
+      "name": "@change",
+      "desc": "triggers when value changes",
+      "param": "value after changing"
+    }
+  ],
+  "methods": [
+    {
+      "name": "focus",
+      "desc": "focus the Switch component",
+      "param": "—"
+    }
+  ]
+}

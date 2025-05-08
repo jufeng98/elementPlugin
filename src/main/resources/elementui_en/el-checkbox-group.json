@@ -1,0 +1,85 @@
+{
+  "name": "el-checkbox-group",
+  "attributes": [
+    {
+      "name": "value",
+      "desc": "binding value",
+      "type": "array",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "v-model",
+      "desc": "binding value",
+      "type": "array",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "size",
+      "desc": "size of checkbox buttons or bordered checkboxes",
+      "type": "string",
+      "optionValue": "medium / small / mini",
+      "options": [
+        "medium",
+        "small",
+        "mini"
+      ],
+      "defaultValue": "—"
+    },
+    {
+      "name": "disabled",
+      "desc": "whether the nesting checkboxes are disabled",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "min",
+      "desc": "minimum number of checkbox checked",
+      "type": "number",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "max",
+      "desc": "maximum number of checkbox checked",
+      "type": "number",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "text-color",
+      "desc": "font color when button is active",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "#ffffff"
+    },
+    {
+      "name": "fill",
+      "desc": "border and background color when button is active",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "#409EFF"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [],
+  "events": [
+    {
+      "name": "@change",
+      "desc": "triggers when the binding value changes",
+      "param": "the updated value"
+    }
+  ],
+  "methods": []
+}

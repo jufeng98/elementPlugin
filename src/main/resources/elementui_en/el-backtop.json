@@ -1,0 +1,49 @@
+{
+  "name": "el-backtop",
+  "attributes": [
+    {
+      "name": "target",
+      "desc": "the target to trigger scroll",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "visibility-height",
+      "desc": "the button will not show until the scroll height reaches this value",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "200"
+    },
+    {
+      "name": "right",
+      "desc": "right distance",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "40"
+    },
+    {
+      "name": "bottom",
+      "desc": "bottom distance",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "40"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [],
+  "events": [
+    {
+      "name": "@click",
+      "desc": "triggers when click",
+      "param": "click event"
+    }
+  ],
+  "methods": []
+}

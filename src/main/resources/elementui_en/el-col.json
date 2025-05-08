@@ -1,0 +1,91 @@
+{
+  "name": "el-col",
+  "attributes": [
+    {
+      "name": "span",
+      "desc": "number of column the grid spans",
+      "type": "number",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "24"
+    },
+    {
+      "name": "offset",
+      "desc": "number of spacing on the left side of the grid",
+      "type": "number",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "0"
+    },
+    {
+      "name": "push",
+      "desc": "number of columns that grid moves to the right",
+      "type": "number",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "0"
+    },
+    {
+      "name": "pull",
+      "desc": "number of columns that grid moves to the left",
+      "type": "number",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "0"
+    },
+    {
+      "name": "xs",
+      "desc": "`<768px` Responsive columns or column props object",
+      "type": "number/object (e.g. {span: 4, offset: 4})",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "sm",
+      "desc": "`≥768px` Responsive columns or column props object",
+      "type": "number/object (e.g. {span: 4, offset: 4})",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "md",
+      "desc": "`≥992px` Responsive columns or column props object",
+      "type": "number/object (e.g. {span: 4, offset: 4})",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "lg",
+      "desc": "`≥1200px` Responsive columns or column props object",
+      "type": "number/object (e.g. {span: 4, offset: 4})",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "xl",
+      "desc": "`≥1920px` Responsive columns or column props object",
+      "type": "number/object (e.g. {span: 4, offset: 4})",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "tag",
+      "desc": "custom element tag",
+      "type": "string",
+      "optionValue": "*",
+      "options": [],
+      "defaultValue": "div"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [],
+  "events": [],
+  "methods": []
+}

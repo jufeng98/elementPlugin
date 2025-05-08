@@ -1,0 +1,229 @@
+{
+  "name": "el-time-picker",
+  "attributes": [
+    {
+      "name": "value",
+      "desc": "binding value",
+      "type": "date(TimePicker) / string(TimeSelect)",
+      "optionValue": "-",
+      "options": [],
+      "defaultValue": "-"
+    },
+    {
+      "name": "v-model",
+      "desc": "binding value",
+      "type": "date(TimePicker) / string(TimeSelect)",
+      "optionValue": "-",
+      "options": [],
+      "defaultValue": "-"
+    },
+    {
+      "name": "readonly",
+      "desc": "whether TimePicker is read only",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "disabled",
+      "desc": "whether TimePicker is disabled",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "editable",
+      "desc": "whether the input is editable",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "clearable",
+      "desc": "whether to show clear button",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "size",
+      "desc": "size of Input",
+      "type": "string",
+      "optionValue": "medium / small / mini",
+      "options": [
+        "medium",
+        "small",
+        "mini"
+      ],
+      "defaultValue": "—"
+    },
+    {
+      "name": "placeholder",
+      "desc": "placeholder in non-range mode",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "start-placeholder",
+      "desc": "placeholder for the start time in range mode",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "end-placeholder",
+      "desc": "placeholder for the end time in range mode",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "is-range",
+      "desc": "whether to pick a time range, only works with `<el-time-picker>`",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "arrow-control",
+      "desc": "whether to pick time using arrow buttons, only works with `<el-time-picker>`",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "align",
+      "desc": "alignment",
+      "type": "string",
+      "optionValue": "left / center / right",
+      "options": [
+        "left",
+        "center",
+        "right"
+      ],
+      "defaultValue": "left"
+    },
+    {
+      "name": "popper-class",
+      "desc": "custom class name for TimePicker's dropdown",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "picker-options",
+      "desc": "additional options, check the table below",
+      "type": "object",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "{}"
+    },
+    {
+      "name": "range-separator",
+      "desc": "range separator",
+      "type": "string",
+      "optionValue": "-",
+      "options": [],
+      "defaultValue": "'-'"
+    },
+    {
+      "name": "default-value",
+      "desc": "optional, default date of the calendar",
+      "type": "Date for TimePicker, string for TimeSelect",
+      "optionValue": "anything accepted by `new Date()` for TimePicker, selectable value for TimeSelect",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "value-format",
+      "desc": "optional, only for TimePicker, format of binding value. If not specified, the binding value will be a Date object",
+      "type": "string",
+      "optionValue": "<p>see <a href=\"#/en-US/component/date-picker#date-formats\">date formats</a></p>",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "name",
+      "desc": "same as `name` in native input",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "prefix-icon",
+      "desc": "Custom prefix icon class",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "el-icon-time"
+    },
+    {
+      "name": "clear-icon",
+      "desc": "Custom clear icon class",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "el-icon-circle-close"
+    }
+  ],
+  "props": [],
+  "options": [
+    {
+      "name": "selectableRange",
+      "desc": "available time range, e.g.`'18:30:00 - 20:30:00'`or`['09:30:00 - 12:00:00', '14:30:00 - 18:30:00']`",
+      "type": "string / array",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "format",
+      "desc": "format of the picker",
+      "type": "string",
+      "optionValue": "hour `HH`, minute `mm`, second `ss`, AM/PM `A`",
+      "options": [
+        "hour `HH`, minute `mm`, second `ss`, AM",
+        "PM `A`"
+      ],
+      "defaultValue": "HH:mm:ss"
+    }
+  ],
+  "shortcuts": [],
+  "slots": [],
+  "events": [
+    {
+      "name": "@change",
+      "desc": "triggers when user confirms the value",
+      "param": "component's binding value"
+    },
+    {
+      "name": "@blur",
+      "desc": "triggers when Input blurs",
+      "param": "component instance"
+    },
+    {
+      "name": "@focus",
+      "desc": "triggers when Input focuses",
+      "param": "component instance"
+    }
+  ],
+  "methods": [
+    {
+      "name": "focus",
+      "desc": "focus the Input component",
+      "param": "-"
+    }
+  ]
+}

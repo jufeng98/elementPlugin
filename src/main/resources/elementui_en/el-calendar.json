@@ -1,0 +1,52 @@
+{
+  "name": "el-calendar",
+  "attributes": [
+    {
+      "name": "value",
+      "desc": "binding value",
+      "type": "Date/string/number",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "v-model",
+      "desc": "binding value",
+      "type": "Date/string/number",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "range",
+      "desc": "time range, including start time and end time. Start time must be start day of week, end time must be end day of week, the time span cannot exceed two months.",
+      "type": "Array",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "first-day-of-week",
+      "desc": "first day of week",
+      "type": "Number",
+      "optionValue": "1 to 7",
+      "options": [],
+      "defaultValue": "1"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "date",
+      "desc": "date the cell represents"
+    },
+    {
+      "name": "data",
+      "desc": "{ type, isSelected, day}. The `type` property indicates which month the date belongs, optional values are `prev-month`, `current-month`, `next-month`. The `isSelected` property indicates whether the date is selected. The `day` property is the formatted date in the format yyyy-MM-dd"
+    }
+  ],
+  "events": [],
+  "methods": []
+}

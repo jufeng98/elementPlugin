@@ -1,0 +1,109 @@
+{
+  "name": "el-checkbox",
+  "attributes": [
+    {
+      "name": "value",
+      "desc": "binding value",
+      "type": "string / number / boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "v-model",
+      "desc": "binding value",
+      "type": "string / number / boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "label",
+      "desc": "value of the Checkbox when used inside a `checkbox-group`",
+      "type": "string / number / boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "true-label",
+      "desc": "value of the Checkbox if it's checked",
+      "type": "string / number",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "false-label",
+      "desc": "value of the Checkbox if it's not checked",
+      "type": "string / number",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "disabled",
+      "desc": "whether the Checkbox is disabled",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "border",
+      "desc": "whether to add a border around Checkbox",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "size",
+      "desc": "size of the Checkbox, only works when `border` is true",
+      "type": "string",
+      "optionValue": "medium / small / mini",
+      "options": [
+        "medium",
+        "small",
+        "mini"
+      ],
+      "defaultValue": "—"
+    },
+    {
+      "name": "name",
+      "desc": "native 'name' attribute",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "checked",
+      "desc": "if the Checkbox is checked",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "indeterminate",
+      "desc": "same as `indeterminate` in native checkbox",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [],
+  "events": [
+    {
+      "name": "@change",
+      "desc": "triggers when the binding value changes",
+      "param": "the updated value"
+    }
+  ],
+  "methods": []
+}

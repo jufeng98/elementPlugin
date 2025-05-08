@@ -1,0 +1,59 @@
+{
+  "name": "el-submenu",
+  "attributes": [
+    {
+      "name": "index",
+      "desc": "unique identification",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "popper-class",
+      "desc": "custom class name for the popup menu",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "show-timeout",
+      "desc": "timeout before showing a sub-menu",
+      "type": "number",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "300"
+    },
+    {
+      "name": "hide-timeout",
+      "desc": "timeout before hiding a sub-menu",
+      "type": "number",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "300"
+    },
+    {
+      "name": "disabled",
+      "desc": "whether the sub-menu is disabled",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "popper-append-to-body",
+      "desc": "whether to append the popup menu to body. If the positioning of the menu is wrong, you can try setting this prop",
+      "type": "boolean",
+      "optionValue": "-",
+      "options": [],
+      "defaultValue": "level one Submenu: true / other Submenus: false"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [],
+  "events": [],
+  "methods": []
+}

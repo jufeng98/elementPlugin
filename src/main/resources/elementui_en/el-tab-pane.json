@@ -1,0 +1,51 @@
+{
+  "name": "el-tab-pane",
+  "attributes": [
+    {
+      "name": "label",
+      "desc": "title of the tab",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "disabled",
+      "desc": "whether Tab is disabled",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "name",
+      "desc": "identifier corresponding to the name of Tabs, representing the alias of the tab-pane",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "ordinal number of the tab-pane in the sequence, e.g. the first tab-pane is '1'"
+    },
+    {
+      "name": "closable",
+      "desc": "whether Tab is closable",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "lazy",
+      "desc": "whether Tab is lazily rendered",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [],
+  "events": [],
+  "methods": []
+}

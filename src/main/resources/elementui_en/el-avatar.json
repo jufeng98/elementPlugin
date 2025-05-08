@@ -1,0 +1,87 @@
+{
+  "name": "el-avatar",
+  "attributes": [
+    {
+      "name": "icon",
+      "desc": "set representation type to Icon, more info on Icon Component",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "size",
+      "desc": "set avatar size",
+      "type": "number/string",
+      "optionValue": "number / large / medium / small",
+      "options": [
+        "number",
+        "large",
+        "medium",
+        "small"
+      ],
+      "defaultValue": "large"
+    },
+    {
+      "name": "shape",
+      "desc": "set avatar shape",
+      "type": "string",
+      "optionValue": "circle / square",
+      "options": [
+        "circle",
+        "square"
+      ],
+      "defaultValue": "circle"
+    },
+    {
+      "name": "src",
+      "desc": "the address of the image for an image avatar",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "srcSet",
+      "desc": "A list of one or more strings separated by commas indicating a set of possible image sources for the user agent to use",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "alt",
+      "desc": "This attribute defines an alternative text description of the image",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "fit",
+      "desc": "set how the image fit its container for an image avatar",
+      "type": "string",
+      "optionValue": "fill / contain / cover / none / scale-down",
+      "options": [
+        "fill",
+        "contain",
+        "cover",
+        "none",
+        "scale-down"
+      ],
+      "defaultValue": "cover"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [],
+  "events": [
+    {
+      "name": "@error",
+      "desc": "handler when img load error, return false to prevent default fallback behavior",
+      "param": "(e: Event)"
+    }
+  ],
+  "methods": []
+}

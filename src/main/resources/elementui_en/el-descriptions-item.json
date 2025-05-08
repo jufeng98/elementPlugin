@@ -1,0 +1,64 @@
+{
+  "name": "el-descriptions-item",
+  "attributes": [
+    {
+      "name": "label",
+      "desc": "label text",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "span",
+      "desc": "colspan of column",
+      "type": "number",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "1"
+    },
+    {
+      "name": "labelClassName",
+      "desc": "custom label class name",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "contentClassName",
+      "desc": "custom content class name",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "labelStyle",
+      "desc": "custom label style",
+      "type": "object",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "contentStyle",
+      "desc": "custom content style",
+      "type": "object",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "label",
+      "desc": "custom label"
+    }
+  ],
+  "events": [],
+  "methods": []
+}

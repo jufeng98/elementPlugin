@@ -1,0 +1,42 @@
+{
+  "name": "el-page-header",
+  "attributes": [
+    {
+      "name": "title",
+      "desc": "main title",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "Back"
+    },
+    {
+      "name": "content",
+      "desc": "content",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "title",
+      "desc": "title content"
+    },
+    {
+      "name": "content",
+      "desc": "content"
+    }
+  ],
+  "events": [
+    {
+      "name": "@back",
+      "desc": "triggers when right side is clicked",
+      "param": "—"
+    }
+  ],
+  "methods": []
+}

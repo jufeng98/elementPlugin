@@ -1,0 +1,91 @@
+{
+  "name": "el-popconfirm",
+  "attributes": [
+    {
+      "name": "title",
+      "desc": "Title",
+      "type": "String",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "confirm-button-text",
+      "desc": "Confirm button text",
+      "type": "String",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "cancel-button-text",
+      "desc": "Cancel button text",
+      "type": "String",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "confirm-button-type",
+      "desc": "Confirm button type",
+      "type": "String",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "Primary"
+    },
+    {
+      "name": "cancel-button-type",
+      "desc": "Cancel button type",
+      "type": "String",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "Text"
+    },
+    {
+      "name": "icon",
+      "desc": "Icon",
+      "type": "String",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "el-icon-question"
+    },
+    {
+      "name": "icon-color",
+      "desc": "Icon color",
+      "type": "String",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "#f90"
+    },
+    {
+      "name": "hide-icon",
+      "desc": "is hide Icon",
+      "type": "Boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "reference",
+      "desc": "HTML element that triggers Popconfirm"
+    }
+  ],
+  "events": [
+    {
+      "name": "@confirm",
+      "desc": "triggers when click confirm button",
+      "param": "—"
+    },
+    {
+      "name": "@cancel",
+      "desc": "triggers when click cancel button",
+      "param": "—"
+    }
+  ],
+  "methods": []
+}

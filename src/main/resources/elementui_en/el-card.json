@@ -1,0 +1,39 @@
+{
+  "name": "el-card",
+  "attributes": [
+    {
+      "name": "header",
+      "desc": "title of the card. Also accepts a DOM passed by `slot#header`",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "body-style",
+      "desc": "CSS style of body",
+      "type": "object",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "{ padding: '20px' }"
+    },
+    {
+      "name": "shadow",
+      "desc": "when to show card shadows",
+      "type": "string",
+      "optionValue": "always / hover / never",
+      "options": [
+        "always",
+        "hover",
+        "never"
+      ],
+      "defaultValue": "always"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [],
+  "events": [],
+  "methods": []
+}

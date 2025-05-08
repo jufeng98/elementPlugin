@@ -1,0 +1,98 @@
+{
+  "name": "el-alert",
+  "attributes": [
+    {
+      "name": "title",
+      "desc": "title",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "type",
+      "desc": "Component type",
+      "type": "string",
+      "optionValue": "success/warning/info/error",
+      "options": [
+        "success",
+        "warning",
+        "info",
+        "error"
+      ],
+      "defaultValue": "info"
+    },
+    {
+      "name": "description",
+      "desc": "Descriptive text. Can also be passed with the default slot",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "closable",
+      "desc": "If closable or not",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "center",
+      "desc": "Whether to center the text",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "close-text",
+      "desc": "Customized close button text",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "show-icon",
+      "desc": "If a type icon is displayed",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "effect",
+      "desc": "Choose theme",
+      "type": "string",
+      "optionValue": "light/dark",
+      "options": [
+        "light",
+        "dark"
+      ],
+      "defaultValue": "light"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "—",
+      "desc": "description"
+    },
+    {
+      "name": "title",
+      "desc": "content of the Alert title"
+    }
+  ],
+  "events": [
+    {
+      "name": "@close",
+      "desc": "fires when alert is closed",
+      "param": "—"
+    }
+  ],
+  "methods": []
+}

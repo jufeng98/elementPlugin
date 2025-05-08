@@ -1,0 +1,66 @@
+{
+  "name": "el-skeleton",
+  "attributes": [
+    {
+      "name": "animated",
+      "desc": "whether showing the animation",
+      "type": "boolean",
+      "optionValue": "true / false",
+      "options": [
+        "true",
+        "false"
+      ],
+      "defaultValue": "false"
+    },
+    {
+      "name": "count",
+      "desc": "how many fake items to render to the DOM",
+      "type": "number",
+      "optionValue": "integer",
+      "options": [],
+      "defaultValue": "1"
+    },
+    {
+      "name": "loading",
+      "desc": "whether showing the skeleton",
+      "type": "boolean",
+      "optionValue": "true / false",
+      "options": [
+        "true",
+        "false"
+      ],
+      "defaultValue": "true"
+    },
+    {
+      "name": "rows",
+      "desc": "numbers of the row, only useful when no template slot were given",
+      "type": "number",
+      "optionValue": "integer",
+      "options": [],
+      "defaultValue": "4"
+    },
+    {
+      "name": "throttle",
+      "desc": "Rendering delay in millseconds",
+      "type": "number",
+      "optionValue": "integer",
+      "options": [],
+      "defaultValue": "0"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "default",
+      "desc": "\bReal rendering DOM"
+    },
+    {
+      "name": "template",
+      "desc": "Custom rendering skeleton template"
+    }
+  ],
+  "events": [],
+  "methods": []
+}

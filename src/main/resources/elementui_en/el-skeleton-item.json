@@ -1,0 +1,29 @@
+{
+  "name": "el-skeleton-item",
+  "attributes": [
+    {
+      "name": "variant",
+      "desc": "The current rendering skeleton type",
+      "type": "Enum(string)",
+      "optionValue": "p / h1 / h3 / text / caption / button / image / circle / rect",
+      "options": [
+        "p",
+        "h1",
+        "h3",
+        "text",
+        "caption",
+        "button",
+        "image",
+        "circle",
+        "rect"
+      ],
+      "defaultValue": "text"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [],
+  "events": [],
+  "methods": []
+}

@@ -1,0 +1,154 @@
+{
+  "name": "el-transfer",
+  "attributes": [
+    {
+      "name": "value",
+      "desc": "binding value",
+      "type": "array",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "v-model",
+      "desc": "binding value",
+      "type": "array",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "data",
+      "desc": "data source",
+      "type": "array[{ key, label, disabled }]",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "[ ]"
+    },
+    {
+      "name": "filterable",
+      "desc": "whether Transfer is filterable",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "filter-placeholder",
+      "desc": "placeholder for the filter input",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "Enter keyword"
+    },
+    {
+      "name": "filter-method",
+      "desc": "custom filter method",
+      "type": "function",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "target-order",
+      "desc": "order strategy for elements in the target list. If set to `original`, the elements will keep the same order as the data source. If set to `push`, the newly added elements will be pushed to the bottom. If set to `unshift`, the newly added elements will be inserted on the top",
+      "type": "string",
+      "optionValue": "original / push / unshift",
+      "options": [
+        "original",
+        "push",
+        "unshift"
+      ],
+      "defaultValue": "original"
+    },
+    {
+      "name": "titles",
+      "desc": "custom list titles",
+      "type": "array",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "['List 1', 'List 2']"
+    },
+    {
+      "name": "button-texts",
+      "desc": "custom button texts",
+      "type": "array",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "[ ]"
+    },
+    {
+      "name": "render-content",
+      "desc": "custom render function for data items",
+      "type": "function(h, option)",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "format",
+      "desc": "texts for checking status in list header",
+      "type": "object{noChecked, hasChecked}",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "{ noChecked: '${checked}/${total}', hasChecked: '${checked}/${total}' }"
+    },
+    {
+      "name": "props",
+      "desc": "prop aliases for data source",
+      "type": "object{key, label, disabled}",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "left-default-checked",
+      "desc": "key array of initially checked data items of the left list",
+      "type": "array",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "[ ]"
+    },
+    {
+      "name": "right-default-checked",
+      "desc": "key array of initially checked data items of the right list",
+      "type": "array",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "[ ]"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "—",
+      "desc": "Custom content for data items. The scope parameter is { option }"
+    }
+  ],
+  "events": [
+    {
+      "name": "@change",
+      "desc": "triggers when data items change in the right list",
+      "param": "key array of current data items in the right list, transfer direction (left or right), moved item keys"
+    },
+    {
+      "name": "@left-check-change",
+      "desc": "triggers when end user changes the checked state of any data item in the left list",
+      "param": "key array of currently checked items, key array of items whose checked state have changed"
+    },
+    {
+      "name": "@right-check-change",
+      "desc": "triggers when end user changes the checked state of any data item in the right list",
+      "param": "key array of currently checked items, key array of items whose checked state have changed"
+    }
+  ],
+  "methods": [
+    {
+      "name": "clearQuery",
+      "desc": "clear the filter keyword of a certain panel",
+      "param": "'left' / 'right'"
+    }
+  ]
+}

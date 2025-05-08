@@ -1,0 +1,57 @@
+{
+  "name": "el-result",
+  "attributes": [
+    {
+      "name": "title",
+      "desc": "title",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "sub-title",
+      "desc": "sub title",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "icon",
+      "desc": "icon type",
+      "type": "string",
+      "optionValue": "success / warning / info / error",
+      "options": [
+        "success",
+        "warning",
+        "info",
+        "error"
+      ],
+      "defaultValue": "info"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "icon",
+      "desc": "custom icon"
+    },
+    {
+      "name": "title",
+      "desc": "custom title"
+    },
+    {
+      "name": "subTitle",
+      "desc": "custom sub title"
+    },
+    {
+      "name": "extra",
+      "desc": "custom  extra area"
+    }
+  ],
+  "events": [],
+  "methods": []
+}

@@ -1,0 +1,43 @@
+{
+  "name": "v-infinite-scroll",
+  "attributes": [
+    {
+      "name": "infinite-scroll-disabled",
+      "desc": "is disabled",
+      "type": "boolean",
+      "optionValue": "-",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "infinite-scroll-delay",
+      "desc": "throttle delay (ms)",
+      "type": "number",
+      "optionValue": "-",
+      "options": [],
+      "defaultValue": "200"
+    },
+    {
+      "name": "infinite-scroll-distance",
+      "desc": "trigger distance (px)",
+      "type": "number",
+      "optionValue": "-",
+      "options": [],
+      "defaultValue": "0"
+    },
+    {
+      "name": "infinite-scroll-immediate",
+      "desc": "Whether to execute the loading method immediately, in case the content cannot be filled up in the initial state.",
+      "type": "boolean",
+      "optionValue": "-",
+      "options": [],
+      "defaultValue": "true"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [],
+  "events": [],
+  "methods": []
+}

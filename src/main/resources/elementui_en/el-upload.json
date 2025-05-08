@@ -1,0 +1,240 @@
+{
+  "name": "el-upload",
+  "attributes": [
+    {
+      "name": "action",
+      "desc": "required, request URL",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "headers",
+      "desc": "request headers",
+      "type": "object",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "multiple",
+      "desc": "whether uploading multiple files is permitted",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "data",
+      "desc": "additions options of request",
+      "type": "object",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "name",
+      "desc": "key name for uploaded file",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "file"
+    },
+    {
+      "name": "with-credentials",
+      "desc": "whether cookies are sent",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "show-file-list",
+      "desc": "whether to show the uploaded file list",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "drag",
+      "desc": "whether to activate drag and drop mode",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "accept",
+      "desc": "<p>accepted <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#attr-accept\">file types</a>, will not work when <code>thumbnail-mode</code> is <code>true</code></p>",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "on-preview",
+      "desc": "hook function when clicking the uploaded files",
+      "type": "function(file)",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "on-remove",
+      "desc": "hook function when files are removed",
+      "type": "function(file, fileList)",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "on-success",
+      "desc": "hook function when uploaded successfully",
+      "type": "function(response, file, fileList)",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "on-error",
+      "desc": "hook function when some errors occurs",
+      "type": "function(err, file, fileList)",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "on-progress",
+      "desc": "hook function when some progress occurs",
+      "type": "function(event, file, fileList)",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "on-change",
+      "desc": "hook function when select file or upload file success or upload file fail",
+      "type": "function(file, fileList)",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "before-upload",
+      "desc": "hook function before uploading with the file to be uploaded as its parameter. If `false` is returned or a `Promise` is returned and then is rejected, uploading will be aborted",
+      "type": "function(file)",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "before-remove",
+      "desc": "hook function before removing a file with the file and file list as its parameters. If `false` is returned or a `Promise` is returned and then is rejected, removing will be aborted.",
+      "type": "function(file, fileList)",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "thumbnail-mode",
+      "desc": "whether thumbnail is displayed",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "file-list",
+      "desc": "<p>default uploaded files, e.g. [{name: 'food.jpg', url: 'https://xxx.cdn.com/xxx.jpg'}]</p>",
+      "type": "array",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "[]"
+    },
+    {
+      "name": "list-type",
+      "desc": "type of fileList",
+      "type": "string",
+      "optionValue": "text/picture/picture-card",
+      "options": [
+        "text",
+        "picture",
+        "picture-card"
+      ],
+      "defaultValue": "text"
+    },
+    {
+      "name": "auto-upload",
+      "desc": "whether to auto upload file",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "http-request",
+      "desc": "override default xhr behavior, allowing you to implement your own upload-file's request",
+      "type": "function",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "disabled",
+      "desc": "whether to disable upload",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "limit",
+      "desc": "maximum number of uploads allowed",
+      "type": "number",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "on-exceed",
+      "desc": "hook function when limit is exceeded",
+      "type": "function(files, fileList)",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "-"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "trigger",
+      "desc": "content which triggers file dialog"
+    },
+    {
+      "name": "tip",
+      "desc": "content of tips"
+    }
+  ],
+  "events": [],
+  "methods": [
+    {
+      "name": "clearFiles",
+      "desc": "clear the uploaded file list (this method is not supported in the `before-upload` hook)",
+      "param": "—"
+    },
+    {
+      "name": "abort",
+      "desc": "cancel upload request",
+      "param": "（ file: fileList's item ）"
+    },
+    {
+      "name": "submit",
+      "desc": "upload the file list manually",
+      "param": "—"
+    }
+  ]
+}

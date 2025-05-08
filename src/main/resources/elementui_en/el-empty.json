@@ -1,0 +1,48 @@
+{
+  "name": "el-empty",
+  "attributes": [
+    {
+      "name": "image",
+      "desc": "image URL",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "image-size",
+      "desc": "image size (width)",
+      "type": "number",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "description",
+      "desc": "description",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "default",
+      "desc": "Custom bottom content"
+    },
+    {
+      "name": "image",
+      "desc": "Custom image"
+    },
+    {
+      "name": "description",
+      "desc": "Custom description"
+    }
+  ],
+  "events": [],
+  "methods": []
+}

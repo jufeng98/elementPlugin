@@ -1,0 +1,115 @@
+{
+  "name": "el-descriptions",
+  "attributes": [
+    {
+      "name": "border",
+      "desc": "with or without border",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "column",
+      "desc": "numbers of `Descriptions Item` in one line",
+      "type": "number",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "3"
+    },
+    {
+      "name": "direction",
+      "desc": "direction of list",
+      "type": "string",
+      "optionValue": "vertical / horizontal",
+      "options": [
+        "vertical",
+        "horizontal"
+      ],
+      "defaultValue": "horizontal"
+    },
+    {
+      "name": "size",
+      "desc": "size of list",
+      "type": "string",
+      "optionValue": "medium / small / mini",
+      "options": [
+        "medium",
+        "small",
+        "mini"
+      ],
+      "defaultValue": "—"
+    },
+    {
+      "name": "title",
+      "desc": "title text, display on the top left",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "extra",
+      "desc": "extra text, display on the top right",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "colon",
+      "desc": "change default props colon value of Descriptions Item",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "labelClassName",
+      "desc": "custom label class name",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "contentClassName",
+      "desc": "custom content class name",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "labelStyle",
+      "desc": "custom label style",
+      "type": "object",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "contentStyle",
+      "desc": "custom content style",
+      "type": "object",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "title",
+      "desc": "custom title, display on the top left"
+    },
+    {
+      "name": "extra",
+      "desc": "custom extra area, display on the top right"
+    }
+  ],
+  "events": [],
+  "methods": []
+}

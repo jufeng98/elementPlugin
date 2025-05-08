@@ -1,0 +1,35 @@
+{
+  "name": "el-collapse-item",
+  "attributes": [
+    {
+      "name": "name",
+      "desc": "unique identification of the panel",
+      "type": "string/number",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "title",
+      "desc": "title of the panel",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "disabled",
+      "desc": "disable the collapse item",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [],
+  "events": [],
+  "methods": []
+}

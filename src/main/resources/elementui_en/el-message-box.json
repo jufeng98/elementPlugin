@@ -1,0 +1,248 @@
+{
+  "name": "el-message-box",
+  "attributes": [],
+  "props": [],
+  "options": [
+    {
+      "name": "title",
+      "desc": "title of the MessageBox",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "message",
+      "desc": "content of the MessageBox",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "dangerouslyUseHTMLString",
+      "desc": "whether `message` is treated as HTML string",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "type",
+      "desc": "message type, used for icon display",
+      "type": "string",
+      "optionValue": "success / info / warning / error",
+      "options": [
+        "success",
+        "info",
+        "warning",
+        "error"
+      ],
+      "defaultValue": "—"
+    },
+    {
+      "name": "iconClass",
+      "desc": "custom icon's class, overrides `type`",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "customClass",
+      "desc": "custom class name for MessageBox",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "callback",
+      "desc": "MessageBox closing callback if you don't prefer Promise",
+      "type": "function(action), where action can be 'confirm', 'cancel' or 'close', and `instance` is the MessageBox instance. You can access to that instance's attributes and methods",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "showClose",
+      "desc": "whether to show close icon of MessageBox",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "beforeClose",
+      "desc": "callback before MessageBox closes, and it will prevent MessageBox from closing",
+      "type": "function(action, instance, done), where `action` can be 'confirm', 'cancel' or 'close'; `instance` is the MessageBox instance, and you can access to that instance's attributes and methods; `done` is for closing the instance",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "distinguishCancelAndClose",
+      "desc": "whether to distinguish canceling and closing the MessageBox",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "lockScroll",
+      "desc": "whether to lock body scroll when MessageBox prompts",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "showCancelButton",
+      "desc": "whether to show a cancel button",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false (true when called with confirm and prompt)"
+    },
+    {
+      "name": "showConfirmButton",
+      "desc": "whether to show a confirm button",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "cancelButtonText",
+      "desc": "text content of cancel button",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "Cancel"
+    },
+    {
+      "name": "confirmButtonText",
+      "desc": "text content of confirm button",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "OK"
+    },
+    {
+      "name": "cancelButtonClass",
+      "desc": "custom class name of cancel button",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "confirmButtonClass",
+      "desc": "custom class name of confirm button",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "closeOnClickModal",
+      "desc": "whether MessageBox can be closed by clicking the mask",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "true (false when called with alert)"
+    },
+    {
+      "name": "closeOnPressEscape",
+      "desc": "whether MessageBox can be closed by pressing the ESC",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "true (false when called with alert)"
+    },
+    {
+      "name": "closeOnHashChange",
+      "desc": "whether to close MessageBox when hash changes",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "showInput",
+      "desc": "whether to show an input",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false (true when called with prompt)"
+    },
+    {
+      "name": "inputPlaceholder",
+      "desc": "placeholder of input",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "inputType",
+      "desc": "type of input",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "text"
+    },
+    {
+      "name": "inputValue",
+      "desc": "initial value of input",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "inputPattern",
+      "desc": "regexp for the input",
+      "type": "regexp",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "inputValidator",
+      "desc": "validation function for the input. Should returns a boolean or string. If a string is returned, it will be assigned to inputErrorMessage",
+      "type": "function",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "inputErrorMessage",
+      "desc": "error message when validation fails",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "Illegal input"
+    },
+    {
+      "name": "center",
+      "desc": "whether to align the content in center",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "roundButton",
+      "desc": "whether to use round button",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    }
+  ],
+  "shortcuts": [],
+  "slots": [],
+  "events": [],
+  "methods": []
+}

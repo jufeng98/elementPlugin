@@ -1,0 +1,304 @@
+{
+  "name": "el-input",
+  "attributes": [
+    {
+      "name": "type",
+      "desc": "type of input",
+      "type": "string",
+      "optionValue": "<p>text, textarea and other <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#Form_%3Cinput%3E_types\">native input types</a></p>",
+      "options": [],
+      "defaultValue": "text"
+    },
+    {
+      "name": "value",
+      "desc": "binding value",
+      "type": "string / number",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "v-model",
+      "desc": "binding value",
+      "type": "string / number",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "maxlength",
+      "desc": "same as `maxlength` in native input",
+      "type": "number",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "minlength",
+      "desc": "same as `minlength` in native input",
+      "type": "number",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "show-word-limit",
+      "desc": "whether show word count，only works when `type` is 'text' or 'textarea'",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "placeholder",
+      "desc": "placeholder of Input",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "clearable",
+      "desc": "whether to show clear button",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "show-password",
+      "desc": "whether to show toggleable password input",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "disabled",
+      "desc": "whether Input is disabled",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "size",
+      "desc": "size of Input, works when `type` is not 'textarea'",
+      "type": "string",
+      "optionValue": "medium / small / mini",
+      "options": [
+        "medium",
+        "small",
+        "mini"
+      ],
+      "defaultValue": "—"
+    },
+    {
+      "name": "prefix-icon",
+      "desc": "prefix icon class",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "suffix-icon",
+      "desc": "suffix icon class",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "rows",
+      "desc": "number of rows of textarea, only works when `type` is 'textarea'",
+      "type": "number",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "2"
+    },
+    {
+      "name": "autosize",
+      "desc": "whether textarea has an adaptive height, only works when `type` is 'textarea'. Can accept an object, e.g. { minRows: 2, maxRows: 6 }",
+      "type": "boolean / object",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "autocomplete",
+      "desc": "same as `autocomplete` in native input",
+      "type": "string",
+      "optionValue": "on/off",
+      "options": [
+        "on",
+        "off"
+      ],
+      "defaultValue": "off"
+    },
+    {
+      "name": "auto-complete",
+      "desc": "@DEPRECATED in next major version",
+      "type": "string",
+      "optionValue": "on/off",
+      "options": [
+        "on",
+        "off"
+      ],
+      "defaultValue": "off"
+    },
+    {
+      "name": "name",
+      "desc": "same as `name` in native input",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "readonly",
+      "desc": "same as `readonly` in native input",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "max",
+      "desc": "same as `max` in native input",
+      "type": "—",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "min",
+      "desc": "same as `min` in native input",
+      "type": "—",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "step",
+      "desc": "same as `step` in native input",
+      "type": "—",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "resize",
+      "desc": "control the resizability",
+      "type": "string",
+      "optionValue": "none, both, horizontal, vertical",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "autofocus",
+      "desc": "same as `autofocus` in native input",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "form",
+      "desc": "same as `form` in native input",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "label",
+      "desc": "label text",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "tabindex",
+      "desc": "input tabindex",
+      "type": "string",
+      "optionValue": "-",
+      "options": [],
+      "defaultValue": "-"
+    },
+    {
+      "name": "validate-event",
+      "desc": "whether to trigger form validation",
+      "type": "boolean",
+      "optionValue": "-",
+      "options": [],
+      "defaultValue": "true"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "prefix",
+      "desc": "content as Input prefix, only works when `type` is 'text'"
+    },
+    {
+      "name": "suffix",
+      "desc": "content as Input suffix, only works when `type` is 'text'"
+    },
+    {
+      "name": "prepend",
+      "desc": "content to prepend before Input, only works when `type` is 'text'"
+    },
+    {
+      "name": "append",
+      "desc": "content to append after Input, only works when `type` is 'text'"
+    }
+  ],
+  "events": [
+    {
+      "name": "@blur",
+      "desc": "triggers when Input blurs",
+      "param": "(event: Event)"
+    },
+    {
+      "name": "@focus",
+      "desc": "triggers when Input focuses",
+      "param": "(event: Event)"
+    },
+    {
+      "name": "@change",
+      "desc": "triggers only when the input box loses focus or the user presses Enter",
+      "param": "(value: string \\| number)"
+    },
+    {
+      "name": "@input",
+      "desc": "triggers when the Input value change",
+      "param": "(value: string \\| number)"
+    },
+    {
+      "name": "@clear",
+      "desc": "triggers when the Input is cleared by clicking the clear button",
+      "param": "—"
+    }
+  ],
+  "methods": [
+    {
+      "name": "focus",
+      "desc": "focus the input element",
+      "param": "—"
+    },
+    {
+      "name": "blur",
+      "desc": "blur the input element",
+      "param": "—"
+    },
+    {
+      "name": "select",
+      "desc": "select the text in input element",
+      "param": "—"
+    }
+  ]
+}

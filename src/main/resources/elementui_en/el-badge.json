@@ -1,0 +1,57 @@
+{
+  "name": "el-badge",
+  "attributes": [
+    {
+      "name": "value",
+      "desc": "display value",
+      "type": "string, number",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "max",
+      "desc": "maximum value, shows '{max}+' when exceeded. Only works if `value` is a `Number`",
+      "type": "number",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "is-dot",
+      "desc": "if a little dot is displayed",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "hidden",
+      "desc": "hidden badge",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "type",
+      "desc": "button type",
+      "type": "string",
+      "optionValue": "primary / success / warning / danger / info",
+      "options": [
+        "primary",
+        "success",
+        "warning",
+        "danger",
+        "info"
+      ],
+      "defaultValue": "—"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [],
+  "events": [],
+  "methods": []
+}

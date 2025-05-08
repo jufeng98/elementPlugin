@@ -1,0 +1,149 @@
+{
+  "name": "el-pagination",
+  "attributes": [
+    {
+      "name": "small",
+      "desc": "whether to use small pagination",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "background",
+      "desc": "whether the buttons have a background color",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "page-size",
+      "desc": "item count of each page, supports the .sync modifier",
+      "type": "number",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "10"
+    },
+    {
+      "name": "total",
+      "desc": "total item count",
+      "type": "number",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "page-count",
+      "desc": "total page count. Set either `total` or `page-count` and pages will be displayed; if you need `page-sizes`, `total` is required",
+      "type": "number",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "pager-count",
+      "desc": "number of pagers. Pagination collapses when the total page count exceeds this value",
+      "type": "number",
+      "optionValue": "odd number between 5 and 21",
+      "options": [],
+      "defaultValue": "7"
+    },
+    {
+      "name": "current-page",
+      "desc": "current page number, supports the .sync modifier",
+      "type": "number",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "1"
+    },
+    {
+      "name": "layout",
+      "desc": "layout of Pagination, elements separated with a comma",
+      "type": "string",
+      "optionValue": "`sizes`, `prev`, `pager`, `next`, `jumper`, `->`, `total`, `slot`",
+      "options": [],
+      "defaultValue": "'prev, pager, next, jumper, ->, total'"
+    },
+    {
+      "name": "page-sizes",
+      "desc": "options of item count per page",
+      "type": "number[]",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "[10, 20, 30, 40, 50, 100]"
+    },
+    {
+      "name": "popper-class",
+      "desc": "custom class name for the page size Select's dropdown",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "prev-text",
+      "desc": "text for the prev button",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "next-text",
+      "desc": "text for the next button",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "disabled",
+      "desc": "whether Pagination is disabled",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "hide-on-single-page",
+      "desc": "whether to hide when there's only one page",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "-"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "—",
+      "desc": "custom content. To use this, you need to declare `slot` in `layout`"
+    }
+  ],
+  "events": [
+    {
+      "name": "@size-change",
+      "desc": "triggers when `page-size` changes",
+      "param": "the new page size"
+    },
+    {
+      "name": "@current-change",
+      "desc": "triggers when `current-page` changes",
+      "param": "the new current page"
+    },
+    {
+      "name": "@prev-click",
+      "desc": "triggers when the prev button is clicked and current page changes",
+      "param": "the new current page"
+    },
+    {
+      "name": "@next-click",
+      "desc": "triggers when the next button is clicked and current page changes",
+      "param": "the new current page"
+    }
+  ],
+  "methods": []
+}

@@ -1,0 +1,69 @@
+{
+  "name": "el-statistic",
+  "attributes": [
+    {
+      "name": "time-indices",
+      "desc": "Whether to enable the countdown function",
+      "type": "boolean",
+      "optionValue": "true\\|false",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "value",
+      "desc": "Required value, enter the bound value",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "format",
+      "desc": "Formatting the countdown display",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "'HH:mm:ss'"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "prefix",
+      "desc": "Numeric prefix"
+    },
+    {
+      "name": "suffix",
+      "desc": "Suffixes for numeric values"
+    },
+    {
+      "name": "formatter",
+      "desc": "Numerical content"
+    },
+    {
+      "name": "title",
+      "desc": "Numeric titles"
+    }
+  ],
+  "events": [
+    {
+      "name": "@change",
+      "desc": "Enable in the 'countdown' function",
+      "param": "(value: Date)"
+    },
+    {
+      "name": "@finish",
+      "desc": "Launched after the 'countdown' is complete",
+      "param": "(value: boolean)"
+    }
+  ],
+  "methods": [
+    {
+      "name": "suspend",
+      "desc": "Pause the countdown",
+      "param": "(value:boolean)"
+    }
+  ]
+}

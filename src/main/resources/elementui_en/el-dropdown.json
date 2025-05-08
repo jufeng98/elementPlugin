@@ -1,0 +1,130 @@
+{
+  "name": "el-dropdown",
+  "attributes": [
+    {
+      "name": "type",
+      "desc": "menu button type, refer to `Button` Component, only works when `split-button` is true",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "size",
+      "desc": "menu size, also works on the split button",
+      "type": "string",
+      "optionValue": "medium / small / mini",
+      "options": [
+        "medium",
+        "small",
+        "mini"
+      ],
+      "defaultValue": "—"
+    },
+    {
+      "name": "split-button",
+      "desc": "whether a button group is displayed",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "placement",
+      "desc": "placement of pop menu",
+      "type": "string",
+      "optionValue": "top/top-start/top-end/bottom/bottom-start/bottom-end",
+      "options": [
+        "top",
+        "top-start",
+        "top-end",
+        "bottom",
+        "bottom-start",
+        "bottom-end"
+      ],
+      "defaultValue": "bottom-end"
+    },
+    {
+      "name": "trigger",
+      "desc": "how to trigger",
+      "type": "string",
+      "optionValue": "hover/click",
+      "options": [
+        "hover",
+        "click"
+      ],
+      "defaultValue": "hover"
+    },
+    {
+      "name": "hide-on-click",
+      "desc": "whether to hide menu after clicking menu-item",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "show-timeout",
+      "desc": "Delay time before show a dropdown (only works when trigger is `hover`)",
+      "type": "number",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "250"
+    },
+    {
+      "name": "hide-timeout",
+      "desc": "Delay time before hide a dropdown (only works when trigger is `hover`)",
+      "type": "number",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "150"
+    },
+    {
+      "name": "tabindex",
+      "desc": "<p><a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/tabindex\">tabindex</a> of Dropdown</p>",
+      "type": "number",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "0"
+    },
+    {
+      "name": "disabled",
+      "desc": "whether the Dropdown is disabled",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "—",
+      "desc": "content of Dropdown. Notice: Must be a valid html dom element (ex. `<span>, <button> etc.`) or `el-component`, to attach the trigger listener"
+    },
+    {
+      "name": "dropdown",
+      "desc": "content of the Dropdown Menu, usually a `<el-dropdown-menu>` element"
+    }
+  ],
+  "events": [
+    {
+      "name": "@click",
+      "desc": "if `split-button` is `true`, triggers when left button is clicked",
+      "param": "—"
+    },
+    {
+      "name": "@command",
+      "desc": "triggers when a dropdown item is clicked",
+      "param": "the command dispatched from the dropdown item"
+    },
+    {
+      "name": "@visible-change",
+      "desc": "triggers when the dropdown appears/disappears",
+      "param": "true when it appears, and false otherwise"
+    }
+  ],
+  "methods": []
+}

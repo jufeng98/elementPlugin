@@ -1,0 +1,316 @@
+{
+  "name": "el-date-picker",
+  "attributes": [
+    {
+      "name": "value",
+      "desc": "binding value",
+      "type": "date(DatePicker) / array(DateRangePicker)",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "v-model",
+      "desc": "binding value",
+      "type": "date(DatePicker) / array(DateRangePicker)",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "readonly",
+      "desc": "whether DatePicker is read only",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "disabled",
+      "desc": "whether DatePicker is disabled",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "size",
+      "desc": "size of Input",
+      "type": "string",
+      "optionValue": "large/small/mini",
+      "options": [
+        "large",
+        "small",
+        "mini"
+      ],
+      "defaultValue": "—"
+    },
+    {
+      "name": "editable",
+      "desc": "whether the input is editable",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "clearable",
+      "desc": "whether to show clear button",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "placeholder",
+      "desc": "placeholder in non-range mode",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "start-placeholder",
+      "desc": "placeholder for the start date in range mode",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "end-placeholder",
+      "desc": "placeholder for the end date in range mode",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "type",
+      "desc": "type of the picker",
+      "type": "string",
+      "optionValue": "year/month/date/dates/months/years/datetime/ week/datetimerange/daterange/ monthrange",
+      "options": [
+        "year",
+        "month",
+        "date",
+        "dates",
+        "months",
+        "years",
+        "datetime",
+        "week",
+        "datetimerange",
+        "daterange",
+        "monthrange"
+      ],
+      "defaultValue": "date"
+    },
+    {
+      "name": "format",
+      "desc": "format of the displayed value in the input box",
+      "type": "string",
+      "optionValue": "<p>see <a href=\"#/en-US/component/date-picker#date-formats\">date formats</a></p>",
+      "options": [],
+      "defaultValue": "yyyy-MM-dd"
+    },
+    {
+      "name": "align",
+      "desc": "alignment",
+      "type": "string",
+      "optionValue": "left/center/right",
+      "options": [
+        "left",
+        "center",
+        "right"
+      ],
+      "defaultValue": "left"
+    },
+    {
+      "name": "popper-class",
+      "desc": "custom class name for DatePicker's dropdown",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "picker-options",
+      "desc": "additional options, check the table below",
+      "type": "object",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "{}"
+    },
+    {
+      "name": "range-separator",
+      "desc": "range separator",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "'-'"
+    },
+    {
+      "name": "default-value",
+      "desc": "optional, default date of the calendar",
+      "type": "Date",
+      "optionValue": "anything accepted by `new Date()`",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "default-time",
+      "desc": "optional, the time value to use when selecting date range",
+      "type": "string[]",
+      "optionValue": "Array with length 2, each item is a string like `12:00:00`. The first item for the start date and then second item for the end date",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "value-format",
+      "desc": "optional, format of binding value. If not specified, the binding value will be a Date object",
+      "type": "string",
+      "optionValue": "<p>see <a href=\"#/en-US/component/date-picker#date-formats\">date formats</a></p>",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "name",
+      "desc": "same as `name` in native input",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "unlink-panels",
+      "desc": "unlink two date-panels in range-picker",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "prefix-icon",
+      "desc": "Custom prefix icon class",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "el-icon-date"
+    },
+    {
+      "name": "clear-icon",
+      "desc": "Custom clear icon class",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "el-icon-circle-close"
+    },
+    {
+      "name": "validate-event",
+      "desc": "whether to trigger form validation",
+      "type": "boolean",
+      "optionValue": "-",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "append-to-body",
+      "desc": "whether to append DatePicker itself to body",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "true"
+    }
+  ],
+  "props": [],
+  "options": [
+    {
+      "name": "shortcuts",
+      "desc": "a { text, onClick } object array to set shortcut options, check the table below",
+      "type": "object[]",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "disabledDate",
+      "desc": "a function determining if a date is disabled with that date as its parameter. Should return a Boolean",
+      "type": "function",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "cellClassName",
+      "desc": "set custom className",
+      "type": "Function(Date)",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "firstDayOfWeek",
+      "desc": "first day of week",
+      "type": "Number",
+      "optionValue": "1 to 7",
+      "options": [],
+      "defaultValue": "7"
+    },
+    {
+      "name": "onPick",
+      "desc": "a callback that triggers when the selected date is changed. Only for `daterange` and `datetimerange`.",
+      "type": "Function({ maxDate, minDate })",
+      "optionValue": "-",
+      "options": [],
+      "defaultValue": "-"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "text",
+      "desc": "title of the shortcut",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "onClick",
+      "desc": "callback function, triggers when the shortcut is clicked, with the `vm` as its parameter. You can change the picker value by emitting the `pick` event. Example: `vm.$emit('pick', new Date())`",
+      "type": "function",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    }
+  ],
+  "slots": [
+    {
+      "name": "range-separator",
+      "desc": "custom range separator content"
+    }
+  ],
+  "events": [
+    {
+      "name": "@change",
+      "desc": "triggers when user confirms the value",
+      "param": "component's binding value"
+    },
+    {
+      "name": "@blur",
+      "desc": "triggers when Input blurs",
+      "param": "component instance"
+    },
+    {
+      "name": "@focus",
+      "desc": "triggers when Input focuses",
+      "param": "component instance"
+    }
+  ],
+  "methods": [
+    {
+      "name": "focus",
+      "desc": "focus the Input component",
+      "param": "—"
+    }
+  ]
+}

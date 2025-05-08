@@ -1,0 +1,70 @@
+{
+  "name": "el-cascader-panel",
+  "attributes": [
+    {
+      "name": "value",
+      "desc": "binding value",
+      "type": "-",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "v-model",
+      "desc": "binding value",
+      "type": "-",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "options",
+      "desc": "data of the options，the key of `value` and `label` can be customize by `Props`.",
+      "type": "array",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "props",
+      "desc": "configuration options, see the following table.",
+      "type": "object",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "-",
+      "desc": "the custom content of cascader node, the parameter is { node, data }, which are current Node object and node data respectively."
+    }
+  ],
+  "events": [
+    {
+      "name": "@change",
+      "desc": "triggers when the binding value changes",
+      "param": "value"
+    },
+    {
+      "name": "@expand-change",
+      "desc": "triggers when expand option changes",
+      "param": "an array of the expanding node's parent nodes"
+    }
+  ],
+  "methods": [
+    {
+      "name": "getCheckedNodes",
+      "desc": "get an array of currently selected node",
+      "param": "(leafOnly) whether only return the leaf checked nodes, default is `false`"
+    },
+    {
+      "name": "clearCheckedNodes",
+      "desc": "clear checked nodes",
+      "param": "-"
+    }
+  ]
+}

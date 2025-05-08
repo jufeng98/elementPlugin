@@ -1,0 +1,164 @@
+{
+  "name": "el-drawer",
+  "attributes": [
+    {
+      "name": "append-to-body",
+      "desc": "Controls should Drawer be inserted to DocumentBody Element, nested Drawer must assign this param to **true**",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "before-close",
+      "desc": "If set, closing procedure will be halted",
+      "type": "function(done), done is function type that accepts a boolean as parameter, calling done with true or without parameter will abort the close procedure",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "close-on-press-escape",
+      "desc": "Indicates whether Drawer can be closed by pressing ESC",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "custom-class",
+      "desc": "Extra class names for Drawer",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "destroy-on-close",
+      "desc": "Indicates whether children should be destroyed after Drawer closed",
+      "type": "boolean",
+      "optionValue": "-",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "modal",
+      "desc": "Should show shadowing layer",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "modal-append-to-body",
+      "desc": "Indicates should shadowing layer be insert into DocumentBody element",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "direction",
+      "desc": "Drawer's opening direction",
+      "type": "Direction",
+      "optionValue": "rtl / ltr / ttb / btt",
+      "options": [
+        "rtl",
+        "ltr",
+        "ttb",
+        "btt"
+      ],
+      "defaultValue": "rtl"
+    },
+    {
+      "name": "show-close",
+      "desc": "Should show close button at the top right of Drawer",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "size",
+      "desc": "Drawer's size, if Drawer is horizontal mode, it effects the width property, otherwise it effects the height property, when size is `number` type, it describes the size by unit of pixels; when size is `string` type, it should be used with `x%` notation, other wise it will be interpreted to pixel unit",
+      "type": "number / string",
+      "optionValue": "-",
+      "options": [],
+      "defaultValue": "'30%'"
+    },
+    {
+      "name": "title",
+      "desc": "Drawer's title, can also be set by named slot, detailed descriptions can be found in the slot form",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "visible",
+      "desc": "Should Drawer be displayed, also support the `.sync` notation",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "wrapperClosable",
+      "desc": "Indicates whether user can close Drawer by clicking the shadowing layer.",
+      "type": "boolean",
+      "optionValue": "-",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "withHeader",
+      "desc": "Flag that controls the header section's existance, default to true, when withHeader set to false, both `title attribute` and `title slot` won't work",
+      "type": "boolean",
+      "optionValue": "-",
+      "options": [],
+      "defaultValue": "true"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "—",
+      "desc": "Drawer's Content"
+    },
+    {
+      "name": "title",
+      "desc": "Drawer Title Section"
+    }
+  ],
+  "events": [
+    {
+      "name": "@open",
+      "desc": "Triggered before Drawer opening animation begins",
+      "param": "—"
+    },
+    {
+      "name": "@opened",
+      "desc": "Triggered after Drawer opening animation ended",
+      "param": "—"
+    },
+    {
+      "name": "@close",
+      "desc": "Triggered before Drawer closing animation begins",
+      "param": "—"
+    },
+    {
+      "name": "@closed",
+      "desc": "Triggered after Drawer closing animation ended",
+      "param": "—"
+    }
+  ],
+  "methods": [
+    {
+      "name": "closeDrawer",
+      "desc": "In order to close Drawer, this method will call `before-close`.",
+      "param": ""
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "name": "el-image",
+  "attributes": [
+    {
+      "name": "src",
+      "desc": "Image source, same as native",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "-"
+    },
+    {
+      "name": "fit",
+      "desc": "<p>Indicate how the image should be resized to fit its container, same as <a href=\"https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit\">object-fit</a></p>",
+      "type": "string",
+      "optionValue": "fill / contain / cover / none / scale-down",
+      "options": [
+        "fill",
+        "contain",
+        "cover",
+        "none",
+        "scale-down"
+      ],
+      "defaultValue": "-"
+    },
+    {
+      "name": "alt",
+      "desc": "Native alt",
+      "type": "string",
+      "optionValue": "-",
+      "options": [],
+      "defaultValue": "-"
+    },
+    {
+      "name": "referrer-policy",
+      "desc": "Native referrerPolicy",
+      "type": "string",
+      "optionValue": "-",
+      "options": [],
+      "defaultValue": "-"
+    },
+    {
+      "name": "lazy",
+      "desc": "Whether to use lazy load",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "scroll-container",
+      "desc": "The container to add scroll listener when using lazy load",
+      "type": "string / HTMLElement",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "The nearest parent container whose overflow property is auto or scroll"
+    },
+    {
+      "name": "preview-src-list",
+      "desc": "allow big image preview",
+      "type": "Array",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "-"
+    },
+    {
+      "name": "z-index",
+      "desc": "set image preview z-index",
+      "type": "Number",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "2000"
+    },
+    {
+      "name": "initial-index",
+      "desc": "set image preview array index",
+      "type": "Number",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "-"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "placeholder",
+      "desc": "Triggers when image load"
+    },
+    {
+      "name": "error",
+      "desc": "Triggers when image load failed"
+    }
+  ],
+  "events": [
+    {
+      "name": "@load",
+      "desc": "Same as native load",
+      "param": "(e: Event)"
+    },
+    {
+      "name": "@error",
+      "desc": "Same as native error",
+      "param": "(e: Error)"
+    }
+  ],
+  "methods": []
+}

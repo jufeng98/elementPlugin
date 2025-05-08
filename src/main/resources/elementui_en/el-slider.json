@@ -1,0 +1,179 @@
+{
+  "name": "el-slider",
+  "attributes": [
+    {
+      "name": "value",
+      "desc": "binding value",
+      "type": "number",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "0"
+    },
+    {
+      "name": "v-model",
+      "desc": "binding value",
+      "type": "number",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "0"
+    },
+    {
+      "name": "min",
+      "desc": "minimum value",
+      "type": "number",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "0"
+    },
+    {
+      "name": "max",
+      "desc": "maximum value",
+      "type": "number",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "100"
+    },
+    {
+      "name": "disabled",
+      "desc": "whether Slider is disabled",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "step",
+      "desc": "step size",
+      "type": "number",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "1"
+    },
+    {
+      "name": "show-input",
+      "desc": "whether to display an input box, works when `range` is false",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "show-input-controls",
+      "desc": "whether to display control buttons when `show-input` is true",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "input-size",
+      "desc": "size of the input box",
+      "type": "string",
+      "optionValue": "large / medium / small / mini",
+      "options": [
+        "large",
+        "medium",
+        "small",
+        "mini"
+      ],
+      "defaultValue": "small"
+    },
+    {
+      "name": "show-stops",
+      "desc": "whether to display breakpoints",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "show-tooltip",
+      "desc": "whether to display tooltip value",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "format-tooltip",
+      "desc": "format to display tooltip value",
+      "type": "function(value)",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "range",
+      "desc": "whether to select a range",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "vertical",
+      "desc": "vertical mode",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "height",
+      "desc": "Slider height, required in vertical mode",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "label",
+      "desc": "label for screen reader",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "debounce",
+      "desc": "debounce delay when typing, in milliseconds, works when `show-input` is true",
+      "type": "number",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "300"
+    },
+    {
+      "name": "tooltip-class",
+      "desc": "custom class name for the tooltip",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "marks",
+      "desc": "marks， type of key must be `number` and must in closed interval `[min, max]`, each mark can custom style",
+      "type": "object",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [],
+  "events": [
+    {
+      "name": "@change",
+      "desc": "triggers when the value changes (if the mouse is being dragged, this event only fires when the mouse is released)",
+      "param": "value after changing"
+    },
+    {
+      "name": "@input",
+      "desc": "triggers when the data changes (It'll be emitted in real time during sliding)",
+      "param": "value after changing"
+    }
+  ],
+  "methods": []
+}

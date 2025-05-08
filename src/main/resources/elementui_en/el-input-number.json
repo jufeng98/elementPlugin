@@ -1,0 +1,153 @@
+{
+  "name": "el-input-number",
+  "attributes": [
+    {
+      "name": "value",
+      "desc": "binding value",
+      "type": "number",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "0"
+    },
+    {
+      "name": "v-model",
+      "desc": "binding value",
+      "type": "number",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "0"
+    },
+    {
+      "name": "min",
+      "desc": "the minimum allowed value",
+      "type": "number",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "`-Infinity`"
+    },
+    {
+      "name": "max",
+      "desc": "the maximum allowed value",
+      "type": "number",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "`Infinity`"
+    },
+    {
+      "name": "step",
+      "desc": "incremental step",
+      "type": "number",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "1"
+    },
+    {
+      "name": "step-strictly",
+      "desc": "whether input value can only be multiple of step",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "precision",
+      "desc": "precision of input value",
+      "type": "number",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "size",
+      "desc": "size of the component",
+      "type": "string",
+      "optionValue": "large/small",
+      "options": [
+        "large",
+        "small"
+      ],
+      "defaultValue": "—"
+    },
+    {
+      "name": "disabled",
+      "desc": "whether the component is disabled",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "controls",
+      "desc": "whether to enable the control buttons",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "controls-position",
+      "desc": "position of the control buttons",
+      "type": "string",
+      "optionValue": "right",
+      "options": [],
+      "defaultValue": "-"
+    },
+    {
+      "name": "name",
+      "desc": "same as `name` in native input",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "label",
+      "desc": "label text",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "placeholder",
+      "desc": "placeholder in input",
+      "type": "string",
+      "optionValue": "-",
+      "options": [],
+      "defaultValue": "-"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [],
+  "events": [
+    {
+      "name": "@change",
+      "desc": "triggers when the value changes",
+      "param": "currentValue, oldValue"
+    },
+    {
+      "name": "@blur",
+      "desc": "triggers when Input blurs",
+      "param": "(event: Event)"
+    },
+    {
+      "name": "@focus",
+      "desc": "triggers when Input focuses",
+      "param": "(event: Event)"
+    }
+  ],
+  "methods": [
+    {
+      "name": "focus",
+      "desc": "focus the Input component",
+      "param": "-"
+    },
+    {
+      "name": "select",
+      "desc": "select the text in input element",
+      "param": "—"
+    }
+  ]
+}

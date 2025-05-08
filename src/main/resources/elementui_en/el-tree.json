@@ -1,0 +1,315 @@
+{
+  "name": "el-tree",
+  "attributes": [
+    {
+      "name": "data",
+      "desc": "tree data",
+      "type": "array",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "empty-text",
+      "desc": "text displayed when data is void",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "node-key",
+      "desc": "unique identity key name for nodes, its value should be unique across the whole tree",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "props",
+      "desc": "configuration options, see the following table",
+      "type": "object",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "render-after-expand",
+      "desc": "whether to render child nodes only after a parent node is expanded for the first time",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "load",
+      "desc": "method for loading subtree data, only works when `lazy` is true",
+      "type": "function(node, resolve)",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "render-content",
+      "desc": "render function for tree node",
+      "type": "Function(h, { node, data, store }",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "highlight-current",
+      "desc": "whether current node is highlighted",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "default-expand-all",
+      "desc": "whether to expand all nodes by default",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "expand-on-click-node",
+      "desc": "whether to expand or collapse node when clicking on the node, if false, then expand or collapse node only when clicking on the arrow icon.",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "check-on-click-node",
+      "desc": "whether to check or uncheck node when clicking on the node, if false, the node can only be checked or unchecked by clicking on the checkbox.",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "auto-expand-parent",
+      "desc": "whether to expand father node when a child node is expanded",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "default-expanded-keys",
+      "desc": "array of keys of initially expanded nodes",
+      "type": "array",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "show-checkbox",
+      "desc": "whether node is selectable",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "check-strictly",
+      "desc": "whether checked state of a node not affects its father and child nodes when `show-checkbox` is `true`",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "default-checked-keys",
+      "desc": "array of keys of initially checked nodes",
+      "type": "array",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "current-node-key",
+      "desc": "key of initially selected node",
+      "type": "string, number",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "filter-node-method",
+      "desc": "this function will be executed on each node when use filter method. if return `false`, tree node will be hidden.",
+      "type": "Function(value, data, node)",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "accordion",
+      "desc": "whether only one node among the same level can be expanded at one time",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "indent",
+      "desc": "horizontal indentation of nodes in adjacent levels in pixels",
+      "type": "number",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "16"
+    },
+    {
+      "name": "icon-class",
+      "desc": "custome tree node icon",
+      "type": "string",
+      "optionValue": "-",
+      "options": [],
+      "defaultValue": "-"
+    },
+    {
+      "name": "lazy",
+      "desc": "whether to lazy load leaf node, used with `load` attribute",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "draggable",
+      "desc": "whether enable tree nodes drag and drop",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "allow-drag",
+      "desc": "this function will be executed before dragging a node. If `false` is returned, the node can not be dragged",
+      "type": "Function(node)",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "allow-drop",
+      "desc": "this function will be executed before the dragging node is dropped. If `false` is returned, the dragging node can not be dropped at the target node. `type` has three possible values: 'prev' (inserting the dragging node before the target node), 'inner' (inserting the dragging node to the target node) and 'next' (inserting the dragging node after the target node)",
+      "type": "Function(draggingNode, dropNode, type)",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    }
+  ],
+  "props": [
+    {
+      "name": "label",
+      "desc": "specify which key of node object is used as the node's label",
+      "type": "string, function(data, node)",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "children",
+      "desc": "specify which node object is used as the node's subtree",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "disabled",
+      "desc": "specify which key of node object represents if node's checkbox is disabled",
+      "type": "boolean, function(data, node)",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "isLeaf",
+      "desc": "specify whether the node is a leaf node, only works when lazy load is enabled",
+      "type": "boolean, function(data, node)",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    }
+  ],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "—",
+      "desc": "Custom content for tree nodes. The scope parameter is { node, data }"
+    }
+  ],
+  "events": [
+    {
+      "name": "@node-click",
+      "desc": "triggers when a node is clicked",
+      "param": "three parameters: node object corresponding to the node clicked, `node` property of TreeNode, TreeNode itself"
+    },
+    {
+      "name": "@node-contextmenu",
+      "desc": "triggers when a node is clicked by right button",
+      "param": "four parameters: event, node object corresponding to the node clicked, `node` property of TreeNode, TreeNode itself"
+    },
+    {
+      "name": "@check-change",
+      "desc": "triggers when the selected state of the node changes",
+      "param": "three parameters: node object corresponding to the node whose selected state is changed, whether the node is selected, whether node's subtree has selected nodes"
+    },
+    {
+      "name": "@check",
+      "desc": "triggers after clicking the checkbox of a node",
+      "param": "two parameters: node object corresponding to the node that is checked / unchecked, tree checked status object which has four props: checkedNodes, checkedKeys, halfCheckedNodes, halfCheckedKeys"
+    },
+    {
+      "name": "@current-change",
+      "desc": "triggers when current node changes",
+      "param": "two parameters: node object corresponding to the current node, `node` property of TreeNode"
+    },
+    {
+      "name": "@node-expand",
+      "desc": "triggers when current node open",
+      "param": "three parameters: node object corresponding to the node opened, `node` property of TreeNode, TreeNode itself"
+    },
+    {
+      "name": "@node-collapse",
+      "desc": "triggers when current node close",
+      "param": "three parameters: node object corresponding to the node closed, `node` property of TreeNode, TreeNode itself"
+    },
+    {
+      "name": "@node-drag-start",
+      "desc": "triggers when dragging starts",
+      "param": "two parameters: node object corresponding to the dragging node, event."
+    },
+    {
+      "name": "@node-drag-enter",
+      "desc": "triggers when the dragging node enters another node",
+      "param": "three parameters: node object corresponding to the dragging node, node object corresponding to the entering node, event."
+    },
+    {
+      "name": "@node-drag-leave",
+      "desc": "triggers when the dragging node leaves a node",
+      "param": "three parameters: node object corresponding to the dragging node, node object corresponding to the leaving node, event."
+    },
+    {
+      "name": "@node-drag-over",
+      "desc": "triggers when dragging over a node (like mouseover event)",
+      "param": "three parameters: node object corresponding to the dragging node, node object corresponding to the dragging over node, event."
+    },
+    {
+      "name": "@node-drag-end",
+      "desc": "triggers when dragging ends",
+      "param": "four parameters: node object corresponding to the dragging node, node object corresponding to the dragging end node (may be `undefined`), node drop type (before / after / inner), event."
+    },
+    {
+      "name": "@node-drop",
+      "desc": "triggers after the dragging node is dropped",
+      "param": "four parameters: node object corresponding to the dragging node, node object corresponding to the dropped node, node drop type (before / after / inner), event."
+    }
+  ],
+  "methods": []
+}

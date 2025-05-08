@@ -1,0 +1,51 @@
+{
+  "name": "el-time-select",
+  "attributes": [],
+  "props": [],
+  "options": [
+    {
+      "name": "start",
+      "desc": "start time",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "09:00"
+    },
+    {
+      "name": "end",
+      "desc": "end time",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "18:00"
+    },
+    {
+      "name": "step",
+      "desc": "time step",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "00:30"
+    },
+    {
+      "name": "minTime",
+      "desc": "minimum time, any time before this time will be disabled",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "00:00"
+    },
+    {
+      "name": "maxTime",
+      "desc": "maximum time, any time after this time will be disabled",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    }
+  ],
+  "shortcuts": [],
+  "slots": [],
+  "events": [],
+  "methods": []
+}

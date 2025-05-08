@@ -1,0 +1,192 @@
+{
+  "name": "el-autocomplete",
+  "attributes": [
+    {
+      "name": "placeholder",
+      "desc": "the placeholder of Autocomplete",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "clearable",
+      "desc": "whether to show clear button",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "disabled",
+      "desc": "whether Autocomplete is disabled",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "value-key",
+      "desc": "key name of the input suggestion object for display",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "value"
+    },
+    {
+      "name": "icon",
+      "desc": "icon name",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "value",
+      "desc": "binding value",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "debounce",
+      "desc": "debounce delay when typing, in milliseconds",
+      "type": "number",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "300"
+    },
+    {
+      "name": "placement",
+      "desc": "placement of the popup menu",
+      "type": "string",
+      "optionValue": "top / top-start / top-end / bottom / bottom-start / bottom-end",
+      "options": [
+        "top",
+        "top-start",
+        "top-end",
+        "bottom",
+        "bottom-start",
+        "bottom-end"
+      ],
+      "defaultValue": "bottom-start"
+    },
+    {
+      "name": "fetch-suggestions",
+      "desc": "a method to fetch input suggestions. When suggestions are ready, invoke `callback(data:[])` to return them to Autocomplete",
+      "type": "Function(queryString, callback)",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "popper-class",
+      "desc": "custom class name for autocomplete's dropdown",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "trigger-on-focus",
+      "desc": "whether show suggestions when input focus",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "name",
+      "desc": "same as `name` in native input",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "select-when-unmatched",
+      "desc": "whether to emit a `select` event on enter when there is no autocomplete match",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "label",
+      "desc": "label text",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "prefix-icon",
+      "desc": "prefix icon class",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "suffix-icon",
+      "desc": "suffix icon class",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "hide-loading",
+      "desc": "whether to hide the loading icon in remote search",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "popper-append-to-body",
+      "desc": "whether to append the dropdown to body. If the positioning of the dropdown is wrong, you can try to set this prop to false",
+      "type": "boolean",
+      "optionValue": "-",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "highlight-first-item",
+      "desc": "whether to highlight first item in remote search suggestions by default",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "—",
+      "desc": "Custom content for input suggestions. The scope parameter is { item }"
+    }
+  ],
+  "events": [
+    {
+      "name": "@select",
+      "desc": "triggers when a suggestion is clicked",
+      "param": "suggestion being clicked"
+    },
+    {
+      "name": "@change",
+      "desc": "triggers when the icon inside Input value change",
+      "param": "(value: string \\| number)"
+    }
+  ],
+  "methods": [
+    {
+      "name": "focus",
+      "desc": "focus the input element",
+      "param": "—"
+    }
+  ]
+}

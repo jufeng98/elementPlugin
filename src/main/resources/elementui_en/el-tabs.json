@@ -1,0 +1,112 @@
+{
+  "name": "el-tabs",
+  "attributes": [
+    {
+      "name": "value",
+      "desc": "binding value, name of the selected tab",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "name of first tab"
+    },
+    {
+      "name": "v-model",
+      "desc": "binding value, name of the selected tab",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "name of first tab"
+    },
+    {
+      "name": "type",
+      "desc": "type of Tab",
+      "type": "string",
+      "optionValue": "card/border-card",
+      "options": [
+        "card",
+        "border-card"
+      ],
+      "defaultValue": "—"
+    },
+    {
+      "name": "closable",
+      "desc": "whether Tab is closable",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "addable",
+      "desc": "whether Tab is addable",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "editable",
+      "desc": "whether Tab is addable and closable",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "tab-position",
+      "desc": "position of tabs",
+      "type": "string",
+      "optionValue": "top/right/bottom/left",
+      "options": [
+        "top",
+        "right",
+        "bottom",
+        "left"
+      ],
+      "defaultValue": "top"
+    },
+    {
+      "name": "stretch",
+      "desc": "whether width of tab automatically fits its container",
+      "type": "boolean",
+      "optionValue": "-",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "before-leave",
+      "desc": "hook function before switching tab. If `false` is returned or a `Promise` is returned and then is rejected, switching will be prevented",
+      "type": "Function(activeName, oldActiveName)",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [],
+  "events": [
+    {
+      "name": "@tab-click",
+      "desc": "triggers when a tab is clicked",
+      "param": "clicked tab"
+    },
+    {
+      "name": "@tab-remove",
+      "desc": "triggers when tab-remove button is clicked",
+      "param": "name of the removed tab"
+    },
+    {
+      "name": "@tab-add",
+      "desc": "triggers when tab-add button is clicked",
+      "param": "—"
+    },
+    {
+      "name": "@edit",
+      "desc": "triggers when tab-add button or tab-remove is clicked",
+      "param": "(targetName, action)"
+    }
+  ],
+  "methods": []
+}

@@ -1,0 +1,155 @@
+{
+  "name": "el-tooltip",
+  "attributes": [
+    {
+      "name": "effect",
+      "desc": "Tooltip theme",
+      "type": "string",
+      "optionValue": "dark/light",
+      "options": [
+        "dark",
+        "light"
+      ],
+      "defaultValue": "dark"
+    },
+    {
+      "name": "content",
+      "desc": "display content, can be overridden by `slot#content`",
+      "type": "String",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "placement",
+      "desc": "position of Tooltip",
+      "type": "string",
+      "optionValue": "top/top-start/top-end/bottom/bottom-start/bottom-end/left/left-start/left-end/right/right-start/right-end",
+      "options": [
+        "top",
+        "top-start",
+        "top-end",
+        "bottom",
+        "bottom-start",
+        "bottom-end",
+        "left",
+        "left-start",
+        "left-end",
+        "right",
+        "right-start",
+        "right-end"
+      ],
+      "defaultValue": "bottom"
+    },
+    {
+      "name": "value",
+      "desc": "visibility of Tooltip",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "v-model",
+      "desc": "visibility of Tooltip",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "disabled",
+      "desc": "whether Tooltip is disabled",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "offset",
+      "desc": "offset of the Tooltip",
+      "type": "number",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "0"
+    },
+    {
+      "name": "transition",
+      "desc": "animation name",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "el-fade-in-linear"
+    },
+    {
+      "name": "visible-arrow",
+      "desc": "<p>whether an arrow is displayed. For more information, check <a href=\"https://github.com/element-component/vue-popper\">Vue-popper</a> page</p>",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "popper-options",
+      "desc": "[popper.js](https://popper.js.org/docs/v2/) parameters",
+      "type": "Object",
+      "optionValue": "<p>refer to <a href=\"https://popper.js.org/docs/v2/\">popper.js</a> doc</p>",
+      "options": [],
+      "defaultValue": "`{ boundariesElement: 'body', gpuAcceleration: false }`"
+    },
+    {
+      "name": "open-delay",
+      "desc": "delay of appearance, in millisecond",
+      "type": "number",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "0"
+    },
+    {
+      "name": "manual",
+      "desc": "whether to control Tooltip manually. `mouseenter` and `mouseleave` won't have effects if set to `true`",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "popper-class",
+      "desc": "custom class name for Tooltip's popper",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "enterable",
+      "desc": "whether the mouse can enter the tooltip",
+      "type": "Boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "hide-after",
+      "desc": "timeout in milliseconds to hide tooltip",
+      "type": "number",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "0"
+    },
+    {
+      "name": "tabindex",
+      "desc": "<p><a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/tabindex\">tabindex</a> of Tooltip</p>",
+      "type": "number",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "0"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [],
+  "events": [],
+  "methods": []
+}

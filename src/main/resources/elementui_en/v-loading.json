@@ -1,0 +1,75 @@
+{
+  "name": "v-loading",
+  "attributes": [],
+  "props": [],
+  "options": [
+    {
+      "name": "target",
+      "desc": "the DOM node Loading needs to cover. Accepts a DOM object or a string. If it's a string, it will be passed to `document.querySelector` to get the corresponding DOM node",
+      "type": "object/string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "document.body"
+    },
+    {
+      "name": "body",
+      "desc": "same as the `body` modifier of `v-loading`",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "fullscreen",
+      "desc": "same as the `fullscreen` modifier of `v-loading`",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "lock",
+      "desc": "same as the `lock` modifier of `v-loading`",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "text",
+      "desc": "loading text that displays under the spinner",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "spinner",
+      "desc": "class name of the custom spinner",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "background",
+      "desc": "background color of the mask",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "customClass",
+      "desc": "custom class name for Loading",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    }
+  ],
+  "shortcuts": [],
+  "slots": [],
+  "events": [],
+  "methods": []
+}

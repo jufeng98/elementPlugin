@@ -1,0 +1,96 @@
+{
+  "name": "el-message",
+  "attributes": [],
+  "props": [],
+  "options": [
+    {
+      "name": "message",
+      "desc": "message text",
+      "type": "string / VNode",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "type",
+      "desc": "message type",
+      "type": "string",
+      "optionValue": "success/warning/info/error",
+      "options": [
+        "success",
+        "warning",
+        "info",
+        "error"
+      ],
+      "defaultValue": "info"
+    },
+    {
+      "name": "iconClass",
+      "desc": "custom icon's class, overrides `type`",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "dangerouslyUseHTMLString",
+      "desc": "whether `message` is treated as HTML string",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "customClass",
+      "desc": "custom class name for Message",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "duration",
+      "desc": "display duration, millisecond. If set to 0, it will not turn off automatically",
+      "type": "number",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "3000"
+    },
+    {
+      "name": "showClose",
+      "desc": "whether to show a close button",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "center",
+      "desc": "whether to center the text",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "onClose",
+      "desc": "callback function when closed with the message instance as the parameter",
+      "type": "function",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "offset",
+      "desc": "set the distance to the top of viewport",
+      "type": "number",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "20"
+    }
+  ],
+  "shortcuts": [],
+  "slots": [],
+  "events": [],
+  "methods": []
+}
