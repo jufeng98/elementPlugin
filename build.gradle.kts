@@ -7,7 +7,7 @@ plugins {
 }
 
 group = "org.javamaster"
-version = "1.0.0"
+version = "2.0.0"
 
 repositories {
     maven { url = URI("https://maven.aliyun.com/nexus/content/groups/public/") }
@@ -27,6 +27,7 @@ intellij {
     type.set("IU")
     plugins.set(
         listOf(
+            "org.intellij.plugins.markdown",
             "org.jetbrains.plugins.vue:243.21565.42"
         )
     )
@@ -55,6 +56,7 @@ tasks {
 
     patchPluginXml {
         sinceBuild.set("232")
+        untilBuild.set("252.*")
     }
 
     signPlugin {
