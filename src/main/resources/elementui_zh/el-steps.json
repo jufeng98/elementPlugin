@@ -1,0 +1,62 @@
+{
+  "name": "el-steps",
+  "attributes": [
+    {
+      "name": "title",
+      "desc": "标题",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "description",
+      "desc": "描述性文字",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "icon",
+      "desc": "图标",
+      "type": "传入 icon 的 class 全名来自定义 icon，也支持 slot 方式写入",
+      "optionValue": "string",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "status",
+      "desc": "设置当前步骤的状态，不设置则根据 steps 确定状态",
+      "type": "string",
+      "optionValue": "wait / process / finish / error / success",
+      "options": [
+        "wait",
+        "process",
+        "finish",
+        "error",
+        "success"
+      ],
+      "defaultValue": "-"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "icon",
+      "desc": "自定义图标"
+    },
+    {
+      "name": "title",
+      "desc": "自定义标题"
+    },
+    {
+      "name": "description",
+      "desc": "自定义描述性文字"
+    }
+  ],
+  "events": [],
+  "methods": []
+}

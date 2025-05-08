@@ -1,0 +1,96 @@
+{
+  "name": "el-message",
+  "attributes": [],
+  "props": [],
+  "options": [
+    {
+      "name": "message",
+      "desc": "消息文字",
+      "type": "string / VNode",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "type",
+      "desc": "主题",
+      "type": "string",
+      "optionValue": "success/warning/info/error",
+      "options": [
+        "success",
+        "warning",
+        "info",
+        "error"
+      ],
+      "defaultValue": "info"
+    },
+    {
+      "name": "iconClass",
+      "desc": "自定义图标的类名，会覆盖 `type`",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "dangerouslyUseHTMLString",
+      "desc": "是否将 message 属性作为 HTML 片段处理",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "customClass",
+      "desc": "自定义类名",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "duration",
+      "desc": "显示时间, 毫秒。设为 0 则不会自动关闭",
+      "type": "number",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "3000"
+    },
+    {
+      "name": "showClose",
+      "desc": "是否显示关闭按钮",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "center",
+      "desc": "文字是否居中",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "onClose",
+      "desc": "关闭时的回调函数, 参数为被关闭的 message 实例",
+      "type": "function",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "offset",
+      "desc": "Message 距离窗口顶部的偏移量",
+      "type": "number",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "20"
+    }
+  ],
+  "shortcuts": [],
+  "slots": [],
+  "events": [],
+  "methods": []
+}

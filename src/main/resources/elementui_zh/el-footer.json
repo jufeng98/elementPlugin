@@ -1,0 +1,19 @@
+{
+  "name": "el-footer",
+  "attributes": [
+    {
+      "name": "height",
+      "desc": "底栏高度",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "60px"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [],
+  "events": [],
+  "methods": []
+}

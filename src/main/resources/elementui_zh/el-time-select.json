@@ -1,0 +1,51 @@
+{
+  "name": "el-time-select",
+  "attributes": [],
+  "props": [],
+  "options": [
+    {
+      "name": "start",
+      "desc": "开始时间",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "09:00"
+    },
+    {
+      "name": "end",
+      "desc": "结束时间",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "18:00"
+    },
+    {
+      "name": "step",
+      "desc": "间隔时间",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "00:30"
+    },
+    {
+      "name": "minTime",
+      "desc": "最小时间，小于该时间的时间段将被禁用",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "00:00"
+    },
+    {
+      "name": "maxTime",
+      "desc": "最大时间，大于该时间的时间段将被禁用",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    }
+  ],
+  "shortcuts": [],
+  "slots": [],
+  "events": [],
+  "methods": []
+}

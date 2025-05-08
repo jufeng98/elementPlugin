@@ -1,0 +1,232 @@
+{
+  "name": "el-time-picker",
+  "attributes": [
+    {
+      "name": "value",
+      "desc": "绑定值",
+      "type": "date(TimePicker) / string(TimeSelect)",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "v-model",
+      "desc": "绑定值",
+      "type": "date(TimePicker) / string(TimeSelect)",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "readonly",
+      "desc": "完全只读",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "disabled",
+      "desc": "禁用",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "editable",
+      "desc": "文本框可输入",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "clearable",
+      "desc": "是否显示清除按钮",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "size",
+      "desc": "输入框尺寸",
+      "type": "string",
+      "optionValue": "medium / small / mini",
+      "options": [
+        "medium",
+        "small",
+        "mini"
+      ],
+      "defaultValue": "—"
+    },
+    {
+      "name": "placeholder",
+      "desc": "非范围选择时的占位内容",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "start-placeholder",
+      "desc": "范围选择时开始日期的占位内容",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "end-placeholder",
+      "desc": "范围选择时开始日期的占位内容",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "is-range",
+      "desc": "是否为时间范围选择，仅对`<el-time-picker>`有效",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "arrow-control",
+      "desc": "是否使用箭头进行时间选择，仅对`<el-time-picker>`有效",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "align",
+      "desc": "对齐方式",
+      "type": "string",
+      "optionValue": "left / center / right",
+      "options": [
+        "left",
+        "center",
+        "right"
+      ],
+      "defaultValue": "left"
+    },
+    {
+      "name": "popper-class",
+      "desc": "TimePicker 下拉框的类名",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "picker-options",
+      "desc": "当前时间日期选择器特有的选项参考下表",
+      "type": "object",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "{}"
+    },
+    {
+      "name": "range-separator",
+      "desc": "选择范围时的分隔符",
+      "type": "string",
+      "optionValue": "-",
+      "options": [],
+      "defaultValue": "'-'"
+    },
+    {
+      "name": "value-format",
+      "desc": "可选，仅TimePicker时可用，绑定值的格式。不指定则绑定值为 Date 对象",
+      "type": "string",
+      "optionValue": "<p>见<a href=\"#/zh-CN/component/date-picker#ri-qi-ge-shi\">日期格式</a></p>",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "default-value",
+      "desc": "可选，选择器打开时默认显示的时间",
+      "type": "Date(TimePicker) / string(TimeSelect)",
+      "optionValue": "可被`new Date()`解析(TimePicker) / 可选值(TimeSelect)",
+      "options": [
+        "可被`new Date()`解析(TimePicker)",
+        "可选值(TimeSelect)"
+      ],
+      "defaultValue": "—"
+    },
+    {
+      "name": "name",
+      "desc": "原生属性",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "prefix-icon",
+      "desc": "自定义头部图标的类名",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "el-icon-time"
+    },
+    {
+      "name": "clear-icon",
+      "desc": "自定义清空图标的类名",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "el-icon-circle-close"
+    }
+  ],
+  "props": [],
+  "options": [
+    {
+      "name": "selectableRange",
+      "desc": "可选时间段，例如`'18:30:00 - 20:30:00'`或者传入数组`['09:30:00 - 12:00:00', '14:30:00 - 18:30:00']`",
+      "type": "string / array",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "format",
+      "desc": "时间格式化(TimePicker)",
+      "type": "string",
+      "optionValue": "小时：`HH`，分：`mm`，秒：`ss`，AM/PM `A`",
+      "options": [
+        "小时：`HH`，分：`mm`，秒：`ss`，AM",
+        "PM `A`"
+      ],
+      "defaultValue": "'HH:mm:ss'"
+    }
+  ],
+  "shortcuts": [],
+  "slots": [],
+  "events": [
+    {
+      "name": "@change",
+      "desc": "用户确认选定的值时触发",
+      "param": "组件绑定值"
+    },
+    {
+      "name": "@blur",
+      "desc": "当 input 失去焦点时触发",
+      "param": "组件实例"
+    },
+    {
+      "name": "@focus",
+      "desc": "当 input 获得焦点时触发",
+      "param": "组件实例"
+    }
+  ],
+  "methods": [
+    {
+      "name": "focus",
+      "desc": "使 input 获取焦点",
+      "param": "-"
+    }
+  ]
+}

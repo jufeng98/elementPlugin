@@ -1,0 +1,154 @@
+{
+  "name": "el-transfer",
+  "attributes": [
+    {
+      "name": "value",
+      "desc": "绑定值",
+      "type": "array",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "v-model",
+      "desc": "绑定值",
+      "type": "array",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "data",
+      "desc": "Transfer 的数据源",
+      "type": "array[{ key, label, disabled }]",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "[ ]"
+    },
+    {
+      "name": "filterable",
+      "desc": "是否可搜索",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "filter-placeholder",
+      "desc": "搜索框占位符",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "请输入搜索内容"
+    },
+    {
+      "name": "filter-method",
+      "desc": "自定义搜索方法",
+      "type": "function",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "target-order",
+      "desc": "右侧列表元素的排序策略：若为 `original`，则保持与数据源相同的顺序；若为 `push`，则新加入的元素排在最后；若为 `unshift`，则新加入的元素排在最前",
+      "type": "string",
+      "optionValue": "original / push / unshift",
+      "options": [
+        "original",
+        "push",
+        "unshift"
+      ],
+      "defaultValue": "original"
+    },
+    {
+      "name": "titles",
+      "desc": "自定义列表标题",
+      "type": "array",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "['列表 1', '列表 2']"
+    },
+    {
+      "name": "button-texts",
+      "desc": "自定义按钮文案",
+      "type": "array",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "[ ]"
+    },
+    {
+      "name": "render-content",
+      "desc": "自定义数据项渲染函数",
+      "type": "function(h, option)",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "format",
+      "desc": "列表顶部勾选状态文案",
+      "type": "object{noChecked, hasChecked}",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "{ noChecked: '${checked}/${total}', hasChecked: '${checked}/${total}' }"
+    },
+    {
+      "name": "props",
+      "desc": "数据源的字段别名",
+      "type": "object{key, label, disabled}",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "left-default-checked",
+      "desc": "初始状态下左侧列表的已勾选项的 key 数组",
+      "type": "array",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "[ ]"
+    },
+    {
+      "name": "right-default-checked",
+      "desc": "初始状态下右侧列表的已勾选项的 key 数组",
+      "type": "array",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "[ ]"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "—",
+      "desc": "自定义数据项的内容，参数为 { option }"
+    }
+  ],
+  "events": [
+    {
+      "name": "@change",
+      "desc": "右侧列表元素变化时触发",
+      "param": "当前值、数据移动的方向（'left' / 'right'）、发生移动的数据 key 数组"
+    },
+    {
+      "name": "@left-check-change",
+      "desc": "左侧列表元素被用户选中 / 取消选中时触发",
+      "param": "当前被选中的元素的 key 数组、选中状态发生变化的元素的 key 数组"
+    },
+    {
+      "name": "@right-check-change",
+      "desc": "右侧列表元素被用户选中 / 取消选中时触发",
+      "param": "当前被选中的元素的 key 数组、选中状态发生变化的元素的 key 数组"
+    }
+  ],
+  "methods": [
+    {
+      "name": "clearQuery",
+      "desc": "清空某个面板的搜索关键词",
+      "param": "'left' / 'right'，指定需要清空的面板"
+    }
+  ]
+}

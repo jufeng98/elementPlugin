@@ -1,0 +1,117 @@
+{
+  "name": "el-notification",
+  "attributes": [],
+  "props": [],
+  "options": [
+    {
+      "name": "title",
+      "desc": "标题",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "message",
+      "desc": "说明文字",
+      "type": "string/Vue.VNode",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "dangerouslyUseHTMLString",
+      "desc": "是否将 message 属性作为 HTML 片段处理",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "type",
+      "desc": "主题样式，如果不在可选值内将被忽略",
+      "type": "string",
+      "optionValue": "success/warning/info/error",
+      "options": [
+        "success",
+        "warning",
+        "info",
+        "error"
+      ],
+      "defaultValue": "—"
+    },
+    {
+      "name": "iconClass",
+      "desc": "自定义图标的类名。若设置了 `type`，则 `iconClass` 会被覆盖",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "customClass",
+      "desc": "自定义类名",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "duration",
+      "desc": "显示时间, 毫秒。设为 0 则不会自动关闭",
+      "type": "number",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "4500"
+    },
+    {
+      "name": "position",
+      "desc": "自定义弹出位置",
+      "type": "string",
+      "optionValue": "top-right/top-left/bottom-right/bottom-left",
+      "options": [
+        "top-right",
+        "top-left",
+        "bottom-right",
+        "bottom-left"
+      ],
+      "defaultValue": "top-right"
+    },
+    {
+      "name": "showClose",
+      "desc": "是否显示关闭按钮",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "onClose",
+      "desc": "关闭时的回调函数",
+      "type": "function",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "onClick",
+      "desc": "点击 Notification 时的回调函数",
+      "type": "function",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "offset",
+      "desc": "偏移的距离，在同一时刻，所有的 Notification 实例应当具有一个相同的偏移量",
+      "type": "number",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "0"
+    }
+  ],
+  "shortcuts": [],
+  "slots": [],
+  "events": [],
+  "methods": []
+}

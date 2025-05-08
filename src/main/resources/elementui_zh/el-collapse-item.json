@@ -1,0 +1,35 @@
+{
+  "name": "el-collapse-item",
+  "attributes": [
+    {
+      "name": "name",
+      "desc": "唯一标志符",
+      "type": "string/number",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "title",
+      "desc": "面板标题",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "disabled",
+      "desc": "是否禁用",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [],
+  "events": [],
+  "methods": []
+}

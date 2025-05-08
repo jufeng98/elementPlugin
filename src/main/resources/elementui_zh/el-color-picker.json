@@ -1,0 +1,95 @@
+{
+  "name": "el-color-picker",
+  "attributes": [
+    {
+      "name": "value",
+      "desc": "绑定值",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "v-model",
+      "desc": "绑定值",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "disabled",
+      "desc": "是否禁用",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "size",
+      "desc": "尺寸",
+      "type": "string",
+      "optionValue": "medium / small / mini",
+      "options": [
+        "medium",
+        "small",
+        "mini"
+      ],
+      "defaultValue": "—"
+    },
+    {
+      "name": "show-alpha",
+      "desc": "是否支持透明度选择",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "color-format",
+      "desc": "写入 v-model 的颜色的格式",
+      "type": "string",
+      "optionValue": "hsl / hsv / hex / rgb",
+      "options": [
+        "hsl",
+        "hsv",
+        "hex",
+        "rgb"
+      ],
+      "defaultValue": "hex（show-alpha 为 false）/ rgb（show-alpha 为 true）"
+    },
+    {
+      "name": "popper-class",
+      "desc": "ColorPicker 下拉框的类名",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "predefine",
+      "desc": "预定义颜色",
+      "type": "array",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [],
+  "events": [
+    {
+      "name": "@change",
+      "desc": "当绑定值变化时触发",
+      "param": "当前值"
+    },
+    {
+      "name": "@active-change",
+      "desc": "面板中当前显示的颜色发生改变时触发",
+      "param": "当前显示的颜色值"
+    }
+  ],
+  "methods": []
+}

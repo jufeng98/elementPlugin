@@ -1,0 +1,28 @@
+{
+  "name": "el-timeline",
+  "attributes": [
+    {
+      "name": "reverse",
+      "desc": "指定节点排序方向，默认为正序",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "—",
+      "desc": "Timeline-Item 的内容"
+    },
+    {
+      "name": "dot",
+      "desc": "自定义节点"
+    }
+  ],
+  "events": [],
+  "methods": []
+}

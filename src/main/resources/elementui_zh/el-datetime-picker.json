@@ -1,0 +1,288 @@
+{
+  "name": "el-datetime-picker",
+  "attributes": [
+    {
+      "name": "value",
+      "desc": "绑定值",
+      "type": "date(DateTimePicker) / array(DateTimeRangePicker)",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "v-model",
+      "desc": "绑定值",
+      "type": "date(DateTimePicker) / array(DateTimeRangePicker)",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "readonly",
+      "desc": "完全只读",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "disabled",
+      "desc": "禁用",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "editable",
+      "desc": "文本框可输入",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "clearable",
+      "desc": "是否显示清除按钮",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "size",
+      "desc": "输入框尺寸",
+      "type": "string",
+      "optionValue": "large, small, mini",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "placeholder",
+      "desc": "非范围选择时的占位内容",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "start-placeholder",
+      "desc": "范围选择时开始日期的占位内容",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "end-placeholder",
+      "desc": "范围选择时结束日期的占位内容",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "time-arrow-control",
+      "desc": "是否使用箭头进行时间选择",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "type",
+      "desc": "显示类型",
+      "type": "string",
+      "optionValue": "year/month/date/week/ datetime/datetimerange/daterange",
+      "options": [
+        "year",
+        "month",
+        "date",
+        "week",
+        "datetime",
+        "datetimerange",
+        "daterange"
+      ],
+      "defaultValue": "date"
+    },
+    {
+      "name": "format",
+      "desc": "显示在输入框中的格式",
+      "type": "string",
+      "optionValue": "<p>见<a href=\"#/zh-CN/component/date-picker#ri-qi-ge-shi\">日期格式</a></p>",
+      "options": [],
+      "defaultValue": "yyyy-MM-dd HH:mm:ss"
+    },
+    {
+      "name": "align",
+      "desc": "对齐方式",
+      "type": "string",
+      "optionValue": "left, center, right",
+      "options": [],
+      "defaultValue": "left"
+    },
+    {
+      "name": "popper-class",
+      "desc": "DateTimePicker 下拉框的类名",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "picker-options",
+      "desc": "当前时间日期选择器特有的选项参考下表",
+      "type": "object",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "{}"
+    },
+    {
+      "name": "range-separator",
+      "desc": "选择范围时的分隔符",
+      "type": "string",
+      "optionValue": "-",
+      "options": [],
+      "defaultValue": "'-'"
+    },
+    {
+      "name": "default-value",
+      "desc": "可选，选择器打开时默认显示的时间",
+      "type": "Date",
+      "optionValue": "可被`new Date()`解析",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "default-time",
+      "desc": "选中日期后的默认具体时刻",
+      "type": "非范围选择时：string / 范围选择时：string[]",
+      "optionValue": "非范围选择时：形如`12:00:00`的字符串；范围选择时：数组，长度为 2，每项值为字符串，形如`12:00:00`，第一项指定开始日期的时刻，第二项指定结束日期的时刻。不指定会使用时刻 `00:00:00`",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "value-format",
+      "desc": "可选，绑定值的格式。不指定则绑定值为 Date 对象",
+      "type": "string",
+      "optionValue": "<p>见<a href=\"#/zh-CN/component/date-picker#ri-qi-ge-shi\">日期格式</a></p>",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "name",
+      "desc": "原生属性",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "unlink-panels",
+      "desc": "在范围选择器里取消两个日期面板之间的联动",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "prefix-icon",
+      "desc": "自定义头部图标的类名",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "el-icon-date"
+    },
+    {
+      "name": "clear-icon",
+      "desc": "自定义清空图标的类名",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "el-icon-circle-close"
+    }
+  ],
+  "props": [],
+  "options": [
+    {
+      "name": "shortcuts",
+      "desc": "设置快捷选项，需要传入 { text, onClick } 对象用法参考 demo 或下表",
+      "type": "Object[]",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "disabledDate",
+      "desc": "设置禁用状态，参数为当前日期，要求返回 Boolean",
+      "type": "Function",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "cellClassName",
+      "desc": "设置日期的 className",
+      "type": "Function(Date)",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "firstDayOfWeek",
+      "desc": "周起始日",
+      "type": "Number",
+      "optionValue": "1 到 7",
+      "options": [],
+      "defaultValue": "7"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "text",
+      "desc": "标题文本",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "onClick",
+      "desc": "选中后的回调函数，参数是 vm，可通过触发 'pick' 事件设置选择器的值。例如 vm.$emit('pick', new Date())",
+      "type": "function",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    }
+  ],
+  "slots": [
+    {
+      "name": "range-separator",
+      "desc": "自定义分隔符"
+    }
+  ],
+  "events": [
+    {
+      "name": "@change",
+      "desc": "用户确认选定的值时触发",
+      "param": "组件绑定值。格式与绑定值一致，可受 `value-format` 控制"
+    },
+    {
+      "name": "@blur",
+      "desc": "当 input 失去焦点时触发",
+      "param": "组件实例"
+    },
+    {
+      "name": "@focus",
+      "desc": "当 input 获得焦点时触发",
+      "param": "组件实例"
+    }
+  ],
+  "methods": [
+    {
+      "name": "focus",
+      "desc": "使 input 获取焦点",
+      "param": "—"
+    }
+  ]
+}

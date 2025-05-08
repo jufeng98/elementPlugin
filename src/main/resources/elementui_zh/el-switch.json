@@ -1,0 +1,135 @@
+{
+  "name": "el-switch",
+  "attributes": [
+    {
+      "name": "value",
+      "desc": "绑定值",
+      "type": "boolean / string / number",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "v-model",
+      "desc": "绑定值",
+      "type": "boolean / string / number",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "disabled",
+      "desc": "是否禁用",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "width",
+      "desc": "switch 的宽度（像素）",
+      "type": "number",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "40"
+    },
+    {
+      "name": "active-icon-class",
+      "desc": "switch 打开时所显示图标的类名，设置此项会忽略 `active-text`",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "inactive-icon-class",
+      "desc": "switch 关闭时所显示图标的类名，设置此项会忽略 `inactive-text`",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "active-text",
+      "desc": "switch 打开时的文字描述",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "inactive-text",
+      "desc": "switch 关闭时的文字描述",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "active-value",
+      "desc": "switch 打开时的值",
+      "type": "boolean / string / number",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "inactive-value",
+      "desc": "switch 关闭时的值",
+      "type": "boolean / string / number",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "active-color",
+      "desc": "switch 打开时的背景色",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "#409EFF"
+    },
+    {
+      "name": "inactive-color",
+      "desc": "switch 关闭时的背景色",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "#C0CCDA"
+    },
+    {
+      "name": "name",
+      "desc": "switch 对应的 name 属性",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "validate-event",
+      "desc": "改变 switch 状态时是否触发表单的校验",
+      "type": "boolean",
+      "optionValue": "-",
+      "options": [],
+      "defaultValue": "true"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [],
+  "events": [
+    {
+      "name": "@change",
+      "desc": "switch 状态发生变化时的回调函数",
+      "param": "新状态的值"
+    }
+  ],
+  "methods": [
+    {
+      "name": "focus",
+      "desc": "使 Switch 获取焦点",
+      "param": "-"
+    }
+  ]
+}

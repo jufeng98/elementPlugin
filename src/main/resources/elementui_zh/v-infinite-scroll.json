@@ -1,0 +1,43 @@
+{
+  "name": "v-infinite-scroll",
+  "attributes": [
+    {
+      "name": "infinite-scroll-disabled",
+      "desc": "是否禁用",
+      "type": "boolean",
+      "optionValue": "-",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "infinite-scroll-delay",
+      "desc": "节流时延，单位为ms",
+      "type": "number",
+      "optionValue": "-",
+      "options": [],
+      "defaultValue": "200"
+    },
+    {
+      "name": "infinite-scroll-distance",
+      "desc": "触发加载的距离阈值，单位为px",
+      "type": "number",
+      "optionValue": "-",
+      "options": [],
+      "defaultValue": "0"
+    },
+    {
+      "name": "infinite-scroll-immediate",
+      "desc": "是否立即执行加载方法，以防初始状态下内容无法撑满容器。",
+      "type": "boolean",
+      "optionValue": "-",
+      "options": [],
+      "defaultValue": "true"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [],
+  "events": [],
+  "methods": []
+}

@@ -1,0 +1,48 @@
+{
+  "name": "el-empty",
+  "attributes": [
+    {
+      "name": "image",
+      "desc": "图片地址",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "image-size",
+      "desc": "图片大小（宽度）",
+      "type": "number",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "description",
+      "desc": "文本描述",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "default",
+      "desc": "自定义底部内容"
+    },
+    {
+      "name": "image",
+      "desc": "自定义图片"
+    },
+    {
+      "name": "description",
+      "desc": "自定义描述文字"
+    }
+  ],
+  "events": [],
+  "methods": []
+}

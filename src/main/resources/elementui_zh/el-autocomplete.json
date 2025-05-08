@@ -1,0 +1,176 @@
+{
+  "name": "el-autocomplete",
+  "attributes": [
+    {
+      "name": "placeholder",
+      "desc": "输入框占位文本",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "disabled",
+      "desc": "禁用",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "value-key",
+      "desc": "输入建议对象中用于显示的键名",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "value"
+    },
+    {
+      "name": "value",
+      "desc": "必填值，输入绑定值",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "debounce",
+      "desc": "获取输入建议的去抖延时",
+      "type": "number",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "300"
+    },
+    {
+      "name": "placement",
+      "desc": "菜单弹出位置",
+      "type": "string",
+      "optionValue": "top / top-start / top-end / bottom / bottom-start / bottom-end",
+      "options": [
+        "top",
+        "top-start",
+        "top-end",
+        "bottom",
+        "bottom-start",
+        "bottom-end"
+      ],
+      "defaultValue": "bottom-start"
+    },
+    {
+      "name": "fetch-suggestions",
+      "desc": "返回输入建议的方法，仅当你的输入建议数据 resolve 时，通过调用 callback(data:[]) 来返回它",
+      "type": "Function(queryString, callback)",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "popper-class",
+      "desc": "Autocomplete 下拉列表的类名",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "trigger-on-focus",
+      "desc": "是否在输入框 focus 时显示建议列表",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "name",
+      "desc": "原生属性",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "select-when-unmatched",
+      "desc": "在输入没有任何匹配建议的情况下，按下回车是否触发 `select` 事件",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "label",
+      "desc": "输入框关联的label文字",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "prefix-icon",
+      "desc": "输入框头部图标",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "suffix-icon",
+      "desc": "输入框尾部图标",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "hide-loading",
+      "desc": "是否隐藏远程加载时的加载图标",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "popper-append-to-body",
+      "desc": "是否将下拉列表插入至 body 元素。在下拉列表的定位出现问题时，可将该属性设置为 false",
+      "type": "boolean",
+      "optionValue": "-",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "highlight-first-item",
+      "desc": "是否默认突出显示远程搜索建议中的第一项",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "—",
+      "desc": "自定义输入建议，参数为 { item }"
+    }
+  ],
+  "events": [
+    {
+      "name": "@select",
+      "desc": "点击选中建议项时触发",
+      "param": "选中建议项"
+    },
+    {
+      "name": "@change",
+      "desc": "在 Input 值改变时触发",
+      "param": "(value: string \\| number)"
+    }
+  ],
+  "methods": [
+    {
+      "name": "focus",
+      "desc": "使 input 获取焦点",
+      "param": "-"
+    }
+  ]
+}

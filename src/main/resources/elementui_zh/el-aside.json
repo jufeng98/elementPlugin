@@ -1,0 +1,19 @@
+{
+  "name": "el-aside",
+  "attributes": [
+    {
+      "name": "width",
+      "desc": "侧边栏宽度",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "300px"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [],
+  "events": [],
+  "methods": []
+}

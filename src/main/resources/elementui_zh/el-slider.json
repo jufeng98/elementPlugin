@@ -1,0 +1,179 @@
+{
+  "name": "el-slider",
+  "attributes": [
+    {
+      "name": "value",
+      "desc": "绑定值",
+      "type": "number",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "0"
+    },
+    {
+      "name": "v-model",
+      "desc": "绑定值",
+      "type": "number",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "0"
+    },
+    {
+      "name": "min",
+      "desc": "最小值",
+      "type": "number",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "0"
+    },
+    {
+      "name": "max",
+      "desc": "最大值",
+      "type": "number",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "100"
+    },
+    {
+      "name": "disabled",
+      "desc": "是否禁用",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "step",
+      "desc": "步长",
+      "type": "number",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "1"
+    },
+    {
+      "name": "show-input",
+      "desc": "是否显示输入框，仅在非范围选择时有效",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "show-input-controls",
+      "desc": "在显示输入框的情况下，是否显示输入框的控制按钮",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "input-size",
+      "desc": "输入框的尺寸",
+      "type": "string",
+      "optionValue": "large / medium / small / mini",
+      "options": [
+        "large",
+        "medium",
+        "small",
+        "mini"
+      ],
+      "defaultValue": "small"
+    },
+    {
+      "name": "show-stops",
+      "desc": "是否显示间断点",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "show-tooltip",
+      "desc": "是否显示 tooltip",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "format-tooltip",
+      "desc": "格式化 tooltip message",
+      "type": "function(value)",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "range",
+      "desc": "是否为范围选择",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "vertical",
+      "desc": "是否竖向模式",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "height",
+      "desc": "Slider 高度，竖向模式时必填",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "label",
+      "desc": "屏幕阅读器标签",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "debounce",
+      "desc": "输入时的去抖延迟，毫秒，仅在`show-input`等于true时有效",
+      "type": "number",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "300"
+    },
+    {
+      "name": "tooltip-class",
+      "desc": "tooltip 的自定义类名",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "marks",
+      "desc": "标记， key 的类型必须为 number 且取值在闭区间 `[min, max]` 内，每个标记可以单独设置样式",
+      "type": "object",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [],
+  "events": [
+    {
+      "name": "@change",
+      "desc": "值改变时触发（使用鼠标拖曳时，只在松开鼠标后触发）",
+      "param": "改变后的值"
+    },
+    {
+      "name": "@input",
+      "desc": "数据改变时触发（使用鼠标拖曳时，活动过程实时触发）",
+      "param": "改变后的值"
+    }
+  ],
+  "methods": []
+}

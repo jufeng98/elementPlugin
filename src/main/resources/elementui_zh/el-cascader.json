@@ -1,0 +1,281 @@
+{
+  "name": "el-cascader",
+  "attributes": [
+    {
+      "name": "value",
+      "desc": "选中项绑定值",
+      "type": "-",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "v-model",
+      "desc": "选中项绑定值",
+      "type": "-",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "options",
+      "desc": "可选项数据源，键名可通过 `Props` 属性配置",
+      "type": "array",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "props",
+      "desc": "配置选项，具体见下表",
+      "type": "object",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "size",
+      "desc": "尺寸",
+      "type": "string",
+      "optionValue": "medium / small / mini",
+      "options": [
+        "medium",
+        "small",
+        "mini"
+      ],
+      "defaultValue": "—"
+    },
+    {
+      "name": "placeholder",
+      "desc": "输入框占位文本",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "请选择"
+    },
+    {
+      "name": "disabled",
+      "desc": "是否禁用",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "clearable",
+      "desc": "是否支持清空选项",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "show-all-levels",
+      "desc": "输入框中是否显示选中值的完整路径",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "collapse-tags",
+      "desc": "多选模式下是否折叠Tag",
+      "type": "boolean",
+      "optionValue": "-",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "separator",
+      "desc": "选项分隔符",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "斜杠' / '"
+    },
+    {
+      "name": "filterable",
+      "desc": "是否可搜索选项",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "filter-method",
+      "desc": "自定义搜索逻辑，第一个参数是节点`node`，第二个参数是搜索关键词`keyword`，通过返回布尔值表示是否命中",
+      "type": "function(node, keyword)",
+      "optionValue": "-",
+      "options": [],
+      "defaultValue": "-"
+    },
+    {
+      "name": "debounce",
+      "desc": "搜索关键词输入的去抖延迟，毫秒",
+      "type": "number",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "300"
+    },
+    {
+      "name": "before-filter",
+      "desc": "筛选之前的钩子，参数为输入的值，若返回 false 或者返回 Promise 且被 reject，则停止筛选",
+      "type": "function(value)",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "popper-class",
+      "desc": "自定义浮层类名",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    }
+  ],
+  "props": [
+    {
+      "name": "expandTrigger",
+      "desc": "次级菜单的展开方式",
+      "type": "string",
+      "optionValue": "click / hover",
+      "options": [
+        "click",
+        "hover"
+      ],
+      "defaultValue": "'click'"
+    },
+    {
+      "name": "multiple",
+      "desc": "是否多选",
+      "type": "boolean",
+      "optionValue": "-",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "checkStrictly",
+      "desc": "是否严格的遵守父子节点不互相关联",
+      "type": "boolean",
+      "optionValue": "-",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "emitPath",
+      "desc": "在选中节点改变时，是否返回由该节点所在的各级菜单的值所组成的数组，若设置 false，则只返回该节点的值",
+      "type": "boolean",
+      "optionValue": "-",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "lazy",
+      "desc": "是否动态加载子节点，需与 lazyLoad 方法结合使用",
+      "type": "boolean",
+      "optionValue": "-",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "lazyLoad",
+      "desc": "加载动态数据的方法，仅在 lazy 为 true 时有效",
+      "type": "function(node, resolve)，`node`为当前点击的节点，`resolve`为数据加载完成的回调(必须调用)",
+      "optionValue": "-",
+      "options": [],
+      "defaultValue": "-"
+    },
+    {
+      "name": "value",
+      "desc": "指定选项的值为选项对象的某个属性值",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "'value'"
+    },
+    {
+      "name": "label",
+      "desc": "指定选项标签为选项对象的某个属性值",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "'label'"
+    },
+    {
+      "name": "children",
+      "desc": "指定选项的子选项为选项对象的某个属性值",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "'children'"
+    },
+    {
+      "name": "disabled",
+      "desc": "指定选项的禁用为选项对象的某个属性值",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "'disabled'"
+    },
+    {
+      "name": "leaf",
+      "desc": "指定选项的叶子节点的标志位为选项对象的某个属性值",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "'leaf'"
+    }
+  ],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "-",
+      "desc": "自定义备选项的节点内容，参数为 { node, data }，分别为当前节点的 Node 对象和数据"
+    },
+    {
+      "name": "empty",
+      "desc": "无匹配选项时的内容"
+    }
+  ],
+  "events": [
+    {
+      "name": "@change",
+      "desc": "当选中节点变化时触发",
+      "param": "选中节点的值"
+    },
+    {
+      "name": "@expand-change",
+      "desc": "当展开节点发生变化时触发",
+      "param": "各父级选项值组成的数组"
+    },
+    {
+      "name": "@blur",
+      "desc": "当失去焦点时触发",
+      "param": "(event: Event)"
+    },
+    {
+      "name": "@focus",
+      "desc": "当获得焦点时触发",
+      "param": "(event: Event)"
+    },
+    {
+      "name": "@visible-change",
+      "desc": "下拉框出现/隐藏时触发",
+      "param": "出现则为 true，隐藏则为 false"
+    },
+    {
+      "name": "@remove-tag",
+      "desc": "在多选模式下，移除Tag时触发",
+      "param": "移除的Tag对应的节点的值"
+    }
+  ],
+  "methods": [
+    {
+      "name": "getCheckedNodes",
+      "desc": "获取选中的节点",
+      "param": "(leafOnly) 是否只是叶子节点，默认值为 `false`"
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "name": "el-tag",
+  "attributes": [
+    {
+      "name": "type",
+      "desc": "类型",
+      "type": "string",
+      "optionValue": "success/info/warning/danger",
+      "options": [
+        "success",
+        "info",
+        "warning",
+        "danger"
+      ],
+      "defaultValue": "—"
+    },
+    {
+      "name": "closable",
+      "desc": "是否可关闭",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "disable-transitions",
+      "desc": "是否禁用渐变动画",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "hit",
+      "desc": "是否有边框描边",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "color",
+      "desc": "背景色",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "size",
+      "desc": "尺寸",
+      "type": "string",
+      "optionValue": "medium / small / mini",
+      "options": [
+        "medium",
+        "small",
+        "mini"
+      ],
+      "defaultValue": "—"
+    },
+    {
+      "name": "effect",
+      "desc": "主题",
+      "type": "string",
+      "optionValue": "dark / light / plain",
+      "options": [
+        "dark",
+        "light",
+        "plain"
+      ],
+      "defaultValue": "light"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [],
+  "events": [
+    {
+      "name": "@click",
+      "desc": "点击 Tag 时触发的事件",
+      "param": "—"
+    },
+    {
+      "name": "@close",
+      "desc": "关闭 Tag 时触发的事件",
+      "param": "—"
+    }
+  ],
+  "methods": []
+}

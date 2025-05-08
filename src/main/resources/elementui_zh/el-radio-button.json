@@ -1,0 +1,35 @@
+{
+  "name": "el-radio-button",
+  "attributes": [
+    {
+      "name": "label",
+      "desc": "Radio 的 value",
+      "type": "string / number",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "disabled",
+      "desc": "是否禁用",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "name",
+      "desc": "原生 name 属性",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [],
+  "events": [],
+  "methods": []
+}

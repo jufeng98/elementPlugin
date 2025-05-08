@@ -1,0 +1,57 @@
+{
+  "name": "el-link",
+  "attributes": [
+    {
+      "name": "type",
+      "desc": "类型",
+      "type": "string",
+      "optionValue": "primary / success / warning / danger / info",
+      "options": [
+        "primary",
+        "success",
+        "warning",
+        "danger",
+        "info"
+      ],
+      "defaultValue": "default"
+    },
+    {
+      "name": "underline",
+      "desc": "是否下划线",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "disabled",
+      "desc": "是否禁用状态",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "href",
+      "desc": "原生 href 属性",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "-"
+    },
+    {
+      "name": "icon",
+      "desc": "图标类名",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "-"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [],
+  "events": [],
+  "methods": []
+}

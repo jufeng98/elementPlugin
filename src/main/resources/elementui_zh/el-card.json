@@ -1,0 +1,39 @@
+{
+  "name": "el-card",
+  "attributes": [
+    {
+      "name": "header",
+      "desc": "设置 header，也可以通过 `slot#header` 传入 DOM",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "body-style",
+      "desc": "设置 body 的样式",
+      "type": "object",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "{ padding: '20px' }"
+    },
+    {
+      "name": "shadow",
+      "desc": "设置阴影显示时机",
+      "type": "string",
+      "optionValue": "always / hover / never",
+      "options": [
+        "always",
+        "hover",
+        "never"
+      ],
+      "defaultValue": "always"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [],
+  "events": [],
+  "methods": []
+}

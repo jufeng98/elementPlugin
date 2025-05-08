@@ -1,0 +1,59 @@
+{
+  "name": "el-submenu",
+  "attributes": [
+    {
+      "name": "index",
+      "desc": "唯一标志",
+      "type": "string/null",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "null"
+    },
+    {
+      "name": "popper-class",
+      "desc": "弹出菜单的自定义类名",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "show-timeout",
+      "desc": "展开 sub-menu 的延时",
+      "type": "number",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "300"
+    },
+    {
+      "name": "hide-timeout",
+      "desc": "收起 sub-menu 的延时",
+      "type": "number",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "300"
+    },
+    {
+      "name": "disabled",
+      "desc": "是否禁用",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "popper-append-to-body",
+      "desc": "是否将弹出菜单插入至 body 元素。在菜单的定位出现问题时，可尝试修改该属性",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "一级子菜单：true / 非一级子菜单：false"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [],
+  "events": [],
+  "methods": []
+}

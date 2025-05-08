@@ -1,0 +1,69 @@
+{
+  "name": "el-radio-group",
+  "attributes": [
+    {
+      "name": "value",
+      "desc": "绑定值",
+      "type": "string / number / boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "v-model",
+      "desc": "绑定值",
+      "type": "string / number / boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "size",
+      "desc": "单选框组尺寸，仅对按钮形式的 Radio 或带有边框的 Radio 有效",
+      "type": "string",
+      "optionValue": "medium / small / mini",
+      "options": [
+        "medium",
+        "small",
+        "mini"
+      ],
+      "defaultValue": "—"
+    },
+    {
+      "name": "disabled",
+      "desc": "是否禁用",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "text-color",
+      "desc": "按钮形式的 Radio 激活时的文本颜色",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "#ffffff"
+    },
+    {
+      "name": "fill",
+      "desc": "按钮形式的 Radio 激活时的填充色和边框色",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "#409EFF"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [],
+  "events": [
+    {
+      "name": "@input",
+      "desc": "绑定值变化时触发的事件",
+      "param": "选中的 Radio label 值"
+    }
+  ],
+  "methods": []
+}

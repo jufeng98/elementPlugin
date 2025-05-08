@@ -1,0 +1,77 @@
+{
+  "name": "el-radio",
+  "attributes": [
+    {
+      "name": "value",
+      "desc": "绑定值",
+      "type": "string / number / boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "v-model",
+      "desc": "绑定值",
+      "type": "string / number / boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "label",
+      "desc": "Radio 的 value",
+      "type": "string / number / boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "disabled",
+      "desc": "是否禁用",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "border",
+      "desc": "是否显示边框",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "size",
+      "desc": "Radio 的尺寸，仅在 border 为真时有效",
+      "type": "string",
+      "optionValue": "medium / small / mini",
+      "options": [
+        "medium",
+        "small",
+        "mini"
+      ],
+      "defaultValue": "—"
+    },
+    {
+      "name": "name",
+      "desc": "原生 name 属性",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [],
+  "events": [
+    {
+      "name": "@input",
+      "desc": "绑定值变化时触发的事件",
+      "param": "选中的 Radio label 值"
+    }
+  ],
+  "methods": []
+}

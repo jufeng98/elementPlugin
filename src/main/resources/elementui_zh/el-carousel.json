@@ -1,0 +1,123 @@
+{
+  "name": "el-carousel",
+  "attributes": [
+    {
+      "name": "height",
+      "desc": "走马灯的高度",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "initial-index",
+      "desc": "初始状态激活的幻灯片的索引，从 0 开始",
+      "type": "number",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "0"
+    },
+    {
+      "name": "trigger",
+      "desc": "指示器的触发方式",
+      "type": "string",
+      "optionValue": "click",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "autoplay",
+      "desc": "是否自动切换",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "interval",
+      "desc": "自动切换的时间间隔，单位为毫秒",
+      "type": "number",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "3000"
+    },
+    {
+      "name": "indicator-position",
+      "desc": "指示器的位置",
+      "type": "string",
+      "optionValue": "outside/none",
+      "options": [
+        "outside",
+        "none"
+      ],
+      "defaultValue": "—"
+    },
+    {
+      "name": "arrow",
+      "desc": "切换箭头的显示时机",
+      "type": "string",
+      "optionValue": "always/hover/never",
+      "options": [
+        "always",
+        "hover",
+        "never"
+      ],
+      "defaultValue": "hover"
+    },
+    {
+      "name": "type",
+      "desc": "走马灯的类型",
+      "type": "string",
+      "optionValue": "card",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "loop",
+      "desc": "是否循环显示",
+      "type": "boolean",
+      "optionValue": "-",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "direction",
+      "desc": "走马灯展示的方向",
+      "type": "string",
+      "optionValue": "horizontal/vertical",
+      "options": [
+        "horizontal",
+        "vertical"
+      ],
+      "defaultValue": "horizontal"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [],
+  "events": [
+    {
+      "name": "@change",
+      "desc": "幻灯片切换时触发",
+      "param": "目前激活的幻灯片的索引，原幻灯片的索引"
+    }
+  ],
+  "methods": [
+    {
+      "name": "setActiveItem",
+      "desc": "手动切换幻灯片",
+      "param": "需要切换的幻灯片的索引，从 0 开始；或相应 `el-carousel-item` 的 `name` 属性值"
+    },
+    {
+      "name": "prev",
+      "desc": "切换至上一张幻灯片",
+      "param": "—"
+    },
+    {
+      "name": "next",
+      "desc": "切换至下一张幻灯片",
+      "param": "—"
+    }
+  ]
+}

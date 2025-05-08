@@ -1,0 +1,150 @@
+{
+  "name": "el-form",
+  "attributes": [
+    {
+      "name": "model",
+      "desc": "表单数据对象",
+      "type": "object",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "rules",
+      "desc": "表单验证规则",
+      "type": "object",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "inline",
+      "desc": "行内表单模式",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "label-position",
+      "desc": "表单域标签的位置，如果值为 left 或者 right 时，则需要设置 `label-width`",
+      "type": "string",
+      "optionValue": "right/left/top",
+      "options": [
+        "right",
+        "left",
+        "top"
+      ],
+      "defaultValue": "right"
+    },
+    {
+      "name": "label-width",
+      "desc": "表单域标签的宽度，例如 '50px'。作为 Form 直接子元素的 form-item 会继承该值。支持 `auto`。",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "label-suffix",
+      "desc": "表单域标签的后缀",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "hide-required-asterisk",
+      "desc": "是否隐藏必填字段的标签旁边的红色星号",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "show-message",
+      "desc": "是否显示校验错误信息",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "inline-message",
+      "desc": "是否以行内形式展示校验信息",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "status-icon",
+      "desc": "是否在输入框中显示校验结果反馈图标",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "validate-on-rule-change",
+      "desc": "是否在 `rules` 属性改变后立即触发一次验证",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "size",
+      "desc": "用于控制该表单内组件的尺寸",
+      "type": "string",
+      "optionValue": "medium / small / mini",
+      "options": [
+        "medium",
+        "small",
+        "mini"
+      ],
+      "defaultValue": "—"
+    },
+    {
+      "name": "disabled",
+      "desc": "是否禁用该表单内的所有组件。若设置为 true，则表单内组件上的 disabled 属性不再生效",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [],
+  "events": [
+    {
+      "name": "@validate",
+      "desc": "任一表单项被校验后触发",
+      "param": "被校验的表单项 prop 值，校验是否通过，错误消息（如果存在）"
+    }
+  ],
+  "methods": [
+    {
+      "name": "validate",
+      "desc": "对整个表单进行校验的方法，参数为一个回调函数。该回调函数会在校验结束后被调用，并传入两个参数：是否校验成功和未通过校验的字段。若不传入回调函数，则会返回一个 promise",
+      "param": "Function(callback: Function(boolean, object))"
+    },
+    {
+      "name": "validateField",
+      "desc": "对部分表单字段进行校验的方法",
+      "param": "Function(props: array \\| string, callback: Function(errorMessage: string))"
+    },
+    {
+      "name": "resetFields",
+      "desc": "对整个表单进行重置，将所有字段值重置为初始值并移除校验结果",
+      "param": "—"
+    },
+    {
+      "name": "clearValidate",
+      "desc": "移除表单项的校验结果。传入待移除的表单项的 prop 属性或者 prop 组成的数组，如不传则移除整个表单的校验结果",
+      "param": "Function(props: array \\| string)"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "name": "el-breadcrumb",
+  "attributes": [
+    {
+      "name": "separator",
+      "desc": "分隔符",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "斜杠'/'"
+    },
+    {
+      "name": "separator-class",
+      "desc": "图标分隔符 class",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "-"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [],
+  "events": [],
+  "methods": []
+}

@@ -1,0 +1,91 @@
+{
+  "name": "el-col",
+  "attributes": [
+    {
+      "name": "span",
+      "desc": "栅格占据的列数",
+      "type": "number",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "24"
+    },
+    {
+      "name": "offset",
+      "desc": "栅格左侧的间隔格数",
+      "type": "number",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "0"
+    },
+    {
+      "name": "push",
+      "desc": "栅格向右移动格数",
+      "type": "number",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "0"
+    },
+    {
+      "name": "pull",
+      "desc": "栅格向左移动格数",
+      "type": "number",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "0"
+    },
+    {
+      "name": "xs",
+      "desc": "`<768px` 响应式栅格数或者栅格属性对象",
+      "type": "number/object (例如： {span: 4, offset: 4})",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "sm",
+      "desc": "`≥768px` 响应式栅格数或者栅格属性对象",
+      "type": "number/object (例如： {span: 4, offset: 4})",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "md",
+      "desc": "`≥992px` 响应式栅格数或者栅格属性对象",
+      "type": "number/object (例如： {span: 4, offset: 4})",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "lg",
+      "desc": "`≥1200px` 响应式栅格数或者栅格属性对象",
+      "type": "number/object (例如： {span: 4, offset: 4})",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "xl",
+      "desc": "`≥1920px` 响应式栅格数或者栅格属性对象",
+      "type": "number/object (例如： {span: 4, offset: 4})",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "tag",
+      "desc": "自定义元素标签",
+      "type": "string",
+      "optionValue": "*",
+      "options": [],
+      "defaultValue": "div"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [],
+  "events": [],
+  "methods": []
+}

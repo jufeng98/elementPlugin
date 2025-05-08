@@ -1,0 +1,248 @@
+{
+  "name": "el-message-box",
+  "attributes": [],
+  "props": [],
+  "options": [
+    {
+      "name": "title",
+      "desc": "MessageBox 标题",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "message",
+      "desc": "MessageBox 消息正文内容",
+      "type": "string / VNode",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "dangerouslyUseHTMLString",
+      "desc": "是否将 message 属性作为 HTML 片段处理",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "type",
+      "desc": "消息类型，用于显示图标",
+      "type": "string",
+      "optionValue": "success / info / warning / error",
+      "options": [
+        "success",
+        "info",
+        "warning",
+        "error"
+      ],
+      "defaultValue": "—"
+    },
+    {
+      "name": "iconClass",
+      "desc": "自定义图标的类名，会覆盖 `type`",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "customClass",
+      "desc": "MessageBox 的自定义类名",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "callback",
+      "desc": "若不使用 Promise，可以使用此参数指定 MessageBox 关闭后的回调",
+      "type": "function(action, instance)，action 的值为'confirm', 'cancel'或'close', instance 为 MessageBox 实例，可以通过它访问实例上的属性和方法",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "showClose",
+      "desc": "MessageBox 是否显示右上角关闭按钮",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "beforeClose",
+      "desc": "MessageBox 关闭前的回调，会暂停实例的关闭",
+      "type": "function(action, instance, done)，action 的值为'confirm', 'cancel'或'close'；instance 为 MessageBox 实例，可以通过它访问实例上的属性和方法；done 用于关闭 MessageBox 实例",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "distinguishCancelAndClose",
+      "desc": "是否将取消（点击取消按钮）与关闭（点击关闭按钮或遮罩层、按下 ESC 键）进行区分",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "lockScroll",
+      "desc": "是否在 MessageBox 出现时将 body 滚动锁定",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "showCancelButton",
+      "desc": "是否显示取消按钮",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false（以 confirm 和 prompt 方式调用时为 true）"
+    },
+    {
+      "name": "showConfirmButton",
+      "desc": "是否显示确定按钮",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "cancelButtonText",
+      "desc": "取消按钮的文本内容",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "取消"
+    },
+    {
+      "name": "confirmButtonText",
+      "desc": "确定按钮的文本内容",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "确定"
+    },
+    {
+      "name": "cancelButtonClass",
+      "desc": "取消按钮的自定义类名",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "confirmButtonClass",
+      "desc": "确定按钮的自定义类名",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "closeOnClickModal",
+      "desc": "是否可通过点击遮罩关闭 MessageBox",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "true（以 alert 方式调用时为 false）"
+    },
+    {
+      "name": "closeOnPressEscape",
+      "desc": "是否可通过按下 ESC 键关闭 MessageBox",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "true（以 alert 方式调用时为 false）"
+    },
+    {
+      "name": "closeOnHashChange",
+      "desc": "是否在 hashchange 时关闭 MessageBox",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "showInput",
+      "desc": "是否显示输入框",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false（以 prompt 方式调用时为 true）"
+    },
+    {
+      "name": "inputPlaceholder",
+      "desc": "输入框的占位符",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "inputType",
+      "desc": "输入框的类型",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "text"
+    },
+    {
+      "name": "inputValue",
+      "desc": "输入框的初始文本",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "inputPattern",
+      "desc": "输入框的校验表达式",
+      "type": "regexp",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "inputValidator",
+      "desc": "输入框的校验函数。可以返回布尔值或字符串，若返回一个字符串, 则返回结果会被赋值给 inputErrorMessage",
+      "type": "function",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "inputErrorMessage",
+      "desc": "校验未通过时的提示文本",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "输入的数据不合法!"
+    },
+    {
+      "name": "center",
+      "desc": "是否居中布局",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "roundButton",
+      "desc": "是否使用圆角按钮",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    }
+  ],
+  "shortcuts": [],
+  "slots": [],
+  "events": [],
+  "methods": []
+}

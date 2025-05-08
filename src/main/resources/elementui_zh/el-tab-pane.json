@@ -1,0 +1,51 @@
+{
+  "name": "el-tab-pane",
+  "attributes": [
+    {
+      "name": "label",
+      "desc": "选项卡标题",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "disabled",
+      "desc": "是否禁用",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "name",
+      "desc": "与选项卡绑定值 value 对应的标识符，表示选项卡别名",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "该选项卡在选项卡列表中的顺序值，如第一个选项卡则为'1'"
+    },
+    {
+      "name": "closable",
+      "desc": "标签是否可关闭",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "lazy",
+      "desc": "标签是否延迟渲染",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [],
+  "events": [],
+  "methods": []
+}

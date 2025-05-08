@@ -1,0 +1,19 @@
+{
+  "name": "el-menu-item-group",
+  "attributes": [
+    {
+      "name": "title",
+      "desc": "分组标题",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [],
+  "events": [],
+  "methods": []
+}

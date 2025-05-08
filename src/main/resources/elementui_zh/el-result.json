@@ -1,0 +1,57 @@
+{
+  "name": "el-result",
+  "attributes": [
+    {
+      "name": "title",
+      "desc": "标题",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "sub-title",
+      "desc": "二级标题",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "icon",
+      "desc": "图标类型",
+      "type": "string",
+      "optionValue": "success / warning / info / error",
+      "options": [
+        "success",
+        "warning",
+        "info",
+        "error"
+      ],
+      "defaultValue": "info"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "icon",
+      "desc": "自定义图标"
+    },
+    {
+      "name": "title",
+      "desc": "自定义标题"
+    },
+    {
+      "name": "subTitle",
+      "desc": "自定义二级标题"
+    },
+    {
+      "name": "extra",
+      "desc": "自定义底部额外区域"
+    }
+  ],
+  "events": [],
+  "methods": []
+}

@@ -1,0 +1,98 @@
+{
+  "name": "el-alert",
+  "attributes": [
+    {
+      "name": "title",
+      "desc": "标题",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "type",
+      "desc": "主题",
+      "type": "string",
+      "optionValue": "success/warning/info/error",
+      "options": [
+        "success",
+        "warning",
+        "info",
+        "error"
+      ],
+      "defaultValue": "info"
+    },
+    {
+      "name": "description",
+      "desc": "辅助性文字。也可通过默认 slot 传入",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "closable",
+      "desc": "是否可关闭",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "center",
+      "desc": "文字是否居中",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "close-text",
+      "desc": "关闭按钮自定义文本",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "show-icon",
+      "desc": "是否显示图标",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "effect",
+      "desc": "选择提供的主题",
+      "type": "string",
+      "optionValue": "light/dark",
+      "options": [
+        "light",
+        "dark"
+      ],
+      "defaultValue": "light"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "—",
+      "desc": "描述"
+    },
+    {
+      "name": "title",
+      "desc": "标题的内容"
+    }
+  ],
+  "events": [
+    {
+      "name": "@close",
+      "desc": "关闭alert时触发的事件",
+      "param": "—"
+    }
+  ],
+  "methods": []
+}

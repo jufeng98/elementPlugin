@@ -1,0 +1,49 @@
+{
+  "name": "el-backtop",
+  "attributes": [
+    {
+      "name": "target",
+      "desc": "触发滚动的对象",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "visibility-height",
+      "desc": "滚动高度达到此参数值才出现",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "200"
+    },
+    {
+      "name": "right",
+      "desc": "控制其显示位置, 距离页面右边距",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "40"
+    },
+    {
+      "name": "bottom",
+      "desc": "控制其显示位置, 距离页面底部距离",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "40"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [],
+  "events": [
+    {
+      "name": "@click",
+      "desc": "点击按钮触发的事件",
+      "param": "点击事件"
+    }
+  ],
+  "methods": []
+}

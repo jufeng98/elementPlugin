@@ -1,0 +1,109 @@
+{
+  "name": "el-checkbox",
+  "attributes": [
+    {
+      "name": "value",
+      "desc": "绑定值",
+      "type": "string / number / boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "v-model",
+      "desc": "绑定值",
+      "type": "string / number / boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "label",
+      "desc": "选中状态的值（只有在`checkbox-group`或者绑定对象类型为`array`时有效）",
+      "type": "string / number / boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "true-label",
+      "desc": "选中时的值",
+      "type": "string / number",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "false-label",
+      "desc": "没有选中时的值",
+      "type": "string / number",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "disabled",
+      "desc": "是否禁用",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "border",
+      "desc": "是否显示边框",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "size",
+      "desc": "Checkbox 的尺寸，仅在 border 为真时有效",
+      "type": "string",
+      "optionValue": "medium / small / mini",
+      "options": [
+        "medium",
+        "small",
+        "mini"
+      ],
+      "defaultValue": "—"
+    },
+    {
+      "name": "name",
+      "desc": "原生 name 属性",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "checked",
+      "desc": "当前是否勾选",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "indeterminate",
+      "desc": "设置 indeterminate 状态，只负责样式控制",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [],
+  "events": [
+    {
+      "name": "@change",
+      "desc": "当绑定值变化时触发的事件",
+      "param": "更新后的值"
+    }
+  ],
+  "methods": []
+}

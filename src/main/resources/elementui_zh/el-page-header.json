@@ -1,0 +1,42 @@
+{
+  "name": "el-page-header",
+  "attributes": [
+    {
+      "name": "title",
+      "desc": "标题",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "返回"
+    },
+    {
+      "name": "content",
+      "desc": "内容",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "title",
+      "desc": "标题内容"
+    },
+    {
+      "name": "content",
+      "desc": "内容"
+    }
+  ],
+  "events": [
+    {
+      "name": "@back",
+      "desc": "点击左侧区域触发",
+      "param": "—"
+    }
+  ],
+  "methods": []
+}

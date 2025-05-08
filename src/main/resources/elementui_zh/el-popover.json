@@ -1,0 +1,187 @@
+{
+  "name": "el-popover",
+  "attributes": [
+    {
+      "name": "trigger",
+      "desc": "触发方式",
+      "type": "String",
+      "optionValue": "click/focus/hover/manual",
+      "options": [
+        "click",
+        "focus",
+        "hover",
+        "manual"
+      ],
+      "defaultValue": "click"
+    },
+    {
+      "name": "title",
+      "desc": "标题",
+      "type": "String",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "content",
+      "desc": "显示的内容，也可以通过 `slot` 传入 DOM",
+      "type": "String",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "width",
+      "desc": "宽度",
+      "type": "String, Number",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "最小宽度 150px"
+    },
+    {
+      "name": "placement",
+      "desc": "出现位置",
+      "type": "String",
+      "optionValue": "top/top-start/top-end/bottom/bottom-start/bottom-end/left/left-start/left-end/right/right-start/right-end",
+      "options": [
+        "top",
+        "top-start",
+        "top-end",
+        "bottom",
+        "bottom-start",
+        "bottom-end",
+        "left",
+        "left-start",
+        "left-end",
+        "right",
+        "right-start",
+        "right-end"
+      ],
+      "defaultValue": "bottom"
+    },
+    {
+      "name": "disabled",
+      "desc": "Popover 是否可用",
+      "type": "Boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "value",
+      "desc": "状态是否可见",
+      "type": "Boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "v-model",
+      "desc": "状态是否可见",
+      "type": "Boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "offset",
+      "desc": "出现位置的偏移量",
+      "type": "Number",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "0"
+    },
+    {
+      "name": "transition",
+      "desc": "定义渐变动画",
+      "type": "String",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "fade-in-linear"
+    },
+    {
+      "name": "visible-arrow",
+      "desc": "<p>是否显示 Tooltip 箭头，更多参数可见<a href=\"https://github.com/element-component/vue-popper\">Vue-popper</a></p>",
+      "type": "Boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "popper-options",
+      "desc": "[popper.js](https://popper.js.org/docs/v2/) 的参数",
+      "type": "Object",
+      "optionValue": "<p>参考 <a href=\"https://popper.js.org/docs/v2/\">popper.js</a> 文档</p>",
+      "options": [],
+      "defaultValue": "`{ boundariesElement: 'body', gpuAcceleration: false }`"
+    },
+    {
+      "name": "popper-class",
+      "desc": "为 popper 添加类名",
+      "type": "String",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "open-delay",
+      "desc": "触发方式为 hover 时的显示延迟，单位为毫秒",
+      "type": "Number",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "close-delay",
+      "desc": "触发方式为 hover 时的隐藏延迟，单位为毫秒",
+      "type": "number",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "200"
+    },
+    {
+      "name": "tabindex",
+      "desc": "<p>Popover 组件的 <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/tabindex\">tabindex</a></p>",
+      "type": "number",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "0"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "—",
+      "desc": "Popover 内嵌 HTML 文本"
+    },
+    {
+      "name": "reference",
+      "desc": "触发 Popover 显示的 HTML 元素"
+    }
+  ],
+  "events": [
+    {
+      "name": "@show",
+      "desc": "显示时触发",
+      "param": "—"
+    },
+    {
+      "name": "@after-enter",
+      "desc": "显示动画播放完毕后触发",
+      "param": "—"
+    },
+    {
+      "name": "@hide",
+      "desc": "隐藏时触发",
+      "param": "—"
+    },
+    {
+      "name": "@after-leave",
+      "desc": "隐藏动画播放完毕后触发",
+      "param": "—"
+    }
+  ],
+  "methods": []
+}

@@ -1,0 +1,119 @@
+{
+  "name": "el-progress",
+  "attributes": [
+    {
+      "name": "**percentage**",
+      "desc": "**百分比（必填）**",
+      "type": "number",
+      "optionValue": "0-100",
+      "options": [],
+      "defaultValue": "0"
+    },
+    {
+      "name": "type",
+      "desc": "进度条类型",
+      "type": "string",
+      "optionValue": "line/circle/dashboard",
+      "options": [
+        "line",
+        "circle",
+        "dashboard"
+      ],
+      "defaultValue": "line"
+    },
+    {
+      "name": "stroke-width",
+      "desc": "进度条的宽度，单位 px",
+      "type": "number",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "6"
+    },
+    {
+      "name": "text-inside",
+      "desc": "进度条显示文字内置在进度条内（只在 type=line 时可用）",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "status",
+      "desc": "进度条当前状态",
+      "type": "string",
+      "optionValue": "success/exception/warning",
+      "options": [
+        "success",
+        "exception",
+        "warning"
+      ],
+      "defaultValue": "—"
+    },
+    {
+      "name": "color",
+      "desc": "进度条背景色（会覆盖 status 状态颜色）",
+      "type": "string/function/array",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "''"
+    },
+    {
+      "name": "width",
+      "desc": "环形进度条画布宽度（只在 type 为 circle 或 dashboard 时可用）",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "126"
+    },
+    {
+      "name": "show-text",
+      "desc": "是否显示进度条文字内容",
+      "type": "boolean",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "stroke-linecap",
+      "desc": "circle/dashboard 类型路径两端的形状",
+      "type": "string",
+      "optionValue": "butt/round/square",
+      "options": [
+        "butt",
+        "round",
+        "square"
+      ],
+      "defaultValue": "round"
+    },
+    {
+      "name": "format",
+      "desc": "指定进度条文字内容",
+      "type": "function(percentage)",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "define-back-color",
+      "desc": "指定进度条底色（支持 hex 格式）",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "text-color",
+      "desc": "指定进度条字体颜色（支持 hex 格式）",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [],
+  "events": [],
+  "methods": []
+}

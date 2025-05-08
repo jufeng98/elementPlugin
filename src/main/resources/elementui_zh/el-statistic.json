@@ -1,0 +1,69 @@
+{
+  "name": "el-statistic",
+  "attributes": [
+    {
+      "name": "time-indices",
+      "desc": "是否开启倒计时功能",
+      "type": "boolean",
+      "optionValue": "true\\|false",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "value",
+      "desc": "必填值，输入绑定值",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "format",
+      "desc": "格式化倒计时展示",
+      "type": "string",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "'HH:mm:ss'"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "prefix",
+      "desc": "数值的前缀"
+    },
+    {
+      "name": "suffix",
+      "desc": "数值的后缀"
+    },
+    {
+      "name": "formatter",
+      "desc": "数值内容"
+    },
+    {
+      "name": "title",
+      "desc": "数值的标题"
+    }
+  ],
+  "events": [
+    {
+      "name": "@change",
+      "desc": "在`倒计时`的功能中开启",
+      "param": "(value: Date)"
+    },
+    {
+      "name": "@finish",
+      "desc": "在`倒计时` 完成后启动",
+      "param": "(value: boolean)"
+    }
+  ],
+  "methods": [
+    {
+      "name": "suspend",
+      "desc": "暂停倒计时",
+      "param": "(value:boolean)"
+    }
+  ]
+}

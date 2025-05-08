@@ -1,0 +1,52 @@
+{
+  "name": "el-calendar",
+  "attributes": [
+    {
+      "name": "value",
+      "desc": "绑定值",
+      "type": "Date/string/number",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "v-model",
+      "desc": "绑定值",
+      "type": "Date/string/number",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "range",
+      "desc": "时间范围，包括开始时间与结束时间。开始时间必须是周一，结束时间必须是周日，且时间跨度不能超过两个月。",
+      "type": "Array",
+      "optionValue": "—",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "first-day-of-week",
+      "desc": "周起始日",
+      "type": "Number",
+      "optionValue": "1 到 7",
+      "options": [],
+      "defaultValue": "1"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "date",
+      "desc": "单元格代表的日期"
+    },
+    {
+      "name": "data",
+      "desc": "{ type, isSelected, day}，`type` 表示该日期的所属月份，可选值有 prev-month，current-month，next-month；`isSelected` 标明该日期是否被选中；`day` 是格式化的日期，格式为 yyyy-MM-dd"
+    }
+  ],
+  "events": [],
+  "methods": []
+}
