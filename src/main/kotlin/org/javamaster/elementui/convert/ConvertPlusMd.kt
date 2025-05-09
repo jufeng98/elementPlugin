@@ -15,6 +15,7 @@ import java.io.File
 import java.lang.reflect.Method
 import java.nio.file.Files
 import java.nio.file.Paths
+import java.util.regex.Pattern
 
 /**
  * @author yudong
@@ -238,6 +239,18 @@ object ConvertPlusMd {
         Files.writeString(outFile.toPath(), gson.toJson(uiComponent))
     }
 
+    private val pattern = Pattern.compile("[a-zA-Z]+")
+
+    private fun extractAlpha(input: String): String {
+        val matcher = pattern.matcher(input)
+        val result = StringBuilder()
+        while (matcher.find()) {
+            result.append(matcher.group())
+        }
+
+        return result.toString()
+    }
+
     private fun initAttr(it: MarkdownTableRow, clz: Class<out ElementUIComponentAttr>): List<ElementUIComponentAttr> {
         val name = it.getCell(0)!!.text.trim()
 
@@ -245,7 +258,9 @@ object ConvertPlusMd {
 
         return names.map { innerIt ->
             val attr = clz.getDeclaredConstructor().newInstance()
-            attr.name = innerIt.trim()
+
+            attr.name = extractAlpha(innerIt)
+
             attr.desc = it.getCell(1)!!.text.trim().replace("`", "")
 
             val tmpStr = it.getCell(2)!!.text.trim()
