@@ -1,0 +1,108 @@
+{
+  "name": "el-space",
+  "attributes": [
+    {
+      "name": "alignment",
+      "desc": "对齐的方式",
+      "type": "enum",
+      "optionValue": "center | normal | stretch | ...",
+      "options": [
+        "center",
+        "normal",
+        "stretch",
+        "..."
+      ],
+      "defaultValue": "center"
+    },
+    {
+      "name": "class",
+      "desc": "className",
+      "type": "string / object / array",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "direction",
+      "desc": "排列的方向",
+      "type": "enum",
+      "optionValue": "vertical | horizontal",
+      "options": [
+        "vertical",
+        "horizontal"
+      ],
+      "defaultValue": "horizontal"
+    },
+    {
+      "name": "prefix-cls",
+      "desc": "给 space-items 的类名前缀",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "style",
+      "desc": "额外样式",
+      "type": "string / object",
+      "optionValue": "CSSProperties | CSSProperties[] | string[]",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "spacer",
+      "desc": "间隔符",
+      "type": "string / number / VNode",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "size",
+      "desc": "间隔大小",
+      "type": "enum",
+      "optionValue": "default | small | large",
+      "options": [
+        "default",
+        "small",
+        "large"
+      ],
+      "defaultValue": "small"
+    },
+    {
+      "name": "wrap",
+      "desc": "设置是否自动折行",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "fill",
+      "desc": "子元素是否填充父容器",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "fill-ratio",
+      "desc": "填充父容器的比例",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "100"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "default",
+      "desc": "需要添加间隔的元素"
+    }
+  ],
+  "events": [],
+  "methods": []
+}

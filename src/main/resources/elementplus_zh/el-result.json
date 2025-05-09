@@ -1,0 +1,57 @@
+{
+  "name": "el-result",
+  "attributes": [
+    {
+      "name": "title",
+      "desc": "result 组件的标题",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "sub-title",
+      "desc": "result 组件的副标题",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "icon",
+      "desc": "result 组件的图标类型",
+      "type": "enum",
+      "optionValue": "success | warning | info | error",
+      "options": [
+        "success",
+        "warning",
+        "info",
+        "error"
+      ],
+      "defaultValue": "info"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "icon",
+      "desc": "icon 内容"
+    },
+    {
+      "name": "title",
+      "desc": "result title 的内容"
+    },
+    {
+      "name": "sub-title",
+      "desc": "sub title 的内容"
+    },
+    {
+      "name": "extra",
+      "desc": "内容额外区域的内容"
+    }
+  ],
+  "events": [],
+  "methods": []
+}

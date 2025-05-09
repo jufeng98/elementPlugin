@@ -1,0 +1,125 @@
+{
+  "name": "el-segmented",
+  "attributes": [
+    {
+      "name": "model-value",
+      "desc": "绑定值",
+      "type": "string / number / boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "v-model",
+      "desc": "绑定值",
+      "type": "string / number / boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "options",
+      "desc": "选项的数据",
+      "type": "array",
+      "optionValue": "Option[]",
+      "options": [],
+      "defaultValue": "[]"
+    },
+    {
+      "name": "props ^(2.9.8)",
+      "desc": "配置选项，详见下表",
+      "type": "object",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "size",
+      "desc": "组件大小",
+      "type": "enum",
+      "optionValue": " | large | default | small",
+      "options": [
+        "large",
+        "default",
+        "small"
+      ],
+      "defaultValue": ""
+    },
+    {
+      "name": "block",
+      "desc": "撑满父元素宽度",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "disabled",
+      "desc": "是否禁用",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "validate-event",
+      "desc": "是否触发表单验证",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "name",
+      "desc": "原生 name 属性",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "id",
+      "desc": "原生 id 属性",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "aria-label ^(a11y)",
+      "desc": "原生 aria-label 属性",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "direction ^(2.8.7)",
+      "desc": "展示的方向",
+      "type": "enum",
+      "optionValue": "horizontal | vertical",
+      "options": [
+        "horizontal",
+        "vertical"
+      ],
+      "defaultValue": "horizontal"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "default",
+      "desc": "自定义 Option 模板"
+    }
+  ],
+  "events": [
+    {
+      "name": "@change",
+      "desc": "当所选值更改时触发，参数是当前选中的值",
+      "param": "Function(val: any) => void"
+    }
+  ],
+  "methods": []
+}

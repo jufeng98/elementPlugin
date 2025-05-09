@@ -1,0 +1,87 @@
+{
+  "name": "el-steps",
+  "attributes": [
+    {
+      "name": "space",
+      "desc": "每个 step 的间距，不填写将自适应间距。 支持百分比。",
+      "type": "number / string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "direction",
+      "desc": "显示方向",
+      "type": "enum",
+      "optionValue": "vertical | horizontal",
+      "options": [
+        "vertical",
+        "horizontal"
+      ],
+      "defaultValue": "horizontal"
+    },
+    {
+      "name": "active",
+      "desc": "设置当前激活步骤",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "0"
+    },
+    {
+      "name": "process-status",
+      "desc": "设置当前步骤的状态",
+      "type": "enum",
+      "optionValue": "wait | process | finish | error | success",
+      "options": [
+        "wait",
+        "process",
+        "finish",
+        "error",
+        "success"
+      ],
+      "defaultValue": "process"
+    },
+    {
+      "name": "finish-status",
+      "desc": "设置结束步骤的状态",
+      "type": "enum",
+      "optionValue": "wait | process | finish | error | success",
+      "options": [
+        "wait",
+        "process",
+        "finish",
+        "error",
+        "success"
+      ],
+      "defaultValue": "finish"
+    },
+    {
+      "name": "align-center",
+      "desc": "进行居中对齐",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "simple",
+      "desc": "是否应用简洁风格",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "default",
+      "desc": "默认插槽"
+    }
+  ],
+  "events": [],
+  "methods": []
+}

@@ -1,0 +1,65 @@
+{
+  "name": "el-calendar",
+  "attributes": [
+    {
+      "name": "model-value",
+      "desc": "选中项绑定值",
+      "type": "Date",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "v-model",
+      "desc": "选中项绑定值",
+      "type": "Date",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "range",
+      "desc": "时间范围，包括开始时间与结束时间。 开始时间必须是周起始日，结束时间必须是周结束日，且时间跨度不能超过两个月。",
+      "type": "array",
+      "optionValue": "[Date, Date]",
+      "options": [],
+      "defaultValue": "—"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "date-cell",
+      "desc": "`type` 表示该日期的所属月份，可选值有 prev-month、current-month 和 next-month；`isSelected` 标明该日期是否被选中；`day` 是格式化的日期，格式为 `yyyy-MM-dd`；`date` 是单元格的日期"
+    },
+    {
+      "name": "header",
+      "desc": "卡片标题内容"
+    }
+  ],
+  "events": [],
+  "methods": [
+    {
+      "name": "selectedDay",
+      "desc": "当前已选日期",
+      "param": "objectComputedRef<Dayjs | undefined>"
+    },
+    {
+      "name": "pickDay",
+      "desc": "选择一个具体日期",
+      "param": "Function(day: dayjs.Dayjs) => void"
+    },
+    {
+      "name": "selectDate",
+      "desc": "选择日期",
+      "param": "Function(type: CalendarDateType) => void"
+    },
+    {
+      "name": "calculateValidatedDateRange",
+      "desc": "根据开始与结束日期计算验证日期范围",
+      "param": "Function(startDayjs: dayjs.Dayjs, endDayjs: dayjs.Dayjs) => [dayjs.Dayjs, dayjs.Dayjs["
+    }
+  ]
+}

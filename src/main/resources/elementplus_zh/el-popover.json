@@ -1,0 +1,278 @@
+{
+  "name": "el-popover",
+  "attributes": [
+    {
+      "name": "trigger",
+      "desc": "触发方式",
+      "type": "enum",
+      "optionValue": "click | focus | hover | contextmenu",
+      "options": [
+        "click",
+        "focus",
+        "hover",
+        "contextmenu"
+      ],
+      "defaultValue": "hover"
+    },
+    {
+      "name": "trigger-keys ^(2.9.8)",
+      "desc": "当鼠标点击或者聚焦在触发元素上时， 可以定义一组键盘按键并且通过它们来控制 Popover 的显示",
+      "type": "Array",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "[Enter,Space]"
+    },
+    {
+      "name": "title",
+      "desc": "标题",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "effect",
+      "desc": "Tooltip 主题，Element Plus 内置了 dark / light 两种主题",
+      "type": "enum",
+      "optionValue": "dark | light",
+      "options": [
+        "dark",
+        "light"
+      ],
+      "defaultValue": "light"
+    },
+    {
+      "name": "content",
+      "desc": "显示的内容，也可以通过写入默认 slot 修改显示内容",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "width",
+      "desc": "宽度",
+      "type": "string / number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "150"
+    },
+    {
+      "name": "placement",
+      "desc": "出现位置",
+      "type": "enum",
+      "optionValue": "top | top-start | top-end | bottom | bottom-start | bottom-end | left | left-start | left-end | right | right-start | right-end",
+      "options": [
+        "top",
+        "top-start",
+        "top-end",
+        "bottom",
+        "bottom-start",
+        "bottom-end",
+        "left",
+        "left-start",
+        "left-end",
+        "right",
+        "right-start",
+        "right-end"
+      ],
+      "defaultValue": "bottom"
+    },
+    {
+      "name": "disabled",
+      "desc": "Popover 是否可用",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "visible",
+      "desc": "Popover 是否显示",
+      "type": "boolean / null",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "null"
+    },
+    {
+      "name": "v-model:visible",
+      "desc": "Popover 是否显示",
+      "type": "boolean / null",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "null"
+    },
+    {
+      "name": "offset",
+      "desc": "浮层偏移量, Popover 是在 Tooltip,基础上开发的， Popover的 offset 是 undefined, 但Tooltip 的 offset 是12",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "undefined"
+    },
+    {
+      "name": "transition",
+      "desc": "定义渐变动画，默认是 el-fade-in-linear",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "show-arrow",
+      "desc": "<p>是否显示 Tooltip 箭头， 欲了解更多信息，请参考 <a href=\"https://github.com/element-plus/element-plus/tree/dev/packages/components/popper\">ElPopper</a></p>",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "popper-options",
+      "desc": "<p><a href=\"https://popper.js.org/docs/v2/\">popper.js</a> 的参数</p>",
+      "type": "object",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "{modifiers: [{name: computeStyles,options: {gpuAcceleration: false}}]}"
+    },
+    {
+      "name": "popper-class",
+      "desc": "为 popper 添加类名",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "popper-style",
+      "desc": "为 popper 自定义样式",
+      "type": "string / object",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "show-after",
+      "desc": "在触发后多久显示内容，单位毫秒",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "0"
+    },
+    {
+      "name": "hide-after",
+      "desc": "延迟关闭，单位毫秒",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "200"
+    },
+    {
+      "name": "auto-close",
+      "desc": "tooltip 出现后自动隐藏延时，单位毫秒",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "0"
+    },
+    {
+      "name": "tabindex",
+      "desc": "<p>Popover 组件的 <a href=\"https://developer.mozilla.org/zh-CN/docs/Web/HTML/Global_attributes/tabindex\">tabindex</a></p>",
+      "type": "number / string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "0"
+    },
+    {
+      "name": "teleported",
+      "desc": "是否将 popover 的下拉列表插入至 body 元素",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "append-to ^(2.8.4)",
+      "desc": "指示 Tooltip 的内容将附加在哪一个网页元素上",
+      "type": "CSSSelector / HTMLElement",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "body"
+    },
+    {
+      "name": "persistent",
+      "desc": "当 popover 组件长时间不触发且 persistent 属性设置为 false 时, popover 将会被删除",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "virtual-triggering",
+      "desc": "是否启用虚拟触发器",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "virtual-ref",
+      "desc": "代表 tooltip 所要附加的参照元素",
+      "type": "HTMLElement",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "default",
+      "desc": "Popover 内嵌 HTML 文本"
+    },
+    {
+      "name": "reference",
+      "desc": "触发 Popover 显示的 HTML 元素"
+    }
+  ],
+  "events": [
+    {
+      "name": "@show",
+      "desc": "显示时触发",
+      "param": "Function() => void"
+    },
+    {
+      "name": "@before-enter",
+      "desc": "显示动画播放前触发",
+      "param": "Function() => void"
+    },
+    {
+      "name": "@after-enter",
+      "desc": "显示动画播放完毕后触发",
+      "param": "Function() => void"
+    },
+    {
+      "name": "@hide",
+      "desc": "隐藏时触发",
+      "param": "Function() => void"
+    },
+    {
+      "name": "@before-leave",
+      "desc": "隐藏动画播放前触发",
+      "param": "Function() => void"
+    },
+    {
+      "name": "@after-leave",
+      "desc": "隐藏动画播放完毕后触发",
+      "param": "Function() => void"
+    }
+  ],
+  "methods": [
+    {
+      "name": "hide",
+      "desc": "隐藏 popover",
+      "param": "Function() => void"
+    }
+  ]
+}

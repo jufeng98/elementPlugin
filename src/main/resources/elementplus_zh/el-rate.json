@@ -1,0 +1,216 @@
+{
+  "name": "el-rate",
+  "attributes": [
+    {
+      "name": "model-value",
+      "desc": "选中项绑定值",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "0"
+    },
+    {
+      "name": "v-model",
+      "desc": "选中项绑定值",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "0"
+    },
+    {
+      "name": "max",
+      "desc": "最大分值",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "5"
+    },
+    {
+      "name": "size",
+      "desc": "尺寸",
+      "type": "enum",
+      "optionValue": "large | default | small",
+      "options": [
+        "large",
+        "default",
+        "small"
+      ],
+      "defaultValue": "—"
+    },
+    {
+      "name": "disabled",
+      "desc": "是否为只读",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "allow-half",
+      "desc": "是否允许半选",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "low-threshold",
+      "desc": "低分和中等分数的界限值， 值本身被划分在低分中",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "2"
+    },
+    {
+      "name": "high-threshold",
+      "desc": "高分和中等分数的界限值， 值本身被划分在高分中",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "4"
+    },
+    {
+      "name": "colors",
+      "desc": "icon 的颜色。 若传入数组，共有 3 个元素，为 3 个分段所对应的颜色；若传入对象，可自定义分段，键名为分段的界限值，键值为对应的颜色",
+      "type": "object",
+      "optionValue": "string[] | Record<number, string>",
+      "options": [],
+      "defaultValue": "[#f7ba2a, #f7ba2a, #f7ba2a]"
+    },
+    {
+      "name": "void-color",
+      "desc": "未选中 icon 的颜色",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "#c6d1de"
+    },
+    {
+      "name": "disabled-void-color",
+      "desc": "只读时未选中 icon 的颜色",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "#eff2f7"
+    },
+    {
+      "name": "icons",
+      "desc": "图标组件 若传入数组，则需要传入 3 个元素，分别为 3 个部分所对应的类名；若传入对象，则可自定义分段，键名为分段的界限值，键值为对应的类名",
+      "type": "object",
+      "optionValue": "string[] | Component[] | Record<number, string | Component>",
+      "options": [],
+      "defaultValue": "[StarFilled, StarFilled, StarFilled]"
+    },
+    {
+      "name": "void-icon",
+      "desc": "未被选中的图标组件",
+      "type": "string / Component",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "Star"
+    },
+    {
+      "name": "disabled-void-icon",
+      "desc": "禁用状态的未选择图标",
+      "type": "string / Component",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "StarFilled"
+    },
+    {
+      "name": "show-text",
+      "desc": "是否显示辅助文字，若为真，则会从 texts 数组中选取当前分数对应的文字内容",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "show-score",
+      "desc": "是否显示当前分数， show-score 和 show-text 不能同时为真",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "text-color",
+      "desc": "辅助文字的颜色",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "texts",
+      "desc": "辅助文字数组",
+      "type": "array",
+      "optionValue": "string[]",
+      "options": [],
+      "defaultValue": "[Extremely bad, Disappointed, Fair, Satisfied, Surprise]"
+    },
+    {
+      "name": "score-template",
+      "desc": "分数显示模板",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "{value}"
+    },
+    {
+      "name": "clearable ^(2.2.18)",
+      "desc": "是否可以重置值为 0",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "id",
+      "desc": "原生 id 属性",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "aria-label ^(a11y) ^(2.7.2)",
+      "desc": "和 Rate 的 aria-label 属性保持一致",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "label ^(a11y) ^(deprecated)",
+      "desc": "和 Rate 的 aria-label 属性保持一致",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [],
+  "events": [
+    {
+      "name": "@change",
+      "desc": "分值改变时触发",
+      "param": "Function(value: number) => void"
+    }
+  ],
+  "methods": [
+    {
+      "name": "setCurrentValue",
+      "desc": "设置当前值",
+      "param": "Function(value: number) => void"
+    },
+    {
+      "name": "resetCurrentValue",
+      "desc": "重置当前值",
+      "param": "Function() => void"
+    }
+  ]
+}

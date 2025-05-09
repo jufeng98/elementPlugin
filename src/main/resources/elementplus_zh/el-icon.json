@@ -1,0 +1,32 @@
+{
+  "name": "el-icon",
+  "attributes": [
+    {
+      "name": "color",
+      "desc": "svg 的 fill 颜色",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "继承颜色"
+    },
+    {
+      "name": "size",
+      "desc": "SVG 图标的大小，size x size",
+      "type": "number / string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "继承字体大小"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "default",
+      "desc": "自定义默认内容"
+    }
+  ],
+  "events": [],
+  "methods": []
+}

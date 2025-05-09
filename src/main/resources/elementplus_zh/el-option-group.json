@@ -1,0 +1,32 @@
+{
+  "name": "el-option-group",
+  "attributes": [
+    {
+      "name": "label",
+      "desc": "分组的名称",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "disabled",
+      "desc": "是否将该分组下所有选项置为禁用",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "default",
+      "desc": "自定义默认内容"
+    }
+  ],
+  "events": [],
+  "methods": []
+}

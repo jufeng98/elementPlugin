@@ -1,0 +1,16 @@
+{
+  "name": "el-notification",
+  "attributes": [],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [],
+  "events": [],
+  "methods": [
+    {
+      "name": "close",
+      "desc": "关闭当前的 Notification",
+      "param": "Function() => void"
+    }
+  ]
+}

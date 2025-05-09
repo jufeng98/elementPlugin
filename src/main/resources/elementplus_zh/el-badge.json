@@ -1,0 +1,106 @@
+{
+  "name": "el-badge",
+  "attributes": [
+    {
+      "name": "value",
+      "desc": "显示值",
+      "type": "string / number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "max",
+      "desc": "最大值，超过最大值会显示 {max}+。 只有当 value 是数字类型时起作用。",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "99"
+    },
+    {
+      "name": "is-dot",
+      "desc": "是否显示小圆点。",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "hidden",
+      "desc": "是否隐藏 Badge。",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "type",
+      "desc": "badge type.",
+      "type": "enum",
+      "optionValue": "primary | success | warning | danger | info",
+      "options": [
+        "primary",
+        "success",
+        "warning",
+        "danger",
+        "info"
+      ],
+      "defaultValue": "danger"
+    },
+    {
+      "name": "show-zero ^(2.6.0)",
+      "desc": "值为零时是否显示 Badge",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "color ^(2.6.3)",
+      "desc": "背景色",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "offset ^(2.7.0)",
+      "desc": "badge 的偏移量",
+      "type": "[ ",
+      "optionValue": "number",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "badge-style ^(2.7.1)",
+      "desc": "自定义 badge 样式",
+      "type": "object",
+      "optionValue": "CSSProperties",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "badge-class ^(2.7.1)",
+      "desc": "自定义 badge 类名",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "default",
+      "desc": "自定义默认内容"
+    },
+    {
+      "name": "content ^(2.9.1)",
+      "desc": "自定义显示内容"
+    }
+  ],
+  "events": [],
+  "methods": []
+}

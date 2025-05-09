@@ -1,0 +1,184 @@
+{
+  "name": "el-scrollbar",
+  "attributes": [
+    {
+      "name": "height",
+      "desc": "滚动条高度",
+      "type": "string / number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "max-height",
+      "desc": "滚动条最大高度",
+      "type": "string / number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "native",
+      "desc": "是否使用原生滚动条样式",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "wrap-style",
+      "desc": "包裹容器的自定义样式",
+      "type": "string / object",
+      "optionValue": "CSSSProperties | CSSSProperties[] | string[]",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "wrap-class",
+      "desc": "包裹容器的自定义类名",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "view-style",
+      "desc": "视图的自定义样式",
+      "type": "string / object",
+      "optionValue": "CSSSProperties | CSSSProperties[] | string[]",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "view-class",
+      "desc": "视图的自定义类名",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "noresize",
+      "desc": "不响应容器尺寸变化，如果容器尺寸不会发生变化，最好设置它可以优化性能",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "tag",
+      "desc": "视图的元素标签",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "div"
+    },
+    {
+      "name": "always",
+      "desc": "滚动条总是显示",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "min-size",
+      "desc": "滚动条最小尺寸",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "20"
+    },
+    {
+      "name": "id ^(2.4.0)",
+      "desc": "视图ID",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "role ^(2.4.0) ^(a11y)",
+      "desc": "视图的角色",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "aria-label ^(2.4.0) ^(a11y)",
+      "desc": "视图的 aria-label",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "aria-orientation ^(2.4.0) ^(a11y)",
+      "desc": "视图的 aria-orientation",
+      "type": "enum",
+      "optionValue": "horizontal | vertical",
+      "options": [
+        "horizontal",
+        "vertical"
+      ],
+      "defaultValue": "—"
+    },
+    {
+      "name": "tabindex ^(2.8.3)",
+      "desc": "容器的tabindex",
+      "type": "number / string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "default",
+      "desc": "自定义默认内容"
+    }
+  ],
+  "events": [
+    {
+      "name": "@scroll",
+      "desc": "当触发滚动事件时，返回滚动的距离",
+      "param": "Function({ scrollLeft: number, scrollTop: number }) => void"
+    }
+  ],
+  "methods": [
+    {
+      "name": "handleScroll",
+      "desc": "触发滚动事件",
+      "param": "Function() => void"
+    },
+    {
+      "name": "scrollTo",
+      "desc": "滚动到一组特定坐标",
+      "param": "Function(options: ScrollToOptions | number, yCoord?: number) => void"
+    },
+    {
+      "name": "setScrollTop",
+      "desc": "设置滚动条到顶部的距离",
+      "param": "Function(scrollTop: number) => void"
+    },
+    {
+      "name": "setScrollLeft",
+      "desc": "设置滚动条到左边的距离",
+      "param": "Function(scrollLeft: number) => void"
+    },
+    {
+      "name": "update",
+      "desc": "手动更新滚动条状态",
+      "param": "Function() => void"
+    },
+    {
+      "name": "wrapRef",
+      "desc": "滚动条包裹的 ref 对象",
+      "param": "objectRef<HTMLDivElement>"
+    }
+  ]
+}

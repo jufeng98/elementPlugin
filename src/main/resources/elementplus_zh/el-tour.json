@@ -1,0 +1,185 @@
+{
+  "name": "el-tour",
+  "attributes": [
+    {
+      "name": "append-to",
+      "desc": "挂载到哪个 DOM 元素",
+      "type": "CSSSelector / HTMLElement",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "body"
+    },
+    {
+      "name": "show-arrow",
+      "desc": "是否显示箭头",
+      "type": "",
+      "optionValue": "boolean",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "placement",
+      "desc": "引导卡片相对于目标元素的位置",
+      "type": "enum",
+      "optionValue": "top | top-start | top-end | bottom | bottom-start | bottom-end | left | left-start | left-end | right | right-start | right-end",
+      "options": [
+        "top",
+        "top-start",
+        "top-end",
+        "bottom",
+        "bottom-start",
+        "bottom-end",
+        "left",
+        "left-start",
+        "left-end",
+        "right",
+        "right-start",
+        "right-end"
+      ],
+      "defaultValue": "bottom"
+    },
+    {
+      "name": "content-style",
+      "desc": "为content自定义样式",
+      "type": "",
+      "optionValue": "CSSProperties",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "mask",
+      "desc": "是否启用遮罩，通过自定义属性改变遮罩样式以及填充的颜色",
+      "type": "",
+      "optionValue": "boolean",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "gap",
+      "desc": "遮罩和目标之间的透明的间距",
+      "type": "",
+      "optionValue": "TourGap",
+      "options": [],
+      "defaultValue": "^[Object]{ offset: 6, radius: 2}"
+    },
+    {
+      "name": "type",
+      "desc": "类型，影响底色与文字颜色",
+      "type": "",
+      "optionValue": "default",
+      "options": [],
+      "defaultValue": "default"
+    },
+    {
+      "name": "model-value",
+      "desc": "打开引导",
+      "type": "",
+      "optionValue": "boolean",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "v-model",
+      "desc": "打开引导",
+      "type": "",
+      "optionValue": "boolean",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "current",
+      "desc": "当前值",
+      "type": "",
+      "optionValue": "number",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "v-model:current",
+      "desc": "当前值",
+      "type": "",
+      "optionValue": "number",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "scroll-into-view-options",
+      "desc": "是否支持当前元素滚动到视窗内，也可传入配置指定滚动视窗的相关参数",
+      "type": "",
+      "optionValue": "boolean",
+      "options": [],
+      "defaultValue": "^[Object]{ block: center }"
+    },
+    {
+      "name": "z-index",
+      "desc": "Tour 的层级",
+      "type": "",
+      "optionValue": "number",
+      "options": [],
+      "defaultValue": "2001"
+    },
+    {
+      "name": "show-close",
+      "desc": "是否显示关闭按钮",
+      "type": "",
+      "optionValue": "boolean",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "close-icon",
+      "desc": "自定义关闭图标，默认Close",
+      "type": "",
+      "optionValue": "string",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "close-on-press-escape",
+      "desc": "是否可以通过按下 ESC 关闭引导",
+      "type": "",
+      "optionValue": "boolean",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "target-area-clickable",
+      "desc": "启用蒙层时，target 元素区域是否可以点击。",
+      "type": "",
+      "optionValue": "boolean",
+      "options": [],
+      "defaultValue": "true"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "default",
+      "desc": "tourStep 组件列表"
+    },
+    {
+      "name": "indicators",
+      "desc": "自定义指示器, scope 参数是 `{ current, total }`"
+    }
+  ],
+  "events": [
+    {
+      "name": "@close",
+      "desc": "关闭引导时的回调函数",
+      "param": "Function(current: number) => void"
+    },
+    {
+      "name": "@finish",
+      "desc": "引导完成时的回调",
+      "param": "Function() => void"
+    },
+    {
+      "name": "@change",
+      "desc": "步骤改变时的回调",
+      "param": "Function(current: number) => void"
+    }
+  ],
+  "methods": []
+}

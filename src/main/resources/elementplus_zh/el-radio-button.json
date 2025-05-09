@@ -1,0 +1,64 @@
+{
+  "name": "el-radio-button",
+  "attributes": [
+    {
+      "name": "value ^(2.6.0)",
+      "desc": "单选框的值",
+      "type": "string / number / boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "label",
+      "desc": "单选框的 label 如果没有 value， label则作为value使用",
+      "type": "string / number / boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "disabled",
+      "desc": "是否禁用单选框",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "name",
+      "desc": "原生 name 属性",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "text-color",
+      "desc": "按钮形式的 Radio 激活时的文本颜色",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "#ffffff"
+    },
+    {
+      "name": "fill",
+      "desc": "按钮形式的 Radio 激活时的填充色和边框色",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "#409eff"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "default",
+      "desc": "默认插槽内容"
+    }
+  ],
+  "events": [],
+  "methods": []
+}

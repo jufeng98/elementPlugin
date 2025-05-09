@@ -1,0 +1,277 @@
+{
+  "name": "el-upload",
+  "attributes": [
+    {
+      "name": "action ^(required)",
+      "desc": "请求 URL",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "#"
+    },
+    {
+      "name": "headers",
+      "desc": "设置上传的请求头部",
+      "type": "object",
+      "optionValue": "Headers | Record<string, any>",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "method",
+      "desc": "设置上传请求方法",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "post"
+    },
+    {
+      "name": "multiple",
+      "desc": "是否支持多选文件",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "data",
+      "desc": "上传时附带的额外参数 从 v2.3.13 支持 Awaitable 数据，和 Function",
+      "type": "object",
+      "optionValue": "Record<string, any> | Awaitable<Record<string, any>>",
+      "options": [],
+      "defaultValue": "{}"
+    },
+    {
+      "name": "name",
+      "desc": "上传的文件字段名",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "file"
+    },
+    {
+      "name": "with-credentials",
+      "desc": "支持发送 cookie 凭证信息",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "show-file-list",
+      "desc": "是否显示已上传文件列表",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "drag",
+      "desc": "是否启用拖拽上传",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "accept",
+      "desc": "<p>接受上传的<a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#attr-accept\">文件类型</a>（thumbnail-mode 模式下此参数无效）</p>",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "crossorigin",
+      "desc": "<p>原生属性 <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/crossorigin\">crossorigin</a></p>",
+      "type": "enum",
+      "optionValue": " | anonymous | use-credentials",
+      "options": [
+        "anonymous",
+        "use-credentials"
+      ],
+      "defaultValue": "—"
+    },
+    {
+      "name": "on-preview",
+      "desc": "点击文件列表中已上传的文件时的钩子",
+      "type": "Function",
+      "optionValue": "(uploadFile: UploadFile) => void",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "on-remove",
+      "desc": "文件列表移除文件时的钩子",
+      "type": "Function",
+      "optionValue": "(uploadFile: UploadFile, uploadFiles: UploadFiles) => void",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "on-success",
+      "desc": "文件上传成功时的钩子",
+      "type": "Function",
+      "optionValue": "(response: any, uploadFile: UploadFile, uploadFiles: UploadFiles) => void",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "on-error",
+      "desc": "文件上传失败时的钩子",
+      "type": "Function",
+      "optionValue": "(error: Error, uploadFile: UploadFile, uploadFiles: UploadFiles) => void",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "on-progress",
+      "desc": "文件上传时的钩子",
+      "type": "Function",
+      "optionValue": "(evt: UploadProgressEvent, uploadFile: UploadFile, uploadFiles: UploadFiles) => void",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "on-change",
+      "desc": "文件状态改变时的钩子，添加文件、上传成功和上传失败时都会被调用",
+      "type": "Function",
+      "optionValue": "(uploadFile: UploadFile, uploadFiles: UploadFiles) => void",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "on-exceed",
+      "desc": "当超出限制时，执行的钩子函数",
+      "type": "Function",
+      "optionValue": "(files: File[], uploadFiles: UploadUserFile[]) => void",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "before-upload",
+      "desc": "上传文件之前的钩子，参数为上传的文件， 若返回 false 或者返回 Promise 且被 reject，则停止上传。",
+      "type": "Function",
+      "optionValue": "(rawFile: UploadRawFile) => Awaitable<void | undefined | null | boolean | File | Blob>",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "before-remove",
+      "desc": "删除文件之前的钩子，参数为上传的文件和文件列表， 若返回 false 或者返回 Promise 且被 reject，则停止删除。",
+      "type": "Function",
+      "optionValue": "(uploadFile: UploadFile, uploadFiles: UploadFiles) => Awaitable<boolean>",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "file-list",
+      "desc": "默认上传文件",
+      "type": "object",
+      "optionValue": "UploadUserFile[]",
+      "options": [],
+      "defaultValue": "[]"
+    },
+    {
+      "name": "v-model:file-list",
+      "desc": "默认上传文件",
+      "type": "object",
+      "optionValue": "UploadUserFile[]",
+      "options": [],
+      "defaultValue": "[]"
+    },
+    {
+      "name": "list-type",
+      "desc": "文件列表的类型",
+      "type": "enum",
+      "optionValue": "text | picture | picture-card",
+      "options": [
+        "text",
+        "picture",
+        "picture-card"
+      ],
+      "defaultValue": "text"
+    },
+    {
+      "name": "auto-upload",
+      "desc": "是否自动上传文件",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "http-request",
+      "desc": "覆盖默认的 Xhr 行为，允许自行实现上传文件的请求",
+      "type": "Function",
+      "optionValue": "(options: UploadRequestOptions) => XMLHttpRequest | Promise<unknown>",
+      "options": [],
+      "defaultValue": "<p><a href=\"https://github.com/element-plus/element-plus/blob/dev/packages/components/upload/src/ajax.ts#L55\">请参考ajaxUpload</a></p>"
+    },
+    {
+      "name": "disabled",
+      "desc": "是否禁用上传",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "limit",
+      "desc": "允许上传文件的最大数量",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "default",
+      "desc": "自定义默认内容"
+    },
+    {
+      "name": "trigger",
+      "desc": "触发文件选择框的内容"
+    },
+    {
+      "name": "tip",
+      "desc": "提示说明文字"
+    },
+    {
+      "name": "file",
+      "desc": "缩略图模板的内容"
+    }
+  ],
+  "events": [],
+  "methods": [
+    {
+      "name": "abort",
+      "desc": "取消上传请求",
+      "param": "Function(file: UploadFile) => void"
+    },
+    {
+      "name": "submit",
+      "desc": "手动上传文件列表",
+      "param": "Function() => void"
+    },
+    {
+      "name": "clearFiles",
+      "desc": "清空已上传的文件列表（该方法不支持在 `before-upload` 中调用）",
+      "param": "Function(status?: UploadStatus[) => void"
+    },
+    {
+      "name": "handleStart",
+      "desc": "手动选择文件",
+      "param": "Function(rawFile: UploadRawFile) => void"
+    },
+    {
+      "name": "handleRemove",
+      "desc": "手动移除文件。 `file` 和`rawFile` 已被合并。 `rawFile` 将在 `v2.2.0` 中移除",
+      "param": "Function(file: UploadFile | UploadRawFile, rawFile?: UploadRawFile) => void"
+    }
+  ]
+}

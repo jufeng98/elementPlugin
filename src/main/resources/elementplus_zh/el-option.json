@@ -1,0 +1,40 @@
+{
+  "name": "el-option",
+  "attributes": [
+    {
+      "name": "value",
+      "desc": "选项的值",
+      "type": "string / number / boolean / object",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "label",
+      "desc": "选项的标签，若不设置则默认与value相同",
+      "type": "string / number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "disabled",
+      "desc": "是否禁用该选项",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "default",
+      "desc": "默认插槽内容"
+    }
+  ],
+  "events": [],
+  "methods": []
+}

@@ -1,0 +1,236 @@
+{
+  "name": "el-switch",
+  "attributes": [
+    {
+      "name": "model-value",
+      "desc": "绑定值，必须等于 active-value 或 inactive-value，默认为 Boolean 类型",
+      "type": "boolean / string / number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "v-model",
+      "desc": "绑定值，必须等于 active-value 或 inactive-value，默认为 Boolean 类型",
+      "type": "boolean / string / number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "disabled",
+      "desc": "是否禁用",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "loading",
+      "desc": "是否显示加载中",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "size",
+      "desc": "switch 的大小",
+      "type": "enum",
+      "optionValue": " | large | default | small",
+      "options": [
+        "large",
+        "default",
+        "small"
+      ],
+      "defaultValue": ""
+    },
+    {
+      "name": "width",
+      "desc": "switch 的宽度",
+      "type": "number / string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "inline-prompt",
+      "desc": "无论图标或文本是否显示在点内，只会呈现文本的第一个字符",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "active-icon",
+      "desc": "switch 状态为 on 时所显示图标，设置此项会忽略 active-text",
+      "type": "string / Component",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "inactive-icon",
+      "desc": "switch 状态为 off 时所显示图标，设置此项会忽略 inactive-text",
+      "type": "string / Component",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "active-action-icon ^(2.3.9)",
+      "desc": " on 状态下显示的图标组件",
+      "type": "string / Component",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "inactive-action-icon ^(2.3.9)",
+      "desc": " off 状态下显示的图标组件",
+      "type": "string / Component",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "active-text",
+      "desc": "switch 打开时的文字描述",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "inactive-text",
+      "desc": "switch 的状态为 off 时的文字描述",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "active-value",
+      "desc": "switch 状态为 on 时的值",
+      "type": "boolean / string / number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "inactive-value",
+      "desc": "switch的状态为 off 时的值",
+      "type": "boolean / string / number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "name",
+      "desc": "switch 对应的 name 属性",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "validate-event",
+      "desc": "是否触发表单验证",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "before-change",
+      "desc": "switch 状态改变前的钩子， 返回 false 或者返回 Promise 且被 reject 则停止切换",
+      "type": "Function",
+      "optionValue": "() => Promise<boolean> | boolen",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "id",
+      "desc": "input 的 id",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "tabindex",
+      "desc": "input 的 tabindex",
+      "type": "string / number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "aria-label ^(a11y) ^(2.7.2)",
+      "desc": "等价于原生 input aria-label 属性",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "active-color ^(deprecated)",
+      "desc": "当在 on 状态时的背景颜色(推荐使用 CSS var --el-switch-on-color )",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "inactive-color ^(deprecated)",
+      "desc": "off 状态时的背景颜色(推荐使用 CSS var --el-switch-off-color )",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "border-color ^(deprecated)",
+      "desc": "开关的边框颜色 ( 推荐使用 CSS var --el-switch-border-color )",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "label ^(a11y) ^(deprecated)",
+      "desc": "等价于原生 input aria-label 属性",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "active-action ^(2.4.4)",
+      "desc": "自定义 active 行为"
+    },
+    {
+      "name": "inactive-action ^(2.4.4)",
+      "desc": "自定义 inactive 行为"
+    }
+  ],
+  "events": [
+    {
+      "name": "@change",
+      "desc": "switch 状态发生变化时的回调函数",
+      "param": "Function(val: boolean | string | number) => void"
+    }
+  ],
+  "methods": [
+    {
+      "name": "focus",
+      "desc": "手动 focus 到 switch 组件",
+      "param": "Function() => void"
+    }
+  ]
+}

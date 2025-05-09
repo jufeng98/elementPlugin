@@ -1,0 +1,105 @@
+{
+  "name": "el-tag",
+  "attributes": [
+    {
+      "name": "type",
+      "desc": "Tag 的类型",
+      "type": "enum",
+      "optionValue": "primary | success | info | warning | danger",
+      "options": [
+        "primary",
+        "success",
+        "info",
+        "warning",
+        "danger"
+      ],
+      "defaultValue": "primary"
+    },
+    {
+      "name": "closable",
+      "desc": "是否可关闭",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "disable-transitions",
+      "desc": "是否禁用渐变动画",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "hit",
+      "desc": "是否有边框描边",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "color",
+      "desc": "背景色",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "size",
+      "desc": "Tag 的尺寸",
+      "type": "enum",
+      "optionValue": "large | default | small",
+      "options": [
+        "large",
+        "default",
+        "small"
+      ],
+      "defaultValue": "—"
+    },
+    {
+      "name": "effect",
+      "desc": "Tag 的主题",
+      "type": "enum",
+      "optionValue": "dark | light | plain",
+      "options": [
+        "dark",
+        "light",
+        "plain"
+      ],
+      "defaultValue": "light"
+    },
+    {
+      "name": "round",
+      "desc": "Tag 是否为圆形",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "default",
+      "desc": "自定义默认内容"
+    }
+  ],
+  "events": [
+    {
+      "name": "@click",
+      "desc": "点击 Tag 时触发的事件",
+      "param": "Function(evt: MouseEvent) => void"
+    },
+    {
+      "name": "@close",
+      "desc": "关闭 Tag 时触发的事件",
+      "param": "Function(evt: MouseEvent) => void"
+    }
+  ],
+  "methods": []
+}

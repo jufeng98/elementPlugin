@@ -1,0 +1,228 @@
+{
+  "name": "el-image",
+  "attributes": [
+    {
+      "name": "src",
+      "desc": "图片源地址，同原生属性一致",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "fit",
+      "desc": "<p>确定图片如何适应容器框，同原生 <a href=\"https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit\">object-fit</a></p>",
+      "type": "enum",
+      "optionValue": " | fill | contain | cover | none | scale-down",
+      "options": [
+        "fill",
+        "contain",
+        "cover",
+        "none",
+        "scale-down"
+      ],
+      "defaultValue": ""
+    },
+    {
+      "name": "hide-on-click-modal",
+      "desc": "当开启 preview 功能时，是否可以通过点击遮罩层关闭 preview",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "loading ^(2.2.3)",
+      "desc": "<p>浏览器加载图像的策略，和 <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-loading\">浏览器原生</a>能力一致</p>",
+      "type": "enum",
+      "optionValue": "eager | lazy",
+      "options": [
+        "eager",
+        "lazy"
+      ],
+      "defaultValue": "—"
+    },
+    {
+      "name": "lazy",
+      "desc": "是否使用懒加载",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "scroll-container",
+      "desc": "开启懒加载功能后，监听 scroll 事件的容器 默认情况下，开启懒加载功能后，监听 scroll 事件的容器",
+      "type": "string / object",
+      "optionValue": "HTMLElement",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "alt",
+      "desc": "原生属性 alt",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "referrerpolicy",
+      "desc": "<p>原生属性 <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/referrerPolicy\">referrerPolicy</a>。</p>",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "crossorigin",
+      "desc": "<p>原生属性 <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/crossorigin\">crossorigin</a></p>",
+      "type": "enum",
+      "optionValue": " | anonymous | use-credentials",
+      "options": [
+        "anonymous",
+        "use-credentials"
+      ],
+      "defaultValue": "—"
+    },
+    {
+      "name": "preview-src-list",
+      "desc": "开启图片预览功能",
+      "type": "object",
+      "optionValue": "string[]",
+      "options": [],
+      "defaultValue": "[]"
+    },
+    {
+      "name": "z-index",
+      "desc": "设置图片预览的 z-index",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "initial-index",
+      "desc": "初始预览图像索引，小于 url-list 的长度",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "0"
+    },
+    {
+      "name": "close-on-press-escape",
+      "desc": "是否可以通过按下 ESC 关闭 Image Viewer",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "preview-teleported",
+      "desc": "image-viewer 是否插入至 body 元素上。 嵌套的父元素属性会发生修改时应该将此属性设置为 true",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "infinite",
+      "desc": "是否可以无限循环预览",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "zoom-rate",
+      "desc": "图像查看器缩放事件的缩放速率。",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "1.2"
+    },
+    {
+      "name": "min-scale ^(2.4.0)",
+      "desc": "图像查看器缩放事件的最小缩放比例",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "0.2"
+    },
+    {
+      "name": "max-scale ^(2.4.0)",
+      "desc": "图像查看器缩放事件的最大缩放比例",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "7"
+    },
+    {
+      "name": "show-progress ^(2.9.4)",
+      "desc": "是否在预览图片时显示进度条",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "placeholder",
+      "desc": "当图像尚未加载时，自定义的占位符内容"
+    },
+    {
+      "name": "error",
+      "desc": "自定义图像加载失败的内容"
+    },
+    {
+      "name": "viewer",
+      "desc": "当图像预览时自定义内容"
+    },
+    {
+      "name": "progress ^(2.9.4)",
+      "desc": "图片预览时自定义进度条内容 （优先级高于 `show-progress` 属性）"
+    },
+    {
+      "name": "toolbar ^(2.9.4)",
+      "desc": "当图像预览时，自定义工具栏内容"
+    }
+  ],
+  "events": [
+    {
+      "name": "@load",
+      "desc": "图片加载成功触发",
+      "param": "Function(e: Event) => void"
+    },
+    {
+      "name": "@error",
+      "desc": "图片加载失败触发",
+      "param": "Function(e: Event) => void"
+    },
+    {
+      "name": "@switch",
+      "desc": "切换图像时触发。",
+      "param": "Function(index: number) => void"
+    },
+    {
+      "name": "@close",
+      "desc": "当点击 X 按钮或者在` hide-on-click-modal `为 true 时点击遮罩层时触发",
+      "param": "Function() => void"
+    },
+    {
+      "name": "@show",
+      "desc": "当 Viewer 显示时触发",
+      "param": "Function() => void"
+    }
+  ],
+  "methods": [
+    {
+      "name": "showPreview ^(2.9.4)",
+      "desc": "手动打开大图预览",
+      "param": "Function() => void"
+    }
+  ]
+}

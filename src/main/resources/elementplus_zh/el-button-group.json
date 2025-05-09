@@ -1,0 +1,42 @@
+{
+  "name": "el-button-group",
+  "attributes": [
+    {
+      "name": "size",
+      "desc": "用于控制该按钮组内按钮的大小",
+      "type": "enum",
+      "optionValue": "large | default | small",
+      "options": [
+        "large",
+        "default",
+        "small"
+      ],
+      "defaultValue": "—"
+    },
+    {
+      "name": "type",
+      "desc": "用于控制该按钮组内按钮的类型",
+      "type": "enum",
+      "optionValue": "primary | success | warning | danger | info",
+      "options": [
+        "primary",
+        "success",
+        "warning",
+        "danger",
+        "info"
+      ],
+      "defaultValue": "—"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "default",
+      "desc": "自定义按钮组内容"
+    }
+  ],
+  "events": [],
+  "methods": []
+}

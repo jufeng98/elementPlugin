@@ -1,0 +1,73 @@
+{
+  "name": "el-affix",
+  "attributes": [
+    {
+      "name": "offset",
+      "desc": "偏移距离",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "0"
+    },
+    {
+      "name": "position",
+      "desc": "固钉位置",
+      "type": "enum",
+      "optionValue": "top | bottom",
+      "options": [
+        "top",
+        "bottom"
+      ],
+      "defaultValue": "top"
+    },
+    {
+      "name": "target",
+      "desc": "指定容器（CSS 选择器）",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "z-index",
+      "desc": "z-index",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "100"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "default",
+      "desc": "自定义默认内容"
+    }
+  ],
+  "events": [
+    {
+      "name": "@change",
+      "desc": "固钉状态改变时触发的事件",
+      "param": "Function(fixed: boolean) => void"
+    },
+    {
+      "name": "@scroll",
+      "desc": "滚动时触发的事件",
+      "param": "Function(value: { scrollTop: number, fixed: boolean }) => void"
+    }
+  ],
+  "methods": [
+    {
+      "name": "update",
+      "desc": "手动更新固钉状态",
+      "param": "Function() => void"
+    },
+    {
+      "name": "updateRoot",
+      "desc": "手动更新根元素的盒模型信息",
+      "param": "Function() => void"
+    }
+  ]
+}

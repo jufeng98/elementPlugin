@@ -1,0 +1,108 @@
+{
+  "name": "el-descriptions-item",
+  "attributes": [
+    {
+      "name": "label",
+      "desc": "标签文本",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "span",
+      "desc": "列的数量",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "1"
+    },
+    {
+      "name": "rowspan ^(2.8.1)",
+      "desc": "单元格应该跨越的行数",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "1"
+    },
+    {
+      "name": "width",
+      "desc": "列的宽度，不同行相同列的宽度按最大值设定（如无 border ，宽度包含标签与内容）",
+      "type": "string / number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "min-width",
+      "desc": "列的最小宽度，与 width 的区别是 width 是固定的，min-width 会把剩余宽度按比例分配给设置了 min-width 的列（如无 border，宽度包含标签与内容）",
+      "type": "string / number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "label-width ^(2.8.8)",
+      "desc": "列标签宽，如果未设置，它将与列宽度相同。 比 Descriptions 的 label-width  优先级高",
+      "type": "string / number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "align",
+      "desc": "列的内容对齐方式（如无 border，对标签和内容均生效）",
+      "type": "enum",
+      "optionValue": "left | center | right",
+      "options": [
+        "left",
+        "center",
+        "right"
+      ],
+      "defaultValue": "left"
+    },
+    {
+      "name": "label-align",
+      "desc": "列的标签对齐方式，若不设置该项，则使用内容的对齐方式（如无 border，请使用 align 参数）",
+      "type": "enum",
+      "optionValue": "left | center | right",
+      "options": [
+        "left",
+        "center",
+        "right"
+      ],
+      "defaultValue": ""
+    },
+    {
+      "name": "class-name",
+      "desc": "列的内容自定义类名",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "label-class-name",
+      "desc": "column label custom class name",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "default",
+      "desc": "自定义默认内容"
+    },
+    {
+      "name": "label",
+      "desc": "自定义标签"
+    }
+  ],
+  "events": [],
+  "methods": []
+}

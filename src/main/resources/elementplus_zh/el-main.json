@@ -1,0 +1,15 @@
+{
+  "name": "el-main",
+  "attributes": [],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "default",
+      "desc": "自定义默认内容"
+    }
+  ],
+  "events": [],
+  "methods": []
+}

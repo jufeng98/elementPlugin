@@ -1,0 +1,32 @@
+{
+  "name": "el-breadcrumb",
+  "attributes": [
+    {
+      "name": "separator",
+      "desc": "分隔符",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "/"
+    },
+    {
+      "name": "separator-icon",
+      "desc": "图标分隔符的组件或组件名",
+      "type": "string / Component",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "default",
+      "desc": "自定义默认内容"
+    }
+  ],
+  "events": [],
+  "methods": []
+}

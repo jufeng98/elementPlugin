@@ -1,0 +1,15 @@
+{
+  "name": "el-timeline",
+  "attributes": [],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "default",
+      "desc": "timeline 组件的自定义默认内容"
+    }
+  ],
+  "events": [],
+  "methods": []
+}

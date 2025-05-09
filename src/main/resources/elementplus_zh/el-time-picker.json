@@ -1,0 +1,302 @@
+{
+  "name": "el-time-picker",
+  "attributes": [
+    {
+      "name": "model-value",
+      "desc": "绑定值，如果它是数组，长度应该是 2",
+      "type": "number / string / object",
+      "optionValue": "Date | [Date, Date] | [number, number] | [string, string]",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "v-model",
+      "desc": "绑定值，如果它是数组，长度应该是 2",
+      "type": "number / string / object",
+      "optionValue": "Date | [Date, Date] | [number, number] | [string, string]",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "readonly",
+      "desc": "完全只读",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "disabled",
+      "desc": "禁用",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "editable",
+      "desc": "文本框可输入",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "clearable",
+      "desc": "是否显示清除按钮",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "size",
+      "desc": "输入框尺寸",
+      "type": "enum",
+      "optionValue": "large | default | small",
+      "options": [
+        "large",
+        "default",
+        "small"
+      ],
+      "defaultValue": "—"
+    },
+    {
+      "name": "placeholder",
+      "desc": "非范围选择时的占位内容",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "start-placeholder",
+      "desc": "范围选择时开始日期的占位内容",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "end-placeholder",
+      "desc": "范围选择时结束日期的占位内容",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "is-range",
+      "desc": "是否为时间范围选择",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "arrow-control",
+      "desc": "是否使用箭头进行时间选择",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "popper-class",
+      "desc": "TimePicker 下拉框的类名",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "range-separator",
+      "desc": "选择范围时的分隔符",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "-"
+    },
+    {
+      "name": "format",
+      "desc": "显示在输入框中的格式",
+      "type": "string see [date formats(/en-US/component/date-picker#date-formats)",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "default-value",
+      "desc": "可选，选择器打开时默认显示的时间",
+      "type": "Date / object",
+      "optionValue": "[Date, Date]",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "value-format",
+      "desc": "可选，绑定值的格式。 不指定则绑定值为 Date 对象",
+      "type": "string 参考 [日期格式(/en-US/component/date-picker#date-formats)",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "id",
+      "desc": "等价于原生 input id 属性",
+      "type": "string / object",
+      "optionValue": "[string, string]",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "name",
+      "desc": "等价于原生 input name 属性",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "aria-label ^(a11y) ^(2.7.2)",
+      "desc": "等价于原生 input aria-label 属性",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "prefix-icon",
+      "desc": "自定义前缀图标",
+      "type": "string / Component",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "Clock"
+    },
+    {
+      "name": "clear-icon",
+      "desc": "自定义清除图标",
+      "type": "string / Component",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "CircleClose"
+    },
+    {
+      "name": "disabled-hours",
+      "desc": "禁止选择部分小时选项",
+      "type": "Function",
+      "optionValue": "(role: string, comparingDate?: Dayjs) => number[]",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "disabled-minutes",
+      "desc": "禁止选择部分分钟选项",
+      "type": "Function",
+      "optionValue": "(hour: number, role: string, comparingDate?: Dayjs) => number[]",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "disabled-seconds",
+      "desc": "禁止选择部分秒选项",
+      "type": "Function",
+      "optionValue": "(hour: number, minute: number, role: string, comparingDate?: Dayjs) => number[]",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "teleported",
+      "desc": "是否将 popover 的下拉列表镜像至 body 元素",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "tabindex",
+      "desc": "输入框的 tabindex",
+      "type": "string / number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "0"
+    },
+    {
+      "name": "empty-values ^(2.7.0)",
+      "desc": "组件的空值配置 [参考config-provider](/en-US/component/config-provider#empty-values-configurations)",
+      "type": "array",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "value-on-clear ^(2.7.0)",
+      "desc": "清空选项的值 [参考 config-provider](/en-US/component/config-provider#empty-values-configurations)",
+      "type": "string / number / boolean / Function",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "label ^(a11y) ^(deprecated)",
+      "desc": "等价于原生 input aria-label 属性",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [],
+  "events": [
+    {
+      "name": "@change",
+      "desc": "用户确认选定的值时触发",
+      "param": "Function(val: number | string | Date | [number, number | [string, string | [Date, Date) => void"
+    },
+    {
+      "name": "@blur",
+      "desc": "在组件 Input 失去焦点时触发",
+      "param": "Function(e: FocusEvent) => void"
+    },
+    {
+      "name": "@focus",
+      "desc": "在组件 Input 获得焦点时触发",
+      "param": "Function(e: FocusEvent) => void"
+    },
+    {
+      "name": "@clear ^(2.7.7)",
+      "desc": "可清空的模式下用户点击清空按钮时触发",
+      "param": "Function() => void"
+    },
+    {
+      "name": "@visible-change",
+      "desc": "当 TimePicker 的下拉列表出现/消失时触发",
+      "param": "Function(visibility: boolean) => void"
+    }
+  ],
+  "methods": [
+    {
+      "name": "focus",
+      "desc": "使组件获取焦点",
+      "param": "Function() => void"
+    },
+    {
+      "name": "blur",
+      "desc": "使组件失去焦点",
+      "param": "Function() => void"
+    },
+    {
+      "name": "handleOpen ^(2.2.16)",
+      "desc": "打开时间选择器弹窗",
+      "param": "Function() => void"
+    },
+    {
+      "name": "handleClose ^(2.2.16)",
+      "desc": "关闭时间选择器弹窗",
+      "param": "Function() => void"
+    }
+  ]
+}

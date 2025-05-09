@@ -1,0 +1,103 @@
+{
+  "name": "el-anchor",
+  "attributes": [
+    {
+      "name": "container",
+      "desc": "滚动的容器",
+      "type": "",
+      "optionValue": "string",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "offset",
+      "desc": "设置锚点滚动的偏移量",
+      "type": "",
+      "optionValue": "number",
+      "options": [],
+      "defaultValue": "0"
+    },
+    {
+      "name": "bound",
+      "desc": "触发锚点的元素的位置偏移量",
+      "type": "",
+      "optionValue": "number",
+      "options": [],
+      "defaultValue": "15"
+    },
+    {
+      "name": "duration",
+      "desc": "设置容器滚动持续时间，单位为毫秒。",
+      "type": "",
+      "optionValue": "number",
+      "options": [],
+      "defaultValue": "300"
+    },
+    {
+      "name": "marker",
+      "desc": "是否显示标记",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "type",
+      "desc": "设置锚点类型",
+      "type": "enum",
+      "optionValue": "default | underline",
+      "options": [
+        "default",
+        "underline"
+      ],
+      "defaultValue": "default"
+    },
+    {
+      "name": "direction",
+      "desc": "设置锚点方向",
+      "type": "enum",
+      "optionValue": "vertical | horizontal",
+      "options": [
+        "vertical",
+        "horizontal"
+      ],
+      "defaultValue": "vertical"
+    },
+    {
+      "name": "select-scroll-top ^(2.9.2)",
+      "desc": "滚动时，链接是否选中位于顶部",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "default",
+      "desc": "AnchorLink 组件列表"
+    }
+  ],
+  "events": [
+    {
+      "name": "@change",
+      "desc": "step 改变时的回调",
+      "param": "Function(href: string) => void"
+    },
+    {
+      "name": "@click",
+      "desc": "当用户点击链接时触发",
+      "param": "Function(e: MouseEvent, href?: string) => void"
+    }
+  ],
+  "methods": [
+    {
+      "name": "scrollTo",
+      "desc": "手动滚动到特定位置。",
+      "param": "Function(href: string) => void"
+    }
+  ]
+}

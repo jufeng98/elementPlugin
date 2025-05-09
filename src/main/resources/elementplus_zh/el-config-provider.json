@@ -1,0 +1,56 @@
+{
+  "name": "el-config-provider",
+  "attributes": [
+    {
+      "name": "max",
+      "desc": "可同时显示的消息最大数量",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "grouping ^(2.8.2)",
+      "desc": "合并内容相同的消息，不支持 VNode 类型的消息",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "duration ^(2.8.2)",
+      "desc": "显示时间，单位为毫秒。 设为 0 则不会自动关闭",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "showClose ^(2.8.2)",
+      "desc": "是否显示关闭按钮",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "offset ^(2.8.2)",
+      "desc": "Message 距离窗口顶部的偏移量",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "default",
+      "desc": "自定义默认内容"
+    }
+  ],
+  "events": [],
+  "methods": []
+}

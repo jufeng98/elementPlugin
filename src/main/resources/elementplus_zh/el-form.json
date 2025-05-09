@@ -1,0 +1,192 @@
+{
+  "name": "el-form",
+  "attributes": [
+    {
+      "name": "model",
+      "desc": "表单数据对象",
+      "type": "object",
+      "optionValue": "Record<string, any>",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "rules",
+      "desc": "表单验证规则",
+      "type": "object",
+      "optionValue": "FormRules",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "inline",
+      "desc": "行内表单模式",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "label-position",
+      "desc": "表单域标签的位置， 当设置为 left 或 right 时，则也需要设置 label-width 属性",
+      "type": "enum",
+      "optionValue": "left | right | top",
+      "options": [
+        "left",
+        "right",
+        "top"
+      ],
+      "defaultValue": "right"
+    },
+    {
+      "name": "label-width",
+      "desc": "标签的长度，例如 '50px'。 作为 Form 直接子元素的 form-item 会继承该值。 可以使用 auto。",
+      "type": "string / number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "label-suffix",
+      "desc": "表单域标签的后缀",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "hide-required-asterisk",
+      "desc": "是否隐藏必填字段标签旁边的红色星号。",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "require-asterisk-position",
+      "desc": "星号的位置。",
+      "type": "enum",
+      "optionValue": "left | right",
+      "options": [
+        "left",
+        "right"
+      ],
+      "defaultValue": "left"
+    },
+    {
+      "name": "show-message",
+      "desc": "是否显示校验错误信息",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "inline-message",
+      "desc": "是否以行内形式展示校验信息",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "status-icon",
+      "desc": "是否在输入框中显示校验结果反馈图标",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "validate-on-rule-change",
+      "desc": "是否在 rules 属性改变后立即触发一次验证",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "size",
+      "desc": "用于控制该表单内组件的尺寸",
+      "type": "enum",
+      "optionValue": " | large | default | small",
+      "options": [
+        "large",
+        "default",
+        "small"
+      ],
+      "defaultValue": "—"
+    },
+    {
+      "name": "disabled",
+      "desc": "是否禁用该表单内的所有组件。 如果设置为 true, 它将覆盖内部组件的 disabled 属性",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "scroll-to-error",
+      "desc": "当校验失败时，滚动到第一个错误表单项",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "scroll-into-view-options ^(2.3.2)",
+      "desc": "<p>当校验有失败结果时，滚动到第一个失败的表单项目 可通过 <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollIntoView\">scrollIntoView</a> 配置</p>",
+      "type": "object",
+      "optionValue": "Record<string, any>",
+      "options": [],
+      "defaultValue": "—"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "default",
+      "desc": "自定义默认内容"
+    }
+  ],
+  "events": [
+    {
+      "name": "@validate",
+      "desc": "任一表单项被校验后触发",
+      "param": "Function(prop: FormItemProp, isValid: boolean, message: string) => void"
+    }
+  ],
+  "methods": [
+    {
+      "name": "validate",
+      "desc": "对整个表单的内容进行验证。 接收一个回调函数，或返回 `Promise`。",
+      "param": "Function(callback?: FormValidateCallback) => Promise<void>"
+    },
+    {
+      "name": "validateField",
+      "desc": "验证具体的某个字段。",
+      "param": "Function(props?: Arrayable<FormItemProp> | undefined, callback?: FormValidateCallback | undefined) => FormValidationResult"
+    },
+    {
+      "name": "resetFields",
+      "desc": "重置该表单项，将其值重置为初始值，并移除校验结果",
+      "param": "Function(props?: Arrayable<FormItemProp> | undefined) => void"
+    },
+    {
+      "name": "scrollToField",
+      "desc": "滚动到指定的字段",
+      "param": "Function(prop: FormItemProp) => void"
+    },
+    {
+      "name": "clearValidate",
+      "desc": "清理某个字段的表单验证信息。",
+      "param": "Function(props?: Arrayable<FormItemProp> | undefined) => void"
+    },
+    {
+      "name": "fields ^(2.7.3)",
+      "desc": "获取所有字段的 context",
+      "param": "arrayFormItemContext["
+    }
+  ]
+}

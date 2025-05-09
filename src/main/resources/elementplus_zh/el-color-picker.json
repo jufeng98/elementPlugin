@@ -1,0 +1,181 @@
+{
+  "name": "el-color-picker",
+  "attributes": [
+    {
+      "name": "model-value",
+      "desc": "选中项绑定值",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "v-model",
+      "desc": "选中项绑定值",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "disabled",
+      "desc": "是否禁用",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "size",
+      "desc": "尺寸",
+      "type": "enum",
+      "optionValue": "large | default | small",
+      "options": [
+        "large",
+        "default",
+        "small"
+      ],
+      "defaultValue": "—"
+    },
+    {
+      "name": "show-alpha",
+      "desc": "是否支持透明度选择",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "color-format",
+      "desc": "写入 v-model 的颜色的格式",
+      "type": "enum",
+      "optionValue": "hsl | hsv | hex | rgb | hex (when show-alpha is false) | rgb (when show-alpha is true)",
+      "options": [
+        "hsl",
+        "hsv",
+        "hex",
+        "rgb",
+        "hex (when show-alpha is false)",
+        "rgb (when show-alpha is true)"
+      ],
+      "defaultValue": "—"
+    },
+    {
+      "name": "popper-class",
+      "desc": "ColorPicker 下拉框的类名",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "predefine",
+      "desc": "预定义颜色",
+      "type": "object",
+      "optionValue": "string[]",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "validate-event",
+      "desc": "输入时是否触发表单的校验",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "tabindex",
+      "desc": "ColorPicker 的 tabindex",
+      "type": "string / number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "0"
+    },
+    {
+      "name": "aria-label ^(a11y) ^(2.7.2)",
+      "desc": "ColorPicker 的 aria-label",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "id",
+      "desc": "ColorPicker 的 id",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "teleported ^(2.7.2)",
+      "desc": "是否将 popover 的下拉列表渲染至 body 下",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "label ^(a11y) ^(deprecated)",
+      "desc": "ColorPicker 的 aria-label",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [],
+  "events": [
+    {
+      "name": "@change",
+      "desc": "当绑定值变化时触发",
+      "param": "Function(value: string) => void"
+    },
+    {
+      "name": "@active-change",
+      "desc": "面板中当前显示的颜色发生改变时触发",
+      "param": "Function(value: string) => void"
+    },
+    {
+      "name": "@focus ^(2.4.0)",
+      "desc": "当获得焦点时触发",
+      "param": "Function(event: FocusEvent) => void"
+    },
+    {
+      "name": "@blur ^(2.4.0)",
+      "desc": "当失去焦点时触发",
+      "param": "Function(event: FocusEvent) => void"
+    }
+  ],
+  "methods": [
+    {
+      "name": "color",
+      "desc": "当前色彩对象",
+      "param": "objectColor"
+    },
+    {
+      "name": "show ^(2.3.3)",
+      "desc": "手动显示颜色选择器",
+      "param": "Function() => void"
+    },
+    {
+      "name": "hide ^(2.3.3)",
+      "desc": "手动隐藏颜色选择器",
+      "param": "Function() => void"
+    },
+    {
+      "name": "focus ^(2.3.13)",
+      "desc": "使 picker 获得焦点",
+      "param": "Function() => void"
+    },
+    {
+      "name": "blur ^(2.3.13)",
+      "desc": "使 picker 失去焦点",
+      "param": "Function() => void"
+    }
+  ]
+}

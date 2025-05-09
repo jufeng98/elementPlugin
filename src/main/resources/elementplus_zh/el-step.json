@@ -1,0 +1,62 @@
+{
+  "name": "el-step",
+  "attributes": [
+    {
+      "name": "title",
+      "desc": "标题",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "description",
+      "desc": "描述文案",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "icon",
+      "desc": "Step 组件的自定义图标。 也支持 slot 方式写入",
+      "type": "string / Component",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "status",
+      "desc": "设置当前步骤的状态， 不设置则根据 steps 确定状态",
+      "type": "enum",
+      "optionValue": " | wait | process | finish | error | success",
+      "options": [
+        "wait",
+        "process",
+        "finish",
+        "error",
+        "success"
+      ],
+      "defaultValue": ""
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "icon",
+      "desc": "自定义图标"
+    },
+    {
+      "name": "title",
+      "desc": "自定义标题"
+    },
+    {
+      "name": "description",
+      "desc": "自定义描述文案"
+    }
+  ],
+  "events": [],
+  "methods": []
+}

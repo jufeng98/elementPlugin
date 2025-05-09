@@ -1,0 +1,36 @@
+{
+  "name": "el-anchor-link",
+  "attributes": [
+    {
+      "name": "title",
+      "desc": "链接的文本内容。",
+      "type": "",
+      "optionValue": "string",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "href",
+      "desc": "链接的地址。",
+      "type": "",
+      "optionValue": "string",
+      "options": [],
+      "defaultValue": "—"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "default",
+      "desc": "链接的内容"
+    },
+    {
+      "name": "sub-link",
+      "desc": "子链接的槽位。"
+    }
+  ],
+  "events": [],
+  "methods": []
+}

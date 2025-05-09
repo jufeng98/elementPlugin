@@ -1,0 +1,550 @@
+{
+  "name": "el-table",
+  "attributes": [
+    {
+      "name": "data",
+      "desc": "表数据",
+      "type": "array",
+      "optionValue": "any[]",
+      "options": [],
+      "defaultValue": "[]"
+    },
+    {
+      "name": "height",
+      "desc": "table 的高度。 默认为自动高度。 如果 height 为 number 类型，单位 px；如果 height 为 string 类型，则这个高度会设置为 Table 的 style.height 的值，Table 的高度会受控于外部样式。",
+      "type": "string / number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "max-height",
+      "desc": "table 的最大高度。 合法的值为数字或者单位为 px 的高度。",
+      "type": "string / number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "stripe",
+      "desc": "是否为斑马纹 table",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "border",
+      "desc": "是否带有纵向边框",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "size",
+      "desc": "Table 的尺寸",
+      "type": "enum",
+      "optionValue": " | large | default | small",
+      "options": [
+        "large",
+        "default",
+        "small"
+      ],
+      "defaultValue": "—"
+    },
+    {
+      "name": "fit",
+      "desc": "列的宽度是否自撑开",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "show-header",
+      "desc": "是否显示表头",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "highlight-current-row",
+      "desc": "是否要高亮当前行",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "current-row-key",
+      "desc": "当前行的 key，只写属性",
+      "type": "string / number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "row-class-name",
+      "desc": "行的 className 的回调方法，也可以使用字符串为所有行设置一个固定的 className。",
+      "type": "Function",
+      "optionValue": "(data: { row: any, rowIndex: number }) => string",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "row-style",
+      "desc": "行的 style 的回调方法，也可以使用一个固定的 Object 为所有行设置一样的 Style。",
+      "type": "Function",
+      "optionValue": "(data: { row: any, rowIndex: number }) => CSSProperties",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "cell-class-name",
+      "desc": "单元格的 className 的回调方法，也可以使用字符串为所有单元格设置一个固定的 className。",
+      "type": "Function",
+      "optionValue": "(data: { row: any, column: any, rowIndex: number, columnIndex: number }) => string",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "cell-style",
+      "desc": "单元格的 style 的回调方法，也可以使用一个固定的 Object 为所有单元格设置一样的 Style。",
+      "type": "Function",
+      "optionValue": "(data: { row: any, column: any, rowIndex: number, columnIndex: number }) => CSSProperties",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "header-row-class-name",
+      "desc": "表头行的 className 的回调方法，也可以使用字符串为所有表头行设置一个固定的 className。",
+      "type": "Function",
+      "optionValue": "(data: { row: any, rowIndex: number }) => string",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "header-row-style",
+      "desc": "表头行的 style 的回调方法，也可以使用一个固定的 Object 为所有表头行设置一样的 Style。",
+      "type": "Function",
+      "optionValue": "(data: { row: any, rowIndex: number }) => CSSProperties",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "header-cell-class-name",
+      "desc": "表头单元格的 className 的回调方法，也可以使用字符串为所有表头单元格设置一个固定的 className。",
+      "type": "Function",
+      "optionValue": "(data: { row: any, column: any, rowIndex: number, columnIndex: number }) => string",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "header-cell-style",
+      "desc": "表头单元格的 style 的回调方法，也可以使用一个固定的 Object 为所有表头单元格设置一样的 Style。",
+      "type": "Function",
+      "optionValue": "(data: { row: any, column: any, rowIndex: number, columnIndex: number }) => CSSProperties",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "row-key",
+      "desc": "行数据的 Key，用来优化 Table 的渲染； 在使用 reserve-selection 功能与显示树形数据时，该属性是必填的。 类型为 String 时，支持多层访问：user.info.id，但不支持 user.info[0].id，此种情况请使用 Function。",
+      "type": "function",
+      "optionValue": "(row: any) => string",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "empty-text",
+      "desc": "空数据时显示的文本内容， 也可以通过 #empty 设置",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "No Data"
+    },
+    {
+      "name": "default-expand-all",
+      "desc": "是否默认展开所有行，当 Table 包含展开行存在或者为树形表格时有效",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "expand-row-keys",
+      "desc": "可以通过该属性设置 Table 目前的展开行，需要设置 row-key 属性才能使用，该属性为展开行的 keys 数组。",
+      "type": "array",
+      "optionValue": "string[]",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "default-sort",
+      "desc": "默认的排序列的 prop 和顺序。 它的 prop 属性指定默认的排序的列，order 指定默认排序的顺序",
+      "type": "object",
+      "optionValue": "Sort",
+      "options": [],
+      "defaultValue": "如果设置了prop，但没有设置 order，那么 order将被默认设置为ascending"
+    },
+    {
+      "name": "tooltip-effect",
+      "desc": "溢出的 tooltip 的 effect",
+      "type": "enum",
+      "optionValue": "dark | light",
+      "options": [
+        "dark",
+        "light"
+      ],
+      "defaultValue": "dark"
+    },
+    {
+      "name": "tooltip-options ^(2.2.28)",
+      "desc": "溢出 tooltip 的选项，[参见下述 tooltip 组件](tooltip.html#attributes)",
+      "type": "object",
+      "optionValue": "Pick<ElTooltipProps, effect | enterable | hideAfter | offset | placement | popperClass | popperOptions | showAfter | showArrow>",
+      "options": [],
+      "defaultValue": "^[object]{ enterable: true, placement: top, showArrow: true, hideAfter: 200, popperOptions: { strategy: fixed } }"
+    },
+    {
+      "name": "append-filter-panel-to ^(2.8.4)",
+      "desc": "挂载到哪个 DOM 元素",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "show-summary",
+      "desc": "是否在表尾显示合计行",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "sum-text",
+      "desc": "显示摘要行第一列的文本",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "Sum"
+    },
+    {
+      "name": "summary-method",
+      "desc": "自定义的合计计算方法",
+      "type": "Function",
+      "optionValue": "(data: { columns: any[], data: any[] }) => (VNode | string)[]",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "span-method",
+      "desc": "合并行或列的计算方法",
+      "type": "Function",
+      "optionValue": "(data: { row: any, column: any, rowIndex: number, columnIndex: number }) => number[] | { rowspan: number, colspan: number } | void",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "select-on-indeterminate",
+      "desc": "在多选表格中，当仅有部分行被选中时，点击表头的多选框时的行为。 若为 true，则选中所有行；若为 false，则取消选择所有行",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "indent",
+      "desc": "展示树形数据时，树节点的缩进",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "16"
+    },
+    {
+      "name": "lazy",
+      "desc": "是否懒加载子节点数据",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "load",
+      "desc": "加载子节点数据的函数，lazy 为 true 时生效",
+      "type": "Function",
+      "optionValue": "(row: any, treeNode: TreeNode, resolve: (data: any[]) => void) => void",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "tree-props",
+      "desc": "渲染嵌套数据的配置选项",
+      "type": "object",
+      "optionValue": "{ hasChildren?: string, children?: string, checkStrictly?: boolean }",
+      "options": [],
+      "defaultValue": "^[object]{ hasChildren: hasChildren, children: children, checkStrictly: false }"
+    },
+    {
+      "name": "table-layout",
+      "desc": "设置表格单元、行和列的布局方式",
+      "type": "enum",
+      "optionValue": "fixed | auto",
+      "options": [
+        "fixed",
+        "auto"
+      ],
+      "defaultValue": "fixed"
+    },
+    {
+      "name": "scrollbar-always-on",
+      "desc": "总是显示滚动条",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "show-overflow-tooltip",
+      "desc": "是否隐藏额外内容并在单元格悬停时使用 Tooltip 显示它们。这将影响全部列的展示，详请参考[tooltip-options](#table-attributes)",
+      "type": "boolean / [",
+      "optionValue": "object",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "flexible ^(2.2.1)",
+      "desc": "确保主轴的最小尺寸，以便不超过内容",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "scrollbar-tabindex ^(2.8.3)",
+      "desc": "body 的滚动条的包裹容器 tabindex",
+      "type": "string / number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "allow-drag-last-column ^(2.9.2)",
+      "desc": "是否允许拖动最后一列",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "tooltip-formatter ^(2.9.4)",
+      "desc": "自定义 show-overflow-tooltip 时的 tooltip 内容",
+      "type": "Function",
+      "optionValue": "(data: { row: any, column: any, cellValue: any }) => VNode | string",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "preserve-expanded-content ^(2.9.7)",
+      "desc": "在折叠后是否在DOM中保留展开行内容",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "default",
+      "desc": "自定义默认内容"
+    },
+    {
+      "name": "append",
+      "desc": "插入至表格最后一行之后的内容， 如果需要对表格的内容进行无限滚动操作，可能需要用到这个 slot。 若表格有合计行，该 slot 会位于合计行之上。"
+    },
+    {
+      "name": "empty",
+      "desc": "当数据为空时自定义的内容"
+    }
+  ],
+  "events": [
+    {
+      "name": "@select",
+      "desc": "当用户手动勾选数据行的 Checkbox 时触发的事件",
+      "param": "Function<T = any>(selection: T[, row: T) => void"
+    },
+    {
+      "name": "@select-all",
+      "desc": "当用户手动勾选全选 Checkbox 时触发的事件",
+      "param": "Function(selection: any[) => void"
+    },
+    {
+      "name": "@selection-change",
+      "desc": "当选择项发生变化时会触发该事件",
+      "param": "Function(newSelection: any[) => void"
+    },
+    {
+      "name": "@cell-mouse-enter",
+      "desc": "当单元格 hover 进入时会触发该事件",
+      "param": "Function(row: any, column: any, cell: HTMLTableCellElement, event: Event) => void"
+    },
+    {
+      "name": "@cell-mouse-leave",
+      "desc": "当单元格 hover 退出时会触发该事件",
+      "param": "Function(row: any, column: any, cell: HTMLTableCellElement, event: Event) => void"
+    },
+    {
+      "name": "@cell-click",
+      "desc": "当某个单元格被点击时会触发该事件",
+      "param": "Function(row: any, column: any, cell: HTMLTableCellElement, event: Event) => void"
+    },
+    {
+      "name": "@cell-dblclick",
+      "desc": "当某个单元格被双击击时会触发该事件",
+      "param": "Function(row: any, column: any, cell: HTMLTableCellElement, event: Event) => void"
+    },
+    {
+      "name": "@cell-contextmenu",
+      "desc": "当某个单元格被鼠标右键点击时会触发该事件",
+      "param": "Function(row: any, column: any, cell: HTMLTableCellElement, event: Event) => void"
+    },
+    {
+      "name": "@row-click",
+      "desc": "当某一行被点击时会触发该事件",
+      "param": "Function(row: any, column: any, event: Event) => void"
+    },
+    {
+      "name": "@row-contextmenu",
+      "desc": "当某一行被鼠标右键点击时会触发该事件",
+      "param": "Function(row: any, column: any, event: Event) => void"
+    },
+    {
+      "name": "@row-dblclick",
+      "desc": "当某一行被双击时会触发该事件",
+      "param": "Function(row: any, column: any, event: Event) => void"
+    },
+    {
+      "name": "@header-click",
+      "desc": "当某一列的表头被点击时会触发该事件",
+      "param": "Function(column: any, event: Event) => void"
+    },
+    {
+      "name": "@header-contextmenu",
+      "desc": "当某一列的表头被鼠标右键点击时触发该事件",
+      "param": "Function(column: any, event: Event) => void"
+    },
+    {
+      "name": "@sort-change",
+      "desc": "当表格的排序条件发生变化的时候会触发该事件",
+      "param": "Function(data: {column: any, prop: string, order: any }) => void"
+    },
+    {
+      "name": "@filter-change",
+      "desc": "column 的 key， 如果需要使用 filter-change 事件，则需要此属性标识是哪个 column 的筛选条件",
+      "param": "Function(newFilters: any) => void"
+    },
+    {
+      "name": "@current-change",
+      "desc": "当表格的当前行发生变化的时候会触发该事件，如果要高亮当前行，请打开表格的 highlight-current-row 属性",
+      "param": "Function(currentRow: any, oldCurrentRow: any) => void"
+    },
+    {
+      "name": "@header-dragend",
+      "desc": "当拖动表头改变了列的宽度的时候会触发该事件",
+      "param": "Function(newWidth: number, oldWidth: number, column: any, event: MouseEvent) => void"
+    },
+    {
+      "name": "@expand-change",
+      "desc": "当用户对某一行展开或者关闭的时候会触发该事件（展开行时，回调的第二个参数为 expandedRows；树形表格时第二参数为 expanded）",
+      "param": "Function(row: any, expandedRows: any[) => void & (row: any, expanded: boolean) => void"
+    },
+    {
+      "name": "@scroll ^(2.9.0)",
+      "desc": "表格被用户滚动后触发",
+      "param": "Function({ scrollLeft: number, scrollTop: number }) => void"
+    }
+  ],
+  "methods": [
+    {
+      "name": "clearSelection",
+      "desc": "用于多选表格，清空用户的选择",
+      "param": "Function() => void"
+    },
+    {
+      "name": "getSelectionRows",
+      "desc": "返回当前选中的行",
+      "param": "Function() => any["
+    },
+    {
+      "name": "toggleRowSelection",
+      "desc": "用于多选表格，切换某一行的选中状态， 如果使用了第二个参数，则可直接设置这一行选中与否",
+      "param": "Function(row: any, selected?: boolean, ignoreSelectable = true) => void"
+    },
+    {
+      "name": "toggleAllSelection",
+      "desc": "用于多选表格，切换全选和全不选",
+      "param": "Function() => void"
+    },
+    {
+      "name": "toggleRowExpansion",
+      "desc": "用于可扩展的表格或树表格，如果某行被扩展，则切换。 使用第二个参数，您可以直接设置该行应该被扩展或折叠。",
+      "param": "Function(row: any, expanded?: boolean) => void"
+    },
+    {
+      "name": "setCurrentRow",
+      "desc": "用于单选表格，设定某一行为选中行， 如果调用时不加参数，则会取消目前高亮行的选中状态。",
+      "param": "Function(row: any) => void"
+    },
+    {
+      "name": "clearSort",
+      "desc": "用于清空排序条件，数据会恢复成未排序的状态",
+      "param": "Function() => void"
+    },
+    {
+      "name": "clearFilter",
+      "desc": "传入由`columnKey` 组成的数组以清除指定列的过滤条件。 如果没有参数，清除所有过滤器",
+      "param": "Function(columnKeys?: string[) => void"
+    },
+    {
+      "name": "doLayout",
+      "desc": "对 Table 进行重新布局。 当表格可见性变化时，您可能需要调用此方法以获得正确的布局",
+      "param": "Function() => void"
+    },
+    {
+      "name": "sort",
+      "desc": "手动排序表格。 参数 `prop` 属性指定排序列，`order` 指定排序顺序。",
+      "param": "Function(prop: string, order: string) => void"
+    },
+    {
+      "name": "scrollTo",
+      "desc": "滚动到一组特定坐标",
+      "param": "Function(options: number | ScrollToOptions, yCoord?: number) => void"
+    },
+    {
+      "name": "setScrollTop",
+      "desc": "设置垂直滚动位置",
+      "param": "Function(top?: number) => void"
+    },
+    {
+      "name": "setScrollLeft",
+      "desc": "设置水平滚动位置",
+      "param": "Function(left?: number) => void"
+    },
+    {
+      "name": "columns ^(2.7.6)",
+      "desc": "获取表列的 context",
+      "param": "arrayTableColumnCtx<T>["
+    },
+    {
+      "name": "updateKeyChildren ^(2.8.4)",
+      "desc": "适用于 lazy Table, 需要设置 `rowKey`, 更新 key children",
+      "param": "Function(key: string, data: T[) => void"
+    }
+  ]
+}

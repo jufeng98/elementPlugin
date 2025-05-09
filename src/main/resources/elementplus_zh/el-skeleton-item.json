@@ -1,0 +1,29 @@
+{
+  "name": "el-skeleton-item",
+  "attributes": [
+    {
+      "name": "variant",
+      "desc": "当前渲染 skeleton 类型",
+      "type": "enum",
+      "optionValue": "p | text | h1 | h3 | caption | button | image | circle | rect",
+      "options": [
+        "p",
+        "text",
+        "h1",
+        "h3",
+        "caption",
+        "button",
+        "image",
+        "circle",
+        "rect"
+      ],
+      "defaultValue": "text"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [],
+  "events": [],
+  "methods": []
+}

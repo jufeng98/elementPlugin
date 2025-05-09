@@ -1,0 +1,66 @@
+{
+  "name": "el-text",
+  "attributes": [
+    {
+      "name": "type",
+      "desc": "类型",
+      "type": "enum",
+      "optionValue": "primary | success | warning | danger | info",
+      "options": [
+        "primary",
+        "success",
+        "warning",
+        "danger",
+        "info"
+      ],
+      "defaultValue": "—"
+    },
+    {
+      "name": "size",
+      "desc": "大小",
+      "type": "enum",
+      "optionValue": "large | default | small",
+      "options": [
+        "large",
+        "default",
+        "small"
+      ],
+      "defaultValue": "default"
+    },
+    {
+      "name": "truncated",
+      "desc": "显示省略号",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "line-clamp ^(2.4.0)",
+      "desc": "最大行数",
+      "type": "string / number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "tag",
+      "desc": "自定义元素标签",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "span"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "default",
+      "desc": "默认内容"
+    }
+  ],
+  "events": [],
+  "methods": []
+}

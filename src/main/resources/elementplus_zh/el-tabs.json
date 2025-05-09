@@ -1,0 +1,130 @@
+{
+  "name": "el-tabs",
+  "attributes": [
+    {
+      "name": "model-value",
+      "desc": "绑定值，选中选项卡的 name，默认值是第一个 tab 的 name",
+      "type": "string / number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "v-model",
+      "desc": "绑定值，选中选项卡的 name，默认值是第一个 tab 的 name",
+      "type": "string / number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "type",
+      "desc": "风格类型",
+      "type": "enum",
+      "optionValue": " | card | border-card",
+      "options": [
+        "card",
+        "border-card"
+      ],
+      "defaultValue": ""
+    },
+    {
+      "name": "closable",
+      "desc": "标签是否可关闭",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "addable",
+      "desc": "标签是否可增加",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "editable",
+      "desc": "标签是否同时可增加和关闭",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "tab-position",
+      "desc": "选项卡所在位置",
+      "type": "enum",
+      "optionValue": "top | right | bottom | left",
+      "options": [
+        "top",
+        "right",
+        "bottom",
+        "left"
+      ],
+      "defaultValue": "top"
+    },
+    {
+      "name": "stretch",
+      "desc": "标签的宽度是否自撑开",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "before-leave",
+      "desc": "切换标签之前的钩子函数， 若返回 false  或者返回被 reject 的  Promise ，则阻止切换。",
+      "type": "Function",
+      "optionValue": "(activeName: TabPaneName, oldActiveName: TabPaneName) => Awaitable<void | boolean>",
+      "options": [],
+      "defaultValue": "() => true"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "default",
+      "desc": "默认插槽"
+    },
+    {
+      "name": "add-icon ^(2.5.4)",
+      "desc": "自定义添加按钮图标"
+    },
+    {
+      "name": "addIcon ^(2.4.0) ^(deprecated)",
+      "desc": "自定义添加按钮图标"
+    }
+  ],
+  "events": [
+    {
+      "name": "@tab-click",
+      "desc": "tab 被选中时触发",
+      "param": "Function(pane: TabsPaneContext, ev: Event) => void"
+    },
+    {
+      "name": "@tab-change",
+      "desc": "`activeName` 改变时触发",
+      "param": "Function(name: TabPaneName) => void"
+    },
+    {
+      "name": "@tab-remove",
+      "desc": "点击 tab 移除按钮时触发",
+      "param": "Function(name: TabPaneName) => void"
+    },
+    {
+      "name": "@tab-add",
+      "desc": "点击 tab 新增按钮时触发",
+      "param": "Function() => void"
+    },
+    {
+      "name": "@edit",
+      "desc": "点击 tab 的新增或移除按钮后触发",
+      "param": "Function(paneName: TabPaneName | undefined, action: remove | add) => void"
+    }
+  ],
+  "methods": []
+}

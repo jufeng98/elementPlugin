@@ -1,0 +1,122 @@
+{
+  "name": "el-checkbox-group",
+  "attributes": [
+    {
+      "name": "model-value",
+      "desc": "绑定值",
+      "type": "object",
+      "optionValue": "string[] | number[]",
+      "options": [],
+      "defaultValue": "[]"
+    },
+    {
+      "name": "v-model",
+      "desc": "绑定值",
+      "type": "object",
+      "optionValue": "string[] | number[]",
+      "options": [],
+      "defaultValue": "[]"
+    },
+    {
+      "name": "size",
+      "desc": "多选框组尺寸",
+      "type": "enum",
+      "optionValue": "large | default | small",
+      "options": [
+        "large",
+        "default",
+        "small"
+      ],
+      "defaultValue": "—"
+    },
+    {
+      "name": "disabled",
+      "desc": "是否禁用",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "min",
+      "desc": "可被勾选的 checkbox 的最小数量",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "max",
+      "desc": "可被勾选的 checkbox 的最大数量",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "aria-label ^(a11y) ^(2.7.2)",
+      "desc": "原生 aria-label属性",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "text-color",
+      "desc": "当按钮为活跃状态时的字体颜色",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "#ffffff"
+    },
+    {
+      "name": "fill",
+      "desc": "当按钮为活跃状态时的边框和背景颜色",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "#409eff"
+    },
+    {
+      "name": "tag",
+      "desc": "复选框组元素标签",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "div"
+    },
+    {
+      "name": "validate-event",
+      "desc": "是否触发表单验证",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "label ^(a11y) ^(deprecated)",
+      "desc": "原生 aria-label属性",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "default",
+      "desc": "自定义默认内容"
+    }
+  ],
+  "events": [
+    {
+      "name": "@change",
+      "desc": "当绑定值变化时触发的事件",
+      "param": "Function(value: string[ | number[) => void"
+    }
+  ],
+  "methods": []
+}

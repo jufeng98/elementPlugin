@@ -1,0 +1,60 @@
+{
+  "name": "el-check-tag",
+  "attributes": [
+    {
+      "name": "checked",
+      "desc": "是否选中",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "v-model:checked",
+      "desc": "是否选中",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "disabled ^(2.8.2)",
+      "desc": "是否禁用",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "type ^(2.5.4)",
+      "desc": "CheckTag 类型",
+      "type": "enum",
+      "optionValue": "primary | success | info | warning | danger",
+      "options": [
+        "primary",
+        "success",
+        "info",
+        "warning",
+        "danger"
+      ],
+      "defaultValue": "primary"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "default",
+      "desc": "自定义默认内容"
+    }
+  ],
+  "events": [
+    {
+      "name": "@change",
+      "desc": "点击 Check Tag 时触发的事件",
+      "param": "Function(value: boolean) => void"
+    }
+  ],
+  "methods": []
+}

@@ -1,0 +1,163 @@
+{
+  "name": "el-form-item",
+  "attributes": [
+    {
+      "name": "prop",
+      "desc": "model 的键名。 它可以是一个属性的值(如 a.b.0 或 ['a', 'b', '0'])。 在使用了 validate、resetFields 的方法时，该属性是必填的。",
+      "type": "string / string&#91;&#93;",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "label",
+      "desc": "标签文本",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "label-position ^(2.7.7)",
+      "desc": "表单域标签的位置， 当设置为 left 或 right 时，则也需要设置 label-width 属性 默认会继承 Form的label-position",
+      "type": "enum",
+      "optionValue": "left | right | top",
+      "options": [
+        "left",
+        "right",
+        "top"
+      ],
+      "defaultValue": ""
+    },
+    {
+      "name": "label-width",
+      "desc": "标签宽度，例如 '50px'。 可以使用 auto。",
+      "type": "string / number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "required",
+      "desc": "是否为必填项，如不设置，则会根据校验规则确认",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "rules",
+      "desc": "<p>表单验证规则, 具体配置见<a href=\"#formitemrule\">下表</a>, 更多内容可以参考<a href=\"https://github.com/yiminghe/async-validator\">async-validator</a></p>",
+      "type": "object",
+      "optionValue": "Arrayable<FormItemRule>",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "error",
+      "desc": "表单域验证错误时的提示信息。设置该值会导致表单验证状态变为 error，并显示该错误信息。",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "show-message",
+      "desc": "是否显示校验错误信息",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "inline-message",
+      "desc": "是否在行内显示校验信息",
+      "type": "string / boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "size",
+      "desc": "用于控制该表单域下组件的默认尺寸",
+      "type": "enum",
+      "optionValue": " | large | default | small",
+      "options": [
+        "large",
+        "default",
+        "small"
+      ],
+      "defaultValue": "—"
+    },
+    {
+      "name": "for",
+      "desc": "和原生标签相同能力",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "validate-status",
+      "desc": "formitem 校验的状态",
+      "type": "enum",
+      "optionValue": " | error | validating | success",
+      "options": [
+        "error",
+        "validating",
+        "success"
+      ],
+      "defaultValue": "—"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "default",
+      "desc": "表单的内容。"
+    },
+    {
+      "name": "label",
+      "desc": "标签位置显示的内容"
+    },
+    {
+      "name": "error",
+      "desc": "验证错误信息的显示内容"
+    }
+  ],
+  "events": [],
+  "methods": [
+    {
+      "name": "size",
+      "desc": "表单项大小",
+      "param": "objectComputedRef< | large | default | small>"
+    },
+    {
+      "name": "validateMessage",
+      "desc": "校验消息",
+      "param": "objectRef<string>"
+    },
+    {
+      "name": "validateState",
+      "desc": "校验状态",
+      "param": "objectRef< | error | validating | success>"
+    },
+    {
+      "name": "validate",
+      "desc": "验证表单项",
+      "param": "Function(trigger: string, callback?: FormValidateCallback | undefined) => FormValidationResult"
+    },
+    {
+      "name": "resetField",
+      "desc": "对该表单项进行重置，将其值重置为初始值并移除校验结果",
+      "param": "Function() => void"
+    },
+    {
+      "name": "clearValidate",
+      "desc": "移除该表单项的校验结果",
+      "param": "Function() => void"
+    }
+  ]
+}

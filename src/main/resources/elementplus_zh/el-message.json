@@ -1,0 +1,16 @@
+{
+  "name": "el-message",
+  "attributes": [],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [],
+  "events": [],
+  "methods": [
+    {
+      "name": "close",
+      "desc": "关闭当前的 Message",
+      "param": "Function() => void"
+    }
+  ]
+}

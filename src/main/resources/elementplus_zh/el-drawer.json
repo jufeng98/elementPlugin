@@ -1,0 +1,262 @@
+{
+  "name": "el-drawer",
+  "attributes": [
+    {
+      "name": "model-value",
+      "desc": "是否显示 Drawer",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "v-model",
+      "desc": "是否显示 Drawer",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "append-to-body",
+      "desc": "Drawer 自身是否插入至 body 元素上。嵌套的 Drawer 必须指定该属性并赋值为 **true**",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "append-to ^(2.8.0)",
+      "desc": "挂载到哪个 DOM 元素 将覆盖 append-to-body",
+      "type": "CSSSelector / HTMLElement",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "body"
+    },
+    {
+      "name": "lock-scroll",
+      "desc": "是否在 Drawer 出现时将 body 滚动锁定",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "before-close",
+      "desc": "关闭前的回调，会暂停 Drawer 的关闭",
+      "type": "Function",
+      "optionValue": "(done: (cancel?: boolean) => void) => void(done 是个 function type 接受一个 boolean 参数, 执行 done 使用 true 参数或不提供参数将会终止关闭)",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "close-on-click-modal",
+      "desc": "是否可以通过点击 modal 关闭 Drawer",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "close-on-press-escape",
+      "desc": "是否可以通过按下 ESC 关闭 Drawer",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "open-delay",
+      "desc": "Drawer 打开的延时时间，单位毫秒",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "0"
+    },
+    {
+      "name": "close-delay",
+      "desc": "Drawer 关闭的延时时间，单位毫秒",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "0"
+    },
+    {
+      "name": "destroy-on-close",
+      "desc": "控制是否在关闭 Drawer 之后将子元素全部销毁",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "modal",
+      "desc": "是否需要遮罩层",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "direction",
+      "desc": "Drawer 打开的方向",
+      "type": "enum",
+      "optionValue": "rtl | ltr | ttb | btt",
+      "options": [
+        "rtl",
+        "ltr",
+        "ttb",
+        "btt"
+      ],
+      "defaultValue": "rtl"
+    },
+    {
+      "name": "show-close",
+      "desc": "是否显示关闭按钮",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "size",
+      "desc": "Drawer 窗体的大小, 当使用 number 类型时, 以像素为单位, 当使用 string 类型时, 请传入 'x%', 否则便会以 number 类型解释",
+      "type": "number / string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "30%"
+    },
+    {
+      "name": "title",
+      "desc": "Drawer 的标题，也可通过具名 slot （见下表）传入",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "with-header",
+      "desc": "控制是否显示 header 栏, 默认为 true, 当此项为 false 时, title attribute 和 title slot 均不生效",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "modal-class",
+      "desc": "遮罩层的自定义类名",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "header-class ^(2.9.3)",
+      "desc": "header 部分的自定义 class 名",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "body-class ^(2.9.3)",
+      "desc": "body 部分的自定义 class 名",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "footer-class ^(2.9.3)",
+      "desc": "footer 部分的自定义 class 名",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "z-index",
+      "desc": "设置 z-index",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "header-aria-level ^(a11y)",
+      "desc": "header 的 aria-level 属性",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "2"
+    },
+    {
+      "name": "custom-class ^(deprecated)",
+      "desc": "Drawer 的自定义类名",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "default",
+      "desc": "Drawer 的内容"
+    },
+    {
+      "name": "header",
+      "desc": "Drawer 标题的内容；会替换标题部分，但不会移除关闭按钮。"
+    },
+    {
+      "name": "footer",
+      "desc": "Drawer 页脚部分"
+    },
+    {
+      "name": "title ^(deprecated)",
+      "desc": "与 header 作用相同 请使用 header"
+    }
+  ],
+  "events": [
+    {
+      "name": "@open",
+      "desc": "Drawer 打开的回调",
+      "param": "Function() => void"
+    },
+    {
+      "name": "@opened",
+      "desc": "Drawer 打开动画结束时的回调",
+      "param": "Function() => void"
+    },
+    {
+      "name": "@close",
+      "desc": "Drawer 关闭的回调",
+      "param": "Function() => void"
+    },
+    {
+      "name": "@closed",
+      "desc": "Drawer 关闭动画结束时的回调",
+      "param": "Function() => void"
+    },
+    {
+      "name": "@open-auto-focus",
+      "desc": "输入焦点聚焦在 Drawer 内容时的回调",
+      "param": "Function() => void"
+    },
+    {
+      "name": "@close-auto-focus",
+      "desc": "输入焦点从 Drawer 内容失焦时的回调",
+      "param": "Function() => void"
+    }
+  ],
+  "methods": [
+    {
+      "name": "handleClose",
+      "desc": "用于关闭 Drawer, 该方法会调用传入的 `before-close` 方法",
+      "param": ""
+    }
+  ]
+}

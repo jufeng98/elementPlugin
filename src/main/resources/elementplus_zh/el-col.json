@@ -1,0 +1,147 @@
+{
+  "name": "el-col",
+  "attributes": [
+    {
+      "name": "align",
+      "desc": "表格单元格内容对齐方式",
+      "type": "[Alignment(https://github.com/element-plus/element-plus/blob/b92b22932758f0ddea98810ae248f6ca62f77e25/packages/components/table-v2/src/constants.ts#L6)",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "left"
+    },
+    {
+      "name": "class",
+      "desc": "列的类名",
+      "type": "",
+      "optionValue": "string",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "key",
+      "desc": "唯一标志",
+      "type": "[KeyType(#typings)",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "dataKey",
+      "desc": "data 的唯一标志符",
+      "type": "[KeyType(#typings)",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "fixed",
+      "desc": "固定列位置",
+      "type": "",
+      "optionValue": "boolean",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "flexGrow",
+      "desc": "CSS 属性 flex grow, 仅当不是固定表时才生效",
+      "type": "",
+      "optionValue": "number",
+      "options": [],
+      "defaultValue": "0"
+    },
+    {
+      "name": "flexShrink",
+      "desc": "CSS 属性 flex shrink, 仅当不是固定表时才生效",
+      "type": "",
+      "optionValue": "number",
+      "options": [],
+      "defaultValue": "1"
+    },
+    {
+      "name": "headerClass",
+      "desc": "自定义 header 头部类名",
+      "type": "",
+      "optionValue": "string",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "hidden",
+      "desc": "此列是否不可见",
+      "type": "",
+      "optionValue": "boolean",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "style",
+      "desc": "自定义列单元格的类名，将会与 gird 单元格合并",
+      "type": "object",
+      "optionValue": "CSSProperties",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "sortable",
+      "desc": "设置列是否可排序",
+      "type": "",
+      "optionValue": "boolean",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "title",
+      "desc": "Header 头部单元格中的默认文本",
+      "type": "",
+      "optionValue": "string",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "maxWidth",
+      "desc": "列的最大宽度",
+      "type": "",
+      "optionValue": "number",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "minWidth",
+      "desc": "列的最小宽度",
+      "type": "",
+      "optionValue": "number",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "width ^(required)",
+      "desc": "列宽度",
+      "type": "",
+      "optionValue": "number",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "cellRenderer",
+      "desc": "自定义单元格渲染器",
+      "type": "",
+      "optionValue": "VueComponent",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "headerCellRenderer",
+      "desc": "自定义头部渲染器",
+      "type": "",
+      "optionValue": "VueComponent",
+      "options": [],
+      "defaultValue": "—"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [],
+  "events": [],
+  "methods": []
+}

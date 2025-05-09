@@ -1,0 +1,223 @@
+{
+  "name": "el-dropdown",
+  "attributes": [
+    {
+      "name": "type",
+      "desc": "菜单按钮类型，同 Button 组件一样，仅在 split-button 为 true 的情况下有效。",
+      "type": "enum",
+      "optionValue": " | default | primary | success | warning | info | danger | text (deprecated)",
+      "options": [
+        "default",
+        "primary",
+        "success",
+        "warning",
+        "info",
+        "danger",
+        "text (deprecated)"
+      ],
+      "defaultValue": ""
+    },
+    {
+      "name": "size",
+      "desc": "菜单尺寸，在 split-button 为 true 的情况下也对触发按钮生效。",
+      "type": "enum",
+      "optionValue": " | large | default | small",
+      "options": [
+        "large",
+        "default",
+        "small"
+      ],
+      "defaultValue": ""
+    },
+    {
+      "name": "button-props",
+      "desc": "按钮组件的 props，参考 [按钮属性](./button.html#button-attributes)",
+      "type": "object",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "max-height",
+      "desc": "菜单最大高度",
+      "type": "string / number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "split-button",
+      "desc": "下拉触发元素呈现为按钮组",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "disabled",
+      "desc": "是否禁用",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "placement",
+      "desc": "菜单弹出位置",
+      "type": "enum",
+      "optionValue": "top | top-start | top-end | bottom | bottom-start | bottom-end",
+      "options": [
+        "top",
+        "top-start",
+        "top-end",
+        "bottom",
+        "bottom-start",
+        "bottom-end"
+      ],
+      "defaultValue": "bottom"
+    },
+    {
+      "name": "trigger",
+      "desc": "触发下拉的行为",
+      "type": "enum",
+      "optionValue": "hover | click | contextmenu",
+      "options": [
+        "hover",
+        "click",
+        "contextmenu"
+      ],
+      "defaultValue": "hover"
+    },
+    {
+      "name": "triggerKeys ^(2.9.1)",
+      "desc": "指定键盘上哪些按键可以触发操作",
+      "type": "array",
+      "optionValue": "string[]",
+      "options": [],
+      "defaultValue": "[Enter, Space, ArrowDown, NumpadEnter]"
+    },
+    {
+      "name": "hide-on-click",
+      "desc": "是否在点击菜单项后隐藏菜单",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "show-timeout",
+      "desc": "展开下拉菜单的延时，仅在 trigger 为 hover 时有效",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "150"
+    },
+    {
+      "name": "hide-timeout",
+      "desc": "收起下拉菜单的延时（仅在 trigger 为 hover 时有效）",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "150"
+    },
+    {
+      "name": "role",
+      "desc": "下拉菜单的 ARIA 属性。 根据具体场景，您可能想要将此更改为“navigation”",
+      "type": "enum",
+      "optionValue": "dialog | grid | group | listbox | menu | navigation | tooltip | tree",
+      "options": [
+        "dialog",
+        "grid",
+        "group",
+        "listbox",
+        "menu",
+        "navigation",
+        "tooltip",
+        "tree"
+      ],
+      "defaultValue": "menu"
+    },
+    {
+      "name": "tabindex",
+      "desc": "<p>Dropdown 组件的 <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/tabindex\">tabindex</a></p>",
+      "type": "number / string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "0"
+    },
+    {
+      "name": "popper-class",
+      "desc": "自定义浮层类名",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "popper-options",
+      "desc": "<p><a href=\"https://popper.js.org/docs/v2/\">popper.js</a> 参数</p>",
+      "type": "object",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "{modifiers: [{name: computeStyles,options: {gpuAcceleration: false}}]}"
+    },
+    {
+      "name": "teleported ^(2.2.20)",
+      "desc": "是否将下拉列表插入至 body 元素",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "persistent ^(2.9.5)",
+      "desc": "当下拉菜单处于非活动状态且 persistent 为 false 时，下拉菜单将被销毁",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "default",
+      "desc": "下拉菜单的内容。 注意：必须是有效的 html DOM 元素（例如 `<span>、<button>` 等）或 `el-component`，以附加监听触发器"
+    },
+    {
+      "name": "dropdown",
+      "desc": "下拉列表，通常是 `<el-dropdown-menu>` 组件"
+    }
+  ],
+  "events": [
+    {
+      "name": "@click",
+      "desc": "`split-button` 为 true 时，点击左侧按钮的回调",
+      "param": "Function(e: MouseEvent) => void"
+    },
+    {
+      "name": "@command",
+      "desc": "当下拉项被点击时触发，参数是从下拉菜单中发送的命令",
+      "param": "Function(...args: any[) => void"
+    },
+    {
+      "name": "@visible-change",
+      "desc": "当下拉菜单出现/消失时触发器, 当它出现时, 参数将是 `true`, 否则将是 `false`",
+      "param": "Function(val: boolean) => void"
+    }
+  ],
+  "methods": [
+    {
+      "name": "handleOpen",
+      "desc": "打开下拉菜单",
+      "param": "Function() => void"
+    },
+    {
+      "name": "handleClose",
+      "desc": "关闭下拉菜单",
+      "param": "Function() => void"
+    }
+  ]
+}

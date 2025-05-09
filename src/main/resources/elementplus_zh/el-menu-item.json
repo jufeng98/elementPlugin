@@ -1,0 +1,34 @@
+{
+  "name": "el-menu-item",
+  "attributes": [
+    {
+      "name": "title",
+      "desc": "组标题",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "default",
+      "desc": "默认插槽内容"
+    },
+    {
+      "name": "title",
+      "desc": "自定义组标题内容"
+    }
+  ],
+  "events": [
+    {
+      "name": "@click",
+      "desc": "点击菜单项时回调函数, 参数为菜单项实例",
+      "param": "Function(item: MenuItemRegistered) => void"
+    }
+  ],
+  "methods": []
+}

@@ -1,0 +1,195 @@
+{
+  "name": "el-mention",
+  "attributes": [
+    {
+      "name": "options",
+      "desc": "提及选项列表",
+      "type": "array",
+      "optionValue": "MentionOption[]",
+      "options": [],
+      "defaultValue": "[]"
+    },
+    {
+      "name": "prefix",
+      "desc": "触发字段的前缀。 字符串长度必须且只能为 1",
+      "type": "string \\\\| array",
+      "optionValue": "string[]",
+      "options": [],
+      "defaultValue": "@"
+    },
+    {
+      "name": "split",
+      "desc": "用于拆分提及的字符。 字符串长度必须且只能为 1",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": " "
+    },
+    {
+      "name": "filter-option",
+      "desc": "定制筛选器选项逻辑",
+      "type": "false \\\\| Function",
+      "optionValue": "(pattern: string, option: MentionOption) => boolean",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "placement",
+      "desc": "设置弹出位置",
+      "type": "string",
+      "optionValue": "bottom | top",
+      "options": [
+        "bottom",
+        "top"
+      ],
+      "defaultValue": "bottom"
+    },
+    {
+      "name": "show-arrow",
+      "desc": "下拉菜单的内容是否有箭头",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "offset",
+      "desc": "下拉面板偏移量",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "0"
+    },
+    {
+      "name": "whole",
+      "desc": "当退格键被按下做删除操作时，是否将提及部分作为整体删除",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "check-is-whole",
+      "desc": "当退格键被按下做删除操作时，检查是否将提及部分作为整体删除",
+      "type": "Function",
+      "optionValue": "(pattern: string, prefix: string) => boolean",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "loading",
+      "desc": "提及的下拉面板是否处于加载状态",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "model-value",
+      "desc": "输入值",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "v-model",
+      "desc": "输入值",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "popper-class",
+      "desc": "自定义浮层类名",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "popper-options",
+      "desc": "<p><a href=\"https://popper.js.org/docs/v2/\">popper.js</a> 参数</p>",
+      "type": "object refer to [popper.js doc(https://popper.js.org/docs/v2/)",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "[input props](.",
+      "desc": "—",
+      "type": "—",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "input.md#attributes)",
+      "desc": "—",
+      "type": "—",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "label",
+      "desc": "自定义标签内容"
+    },
+    {
+      "name": "loading",
+      "desc": "自定义 loading内容"
+    },
+    {
+      "name": "header",
+      "desc": "下拉列表顶部的内容"
+    },
+    {
+      "name": "footer",
+      "desc": "下拉列表底部的内容"
+    },
+    {
+      "name": "[input slots](./input.md#slots)",
+      "desc": "—"
+    }
+  ],
+  "events": [
+    {
+      "name": "@search",
+      "desc": "按下触发字段时触发",
+      "param": "Function(pattern: string, prefix: string) => void"
+    },
+    {
+      "name": "@select",
+      "desc": "当用户选择选项时触发",
+      "param": "Function(option: MentionOption, prefix: string) => void"
+    },
+    {
+      "name": "@[input events](./input.md#events)",
+      "desc": "—",
+      "param": "—"
+    }
+  ],
+  "methods": [
+    {
+      "name": "input",
+      "desc": "el-input 组件实例",
+      "param": "objectRef<InputInstance | null>"
+    },
+    {
+      "name": "tooltip",
+      "desc": "el-tooltip 组件实例",
+      "param": "objectRef<TooltipInstance | null>"
+    },
+    {
+      "name": "dropdownVisible ^(2.8.5)",
+      "desc": "tooltip 显示状态",
+      "param": "objectComputedRef<boolean>"
+    }
+  ]
+}

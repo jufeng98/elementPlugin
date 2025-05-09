@@ -1,0 +1,48 @@
+{
+  "name": "el-empty",
+  "attributes": [
+    {
+      "name": "image",
+      "desc": "empty 组件的图像地址",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "image-size",
+      "desc": "empty 组件的图像尺寸（宽度）",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "description",
+      "desc": "empty 组件的描述信息",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "default",
+      "desc": "作为底部内容的内容"
+    },
+    {
+      "name": "image",
+      "desc": "作为图像的内容"
+    },
+    {
+      "name": "description",
+      "desc": "作为描述的内容"
+    }
+  ],
+  "events": [],
+  "methods": []
+}

@@ -1,0 +1,240 @@
+{
+  "name": "el-pagination",
+  "attributes": [
+    {
+      "name": "size ^(2.7.6)",
+      "desc": "分页大小",
+      "type": "enum",
+      "optionValue": "large | default | small",
+      "options": [
+        "large",
+        "default",
+        "small"
+      ],
+      "defaultValue": "default"
+    },
+    {
+      "name": "background",
+      "desc": "是否为分页按钮添加背景色",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "page-size",
+      "desc": "每页显示条目个数",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "v-model:page-size",
+      "desc": "每页显示条目个数",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "default-page-size",
+      "desc": "每页默认的条目个数，不设置时默认为10",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "total",
+      "desc": "总条目数",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "page-count",
+      "desc": "总页数， total 和 page-count 设置任意一个就可以达到显示页码的功能；如果要支持 page-sizes 的更改，则需要使用 total 属性",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "pager-count",
+      "desc": "设置最大页码按钮数。 页码按钮的数量，当总页数超过该值时会折叠",
+      "type": "number",
+      "optionValue": "5 | 7 | 9 | 11 | 13 | 15 | 17 | 19 | 21",
+      "options": [
+        "5",
+        "7",
+        "9",
+        "11",
+        "13",
+        "15",
+        "17",
+        "19",
+        "21"
+      ],
+      "defaultValue": "7"
+    },
+    {
+      "name": "current-page",
+      "desc": "当前页数",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "v-model:current-page",
+      "desc": "当前页数",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "default-current-page",
+      "desc": "当前页数的默认初始值，不设置时默认为 1",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "layout",
+      "desc": "组件布局，子组件名用逗号分隔",
+      "type": "string",
+      "optionValue": "string (consists of sizes, prev, pager, next, jumper, ->, total, slot)",
+      "options": [],
+      "defaultValue": "prev, pager, next, jumper, ->, total"
+    },
+    {
+      "name": "page-sizes",
+      "desc": "每页显示个数选择器的选项设置",
+      "type": "object",
+      "optionValue": "number[]",
+      "options": [],
+      "defaultValue": "[10, 20, 30, 40, 50, 100]"
+    },
+    {
+      "name": "append-size-to ^(2.8.4)",
+      "desc": "下拉框挂载到哪个 DOM 元素",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "popper-class",
+      "desc": "每页显示个数选择器的下拉框类名",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "prev-text",
+      "desc": "替代图标显示的上一页文字",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "prev-icon",
+      "desc": "上一页的图标， 比 prev-text 优先级更高",
+      "type": "string / Component",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "ArrowLeft"
+    },
+    {
+      "name": "next-text",
+      "desc": "替代图标显示的下一页文字",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "next-icon",
+      "desc": "下一页的图标， 比 next-text 优先级更低",
+      "type": "string / Component",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "ArrowRight"
+    },
+    {
+      "name": "disabled",
+      "desc": "是否禁用分页",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "teleported ^(2.3.13)",
+      "desc": "是否将下拉菜单teleport至 body",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "hide-on-single-page",
+      "desc": "只有一页时是否隐藏",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "small ^(deprecated)",
+      "desc": "是否使用小型分页样式",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "default",
+      "desc": "自定义内容 设置文案，需要在 `layout` 中列出 `slot`"
+    }
+  ],
+  "events": [
+    {
+      "name": "@size-change",
+      "desc": "`page-size` 改变时触发",
+      "param": "Function(value: number) => void"
+    },
+    {
+      "name": "@current-change",
+      "desc": "`current-page` 改变时触发",
+      "param": "Function(value: number) => void"
+    },
+    {
+      "name": "@change ^(2.4.4)",
+      "desc": "`current-page` 或 `page-size` 更改时触发",
+      "param": "Function(currentPage: number, pageSize: number) => void"
+    },
+    {
+      "name": "@prev-click",
+      "desc": "用户点击上一页按钮改变当前页时触发",
+      "param": "Function(value: number) => void"
+    },
+    {
+      "name": "@next-click",
+      "desc": "用户点击下一页按钮改变当前页时触发",
+      "param": "Function(value: number) => void"
+    }
+  ],
+  "methods": []
+}

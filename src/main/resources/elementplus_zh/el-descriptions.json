@@ -1,0 +1,87 @@
+{
+  "name": "el-descriptions",
+  "attributes": [
+    {
+      "name": "border",
+      "desc": "是否带有边框",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "column",
+      "desc": "一行 Descriptions Item 的数量",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "3"
+    },
+    {
+      "name": "direction",
+      "desc": "排列的方向",
+      "type": "enum",
+      "optionValue": "vertical | horizontal",
+      "options": [
+        "vertical",
+        "horizontal"
+      ],
+      "defaultValue": "horizontal"
+    },
+    {
+      "name": "size",
+      "desc": "列表的尺寸",
+      "type": "enum",
+      "optionValue": " | large | default | small",
+      "options": [
+        "large",
+        "default",
+        "small"
+      ],
+      "defaultValue": "—"
+    },
+    {
+      "name": "title",
+      "desc": "标题文本，显示在左上方",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "extra",
+      "desc": "操作区文本，显示在右上方",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "label-width ^(2.8.8)",
+      "desc": "每一列的标签宽度",
+      "type": "string / number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "default",
+      "desc": "自定义默认内容"
+    },
+    {
+      "name": "title",
+      "desc": "自定义标题，显示在左上方"
+    },
+    {
+      "name": "extra",
+      "desc": "自定义操作区，显示在右上方"
+    }
+  ],
+  "events": [],
+  "methods": []
+}

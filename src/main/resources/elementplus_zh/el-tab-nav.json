@@ -1,0 +1,31 @@
+{
+  "name": "el-tab-nav",
+  "attributes": [],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [],
+  "events": [],
+  "methods": [
+    {
+      "name": "scrollToActiveTab",
+      "desc": "scroll to the active tab",
+      "param": "Function() => Promise<void>"
+    },
+    {
+      "name": "removeFocus",
+      "desc": "remove focus status",
+      "param": "Function() => boolean"
+    },
+    {
+      "name": "tabListRef ^(2.9.10)",
+      "desc": "el_tabs\\_\\_nav html element",
+      "param": "objectRef<HTMLDivElement | undefined>"
+    },
+    {
+      "name": "tabBarRef ^(2.9.10)",
+      "desc": "el_tabs\\_\\_nav bar instance",
+      "param": "objectRef<TabBarInstance | undefined>"
+    }
+  ]
+}

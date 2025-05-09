@@ -1,0 +1,85 @@
+{
+  "name": "el-link",
+  "attributes": [
+    {
+      "name": "type",
+      "desc": "类型",
+      "type": "enum",
+      "optionValue": "primary | success | warning | danger | info | default",
+      "options": [
+        "primary",
+        "success",
+        "warning",
+        "danger",
+        "info",
+        "default"
+      ],
+      "defaultValue": "default"
+    },
+    {
+      "name": "underline",
+      "desc": "控制下划线是否出现",
+      "type": "enum",
+      "optionValue": "always | hover | never | boolean",
+      "options": [
+        "always",
+        "hover",
+        "never",
+        "boolean"
+      ],
+      "defaultValue": "hover"
+    },
+    {
+      "name": "disabled",
+      "desc": "是否禁用状态",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "href",
+      "desc": "原生 href 属性",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "target",
+      "desc": "同原生 target 属性",
+      "type": "enum",
+      "optionValue": "_blank | _parent | _self | _top",
+      "options": [
+        "_blank",
+        "_parent",
+        "_self",
+        "_top"
+      ],
+      "defaultValue": "\\_self"
+    },
+    {
+      "name": "icon",
+      "desc": "图标组件",
+      "type": "string / Component",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "default",
+      "desc": "自定义默认内容"
+    },
+    {
+      "name": "icon",
+      "desc": "自定义图标组件"
+    }
+  ],
+  "events": [],
+  "methods": []
+}

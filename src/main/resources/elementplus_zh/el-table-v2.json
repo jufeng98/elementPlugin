@@ -1,0 +1,340 @@
+{
+  "name": "el-table-v2",
+  "attributes": [
+    {
+      "name": "cache",
+      "desc": "为了更好的渲染效果预先多加载的行数",
+      "type": "",
+      "optionValue": "number",
+      "options": [],
+      "defaultValue": "2"
+    },
+    {
+      "name": "estimated-row-height",
+      "desc": "渲染动态的单元格的预估高度",
+      "type": "",
+      "optionValue": "number",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "header-class",
+      "desc": "header 部分的自定义 class 名",
+      "type": "",
+      "optionValue": "string",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "header-props",
+      "desc": "header 部分的自定义 props 名",
+      "type": "",
+      "optionValue": "object",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "header-cell-props",
+      "desc": "header cell 部分的自定义 props 名",
+      "type": "",
+      "optionValue": "object",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "header-height",
+      "desc": "Header 的高度由height设置。 如果传入数组，它会使 header row 等于数组长度",
+      "type": "",
+      "optionValue": "number",
+      "options": [],
+      "defaultValue": "50"
+    },
+    {
+      "name": "footer-height",
+      "desc": "Footer 部分的高度，当传入值时，这部分将被计算入 table 的高度里",
+      "type": "",
+      "optionValue": "number",
+      "options": [],
+      "defaultValue": "0"
+    },
+    {
+      "name": "row-class",
+      "desc": "row wrapper 部分的自定义 class 名",
+      "type": "",
+      "optionValue": "string",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "row-key",
+      "desc": "每行的 key 值，如果不提供，将使用索引 index 代替",
+      "type": "",
+      "optionValue": "string",
+      "options": [],
+      "defaultValue": "id"
+    },
+    {
+      "name": "row-props",
+      "desc": "row component 部分的自定义 class 名",
+      "type": "",
+      "optionValue": "object",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "row-height",
+      "desc": "每行的高度, 用于计算表的总高度",
+      "type": "",
+      "optionValue": "number",
+      "options": [],
+      "defaultValue": "50"
+    },
+    {
+      "name": "row-event-handlers",
+      "desc": "当每行添加了一系列事件处理器时触发",
+      "type": "",
+      "optionValue": "object",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "cell-props",
+      "desc": "每个单元格 cell 的自定义 props (除了 header cell 以外)",
+      "type": "",
+      "optionValue": "object",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "columns",
+      "desc": "列 column 的配置数组",
+      "type": "[Column[(#column-attribute)",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "data",
+      "desc": "要在表中渲染的数据数组",
+      "type": "[Data[(#typings)",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "[]"
+    },
+    {
+      "name": "data-getter",
+      "desc": "一个自定义方法从数据源获取数据",
+      "type": "Function<[DataGetter\\<T\\>(#typings)>",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "fixed-data",
+      "desc": "渲染行在表格主内容上方和 header 下方区域的数据",
+      "type": "",
+      "optionValue": "object",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "expand-column-key",
+      "desc": "列的 key 来标记哪个行可以被展开",
+      "type": "",
+      "optionValue": "string",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "expanded-row-keys",
+      "desc": "存放行展开状态的 key 的数组，可以和  v-model 搭配使用",
+      "type": "[KeyType[(#typings)",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "default-expanded-row-keys",
+      "desc": "默认展开的行的 key 的数组, **这个数据不是响应式的**",
+      "type": "[KeyType[(#typings)",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "class",
+      "desc": "表格的类名称，将应用于表格的全部的三个部分 (左、右、主)",
+      "type": "",
+      "optionValue": "string",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "fixed",
+      "desc": "单元格宽度是自适应还是固定",
+      "type": "",
+      "optionValue": "boolean",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "width ^(required)",
+      "desc": "表格的宽度",
+      "type": "",
+      "optionValue": "number",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "height ^(required)",
+      "desc": "表格的高度",
+      "type": "",
+      "optionValue": "number",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "max-height",
+      "desc": "表格的最大高度",
+      "type": "",
+      "optionValue": "number",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "indent-size",
+      "desc": "树形表的水平缩进",
+      "type": "",
+      "optionValue": "number",
+      "options": [],
+      "defaultValue": "12"
+    },
+    {
+      "name": "h-scrollbar-size",
+      "desc": "配置表格的水平滚动条大小，防止水平和垂直滚动条重叠。",
+      "type": "",
+      "optionValue": "number",
+      "options": [],
+      "defaultValue": "6"
+    },
+    {
+      "name": "v-scrollbar-size",
+      "desc": "配置表格的垂直滚动条大小，防止水平和垂直滚动条重叠。",
+      "type": "",
+      "optionValue": "number",
+      "options": [],
+      "defaultValue": "6"
+    },
+    {
+      "name": "scrollbar-always-on",
+      "desc": "如果开启，滚动条将一直显示，反之只会在鼠标经过时显示。",
+      "type": "",
+      "optionValue": "boolean",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "sort-by",
+      "desc": "排序方式",
+      "type": "",
+      "optionValue": "object",
+      "options": [],
+      "defaultValue": "{}"
+    },
+    {
+      "name": "sort-state",
+      "desc": "多个排序",
+      "type": "",
+      "optionValue": "object",
+      "options": [],
+      "defaultValue": "undefined"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "cell",
+      "desc": "`object`\\<[CellSlotProps](#typings)\\>"
+    },
+    {
+      "name": "header",
+      "desc": "`object`\\<[HeaderSlotProps](#typings)\\>"
+    },
+    {
+      "name": "header-cell",
+      "desc": "`object`\\<[HeaderCellSlotProps](#typings)\\>"
+    },
+    {
+      "name": "row",
+      "desc": "`object`\\<[RowSlotProps](#typings)\\>"
+    },
+    {
+      "name": "footer",
+      "desc": "—"
+    },
+    {
+      "name": "empty",
+      "desc": "—"
+    },
+    {
+      "name": "overlay",
+      "desc": "—"
+    }
+  ],
+  "events": [
+    {
+      "name": "@column-sort",
+      "desc": "列排序时调用",
+      "param": "object<[ColumnSortParam(#typings)>"
+    },
+    {
+      "name": "@expanded-rows-change",
+      "desc": "行展开状态改变时触发",
+      "param": "[KeyType[(#typings)"
+    },
+    {
+      "name": "@end-reached",
+      "desc": "到达表格末尾时触发。 回调包含剩余距离，它通常是滚动条高度。",
+      "param": "Function(remainDistance: number) => void"
+    },
+    {
+      "name": "@scroll",
+      "desc": "表格被用户滚动后触发",
+      "param": "object<[ScrollParams(#typings)>"
+    },
+    {
+      "name": "@rows-rendered",
+      "desc": "当行被渲染后触发",
+      "param": "object<[RowsRenderedParams(#typings)>"
+    },
+    {
+      "name": "@row-expand",
+      "desc": "点击箭头图标展开/折叠树节点时触发",
+      "param": "object<[RowExpandParams(#typings)>"
+    }
+  ],
+  "methods": [
+    {
+      "name": "scrollTo",
+      "desc": "滚动到给定位置",
+      "param": "Function(param: {scrollLeft?: number, scrollTop?: number}) => void"
+    },
+    {
+      "name": "scrollToLeft",
+      "desc": "滚动到给定的水平位置",
+      "param": "Function(scrollLeft: number) => void"
+    },
+    {
+      "name": "scrollToTop",
+      "desc": "滚动到给定的垂直位置",
+      "param": "Function(scrollTop: number) => void"
+    },
+    {
+      "name": "scrollToRow",
+      "desc": "使用给定的滚动策略滚动至指定行",
+      "param": "Function(row: number, strategy?: center | end | start | smart) => void"
+    }
+  ]
+}

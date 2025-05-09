@@ -1,0 +1,53 @@
+{
+  "name": "el-divider",
+  "attributes": [
+    {
+      "name": "direction",
+      "desc": "设置分割线方向",
+      "type": "enum",
+      "optionValue": "horizontal | vertical",
+      "options": [
+        "horizontal",
+        "vertical"
+      ],
+      "defaultValue": "horizontal"
+    },
+    {
+      "name": "border-style",
+      "desc": "设置分隔符样式",
+      "type": "enum",
+      "optionValue": "none | solid | hidden | dashed | ...",
+      "options": [
+        "none",
+        "solid",
+        "hidden",
+        "dashed",
+        "..."
+      ],
+      "defaultValue": "solid"
+    },
+    {
+      "name": "content-position",
+      "desc": "自定义分隔线内容的位置",
+      "type": "enum",
+      "optionValue": "left | right | center",
+      "options": [
+        "left",
+        "right",
+        "center"
+      ],
+      "defaultValue": "center"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "default",
+      "desc": "设置分割线文案的位置"
+    }
+  ],
+  "events": [],
+  "methods": []
+}

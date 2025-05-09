@@ -1,0 +1,109 @@
+{
+  "name": "el-timeline-item",
+  "attributes": [
+    {
+      "name": "timestamp",
+      "desc": "时间戳",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "hide-timestamp",
+      "desc": "是否隐藏时间戳",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "center",
+      "desc": "是否垂直居中",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "placement",
+      "desc": "时间戳位置",
+      "type": "enum",
+      "optionValue": "top | bottom",
+      "options": [
+        "top",
+        "bottom"
+      ],
+      "defaultValue": "bottom"
+    },
+    {
+      "name": "type",
+      "desc": "节点类型",
+      "type": "enum",
+      "optionValue": "primary | success | warning | danger | info",
+      "options": [
+        "primary",
+        "success",
+        "warning",
+        "danger",
+        "info"
+      ],
+      "defaultValue": ""
+    },
+    {
+      "name": "color",
+      "desc": "节点颜色",
+      "type": "enum",
+      "optionValue": "hsl | hsv | hex | rgb",
+      "options": [
+        "hsl",
+        "hsv",
+        "hex",
+        "rgb"
+      ],
+      "defaultValue": ""
+    },
+    {
+      "name": "size",
+      "desc": "节点尺寸",
+      "type": "enum",
+      "optionValue": "normal | large",
+      "options": [
+        "normal",
+        "large"
+      ],
+      "defaultValue": "normal"
+    },
+    {
+      "name": "icon",
+      "desc": "自定义图标",
+      "type": "string / Component",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "hollow",
+      "desc": "是否空心点",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "default",
+      "desc": "customize default content for timeline item"
+    },
+    {
+      "name": "dot",
+      "desc": "customize defined node for timeline item"
+    }
+  ],
+  "events": [],
+  "methods": []
+}

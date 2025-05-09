@@ -1,0 +1,216 @@
+{
+  "name": "el-input-number",
+  "attributes": [
+    {
+      "name": "model-value",
+      "desc": "选中项绑定值",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "v-model",
+      "desc": "选中项绑定值",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "min",
+      "desc": "设置计数器允许的最小值",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "-Infinity"
+    },
+    {
+      "name": "max",
+      "desc": "设置计数器允许的最大值",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "Infinity"
+    },
+    {
+      "name": "step",
+      "desc": "计数器步长",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "1"
+    },
+    {
+      "name": "step-strictly",
+      "desc": "是否只能输入 step 的倍数",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "precision",
+      "desc": "数值精度",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "size",
+      "desc": "计数器尺寸",
+      "type": "enum",
+      "optionValue": "large | default | small",
+      "options": [
+        "large",
+        "default",
+        "small"
+      ],
+      "defaultValue": "default"
+    },
+    {
+      "name": "readonly ^(2.2.16)",
+      "desc": "原生 readonly 属性，是否只读",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "disabled",
+      "desc": "是否禁用状态",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "controls",
+      "desc": "是否使用控制按钮",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "controls-position",
+      "desc": "控制按钮位置",
+      "type": "enum",
+      "optionValue": " | right",
+      "options": [
+        "right"
+      ],
+      "defaultValue": "—"
+    },
+    {
+      "name": "name",
+      "desc": "等价于原生 input name 属性",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "aria-label ^(a11y) ^(2.7.2)",
+      "desc": "等价于原生 input aria-label 属性",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "placeholder",
+      "desc": "等价于原生 input placeholder 属性",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "id",
+      "desc": "等价于原生 input id 属性",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "value-on-clear ^(2.2.0)",
+      "desc": "当输入框被清空时显示的值",
+      "type": "number / null / enum",
+      "optionValue": "min | max",
+      "options": [
+        "min",
+        "max"
+      ],
+      "defaultValue": "—"
+    },
+    {
+      "name": "validate-event",
+      "desc": "是否触发表单验证",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "label ^(a11y) ^(deprecated)",
+      "desc": "等价于原生 input aria-label 属性",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "decrease-icon ^(2.6.3)",
+      "desc": "自定义输入框按钮减少图标"
+    },
+    {
+      "name": "increase-icon ^(2.6.3)",
+      "desc": "自定义输入框按钮增加图标"
+    },
+    {
+      "name": "prefix ^(2.8.4)",
+      "desc": "输入框头部内容"
+    },
+    {
+      "name": "suffix ^(2.8.4)",
+      "desc": "输入框尾部内容"
+    }
+  ],
+  "events": [
+    {
+      "name": "@change",
+      "desc": "绑定值被改变时触发",
+      "param": "Function(currentValue: number | undefined, oldValue: number | undefined) => void"
+    },
+    {
+      "name": "@blur",
+      "desc": "在组件 Input 失去焦点时触发",
+      "param": "Function(event: FocusEvent) => void"
+    },
+    {
+      "name": "@focus",
+      "desc": "在组件 Input 获得焦点时触发",
+      "param": "Function(event: FocusEvent) => void"
+    }
+  ],
+  "methods": [
+    {
+      "name": "focus",
+      "desc": "使 input 组件获得焦点",
+      "param": "Function() => void"
+    },
+    {
+      "name": "blur",
+      "desc": "使 input 组件失去焦点",
+      "param": "Function() => void"
+    }
+  ]
+}

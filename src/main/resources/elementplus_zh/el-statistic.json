@@ -1,0 +1,102 @@
+{
+  "name": "el-statistic",
+  "attributes": [
+    {
+      "name": "value",
+      "desc": "数字内容",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "0"
+    },
+    {
+      "name": "decimal-separator",
+      "desc": "设置小数点符号",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "."
+    },
+    {
+      "name": "formatter",
+      "desc": "自定义数字格式化",
+      "type": "Function",
+      "optionValue": "(value: number) => string | number",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "group-separator",
+      "desc": "设置千分位标识符",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ","
+    },
+    {
+      "name": "precision",
+      "desc": "数字精度",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "0"
+    },
+    {
+      "name": "prefix",
+      "desc": "设置数字的前缀",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "suffix",
+      "desc": "设置数字的后缀",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "title",
+      "desc": "数字标题",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "value-style",
+      "desc": "数字样式",
+      "type": "string / object",
+      "optionValue": "CSSProperties | CSSProperties[] | string[]",
+      "options": [],
+      "defaultValue": "—"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "prefix",
+      "desc": "数字区之前"
+    },
+    {
+      "name": "suffix",
+      "desc": "数字区之后"
+    },
+    {
+      "name": "title",
+      "desc": "数字标题"
+    }
+  ],
+  "events": [],
+  "methods": [
+    {
+      "name": "displayValue",
+      "desc": "当前显示值",
+      "param": "objectRef<string | number>"
+    }
+  ]
+}

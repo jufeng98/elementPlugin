@@ -1,0 +1,32 @@
+{
+  "name": "el-carousel-item",
+  "attributes": [
+    {
+      "name": "name",
+      "desc": "幻灯片的名字，可用作 setActiveItem 的参数",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "label",
+      "desc": "该幻灯片所对应指示器的文本",
+      "type": "string / number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "default",
+      "desc": "自定义默认内容"
+    }
+  ],
+  "events": [],
+  "methods": []
+}

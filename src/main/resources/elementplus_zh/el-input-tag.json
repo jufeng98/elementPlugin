@@ -1,0 +1,263 @@
+{
+  "name": "el-input-tag",
+  "attributes": [
+    {
+      "name": "model-value",
+      "desc": "绑定值",
+      "type": "array",
+      "optionValue": "string[]",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "v-model",
+      "desc": "绑定值",
+      "type": "array",
+      "optionValue": "string[]",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "max",
+      "desc": "可添加标签的最大数量",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "tag-type",
+      "desc": "标签类型",
+      "type": "enum",
+      "optionValue": " | success | info | warning | danger",
+      "options": [
+        "success",
+        "info",
+        "warning",
+        "danger"
+      ],
+      "defaultValue": "info"
+    },
+    {
+      "name": "tag-effect",
+      "desc": "标签效果",
+      "type": "enum",
+      "optionValue": " | light | dark | plain",
+      "options": [
+        "light",
+        "dark",
+        "plain"
+      ],
+      "defaultValue": "light"
+    },
+    {
+      "name": "trigger",
+      "desc": "触发输入标签的按键",
+      "type": "enum",
+      "optionValue": "Enter | Space",
+      "options": [
+        "Enter",
+        "Space"
+      ],
+      "defaultValue": "Enter"
+    },
+    {
+      "name": "draggable",
+      "desc": "是否可以拖动标签",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "delimiter ^(2.9.9)",
+      "desc": "在匹配分隔符时添加标签",
+      "type": "string / regex",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "size",
+      "desc": "输入框尺寸",
+      "type": "enum",
+      "optionValue": "large | default | small",
+      "options": [
+        "large",
+        "default",
+        "small"
+      ],
+      "defaultValue": "—"
+    },
+    {
+      "name": "save-on-blur ^(2.9.7)",
+      "desc": "当输入失去焦点时是否保存输入值",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "clearable",
+      "desc": "是否显示清除按钮",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "disabled",
+      "desc": "是否禁用",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "validate-event",
+      "desc": "是否触发表单验证",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "readonly",
+      "desc": "等价于原生 <code>readonly</code> 属性",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "autofocus",
+      "desc": "等价于原生 <code> autofocus </code> 属性",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "id",
+      "desc": "等价于原生 input <code>id</code> 属性",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "tabindex",
+      "desc": "等价于原生 <code> tabindex </code> 属性",
+      "type": "string / number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "maxlength",
+      "desc": "等价于原生 <code> maxlength </code> 属性",
+      "type": "string / number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "minlength",
+      "desc": "等价于原生 <code> minlength </code> 属性",
+      "type": "string / number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "placeholder",
+      "desc": "输入框占位文本",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "autocomplete",
+      "desc": "等价于原生 <code> autocomplete </code> 属性",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "off"
+    },
+    {
+      "name": "aria-label ^(a11y)",
+      "desc": "等价于原生 <code> aria-label </code> 属性",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "tag",
+      "desc": "作为tag的内容"
+    },
+    {
+      "name": "prefix",
+      "desc": "InputTag 头部内容"
+    },
+    {
+      "name": "suffix",
+      "desc": "InputTag 尾部内容"
+    }
+  ],
+  "events": [
+    {
+      "name": "@change",
+      "desc": "绑定值变化时触发的事件",
+      "param": "Function(value: string[) => void"
+    },
+    {
+      "name": "@input",
+      "desc": "在 Input 值改变时触发",
+      "param": "Function(value: string) => void"
+    },
+    {
+      "name": "@add-tag",
+      "desc": "tag 被添加时触发",
+      "param": "Function(value: string) => void"
+    },
+    {
+      "name": "@remove-tag",
+      "desc": "tag 被移除时触发",
+      "param": "Function(value: string) => void"
+    },
+    {
+      "name": "@focus",
+      "desc": "在 Input 获得焦点时触发",
+      "param": "Function(event: FocusEvent) => void"
+    },
+    {
+      "name": "@blur",
+      "desc": "在 Input 失去焦点时触发",
+      "param": "Function(event: FocusEvent) => void"
+    },
+    {
+      "name": "@clear",
+      "desc": "点击清除图标时触发",
+      "param": "Function() => void"
+    }
+  ],
+  "methods": [
+    {
+      "name": "focus",
+      "desc": "使 input 获取焦点",
+      "param": "Function() => void"
+    },
+    {
+      "name": "blur",
+      "desc": "使 input 失去焦点",
+      "param": "Function() => void"
+    }
+  ]
+}

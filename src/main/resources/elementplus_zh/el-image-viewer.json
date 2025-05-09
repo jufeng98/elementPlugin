@@ -1,0 +1,121 @@
+{
+  "name": "el-image-viewer",
+  "attributes": [
+    {
+      "name": "url-list",
+      "desc": "用于预览的图片链接列表",
+      "type": "object",
+      "optionValue": "string[]",
+      "options": [],
+      "defaultValue": "[]"
+    },
+    {
+      "name": "z-index",
+      "desc": "预览时遮罩层的 z-index",
+      "type": "number / string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "initial-index",
+      "desc": "初始预览图像索引，小于 url-list 的长度",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "0"
+    },
+    {
+      "name": "infinite",
+      "desc": "是否可以无限循环预览",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "hide-on-click-modal",
+      "desc": "是否可以通过点击遮罩层关闭预览",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "teleported",
+      "desc": "image 自身是否插入至 body 元素上。 嵌套的父元素属性会发生修改时应该将此属性设置为 true",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "zoom-rate ^(2.2.27)",
+      "desc": "图像查看器缩放事件的缩放速率。",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "1.2"
+    },
+    {
+      "name": "min-scale ^(2.4.0)",
+      "desc": "图像查看器缩放事件的最小缩放比例",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "0.2"
+    },
+    {
+      "name": "max-scale ^(2.4.0)",
+      "desc": "图像查看器缩放事件的最大缩放比例",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "7"
+    },
+    {
+      "name": "close-on-press-escape",
+      "desc": "是否可以通过按下 ESC 关闭 Image Viewer",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "show-progress ^(2.9.4)",
+      "desc": "是否显示预览图片的进度条内容",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [],
+  "events": [
+    {
+      "name": "@close",
+      "desc": "当点击 X 按钮或者在` hide-on-click-modal `为 true 时点击遮罩层时触发",
+      "param": "Function() => void"
+    },
+    {
+      "name": "@switch",
+      "desc": "切换图像时触发。",
+      "param": "Function(index: number) => void"
+    },
+    {
+      "name": "@rotate ^(2.3.13)",
+      "desc": "旋转图像时触发。",
+      "param": "Function(deg: number) => void"
+    }
+  ],
+  "methods": [
+    {
+      "name": "setActiveItem",
+      "desc": "手动切换图片",
+      "param": "Function(index: number) => void"
+    }
+  ]
+}

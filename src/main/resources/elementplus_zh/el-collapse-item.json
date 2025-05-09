@@ -1,0 +1,62 @@
+{
+  "name": "el-collapse-item",
+  "attributes": [
+    {
+      "name": "name",
+      "desc": "唯一标志符",
+      "type": "string / number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "title",
+      "desc": "面板标题",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "icon ^(2.8.3)",
+      "desc": "折叠项目的图标",
+      "type": "string / Component",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "ArrowRight"
+    },
+    {
+      "name": "disabled",
+      "desc": "是否禁用",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "default",
+      "desc": "Collapse Item 的内容"
+    },
+    {
+      "name": "title",
+      "desc": "Collapse Item 的标题"
+    },
+    {
+      "name": "icon ^(2.8.3)",
+      "desc": "折叠项目图标的内容"
+    }
+  ],
+  "events": [],
+  "methods": [
+    {
+      "name": "isActive",
+      "desc": "whether the current collapse item is active",
+      "param": "objectComputedRef<boolean | undefined>"
+    }
+  ]
+}

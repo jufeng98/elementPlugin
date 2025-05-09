@@ -1,0 +1,141 @@
+{
+  "name": "el-popconfirm",
+  "attributes": [
+    {
+      "name": "title",
+      "desc": "标题",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "confirm-button-text",
+      "desc": "确认按钮文字",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "cancel-button-text",
+      "desc": "取消按钮文字",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "confirm-button-type",
+      "desc": "确认按钮类型",
+      "type": "enum",
+      "optionValue": "primary | success | warning | danger | info | text",
+      "options": [
+        "primary",
+        "success",
+        "warning",
+        "danger",
+        "info",
+        "text"
+      ],
+      "defaultValue": "primary"
+    },
+    {
+      "name": "cancel-button-type",
+      "desc": "取消按钮类型",
+      "type": "enum",
+      "optionValue": "primary | success | warning | danger | info | text",
+      "options": [
+        "primary",
+        "success",
+        "warning",
+        "danger",
+        "info",
+        "text"
+      ],
+      "defaultValue": "text"
+    },
+    {
+      "name": "icon",
+      "desc": "自定义图标",
+      "type": "string / Component",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "QuestionFilled"
+    },
+    {
+      "name": "icon-color",
+      "desc": "Icon 颜色",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "#f90"
+    },
+    {
+      "name": "hide-icon",
+      "desc": "是否隐藏 Icon",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "hide-after",
+      "desc": "关闭时的延迟",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "200"
+    },
+    {
+      "name": "teleported",
+      "desc": "是否将 popover 的下拉列表插入至 body 元素",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "persistent",
+      "desc": "当 popover 组件长时间不触发且 persistent 属性设置为 false 时, popover 将会被删除",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "width",
+      "desc": "弹层宽度，最小宽度 150px",
+      "type": "string / number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "150"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "reference",
+      "desc": "触发 Popconfirm 显示的 HTML 元素"
+    },
+    {
+      "name": "actions ^(2.8.1)",
+      "desc": "页脚的内容"
+    }
+  ],
+  "events": [
+    {
+      "name": "@confirm",
+      "desc": "点击确认按钮时触发",
+      "param": "Function(e: MouseEvent) => void"
+    },
+    {
+      "name": "@cancel",
+      "desc": "点击取消按钮时触发",
+      "param": "Function(e: MouseEvent) => void"
+    }
+  ],
+  "methods": []
+}

@@ -1,0 +1,561 @@
+{
+  "name": "el-select-v2",
+  "attributes": [
+    {
+      "name": "model-value",
+      "desc": "选中项绑定值",
+      "type": "string / number / boolean / object / array",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "v-model",
+      "desc": "选中项绑定值",
+      "type": "string / number / boolean / object / array",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "options",
+      "desc": "选项的数据源， value 的 key 和 label 可以通过 props自定义.",
+      "type": "array",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "props ^(2.4.2)",
+      "desc": "配置选项，具体看下表",
+      "type": "object",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "multiple",
+      "desc": "是否多选",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "disabled",
+      "desc": "是否禁用",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "value-key",
+      "desc": "作为 value 唯一标识的键名，绑定值为对象类型时必填",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "value"
+    },
+    {
+      "name": "size",
+      "desc": "组件大小",
+      "type": "enum",
+      "optionValue": " | large | default | small",
+      "options": [
+        "large",
+        "default",
+        "small"
+      ],
+      "defaultValue": ""
+    },
+    {
+      "name": "clearable",
+      "desc": "是否可以清空选项",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "clear-icon",
+      "desc": "自定义清除图标",
+      "type": "string / object",
+      "optionValue": "Component",
+      "options": [],
+      "defaultValue": "CircleClose"
+    },
+    {
+      "name": "collapse-tags",
+      "desc": "多选时是否将选中值按文字的形式展示",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "multiple-limit",
+      "desc": "多选时可被选择的最大数目。 当被设置为0时，可被选择的数目不设限。",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "0"
+    },
+    {
+      "name": "name",
+      "desc": "选择器的原生name属性",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "effect",
+      "desc": "tooltip 主题，内置了 dark / light 两种",
+      "type": "enum",
+      "optionValue": "dark | light",
+      "options": [
+        "dark",
+        "light"
+      ],
+      "defaultValue": "light"
+    },
+    {
+      "name": "autocomplete",
+      "desc": "自动完成选择输入",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "off"
+    },
+    {
+      "name": "placeholder",
+      "desc": "占位文字",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "Please select"
+    },
+    {
+      "name": "filterable",
+      "desc": "是否可筛选",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "allow-create",
+      "desc": "是否允许创建新条目， 当使用该属性时，filterable必须设置为true",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "filter-method",
+      "desc": "自定义筛选方法",
+      "type": "Function",
+      "optionValue": "() => void",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "loading",
+      "desc": "是否从远程加载数据",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "loading-text",
+      "desc": "从服务器加载数据时显示的文本，默认为“Loading”",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "reserve-keyword",
+      "desc": "筛选时，是否在选择选项后保留关键字",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "no-match-text",
+      "desc": "搜索条件无匹配时显示的文字，也可以使用 empty 插槽设置，默认是 “No matching data'”",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "no-data-text",
+      "desc": "当在没有数据时显示的文字，你同时可以使用empty插槽进行设置。",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "No Data"
+    },
+    {
+      "name": "popper-class",
+      "desc": "选择器下拉菜单的自定义类名",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "teleported",
+      "desc": "是否使用 teleport。设置成 true则会被追加到 append-to 的位置",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "append-to ^(2.8.8)",
+      "desc": "下拉框挂载到哪个 DOM 元素",
+      "type": "CSSSelector / HTMLElement",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "persistent",
+      "desc": "当下拉选择器未被激活并且persistent设置为false，选择器会被删除。",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "popper-options",
+      "desc": "<p><a href=\"https://popper.js.org/docs/v2/\">popper.js</a> parameters</p>",
+      "type": "objectrefer to [popper.js(https://popper.js.org/docs/v2/) doc",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "{}"
+    },
+    {
+      "name": "automatic-dropdown",
+      "desc": "对于不可搜索的 Select，是否在输入框获得焦点后自动弹出选项菜单",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "fit-input-width ^(2.9.2)",
+      "desc": "无论下拉框的宽度是否与输入框相同，如果值为number，则宽度是固定的。",
+      "type": "boolean / number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "suffix-icon ^(2.9.8)",
+      "desc": "自定义后缀图标组件",
+      "type": "string / object",
+      "optionValue": "Component",
+      "options": [],
+      "defaultValue": "ArrowDown"
+    },
+    {
+      "name": "height",
+      "desc": "下拉菜单的高度，每一个选项为34px",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "274"
+    },
+    {
+      "name": "item-height",
+      "desc": "下拉项的高度",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "34"
+    },
+    {
+      "name": "scrollbar-always-on",
+      "desc": "是否总是展示滚动条",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "remote",
+      "desc": "是否从服务器获取数据",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "remote-method",
+      "desc": "当输入值发生变化时触发的函数。 它的参数就是当前的输入值。 当filterable设置为 true 时才会生效",
+      "type": "Function",
+      "optionValue": "(keyword: string) => void",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "validate-event",
+      "desc": "是否触发表单验证",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "offset ^(2.8.8)",
+      "desc": "下拉面板偏移量",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "12"
+    },
+    {
+      "name": "show-arrow ^(2.8.8)",
+      "desc": "下拉菜单的内容是否有箭头",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "placement",
+      "desc": "下拉框出现的位置",
+      "type": "enum",
+      "optionValue": "top | top-start | top-end | bottom | bottom-start | bottom-end | left | left-start | left-end | right | right-start | right-end",
+      "options": [
+        "top",
+        "top-start",
+        "top-end",
+        "bottom",
+        "bottom-start",
+        "bottom-end",
+        "left",
+        "left-start",
+        "left-end",
+        "right",
+        "right-start",
+        "right-end"
+      ],
+      "defaultValue": "bottom-start"
+    },
+    {
+      "name": "fallback-placements ^(2.5.6)",
+      "desc": "<p>dropdown 可用的 positions 请查看<a href=\"https://popper.js.org/docs/v2/modifiers/flip/#fallbackplacements\">popper.js 文档</a></p>",
+      "type": "array",
+      "optionValue": "Placement[]",
+      "options": [],
+      "defaultValue": "[bottom-start, top-start, right, left]"
+    },
+    {
+      "name": "collapse-tags-tooltip ^(2.3.0)",
+      "desc": "当鼠标悬停于折叠标签的文本时，是否显示所有选中的标签。 只有当 collapse-tags 设置为 true 时才会生效。",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "max-collapse-tags ^(2.3.0)",
+      "desc": "需要显示的 Tag 的最大数量。 只有当 collapse-tags 设置为 true 时才会生效。",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "1"
+    },
+    {
+      "name": "tag-type ^(2.5.0)",
+      "desc": "标签类型",
+      "type": "enum",
+      "optionValue": " | success | info | warning | danger",
+      "options": [
+        "success",
+        "info",
+        "warning",
+        "danger"
+      ],
+      "defaultValue": "info"
+    },
+    {
+      "name": "tag-effect ^(2.7.7)",
+      "desc": "标签效果",
+      "type": "enum",
+      "optionValue": " | light | dark | plain",
+      "options": [
+        "light",
+        "dark",
+        "plain"
+      ],
+      "defaultValue": "light"
+    },
+    {
+      "name": "aria-label ^(a11y) ^(2.5.0)",
+      "desc": "等价于原生 input aria-label 属性",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "empty-values ^(2.7.0)",
+      "desc": "组件的空值配置 [参考config-provider](/en-US/component/config-provider#empty-values-configurations)",
+      "type": "array",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "value-on-clear ^(2.7.0)",
+      "desc": "清空选项的值 [参考 config-provider](/en-US/component/config-provider#empty-values-configurations)",
+      "type": "string / number / boolean / Function",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "popper-append-to-body ^(deprecated)",
+      "desc": "是否将弹出框插入至 body 元素 当弹出框的位置出现问题时，你可以尝试将该属性设置为false。",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "tabindex ^(2.9.0)",
+      "desc": "input 的 tabindex",
+      "type": "string / number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    }
+  ],
+  "props": [
+    {
+      "name": "value",
+      "desc": "指定选项的值为选项对象的某个属性值",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "value"
+    },
+    {
+      "name": "label",
+      "desc": "指定节点标签为节点对象的某个属性值",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "label"
+    },
+    {
+      "name": "options",
+      "desc": "指定选项的子选项为选项对象的某个属性值",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "options"
+    },
+    {
+      "name": "disabled",
+      "desc": "指定选项的禁用为选项对象的某个属性值",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "disabled"
+    }
+  ],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "default",
+      "desc": "自定义 Option 模板"
+    },
+    {
+      "name": "header ^(2.5.2)",
+      "desc": "下拉列表顶部的内容"
+    },
+    {
+      "name": "footer ^(2.5.2)",
+      "desc": "下拉列表底部的内容"
+    },
+    {
+      "name": "empty",
+      "desc": "自定义当选项为空时的内容"
+    },
+    {
+      "name": "prefix",
+      "desc": "输入框的前缀"
+    },
+    {
+      "name": "tag ^(2.5.0)",
+      "desc": "select 组件自定义标签内容"
+    },
+    {
+      "name": "loading ^(2.5.2)",
+      "desc": "select 组件自定义 loading内容"
+    },
+    {
+      "name": "label ^(2.7.4)",
+      "desc": "select 组件自定义标签内容"
+    }
+  ],
+  "events": [
+    {
+      "name": "@change",
+      "desc": "当所选值更改时触发，参数是当前选中的值",
+      "param": "Function(val: any) => void"
+    },
+    {
+      "name": "@visible-change",
+      "desc": "当下拉菜单出现/消失时触发器, 当它出现时, 参数将是 `true`, 否则将是 `false`",
+      "param": "Function(visible: boolean) => void"
+    },
+    {
+      "name": "@remove-tag",
+      "desc": "当一个标签在多个模式下被移除时触发，参数将被移除标签值",
+      "param": "Function(tagValue: any) => void"
+    },
+    {
+      "name": "@clear",
+      "desc": "可清空的单选模式下用户点击清空按钮时触发",
+      "param": "Function() => void"
+    },
+    {
+      "name": "@blur",
+      "desc": "当选择器的输入框失去焦点时触发",
+      "param": "Function(event: FocusEvent) => void"
+    },
+    {
+      "name": "@focus",
+      "desc": "当选择器的输入框获得焦点时触发",
+      "param": "Function(event: FocusEvent) => void"
+    }
+  ],
+  "methods": [
+    {
+      "name": "focus",
+      "desc": "使选择器的输入框获取焦点",
+      "param": "Function() => void"
+    },
+    {
+      "name": "blur",
+      "desc": "使选择器的输入框失去焦点，并隐藏下拉框",
+      "param": "Function() => void"
+    },
+    {
+      "name": "selectedLabel ^(2.8.5)",
+      "desc": "获取当前选中的标签",
+      "param": "objectComputedRef<string | string[>"
+    }
+  ]
+}
