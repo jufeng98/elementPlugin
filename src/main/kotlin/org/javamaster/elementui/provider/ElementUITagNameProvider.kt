@@ -13,21 +13,27 @@ import org.javamaster.elementui.service.ElementDetectService
  * @author yudong
  */
 class ElementUITagNameProvider : XmlTagNameProvider {
-    private var dirPrefix: String? = null
+    private lateinit var elementDetectService: ElementDetectService
 
-    private val tagNames by lazy {
+    private val elementTagLookupElements by lazy {
+        val dirPrefix = elementDetectService.dirPrefix
+        val icon = elementDetectService.icon
+        val elementName = elementDetectService.elementName
+
         val url = this::class.java.classLoader.getResource("${dirPrefix}_${NlsBundle.language}/el-alert.json")!!
         val files = VfsUtil.findFileByURL(url)!!.parent.children
 
         files.map {
-            LookupElementBuilder.create(it.nameWithoutExtension).withInsertHandler(XmlTagInsertHandler.INSTANCE)
+            LookupElementBuilder.create(it.nameWithoutExtension)
+                .withInsertHandler(XmlTagInsertHandler.INSTANCE)
+                .withTypeText(elementName)
+                .withIcon(icon)
         }
     }
 
     override fun addTagNameVariants(list: MutableList<LookupElement>, xmlTag: XmlTag, s: String) {
-        val elementDetectService = ElementDetectService.getInstance(xmlTag.project)
-        dirPrefix = elementDetectService.dirPrefix
+        elementDetectService = ElementDetectService.getInstance(xmlTag.project)
 
-        list.addAll(tagNames)
+        list.addAll(elementTagLookupElements)
     }
 }

@@ -13,7 +13,23 @@ class ElementDetectService(private val project: Project) {
     private val plus = "elementplus"
 
     private val elementPlus by lazy {
-        detectElementFramework()
+        detectElementPlus()
+    }
+
+    val elementName by lazy {
+        if (elementPlus) {
+            "Element Plus"
+        } else {
+            "Element UI"
+        }
+    }
+
+    val infiniteScrollName by lazy {
+        if (elementPlus) {
+            "infinite-scroll"
+        } else {
+            "infiniteScroll"
+        }
     }
 
     val icon by lazy {
@@ -40,7 +56,7 @@ class ElementDetectService(private val project: Project) {
         }
     }
 
-    private fun detectElementFramework(): Boolean {
+    private fun detectElementPlus(): Boolean {
         val basePath = project.basePath ?: return false
 
         val file = File(basePath, "package.json")

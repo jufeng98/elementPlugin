@@ -27,25 +27,29 @@ object ElementUITagCacheHelper {
     const val V_INFINITE_SCROLL = "v-infinite-scroll"
     const val V_LOADING = "v-loading"
 
-    private val loadingAttrs =
-        arrayOf(
-            ElementUIXmlAttributeDescriptor(
-                V_LOADING, "Loading 加载", arrayOf(), "",
-                "loading", AttributeType.PARAM
-            ),
-            ElementUIXmlAttributeDescriptor(
-                "element-loading-text", "值会被渲染为加载文案，并显示在加载图标的下方(搭配 $V_LOADING 使用)", arrayOf(),
-                "", "拼命加载中", AttributeType.PARAM
-            ),
-            ElementUIXmlAttributeDescriptor(
-                "element-loading-spinner", "设定图标类名(搭配 $V_LOADING 使用)", arrayOf(),
-                "", "el-icon-loading", AttributeType.PARAM
-            ),
-            ElementUIXmlAttributeDescriptor(
-                "element-loading-background", "设定背景色值(搭配 $V_LOADING 使用)", arrayOf(),
-                "", "el-icon-loading", AttributeType.PARAM
-            )
+    private val loadingAttrs = arrayOf(
+        ElementUIXmlAttributeDescriptor(
+            V_LOADING, "Loading 加载", arrayOf(), "",
+            "loading", AttributeType.PARAM
+        ),
+        ElementUIXmlAttributeDescriptor(
+            "element-loading-text", "值会被渲染为加载文案，并显示在加载图标的下方(搭配 $V_LOADING 使用)",
+            arrayOf(), "", "拼命加载中", AttributeType.PARAM
+        ),
+        ElementUIXmlAttributeDescriptor(
+            "element-loading-spinner", "设定图标类名(搭配 $V_LOADING 使用)", arrayOf(),
+            "", "el-icon-loading", AttributeType.PARAM
+        ),
+        ElementUIXmlAttributeDescriptor(
+            "element-loading-background", "设定背景色值(搭配 $V_LOADING 使用)", arrayOf(),
+            "", "el-icon-loading", AttributeType.PARAM
         )
+    )
+
+    private val infiniteScrollAttr = ElementUIXmlAttributeDescriptor(
+        V_INFINITE_SCROLL, "InfiniteScroll 无限滚动", arrayOf(), "",
+        "loading", AttributeType.PARAM
+    )
 
     fun getTagHtml(tagName: String, project: Project): String? {
         val elementDetectService = ElementDetectService.getInstance(project)
@@ -412,16 +416,11 @@ object ElementUITagCacheHelper {
     }
 
     private fun getInfiniteScrollAttrs(dirPrefix: String): Array<ElementUIXmlAttributeDescriptor> {
-        return arrayOf(
-            ElementUIXmlAttributeDescriptor(
-                V_INFINITE_SCROLL, "InfiniteScroll 无限滚动", arrayOf(), "",
-                "loading", AttributeType.PARAM
-            ),
-            *getTagAttrs(
-                V_INFINITE_SCROLL,
-                getUiComponent(V_INFINITE_SCROLL, "${dirPrefix}_${NlsBundle.language}/${V_INFINITE_SCROLL}.json")!!
-            )
-        )
+        val filePath = "${dirPrefix}_${NlsBundle.language}/${V_INFINITE_SCROLL}.json"
+
+        val uiComponent = getUiComponent(V_INFINITE_SCROLL, filePath)!!
+
+        return arrayOf(infiniteScrollAttr, *getTagAttrs(V_INFINITE_SCROLL, uiComponent))
     }
 
     fun getVLoadingAttrHtml(project: Project): String {

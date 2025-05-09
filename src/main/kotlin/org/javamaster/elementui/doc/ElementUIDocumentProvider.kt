@@ -15,7 +15,12 @@ import org.javamaster.elementui.support.ElementUITagCacheHelper
 class ElementUIDocumentProvider : AbstractDocumentationProvider() {
 
     override fun getUrlFor(element: PsiElement?, originalElement: PsiElement?): List<String> {
-        val parent = element?.parent ?: return emptyList()
+        element ?: return emptyList()
+
+        val parent = element.parent
+        val project = element.project
+
+        val elementDetectService = ElementDetectService.getInstance(project)
 
         val name = if (element is XmlAttribute && parent is HtmlTag) {
             val name = element.name
@@ -25,7 +30,7 @@ class ElementUIDocumentProvider : AbstractDocumentationProvider() {
                 }
 
                 ElementUITagCacheHelper.V_INFINITE_SCROLL -> {
-                    "infiniteScroll"
+                    elementDetectService.infiniteScrollName
                 }
 
                 else -> {
@@ -60,9 +65,12 @@ class ElementUIDocumentProvider : AbstractDocumentationProvider() {
                 "submenu" -> "menu"
                 "skeleton-item" -> "skeleton"
                 "tab-pane" -> "tab"
+                "tab-nav" -> "tab"
                 "breadcrumb-item" -> "breadcrumb"
                 "time-select" -> "time-picker"
                 "timeline-item" -> "timeline"
+                "step" -> "steps"
+                "check-tag" -> "check"
                 else -> str
             }
         } else {
@@ -70,9 +78,6 @@ class ElementUIDocumentProvider : AbstractDocumentationProvider() {
         }
 
         name ?: return emptyList()
-
-        val project = element.project
-        val elementDetectService = ElementDetectService.getInstance(project)
 
         val url = elementDetectService.getUrl(name)
 

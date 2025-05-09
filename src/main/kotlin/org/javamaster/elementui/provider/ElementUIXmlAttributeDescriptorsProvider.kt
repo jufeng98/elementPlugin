@@ -22,6 +22,10 @@ class ElementUIXmlAttributeDescriptorsProvider : XmlAttributeDescriptorsProvider
     }
 
     override fun getAttributeDescriptor(s: String, xmlTag: XmlTag): XmlAttributeDescriptor? {
-        return null
+        if (xmlTag !is HtmlTag) {
+            return null
+        }
+
+        return ElementUITagCacheHelper.getTagAttr(xmlTag.name, s, xmlTag.project)
     }
 }
