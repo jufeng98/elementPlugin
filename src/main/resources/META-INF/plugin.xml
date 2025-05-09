@@ -46,6 +46,7 @@
     </change-notes>
 
     <depends>com.intellij.modules.platform</depends>
+    <depends>JavaScript</depends>
     <depends>org.jetbrains.plugins.vue</depends>
     <depends>org.intellij.plugins.markdown</depends>
     <depends>com.intellij.modules.ultimate</depends>

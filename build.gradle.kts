@@ -27,6 +27,7 @@ intellij {
     type.set("IU")
     plugins.set(
         listOf(
+            "JavaScript",
             "org.intellij.plugins.markdown",
             "org.jetbrains.plugins.vue:243.21565.42"
         )
