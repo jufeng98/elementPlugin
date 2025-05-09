@@ -7,34 +7,39 @@
 
     <description>
         <![CDATA[
-            Provides ElementUI framework support to all JetBrains IDEs that support JavaScript<br>
+            Provides ElementUI framework and Element Plus framework support to all JetBrains IDEs that support JavaScript<br>
             Notice: before use this plugin, please install the <a rel="nofollow" href="https://plugins.jetbrains.com/plugin/9442-vue-js" target="_blank">Vue.js</a> plugin first<br>
             <b>features</b>
             <ol>
-                <li>Base on ElementUI 2.15.14 version</li>
-                <li>Support ElementUI tag name completion</li>
-                <li>Support ElementUI tag name documentation</li>
-                <li>Support ElementUI tag attribute completion</li>
-                <li>Support ElementUI tag attribute documentation</li>
-                <li>Suppress the Unknown html tag warnings of ElementUI tags</li>
+                <li>Base on ElementUI 2.15.14 version and Element Plus 2.9.10 version</li>
+                <li>Support ElementUI / Element Plus tag name completion</li>
+                <li>Support ElementUI / Element Plus tag name documentation</li>
+                <li>Support ElementUI / Element Plus tag attribute completion</li>
+                <li>Support ElementUI / Element Plus tag attribute documentation</li>
+                <li>Suppress the Unknown html tag warnings of ElementUI / Element Plus tags</li>
             <ol>
             <br>
-            为所有支持 JavaScript 的 JetBrains IDEs 提供 ElementUI 框架支持<br>
+            为所有支持 JavaScript 的 JetBrains IDEs 提供 ElementUI 框架和 Element Plus 框架支持<br>
             注意: 在使用插件之前, 请先安装 <a rel="nofollow" href="https://plugins.jetbrains.com/plugin/9442-vue-js" target="_blank">Vue.js</a> 插件<br>
             <b>特性</b>
             <ol>
-                <li>基于 ElementUI 2.15.14 版本</li>
-                <li>支持 ElementUI 标签智能提示补全</li>
-                <li>支持 ElementUI 标签文档提示</li>
-                <li>支持 ElementUI 标签属性智能提示补全</li>
-                <li>支持 ElementUI 标签属性文档提示</li>
-                <li>抑制 ElementUI 标签的 Unknown html tag 警告</li>
+                <li>基于 ElementUI 2.15.14 版本和 Element Plus 2.9.10 版本</li>
+                <li>支持 ElementUI / Element Plus 标签智能提示补全</li>
+                <li>支持 ElementUI / Element Plus 标签文档提示</li>
+                <li>支持 ElementUI / Element Plus 标签属性智能提示补全</li>
+                <li>支持 ElementUI / Element Plus 标签属性文档提示</li>
+                <li>抑制 ElementUI / Element Plus 标签的 Unknown html tag 警告</li>
             <ol>
         ]]>
     </description>
     <change-notes>
         <![CDATA[
             <ul>
+                <li><b>3.0.0</b></li>
+                <ul>
+                    <li>支持 Element Plus 框架</li>
+                    <li>bug修复</li>
+                </ul>
                 <li><b>2.0.0</b></li>
                 <ul>
                     <li>重构逻辑,采用更合理方式实现</li>
@@ -70,8 +75,11 @@
     </extensions>
 
     <actions>
-<!--        <action id="TestAction" class="org.javamaster.elementui.convert.ConvertAction" text="TestAction">-->
-<!--            <add-to-group group-id="HelpMenu" anchor="first"/>-->
-<!--        </action>-->
+        <!--        <action id="ConvertAction" class="org.javamaster.elementui.convert.ConvertAction" text="ConvertAction">-->
+        <!--            <add-to-group group-id="HelpMenu" anchor="first"/>-->
+        <!--        </action>-->
+        <!--        <action id="ConvertPlusAction" class="org.javamaster.elementui.convert.ConvertPlusAction" text="ConvertPlusAction">-->
+        <!--            <add-to-group group-id="HelpMenu" anchor="first"/>-->
+        <!--        </action>-->
     </actions>
 </idea-plugin>
