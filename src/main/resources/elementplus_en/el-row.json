@@ -1,0 +1,59 @@
+{
+  "name": "el-row",
+  "attributes": [
+    {
+      "name": "gutter",
+      "desc": "grid spacing",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "0"
+    },
+    {
+      "name": "justify",
+      "desc": "horizontal alignment of flex layout",
+      "type": "enum",
+      "optionValue": "start | end | center | space-around | space-between | space-evenly",
+      "options": [
+        "start",
+        "end",
+        "center",
+        "space-around",
+        "space-between",
+        "space-evenly"
+      ],
+      "defaultValue": "start"
+    },
+    {
+      "name": "align",
+      "desc": "vertical alignment of flex layout",
+      "type": "enum",
+      "optionValue": "top | middle | bottom",
+      "options": [
+        "top",
+        "middle",
+        "bottom"
+      ],
+      "defaultValue": "—"
+    },
+    {
+      "name": "tag",
+      "desc": "custom element tag",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "div"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "default",
+      "desc": "customize default content"
+    }
+  ],
+  "events": [],
+  "methods": []
+}

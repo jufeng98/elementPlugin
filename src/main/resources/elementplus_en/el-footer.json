@@ -1,0 +1,24 @@
+{
+  "name": "el-footer",
+  "attributes": [
+    {
+      "name": "height",
+      "desc": "height of the footer",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "60px"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "default",
+      "desc": "customize default content"
+    }
+  ],
+  "events": [],
+  "methods": []
+}

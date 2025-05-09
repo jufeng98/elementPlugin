@@ -1,0 +1,90 @@
+{
+  "name": "el-radio",
+  "attributes": [
+    {
+      "name": "model-value",
+      "desc": "binding value",
+      "type": "string / number / boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "v-model",
+      "desc": "binding value",
+      "type": "string / number / boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "value ^(2.6.0)",
+      "desc": "the value of Radio",
+      "type": "string / number / boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "label",
+      "desc": "the label of Radio. If there's no value, label will act as value",
+      "type": "string / number / boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "disabled",
+      "desc": "whether Radio is disabled",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "border",
+      "desc": "whether to add a border around Radio",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "size",
+      "desc": "size of the Radio",
+      "type": "enum",
+      "optionValue": "large | default | small",
+      "options": [
+        "large",
+        "default",
+        "small"
+      ],
+      "defaultValue": "—"
+    },
+    {
+      "name": "name",
+      "desc": "native name attribute",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "default",
+      "desc": "customize default content"
+    }
+  ],
+  "events": [
+    {
+      "name": "@change",
+      "desc": "triggers when the bound value changes",
+      "param": "Function(value: string | number | boolean) => void"
+    }
+  ],
+  "methods": []
+}

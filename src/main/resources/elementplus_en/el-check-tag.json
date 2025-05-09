@@ -1,0 +1,60 @@
+{
+  "name": "el-check-tag",
+  "attributes": [
+    {
+      "name": "checked",
+      "desc": "is checked",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "v-model:checked",
+      "desc": "is checked",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "disabled ^(2.8.2)",
+      "desc": "whether the check-tag is disabled",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "type ^(2.5.4)",
+      "desc": "type of CheckTag",
+      "type": "enum",
+      "optionValue": "primary | success | info | warning | danger",
+      "options": [
+        "primary",
+        "success",
+        "info",
+        "warning",
+        "danger"
+      ],
+      "defaultValue": "primary"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "default",
+      "desc": "customize default content"
+    }
+  ],
+  "events": [
+    {
+      "name": "@change",
+      "desc": "triggers when Check Tag is clicked",
+      "param": "Function(value: boolean) => void"
+    }
+  ],
+  "methods": []
+}

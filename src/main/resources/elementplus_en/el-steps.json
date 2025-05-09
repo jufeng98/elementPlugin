@@ -1,0 +1,87 @@
+{
+  "name": "el-steps",
+  "attributes": [
+    {
+      "name": "space",
+      "desc": "the spacing of each step, will be responsive if omitted. Supports percentage.",
+      "type": "number / string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "direction",
+      "desc": "display direction",
+      "type": "enum",
+      "optionValue": "vertical | horizontal",
+      "options": [
+        "vertical",
+        "horizontal"
+      ],
+      "defaultValue": "horizontal"
+    },
+    {
+      "name": "active",
+      "desc": "current activation step",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "0"
+    },
+    {
+      "name": "process-status",
+      "desc": "status of current step",
+      "type": "enum",
+      "optionValue": "wait | process | finish | error | success",
+      "options": [
+        "wait",
+        "process",
+        "finish",
+        "error",
+        "success"
+      ],
+      "defaultValue": "process"
+    },
+    {
+      "name": "finish-status",
+      "desc": "status of end step",
+      "type": "enum",
+      "optionValue": "wait | process | finish | error | success",
+      "options": [
+        "wait",
+        "process",
+        "finish",
+        "error",
+        "success"
+      ],
+      "defaultValue": "finish"
+    },
+    {
+      "name": "align-center",
+      "desc": "center title and description",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "simple",
+      "desc": "whether to apply simple theme",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "default",
+      "desc": "customize default content"
+    }
+  ],
+  "events": [],
+  "methods": []
+}

@@ -1,0 +1,108 @@
+{
+  "name": "el-submenu",
+  "attributes": [
+    {
+      "name": "index ^(required)",
+      "desc": "unique identification",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "popper-class",
+      "desc": "custom class name for the popup menu",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "show-timeout",
+      "desc": "timeout before showing a sub-menu(inherit show-timeout of the menu by default.)",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "hide-timeout",
+      "desc": "timeout before hiding a sub-menu(inherit hide-timeout of the menu by default.)",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "disabled",
+      "desc": "whether the sub-menu is disabled",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "teleported",
+      "desc": "whether popup menu is teleported to the body, the default is true for the level one SubMenu, false for other SubMenus",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "undefined"
+    },
+    {
+      "name": "popper-offset",
+      "desc": "offset of the popper (overrides the popper of menu)",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "expand-close-icon",
+      "desc": "Icon when menu are expanded and submenu are closed, expand-close-icon and expand-open-icon need to be passed together to take effect",
+      "type": "string / Component",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "expand-open-icon",
+      "desc": "Icon when menu are expanded and submenu are opened, expand-open-icon and expand-close-icon need to be passed together to take effect",
+      "type": "string / Component",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "collapse-close-icon",
+      "desc": "Icon when menu are collapsed and submenu are closed, collapse-close-icon and collapse-open-icon need to be passed together to take effect",
+      "type": "string / Component",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "collapse-open-icon",
+      "desc": "Icon when menu are collapsed and submenu are opened, collapse-open-icon and collapse-close-icon need to be passed together to take effect",
+      "type": "string / Component",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "default",
+      "desc": "customize default content"
+    },
+    {
+      "name": "title",
+      "desc": "customize title content"
+    }
+  ],
+  "events": [],
+  "methods": []
+}

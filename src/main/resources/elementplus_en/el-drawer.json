@@ -1,0 +1,262 @@
+{
+  "name": "el-drawer",
+  "attributes": [
+    {
+      "name": "model-value",
+      "desc": "Should Drawer be displayed",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "v-model",
+      "desc": "Should Drawer be displayed",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "append-to-body",
+      "desc": "Controls should Drawer be inserted to DocumentBody Element, nested Drawer must assign this param to **true**",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "append-to ^(2.8.0)",
+      "desc": "which element the Drawer appends to. Will override append-to-body",
+      "type": "CSSSelector / HTMLElement",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "body"
+    },
+    {
+      "name": "lock-scroll",
+      "desc": "whether scroll of body is disabled while Drawer is displayed",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "before-close",
+      "desc": "If set, closing procedure will be halted",
+      "type": "Function",
+      "optionValue": "(done: (cancel?: boolean) => void) => void(done is function type that accepts a boolean as parameter, calling done with true or without parameter will abort the close procedure)",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "close-on-click-modal",
+      "desc": "whether the Drawer can be closed by clicking the mask",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "close-on-press-escape",
+      "desc": "Indicates whether Drawer can be closed by pressing ESC",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "open-delay",
+      "desc": "Time(milliseconds) before open",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "0"
+    },
+    {
+      "name": "close-delay",
+      "desc": "Time(milliseconds) before close",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "0"
+    },
+    {
+      "name": "destroy-on-close",
+      "desc": "Indicates whether children should be destroyed after Drawer closed",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "modal",
+      "desc": "Should show shadowing layer",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "direction",
+      "desc": "Drawer's opening direction",
+      "type": "enum",
+      "optionValue": "rtl | ltr | ttb | btt",
+      "options": [
+        "rtl",
+        "ltr",
+        "ttb",
+        "btt"
+      ],
+      "defaultValue": "rtl"
+    },
+    {
+      "name": "show-close",
+      "desc": "Should show close button at the top right of Drawer",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "size",
+      "desc": "Drawer's size, if Drawer is horizontal mode, it effects the width property, otherwise it effects the height property, when size is number type, it describes the size by unit of pixels; when size is string type, it should be used with x% notation, other wise it will be interpreted to pixel unit",
+      "type": "number / string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "30%"
+    },
+    {
+      "name": "title",
+      "desc": "Drawer's title, can also be set by named slot, detailed descriptions can be found in the slot form",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "withHeader",
+      "desc": "Flag that controls the header section's existance, default to true, when withHeader set to false, both title attribute and title slot won't work",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "modal-class",
+      "desc": "Extra class names for shadowing layer",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "header-class ^(2.9.3)",
+      "desc": "custom class names for header wrapper",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "body-class ^(2.9.3)",
+      "desc": "custom class names for body wrapper",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "footer-class ^(2.9.3)",
+      "desc": "custom class names for footer wrapper",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "z-index",
+      "desc": "set z-index",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "header-aria-level ^(a11y)",
+      "desc": "header's aria-level attribute",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "2"
+    },
+    {
+      "name": "custom-class ^(deprecated)",
+      "desc": "Extra class names for Drawer",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "default",
+      "desc": "Drawer's Content"
+    },
+    {
+      "name": "header",
+      "desc": "Drawer header section; Replacing this removes the title, but does not remove the close button."
+    },
+    {
+      "name": "footer",
+      "desc": "Drawer footer Section"
+    },
+    {
+      "name": "title ^(deprecated)",
+      "desc": "Works the same as the header slot. Use that instead."
+    }
+  ],
+  "events": [
+    {
+      "name": "@open",
+      "desc": "Triggered before Drawer opening animation begins",
+      "param": "Function() => void"
+    },
+    {
+      "name": "@opened",
+      "desc": "Triggered after Drawer opening animation ended",
+      "param": "Function() => void"
+    },
+    {
+      "name": "@close",
+      "desc": "Triggered before Drawer closing animation begins",
+      "param": "Function() => void"
+    },
+    {
+      "name": "@closed",
+      "desc": "Triggered after Drawer closing animation ended",
+      "param": "Function() => void"
+    },
+    {
+      "name": "@open-auto-focus",
+      "desc": "triggers after Drawer opens and content focused",
+      "param": "Function() => void"
+    },
+    {
+      "name": "@close-auto-focus",
+      "desc": "triggers after Drawer closed and content focused",
+      "param": "Function() => void"
+    }
+  ],
+  "methods": [
+    {
+      "name": "handleClose",
+      "desc": "In order to close Drawer, this method will call `before-close`.",
+      "param": ""
+    }
+  ]
+}

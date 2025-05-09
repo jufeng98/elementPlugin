@@ -1,0 +1,56 @@
+{
+  "name": "el-config-provider",
+  "attributes": [
+    {
+      "name": "max",
+      "desc": "the maximum number of messages that can be displayed at the same time",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "grouping ^(2.8.2)",
+      "desc": "merge messages with the same content, type of VNode message is not supported",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "duration ^(2.8.2)",
+      "desc": "display duration, millisecond. If set to 0, it will not turn off automatically",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "showClose ^(2.8.2)",
+      "desc": "whether to show a close button",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "offset ^(2.8.2)",
+      "desc": "set the distance to the top of viewport",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "default",
+      "desc": "customize default content"
+    }
+  ],
+  "events": [],
+  "methods": []
+}

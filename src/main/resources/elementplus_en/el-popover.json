@@ -1,0 +1,278 @@
+{
+  "name": "el-popover",
+  "attributes": [
+    {
+      "name": "trigger",
+      "desc": "how the popover is triggered",
+      "type": "enum",
+      "optionValue": "click | focus | hover | contextmenu",
+      "options": [
+        "click",
+        "focus",
+        "hover",
+        "contextmenu"
+      ],
+      "defaultValue": "hover"
+    },
+    {
+      "name": "trigger-keys ^(2.9.8)",
+      "desc": "When you click the mouse to focus on the trigger element, you can define a set of keyboard codes to control the display of popover through the keyboard",
+      "type": "Array",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "[Enter,Space]"
+    },
+    {
+      "name": "title",
+      "desc": "popover title",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "effect",
+      "desc": "Tooltip theme, built-in theme: dark / light",
+      "type": "enum",
+      "optionValue": "dark | light",
+      "options": [
+        "dark",
+        "light"
+      ],
+      "defaultValue": "light"
+    },
+    {
+      "name": "content",
+      "desc": "popover content, can be replaced with a default slot",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "width",
+      "desc": "popover width",
+      "type": "string / number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "150"
+    },
+    {
+      "name": "placement",
+      "desc": "popover placement",
+      "type": "enum",
+      "optionValue": "top | top-start | top-end | bottom | bottom-start | bottom-end | left | left-start | left-end | right | right-start | right-end",
+      "options": [
+        "top",
+        "top-start",
+        "top-end",
+        "bottom",
+        "bottom-start",
+        "bottom-end",
+        "left",
+        "left-start",
+        "left-end",
+        "right",
+        "right-start",
+        "right-end"
+      ],
+      "defaultValue": "bottom"
+    },
+    {
+      "name": "disabled",
+      "desc": "whether Popover is disabled",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "visible",
+      "desc": "whether popover is visible",
+      "type": "boolean / null",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "null"
+    },
+    {
+      "name": "v-model:visible",
+      "desc": "whether popover is visible",
+      "type": "boolean / null",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "null"
+    },
+    {
+      "name": "offset",
+      "desc": "popover offset, Popover is built with Tooltip, offset of Popover is undefined, but offset of Tooltip is 12",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "undefined"
+    },
+    {
+      "name": "transition",
+      "desc": "popover transition animation, the default is el-fade-in-linear",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "show-arrow",
+      "desc": "<p>whether a tooltip arrow is displayed or not. For more info, please refer to <a href=\"https://github.com/element-plus/element-plus/tree/dev/packages/components/popper\">ElPopper</a></p>",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "popper-options",
+      "desc": "<p>parameters for <a href=\"https://popper.js.org/docs/v2/\">popper.js</a></p>",
+      "type": "object",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "{modifiers: [{name: computeStyles,options: {gpuAcceleration: false}}]}"
+    },
+    {
+      "name": "popper-class",
+      "desc": "custom class name for popover",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "popper-style",
+      "desc": "custom style for popover",
+      "type": "string / object",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "show-after",
+      "desc": "delay of appearance, in millisecond",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "0"
+    },
+    {
+      "name": "hide-after",
+      "desc": "delay of disappear, in millisecond",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "200"
+    },
+    {
+      "name": "auto-close",
+      "desc": "timeout in milliseconds to hide tooltip",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "0"
+    },
+    {
+      "name": "tabindex",
+      "desc": "<p><a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/tabindex\">tabindex</a> of Popover</p>",
+      "type": "number / string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "0"
+    },
+    {
+      "name": "teleported",
+      "desc": "whether popover dropdown is teleported to the body",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "append-to ^(2.9.10)",
+      "desc": "which element the popover CONTENT appends to",
+      "type": "CSSSelector / HTMLElement",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "body"
+    },
+    {
+      "name": "persistent",
+      "desc": "when popover inactive and persistent is false , popover will be destroyed",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "virtual-triggering",
+      "desc": "Indicates whether virtual triggering is enabled",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "virtual-ref",
+      "desc": "Indicates the reference element to which the popover is attached",
+      "type": "HTMLElement",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "default",
+      "desc": "text content of popover"
+    },
+    {
+      "name": "reference",
+      "desc": "HTML element that triggers popover"
+    }
+  ],
+  "events": [
+    {
+      "name": "@show",
+      "desc": "triggers when popover shows",
+      "param": "Function() => void"
+    },
+    {
+      "name": "@before-enter",
+      "desc": "triggers when the entering transition before",
+      "param": "Function() => void"
+    },
+    {
+      "name": "@after-enter",
+      "desc": "triggers when the entering transition ends",
+      "param": "Function() => void"
+    },
+    {
+      "name": "@hide",
+      "desc": "triggers when popover hides",
+      "param": "Function() => void"
+    },
+    {
+      "name": "@before-leave",
+      "desc": "triggers when the leaving transition before",
+      "param": "Function() => void"
+    },
+    {
+      "name": "@after-leave",
+      "desc": "triggers when the leaving transition ends",
+      "param": "Function() => void"
+    }
+  ],
+  "methods": [
+    {
+      "name": "hide",
+      "desc": "hide popover",
+      "param": "Function() => void"
+    }
+  ]
+}

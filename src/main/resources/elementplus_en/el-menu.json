@@ -1,0 +1,217 @@
+{
+  "name": "el-menu",
+  "attributes": [
+    {
+      "name": "mode",
+      "desc": "menu display mode",
+      "type": "enum",
+      "optionValue": "horizontal | vertical",
+      "options": [
+        "horizontal",
+        "vertical"
+      ],
+      "defaultValue": "vertical"
+    },
+    {
+      "name": "collapse",
+      "desc": "whether the menu is collapsed (available only in vertical mode)",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "ellipsis",
+      "desc": "whether the menu is ellipsis (available only in horizontal mode)",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "ellipsis-icon ^(2.4.4)",
+      "desc": "custom ellipsis icon (available only in horizontal mode and ellipsis is true)",
+      "type": "string / Component",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "popper-offset ^(2.4.4)",
+      "desc": "offset of the popper (effective for all submenus)",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "6"
+    },
+    {
+      "name": "default-active",
+      "desc": "index of active menu on page load",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "default-openeds",
+      "desc": "array that contains indexes of currently active sub-menus",
+      "type": "object",
+      "optionValue": "string[]",
+      "options": [],
+      "defaultValue": "[]"
+    },
+    {
+      "name": "unique-opened",
+      "desc": "whether only one sub-menu can be active",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "menu-trigger",
+      "desc": "how sub-menus are triggered, only works when mode is 'horizontal'",
+      "type": "enum",
+      "optionValue": "hover | click",
+      "options": [
+        "hover",
+        "click"
+      ],
+      "defaultValue": "hover"
+    },
+    {
+      "name": "router",
+      "desc": "whether vue-router mode is activated. If true, index will be used as 'path' to activate the route action. Use with default-active to set the active item on load.",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "collapse-transition",
+      "desc": "whether to enable the collapse transition",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "popper-effect ^(2.2.26)",
+      "desc": "Tooltip theme, built-in theme: dark / light when menu is collapsed",
+      "type": "enum",
+      "optionValue": "dark | light",
+      "options": [
+        "dark",
+        "light"
+      ],
+      "defaultValue": "dark"
+    },
+    {
+      "name": "close-on-click-outside ^(2.4.4)",
+      "desc": "optional, whether menu is collapsed when clicking outside",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "popper-class ^(2.5.0)",
+      "desc": "custom class name for all popup menus",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "show-timeout ^(2.5.0)",
+      "desc": "control timeout for all menus before showing",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "300"
+    },
+    {
+      "name": "hide-timeout ^(2.5.0)",
+      "desc": "control timeout for all menus before hiding",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "300"
+    },
+    {
+      "name": "background-color ^(deprecated)",
+      "desc": "background color of Menu (hex format) (use --el-menu-bg-color in a style class instead)",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "#ffffff"
+    },
+    {
+      "name": "text-color ^(deprecated)",
+      "desc": "text color of Menu (hex format) ( use --el-menu-text-color in a style class instead)",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "#303133"
+    },
+    {
+      "name": "active-text-color ^(deprecated)",
+      "desc": "text color of currently active menu item (hex format) ( use --el-menu-active-color in a style class instead)",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "#409eff"
+    },
+    {
+      "name": "persistent ^(2.9.5)",
+      "desc": "when menu inactive and persistent is false , dropdown menu will be destroyed",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "default",
+      "desc": "customize default content"
+    }
+  ],
+  "events": [
+    {
+      "name": "@select",
+      "desc": "callback function when menu is activated",
+      "param": "FunctionMenuSelectEvent"
+    },
+    {
+      "name": "@open",
+      "desc": "callback function when sub-menu expands",
+      "param": "FunctionMenuOpenEvent"
+    },
+    {
+      "name": "@close",
+      "desc": "callback function when sub-menu collapses",
+      "param": "FunctionMenuCloseEvent"
+    }
+  ],
+  "methods": [
+    {
+      "name": "open",
+      "desc": "open a specific sub-menu, the param is index of the sub-menu to open",
+      "param": "Function(index: string) => void"
+    },
+    {
+      "name": "close",
+      "desc": "close a specific sub-menu, the param is index of the sub-menu to close",
+      "param": "Function(index: string) => void"
+    },
+    {
+      "name": "updateActiveIndex ^(2.9.8)",
+      "desc": "set index of active menu",
+      "param": "Function(index: string) => void"
+    }
+  ]
+}

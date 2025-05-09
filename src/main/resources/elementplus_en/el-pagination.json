@@ -1,0 +1,240 @@
+{
+  "name": "el-pagination",
+  "attributes": [
+    {
+      "name": "size ^(2.7.6)",
+      "desc": "pagination size",
+      "type": "enum",
+      "optionValue": "large | default | small",
+      "options": [
+        "large",
+        "default",
+        "small"
+      ],
+      "defaultValue": "default"
+    },
+    {
+      "name": "background",
+      "desc": "whether the buttons have a background color",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "page-size",
+      "desc": "item count of each page",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "v-model:page-size",
+      "desc": "item count of each page",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "default-page-size",
+      "desc": "default initial value of page size, not setting is the same as setting 10",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "total",
+      "desc": "total item count",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "page-count",
+      "desc": "total page count. Set either total or page-count and pages will be displayed; if you need page-sizes, total is required",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "pager-count",
+      "desc": "number of pagers. Pagination collapses when the total page count exceeds this value",
+      "type": "number",
+      "optionValue": "5 | 7 | 9 | 11 | 13 | 15 | 17 | 19 | 21",
+      "options": [
+        "5",
+        "7",
+        "9",
+        "11",
+        "13",
+        "15",
+        "17",
+        "19",
+        "21"
+      ],
+      "defaultValue": "7"
+    },
+    {
+      "name": "current-page",
+      "desc": "current page number",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "v-model:current-page",
+      "desc": "current page number",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "default-current-page",
+      "desc": "default initial value of current-page, not setting is the same as setting 1",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "layout",
+      "desc": "layout of Pagination, elements separated with a comma",
+      "type": "string",
+      "optionValue": "string (consists of sizes, prev, pager, next, jumper, ->, total, slot)",
+      "options": [],
+      "defaultValue": "prev, pager, next, jumper, ->, total"
+    },
+    {
+      "name": "page-sizes",
+      "desc": "options of item count per page",
+      "type": "object",
+      "optionValue": "number[]",
+      "options": [],
+      "defaultValue": "[10, 20, 30, 40, 50, 100]"
+    },
+    {
+      "name": "append-size-to ^(2.8.4)",
+      "desc": "which element the size dropdown appends to",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "popper-class",
+      "desc": "custom class name for the page size Select's dropdown",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "prev-text",
+      "desc": "text for the prev button",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "prev-icon",
+      "desc": "icon for the prev button, has a lower priority than prev-text",
+      "type": "string / Component",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "ArrowLeft"
+    },
+    {
+      "name": "next-text",
+      "desc": "text for the next button",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "next-icon",
+      "desc": "icon for the next button, has a lower priority than next-text",
+      "type": "string / Component",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "ArrowRight"
+    },
+    {
+      "name": "disabled",
+      "desc": "whether Pagination is disabled",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "teleported ^(2.3.13)",
+      "desc": "whether Pagination select dropdown is teleported to the body",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "hide-on-single-page",
+      "desc": "whether to hide when there's only one page",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "small ^(deprecated)",
+      "desc": "whether to use small pagination",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "default",
+      "desc": "custom content. To use this, you need to declare `slot` in `layout`"
+    }
+  ],
+  "events": [
+    {
+      "name": "@size-change",
+      "desc": "triggers when `page-size` changes",
+      "param": "Function(value: number) => void"
+    },
+    {
+      "name": "@current-change",
+      "desc": "triggers when `current-page` changes",
+      "param": "Function(value: number) => void"
+    },
+    {
+      "name": "@change ^(2.4.4)",
+      "desc": "triggers when `current-page` or `page-size` changes",
+      "param": "Function(currentPage: number, pageSize: number) => void"
+    },
+    {
+      "name": "@prev-click",
+      "desc": "triggers when the prev button is clicked and current page changes",
+      "param": "Function(value: number) => void"
+    },
+    {
+      "name": "@next-click",
+      "desc": "triggers when the next button is clicked and current page changes",
+      "param": "Function(value: number) => void"
+    }
+  ],
+  "methods": []
+}

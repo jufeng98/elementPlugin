@@ -1,0 +1,16 @@
+{
+  "name": "el-transfer-panel",
+  "attributes": [],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [],
+  "events": [],
+  "methods": [
+    {
+      "name": "query",
+      "desc": "filter keyword",
+      "param": "string"
+    }
+  ]
+}

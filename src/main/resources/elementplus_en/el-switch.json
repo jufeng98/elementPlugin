@@ -1,0 +1,236 @@
+{
+  "name": "el-switch",
+  "attributes": [
+    {
+      "name": "model-value",
+      "desc": "binding value, it should be equivalent to either active-value or inactive-value, by default it's boolean type",
+      "type": "boolean / string / number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "v-model",
+      "desc": "binding value, it should be equivalent to either active-value or inactive-value, by default it's boolean type",
+      "type": "boolean / string / number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "disabled",
+      "desc": "whether Switch is disabled",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "loading",
+      "desc": "whether Switch is in loading state",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "size",
+      "desc": "size of Switch",
+      "type": "enum",
+      "optionValue": " | large | default | small",
+      "options": [
+        "large",
+        "default",
+        "small"
+      ],
+      "defaultValue": ""
+    },
+    {
+      "name": "width",
+      "desc": "width of Switch",
+      "type": "number / string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "inline-prompt",
+      "desc": "whether icon or text is displayed inside dot, only the first character will be rendered for text",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "active-icon",
+      "desc": "component of the icon displayed when in on state, overrides active-text",
+      "type": "string / Component",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "inactive-icon",
+      "desc": "component of the icon displayed when in off state, overrides inactive-text",
+      "type": "string / Component",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "active-action-icon ^(2.3.9)",
+      "desc": "component of the icon displayed in action when in on state",
+      "type": "string / Component",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "inactive-action-icon ^(2.3.9)",
+      "desc": "component of the icon displayed in action when in off state",
+      "type": "string / Component",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "active-text",
+      "desc": "text displayed when in on state",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "inactive-text",
+      "desc": "text displayed when in off state",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "active-value",
+      "desc": "switch value when in on state",
+      "type": "boolean / string / number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "inactive-value",
+      "desc": "switch value when in off state",
+      "type": "boolean / string / number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "name",
+      "desc": "input name of Switch",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "validate-event",
+      "desc": "whether to trigger form validation",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "before-change",
+      "desc": "before-change hook before the switch state changes. If false is returned or a Promise is returned and then is rejected, will stop switching",
+      "type": "Function",
+      "optionValue": "() => Promise<boolean> | boolen",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "id",
+      "desc": "id for input",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "tabindex",
+      "desc": "tabindex for input",
+      "type": "string / number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "aria-label ^(a11y) ^(2.7.2)",
+      "desc": "same as aria-label in native input",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "active-color ^(deprecated)",
+      "desc": "background color when in on state ( use CSS var --el-switch-on-color instead )",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "inactive-color ^(deprecated)",
+      "desc": "background color when in off state ( use CSS var --el-switch-off-color instead )",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "border-color ^(deprecated)",
+      "desc": "border color of the switch ( use CSS var --el-switch-border-color instead )",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "label ^(a11y) ^(deprecated)",
+      "desc": "same as aria-label in native input",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "active-action ^(2.4.4)",
+      "desc": "customize active action"
+    },
+    {
+      "name": "inactive-action ^(2.4.4)",
+      "desc": "customize inactive action"
+    }
+  ],
+  "events": [
+    {
+      "name": "@change",
+      "desc": "triggers when value changes",
+      "param": "Function(val: boolean | string | number) => void"
+    }
+  ],
+  "methods": [
+    {
+      "name": "focus",
+      "desc": "manual focus to the switch component",
+      "param": "Function() => void"
+    }
+  ]
+}

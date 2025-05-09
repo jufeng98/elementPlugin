@@ -1,0 +1,24 @@
+{
+  "name": "el-aside",
+  "attributes": [
+    {
+      "name": "width",
+      "desc": "width of the side section",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "300px"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "default",
+      "desc": "customize default content"
+    }
+  ],
+  "events": [],
+  "methods": []
+}

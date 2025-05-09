@@ -1,0 +1,42 @@
+{
+  "name": "el-button-group",
+  "attributes": [
+    {
+      "name": "size",
+      "desc": "control the size of buttons in this button-group",
+      "type": "enum",
+      "optionValue": "large | default | small",
+      "options": [
+        "large",
+        "default",
+        "small"
+      ],
+      "defaultValue": "—"
+    },
+    {
+      "name": "type",
+      "desc": "control the type of buttons in this button-group",
+      "type": "enum",
+      "optionValue": "primary | success | warning | danger | info",
+      "options": [
+        "primary",
+        "success",
+        "warning",
+        "danger",
+        "info"
+      ],
+      "defaultValue": "—"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "default",
+      "desc": "customize button group content"
+    }
+  ],
+  "events": [],
+  "methods": []
+}

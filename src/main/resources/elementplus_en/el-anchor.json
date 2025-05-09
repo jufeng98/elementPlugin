@@ -1,0 +1,103 @@
+{
+  "name": "el-anchor",
+  "attributes": [
+    {
+      "name": "container",
+      "desc": "scroll container.",
+      "type": "",
+      "optionValue": "string",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "offset",
+      "desc": "set the offset of the anchor scroll.",
+      "type": "",
+      "optionValue": "number",
+      "options": [],
+      "defaultValue": "0"
+    },
+    {
+      "name": "bound",
+      "desc": "the offset of the element starting to trigger the anchor.",
+      "type": "",
+      "optionValue": "number",
+      "options": [],
+      "defaultValue": "15"
+    },
+    {
+      "name": "duration",
+      "desc": "set the scroll duration of the container, in milliseconds.",
+      "type": "",
+      "optionValue": "number",
+      "options": [],
+      "defaultValue": "300"
+    },
+    {
+      "name": "marker",
+      "desc": "whether to show the marker.",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "type",
+      "desc": "set Anchor type.",
+      "type": "enum",
+      "optionValue": "default | underline",
+      "options": [
+        "default",
+        "underline"
+      ],
+      "defaultValue": "default"
+    },
+    {
+      "name": "direction",
+      "desc": "Set Anchor direction.",
+      "type": "enum",
+      "optionValue": "vertical | horizontal",
+      "options": [
+        "vertical",
+        "horizontal"
+      ],
+      "defaultValue": "vertical"
+    },
+    {
+      "name": "select-scroll-top ^(2.9.2)",
+      "desc": "scroll whether link is selected at the top",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "default",
+      "desc": "AnchorLink component list"
+    }
+  ],
+  "events": [
+    {
+      "name": "@change",
+      "desc": "callback when the step changes",
+      "param": "Function(href: string) => void"
+    },
+    {
+      "name": "@click",
+      "desc": "Triggered when the user clicks on the link",
+      "param": "Function(e: MouseEvent, href?: string) => void"
+    }
+  ],
+  "methods": [
+    {
+      "name": "scrollTo",
+      "desc": "Manually scroll to the specific position.",
+      "param": "Function(href: string) => void"
+    }
+  ]
+}

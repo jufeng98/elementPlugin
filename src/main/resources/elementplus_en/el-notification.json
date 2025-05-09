@@ -1,0 +1,147 @@
+{
+  "name": "el-notification",
+  "attributes": [],
+  "props": [],
+  "options": [
+    {
+      "name": "title",
+      "desc": "title",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "message",
+      "desc": "description text",
+      "type": "string / VNode / Function",
+      "optionValue": "() => VNode",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "dangerouslyUseHTMLString",
+      "desc": "whether message is treated as HTML string",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "type",
+      "desc": "notification type",
+      "type": "enum",
+      "optionValue": "success | warning | info | error | ",
+      "options": [
+        "success",
+        "warning",
+        "info",
+        "error"
+      ],
+      "defaultValue": ""
+    },
+    {
+      "name": "icon",
+      "desc": "custom icon component. It will be overridden by type",
+      "type": "string / Component",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "customClass",
+      "desc": "custom class name for Notification",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "duration",
+      "desc": "duration before close. It will not automatically close if set 0",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "4500"
+    },
+    {
+      "name": "position",
+      "desc": "custom position",
+      "type": "enum",
+      "optionValue": "top-right | top-left | bottom-right | bottom-left",
+      "options": [
+        "top-right",
+        "top-left",
+        "bottom-right",
+        "bottom-left"
+      ],
+      "defaultValue": "top-right"
+    },
+    {
+      "name": "showClose",
+      "desc": "whether to show a close button",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "onClose",
+      "desc": "callback function when closed",
+      "type": "Function",
+      "optionValue": "() => void",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "onClick",
+      "desc": "callback function when notification clicked",
+      "type": "Function",
+      "optionValue": "() => void",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "offset",
+      "desc": "offset from the top edge of the screen. Every Notification instance of the same moment should have the same offset",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "0"
+    },
+    {
+      "name": "appendTo",
+      "desc": "set the root element for the notification, default to document.body",
+      "type": "CSSSelector / HTMLElement",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "zIndex",
+      "desc": "initial zIndex",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "0"
+    },
+    {
+      "name": "closeIcon ^(2.9.8)",
+      "desc": "custom close icon",
+      "type": "string / Component",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "Close"
+    }
+  ],
+  "shortcuts": [],
+  "slots": [],
+  "events": [],
+  "methods": [
+    {
+      "name": "close",
+      "desc": "close the Notification",
+      "param": "Function() => void"
+    }
+  ]
+}

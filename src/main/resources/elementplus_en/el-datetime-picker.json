@@ -1,0 +1,346 @@
+{
+  "name": "el-datetime-picker",
+  "attributes": [
+    {
+      "name": "model-value",
+      "desc": "binding value, if it is an array, the length should be 2",
+      "type": "number / string / object",
+      "optionValue": "Date | [Date, Date] | [string, string]",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "v-model",
+      "desc": "binding value, if it is an array, the length should be 2",
+      "type": "number / string / object",
+      "optionValue": "Date | [Date, Date] | [string, string]",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "readonly",
+      "desc": "whether DatePicker is read only",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "disabled",
+      "desc": "whether DatePicker is disabled",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "editable",
+      "desc": "whether the input is editable",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "clearable",
+      "desc": "whether to show clear button",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "size",
+      "desc": "size of Input",
+      "type": "enum",
+      "optionValue": "large | default | small",
+      "options": [
+        "large",
+        "default",
+        "small"
+      ],
+      "defaultValue": "default"
+    },
+    {
+      "name": "placeholder",
+      "desc": "placeholder in non-range mode",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "start-placeholder",
+      "desc": "placeholder for the start date in range mode",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "end-placeholder",
+      "desc": "placeholder for the end date in range mode",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "arrow-control",
+      "desc": "whether to pick time using arrow buttons",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "type",
+      "desc": "type of the picker",
+      "type": "enum",
+      "optionValue": "year | month | date | datetime | week | datetimerange | daterange",
+      "options": [
+        "year",
+        "month",
+        "date",
+        "datetime",
+        "week",
+        "datetimerange",
+        "daterange"
+      ],
+      "defaultValue": "date"
+    },
+    {
+      "name": "format",
+      "desc": "format of the displayed value in the input box",
+      "type": "string see [date formats(/en-US/component/date-picker#date-formats)",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "YYYY-MM-DD HH:mm:ss"
+    },
+    {
+      "name": "popper-class",
+      "desc": "custom class name for DateTimePicker's dropdown",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "range-separator",
+      "desc": "range separator",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "-"
+    },
+    {
+      "name": "default-value",
+      "desc": "optional, default date of the calendar",
+      "type": "object",
+      "optionValue": "Date | [Date, Date]",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "default-time",
+      "desc": "the default time value after picking a date. Time 00:00:00 will be used if not specified",
+      "type": "object",
+      "optionValue": "Date | [Date, Date]",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "value-format",
+      "desc": "optional, format of binding value. If not specified, the binding value will be a Date object",
+      "type": "string see [date formats(https://day.js.org/docs/en/display/format)",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "date-format ^(2.4.0)",
+      "desc": "optional, format of the date displayed value in TimePicker's dropdown",
+      "type": "string see [date formats(https://day.js.org/docs/en/display/format)",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "time-format ^(2.4.0)",
+      "desc": "optional, format of the time displayed value in TimePicker's dropdown",
+      "type": "string see [date formats(https://day.js.org/docs/en/display/format)",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "id",
+      "desc": "same as id in native input",
+      "type": "string / object",
+      "optionValue": "[string, string]",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "name",
+      "desc": "same as name in native input",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "unlink-panels",
+      "desc": "unlink two date-panels in range-picker",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "prefix-icon",
+      "desc": "Custom prefix icon component",
+      "type": "string / ",
+      "optionValue": "Component",
+      "options": [],
+      "defaultValue": "Date"
+    },
+    {
+      "name": "clear-icon",
+      "desc": "Custom clear icon component",
+      "type": "string / ",
+      "optionValue": "Component",
+      "options": [],
+      "defaultValue": "CircleClose"
+    },
+    {
+      "name": "shortcuts",
+      "desc": "an object array to set shortcut options",
+      "type": "object",
+      "optionValue": "Array<{ text: string, value: Date | Function }>",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "disabled-date",
+      "desc": "a function determining if a date is disabled with that date as its parameter. Should return a Boolean",
+      "type": "Function",
+      "optionValue": "(data: Date) => boolean",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "cell-class-name",
+      "desc": "set custom className",
+      "type": "Function",
+      "optionValue": "(data: Date) => string",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "teleported",
+      "desc": "whether datetime-picker dropdown is teleported to the body",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "empty-values ^(2.7.0)",
+      "desc": "empty values of component, [see config-provider](/en-US/component/config-provider#empty-values-configurations)",
+      "type": "array",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "value-on-clear ^(2.7.0)",
+      "desc": "clear return value, [see config-provider](/en-US/component/config-provider#empty-values-configurations)",
+      "type": "string / number / boolean / Function",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "show-now ^(2.8.7)",
+      "desc": "whether to show the now button",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "default",
+      "desc": "custom cell content"
+    },
+    {
+      "name": "range-separator",
+      "desc": "custom range separator content"
+    },
+    {
+      "name": "prev-month ^(2.8.0)",
+      "desc": "prev month icon"
+    },
+    {
+      "name": "next-month ^(2.8.0)",
+      "desc": "next month icon"
+    },
+    {
+      "name": "prev-year ^(2.8.0)",
+      "desc": "prev year icon"
+    },
+    {
+      "name": "next-year ^(2.8.0)",
+      "desc": "next year icon"
+    }
+  ],
+  "events": [
+    {
+      "name": "@change",
+      "desc": "triggers when user confirms the value",
+      "param": "components binding value"
+    },
+    {
+      "name": "@blur",
+      "desc": "triggers when Input blurs",
+      "param": "(e: FocusEvent)"
+    },
+    {
+      "name": "@focus",
+      "desc": "triggers when Input focuses",
+      "param": "(e: FocusEvent)"
+    },
+    {
+      "name": "@clear ^(2.7.7)",
+      "desc": "triggers when the clear icon is clicked in a clearable DateTimePicker",
+      "param": "Function() => void"
+    },
+    {
+      "name": "@calendar-change",
+      "desc": "triggers when the calendar selected date is changed. Only for `datetimerange`",
+      "param": "[Date, Date"
+    },
+    {
+      "name": "@visible-change",
+      "desc": "triggers when the DateTimePicker's dropdown appears/disappears",
+      "param": "true when it appears, and false otherwise"
+    }
+  ],
+  "methods": [
+    {
+      "name": "focus",
+      "desc": "focus the DatePicker component",
+      "param": "Function() => void"
+    },
+    {
+      "name": "blur ^(2.8.7)",
+      "desc": "blur the DatePicker component",
+      "param": "Function() => void"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "name": "el-menu-item",
+  "attributes": [
+    {
+      "name": "title",
+      "desc": "group title",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "default",
+      "desc": "customize default content"
+    },
+    {
+      "name": "title",
+      "desc": "customize group title"
+    }
+  ],
+  "events": [
+    {
+      "name": "@click",
+      "desc": "callback function when menu-item is clicked, the param is menu-item instance",
+      "param": "Function(item: MenuItemRegistered) => void"
+    }
+  ],
+  "methods": []
+}

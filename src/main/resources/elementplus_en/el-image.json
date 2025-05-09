@@ -1,0 +1,228 @@
+{
+  "name": "el-image",
+  "attributes": [
+    {
+      "name": "src",
+      "desc": "image source, same as native.",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "fit",
+      "desc": "<p>indicate how the image should be resized to fit its container, same as <a href=\"https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit\">object-fit</a>.</p>",
+      "type": "enum",
+      "optionValue": " | fill | contain | cover | none | scale-down",
+      "options": [
+        "fill",
+        "contain",
+        "cover",
+        "none",
+        "scale-down"
+      ],
+      "defaultValue": ""
+    },
+    {
+      "name": "hide-on-click-modal",
+      "desc": "when enabling preview, use this flag to control whether clicking on backdrop can exit preview mode.",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "loading ^(2.2.3)",
+      "desc": "<p>Indicates how the browser should load the image, same as <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-loading\">native</a>.</p>",
+      "type": "enum",
+      "optionValue": "eager | lazy",
+      "options": [
+        "eager",
+        "lazy"
+      ],
+      "defaultValue": "—"
+    },
+    {
+      "name": "lazy",
+      "desc": "whether to use lazy load.",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "scroll-container",
+      "desc": "the container to add scroll listener when using lazy load. By default, the container to add scroll listener when using lazy load.",
+      "type": "string / object",
+      "optionValue": "HTMLElement",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "alt",
+      "desc": "native attribute alt.",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "referrerpolicy",
+      "desc": "<p>native attribute <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/referrerPolicy\">referrerPolicy</a>.</p>",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "crossorigin",
+      "desc": "<p>native attribute <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/crossorigin\">crossorigin</a>.</p>",
+      "type": "enum",
+      "optionValue": " | anonymous | use-credentials",
+      "options": [
+        "anonymous",
+        "use-credentials"
+      ],
+      "defaultValue": "—"
+    },
+    {
+      "name": "preview-src-list",
+      "desc": "allow big image preview.",
+      "type": "object",
+      "optionValue": "string[]",
+      "options": [],
+      "defaultValue": "[]"
+    },
+    {
+      "name": "z-index",
+      "desc": "set image preview z-index.",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "initial-index",
+      "desc": "initial preview image index, less than the length of url-list.",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "0"
+    },
+    {
+      "name": "close-on-press-escape",
+      "desc": "whether the image-viewer can be closed by pressing ESC.",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "preview-teleported",
+      "desc": "whether to append image-viewer to body. A nested parent element attribute transform should have this attribute set to true.",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "infinite",
+      "desc": "whether the viewer preview is infinite.",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "zoom-rate",
+      "desc": "the zoom rate of the image viewer zoom event.",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "1.2"
+    },
+    {
+      "name": "min-scale ^(2.4.0)",
+      "desc": "the min scale of the image viewer zoom event.",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "0.2"
+    },
+    {
+      "name": "max-scale ^(2.4.0)",
+      "desc": "the max scale of the image viewer zoom event.",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "7"
+    },
+    {
+      "name": "show-progress ^(2.9.4)",
+      "desc": "whether to display the preview image progress content.",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "placeholder",
+      "desc": "custom placeholder content when image hasn't loaded yet."
+    },
+    {
+      "name": "error",
+      "desc": "custom image load failed content."
+    },
+    {
+      "name": "viewer",
+      "desc": "custom content when image preview."
+    },
+    {
+      "name": "progress ^(2.9.4)",
+      "desc": "custom progress content when image preview. (Priority is higher than `show-progress` prop)"
+    },
+    {
+      "name": "toolbar ^(2.9.4)",
+      "desc": "custom toolbar content when image preview."
+    }
+  ],
+  "events": [
+    {
+      "name": "@load",
+      "desc": "same as native load.",
+      "param": "Function(e: Event) => void"
+    },
+    {
+      "name": "@error",
+      "desc": "same as native error.",
+      "param": "Function(e: Event) => void"
+    },
+    {
+      "name": "@switch",
+      "desc": "trigger when switching images.",
+      "param": "Function(index: number) => void"
+    },
+    {
+      "name": "@close",
+      "desc": "trigger when clicking on close button or when `hide-on-click-modal` enabled clicking on backdrop.",
+      "param": "Function() => void"
+    },
+    {
+      "name": "@show",
+      "desc": "trigger when the viewer displays",
+      "param": "Function() => void"
+    }
+  ],
+  "methods": [
+    {
+      "name": "showPreview ^(2.9.4)",
+      "desc": "manually open preview big image",
+      "param": "Function() => void"
+    }
+  ]
+}

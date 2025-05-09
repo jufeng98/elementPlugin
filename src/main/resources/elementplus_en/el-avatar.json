@@ -1,0 +1,91 @@
+{
+  "name": "el-avatar",
+  "attributes": [
+    {
+      "name": "icon",
+      "desc": "representation type to icon, more info on icon component.",
+      "type": "string / Component",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "size",
+      "desc": "avatar size.",
+      "type": "number / enum",
+      "optionValue": "large | default | small",
+      "options": [
+        "large",
+        "default",
+        "small"
+      ],
+      "defaultValue": "default"
+    },
+    {
+      "name": "shape",
+      "desc": "avatar shape.",
+      "type": "enum",
+      "optionValue": "circle | square",
+      "options": [
+        "circle",
+        "square"
+      ],
+      "defaultValue": "circle"
+    },
+    {
+      "name": "src",
+      "desc": "the source of the image for an image avatar.",
+      "type": "",
+      "optionValue": "string",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "src-set",
+      "desc": "native attribute srcset of image avatar.",
+      "type": "",
+      "optionValue": "string",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "alt",
+      "desc": "native attribute alt of image avatar.",
+      "type": "",
+      "optionValue": "string",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "fit",
+      "desc": "set how the image fit its container for an image avatar.",
+      "type": "enum",
+      "optionValue": "fill | contain | cover | none | scale-down",
+      "options": [
+        "fill",
+        "contain",
+        "cover",
+        "none",
+        "scale-down"
+      ],
+      "defaultValue": "cover"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "default",
+      "desc": "customize avatar content."
+    }
+  ],
+  "events": [
+    {
+      "name": "@error",
+      "desc": "trigger when image load error.",
+      "param": "Function(e: Event) => void"
+    }
+  ],
+  "methods": []
+}

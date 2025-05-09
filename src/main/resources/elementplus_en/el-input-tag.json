@@ -1,0 +1,263 @@
+{
+  "name": "el-input-tag",
+  "attributes": [
+    {
+      "name": "model-value",
+      "desc": "binding value",
+      "type": "array",
+      "optionValue": "string[]",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "v-model",
+      "desc": "binding value",
+      "type": "array",
+      "optionValue": "string[]",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "max",
+      "desc": "max number tags that can be enter",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "tag-type",
+      "desc": "tag type",
+      "type": "enum",
+      "optionValue": " | success | info | warning | danger",
+      "options": [
+        "success",
+        "info",
+        "warning",
+        "danger"
+      ],
+      "defaultValue": "info"
+    },
+    {
+      "name": "tag-effect",
+      "desc": "tag effect",
+      "type": "enum",
+      "optionValue": " | light | dark | plain",
+      "options": [
+        "light",
+        "dark",
+        "plain"
+      ],
+      "defaultValue": "light"
+    },
+    {
+      "name": "trigger",
+      "desc": "the key to trigger input tag",
+      "type": "enum",
+      "optionValue": "Enter | Space",
+      "options": [
+        "Enter",
+        "Space"
+      ],
+      "defaultValue": "Enter"
+    },
+    {
+      "name": "draggable",
+      "desc": "whether tags can be dragged",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "delimiter ^(2.9.9)",
+      "desc": "add a tag when a delimiter is matched",
+      "type": "string / regex",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "size",
+      "desc": "input box size",
+      "type": "enum",
+      "optionValue": "large | default | small",
+      "options": [
+        "large",
+        "default",
+        "small"
+      ],
+      "defaultValue": "—"
+    },
+    {
+      "name": "save-on-blur ^(2.9.7)",
+      "desc": "whether to save the input value when the input loses focus",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "clearable",
+      "desc": "whether to show clear button",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "disabled",
+      "desc": "whether to disable input-tag",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "validate-event",
+      "desc": "whether to trigger form validation",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "readonly",
+      "desc": "same as readonly in native input",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "autofocus",
+      "desc": "same as autofocus in native input",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "id",
+      "desc": "same as id in native input",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "tabindex",
+      "desc": "same as tabindex in native input",
+      "type": "string / number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "maxlength",
+      "desc": "same as maxlength in native input",
+      "type": "string / number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "minlength",
+      "desc": "same as minlength in native input",
+      "type": "string / number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "placeholder",
+      "desc": "placeholder of input",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "autocomplete",
+      "desc": "same as autocomplete in native input",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "off"
+    },
+    {
+      "name": "aria-label ^(a11y)",
+      "desc": "native aria-label attribute",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "tag",
+      "desc": "content as tag"
+    },
+    {
+      "name": "prefix",
+      "desc": "content as InputTag prefix"
+    },
+    {
+      "name": "suffix",
+      "desc": "content as InputTag suffix"
+    }
+  ],
+  "events": [
+    {
+      "name": "@change",
+      "desc": "triggers when the modelValue change",
+      "param": "Function(value: string[) => void"
+    },
+    {
+      "name": "@input",
+      "desc": "triggers when the input value change",
+      "param": "Function(value: string) => void"
+    },
+    {
+      "name": "@add-tag",
+      "desc": "triggers when a tag is added",
+      "param": "Function(value: string) => void"
+    },
+    {
+      "name": "@remove-tag",
+      "desc": "triggers when a tag is removed",
+      "param": "Function(value: string) => void"
+    },
+    {
+      "name": "@focus",
+      "desc": "triggers when InputTag focuses",
+      "param": "Function(event: FocusEvent) => void"
+    },
+    {
+      "name": "@blur",
+      "desc": "triggers when InputTag blurs",
+      "param": "Function(event: FocusEvent) => void"
+    },
+    {
+      "name": "@clear",
+      "desc": "triggers when the clear icon is clicked",
+      "param": "Function() => void"
+    }
+  ],
+  "methods": [
+    {
+      "name": "focus",
+      "desc": "focus the input element",
+      "param": "Function() => void"
+    },
+    {
+      "name": "blur",
+      "desc": "blur the input element",
+      "param": "Function() => void"
+    }
+  ]
+}

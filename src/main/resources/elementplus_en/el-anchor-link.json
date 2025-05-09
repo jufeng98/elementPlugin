@@ -1,0 +1,36 @@
+{
+  "name": "el-anchor-link",
+  "attributes": [
+    {
+      "name": "title",
+      "desc": "the text content of the anchor link.",
+      "type": "",
+      "optionValue": "string",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "href",
+      "desc": "The address of the anchor link.",
+      "type": "",
+      "optionValue": "string",
+      "options": [],
+      "defaultValue": "—"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "default",
+      "desc": "the content of the anchor link."
+    },
+    {
+      "name": "sub-link",
+      "desc": "slots for child links."
+    }
+  ],
+  "events": [],
+  "methods": []
+}

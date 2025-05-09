@@ -1,0 +1,209 @@
+{
+  "name": "el-button",
+  "attributes": [
+    {
+      "name": "size",
+      "desc": "button size",
+      "type": "enum",
+      "optionValue": "large | default | small",
+      "options": [
+        "large",
+        "default",
+        "small"
+      ],
+      "defaultValue": "—"
+    },
+    {
+      "name": "type",
+      "desc": "button type, when setting color, the latter prevails",
+      "type": "enum",
+      "optionValue": "primary | success | warning | danger | info | text (deprecated)",
+      "options": [
+        "primary",
+        "success",
+        "warning",
+        "danger",
+        "info",
+        "text (deprecated)"
+      ],
+      "defaultValue": "—"
+    },
+    {
+      "name": "plain",
+      "desc": "determine whether it's a plain button",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "text ^(2.2.0)",
+      "desc": "determine whether it's a text button",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "bg ^(2.2.0)",
+      "desc": "determine whether the text button background color is always on",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "link ^(2.2.1)",
+      "desc": "determine whether it's a link button",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "round",
+      "desc": "determine whether it's a round button",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "circle",
+      "desc": "determine whether it's a circle button",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "loading",
+      "desc": "determine whether it's loading",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "loading-icon",
+      "desc": "customize loading icon component",
+      "type": "string / Component",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "Loading"
+    },
+    {
+      "name": "disabled",
+      "desc": "disable the button",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "icon",
+      "desc": "icon component",
+      "type": "string / Component",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "autofocus",
+      "desc": "same as native button's autofocus",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "native-type",
+      "desc": "same as native button's type",
+      "type": "enum",
+      "optionValue": "button | submit | reset",
+      "options": [
+        "button",
+        "submit",
+        "reset"
+      ],
+      "defaultValue": "button"
+    },
+    {
+      "name": "auto-insert-space",
+      "desc": "automatically insert a space between two chinese characters(this will only take effect when the text length is 2 and all characters are in Chinese.)",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "color",
+      "desc": "custom button color, automatically calculate hover and active color",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "dark",
+      "desc": "dark mode, which automatically converts color to dark mode colors",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "tag ^(2.3.4)",
+      "desc": "custom element tag",
+      "type": "string / Component",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "button"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "default",
+      "desc": "customize default content"
+    },
+    {
+      "name": "loading",
+      "desc": "customize loading component"
+    },
+    {
+      "name": "icon",
+      "desc": "customize icon component"
+    }
+  ],
+  "events": [],
+  "methods": [
+    {
+      "name": "ref",
+      "desc": "button html element",
+      "param": "objectRef<HTMLButtonElement>"
+    },
+    {
+      "name": "size",
+      "desc": "button size",
+      "param": "objectComputedRef< | small | default | large>"
+    },
+    {
+      "name": "type",
+      "desc": "button type",
+      "param": "objectComputedRef< | default | primary | success | warning | info | danger | text>"
+    },
+    {
+      "name": "disabled",
+      "desc": "button disabled",
+      "param": "objectComputedRef<boolean>"
+    },
+    {
+      "name": "shouldAddSpace",
+      "desc": "whether adding space",
+      "param": "objectComputedRef<boolean>"
+    }
+  ]
+}

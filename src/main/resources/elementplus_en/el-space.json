@@ -1,0 +1,108 @@
+{
+  "name": "el-space",
+  "attributes": [
+    {
+      "name": "alignment",
+      "desc": "Controls the alignment of items",
+      "type": "enum",
+      "optionValue": "center | normal | stretch | ...",
+      "options": [
+        "center",
+        "normal",
+        "stretch",
+        "..."
+      ],
+      "defaultValue": "center"
+    },
+    {
+      "name": "class",
+      "desc": "className",
+      "type": "string / object / array",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "direction",
+      "desc": "Placement direction",
+      "type": "enum",
+      "optionValue": "vertical | horizontal",
+      "options": [
+        "vertical",
+        "horizontal"
+      ],
+      "defaultValue": "horizontal"
+    },
+    {
+      "name": "prefixCls",
+      "desc": "Prefix for space-items",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "style",
+      "desc": "Extra style rules",
+      "type": "string / object",
+      "optionValue": "CSSProperties | CSSProperties[] | string[]",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "spacer",
+      "desc": "Spacer",
+      "type": "string / number / VNode",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "size",
+      "desc": "Spacing size",
+      "type": "enum",
+      "optionValue": "default | small | large",
+      "options": [
+        "default",
+        "small",
+        "large"
+      ],
+      "defaultValue": "small"
+    },
+    {
+      "name": "wrap",
+      "desc": "Auto wrapping",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "fill",
+      "desc": "Whether to fill the container",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "fill-ratio",
+      "desc": "Ratio of fill",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "100"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "default",
+      "desc": "Items to be spaced"
+    }
+  ],
+  "events": [],
+  "methods": []
+}

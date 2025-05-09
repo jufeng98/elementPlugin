@@ -1,0 +1,302 @@
+{
+  "name": "el-time-picker",
+  "attributes": [
+    {
+      "name": "model-value",
+      "desc": "binding value, if it is an array, the length should be 2",
+      "type": "number / string / object",
+      "optionValue": "Date | [Date, Date] | [number, number] | [string, string]",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "v-model",
+      "desc": "binding value, if it is an array, the length should be 2",
+      "type": "number / string / object",
+      "optionValue": "Date | [Date, Date] | [number, number] | [string, string]",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "readonly",
+      "desc": "whether TimePicker is read only",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "disabled",
+      "desc": "whether TimePicker is disabled",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "editable",
+      "desc": "whether the input is editable",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "clearable",
+      "desc": "whether to show clear button",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "size",
+      "desc": "size of Input",
+      "type": "enum",
+      "optionValue": "large | default | small",
+      "options": [
+        "large",
+        "default",
+        "small"
+      ],
+      "defaultValue": "—"
+    },
+    {
+      "name": "placeholder",
+      "desc": "placeholder in non-range mode",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "start-placeholder",
+      "desc": "placeholder for the start time in range mode",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "end-placeholder",
+      "desc": "placeholder for the end time in range mode",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "is-range",
+      "desc": "whether to pick a time range",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "arrow-control",
+      "desc": "whether to pick time using arrow buttons",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "popper-class",
+      "desc": "custom class name for TimePicker's dropdown",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "range-separator",
+      "desc": "range separator",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "-"
+    },
+    {
+      "name": "format",
+      "desc": "format of the displayed value in the input box",
+      "type": "string see [date formats(/en-US/component/date-picker#date-formats)",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "default-value",
+      "desc": "optional, default date of the calendar",
+      "type": "Date / object",
+      "optionValue": "[Date, Date]",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "value-format",
+      "desc": "optional, format of binding value. If not specified, the binding value will be a Date object",
+      "type": "string see [date formats(/en-US/component/date-picker#date-formats)",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "id",
+      "desc": "same as id in native input",
+      "type": "string / object",
+      "optionValue": "[string, string]",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "name",
+      "desc": "same as name in native input",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "aria-label ^(a11y) ^(2.7.2)",
+      "desc": "same as aria-label in native input",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "prefix-icon",
+      "desc": "Custom prefix icon component",
+      "type": "string / Component",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "Clock"
+    },
+    {
+      "name": "clear-icon",
+      "desc": "Custom clear icon component",
+      "type": "string / Component",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "CircleClose"
+    },
+    {
+      "name": "disabled-hours",
+      "desc": "To specify the array of hours that cannot be selected",
+      "type": "Function",
+      "optionValue": "(role: string, comparingDate?: Dayjs) => number[]",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "disabled-minutes",
+      "desc": "To specify the array of minutes that cannot be selected",
+      "type": "Function",
+      "optionValue": "(hour: number, role: string, comparingDate?: Dayjs) => number[]",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "disabled-seconds",
+      "desc": "To specify the array of seconds that cannot be selected",
+      "type": "Function",
+      "optionValue": "(hour: number, minute: number, role: string, comparingDate?: Dayjs) => number[]",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "teleported",
+      "desc": "whether time-picker dropdown is teleported to the body",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "tabindex",
+      "desc": "input tabindex",
+      "type": "string / number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "0"
+    },
+    {
+      "name": "empty-values ^(2.7.0)",
+      "desc": "empty values of component, [see config-provider](/en-US/component/config-provider#empty-values-configurations)",
+      "type": "array",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "value-on-clear ^(2.7.0)",
+      "desc": "clear return value, [see config-provider](/en-US/component/config-provider#empty-values-configurations)",
+      "type": "string / number / boolean / Function",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "label ^(a11y) ^(deprecated)",
+      "desc": "same as aria-label in native input",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [],
+  "events": [
+    {
+      "name": "@change",
+      "desc": "triggers when user confirms the value",
+      "param": "Function(val: number | string | Date | [number, number | [string, string | [Date, Date) => void"
+    },
+    {
+      "name": "@blur",
+      "desc": "triggers when Input blurs",
+      "param": "Function(e: FocusEvent) => void"
+    },
+    {
+      "name": "@focus",
+      "desc": "triggers when Input focuses",
+      "param": "Function(e: FocusEvent) => void"
+    },
+    {
+      "name": "@clear ^(2.7.7)",
+      "desc": "triggers when the clear icon is clicked in a clearable TimePicker",
+      "param": "Function() => void"
+    },
+    {
+      "name": "@visible-change",
+      "desc": "triggers when the TimePicker's dropdown appears/disappears",
+      "param": "Function(visibility: boolean) => void"
+    }
+  ],
+  "methods": [
+    {
+      "name": "focus",
+      "desc": "focus the TimePicker component",
+      "param": "Function() => void"
+    },
+    {
+      "name": "blur",
+      "desc": "blur the TimePicker component",
+      "param": "Function() => void"
+    },
+    {
+      "name": "handleOpen ^(2.2.16)",
+      "desc": "open the TimePicker popper",
+      "param": "Function() => void"
+    },
+    {
+      "name": "handleClose ^(2.2.16)",
+      "desc": "close the TimePicker popper",
+      "param": "Function() => void"
+    }
+  ]
+}

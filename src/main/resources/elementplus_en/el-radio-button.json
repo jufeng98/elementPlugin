@@ -1,0 +1,48 @@
+{
+  "name": "el-radio-button",
+  "attributes": [
+    {
+      "name": "value ^(2.6.0)",
+      "desc": "the value of Radio",
+      "type": "string / number / boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "label",
+      "desc": "the label of Radio. If there's no value, label will act as value",
+      "type": "string / number / boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "disabled",
+      "desc": "whether Radio is disabled",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "name",
+      "desc": "native 'name' attribute",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "default",
+      "desc": "customize default content"
+    }
+  ],
+  "events": [],
+  "methods": []
+}

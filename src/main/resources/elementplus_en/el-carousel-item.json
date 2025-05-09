@@ -1,0 +1,32 @@
+{
+  "name": "el-carousel-item",
+  "attributes": [
+    {
+      "name": "name",
+      "desc": "name of the item, can be used in setActiveItem",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "label",
+      "desc": "text content for the corresponding indicator",
+      "type": "string / number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "default",
+      "desc": "customize default content"
+    }
+  ],
+  "events": [],
+  "methods": []
+}

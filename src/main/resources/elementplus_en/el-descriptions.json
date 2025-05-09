@@ -1,0 +1,87 @@
+{
+  "name": "el-descriptions",
+  "attributes": [
+    {
+      "name": "border",
+      "desc": "with or without border",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "column",
+      "desc": "numbers of Descriptions Item in one line",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "3"
+    },
+    {
+      "name": "direction",
+      "desc": "direction of list",
+      "type": "enum",
+      "optionValue": "vertical | horizontal",
+      "options": [
+        "vertical",
+        "horizontal"
+      ],
+      "defaultValue": "horizontal"
+    },
+    {
+      "name": "size",
+      "desc": "size of list",
+      "type": "enum",
+      "optionValue": " | large | default | small",
+      "options": [
+        "large",
+        "default",
+        "small"
+      ],
+      "defaultValue": "—"
+    },
+    {
+      "name": "title",
+      "desc": "title text, display on the top left",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "extra",
+      "desc": "extra text, display on the top right",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "label-width ^(2.8.8)",
+      "desc": "label width of every column",
+      "type": "string / number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "default",
+      "desc": "customize default content"
+    },
+    {
+      "name": "title",
+      "desc": "custom title, display on the top left"
+    },
+    {
+      "name": "extra",
+      "desc": "custom extra area, display on the top right"
+    }
+  ],
+  "events": [],
+  "methods": []
+}

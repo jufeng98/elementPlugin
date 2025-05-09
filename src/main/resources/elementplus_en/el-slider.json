@@ -1,0 +1,259 @@
+{
+  "name": "el-slider",
+  "attributes": [
+    {
+      "name": "model-value",
+      "desc": "binding value",
+      "type": "number / object",
+      "optionValue": "number[]",
+      "options": [],
+      "defaultValue": "0"
+    },
+    {
+      "name": "v-model",
+      "desc": "binding value",
+      "type": "number / object",
+      "optionValue": "number[]",
+      "options": [],
+      "defaultValue": "0"
+    },
+    {
+      "name": "min",
+      "desc": "minimum value",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "0"
+    },
+    {
+      "name": "max",
+      "desc": "maximum value",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "100"
+    },
+    {
+      "name": "disabled",
+      "desc": "whether Slider is disabled",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "step",
+      "desc": "step size",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "1"
+    },
+    {
+      "name": "show-input",
+      "desc": "whether to display an input box, works when range is false",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "show-input-controls",
+      "desc": "whether to display control buttons when show-input is true",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "size",
+      "desc": "size of the slider wrapper, will not work in vertical mode",
+      "type": "enum",
+      "optionValue": " | large | default | small",
+      "options": [
+        "large",
+        "default",
+        "small"
+      ],
+      "defaultValue": "default"
+    },
+    {
+      "name": "input-size",
+      "desc": "size of the input box, when set size, the default is the value of size",
+      "type": "enum",
+      "optionValue": " | large | default | small",
+      "options": [
+        "large",
+        "default",
+        "small"
+      ],
+      "defaultValue": "default"
+    },
+    {
+      "name": "show-stops",
+      "desc": "whether to display breakpoints",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "show-tooltip",
+      "desc": "whether to display tooltip value",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "format-tooltip",
+      "desc": "format to display tooltip value",
+      "type": "Function",
+      "optionValue": "(value: number) => number | string",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "range",
+      "desc": "whether to select a range",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "vertical",
+      "desc": "vertical mode",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "height",
+      "desc": "slider height, required in vertical mode",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "aria-label ^(a11y) ^(2.7.2)",
+      "desc": "native aria-label attribute",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "range-start-label",
+      "desc": "when range is true, screen reader label for the start of the range",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "range-end-label",
+      "desc": "when range is true, screen reader label for the end of the range",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "format-value-text",
+      "desc": "format to display the aria-valuenow attribute for screen readers",
+      "type": "Function",
+      "optionValue": "(value: number) => string",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "debounce",
+      "desc": "debounce delay when typing, in milliseconds, works when show-input is true",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "300"
+    },
+    {
+      "name": "tooltip-class",
+      "desc": "custom class name for the tooltip",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "placement",
+      "desc": "position of Tooltip",
+      "type": "enum",
+      "optionValue": "top | top-start | top-end | bottom | bottom-start | bottom-end | left | left-start | left-end | right | right-start | right-end",
+      "options": [
+        "top",
+        "top-start",
+        "top-end",
+        "bottom",
+        "bottom-start",
+        "bottom-end",
+        "left",
+        "left-start",
+        "left-end",
+        "right",
+        "right-start",
+        "right-end"
+      ],
+      "defaultValue": "top"
+    },
+    {
+      "name": "marks",
+      "desc": "marks, type of key must be number and must in closed interval [min, max], each mark can custom style",
+      "type": "object",
+      "optionValue": "SliderMarks",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "validate-event",
+      "desc": "whether to trigger form validation",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "persistent ^(2.9.5)",
+      "desc": "when slider tooltip inactive and persistent is false , popconfirm will be destroyed. persistent always be false when show-tooltip  is false",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "label ^(a11y) ^(deprecated)",
+      "desc": "native aria-label attribute",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [],
+  "events": [
+    {
+      "name": "@change",
+      "desc": "triggers when the value changes (if the mouse is being dragged, this event only fires when the mouse is released)",
+      "param": "Function(value: Arrayable<number>) => boolean"
+    },
+    {
+      "name": "@input",
+      "desc": "triggers when the data changes (It'll be emitted in real time during sliding)",
+      "param": "Function(value: Arrayable<number>) => boolean"
+    }
+  ],
+  "methods": []
+}

@@ -1,0 +1,178 @@
+{
+  "name": "el-checkbox",
+  "attributes": [
+    {
+      "name": "model-value",
+      "desc": "binding value",
+      "type": "string / number / boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "v-model",
+      "desc": "binding value",
+      "type": "string / number / boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "value ^(2.6.0)",
+      "desc": "value of the Checkbox when used inside a checkbox-group",
+      "type": "string / number / boolean / object",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "label",
+      "desc": "label of the Checkbox when used inside a checkbox-group. If there's no value, label will act as value",
+      "type": "string / number / boolean / object",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "true-value ^(2.6.0)",
+      "desc": "value of the Checkbox if it's checked",
+      "type": "string / number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "false-value ^(2.6.0)",
+      "desc": "value of the Checkbox if it's not checked",
+      "type": "string / number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "disabled",
+      "desc": "whether the Checkbox is disabled",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "border",
+      "desc": "whether to add a border around Checkbox",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "size",
+      "desc": "size of the Checkbox",
+      "type": "enum",
+      "optionValue": "large | default | small",
+      "options": [
+        "large",
+        "default",
+        "small"
+      ],
+      "defaultValue": "—"
+    },
+    {
+      "name": "name",
+      "desc": "native 'name' attribute",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "checked",
+      "desc": "if the Checkbox is checked",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "indeterminate",
+      "desc": "Set indeterminate state, only responsible for style control",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "validate-event",
+      "desc": "whether to trigger form validation",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "tabindex",
+      "desc": "input tabindex",
+      "type": "string / number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "id",
+      "desc": "input id",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "aria-controls ^(a11y) ^(2.7.2)",
+      "desc": "<p>same as <a href=\"https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-controls\">aria-controls</a>, takes effect when indeterminate is true</p>",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "true-label ^(deprecated)",
+      "desc": "value of the Checkbox if it's checked",
+      "type": "string / number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "false-label ^(deprecated)",
+      "desc": "value of the Checkbox if it's not checked",
+      "type": "string / number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "controls ^(a11y) ^(deprecated)",
+      "desc": "<p>same as <a href=\"https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-controls\">aria-controls</a>, takes effect when indeterminate is true</p>",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "default",
+      "desc": "customize default content"
+    }
+  ],
+  "events": [
+    {
+      "name": "@change",
+      "desc": "triggers when the binding value changes",
+      "param": "Function(value: string | number | boolean) => void"
+    }
+  ],
+  "methods": []
+}

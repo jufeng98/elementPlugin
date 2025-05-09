@@ -1,0 +1,73 @@
+{
+  "name": "el-affix",
+  "attributes": [
+    {
+      "name": "offset",
+      "desc": "offset distance",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "0"
+    },
+    {
+      "name": "position",
+      "desc": "position of affix",
+      "type": "enum",
+      "optionValue": "top | bottom",
+      "options": [
+        "top",
+        "bottom"
+      ],
+      "defaultValue": "top"
+    },
+    {
+      "name": "target",
+      "desc": "target container (CSS selector)",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "z-index",
+      "desc": "z-index of affix",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "100"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "default",
+      "desc": "customize default content"
+    }
+  ],
+  "events": [
+    {
+      "name": "@change",
+      "desc": "triggers when fixed state changed",
+      "param": "Function(fixed: boolean) => void"
+    },
+    {
+      "name": "@scroll",
+      "desc": "triggers when scrolling",
+      "param": "Function(value: { scrollTop: number, fixed: boolean }) => void"
+    }
+  ],
+  "methods": [
+    {
+      "name": "update",
+      "desc": "update affix state manually",
+      "param": "Function() => void"
+    },
+    {
+      "name": "updateRoot",
+      "desc": "update rootRect info",
+      "param": "Function() => void"
+    }
+  ]
+}

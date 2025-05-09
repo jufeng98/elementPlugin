@@ -1,0 +1,89 @@
+{
+  "name": "el-countdown",
+  "attributes": [
+    {
+      "name": "value",
+      "desc": "target time",
+      "type": "number / Dayjs",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "format",
+      "desc": "Formatting the countdown display",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "HH:mm:ss"
+    },
+    {
+      "name": "prefix",
+      "desc": "Sets the prefix of a countdown",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "suffix",
+      "desc": "Sets the suffix of a countdown",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "title",
+      "desc": "countdown titles",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "value-style",
+      "desc": "Styles countdown values",
+      "type": "string / object",
+      "optionValue": "CSSProperties | CSSProperties[] | string[]",
+      "options": [],
+      "defaultValue": "—"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "prefix",
+      "desc": "countdown value prefix"
+    },
+    {
+      "name": "suffix",
+      "desc": "countdown value suffix"
+    },
+    {
+      "name": "title",
+      "desc": "countdown title"
+    }
+  ],
+  "events": [
+    {
+      "name": "@change",
+      "desc": "Time difference change event",
+      "param": "Function(value: number) => void"
+    },
+    {
+      "name": "@finish",
+      "desc": "countdown end event",
+      "param": "Function() => void"
+    }
+  ],
+  "methods": [
+    {
+      "name": "displayValue",
+      "desc": "current display value",
+      "param": "objectRef<string>"
+    }
+  ]
+}

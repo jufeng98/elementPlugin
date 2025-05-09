@@ -1,0 +1,48 @@
+{
+  "name": "el-empty",
+  "attributes": [
+    {
+      "name": "image",
+      "desc": "image URL of empty",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "image-size",
+      "desc": "image size (width) of empty",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "description",
+      "desc": "description of empty",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "default",
+      "desc": "content as bottom content"
+    },
+    {
+      "name": "image",
+      "desc": "content as image"
+    },
+    {
+      "name": "description",
+      "desc": "content as description"
+    }
+  ],
+  "events": [],
+  "methods": []
+}

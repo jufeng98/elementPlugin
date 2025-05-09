@@ -1,0 +1,32 @@
+{
+  "name": "el-breadcrumb",
+  "attributes": [
+    {
+      "name": "separator",
+      "desc": "separator character",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "/"
+    },
+    {
+      "name": "separator-icon",
+      "desc": "icon component of icon separator",
+      "type": "string / Component",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "default",
+      "desc": "customize default content"
+    }
+  ],
+  "events": [],
+  "methods": []
+}

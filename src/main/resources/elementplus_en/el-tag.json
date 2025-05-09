@@ -1,0 +1,105 @@
+{
+  "name": "el-tag",
+  "attributes": [
+    {
+      "name": "type",
+      "desc": "type of Tag",
+      "type": "enum",
+      "optionValue": "primary | success | info | warning | danger",
+      "options": [
+        "primary",
+        "success",
+        "info",
+        "warning",
+        "danger"
+      ],
+      "defaultValue": "primary"
+    },
+    {
+      "name": "closable",
+      "desc": "whether Tag can be removed",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "disable-transitions",
+      "desc": "whether to disable animations",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "hit",
+      "desc": "whether Tag has a highlighted border",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "color",
+      "desc": "background color of the Tag",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "size",
+      "desc": "size of Tag",
+      "type": "enum",
+      "optionValue": "large | default | small",
+      "options": [
+        "large",
+        "default",
+        "small"
+      ],
+      "defaultValue": "—"
+    },
+    {
+      "name": "effect",
+      "desc": "theme of Tag",
+      "type": "enum",
+      "optionValue": "dark | light | plain",
+      "options": [
+        "dark",
+        "light",
+        "plain"
+      ],
+      "defaultValue": "light"
+    },
+    {
+      "name": "round",
+      "desc": "whether Tag is rounded",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "default",
+      "desc": "customize default content"
+    }
+  ],
+  "events": [
+    {
+      "name": "@click",
+      "desc": "triggers when Tag is clicked",
+      "param": "Function(evt: MouseEvent) => void"
+    },
+    {
+      "name": "@close",
+      "desc": "triggers when Tag is removed",
+      "param": "Function(evt: MouseEvent) => void"
+    }
+  ],
+  "methods": []
+}

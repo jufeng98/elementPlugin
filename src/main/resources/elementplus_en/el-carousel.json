@@ -1,0 +1,162 @@
+{
+  "name": "el-carousel",
+  "attributes": [
+    {
+      "name": "height",
+      "desc": "height of the carousel",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "initial-index",
+      "desc": "index of the initially active slide (starting from 0)",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "0"
+    },
+    {
+      "name": "trigger",
+      "desc": "how indicators are triggered",
+      "type": "enum",
+      "optionValue": "hover | click",
+      "options": [
+        "hover",
+        "click"
+      ],
+      "defaultValue": "hover"
+    },
+    {
+      "name": "autoplay",
+      "desc": "whether automatically loop the slides",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "interval",
+      "desc": "interval of the auto loop, in milliseconds",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "3000"
+    },
+    {
+      "name": "indicator-position",
+      "desc": "position of the indicators",
+      "type": "enum",
+      "optionValue": " | none | outside",
+      "options": [
+        "none",
+        "outside"
+      ],
+      "defaultValue": ""
+    },
+    {
+      "name": "arrow",
+      "desc": "when arrows are shown",
+      "type": "enum",
+      "optionValue": "always | hover | never",
+      "options": [
+        "always",
+        "hover",
+        "never"
+      ],
+      "defaultValue": "hover"
+    },
+    {
+      "name": "type",
+      "desc": "type of the Carousel",
+      "type": "enum",
+      "optionValue": " | card",
+      "options": [
+        "card"
+      ],
+      "defaultValue": ""
+    },
+    {
+      "name": "cardScale ^(2.7.8)",
+      "desc": "when type is card, scaled size of secondary cards",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "0.83"
+    },
+    {
+      "name": "loop",
+      "desc": "display the items in loop",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "direction",
+      "desc": "display direction",
+      "type": "enum",
+      "optionValue": "horizontal | vertical",
+      "options": [
+        "horizontal",
+        "vertical"
+      ],
+      "defaultValue": "horizontal"
+    },
+    {
+      "name": "pause-on-hover",
+      "desc": "pause autoplay when hover",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "motion-blur ^(2.6.0)",
+      "desc": "infuse dynamism and smoothness into the carousel",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "default",
+      "desc": "customize default content"
+    }
+  ],
+  "events": [
+    {
+      "name": "@change",
+      "desc": "triggers when the active slide switches, it has two parameters, the one is the index of the new active slide, and other is index of the old active slide",
+      "param": "Function(current: number, prev: number) => boolean"
+    }
+  ],
+  "methods": [
+    {
+      "name": "activeIndex ^(2.7.8)",
+      "desc": "active slide index",
+      "param": "number"
+    },
+    {
+      "name": "setActiveItem",
+      "desc": "manually switch slide, index of the slide to be switched to, starting from 0; or the `name` of corresponding `el-carousel-item`",
+      "param": "Function(index: string | number) => void"
+    },
+    {
+      "name": "prev",
+      "desc": "switch to the previous slide",
+      "param": "Function() => void"
+    },
+    {
+      "name": "next",
+      "desc": "switch to the next slide",
+      "param": "Function() => void"
+    }
+  ]
+}

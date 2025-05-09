@@ -1,0 +1,84 @@
+{
+  "name": "el-card",
+  "attributes": [
+    {
+      "name": "header",
+      "desc": "title of the card. Also accepts a DOM passed by slot#header",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "footer ^(2.4.3)",
+      "desc": "footer of the card. Also accepts a DOM passed by slot#footer",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "body-style",
+      "desc": "CSS style of card body",
+      "type": "object",
+      "optionValue": "CSSProperties",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "header-class ^(2.9.8)",
+      "desc": "custom class name of card header",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "body-class ^(2.3.10)",
+      "desc": "custom class name of card body",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "footer-class ^(2.9.8)",
+      "desc": "custom class name of card footer",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "shadow",
+      "desc": "when to show card shadows",
+      "type": "enum",
+      "optionValue": "always | never | hover",
+      "options": [
+        "always",
+        "never",
+        "hover"
+      ],
+      "defaultValue": "always"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "default",
+      "desc": "customize default content"
+    },
+    {
+      "name": "header",
+      "desc": "content of the Card header"
+    },
+    {
+      "name": "footer",
+      "desc": "content of the Card footer"
+    }
+  ],
+  "events": [],
+  "methods": []
+}

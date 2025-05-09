@@ -1,0 +1,121 @@
+{
+  "name": "el-image-viewer",
+  "attributes": [
+    {
+      "name": "url-list",
+      "desc": "preview link list.",
+      "type": "object",
+      "optionValue": "string[]",
+      "options": [],
+      "defaultValue": "[]"
+    },
+    {
+      "name": "z-index",
+      "desc": "preview backdrop z-index.",
+      "type": "number / string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "initial-index",
+      "desc": "the initial preview image index, less than or equal to the length of url-list.",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "0"
+    },
+    {
+      "name": "infinite",
+      "desc": "whether preview is infinite.",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "hide-on-click-modal",
+      "desc": "whether user can emit close event when clicking backdrop.",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "teleported",
+      "desc": "whether to append image itself to body. A nested parent element attribute transform should have this attribute set to true.",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "zoom-rate ^(2.2.27)",
+      "desc": "the zoom rate of the image viewer zoom event.",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "1.2"
+    },
+    {
+      "name": "min-scale ^(2.4.0)",
+      "desc": "the min scale of the image viewer zoom event.",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "0.2"
+    },
+    {
+      "name": "max-scale ^(2.4.0)",
+      "desc": "the max scale of the image viewer zoom event.",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "7"
+    },
+    {
+      "name": "close-on-press-escape",
+      "desc": "whether the image-viewer can be closed by pressing ESC.",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "show-progress ^(2.9.4)",
+      "desc": "whether to display the preview image progress content",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [],
+  "events": [
+    {
+      "name": "@close",
+      "desc": "trigger when clicking on close button or when `hide-on-click-modal` enabled clicking on backdrop.",
+      "param": "Function() => void"
+    },
+    {
+      "name": "@switch",
+      "desc": "trigger when switching images.",
+      "param": "Function(index: number) => void"
+    },
+    {
+      "name": "@rotate ^(2.3.13)",
+      "desc": "trigger when rotating images.",
+      "param": "Function(deg: number) => void"
+    }
+  ],
+  "methods": [
+    {
+      "name": "setActiveItem",
+      "desc": "manually switch image",
+      "param": "Function(index: number) => void"
+    }
+  ]
+}

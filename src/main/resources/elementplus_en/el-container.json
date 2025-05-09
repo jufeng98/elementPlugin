@@ -1,0 +1,27 @@
+{
+  "name": "el-container",
+  "attributes": [
+    {
+      "name": "direction",
+      "desc": "layout direction for child elements",
+      "type": "enum",
+      "optionValue": "horizontal | vertical",
+      "options": [
+        "horizontal",
+        "vertical"
+      ],
+      "defaultValue": "vertical when nested with el-header or el-footer; horizontal otherwise"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "default",
+      "desc": "customize default content"
+    }
+  ],
+  "events": [],
+  "methods": []
+}

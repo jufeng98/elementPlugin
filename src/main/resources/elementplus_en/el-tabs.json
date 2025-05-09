@@ -1,0 +1,141 @@
+{
+  "name": "el-tabs",
+  "attributes": [
+    {
+      "name": "model-value",
+      "desc": "binding value, name of the selected tab, the default value is the name of first tab",
+      "type": "string / number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "v-model",
+      "desc": "binding value, name of the selected tab, the default value is the name of first tab",
+      "type": "string / number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "type",
+      "desc": "type of Tab",
+      "type": "enum",
+      "optionValue": " | card | border-card",
+      "options": [
+        "card",
+        "border-card"
+      ],
+      "defaultValue": ""
+    },
+    {
+      "name": "closable",
+      "desc": "whether Tab is closable",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "addable",
+      "desc": "whether Tab is addable",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "editable",
+      "desc": "whether Tab is addable and closable",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "tab-position",
+      "desc": "position of tabs",
+      "type": "enum",
+      "optionValue": "top | right | bottom | left",
+      "options": [
+        "top",
+        "right",
+        "bottom",
+        "left"
+      ],
+      "defaultValue": "top"
+    },
+    {
+      "name": "stretch",
+      "desc": "whether width of tab automatically fits its container",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "before-leave",
+      "desc": "hook function before switching tab. If false is returned or a Promise is returned and then is rejected, switching will be prevented",
+      "type": "Function",
+      "optionValue": "(activeName: TabPaneName, oldActiveName: TabPaneName) => Awaitable<void | boolean>",
+      "options": [],
+      "defaultValue": "() => true"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "default",
+      "desc": "customize default content"
+    },
+    {
+      "name": "add-icon ^(2.5.4)",
+      "desc": "customize add button icon"
+    },
+    {
+      "name": "addIcon ^(2.4.0) ^(deprecated)",
+      "desc": "customize add button icon"
+    }
+  ],
+  "events": [
+    {
+      "name": "@tab-click",
+      "desc": "triggers when a tab is clicked",
+      "param": "Function(pane: TabsPaneContext, ev: Event) => void"
+    },
+    {
+      "name": "@tab-change",
+      "desc": "triggers when `activeName` is changed",
+      "param": "Function(name: TabPaneName) => void"
+    },
+    {
+      "name": "@tab-remove",
+      "desc": "triggers when tab-remove button is clicked",
+      "param": "Function(name: TabPaneName) => void"
+    },
+    {
+      "name": "@tab-add",
+      "desc": "triggers when tab-add button is clicked",
+      "param": "Function() => void"
+    },
+    {
+      "name": "@edit",
+      "desc": "triggers when tab-add button or tab-remove is clicked",
+      "param": "Function(paneName: TabPaneName | undefined, action: remove | add) => void"
+    }
+  ],
+  "methods": [
+    {
+      "name": "currentName",
+      "desc": "current active pane name",
+      "param": "objectRef<TabPaneName>"
+    },
+    {
+      "name": "tabNavRef ^(2.9.10)",
+      "desc": "tab-nav component instance",
+      "param": "objectRef<TabNavInstance | undefined>"
+    }
+  ]
+}

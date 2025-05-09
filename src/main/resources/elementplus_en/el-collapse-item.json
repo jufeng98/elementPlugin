@@ -1,0 +1,62 @@
+{
+  "name": "el-collapse-item",
+  "attributes": [
+    {
+      "name": "name",
+      "desc": "unique identification of the panel",
+      "type": "string / number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "title",
+      "desc": "title of the panel",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "icon ^(2.8.3)",
+      "desc": "icon of the collapse item",
+      "type": "string / Component",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "ArrowRight"
+    },
+    {
+      "name": "disabled",
+      "desc": "disable the collapse item",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "default",
+      "desc": "content of Collapse Item"
+    },
+    {
+      "name": "title",
+      "desc": "content of Collapse Item title"
+    },
+    {
+      "name": "icon ^(2.8.3)",
+      "desc": "content of Collapse Item icon"
+    }
+  ],
+  "events": [],
+  "methods": [
+    {
+      "name": "isActive",
+      "desc": "whether the current collapse item is active",
+      "param": "objectComputedRef<boolean | undefined>"
+    }
+  ]
+}

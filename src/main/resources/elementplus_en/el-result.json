@@ -1,0 +1,57 @@
+{
+  "name": "el-result",
+  "attributes": [
+    {
+      "name": "title",
+      "desc": "title of result",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "sub-title",
+      "desc": "sub title of result",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "icon",
+      "desc": "icon type of result",
+      "type": "enum",
+      "optionValue": "success | warning | info | error",
+      "options": [
+        "success",
+        "warning",
+        "info",
+        "error"
+      ],
+      "defaultValue": "info"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "icon",
+      "desc": "content as result icon"
+    },
+    {
+      "name": "title",
+      "desc": "content as result title"
+    },
+    {
+      "name": "sub-title",
+      "desc": "content as result sub title"
+    },
+    {
+      "name": "extra",
+      "desc": "content as result extra area"
+    }
+  ],
+  "events": [],
+  "methods": []
+}

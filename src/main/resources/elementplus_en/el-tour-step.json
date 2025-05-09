@@ -1,0 +1,149 @@
+{
+  "name": "el-tour-step",
+  "attributes": [
+    {
+      "name": "target",
+      "desc": "get the element the guide card points to. Empty makes it show in center of screen. the string and Function types are supported since ^(2.5.2). the string type is selectors of document.querySelector.",
+      "type": "",
+      "optionValue": "HTMLElement",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "show-arrow",
+      "desc": "whether to show the arrow",
+      "type": "",
+      "optionValue": "boolean",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "title",
+      "desc": "title",
+      "type": "",
+      "optionValue": "string",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "description",
+      "desc": "description",
+      "type": "",
+      "optionValue": "string",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "placement",
+      "desc": "position of the guide card relative to the target element",
+      "type": "enum",
+      "optionValue": "top | top-start | top-end | bottom | bottom-start | bottom-end | left | left-start | left-end | right | right-start | right-end",
+      "options": [
+        "top",
+        "top-start",
+        "top-end",
+        "bottom",
+        "bottom-start",
+        "bottom-end",
+        "left",
+        "left-start",
+        "left-end",
+        "right",
+        "right-start",
+        "right-end"
+      ],
+      "defaultValue": "bottom"
+    },
+    {
+      "name": "content-style",
+      "desc": "custom style for content",
+      "type": "",
+      "optionValue": "CSSProperties",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "mask",
+      "desc": "whether to enable masking, change mask style and fill color by pass custom props",
+      "type": "",
+      "optionValue": "boolean",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "type",
+      "desc": "type, affects the background color and text color",
+      "type": "",
+      "optionValue": "default",
+      "options": [],
+      "defaultValue": "default"
+    },
+    {
+      "name": "next-button-props",
+      "desc": "properties of the Next button",
+      "type": "Object",
+      "optionValue": "{ children: VueNode | string; onClick: Function }",
+      "options": [
+        "{ children: VueNode",
+        "string; onClick: Function }"
+      ],
+      "defaultValue": "—"
+    },
+    {
+      "name": "prev-button-props",
+      "desc": "properties of the previous button",
+      "type": "Object",
+      "optionValue": "{ children: VueNode | string; onClick: Function }",
+      "options": [
+        "{ children: VueNode",
+        "string; onClick: Function }"
+      ],
+      "defaultValue": "—"
+    },
+    {
+      "name": "scroll-into-view-options",
+      "desc": "support pass custom scrollIntoView options, the default follows the scrollIntoViewOptions property of Tour",
+      "type": "",
+      "optionValue": "boolean",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "show-close",
+      "desc": "whether to show a close button",
+      "type": "",
+      "optionValue": "boolean",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "close-icon",
+      "desc": "custom close icon, default is Close",
+      "type": "",
+      "optionValue": "string",
+      "options": [],
+      "defaultValue": "—"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "default",
+      "desc": "description"
+    },
+    {
+      "name": "header",
+      "desc": "header"
+    }
+  ],
+  "events": [
+    {
+      "name": "@close",
+      "desc": "callback function on shutdown",
+      "param": "Function() => void"
+    }
+  ],
+  "methods": []
+}

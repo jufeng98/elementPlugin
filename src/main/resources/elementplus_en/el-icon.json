@@ -1,0 +1,32 @@
+{
+  "name": "el-icon",
+  "attributes": [
+    {
+      "name": "color",
+      "desc": "SVG tag's fill attribute",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "inherit from color"
+    },
+    {
+      "name": "size",
+      "desc": "SVG icon size, size x size",
+      "type": "number / string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "inherit from font size"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "default",
+      "desc": "customize default content"
+    }
+  ],
+  "events": [],
+  "methods": []
+}

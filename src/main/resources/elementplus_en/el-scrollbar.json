@@ -1,0 +1,184 @@
+{
+  "name": "el-scrollbar",
+  "attributes": [
+    {
+      "name": "height",
+      "desc": "height of scrollbar",
+      "type": "string / number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "max-height",
+      "desc": "max height of scrollbar",
+      "type": "string / number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "native",
+      "desc": "whether to use the native scrollbar style",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "wrap-style",
+      "desc": "style of wrap container",
+      "type": "string / object",
+      "optionValue": "CSSProperties | CSSProperties[] | string[]",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "wrap-class",
+      "desc": "class of wrap container",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "view-style",
+      "desc": "style of view",
+      "type": "string / object",
+      "optionValue": "CSSProperties | CSSProperties[] | string[]",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "view-class",
+      "desc": "class of view",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "noresize",
+      "desc": "do not respond to container size changes, if the container size does not change, it is better to set it to optimize performance",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "tag",
+      "desc": "element tag of the view",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "div"
+    },
+    {
+      "name": "always",
+      "desc": "always show scrollbar",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "min-size",
+      "desc": "minimum size of scrollbar",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "20"
+    },
+    {
+      "name": "id ^(2.4.0)",
+      "desc": "id of view",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "role ^(2.4.0) ^(a11y)",
+      "desc": "role of view",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "aria-label ^(2.4.0) ^(a11y)",
+      "desc": "aria-label of view",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "aria-orientation ^(2.4.0) ^(a11y)",
+      "desc": "aria-orientation of view",
+      "type": "enum",
+      "optionValue": "horizontal | vertical",
+      "options": [
+        "horizontal",
+        "vertical"
+      ],
+      "defaultValue": "—"
+    },
+    {
+      "name": "tabindex ^(2.8.3)",
+      "desc": "tabindex of wrap container",
+      "type": "number / string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "default",
+      "desc": "customize default content"
+    }
+  ],
+  "events": [
+    {
+      "name": "@scroll",
+      "desc": "triggers when scrolling, return distance of scrolling",
+      "param": "Function({ scrollLeft: number, scrollTop: number }) => void"
+    }
+  ],
+  "methods": [
+    {
+      "name": "handleScroll",
+      "desc": "handle scroll event",
+      "param": "Function() => void"
+    },
+    {
+      "name": "scrollTo",
+      "desc": "scrolls to a particular set of coordinates",
+      "param": "Function(options: ScrollToOptions | number, yCoord?: number) => void"
+    },
+    {
+      "name": "setScrollTop",
+      "desc": "Set distance to scroll top",
+      "param": "Function(scrollTop: number) => void"
+    },
+    {
+      "name": "setScrollLeft",
+      "desc": "Set distance to scroll left",
+      "param": "Function(scrollLeft: number) => void"
+    },
+    {
+      "name": "update",
+      "desc": "update scrollbar state manually",
+      "param": "Function() => void"
+    },
+    {
+      "name": "wrapRef",
+      "desc": "scrollbar wrap ref",
+      "param": "objectRef<HTMLDivElement>"
+    }
+  ]
+}

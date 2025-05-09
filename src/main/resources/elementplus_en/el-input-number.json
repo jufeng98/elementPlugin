@@ -1,0 +1,216 @@
+{
+  "name": "el-input-number",
+  "attributes": [
+    {
+      "name": "model-value",
+      "desc": "binding value",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "v-model",
+      "desc": "binding value",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "min",
+      "desc": "the minimum allowed value",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "-Infinity"
+    },
+    {
+      "name": "max",
+      "desc": "the maximum allowed value",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "Infinity"
+    },
+    {
+      "name": "step",
+      "desc": "incremental step",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "1"
+    },
+    {
+      "name": "step-strictly",
+      "desc": "whether input value can only be multiple of step",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "precision",
+      "desc": "precision of input value",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "size",
+      "desc": "size of the component",
+      "type": "enum",
+      "optionValue": "large | default | small",
+      "options": [
+        "large",
+        "default",
+        "small"
+      ],
+      "defaultValue": "default"
+    },
+    {
+      "name": "readonly ^(2.2.16)",
+      "desc": "same as readonly in native input",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "disabled",
+      "desc": "whether the component is disabled",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "controls",
+      "desc": "whether to enable the control buttons",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "controls-position",
+      "desc": "position of the control buttons",
+      "type": "enum",
+      "optionValue": " | right",
+      "options": [
+        "right"
+      ],
+      "defaultValue": "—"
+    },
+    {
+      "name": "name",
+      "desc": "same as name in native input",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "aria-label ^(a11y) ^(2.7.2)",
+      "desc": "same as aria-label in native input",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "placeholder",
+      "desc": "same as placeholder in native input",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "id",
+      "desc": "same as id in native input",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "value-on-clear ^(2.2.0)",
+      "desc": "value should be set when input box is cleared",
+      "type": "number / null / enum",
+      "optionValue": "min | max",
+      "options": [
+        "min",
+        "max"
+      ],
+      "defaultValue": "—"
+    },
+    {
+      "name": "validate-event",
+      "desc": "whether to trigger form validation",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "label ^(a11y) ^(deprecated)",
+      "desc": "same as aria-label in native input",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "decrease-icon ^(2.6.3)",
+      "desc": "custom input box button decrease icon"
+    },
+    {
+      "name": "increase-icon ^(2.6.3)",
+      "desc": "custom input box button increase icon"
+    },
+    {
+      "name": "prefix ^(2.8.4)",
+      "desc": "content as Input prefix"
+    },
+    {
+      "name": "suffix ^(2.8.4)",
+      "desc": "content as Input suffix"
+    }
+  ],
+  "events": [
+    {
+      "name": "@change",
+      "desc": "triggers when the value changes",
+      "param": "Function(currentValue: number | undefined, oldValue: number | undefined) => void"
+    },
+    {
+      "name": "@blur",
+      "desc": "triggers when Input blurs",
+      "param": "Function(event: FocusEvent) => void"
+    },
+    {
+      "name": "@focus",
+      "desc": "triggers when Input focuses",
+      "param": "Function(event: FocusEvent) => void"
+    }
+  ],
+  "methods": [
+    {
+      "name": "focus",
+      "desc": "get focus the input component",
+      "param": "Function() => void"
+    },
+    {
+      "name": "blur",
+      "desc": "remove focus the input component",
+      "param": "Function() => void"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "name": "el-page-header",
+  "attributes": [
+    {
+      "name": "icon",
+      "desc": "icon component of page header",
+      "type": "string / Component",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "Back"
+    },
+    {
+      "name": "title",
+      "desc": "main title of page header, default is Back that built-in a11y",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "content",
+      "desc": "content of page header",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "icon",
+      "desc": "content as icon"
+    },
+    {
+      "name": "title",
+      "desc": "content as title"
+    },
+    {
+      "name": "content",
+      "desc": "content"
+    },
+    {
+      "name": "extra",
+      "desc": "extra"
+    },
+    {
+      "name": "breadcrumb",
+      "desc": "content as breadcrumb"
+    },
+    {
+      "name": "default",
+      "desc": "main content"
+    }
+  ],
+  "events": [
+    {
+      "name": "@back",
+      "desc": "triggers when right side is clicked",
+      "param": "Function() => void"
+    }
+  ],
+  "methods": []
+}

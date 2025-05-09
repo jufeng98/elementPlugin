@@ -1,0 +1,332 @@
+{
+  "name": "el-message-box",
+  "attributes": [],
+  "props": [],
+  "options": [
+    {
+      "name": "autofocus",
+      "desc": "auto focus when open MessageBox",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "title",
+      "desc": "title of the MessageBox",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "message",
+      "desc": "content of the MessageBox",
+      "type": "string / VNode / Function",
+      "optionValue": "() => VNode",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "dangerouslyUseHTMLString",
+      "desc": "whether message is treated as HTML string",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "type",
+      "desc": "message type, used for icon display",
+      "type": "enum",
+      "optionValue": "success | info | warning | error",
+      "options": [
+        "success",
+        "info",
+        "warning",
+        "error"
+      ],
+      "defaultValue": ""
+    },
+    {
+      "name": "icon",
+      "desc": "custom icon component, overrides type",
+      "type": "string / Component",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "closeIcon ^(2.9.5)",
+      "desc": "custom close icon component, default is Close",
+      "type": "string / Component",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "customClass",
+      "desc": "custom class name for MessageBox",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "customStyle",
+      "desc": "custom inline style for MessageBox",
+      "type": "CSSProperties",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "{}"
+    },
+    {
+      "name": "modalClass",
+      "desc": "custom class names for mask",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "callback",
+      "desc": "MessageBox closing callback if you don't prefer Promise",
+      "type": "Function",
+      "optionValue": "(value: string, action: Action) => any | (action: Action) => any",
+      "options": [],
+      "defaultValue": "null"
+    },
+    {
+      "name": "showClose",
+      "desc": "whether to show close icon of MessageBox",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "beforeClose",
+      "desc": "callback before MessageBox closes, and it will prevent MessageBox from closing",
+      "type": "Function",
+      "optionValue": "(action: Action, instance: MessageBoxState, done: () => void) => void",
+      "options": [],
+      "defaultValue": "null"
+    },
+    {
+      "name": "distinguishCancelAndClose",
+      "desc": "whether to distinguish canceling and closing the MessageBox",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "lockScroll",
+      "desc": "whether to lock body scroll when MessageBox prompts",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "showCancelButton",
+      "desc": "whether to show a cancel button",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false (true when called with confirm and prompt)"
+    },
+    {
+      "name": "showConfirmButton",
+      "desc": "whether to show a confirm button",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "cancelButtonText",
+      "desc": "text content of cancel button",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "Cancel"
+    },
+    {
+      "name": "confirmButtonText",
+      "desc": "text content of confirm button",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "OK"
+    },
+    {
+      "name": "cancelButtonLoadingIcon ^(2.7.7)",
+      "desc": "loading icon content of cancel button",
+      "type": "string / Component",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "Loading"
+    },
+    {
+      "name": "confirmButtonLoadingIcon ^(2.7.7)",
+      "desc": "loading icon content of confirm button",
+      "type": "string / Component",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "Loading"
+    },
+    {
+      "name": "cancelButtonClass",
+      "desc": "custom class name of cancel button",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "confirmButtonClass",
+      "desc": "custom class name of confirm button",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "closeOnClickModal",
+      "desc": "whether MessageBox can be closed by clicking the mask",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true (false when called with alert)"
+    },
+    {
+      "name": "closeOnPressEscape",
+      "desc": "whether MessageBox can be closed by pressing the ESC",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true (false when called with alert)"
+    },
+    {
+      "name": "closeOnHashChange",
+      "desc": "whether to close MessageBox when hash changes",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "showInput",
+      "desc": "whether to show an input",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false (true when called with prompt)"
+    },
+    {
+      "name": "inputPlaceholder",
+      "desc": "placeholder of input",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "inputType",
+      "desc": "type of input",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "text"
+    },
+    {
+      "name": "inputValue",
+      "desc": "initial value of input",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "inputPattern",
+      "desc": "regexp for the input",
+      "type": "regexp",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "null"
+    },
+    {
+      "name": "inputValidator",
+      "desc": "validation function for the input. Should returns a boolean or string. If a string is returned, it will be assigned to inputErrorMessage",
+      "type": "Function",
+      "optionValue": "(value: string) => boolean | string",
+      "options": [],
+      "defaultValue": "undefined"
+    },
+    {
+      "name": "inputErrorMessage",
+      "desc": "error message when validation fails",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "Illegal input"
+    },
+    {
+      "name": "center",
+      "desc": "whether to align the content in center",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "draggable",
+      "desc": "whether MessageBox is draggable",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "overflow ^(2.5.4)",
+      "desc": "draggable MessageBox can overflow the viewport",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "roundButton",
+      "desc": "whether to use round button",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "buttonSize",
+      "desc": "custom size of confirm and cancel buttons",
+      "type": "string",
+      "optionValue": "small | default | large",
+      "options": [
+        "small",
+        "default",
+        "large"
+      ],
+      "defaultValue": "default"
+    },
+    {
+      "name": "appendTo ^(2.2.19)",
+      "desc": "set the root element for the message box",
+      "type": "CSSSelector / HTMLElement",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    }
+  ],
+  "shortcuts": [],
+  "slots": [],
+  "events": [],
+  "methods": []
+}

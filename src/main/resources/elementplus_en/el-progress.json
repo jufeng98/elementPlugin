@@ -1,0 +1,140 @@
+{
+  "name": "el-progress",
+  "attributes": [
+    {
+      "name": "percentage ^(required)",
+      "desc": "percentage",
+      "type": "number",
+      "optionValue": "(0-100)",
+      "options": [],
+      "defaultValue": "0"
+    },
+    {
+      "name": "type",
+      "desc": "the type of progress bar",
+      "type": "enum",
+      "optionValue": "line | circle | dashboard",
+      "options": [
+        "line",
+        "circle",
+        "dashboard"
+      ],
+      "defaultValue": "line"
+    },
+    {
+      "name": "stroke-width",
+      "desc": "the width of progress bar",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "6"
+    },
+    {
+      "name": "text-inside",
+      "desc": "whether to place the percentage inside progress bar, only works when type is 'line'",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "status",
+      "desc": "the current status of progress bar",
+      "type": "enum",
+      "optionValue": "success | exception | warning",
+      "options": [
+        "success",
+        "exception",
+        "warning"
+      ],
+      "defaultValue": "—"
+    },
+    {
+      "name": "indeterminate",
+      "desc": "set indeterminate progress",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "duration",
+      "desc": "control the animation duration of indeterminate progress or striped flow progress",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "3"
+    },
+    {
+      "name": "color",
+      "desc": "background color of progress bar. Overrides status prop",
+      "type": "string / function",
+      "optionValue": "(percentage: number) => string",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "width",
+      "desc": "the canvas width of circle progress bar",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "126"
+    },
+    {
+      "name": "show-text",
+      "desc": "whether to show percentage",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "stroke-linecap",
+      "desc": "circle/dashboard type shape at the end path",
+      "type": "enum",
+      "optionValue": "butt | round | square",
+      "options": [
+        "butt",
+        "round",
+        "square"
+      ],
+      "defaultValue": "round"
+    },
+    {
+      "name": "format",
+      "desc": "custom text format",
+      "type": "Function",
+      "optionValue": "(percentage: number) => string",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "striped ^(2.3.4)",
+      "desc": "stripe over the progress bar's color",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "striped-flow ^(2.3.4)",
+      "desc": "get the stripes to flow",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "default",
+      "desc": "Customized content"
+    }
+  ],
+  "events": [],
+  "methods": []
+}

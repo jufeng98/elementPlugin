@@ -1,0 +1,109 @@
+{
+  "name": "el-timeline-item",
+  "attributes": [
+    {
+      "name": "timestamp",
+      "desc": "timestamp content",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "hide-timestamp",
+      "desc": "whether to show timestamp",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "center",
+      "desc": "whether vertically centered",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "placement",
+      "desc": "position of timestamp",
+      "type": "enum",
+      "optionValue": "top | bottom",
+      "options": [
+        "top",
+        "bottom"
+      ],
+      "defaultValue": "bottom"
+    },
+    {
+      "name": "type",
+      "desc": "node type",
+      "type": "enum",
+      "optionValue": "primary | success | warning | danger | info",
+      "options": [
+        "primary",
+        "success",
+        "warning",
+        "danger",
+        "info"
+      ],
+      "defaultValue": ""
+    },
+    {
+      "name": "color",
+      "desc": "background color of node",
+      "type": "enum",
+      "optionValue": "hsl | hsv | hex | rgb",
+      "options": [
+        "hsl",
+        "hsv",
+        "hex",
+        "rgb"
+      ],
+      "defaultValue": ""
+    },
+    {
+      "name": "size",
+      "desc": "node size",
+      "type": "enum",
+      "optionValue": "normal | large",
+      "options": [
+        "normal",
+        "large"
+      ],
+      "defaultValue": "normal"
+    },
+    {
+      "name": "icon",
+      "desc": "icon component",
+      "type": "string / Component",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "hollow",
+      "desc": "icon is hollow",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "default",
+      "desc": "customize default content for timeline item"
+    },
+    {
+      "name": "dot",
+      "desc": "customize defined node for timeline item"
+    }
+  ],
+  "events": [],
+  "methods": []
+}

@@ -1,0 +1,561 @@
+{
+  "name": "el-select-v2",
+  "attributes": [
+    {
+      "name": "model-value",
+      "desc": "binding value",
+      "type": "string / number / boolean / object / array",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "v-model",
+      "desc": "binding value",
+      "type": "string / number / boolean / object / array",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "options",
+      "desc": "data of the options, the key of value and label can be customize by props",
+      "type": "array",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "props ^(2.4.2)",
+      "desc": "configuration options, see the following table",
+      "type": "object",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "multiple",
+      "desc": "is multiple",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "disabled",
+      "desc": "is disabled",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "value-key",
+      "desc": "unique identity key name for value, required when value is an object",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "value"
+    },
+    {
+      "name": "size",
+      "desc": "size of component",
+      "type": "enum",
+      "optionValue": " | large | default | small",
+      "options": [
+        "large",
+        "default",
+        "small"
+      ],
+      "defaultValue": ""
+    },
+    {
+      "name": "clearable",
+      "desc": "whether select can be cleared",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "clear-icon",
+      "desc": "custom clear icon",
+      "type": "string / object",
+      "optionValue": "Component",
+      "options": [],
+      "defaultValue": "CircleClose"
+    },
+    {
+      "name": "collapse-tags",
+      "desc": "whether to collapse tags to a text when multiple selecting",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "multiple-limit",
+      "desc": "maximum number of options user can select when multiple is true. No limit when set to 0",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "0"
+    },
+    {
+      "name": "name",
+      "desc": "the name attribute of select input",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "effect",
+      "desc": "tooltip theme, built-in theme: dark / light",
+      "type": "enum",
+      "optionValue": "dark | light",
+      "options": [
+        "dark",
+        "light"
+      ],
+      "defaultValue": "light"
+    },
+    {
+      "name": "autocomplete",
+      "desc": "autocomplete of select input",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "off"
+    },
+    {
+      "name": "placeholder",
+      "desc": "placeholder",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "Please select"
+    },
+    {
+      "name": "filterable",
+      "desc": "is filterable",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "allow-create",
+      "desc": "whether creating new items is allowed. To use this, filterable must be true",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "filter-method",
+      "desc": "custom filter method",
+      "type": "Function",
+      "optionValue": "() => void",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "loading",
+      "desc": "whether Select is loading data from server",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "loading-text",
+      "desc": "displayed text while loading data from server, default is 'Loading'",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "reserve-keyword",
+      "desc": "whether reserve the keyword after select filtered option.",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "no-match-text",
+      "desc": "displayed text when no data matches the filtering query, you can also use slot empty, default is 'No matching data'",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "no-data-text",
+      "desc": "displayed text when there is no options, you can also use slot empty",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "No Data"
+    },
+    {
+      "name": "popper-class",
+      "desc": "custom class name for Select's dropdown",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "teleported",
+      "desc": "whether select dropdown is teleported, if true it will be teleported to where append-to sets",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "append-to ^(2.8.8)",
+      "desc": "which element the select dropdown appends to",
+      "type": "CSSSelector / HTMLElement",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "persistent",
+      "desc": "when select dropdown is inactive and persistent is false, select dropdown will be destroyed",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "popper-options",
+      "desc": "<p><a href=\"https://popper.js.org/docs/v2/\">popper.js</a> parameters</p>",
+      "type": "objectrefer to [popper.js(https://popper.js.org/docs/v2/) doc",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "{}"
+    },
+    {
+      "name": "automatic-dropdown",
+      "desc": "for non-filterable Select, this prop decides if the option menu pops up when the input is focused",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "fit-input-width ^(2.9.2)",
+      "desc": "whether the width of the dropdown is the same as the input, if the value is number, then the width is fixed",
+      "type": "boolean / number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "suffix-icon ^(2.9.8)",
+      "desc": "custom suffix icon component",
+      "type": "string / object",
+      "optionValue": "Component",
+      "options": [],
+      "defaultValue": "ArrowDown"
+    },
+    {
+      "name": "height",
+      "desc": "The height of the dropdown panel, 34px for each item",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "274"
+    },
+    {
+      "name": "item-height",
+      "desc": "The height of the dropdown item",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "34"
+    },
+    {
+      "name": "scrollbar-always-on",
+      "desc": "Controls whether the scrollbar is always displayed",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "remote",
+      "desc": "whether search data from server",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "remote-method",
+      "desc": "function that gets called when the input value changes. Its parameter is the current input value. To use this, filterable must be true",
+      "type": "Function",
+      "optionValue": "(keyword: string) => void",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "validate-event",
+      "desc": "whether to trigger form validation",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "offset ^(2.8.8)",
+      "desc": "offset of the dropdown",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "12"
+    },
+    {
+      "name": "show-arrow ^(2.8.8)",
+      "desc": "whether the dropdown has an arrow",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "placement",
+      "desc": "position of dropdown",
+      "type": "enum",
+      "optionValue": "top | top-start | top-end | bottom | bottom-start | bottom-end | left | left-start | left-end | right | right-start | right-end",
+      "options": [
+        "top",
+        "top-start",
+        "top-end",
+        "bottom",
+        "bottom-start",
+        "bottom-end",
+        "left",
+        "left-start",
+        "left-end",
+        "right",
+        "right-start",
+        "right-end"
+      ],
+      "defaultValue": "bottom-start"
+    },
+    {
+      "name": "fallback-placements ^(2.5.6)",
+      "desc": "<p>list of possible positions for dropdown <a href=\"https://popper.js.org/docs/v2/modifiers/flip/#fallbackplacements\">popper.js</a></p>",
+      "type": "array",
+      "optionValue": "Placement[]",
+      "options": [],
+      "defaultValue": "[bottom-start, top-start, right, left]"
+    },
+    {
+      "name": "collapse-tags-tooltip ^(2.3.0)",
+      "desc": "whether show all selected tags when mouse hover text of collapse-tags. To use this, collapse-tags must be true",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "max-collapse-tags ^(2.3.0)",
+      "desc": "The max tags number to be shown. To use this, collapse-tags must be true",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "1"
+    },
+    {
+      "name": "tag-type ^(2.5.0)",
+      "desc": "tag type",
+      "type": "enum",
+      "optionValue": " | success | info | warning | danger",
+      "options": [
+        "success",
+        "info",
+        "warning",
+        "danger"
+      ],
+      "defaultValue": "info"
+    },
+    {
+      "name": "tag-effect ^(2.7.7)",
+      "desc": "tag effect",
+      "type": "enum",
+      "optionValue": " | light | dark | plain",
+      "options": [
+        "light",
+        "dark",
+        "plain"
+      ],
+      "defaultValue": "light"
+    },
+    {
+      "name": "aria-label ^(a11y) ^(2.5.0)",
+      "desc": "same as aria-label in native input",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "empty-values ^(2.7.0)",
+      "desc": "empty values of component, [see config-provider](/en-US/component/config-provider#empty-values-configurations)",
+      "type": "array",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "value-on-clear ^(2.7.0)",
+      "desc": "clear return value, [see config-provider](/en-US/component/config-provider#empty-values-configurations)",
+      "type": "string / number / boolean / Function",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "popper-append-to-body ^(deprecated)",
+      "desc": "whether to append the popper menu to body. If the positioning of the popper is wrong, you can try to set this prop to false",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "tabindex ^(2.9.0)",
+      "desc": "tabindex for input",
+      "type": "string / number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    }
+  ],
+  "props": [
+    {
+      "name": "value",
+      "desc": "specify which key of node object is used as the node's value",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "value"
+    },
+    {
+      "name": "label",
+      "desc": "specify which key of node object is used as the node's label",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "label"
+    },
+    {
+      "name": "options",
+      "desc": "specify which key of node object is used as the node's children",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "options"
+    },
+    {
+      "name": "disabled",
+      "desc": "specify which key of node object is used as the node's disabled",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "disabled"
+    }
+  ],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "default",
+      "desc": "Option renderer"
+    },
+    {
+      "name": "header ^(2.5.2)",
+      "desc": "content at the top of the dropdown"
+    },
+    {
+      "name": "footer ^(2.5.2)",
+      "desc": "content at the bottom of the dropdown"
+    },
+    {
+      "name": "empty",
+      "desc": "content when options is empty"
+    },
+    {
+      "name": "prefix",
+      "desc": "prefix content of input"
+    },
+    {
+      "name": "tag ^(2.5.0)",
+      "desc": "content as Select tag"
+    },
+    {
+      "name": "loading ^(2.5.2)",
+      "desc": "content as Select loading"
+    },
+    {
+      "name": "label ^(2.7.4)",
+      "desc": "content as Select label"
+    }
+  ],
+  "events": [
+    {
+      "name": "@change",
+      "desc": "triggers when the selected value changes, the param is current selected value",
+      "param": "Function(val: any) => void"
+    },
+    {
+      "name": "@visible-change",
+      "desc": "triggers when the dropdown appears/disappears, the param will be true when it appears, and false otherwise",
+      "param": "Function(visible: boolean) => void"
+    },
+    {
+      "name": "@remove-tag",
+      "desc": "triggers when a tag is removed in multiple mode, the param is removed tag value",
+      "param": "Function(tagValue: any) => void"
+    },
+    {
+      "name": "@clear",
+      "desc": "triggers when the clear icon is clicked in a clearable Select",
+      "param": "Function() => void"
+    },
+    {
+      "name": "@blur",
+      "desc": "triggers when Input blurs",
+      "param": "Function(event: FocusEvent) => void"
+    },
+    {
+      "name": "@focus",
+      "desc": "triggers when Input focuses",
+      "param": "Function(event: FocusEvent) => void"
+    }
+  ],
+  "methods": [
+    {
+      "name": "focus",
+      "desc": "focus the Input component",
+      "param": "Function() => void"
+    },
+    {
+      "name": "blur",
+      "desc": "blur the Input component, and hide the dropdown",
+      "param": "Function() => void"
+    },
+    {
+      "name": "selectedLabel ^(2.8.5)",
+      "desc": "get the currently selected label",
+      "param": "objectComputedRef<string | string[>"
+    }
+  ]
+}

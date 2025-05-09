@@ -1,0 +1,163 @@
+{
+  "name": "el-form-item",
+  "attributes": [
+    {
+      "name": "prop",
+      "desc": "A key of model. It could be a path of the property (e.g a.b.0 or ['a', 'b', '0']). In the use of validate and resetFields method, the attribute is required.",
+      "type": "string / string&#91;&#93;",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "label",
+      "desc": "Label text.",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "label-position ^(2.7.7)",
+      "desc": "Position of item label. If set to 'left' or 'right', label-width prop is also required. Default extend label-postion of form.",
+      "type": "enum",
+      "optionValue": "left | right | top",
+      "options": [
+        "left",
+        "right",
+        "top"
+      ],
+      "defaultValue": ""
+    },
+    {
+      "name": "label-width",
+      "desc": "Width of label, e.g. '50px'. 'auto' is supported.",
+      "type": "string / number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "required",
+      "desc": "Whether the field is required or not, will be determined by validation rules if omitted.",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "rules",
+      "desc": "<p>Validation rules of form, see the <a href=\"#formitemrule\">following table</a>, more advanced usage at <a href=\"https://github.com/yiminghe/async-validator\">async-validator</a>.</p>",
+      "type": "object",
+      "optionValue": "Arrayable<FormItemRule>",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "error",
+      "desc": "Field error message, set its value and the field will validate error and show this message immediately.",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "show-message",
+      "desc": "Whether to show the error message.",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "inline-message",
+      "desc": "Inline style validate message.",
+      "type": "string / boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "size",
+      "desc": "Control the size of components in this form-item.",
+      "type": "enum",
+      "optionValue": " | large | default | small",
+      "options": [
+        "large",
+        "default",
+        "small"
+      ],
+      "defaultValue": "—"
+    },
+    {
+      "name": "for",
+      "desc": "Same as for in native label.",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "validate-status",
+      "desc": "Validation state of formItem.",
+      "type": "enum",
+      "optionValue": " | error | validating | success",
+      "options": [
+        "error",
+        "validating",
+        "success"
+      ],
+      "defaultValue": "—"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "default",
+      "desc": "Content of Form Item."
+    },
+    {
+      "name": "label",
+      "desc": "Custom content to display on label."
+    },
+    {
+      "name": "error",
+      "desc": "Custom content to display validation message."
+    }
+  ],
+  "events": [],
+  "methods": [
+    {
+      "name": "size",
+      "desc": "Form item size.",
+      "param": "objectComputedRef< | large | default | small>"
+    },
+    {
+      "name": "validateMessage",
+      "desc": "Validation message.",
+      "param": "objectRef<string>"
+    },
+    {
+      "name": "validateState",
+      "desc": "Validation state.",
+      "param": "objectRef< | error | validating | success>"
+    },
+    {
+      "name": "validate",
+      "desc": "Validate form item.",
+      "param": "Function(trigger: string, callback?: FormValidateCallback | undefined) => FormValidationResult"
+    },
+    {
+      "name": "resetField",
+      "desc": "Reset current field and remove validation result.",
+      "param": "Function() => void"
+    },
+    {
+      "name": "clearValidate",
+      "desc": "Remove validation status of the field.",
+      "param": "Function() => void"
+    }
+  ]
+}

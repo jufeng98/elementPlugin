@@ -1,0 +1,102 @@
+{
+  "name": "el-statistic",
+  "attributes": [
+    {
+      "name": "value",
+      "desc": "Numerical content",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "0"
+    },
+    {
+      "name": "decimal-separator",
+      "desc": "Setting the decimal point",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "."
+    },
+    {
+      "name": "formatter",
+      "desc": "Custom numerical presentation",
+      "type": "Function",
+      "optionValue": "(value: number) => string | number",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "group-separator",
+      "desc": "Sets the thousandth identifier",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ","
+    },
+    {
+      "name": "precision",
+      "desc": "numerical precision",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "0"
+    },
+    {
+      "name": "prefix",
+      "desc": "Sets the prefix of a number",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "suffix",
+      "desc": "Sets the suffix of a number",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "title",
+      "desc": "Numeric titles",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "value-style",
+      "desc": "Styles numeric values",
+      "type": "string / object",
+      "optionValue": "CSSProperties | CSSProperties[] | string[]",
+      "options": [],
+      "defaultValue": "—"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "prefix",
+      "desc": "Numeric prefix"
+    },
+    {
+      "name": "suffix",
+      "desc": "Suffixes for numeric values"
+    },
+    {
+      "name": "title",
+      "desc": "Numeric titles"
+    }
+  ],
+  "events": [],
+  "methods": [
+    {
+      "name": "displayValue",
+      "desc": "current display value",
+      "param": "objectRef<string | number>"
+    }
+  ]
+}

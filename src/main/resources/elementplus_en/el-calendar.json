@@ -1,0 +1,65 @@
+{
+  "name": "el-calendar",
+  "attributes": [
+    {
+      "name": "model-value",
+      "desc": "binding value",
+      "type": "Date",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "v-model",
+      "desc": "binding value",
+      "type": "Date",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "range",
+      "desc": "time range, including start time and end time. Start time must be start day of week, end time must be end day of week, the time span cannot exceed two months.",
+      "type": "array",
+      "optionValue": "[Date, Date]",
+      "options": [],
+      "defaultValue": "—"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "date-cell",
+      "desc": "`type` indicates which month the date belongs, optional values are prev-month, current-month, next-month; `isSelected` indicates whether the date is selected; `day` is the formatted date in the format `YYYY-MM-DD`; `date` is date the cell represents"
+    },
+    {
+      "name": "header",
+      "desc": "content of the Calendar header"
+    }
+  ],
+  "events": [],
+  "methods": [
+    {
+      "name": "selectedDay",
+      "desc": "currently selected date",
+      "param": "objectComputedRef<Dayjs | undefined>"
+    },
+    {
+      "name": "pickDay",
+      "desc": "select a specific date",
+      "param": "Function(day: dayjs.Dayjs) => void"
+    },
+    {
+      "name": "selectDate",
+      "desc": "select date",
+      "param": "Function(type: CalendarDateType) => void"
+    },
+    {
+      "name": "calculateValidatedDateRange",
+      "desc": "Calculate the validate date range according to the start and end dates",
+      "param": "Function(startDayjs: dayjs.Dayjs, endDayjs: dayjs.Dayjs) => [dayjs.Dayjs, dayjs.Dayjs["
+    }
+  ]
+}

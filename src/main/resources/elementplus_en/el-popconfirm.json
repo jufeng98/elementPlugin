@@ -1,0 +1,141 @@
+{
+  "name": "el-popconfirm",
+  "attributes": [
+    {
+      "name": "title",
+      "desc": "Title",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "confirm-button-text",
+      "desc": "Confirm button text",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "cancel-button-text",
+      "desc": "Cancel button text",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "confirm-button-type",
+      "desc": "Confirm button type",
+      "type": "enum",
+      "optionValue": "primary | success | warning | danger | info | text",
+      "options": [
+        "primary",
+        "success",
+        "warning",
+        "danger",
+        "info",
+        "text"
+      ],
+      "defaultValue": "primary"
+    },
+    {
+      "name": "cancel-button-type",
+      "desc": "Cancel button type",
+      "type": "enum",
+      "optionValue": "primary | success | warning | danger | info | text",
+      "options": [
+        "primary",
+        "success",
+        "warning",
+        "danger",
+        "info",
+        "text"
+      ],
+      "defaultValue": "text"
+    },
+    {
+      "name": "icon",
+      "desc": "Icon Component",
+      "type": "string / Component",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "QuestionFilled"
+    },
+    {
+      "name": "icon-color",
+      "desc": "Icon color",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "#f90"
+    },
+    {
+      "name": "hide-icon",
+      "desc": "is hide Icon",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "hide-after",
+      "desc": "delay of disappear, in millisecond",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "200"
+    },
+    {
+      "name": "teleported",
+      "desc": "whether popconfirm is teleported to the body",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "persistent",
+      "desc": "when popconfirm inactive and persistent is false , popconfirm will be destroyed",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "width",
+      "desc": "popconfirm width, min width 150px",
+      "type": "string / number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "150"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "reference",
+      "desc": "HTML element that triggers Popconfirm"
+    },
+    {
+      "name": "actions ^(2.8.1)",
+      "desc": "content of the Popconfirm footer"
+    }
+  ],
+  "events": [
+    {
+      "name": "@confirm",
+      "desc": "triggers when click confirm button",
+      "param": "Function(e: MouseEvent) => void"
+    },
+    {
+      "name": "@cancel",
+      "desc": "triggers when click cancel button",
+      "param": "Function(e: MouseEvent) => void"
+    }
+  ],
+  "methods": []
+}

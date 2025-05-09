@@ -1,0 +1,106 @@
+{
+  "name": "el-badge",
+  "attributes": [
+    {
+      "name": "value",
+      "desc": "display value.",
+      "type": "string / number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "max",
+      "desc": "maximum value, shows {max}+ when exceeded. Only works if value is a number.",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "99"
+    },
+    {
+      "name": "is-dot",
+      "desc": "if a little dot is displayed.",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "hidden",
+      "desc": "hidden badge.",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "type",
+      "desc": "badge type.",
+      "type": "enum",
+      "optionValue": "primary | success | warning | danger | info",
+      "options": [
+        "primary",
+        "success",
+        "warning",
+        "danger",
+        "info"
+      ],
+      "defaultValue": "danger"
+    },
+    {
+      "name": "show-zero ^(2.6.0)",
+      "desc": "Whether to show badge when value is zero.",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "color ^(2.6.3)",
+      "desc": "background color of the dot",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "offset ^(2.7.0)",
+      "desc": "offset of badge",
+      "type": "[ ",
+      "optionValue": "number",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "badge-style ^(2.7.1)",
+      "desc": "custom style of badge",
+      "type": "object",
+      "optionValue": "CSSProperties",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "badge-class ^(2.7.1)",
+      "desc": "custom class of badge",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "default",
+      "desc": "customize default content"
+    },
+    {
+      "name": "content ^(2.9.1)",
+      "desc": "customize badge content"
+    }
+  ],
+  "events": [],
+  "methods": []
+}

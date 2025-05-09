@@ -1,0 +1,188 @@
+{
+  "name": "el-transfer",
+  "attributes": [
+    {
+      "name": "model-value",
+      "desc": "binding value",
+      "type": "object",
+      "optionValue": "Array<string | number>",
+      "options": [],
+      "defaultValue": "[]"
+    },
+    {
+      "name": "v-model",
+      "desc": "binding value",
+      "type": "object",
+      "optionValue": "Array<string | number>",
+      "options": [],
+      "defaultValue": "[]"
+    },
+    {
+      "name": "data",
+      "desc": "data source",
+      "type": "object",
+      "optionValue": "Record<string, any>[]",
+      "options": [],
+      "defaultValue": "[]"
+    },
+    {
+      "name": "filterable",
+      "desc": "whether Transfer is filterable",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "filter-placeholder",
+      "desc": "placeholder for the filter input",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "filter-method",
+      "desc": "custom filter method",
+      "type": "Function",
+      "optionValue": "(query: string, item: Record<string, any>) => boolean",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "target-order",
+      "desc": "order strategy for elements in the target list. If set to original, the elements will keep the same order as the data source. If set to push, the newly added elements will be pushed to the bottom. If set to unshift, the newly added elements will be inserted on the top",
+      "type": "enum",
+      "optionValue": "original | push | unshift",
+      "options": [
+        "original",
+        "push",
+        "unshift"
+      ],
+      "defaultValue": "original"
+    },
+    {
+      "name": "titles",
+      "desc": "custom list titles",
+      "type": "object",
+      "optionValue": "[string, string]",
+      "options": [],
+      "defaultValue": "[]"
+    },
+    {
+      "name": "button-texts",
+      "desc": "custom button texts",
+      "type": "object",
+      "optionValue": "[string, string]",
+      "options": [],
+      "defaultValue": "[]"
+    },
+    {
+      "name": "render-content",
+      "desc": "custom render function for data items",
+      "type": "object",
+      "optionValue": "renderContent",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "format",
+      "desc": "texts for checking status in list header",
+      "type": "object",
+      "optionValue": "TransferFormat",
+      "options": [],
+      "defaultValue": "{}"
+    },
+    {
+      "name": "props",
+      "desc": "prop aliases for data source",
+      "type": "object",
+      "optionValue": "TransferPropsAlias",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "left-default-checked",
+      "desc": "key array of initially checked data items of the left list",
+      "type": "object",
+      "optionValue": "Array<string | number>",
+      "options": [],
+      "defaultValue": "[]"
+    },
+    {
+      "name": "right-default-checked",
+      "desc": "key array of initially checked data items of the right list",
+      "type": "object",
+      "optionValue": "Array<string | number>",
+      "options": [],
+      "defaultValue": "[]"
+    },
+    {
+      "name": "validate-event",
+      "desc": "whether to trigger form validation",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "default",
+      "desc": "Custom content for data items. The scope parameter is `{ option }`"
+    },
+    {
+      "name": "left-footer",
+      "desc": "content of left list footer"
+    },
+    {
+      "name": "right-footer",
+      "desc": "content of right list footer"
+    },
+    {
+      "name": "left-empty ^(2.9.0)",
+      "desc": "content when left panel is empty or when no data matches the filter"
+    },
+    {
+      "name": "right-empty ^(2.9.0)",
+      "desc": "content when right panel is empty or when no data matches the filter"
+    }
+  ],
+  "events": [
+    {
+      "name": "@change",
+      "desc": "triggers when data items change in the right list",
+      "param": "Function(value: TransferKey[, direction: TransferDirection, movedKeys: TransferKey[) => void"
+    },
+    {
+      "name": "@left-check-change",
+      "desc": "triggers when end user changes the checked state of any data item in the left list",
+      "param": "Function(value: TransferKey[, movedKeys?: TransferKey[) => void"
+    },
+    {
+      "name": "@right-check-change",
+      "desc": "triggers when end user changes the checked state of any data item in the right list",
+      "param": "Function(value: TransferKey[, movedKeys?: TransferKey[) => void"
+    }
+  ],
+  "methods": [
+    {
+      "name": "clearQuery",
+      "desc": "clear the filter keyword of a certain panel",
+      "param": "Function(which: TransferDirection) => void"
+    },
+    {
+      "name": "leftPanel",
+      "desc": "left panel ref",
+      "param": "objectRef<TransferPanelInstance>"
+    },
+    {
+      "name": "rightPanel",
+      "desc": "right panel ref",
+      "param": "objectRef<TransferPanelInstance>"
+    }
+  ]
+}

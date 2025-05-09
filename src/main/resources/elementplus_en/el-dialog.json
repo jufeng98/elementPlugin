@@ -1,0 +1,302 @@
+{
+  "name": "el-dialog",
+  "attributes": [
+    {
+      "name": "model-value",
+      "desc": "visibility of Dialog",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "v-model",
+      "desc": "visibility of Dialog",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "title",
+      "desc": "title of Dialog. Can also be passed with a named slot (see the following table)",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "width",
+      "desc": "width of Dialog, default is 50%",
+      "type": "string / number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "fullscreen",
+      "desc": "whether the Dialog takes up full screen",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "top",
+      "desc": "value for margin-top of Dialog CSS, default is 15vh",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "modal",
+      "desc": "whether a mask is displayed",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "modal-class",
+      "desc": "custom class names for mask",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "header-class ^(2.9.3)",
+      "desc": "custom class names for header wrapper",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "body-class ^(2.9.3)",
+      "desc": "custom class names for body wrapper",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "footer-class ^(2.9.3)",
+      "desc": "custom class names for footer wrapper",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "append-to-body",
+      "desc": "whether to append Dialog itself to body. A nested Dialog should have this attribute set to true",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "append-to ^(2.4.3)",
+      "desc": "which element the Dialog appends to. Will override append-to-body",
+      "type": "CSSSelector / HTMLElement",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "body"
+    },
+    {
+      "name": "lock-scroll",
+      "desc": "whether scroll of body is disabled while Dialog is displayed",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "open-delay",
+      "desc": "the Time(milliseconds) before open",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "0"
+    },
+    {
+      "name": "close-delay",
+      "desc": "the Time(milliseconds) before close",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "0"
+    },
+    {
+      "name": "close-on-click-modal",
+      "desc": "whether the Dialog can be closed by clicking the mask",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "close-on-press-escape",
+      "desc": "whether the Dialog can be closed by pressing ESC",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "show-close",
+      "desc": "whether to show a close button",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "before-close",
+      "desc": "callback before Dialog closes, and it will prevent Dialog from closing, use done to close the dialog",
+      "type": "Function",
+      "optionValue": "(done: DoneFn) => void",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "draggable",
+      "desc": "enable dragging feature for Dialog",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "overflow ^(2.5.4)",
+      "desc": "draggable Dialog can overflow the viewport",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "center",
+      "desc": "whether to align the header and footer in center",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "align-center ^(2.2.16)",
+      "desc": "whether to align the dialog both horizontally and vertically",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "destroy-on-close",
+      "desc": "destroy elements in Dialog when closed",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "close-icon",
+      "desc": "custom close icon, default is Close",
+      "type": "string / Component",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "z-index",
+      "desc": "same as z-index in native CSS, z-order of dialog",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "header-aria-level ^(a11y)",
+      "desc": "header's aria-level attribute",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "2"
+    },
+    {
+      "name": "custom-class ^(deprecated)",
+      "desc": "custom class names for Dialog",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "default",
+      "desc": "default content of Dialog"
+    },
+    {
+      "name": "header",
+      "desc": "content of the Dialog header; Replacing this removes the title, but does not remove the close button."
+    },
+    {
+      "name": "footer",
+      "desc": "content of the Dialog footer"
+    },
+    {
+      "name": "title ^(deprecated)",
+      "desc": "works the same as the header slot. Use that instead."
+    }
+  ],
+  "events": [
+    {
+      "name": "@open",
+      "desc": "triggers when the Dialog opens",
+      "param": "Function() => void"
+    },
+    {
+      "name": "@opened",
+      "desc": "triggers when the Dialog opening animation ends",
+      "param": "Function() => void"
+    },
+    {
+      "name": "@close",
+      "desc": "triggers when the Dialog closes",
+      "param": "Function() => void"
+    },
+    {
+      "name": "@closed",
+      "desc": "triggers when the Dialog closing animation ends",
+      "param": "Function() => void"
+    },
+    {
+      "name": "@open-auto-focus",
+      "desc": "triggers after Dialog opens and content focused",
+      "param": "Function() => void"
+    },
+    {
+      "name": "@close-auto-focus",
+      "desc": "triggers after Dialog closed and content focused",
+      "param": "Function() => void"
+    }
+  ],
+  "methods": [
+    {
+      "name": "resetPosition ^(2.8.1)",
+      "desc": "reset position",
+      "param": "Function() => void"
+    },
+    {
+      "name": "handleClose ^(2.9.8)",
+      "desc": "close dialog",
+      "param": "Function() => void"
+    }
+  ]
+}

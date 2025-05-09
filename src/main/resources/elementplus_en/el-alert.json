@@ -1,0 +1,102 @@
+{
+  "name": "el-alert",
+  "attributes": [
+    {
+      "name": "title",
+      "desc": "alert title.",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "type",
+      "desc": "alert type.",
+      "type": "enum",
+      "optionValue": "success | warning | info | error ",
+      "options": [
+        "success",
+        "warning",
+        "info",
+        "error"
+      ],
+      "defaultValue": "info"
+    },
+    {
+      "name": "description",
+      "desc": "descriptive text.",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "closable",
+      "desc": "whether alert can be dismissed.",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "center",
+      "desc": "whether content is placed in the center.",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "close-text",
+      "desc": "customized close button text.",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "show-icon",
+      "desc": "whether a type icon is displayed.",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "effect",
+      "desc": "theme style.",
+      "type": "enum",
+      "optionValue": "light | dark",
+      "options": [
+        "light",
+        "dark"
+      ],
+      "defaultValue": "light"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "default",
+      "desc": "content of the alert description."
+    },
+    {
+      "name": "title",
+      "desc": "content of the alert title."
+    },
+    {
+      "name": "icon ^(2.9.7)",
+      "desc": "content of the alert icon."
+    }
+  ],
+  "events": [
+    {
+      "name": "@close",
+      "desc": "trigger when alert is closed.",
+      "param": "Function(event: MouseEvent) => void"
+    }
+  ],
+  "methods": []
+}

@@ -1,0 +1,366 @@
+{
+  "name": "el-date-picker",
+  "attributes": [
+    {
+      "name": "model-value",
+      "desc": "binding value, if it is an array, the length should be 2",
+      "type": "number / string / object",
+      "optionValue": "Date | [Date, Date] | [string, string]",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "v-model",
+      "desc": "binding value, if it is an array, the length should be 2",
+      "type": "number / string / object",
+      "optionValue": "Date | [Date, Date] | [string, string]",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "readonly",
+      "desc": "whether DatePicker is read only",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "disabled",
+      "desc": "whether DatePicker is disabled",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "size",
+      "desc": "size of Input",
+      "type": "enum",
+      "optionValue": " | large | default | small",
+      "options": [
+        "large",
+        "default",
+        "small"
+      ],
+      "defaultValue": "—"
+    },
+    {
+      "name": "editable",
+      "desc": "whether the input is editable",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "clearable",
+      "desc": "whether to show clear button",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "placeholder",
+      "desc": "placeholder in non-range mode",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "start-placeholder",
+      "desc": "placeholder for the start date in range mode",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "end-placeholder",
+      "desc": "placeholder for the end date in range mode",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "type",
+      "desc": "type of the picker",
+      "type": "enum",
+      "optionValue": "year | years |month | months | date | dates | datetime | week | datetimerange | daterange | monthrange | yearrange",
+      "options": [
+        "year",
+        "years",
+        "month",
+        "months",
+        "date",
+        "dates",
+        "datetime",
+        "week",
+        "datetimerange",
+        "daterange",
+        "monthrange",
+        "yearrange"
+      ],
+      "defaultValue": "date"
+    },
+    {
+      "name": "format",
+      "desc": "format of the displayed value in the input box",
+      "type": "string see [date formats(/en-US/component/date-picker#date-formats)",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "YYYY-MM-DD"
+    },
+    {
+      "name": "popper-class",
+      "desc": "custom class name for DatePicker's dropdown",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "popper-options",
+      "desc": "<p>Customized popper option see more at <a href=\"https://popper.js.org/docs/v2/\">popper.js</a></p>",
+      "type": "object",
+      "optionValue": "Partial<PopperOptions>",
+      "options": [],
+      "defaultValue": "{}"
+    },
+    {
+      "name": "range-separator",
+      "desc": "range separator",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "-"
+    },
+    {
+      "name": "default-value",
+      "desc": "optional, default date of the calendar",
+      "type": "object",
+      "optionValue": "Date | [Date, Date]",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "default-time",
+      "desc": "optional, the time value to use when selecting date range",
+      "type": "object",
+      "optionValue": "Date | [Date, Date]",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "value-format",
+      "desc": "optional, format of binding value. If not specified, the binding value will be a Date object",
+      "type": "string see [date formats(/en-US/component/date-picker#date-formats)",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "id",
+      "desc": "same as id in native input",
+      "type": "string / object",
+      "optionValue": "[string, string]",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "name",
+      "desc": "same as name in native input",
+      "type": "string / object",
+      "optionValue": "[string, string]",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "unlink-panels",
+      "desc": "unlink two date-panels in range-picker",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "prefix-icon",
+      "desc": "custom prefix icon component. By default, if the value of type is TimeLikeType, the value is Clock, else is Calendar",
+      "type": "string / object",
+      "optionValue": "Component",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "clear-icon",
+      "desc": "custom clear icon component",
+      "type": "string / object",
+      "optionValue": "Component",
+      "options": [],
+      "defaultValue": "CircleClose"
+    },
+    {
+      "name": "validate-event",
+      "desc": "whether to trigger form validation",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "disabled-date",
+      "desc": "a function determining if a date is disabled with that date as its parameter. Should return a Boolean",
+      "type": "Function",
+      "optionValue": "(data: Date) => boolean",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "shortcuts",
+      "desc": "an object array to set shortcut options",
+      "type": "object",
+      "optionValue": "Array<{ text: string, value: Date | Function }>",
+      "options": [],
+      "defaultValue": "[]"
+    },
+    {
+      "name": "cell-class-name",
+      "desc": "set custom className",
+      "type": "Function",
+      "optionValue": "(data: Date) => string",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "teleported",
+      "desc": "whether date-picker dropdown is teleported to the body",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "empty-values ^(2.7.0)",
+      "desc": "empty values of component, [see config-provider](/en-US/component/config-provider#empty-values-configurations)",
+      "type": "array",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "value-on-clear ^(2.7.0)",
+      "desc": "clear return value, [see config-provider](/en-US/component/config-provider#empty-values-configurations)",
+      "type": "string / number / boolean / Function",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "fallback-placements ^(2.8.4)",
+      "desc": "<p>list of possible positions for Tooltip <a href=\"https://popper.js.org/docs/v2/modifiers/flip/#fallbackplacements\">popper.js</a></p>",
+      "type": "arrary",
+      "optionValue": "Placement[]",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "placement ^(2.8.4)",
+      "desc": "position of dropdown",
+      "type": "",
+      "optionValue": "Placement",
+      "options": [],
+      "defaultValue": "bottom"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "default",
+      "desc": "custom cell content"
+    },
+    {
+      "name": "range-separator",
+      "desc": "custom range separator content"
+    },
+    {
+      "name": "prev-month ^(2.8.0)",
+      "desc": "prev month icon"
+    },
+    {
+      "name": "next-month ^(2.8.0)",
+      "desc": "next month icon"
+    },
+    {
+      "name": "prev-year ^(2.8.0)",
+      "desc": "prev year icon"
+    },
+    {
+      "name": "next-year ^(2.8.0)",
+      "desc": "next year icon"
+    }
+  ],
+  "events": [
+    {
+      "name": "@change",
+      "desc": "triggers when user confirms the value",
+      "param": "Function(val: typeof v-model) => void"
+    },
+    {
+      "name": "@blur",
+      "desc": "triggers when Input blurs",
+      "param": "Function(e: FocusEvent) => void"
+    },
+    {
+      "name": "@focus",
+      "desc": "triggers when Input focuses",
+      "param": "Function(e: FocusEvent) => void"
+    },
+    {
+      "name": "@clear ^(2.7.7)",
+      "desc": "triggers when the clear icon is clicked in a clearable DatePicker",
+      "param": "Function() => void"
+    },
+    {
+      "name": "@calendar-change",
+      "desc": "triggers when the calendar selected date is changed.",
+      "param": "Function(val: [Date, null | Date) => void"
+    },
+    {
+      "name": "@panel-change",
+      "desc": "triggers when the navigation button click.",
+      "param": "Function(date: Date | [Date, Date, mode: month | year, view?: string) => void"
+    },
+    {
+      "name": "@visible-change",
+      "desc": "triggers when the DatePicker's dropdown appears/disappears",
+      "param": "Function(visibility: boolean) => void"
+    }
+  ],
+  "methods": [
+    {
+      "name": "focus",
+      "desc": "focus the DatePicker component",
+      "param": "Function() => void"
+    },
+    {
+      "name": "blur ^(2.8.7)",
+      "desc": "blur the DatePicker component",
+      "param": "Function() => void"
+    },
+    {
+      "name": "handleOpen ^(2.2.16)",
+      "desc": "open the DatePicker popper",
+      "param": "Function() => void"
+    },
+    {
+      "name": "handleClose ^(2.2.16)",
+      "desc": "close the DatePicker popper",
+      "param": "Function() => void"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "el-timeline",
+  "attributes": [],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "default",
+      "desc": "customize default content for timeline"
+    }
+  ],
+  "events": [],
+  "methods": []
+}

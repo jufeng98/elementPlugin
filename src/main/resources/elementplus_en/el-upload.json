@@ -1,0 +1,277 @@
+{
+  "name": "el-upload",
+  "attributes": [
+    {
+      "name": "action ^(required)",
+      "desc": "request URL.",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "#"
+    },
+    {
+      "name": "headers",
+      "desc": "request headers.",
+      "type": "object",
+      "optionValue": "Headers | Record<string, any>",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "method",
+      "desc": "set upload request method.",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "post"
+    },
+    {
+      "name": "multiple",
+      "desc": "whether uploading multiple files is permitted.",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "data",
+      "desc": "additions options of request. support Awaitable data and Function since v2.3.13.",
+      "type": "object",
+      "optionValue": "Record<string, any> | Awaitable<Record<string, any>>",
+      "options": [],
+      "defaultValue": "{}"
+    },
+    {
+      "name": "name",
+      "desc": "key name for uploaded file.",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "file"
+    },
+    {
+      "name": "with-credentials",
+      "desc": "whether cookies are sent.",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "show-file-list",
+      "desc": "whether to show the uploaded file list.",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "drag",
+      "desc": "whether to activate drag and drop mode.",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "accept",
+      "desc": "<p>accepted <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#attr-accept\">file types</a>, will not work when thumbnail-mode === true.</p>",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "crossorigin",
+      "desc": "<p>native attribute <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/crossorigin\">crossorigin</a>.</p>",
+      "type": "enum",
+      "optionValue": " | anonymous | use-credentials",
+      "options": [
+        "anonymous",
+        "use-credentials"
+      ],
+      "defaultValue": "—"
+    },
+    {
+      "name": "on-preview",
+      "desc": "hook function when clicking the uploaded files.",
+      "type": "Function",
+      "optionValue": "(uploadFile: UploadFile) => void",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "on-remove",
+      "desc": "hook function when files are removed.",
+      "type": "Function",
+      "optionValue": "(uploadFile: UploadFile, uploadFiles: UploadFiles) => void",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "on-success",
+      "desc": "hook function when uploaded successfully.",
+      "type": "Function",
+      "optionValue": "(response: any, uploadFile: UploadFile, uploadFiles: UploadFiles) => void",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "on-error",
+      "desc": "hook function when some errors occurs.",
+      "type": "Function",
+      "optionValue": "(error: Error, uploadFile: UploadFile, uploadFiles: UploadFiles) => void",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "on-progress",
+      "desc": "hook function when some progress occurs.",
+      "type": "Function",
+      "optionValue": "(evt: UploadProgressEvent, uploadFile: UploadFile, uploadFiles: UploadFiles) => void",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "on-change",
+      "desc": "hook function when select file or upload file success or upload file fail.",
+      "type": "Function",
+      "optionValue": "(uploadFile: UploadFile, uploadFiles: UploadFiles) => void",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "on-exceed",
+      "desc": "hook function when limit is exceeded.",
+      "type": "Function",
+      "optionValue": "(files: File[], uploadFiles: UploadUserFile[]) => void",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "before-upload",
+      "desc": "hook function before uploading with the file to be uploaded as its parameter. If false is returned or a Promise is returned and then is rejected, uploading will be aborted.",
+      "type": "Function",
+      "optionValue": "(rawFile: UploadRawFile) => Awaitable<void | undefined | null | boolean | File | Blob>",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "before-remove",
+      "desc": "hook function before removing a file with the file and file list as its parameters. If false is returned or a Promise is returned and then is rejected, removing will be aborted.",
+      "type": "Function",
+      "optionValue": "(uploadFile: UploadFile, uploadFiles: UploadFiles) => Awaitable<boolean>",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "file-list",
+      "desc": "default uploaded files.",
+      "type": "object",
+      "optionValue": "UploadUserFile[]",
+      "options": [],
+      "defaultValue": "[]"
+    },
+    {
+      "name": "v-model:file-list",
+      "desc": "default uploaded files.",
+      "type": "object",
+      "optionValue": "UploadUserFile[]",
+      "options": [],
+      "defaultValue": "[]"
+    },
+    {
+      "name": "list-type",
+      "desc": "type of file list.",
+      "type": "enum",
+      "optionValue": "text | picture | picture-card",
+      "options": [
+        "text",
+        "picture",
+        "picture-card"
+      ],
+      "defaultValue": "text"
+    },
+    {
+      "name": "auto-upload",
+      "desc": "whether to auto upload file.",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "http-request",
+      "desc": "override default xhr behavior, allowing you to implement your own upload-file's request.",
+      "type": "Function",
+      "optionValue": "(options: UploadRequestOptions) => XMLHttpRequest | Promise<unknown>",
+      "options": [],
+      "defaultValue": "<p>ajaxUpload <a href=\"https://github.com/element-plus/element-plus/blob/dev/packages/components/upload/src/ajax.ts#L55\">see</a></p>"
+    },
+    {
+      "name": "disabled",
+      "desc": "whether to disable upload.",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "limit",
+      "desc": "maximum number of uploads allowed.",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "default",
+      "desc": "customize default content."
+    },
+    {
+      "name": "trigger",
+      "desc": "content which triggers file dialog."
+    },
+    {
+      "name": "tip",
+      "desc": "content of tips."
+    },
+    {
+      "name": "file",
+      "desc": "content of thumbnail template."
+    }
+  ],
+  "events": [],
+  "methods": [
+    {
+      "name": "abort",
+      "desc": "cancel upload request.",
+      "param": "Function(file: UploadFile) => void"
+    },
+    {
+      "name": "submit",
+      "desc": "upload the file list manually.",
+      "param": "Function() => void"
+    },
+    {
+      "name": "clearFiles",
+      "desc": "clear the file list (this method is not supported in the `before-upload` hook).",
+      "param": "Function(status?: UploadStatus[) => void"
+    },
+    {
+      "name": "handleStart",
+      "desc": "select the file manually.",
+      "param": "Function(rawFile: UploadRawFile) => void"
+    },
+    {
+      "name": "handleRemove",
+      "desc": "remove the file manually. `file` and `rawFile` has been merged. `rawFile` will be removed in `v2.2.0`.",
+      "param": "Function(file: UploadFile | UploadRawFile, rawFile?: UploadRawFile) => void"
+    }
+  ]
+}

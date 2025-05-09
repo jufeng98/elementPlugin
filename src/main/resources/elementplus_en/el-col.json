@@ -1,0 +1,147 @@
+{
+  "name": "el-col",
+  "attributes": [
+    {
+      "name": "align",
+      "desc": "Alignment of the table cell content",
+      "type": "[Alignment(https://github.com/element-plus/element-plus/blob/b92b22932758f0ddea98810ae248f6ca62f77e25/packages/components/table-v2/src/constants.ts#L6)",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "left"
+    },
+    {
+      "name": "class",
+      "desc": "Class name for the column",
+      "type": "",
+      "optionValue": "string",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "key",
+      "desc": "Unique identification",
+      "type": "[KeyType(#typings)",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "dataKey",
+      "desc": "Unique identification of data",
+      "type": "[KeyType(#typings)",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "fixed",
+      "desc": "Fixed direction of the column",
+      "type": "",
+      "optionValue": "boolean",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "flexGrow",
+      "desc": "CSSProperties flex grow, Only useful when this is not a fixed table",
+      "type": "",
+      "optionValue": "number",
+      "options": [],
+      "defaultValue": "0"
+    },
+    {
+      "name": "flexShrink",
+      "desc": "CSSProperties flex shrink, Only useful when this is not a fixed table",
+      "type": "",
+      "optionValue": "number",
+      "options": [],
+      "defaultValue": "1"
+    },
+    {
+      "name": "headerClass",
+      "desc": "Used for customizing header column class",
+      "type": "",
+      "optionValue": "string",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "hidden",
+      "desc": "Whether the column is invisible",
+      "type": "",
+      "optionValue": "boolean",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "style",
+      "desc": "Customized style for column cell, will be merged with grid cell",
+      "type": "object",
+      "optionValue": "CSSProperties",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "sortable",
+      "desc": "Indicates whether the column is sortable",
+      "type": "",
+      "optionValue": "boolean",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "title",
+      "desc": "The default text rendered in header cell",
+      "type": "",
+      "optionValue": "string",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "maxWidth",
+      "desc": "Maximum width for the column",
+      "type": "",
+      "optionValue": "number",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "minWidth",
+      "desc": "Minimum width for the column",
+      "type": "",
+      "optionValue": "number",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "width ^(required)",
+      "desc": "Width for the column",
+      "type": "",
+      "optionValue": "number",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "cellRenderer",
+      "desc": "Customized Cell renderer",
+      "type": "",
+      "optionValue": "VueComponent",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "headerCellRenderer",
+      "desc": "Customized Header renderer",
+      "type": "",
+      "optionValue": "VueComponent",
+      "options": [],
+      "defaultValue": "—"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [],
+  "events": [],
+  "methods": []
+}

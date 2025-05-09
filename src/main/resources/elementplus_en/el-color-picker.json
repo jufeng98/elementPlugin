@@ -1,0 +1,181 @@
+{
+  "name": "el-color-picker",
+  "attributes": [
+    {
+      "name": "model-value",
+      "desc": "binding value",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "v-model",
+      "desc": "binding value",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "disabled",
+      "desc": "whether to disable the ColorPicker",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "size",
+      "desc": "size of ColorPicker",
+      "type": "enum",
+      "optionValue": "large | default | small",
+      "options": [
+        "large",
+        "default",
+        "small"
+      ],
+      "defaultValue": "—"
+    },
+    {
+      "name": "show-alpha",
+      "desc": "whether to display the alpha slider",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "color-format",
+      "desc": "color format of v-model",
+      "type": "enum",
+      "optionValue": "hsl | hsv | hex | rgb | hex (when show-alpha is false) | rgb (when show-alpha is true)",
+      "options": [
+        "hsl",
+        "hsv",
+        "hex",
+        "rgb",
+        "hex (when show-alpha is false)",
+        "rgb (when show-alpha is true)"
+      ],
+      "defaultValue": "—"
+    },
+    {
+      "name": "popper-class",
+      "desc": "custom class name for ColorPicker's dropdown",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "predefine",
+      "desc": "predefined color options",
+      "type": "object",
+      "optionValue": "string[]",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "validate-event",
+      "desc": "whether to trigger form validation",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "tabindex",
+      "desc": "ColorPicker tabindex",
+      "type": "string / number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "0"
+    },
+    {
+      "name": "aria-label ^(a11y) ^(2.7.2)",
+      "desc": "ColorPicker aria-label",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "id",
+      "desc": "ColorPicker id",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "teleported ^(2.7.2)",
+      "desc": "whether color-picker popper is teleported to the body",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "label ^(a11y) ^(deprecated)",
+      "desc": "ColorPicker aria-label",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [],
+  "events": [
+    {
+      "name": "@change",
+      "desc": "triggers when input value changes",
+      "param": "Function(value: string) => void"
+    },
+    {
+      "name": "@active-change",
+      "desc": "triggers when the current active color changes",
+      "param": "Function(value: string) => void"
+    },
+    {
+      "name": "@focus ^(2.4.0)",
+      "desc": "triggers when Component focuses",
+      "param": "Function(event: FocusEvent) => void"
+    },
+    {
+      "name": "@blur ^(2.4.0)",
+      "desc": "triggers when Component blurs",
+      "param": "Function(event: FocusEvent) => void"
+    }
+  ],
+  "methods": [
+    {
+      "name": "color",
+      "desc": "current color object",
+      "param": "objectColor"
+    },
+    {
+      "name": "show ^(2.3.3)",
+      "desc": "manually show ColorPicker",
+      "param": "Function() => void"
+    },
+    {
+      "name": "hide ^(2.3.3)",
+      "desc": "manually hide ColorPicker",
+      "param": "Function() => void"
+    },
+    {
+      "name": "focus ^(2.3.13)",
+      "desc": "focus the picker element",
+      "param": "Function() => void"
+    },
+    {
+      "name": "blur ^(2.3.13)",
+      "desc": "blur the picker element",
+      "param": "Function() => void"
+    }
+  ]
+}

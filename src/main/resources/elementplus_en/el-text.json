@@ -1,0 +1,66 @@
+{
+  "name": "el-text",
+  "attributes": [
+    {
+      "name": "type",
+      "desc": "text type",
+      "type": "enum",
+      "optionValue": "primary | success | warning | danger | info",
+      "options": [
+        "primary",
+        "success",
+        "warning",
+        "danger",
+        "info"
+      ],
+      "defaultValue": "—"
+    },
+    {
+      "name": "size",
+      "desc": "text size",
+      "type": "enum",
+      "optionValue": "large | default | small",
+      "options": [
+        "large",
+        "default",
+        "small"
+      ],
+      "defaultValue": "default"
+    },
+    {
+      "name": "truncated",
+      "desc": "render ellipsis",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "line-clamp ^(2.4.0)",
+      "desc": "maximum lines",
+      "type": "string / number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "tag",
+      "desc": "custom element tag",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "span"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "default",
+      "desc": "default content"
+    }
+  ],
+  "events": [],
+  "methods": []
+}

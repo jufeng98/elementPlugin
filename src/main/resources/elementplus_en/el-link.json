@@ -1,0 +1,85 @@
+{
+  "name": "el-link",
+  "attributes": [
+    {
+      "name": "type",
+      "desc": "type",
+      "type": "enum",
+      "optionValue": "primary | success | warning | danger | info | default",
+      "options": [
+        "primary",
+        "success",
+        "warning",
+        "danger",
+        "info",
+        "default"
+      ],
+      "defaultValue": "default"
+    },
+    {
+      "name": "underline",
+      "desc": "when underlines should appear",
+      "type": "enum",
+      "optionValue": "always | hover | never | boolean",
+      "options": [
+        "always",
+        "hover",
+        "never",
+        "boolean"
+      ],
+      "defaultValue": "hover"
+    },
+    {
+      "name": "disabled",
+      "desc": "whether the component is disabled",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "href",
+      "desc": "same as native hyperlink's href",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "target",
+      "desc": "same as native hyperlink's target",
+      "type": "enum",
+      "optionValue": "_blank | _parent | _self | _top",
+      "options": [
+        "_blank",
+        "_parent",
+        "_self",
+        "_top"
+      ],
+      "defaultValue": "\\_self"
+    },
+    {
+      "name": "icon",
+      "desc": "icon component",
+      "type": "string / Component",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "default",
+      "desc": "customize default content"
+    },
+    {
+      "name": "icon",
+      "desc": "customize icon component"
+    }
+  ],
+  "events": [],
+  "methods": []
+}

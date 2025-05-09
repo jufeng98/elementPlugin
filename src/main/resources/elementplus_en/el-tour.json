@@ -1,0 +1,185 @@
+{
+  "name": "el-tour",
+  "attributes": [
+    {
+      "name": "append-to",
+      "desc": "which element the TourContent appends to",
+      "type": "CSSSelector / HTMLElement",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "body"
+    },
+    {
+      "name": "show-arrow",
+      "desc": "whether to show the arrow",
+      "type": "",
+      "optionValue": "boolean",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "placement",
+      "desc": "position of the guide card relative to the target element",
+      "type": "enum",
+      "optionValue": "top | top-start | top-end | bottom | bottom-start | bottom-end | left | left-start | left-end | right | right-start | right-end",
+      "options": [
+        "top",
+        "top-start",
+        "top-end",
+        "bottom",
+        "bottom-start",
+        "bottom-end",
+        "left",
+        "left-start",
+        "left-end",
+        "right",
+        "right-start",
+        "right-end"
+      ],
+      "defaultValue": "bottom"
+    },
+    {
+      "name": "content-style",
+      "desc": "custom style for content",
+      "type": "",
+      "optionValue": "CSSProperties",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "mask",
+      "desc": "whether to enable masking, change mask style and fill color by pass custom props",
+      "type": "",
+      "optionValue": "boolean",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "gap",
+      "desc": "transparent gap between mask and target",
+      "type": "",
+      "optionValue": "TourGap",
+      "options": [],
+      "defaultValue": "^[Object]{ offset: 6, radius: 2}"
+    },
+    {
+      "name": "type",
+      "desc": "type, affects the background color and text color",
+      "type": "",
+      "optionValue": "default",
+      "options": [],
+      "defaultValue": "default"
+    },
+    {
+      "name": "model-value",
+      "desc": "open tour",
+      "type": "",
+      "optionValue": "boolean",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "v-model",
+      "desc": "open tour",
+      "type": "",
+      "optionValue": "boolean",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "current",
+      "desc": "what is the current step",
+      "type": "",
+      "optionValue": "number",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "v-model:current",
+      "desc": "what is the current step",
+      "type": "",
+      "optionValue": "number",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "scroll-into-view-options",
+      "desc": "support pass custom scrollIntoView options",
+      "type": "",
+      "optionValue": "boolean",
+      "options": [],
+      "defaultValue": "^[Object]{ block: center }"
+    },
+    {
+      "name": "z-index",
+      "desc": "Tour's zIndex",
+      "type": "",
+      "optionValue": "number",
+      "options": [],
+      "defaultValue": "2001"
+    },
+    {
+      "name": "show-close",
+      "desc": "whether to show a close button",
+      "type": "",
+      "optionValue": "boolean",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "close-icon",
+      "desc": "custom close icon, default is Close",
+      "type": "",
+      "optionValue": "string",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "close-on-press-escape",
+      "desc": "whether the Dialog can be closed by pressing ESC",
+      "type": "",
+      "optionValue": "boolean",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "target-area-clickable",
+      "desc": "whether the target element can be clickable, when using mask",
+      "type": "",
+      "optionValue": "boolean",
+      "options": [],
+      "defaultValue": "true"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "default",
+      "desc": "tourStep component list"
+    },
+    {
+      "name": "indicators",
+      "desc": "custom indicator, The scope parameter is `{ current, total }`"
+    }
+  ],
+  "events": [
+    {
+      "name": "@close",
+      "desc": "callback function on shutdown",
+      "param": "Function(current: number) => void"
+    },
+    {
+      "name": "@finish",
+      "desc": "callback function on finished",
+      "param": "Function() => void"
+    },
+    {
+      "name": "@change",
+      "desc": "callback when the step changes",
+      "param": "Function(current: number) => void"
+    }
+  ],
+  "methods": []
+}

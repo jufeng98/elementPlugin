@@ -1,0 +1,216 @@
+{
+  "name": "el-rate",
+  "attributes": [
+    {
+      "name": "model-value",
+      "desc": "binding value",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "0"
+    },
+    {
+      "name": "v-model",
+      "desc": "binding value",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "0"
+    },
+    {
+      "name": "max",
+      "desc": "max rating score",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "5"
+    },
+    {
+      "name": "size",
+      "desc": "size of Rate",
+      "type": "enum",
+      "optionValue": "large | default | small",
+      "options": [
+        "large",
+        "default",
+        "small"
+      ],
+      "defaultValue": "—"
+    },
+    {
+      "name": "disabled",
+      "desc": "whether Rate is read-only",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "allow-half",
+      "desc": "whether picking half start is allowed",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "low-threshold",
+      "desc": "threshold value between low and medium level. The value itself will be included in low level",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "2"
+    },
+    {
+      "name": "high-threshold",
+      "desc": "threshold value between medium and high level. The value itself will be included in high level",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "4"
+    },
+    {
+      "name": "colors",
+      "desc": "colors for icons. If array, it should have 3 elements, each of which corresponds with a score level, else if object, the key should be threshold value between two levels, and the value should be corresponding color",
+      "type": "object",
+      "optionValue": "string[] | Record<number, string>",
+      "options": [],
+      "defaultValue": "[#f7ba2a, #f7ba2a, #f7ba2a]"
+    },
+    {
+      "name": "void-color",
+      "desc": "color of unselected icons",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "#c6d1de"
+    },
+    {
+      "name": "disabled-void-color",
+      "desc": "color of unselected read-only icons",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "#eff2f7"
+    },
+    {
+      "name": "icons",
+      "desc": "icon components. If array, it should have 3 elements, each of which corresponds with a score level, else if object, the key should be threshold value between two levels, and the value should be corresponding icon component",
+      "type": "object",
+      "optionValue": "string[] | Component[] | Record<number, string | Component>",
+      "options": [],
+      "defaultValue": "[StarFilled, StarFilled, StarFilled]"
+    },
+    {
+      "name": "void-icon",
+      "desc": "component of unselected icons",
+      "type": "string / Component",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "Star"
+    },
+    {
+      "name": "disabled-void-icon",
+      "desc": "component of unselected read-only icons",
+      "type": "string / Component",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "StarFilled"
+    },
+    {
+      "name": "show-text",
+      "desc": "whether to display texts",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "show-score",
+      "desc": "whether to display current score. show-score and show-text cannot be true at the same time",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "text-color",
+      "desc": "color of texts",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "texts",
+      "desc": "text array",
+      "type": "array",
+      "optionValue": "string[]",
+      "options": [],
+      "defaultValue": "[Extremely bad, Disappointed, Fair, Satisfied, Surprise]"
+    },
+    {
+      "name": "score-template",
+      "desc": "score template",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "{value}"
+    },
+    {
+      "name": "clearable ^(2.2.18)",
+      "desc": "whether value can be reset to 0",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "id",
+      "desc": "native id attribute",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "aria-label ^(a11y) ^(2.7.2)",
+      "desc": "same as aria-label in Rate",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "label ^(a11y) ^(deprecated)",
+      "desc": "same as aria-label in Rate",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [],
+  "events": [
+    {
+      "name": "@change",
+      "desc": "Triggers when rate value is changed",
+      "param": "Function(value: number) => void"
+    }
+  ],
+  "methods": [
+    {
+      "name": "setCurrentValue",
+      "desc": "set current value",
+      "param": "Function(value: number) => void"
+    },
+    {
+      "name": "resetCurrentValue",
+      "desc": "reset current value",
+      "param": "Function() => void"
+    }
+  ]
+}

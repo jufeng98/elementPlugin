@@ -1,0 +1,285 @@
+{
+  "name": "el-tooltip",
+  "attributes": [
+    {
+      "name": "append-to",
+      "desc": "which element the tooltip CONTENT appends to",
+      "type": "CSSSelector / HTMLElement",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "effect",
+      "desc": "Tooltip theme, built-in theme: dark / light",
+      "type": "enum",
+      "optionValue": "dark | light",
+      "options": [
+        "dark",
+        "light"
+      ],
+      "defaultValue": "dark"
+    },
+    {
+      "name": "content",
+      "desc": "display content, can be overridden by slot#content",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "raw-content",
+      "desc": "whether content is treated as HTML string",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "placement",
+      "desc": "position of Tooltip",
+      "type": "enum",
+      "optionValue": "top | top-start | top-end | bottom | bottom-start | bottom-end | left | left-start | left-end | right | right-start | right-end",
+      "options": [
+        "top",
+        "top-start",
+        "top-end",
+        "bottom",
+        "bottom-start",
+        "bottom-end",
+        "left",
+        "left-start",
+        "left-end",
+        "right",
+        "right-start",
+        "right-end"
+      ],
+      "defaultValue": "bottom"
+    },
+    {
+      "name": "fallback-placements",
+      "desc": "<p>list of possible positions for Tooltip <a href=\"https://popper.js.org/docs/v2/modifiers/flip/#fallbackplacements\">popper.js</a></p>",
+      "type": "array",
+      "optionValue": "Placement[]",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "visible",
+      "desc": "visibility of Tooltip",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "v-model:visible",
+      "desc": "visibility of Tooltip",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "disabled",
+      "desc": "whether Tooltip is disabled",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "offset",
+      "desc": "offset of the Tooltip",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "12"
+    },
+    {
+      "name": "transition",
+      "desc": "animation name",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "popper-options",
+      "desc": "<p><a href=\"https://popper.js.org/docs/v2/\">popper.js</a> parameters</p>",
+      "type": "objectrefer to [popper.js(https://popper.js.org/docs/v2/) doc",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "{}"
+    },
+    {
+      "name": "arrow-offset ^(2.9.10)",
+      "desc": "Controls the offset (padding) of the tooltip’s arrow relative to the popper.",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "5"
+    },
+    {
+      "name": "show-after",
+      "desc": "delay of appearance, in millisecond",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "0"
+    },
+    {
+      "name": "show-arrow",
+      "desc": "whether the tooltip content has an arrow",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "hide-after",
+      "desc": "delay of disappear, in millisecond",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "200"
+    },
+    {
+      "name": "auto-close",
+      "desc": "timeout in milliseconds to hide tooltip",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "0"
+    },
+    {
+      "name": "popper-class",
+      "desc": "custom class name for Tooltip's popper",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "enterable",
+      "desc": "whether the mouse can enter the tooltip",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "teleported",
+      "desc": "whether tooltip content is teleported, if true it will be teleported to where append-to sets",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "trigger",
+      "desc": "How should the tooltip be triggered (to show)",
+      "type": "enum",
+      "optionValue": "hover | click | focus | contextmenu",
+      "options": [
+        "hover",
+        "click",
+        "focus",
+        "contextmenu"
+      ],
+      "defaultValue": "hover"
+    },
+    {
+      "name": "virtual-triggering",
+      "desc": "Indicates whether virtual triggering is enabled",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "virtual-ref",
+      "desc": "Indicates the reference element to which the tooltip is attached",
+      "type": "HTMLElement",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "trigger-keys",
+      "desc": "When you click the mouse to focus on the trigger element, you can define a set of keyboard codes to control the display of tooltip through the keyboard",
+      "type": "Array",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "[Enter,Space]"
+    },
+    {
+      "name": "persistent",
+      "desc": "when tooltip inactive and persistent is false , popconfirm will be destroyed",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "aria-label ^(a11y)",
+      "desc": "same as aria-label",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "default",
+      "desc": "Tooltip triggering & reference element"
+    },
+    {
+      "name": "content",
+      "desc": "customize content"
+    }
+  ],
+  "events": [],
+  "methods": [
+    {
+      "name": "popperRef",
+      "desc": "el-popper component instance",
+      "param": "objectRef<PopperInstance | undefined>"
+    },
+    {
+      "name": "contentRef",
+      "desc": "el-tooltip-content component instance",
+      "param": "objectRef<TooltipContentInstance | undefined>"
+    },
+    {
+      "name": "isFocusInsideContent",
+      "desc": "validate current focus event is trigger inside el-tooltip-content",
+      "param": "Function() => boolean | undefined"
+    },
+    {
+      "name": "updatePopper",
+      "desc": "update el-popper component instance",
+      "param": "Function() => void"
+    },
+    {
+      "name": "onOpen",
+      "desc": "expose onOpen function to mange el-tooltip open state",
+      "param": "Function(event?: Event | undefined) => void"
+    },
+    {
+      "name": "onClose",
+      "desc": "expose onClose function to mange el-tooltip open state",
+      "param": "Function(event?: Event | undefined) => void"
+    },
+    {
+      "name": "hide",
+      "desc": "expose hide function",
+      "param": "Function(event?: Event | undefined) => void"
+    }
+  ]
+}

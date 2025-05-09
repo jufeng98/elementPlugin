@@ -1,0 +1,88 @@
+{
+  "name": "el-watermark",
+  "attributes": [
+    {
+      "name": "width",
+      "desc": "The width of the watermark, the default value of content is its own width",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "120"
+    },
+    {
+      "name": "height",
+      "desc": "The height of the watermark, the default value of content is its own height",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "64"
+    },
+    {
+      "name": "rotate",
+      "desc": "When the watermark is drawn, the rotation Angle, unit °",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "-22"
+    },
+    {
+      "name": "zIndex",
+      "desc": "The z-index of the appended watermark element",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "9"
+    },
+    {
+      "name": "image",
+      "desc": "Image source, it is recommended to export 2x or 3x image, high priority",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "content",
+      "desc": "Watermark text content",
+      "type": "string/object",
+      "optionValue": "string[]",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "font",
+      "desc": "Text style",
+      "type": "[Font(#font)",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "[Font](#font)"
+    },
+    {
+      "name": "gap",
+      "desc": "The spacing between watermarks",
+      "type": "object",
+      "optionValue": "[number, number]",
+      "options": [],
+      "defaultValue": "\\[100, 100\\]"
+    },
+    {
+      "name": "offset",
+      "desc": "The offset of the watermark from the upper left corner of the container. The default is gap/2",
+      "type": "object",
+      "optionValue": "[number, number]",
+      "options": [],
+      "defaultValue": "\\[gap\\[0\\]/2, gap\\[1\\]/2\\]"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "default",
+      "desc": "container for adding watermark"
+    }
+  ],
+  "events": [],
+  "methods": []
+}

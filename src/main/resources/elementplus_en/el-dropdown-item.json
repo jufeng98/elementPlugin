@@ -1,0 +1,48 @@
+{
+  "name": "el-dropdown-item",
+  "attributes": [
+    {
+      "name": "command",
+      "desc": "a command to be dispatched to Dropdown's command callback",
+      "type": "string / number / object",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "disabled",
+      "desc": "whether the item is disabled",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "divided",
+      "desc": "whether a divider is displayed",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "icon",
+      "desc": "custom icon",
+      "type": "string / Component",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "default",
+      "desc": "customize of Dropdown Item"
+    }
+  ],
+  "events": [],
+  "methods": []
+}

@@ -1,0 +1,15 @@
+{
+  "name": "el-dropdown-menu",
+  "attributes": [],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "default",
+      "desc": "content of Dropdown Menu"
+    }
+  ],
+  "events": [],
+  "methods": []
+}

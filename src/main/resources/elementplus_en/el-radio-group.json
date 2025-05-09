@@ -1,0 +1,110 @@
+{
+  "name": "el-radio-group",
+  "attributes": [
+    {
+      "name": "model-value",
+      "desc": "binding value",
+      "type": "string / number / boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "v-model",
+      "desc": "binding value",
+      "type": "string / number / boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "size",
+      "desc": "the size of radio buttons or bordered radios",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "default"
+    },
+    {
+      "name": "disabled",
+      "desc": "whether the nesting radios are disabled",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "text-color",
+      "desc": "font color when button is active",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "#ffffff"
+    },
+    {
+      "name": "fill",
+      "desc": "border and background color when button is active",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "#409eff"
+    },
+    {
+      "name": "validate-event",
+      "desc": "whether to trigger form validation",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "aria-label ^(a11y) ^(2.7.2)",
+      "desc": "same as aria-label in RadioGroup",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "name",
+      "desc": "native name attribute",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "id",
+      "desc": "native id attribute",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "label ^(a11y) ^(deprecated)",
+      "desc": "same as aria-label in RadioGroup",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "default",
+      "desc": "customize default content"
+    }
+  ],
+  "events": [
+    {
+      "name": "@change",
+      "desc": "triggers when the bound value changes",
+      "param": "Function(value: string | number | boolean) => void"
+    }
+  ],
+  "methods": []
+}

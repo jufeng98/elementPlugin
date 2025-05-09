@@ -1,0 +1,195 @@
+{
+  "name": "el-mention",
+  "attributes": [
+    {
+      "name": "options",
+      "desc": "mention options list",
+      "type": "array",
+      "optionValue": "MentionOption[]",
+      "options": [],
+      "defaultValue": "[]"
+    },
+    {
+      "name": "prefix",
+      "desc": "prefix character to trigger mentions. The string length must be exactly 1",
+      "type": "string \\| array",
+      "optionValue": "string[]",
+      "options": [],
+      "defaultValue": "@"
+    },
+    {
+      "name": "split",
+      "desc": "character to split mentions. The string length must be exactly 1",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": " "
+    },
+    {
+      "name": "filter-option",
+      "desc": "customize filter option logic",
+      "type": "false \\| Function",
+      "optionValue": "(pattern: string, option: MentionOption) => boolean",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "placement",
+      "desc": "set popup placement",
+      "type": "string",
+      "optionValue": "bottom | top",
+      "options": [
+        "bottom",
+        "top"
+      ],
+      "defaultValue": "bottom"
+    },
+    {
+      "name": "show-arrow",
+      "desc": "whether the dropdown panel has an arrow",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "offset",
+      "desc": "offset of the dropdown panel",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "0"
+    },
+    {
+      "name": "whole",
+      "desc": "when backspace is pressed to delete, whether the mention content is deleted as a whole",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "check-is-whole",
+      "desc": "when backspace is pressed to delete, check if the mention is a whole",
+      "type": "Function",
+      "optionValue": "(pattern: string, prefix: string) => boolean",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "loading",
+      "desc": "whether the dropdown panel of mentions is in a loading state",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "model-value",
+      "desc": "input value",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "v-model",
+      "desc": "input value",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "popper-class",
+      "desc": "custom class name for dropdown panel",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "popper-options",
+      "desc": "<p><a href=\"https://popper.js.org/docs/v2/\">popper.js</a> parameters</p>",
+      "type": "object refer to [popper.js doc(https://popper.js.org/docs/v2/)",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "[input props](.",
+      "desc": "—",
+      "type": "—",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "input.md#attributes)",
+      "desc": "—",
+      "type": "—",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "label",
+      "desc": "content as option label"
+    },
+    {
+      "name": "loading",
+      "desc": "content as option loading"
+    },
+    {
+      "name": "header",
+      "desc": "content at the top of the dropdown"
+    },
+    {
+      "name": "footer",
+      "desc": "content at the bottom of the dropdown"
+    },
+    {
+      "name": "[input slots](./input.md#slots)",
+      "desc": "—"
+    }
+  ],
+  "events": [
+    {
+      "name": "@search",
+      "desc": "trigger when prefix hit",
+      "param": "Function(pattern: string, prefix: string) => void"
+    },
+    {
+      "name": "@select",
+      "desc": "trigger when user select the option",
+      "param": "Function(option: MentionOption, prefix: string) => void"
+    },
+    {
+      "name": "@[input events](./input.md#events)",
+      "desc": "—",
+      "param": "—"
+    }
+  ],
+  "methods": [
+    {
+      "name": "input",
+      "desc": "el-input component instance",
+      "param": "objectRef<InputInstance | null>"
+    },
+    {
+      "name": "tooltip",
+      "desc": "el-tooltip component instance",
+      "param": "objectRef<TooltipInstance | null>"
+    },
+    {
+      "name": "dropdownVisible ^(2.8.5)",
+      "desc": "tooltip display status",
+      "param": "objectComputedRef<boolean>"
+    }
+  ]
+}

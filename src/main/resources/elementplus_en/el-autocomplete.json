@@ -1,0 +1,300 @@
+{
+  "name": "el-autocomplete",
+  "attributes": [
+    {
+      "name": "model-value",
+      "desc": "binding value",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "v-model",
+      "desc": "binding value",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "placeholder",
+      "desc": "the placeholder of Autocomplete",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "clearable",
+      "desc": "whether to show clear button",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "disabled",
+      "desc": "whether Autocomplete is disabled",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "value-key",
+      "desc": "key name of the input suggestion object for display",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "value"
+    },
+    {
+      "name": "debounce",
+      "desc": "debounce delay when typing, in milliseconds",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "300"
+    },
+    {
+      "name": "placement",
+      "desc": "placement of the popup menu",
+      "type": "enum",
+      "optionValue": "top | top- start | top-end | bottom | bottom-start | bottom-end",
+      "options": [
+        "top",
+        "top- start",
+        "top-end",
+        "bottom",
+        "bottom-start",
+        "bottom-end"
+      ],
+      "defaultValue": "bottom-start"
+    },
+    {
+      "name": "fetch-suggestions",
+      "desc": "a method to fetch input suggestions. When suggestions are ready, invoke callback(data:[]) to return them to Autocomplete",
+      "type": "Array / Function",
+      "optionValue": "(queryString: string, callback: callbackfn) => void",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "trigger-on-focus",
+      "desc": "whether show suggestions when input focus",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "select-when-unmatched",
+      "desc": "whether to emit a select event on enter when there is no autocomplete match",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "name",
+      "desc": "same as name in native input",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "aria-label ^(a11y) ^(2.7.2)",
+      "desc": "native aria-label attribute",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "hide-loading",
+      "desc": "whether to hide the loading icon in remote search",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "popper-class",
+      "desc": "custom class name for autocomplete's dropdown",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "teleported",
+      "desc": "whether select dropdown is teleported to the body",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "append-to ^(2.9.9)",
+      "desc": "which select dropdown appends to",
+      "type": "CSSSelector / HTMLElement",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "highlight-first-item",
+      "desc": "whether to highlight first item in remote search suggestions by default",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "fit-input-width",
+      "desc": "whether the width of the dropdown is the same as the input",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "popper-append-to-body ^(deprecated)",
+      "desc": "whether to append the dropdown to body. If the positioning of the dropdown is wrong, you can try to set this prop to false",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "default",
+      "desc": "custom content for input suggestions"
+    },
+    {
+      "name": "prefix",
+      "desc": "content as Input prefix"
+    },
+    {
+      "name": "suffix",
+      "desc": "content as Input suffix"
+    },
+    {
+      "name": "prepend",
+      "desc": "content to prepend before Input"
+    },
+    {
+      "name": "append",
+      "desc": "content to append after Input"
+    },
+    {
+      "name": "loading ^(2.5.0)",
+      "desc": "override loading content"
+    }
+  ],
+  "events": [
+    {
+      "name": "@blur",
+      "desc": "triggers when Input blurs",
+      "param": "Function(event: FocusEvent) => void"
+    },
+    {
+      "name": "@focus",
+      "desc": "triggers when Input focuses",
+      "param": "Function(event: FocusEvent) => void"
+    },
+    {
+      "name": "@input",
+      "desc": "triggers when the Input value change",
+      "param": "Function(value: string | number) => void"
+    },
+    {
+      "name": "@clear",
+      "desc": "triggers when the Input is cleared by clicking the clear button",
+      "param": "Function() => void"
+    },
+    {
+      "name": "@select",
+      "desc": "triggers when a suggestion is clicked",
+      "param": "Function(item: typeof modelValue | any) => void"
+    },
+    {
+      "name": "@change",
+      "desc": "triggers when the icon inside Input value change",
+      "param": "Function(value: string | number) => void"
+    }
+  ],
+  "methods": [
+    {
+      "name": "activated",
+      "desc": "if autocomplete activated",
+      "param": "objectRef<boolean>"
+    },
+    {
+      "name": "blur",
+      "desc": "blur the input element",
+      "param": "Function() => void"
+    },
+    {
+      "name": "close",
+      "desc": "collapse suggestion list",
+      "param": "Function() => void"
+    },
+    {
+      "name": "focus",
+      "desc": "focus the input element",
+      "param": "Function() => void"
+    },
+    {
+      "name": "handleSelect",
+      "desc": "triggers when a suggestion is clicked",
+      "param": "Function(item: any) => promise<void>"
+    },
+    {
+      "name": "handleKeyEnter",
+      "desc": "handle keyboard enter event",
+      "param": "Function() => promise<void>"
+    },
+    {
+      "name": "highlightedIndex",
+      "desc": "the index of the currently highlighted item",
+      "param": "objectRef<number>"
+    },
+    {
+      "name": "highlight",
+      "desc": "highlight an item in a suggestion",
+      "param": "Function(itemIndex: number) => void"
+    },
+    {
+      "name": "inputRef",
+      "desc": "el-input component instance",
+      "param": "objectRef<ElInputInstance>"
+    },
+    {
+      "name": "loading",
+      "desc": "remote search loading indicator",
+      "param": "objectRef<boolean>"
+    },
+    {
+      "name": "popperRef",
+      "desc": "el-tooltip component instance",
+      "param": "objectRef<ElTooltipInstance>"
+    },
+    {
+      "name": "suggestions",
+      "desc": "fetch suggestions result",
+      "param": "objectRef<record<string, any>>"
+    },
+    {
+      "name": "getData ^(2.8.4)",
+      "desc": "loading suggestion list",
+      "param": "Function(queryString: string) => void"
+    }
+  ]
+}

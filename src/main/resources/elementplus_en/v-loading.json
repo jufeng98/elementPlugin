@@ -1,0 +1,164 @@
+{
+  "name": "v-loading",
+  "attributes": [
+    {
+      "name": "v-loading",
+      "desc": "show animation while loading data",
+      "type": "boolean / LoadingOptions",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "element-loading-text",
+      "desc": "loading text that displays under the spinner",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "element-loading-spinner",
+      "desc": "icon of the custom spinner",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "element-loading-svg",
+      "desc": "icon of the custom spinner (same as element-loading-spinner)",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "element-loading-svg-view-box",
+      "desc": "sets the viewBox attribute for loading svg element",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "element-loading-background",
+      "desc": "background color of the mask",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "element-loading-custom-class",
+      "desc": "custom class name for loading",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    }
+  ],
+  "props": [],
+  "options": [
+    {
+      "name": "target",
+      "desc": "the DOM node Loading needs to cover. Accepts a DOM object or a string. If it's a string, it will be passed to document.querySelector to get the corresponding DOM node",
+      "type": "string / HTMLElement",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "document.body"
+    },
+    {
+      "name": "body",
+      "desc": "same as the body modifier of v-loading",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "fullscreen",
+      "desc": "same as the fullscreen modifier of v-loading",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "lock",
+      "desc": "same as the lock modifier of v-loading",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "text",
+      "desc": "loading text that displays under the spinner",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "spinner",
+      "desc": "class name of the custom spinner",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "background",
+      "desc": "background color of the mask",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "customClass",
+      "desc": "custom class name for loading",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "svg",
+      "desc": "custom SVG element to override the default loading spinner",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "svgViewBox",
+      "desc": "sets the viewBox attribute for loading svg element",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "beforeClose ^(2.7.8)",
+      "desc": "Function executed before loading attempts to close. If this function returns false, the closing process will be aborted. Otherwise, the loading will close.",
+      "type": "Function",
+      "optionValue": "() => boolean",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "closed ^(2.7.8)",
+      "desc": "Function triggered after loading has completely closed",
+      "type": "Function",
+      "optionValue": "() => void",
+      "options": [],
+      "defaultValue": "—"
+    }
+  ],
+  "shortcuts": [],
+  "slots": [],
+  "events": [],
+  "methods": []
+}

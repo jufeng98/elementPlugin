@@ -1,0 +1,340 @@
+{
+  "name": "el-table-v2",
+  "attributes": [
+    {
+      "name": "cache",
+      "desc": "Number of rows rendered in advance to boost the performance",
+      "type": "",
+      "optionValue": "number",
+      "options": [],
+      "defaultValue": "2"
+    },
+    {
+      "name": "estimated-row-height",
+      "desc": "The estimated row height for rendering dynamic height rows",
+      "type": "",
+      "optionValue": "number",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "header-class",
+      "desc": "Customized class name passed to header wrapper",
+      "type": "",
+      "optionValue": "string",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "header-props",
+      "desc": "Customized props name passed to header component",
+      "type": "",
+      "optionValue": "object",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "header-cell-props",
+      "desc": "Customized props name passed to header cell component",
+      "type": "",
+      "optionValue": "object",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "header-height",
+      "desc": "The height of the header is set by height. If given an array, it renders header rows equal to its length",
+      "type": "",
+      "optionValue": "number",
+      "options": [],
+      "defaultValue": "50"
+    },
+    {
+      "name": "footer-height",
+      "desc": "The height of the footer element, when provided, will be part to the calculation of the table's height.",
+      "type": "",
+      "optionValue": "number",
+      "options": [],
+      "defaultValue": "0"
+    },
+    {
+      "name": "row-class",
+      "desc": "Customized class name passed to row wrapper",
+      "type": "",
+      "optionValue": "string",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "row-key",
+      "desc": "The key of each row, if not provided, will be the index of the row",
+      "type": "",
+      "optionValue": "string",
+      "options": [],
+      "defaultValue": "id"
+    },
+    {
+      "name": "row-props",
+      "desc": "Customized props name passed to row component",
+      "type": "",
+      "optionValue": "object",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "row-height",
+      "desc": "The height of each row, used for calculating the total height of the table",
+      "type": "",
+      "optionValue": "number",
+      "options": [],
+      "defaultValue": "50"
+    },
+    {
+      "name": "row-event-handlers",
+      "desc": "A collection of handlers attached to each row",
+      "type": "",
+      "optionValue": "object",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "cell-props",
+      "desc": "extra props passed to each cell (except header cells)",
+      "type": "",
+      "optionValue": "object",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "columns",
+      "desc": "An array of column definitions.",
+      "type": "[Column[(#column-attribute)",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "data",
+      "desc": "An array of data to be rendered in the table.",
+      "type": "[Data[(#typings)",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "[]"
+    },
+    {
+      "name": "data-getter",
+      "desc": "A method to customize data fetch from the data source.",
+      "type": "Function<[DataGetter\\<T\\>(#typings)>",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "fixed-data",
+      "desc": "Data for rendering rows above the main content and below the header",
+      "type": "",
+      "optionValue": "object",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "expand-column-key",
+      "desc": "The column key indicates which row is expandable",
+      "type": "",
+      "optionValue": "string",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "expanded-row-keys",
+      "desc": "An array of keys for expanded rows, can be used with v-model",
+      "type": "[KeyType[(#typings)",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "default-expanded-row-keys",
+      "desc": "An array of keys for default expanded rows, **NON REACTIVE**",
+      "type": "[KeyType[(#typings)",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "class",
+      "desc": "Class name for the virtual table, will be applied to all three tables (left, right, main)",
+      "type": "",
+      "optionValue": "string",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "fixed",
+      "desc": "Flag indicates the table column's width to be fixed or flexible.",
+      "type": "",
+      "optionValue": "boolean",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "width ^(required)",
+      "desc": "Width of the table",
+      "type": "",
+      "optionValue": "number",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "height ^(required)",
+      "desc": "Height of the table",
+      "type": "",
+      "optionValue": "number",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "max-height",
+      "desc": "Maximum height of the table",
+      "type": "",
+      "optionValue": "number",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "indent-size",
+      "desc": "horizontal indentation of tree table",
+      "type": "",
+      "optionValue": "number",
+      "options": [],
+      "defaultValue": "12"
+    },
+    {
+      "name": "h-scrollbar-size",
+      "desc": "Indicates the horizontal scrollbar's size for the table, used to prevent the horizontal and vertical scrollbar to collapse",
+      "type": "",
+      "optionValue": "number",
+      "options": [],
+      "defaultValue": "6"
+    },
+    {
+      "name": "v-scrollbar-size",
+      "desc": "Indicates the vertical scrollbar's size for the table, used to prevent the horizontal and vertical scrollbar to collapse",
+      "type": "",
+      "optionValue": "number",
+      "options": [],
+      "defaultValue": "6"
+    },
+    {
+      "name": "scrollbar-always-on",
+      "desc": "If true, the scrollbar will always be shown instead of when mouse is placed above the table",
+      "type": "",
+      "optionValue": "boolean",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "sort-by",
+      "desc": "Sort indicator",
+      "type": "",
+      "optionValue": "object",
+      "options": [],
+      "defaultValue": "{}"
+    },
+    {
+      "name": "sort-state",
+      "desc": "Multiple sort indicator",
+      "type": "",
+      "optionValue": "object",
+      "options": [],
+      "defaultValue": "undefined"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "cell",
+      "desc": "`object`\\<[CellSlotProps](#typings)\\>"
+    },
+    {
+      "name": "header",
+      "desc": "`object`\\<[HeaderSlotProps](#typings)\\>"
+    },
+    {
+      "name": "header-cell",
+      "desc": "`object`\\<[HeaderCellSlotProps](#typings)\\>"
+    },
+    {
+      "name": "row",
+      "desc": "`object`\\<[RowSlotProps](#typings)\\>"
+    },
+    {
+      "name": "footer",
+      "desc": "—"
+    },
+    {
+      "name": "empty",
+      "desc": "—"
+    },
+    {
+      "name": "overlay",
+      "desc": "—"
+    }
+  ],
+  "events": [
+    {
+      "name": "@column-sort",
+      "desc": "Invoked when column sorted",
+      "param": "object<[ColumnSortParam(#typings)>"
+    },
+    {
+      "name": "@expanded-rows-change",
+      "desc": "Invoked when expanded rows changed",
+      "param": "[KeyType[(#typings)"
+    },
+    {
+      "name": "@end-reached",
+      "desc": "Invoked when the end of the table is reached. The callback contain the remain distance, it is the usually the scrollbar height.",
+      "param": "Function(remainDistance: number) => void"
+    },
+    {
+      "name": "@scroll",
+      "desc": "Invoked after scrolling",
+      "param": "object<[ScrollParams(#typings)>"
+    },
+    {
+      "name": "@rows-rendered",
+      "desc": "Invoked when rows are rendered",
+      "param": "object<[RowsRenderedParams(#typings)>"
+    },
+    {
+      "name": "@row-expand",
+      "desc": "Invoked when expand/collapse the tree node by clicking the arrow icon",
+      "param": "object<[RowExpandParams(#typings)>"
+    }
+  ],
+  "methods": [
+    {
+      "name": "scrollTo",
+      "desc": "Scroll to a given position",
+      "param": "Function(param: {scrollLeft?: number, scrollTop?: number}) => void"
+    },
+    {
+      "name": "scrollToLeft",
+      "desc": "Scroll to a given horizontal position",
+      "param": "Function(scrollLeft: number) => void"
+    },
+    {
+      "name": "scrollToTop",
+      "desc": "Scroll to a given vertical position",
+      "param": "Function(scrollTop: number) => void"
+    },
+    {
+      "name": "scrollToRow",
+      "desc": "scroll to a given row with specified scroll strategy",
+      "param": "Function(row: number, strategy?: center | end | start | smart) => void"
+    }
+  ]
+}

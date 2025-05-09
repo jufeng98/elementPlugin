@@ -1,0 +1,62 @@
+{
+  "name": "el-step",
+  "attributes": [
+    {
+      "name": "title",
+      "desc": "step title",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "description",
+      "desc": "step description",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "icon",
+      "desc": "step custom icon. Icons can be passed via named slot as well",
+      "type": "string / Component",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "status",
+      "desc": "current status. It will be automatically set by Steps if not configured.",
+      "type": "enum",
+      "optionValue": " | wait | process | finish | error | success",
+      "options": [
+        "wait",
+        "process",
+        "finish",
+        "error",
+        "success"
+      ],
+      "defaultValue": ""
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "icon",
+      "desc": "custom icon"
+    },
+    {
+      "name": "title",
+      "desc": "step title"
+    },
+    {
+      "name": "description",
+      "desc": "step description"
+    }
+  ],
+  "events": [],
+  "methods": []
+}

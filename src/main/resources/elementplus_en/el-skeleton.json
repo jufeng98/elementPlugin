@@ -1,0 +1,60 @@
+{
+  "name": "el-skeleton",
+  "attributes": [
+    {
+      "name": "animated",
+      "desc": "whether showing the animation",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "count",
+      "desc": "how many fake items to render to the DOM",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "1"
+    },
+    {
+      "name": "loading",
+      "desc": "whether showing the real DOM",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "rows",
+      "desc": "numbers of the row, only useful when no template slot were given",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "3"
+    },
+    {
+      "name": "throttle",
+      "desc": "rendering delay in milliseconds. Numbers represent delayed display, and can also be set to delay hide, for example { leading: 500, trailing: 500 }. When needing to control the initial value of loading, you can set { initVal: true }",
+      "type": "number / object",
+      "optionValue": "{ leading?: number, trailing?: number, initVal?: boolean }",
+      "options": [],
+      "defaultValue": "0"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "default",
+      "desc": "real rendering DOM"
+    },
+    {
+      "name": "template",
+      "desc": "content as rendering skeleton template"
+    }
+  ],
+  "events": [],
+  "methods": []
+}
