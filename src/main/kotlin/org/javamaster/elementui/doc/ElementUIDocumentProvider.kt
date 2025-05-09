@@ -6,7 +6,7 @@ import com.intellij.psi.html.HtmlTag
 import com.intellij.psi.xml.XmlAttribute
 import com.intellij.util.SmartList
 import org.javamaster.elementui.enums.AttributeType
-import org.javamaster.elementui.nls.NlsBundle
+import org.javamaster.elementui.service.ElementDetectService
 import org.javamaster.elementui.support.ElementUITagCacheHelper
 
 /**
@@ -15,7 +15,8 @@ import org.javamaster.elementui.support.ElementUITagCacheHelper
 class ElementUIDocumentProvider : AbstractDocumentationProvider() {
 
     override fun getUrlFor(element: PsiElement?, originalElement: PsiElement?): List<String> {
-        val parent = element?.parent
+        val parent = element?.parent ?: return emptyList()
+
         val name = if (element is XmlAttribute && parent is HtmlTag) {
             val name = element.name
             when (name) {
@@ -70,18 +71,24 @@ class ElementUIDocumentProvider : AbstractDocumentationProvider() {
 
         name ?: return emptyList()
 
-        return SmartList("https://element.eleme.cn/#/${NlsBundle.region}/component/$name")
+        val project = element.project
+        val elementDetectService = ElementDetectService.getInstance(project)
+
+        val url = elementDetectService.getUrl(name)
+
+        return SmartList(url)
     }
 
     override fun generateDoc(element: PsiElement?, originalElement: PsiElement?): String? {
         if (element is HtmlTag) {
-            return ElementUITagCacheHelper.getTagHtml(element.name)
+            return ElementUITagCacheHelper.getTagHtml(element.name, element.project)
         }
 
-        val parent = element!!.parent
+        val parent = element?.parent
         if (element is XmlAttribute && parent is HtmlTag) {
             val tagName = parent.name
             val name = element.name
+            val project = element.project
 
             val idx = name.indexOf(':')
             val startIndex = idx + 1
@@ -104,18 +111,18 @@ class ElementUIDocumentProvider : AbstractDocumentationProvider() {
             }
 
             if (attrName == ElementUITagCacheHelper.V_LOADING) {
-                return ElementUITagCacheHelper.getVLoadingAttrHtml()
+                return ElementUITagCacheHelper.getVLoadingAttrHtml(project)
             }
 
-            val descriptor = ElementUITagCacheHelper.getTagAttr(tagName, attrName) ?: return null
+            val descriptor = ElementUITagCacheHelper.getTagAttr(tagName, attrName, project) ?: return null
 
             return when (descriptor.attributeType) {
                 AttributeType.PARAM -> {
-                    ElementUITagCacheHelper.getTagAttrHtml(tagName, attrName, descriptor)
+                    ElementUITagCacheHelper.getTagAttrHtml(tagName, attrName, descriptor, project)
                 }
 
                 AttributeType.EVENT -> {
-                    ElementUITagCacheHelper.getTagEventAttrHtml(tagName, attrName, descriptor)
+                    ElementUITagCacheHelper.getTagEventAttrHtml(tagName, attrName, descriptor, project)
                 }
             }
         }

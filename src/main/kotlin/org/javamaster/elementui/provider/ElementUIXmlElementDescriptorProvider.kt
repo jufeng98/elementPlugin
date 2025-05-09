@@ -17,7 +17,7 @@ class ElementUIXmlElementDescriptorProvider : XmlElementDescriptorProvider {
             return null
         }
 
-        ElementUITagCacheHelper.getTagHtml(xmlTag.name) ?: return null
+        ElementUITagCacheHelper.getTagHtml(xmlTag.name, xmlTag.project) ?: return null
 
         val nsDescriptor = xmlTag.getNSDescriptor(xmlTag.namespace, false)
 

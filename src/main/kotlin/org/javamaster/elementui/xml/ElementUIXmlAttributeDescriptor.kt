@@ -1,11 +1,13 @@
 package org.javamaster.elementui.xml
 
+import com.intellij.ide.impl.ProjectUtil
 import com.intellij.psi.PsiElement
 import com.intellij.psi.meta.PsiPresentableMetaData
 import com.intellij.psi.xml.XmlElement
 import com.intellij.xml.impl.BasicXmlAttributeDescriptor
 import com.intellij.xml.impl.XmlAttributeDescriptorEx
 import org.javamaster.elementui.enums.AttributeType
+import org.javamaster.elementui.service.ElementDetectService
 import org.javamaster.elementui.support.ElementUIIcons
 import org.jetbrains.annotations.NonNls
 import javax.swing.Icon
@@ -75,6 +77,10 @@ class ElementUIXmlAttributeDescriptor(
     }
 
     override fun getIcon(): Icon {
-        return ElementUIIcons.FILE
+        val project = ProjectUtil.getActiveProject() ?: return ElementUIIcons.FILE
+
+        val elementDetectService = ElementDetectService.getInstance(project)
+
+        return elementDetectService.icon
     }
 }
