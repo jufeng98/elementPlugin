@@ -1,11 +1,11 @@
 package org.javamaster.elementui.service
 
+import com.intellij.javascript.nodejs.packageJson.PackageJsonFileManager
 import com.intellij.openapi.components.Service
 import com.intellij.openapi.project.Project
+import com.intellij.openapi.vfs.readText
 import org.javamaster.elementui.nls.NlsBundle
 import org.javamaster.elementui.support.ElementUIIcons
-import java.io.File
-import java.nio.file.Files
 
 @Service(Service.Level.PROJECT)
 class ElementDetectService(private val project: Project) {
@@ -57,16 +57,15 @@ class ElementDetectService(private val project: Project) {
     }
 
     private fun detectElementPlus(): Boolean {
-        val basePath = project.basePath ?: return false
+        val packageJsonFileManager = PackageJsonFileManager.getInstance(project)
+        
+        val validPackageJsonFiles = packageJsonFileManager.validPackageJsonFiles
 
-        val file = File(basePath, "package.json")
-        if (!file.exists()) {
-            return false
+        return validPackageJsonFiles.any {
+            val content = it.readText()
+
+            return content.contains("element-plus")
         }
-
-        val content = Files.readString(file.toPath())
-
-        return content.contains("element-plus")
     }
 
     companion object {
