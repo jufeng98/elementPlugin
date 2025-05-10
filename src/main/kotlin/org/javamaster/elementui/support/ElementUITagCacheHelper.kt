@@ -97,6 +97,8 @@ object ElementUITagCacheHelper {
                 return null
             }
 
+            val elementDetectService = ElementDetectService.getInstance(project)
+
             val content = convertToHtml(uiComponent, project)
 
             val html = """
@@ -108,6 +110,7 @@ object ElementUITagCacheHelper {
                         </style>
                         <body>
                             $content
+                            <p>${elementDetectService.elementName}</p>
                         </body>
                     """.trimIndent()
             tagHtmlMap[tagName] = html
@@ -183,6 +186,8 @@ object ElementUITagCacheHelper {
             content += html
         }
 
+        val elementDetectService = ElementDetectService.getInstance(project)
+
         val html = """
                         <!DOCTYPE html>                
                         <style>
@@ -192,6 +197,7 @@ object ElementUITagCacheHelper {
                         </style>
                         <body>
                             $content
+                            <p>${elementDetectService.elementName}</p>
                         </body>
                     """.trimIndent()
         return html
@@ -212,6 +218,8 @@ object ElementUITagCacheHelper {
 
         val content = convertEvents(listOf(event))
 
+        val elementDetectService = ElementDetectService.getInstance(project)
+
         val html = """
                         <!DOCTYPE html>                
                         <style>
@@ -221,6 +229,7 @@ object ElementUITagCacheHelper {
                         </style>
                         <body>
                             $content
+                            <p>${elementDetectService.elementName}</p>
                         </body>
                     """.trimIndent()
         return html
