@@ -12,7 +12,7 @@
 - Support ElementUI / Element Plus tag attribute documentation
 - Suppress the Unknown html tag warnings of ElementUI / Element Plus tags
 
-## 为所有支持 JavaScript 的 JetBrains IDEs 提供 ElementUI 框架支持
+## 为所有支持 JavaScript 的 JetBrains IDEs 提供 ElementUI 框架 和 Element Plus 框架支持
 
 #### 注意: 在使用插件之前,请先安装 [Vue.js 插件](https://plugins.jetbrains.com/plugin/9442-vue-js).
 
