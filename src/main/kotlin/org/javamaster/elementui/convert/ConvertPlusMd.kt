@@ -15,7 +15,6 @@ import java.io.File
 import java.lang.reflect.Method
 import java.nio.file.Files
 import java.nio.file.Paths
-import java.util.regex.Pattern
 
 /**
  * @author yudong
@@ -236,7 +235,7 @@ object ConvertPlusMd {
     private fun saveComp(uiComponent: ElementUIComponent, lang: String) {
         val outPath = Paths.get("D:\\my_opensource_project\\elementPlugin\\src\\main\\resources\\elementplus_${lang}")
         val outFile = File(outPath.toFile(), uiComponent.name + ".json")
-        Files.writeString(outFile.toPath(), gson.toJson(uiComponent))
+        Files.writeString(outFile.toPath(), gson.toJson(uiComponent).replace("\n", "\r\n"))
     }
 
     private fun initAttr(it: MarkdownTableRow, clz: Class<out ElementUIComponentAttr>): List<ElementUIComponentAttr> {
@@ -270,11 +269,23 @@ object ConvertPlusMd {
                 attr.optionValue = strs[1].replace("'", "").replace("\\", "")
             }
 
-            attr.defaultValue = it.getCell(3)?.text?.trim()
-                ?.replace("`", "")
-                ?.replace("^[", "")
-                ?.replace("]", "")
-                ?.replace("'", "") ?: ""
+            val tmpDefault = it.getCell(3)?.text?.trim()
+            if (tmpDefault != null) {
+                if (tmpDefault == "[]") {
+                    attr.defaultValue = tmpDefault
+                } else {
+                    attr.defaultValue = tmpDefault
+                        .replace("`", "")
+                        .replace("'", "")
+                    if (attr.defaultValue.contains("^")) {
+                        attr.defaultValue = tmpDefault
+                            .replace("^[", "")
+                            .replace("]", "")
+                    }
+                }
+            } else {
+                attr.defaultValue = ""
+            }
 
             if (!attr.optionValue.contains("=>") && !attr.type.contains("object")) {
                 val split = attr.optionValue.split("|")
