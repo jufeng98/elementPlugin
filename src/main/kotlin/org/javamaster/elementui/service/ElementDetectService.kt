@@ -58,7 +58,7 @@ class ElementDetectService(private val project: Project) {
 
     private fun detectElementPlus(): Boolean {
         val packageJsonFileManager = PackageJsonFileManager.getInstance(project)
-        
+
         val validPackageJsonFiles = packageJsonFileManager.validPackageJsonFiles
 
         return validPackageJsonFiles.any {
