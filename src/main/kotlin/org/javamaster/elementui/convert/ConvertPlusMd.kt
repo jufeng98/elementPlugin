@@ -239,18 +239,6 @@ object ConvertPlusMd {
         Files.writeString(outFile.toPath(), gson.toJson(uiComponent))
     }
 
-    private val pattern = Pattern.compile("[a-zA-Z]+")
-
-    private fun extractAlpha(input: String): String {
-        val matcher = pattern.matcher(input)
-        val result = StringBuilder()
-        while (matcher.find()) {
-            result.append(matcher.group())
-        }
-
-        return result.toString()
-    }
-
     private fun initAttr(it: MarkdownTableRow, clz: Class<out ElementUIComponentAttr>): List<ElementUIComponentAttr> {
         val name = it.getCell(0)!!.text.trim()
 
@@ -259,9 +247,19 @@ object ConvertPlusMd {
         return names.map { innerIt ->
             val attr = clz.getDeclaredConstructor().newInstance()
 
-            attr.name = extractAlpha(innerIt)
+            val tmpNames = innerIt.trim().split("^")
+            attr.name = tmpNames[0].trim()
 
             attr.desc = it.getCell(1)!!.text.trim().replace("`", "")
+            if (tmpNames.size > 1) {
+                for ((index, s) in tmpNames.withIndex()) {
+                    if (index == 0) {
+                        continue
+                    }
+
+                    attr.desc += s
+                }
+            }
 
             val tmpStr = it.getCell(2)!!.text.trim()
             val strs = tmpStr.split("`")
@@ -272,7 +270,11 @@ object ConvertPlusMd {
                 attr.optionValue = strs[1].replace("'", "").replace("\\", "")
             }
 
-            attr.defaultValue = it.getCell(3)?.text?.trim()?.replace("`", "")?.replace("'", "") ?: ""
+            attr.defaultValue = it.getCell(3)?.text?.trim()
+                ?.replace("`", "")
+                ?.replace("^[", "")
+                ?.replace("]", "")
+                ?.replace("'", "") ?: ""
 
             if (!attr.optionValue.contains("=>") && !attr.type.contains("object")) {
                 val split = attr.optionValue.split("|")
@@ -298,8 +300,20 @@ object ConvertPlusMd {
     }
 
     private fun initEvent(event: ElementUIComponentEvent, it: MarkdownTableRow, s: String) {
-        event.name = s + it.getCell(0)!!.text.trim()
+        val tmpNames = (s + it.getCell(0)!!.text.trim()).split("^")
+        event.name = tmpNames[0].trim()
+
         event.desc = it.getCell(1)!!.text.trim()
+        if (tmpNames.size > 1) {
+            for ((index, tmp) in tmpNames.withIndex()) {
+                if (index == 0) {
+                    continue
+                }
+
+                event.desc += tmp
+            }
+        }
+
         event.param = it.getCell(2)?.text?.trim() ?: ""
         event.param = event.param.replace("^[", "").replace("]", "")
             .replace("`", "").replace("\\", "").replace("'", "")

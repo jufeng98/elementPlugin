@@ -12,13 +12,11 @@ import org.javamaster.elementui.support.ElementUITagCacheHelper
 class ElementUIXmlAttributeDescriptorsProvider : XmlAttributeDescriptorsProvider {
 
     override fun getAttributeDescriptors(xmlTag: XmlTag): Array<out XmlAttributeDescriptor> {
-        val tagName = xmlTag.name
-
         if (xmlTag !is HtmlTag) {
             return XmlAttributeDescriptor.EMPTY
         }
 
-        return ElementUITagCacheHelper.getTagAttrs(tagName, xmlTag.project)
+        return ElementUITagCacheHelper.getTagAttrs(xmlTag.name, xmlTag.project)
     }
 
     override fun getAttributeDescriptor(s: String, xmlTag: XmlTag): XmlAttributeDescriptor? {
