@@ -78,16 +78,16 @@
       "defaultValue": "—"
     },
     {
-      "name": "active-action-icon ^(2.3.9)",
-      "desc": "component of the icon displayed in action when in on state",
+      "name": "active-action-icon",
+      "desc": "component of the icon displayed in action when in on state(2.3.9)",
       "type": "string / Component",
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
     },
     {
-      "name": "inactive-action-icon ^(2.3.9)",
-      "desc": "component of the icon displayed in action when in off state",
+      "name": "inactive-action-icon",
+      "desc": "component of the icon displayed in action when in off state(2.3.9)",
       "type": "string / Component",
       "optionValue": "",
       "options": [],
@@ -166,40 +166,40 @@
       "defaultValue": "—"
     },
     {
-      "name": "aria-label ^(a11y) ^(2.7.2)",
-      "desc": "same as aria-label in native input",
+      "name": "aria-label",
+      "desc": "same as aria-label in native input(a11y) (2.7.2)",
       "type": "string",
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
     },
     {
-      "name": "active-color ^(deprecated)",
-      "desc": "background color when in on state ( use CSS var --el-switch-on-color instead )",
+      "name": "active-color",
+      "desc": "background color when in on state ( use CSS var --el-switch-on-color instead )(deprecated)",
       "type": "string",
       "optionValue": "",
       "options": [],
       "defaultValue": ""
     },
     {
-      "name": "inactive-color ^(deprecated)",
-      "desc": "background color when in off state ( use CSS var --el-switch-off-color instead )",
+      "name": "inactive-color",
+      "desc": "background color when in off state ( use CSS var --el-switch-off-color instead )(deprecated)",
       "type": "string",
       "optionValue": "",
       "options": [],
       "defaultValue": ""
     },
     {
-      "name": "border-color ^(deprecated)",
-      "desc": "border color of the switch ( use CSS var --el-switch-border-color instead )",
+      "name": "border-color",
+      "desc": "border color of the switch ( use CSS var --el-switch-border-color instead )(deprecated)",
       "type": "string",
       "optionValue": "",
       "options": [],
       "defaultValue": ""
     },
     {
-      "name": "label ^(a11y) ^(deprecated)",
-      "desc": "same as aria-label in native input",
+      "name": "label",
+      "desc": "same as aria-label in native input(a11y) (deprecated)",
       "type": "string",
       "optionValue": "",
       "options": [],

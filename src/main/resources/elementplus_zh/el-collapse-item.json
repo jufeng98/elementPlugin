@@ -18,8 +18,8 @@
       "defaultValue": ""
     },
     {
-      "name": "icon ^(2.8.3)",
-      "desc": "折叠项目的图标",
+      "name": "icon",
+      "desc": "折叠项目的图标(2.8.3)",
       "type": "string / Component",
       "optionValue": "",
       "options": [],

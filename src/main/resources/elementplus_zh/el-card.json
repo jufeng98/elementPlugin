@@ -10,8 +10,8 @@
       "defaultValue": "—"
     },
     {
-      "name": "footer ^(2.4.3)",
-      "desc": "卡片页脚。 你既可以通过设置 footer 来修改卡片底部内容，也可以通过 slot#footer 传入 DOM 节点",
+      "name": "footer",
+      "desc": "卡片页脚。 你既可以通过设置 footer 来修改卡片底部内容，也可以通过 slot#footer 传入 DOM 节点(2.4.3)",
       "type": "string",
       "optionValue": "",
       "options": [],
@@ -26,24 +26,24 @@
       "defaultValue": "—"
     },
     {
-      "name": "header-class ^(2.9.8)",
-      "desc": "card header 的自定义类名",
+      "name": "header-class",
+      "desc": "card header 的自定义类名(2.9.8)",
       "type": "string",
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
     },
     {
-      "name": "body-class ^(2.3.10)",
-      "desc": "body 的自定义类名",
+      "name": "body-class",
+      "desc": "body 的自定义类名(2.3.10)",
       "type": "string",
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
     },
     {
-      "name": "footer-class ^(2.9.8)",
-      "desc": "footer 的自定义类名",
+      "name": "footer-class",
+      "desc": "footer 的自定义类名(2.9.8)",
       "type": "string",
       "optionValue": "",
       "options": [],

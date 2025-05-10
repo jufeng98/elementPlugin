@@ -223,8 +223,8 @@
       "defaultValue": "—"
     },
     {
-      "name": "filter-class-name ^(2.5.0)",
-      "desc": "过滤弹出框的 className",
+      "name": "filter-class-name",
+      "desc": "过滤弹出框的 className(2.5.0)",
       "type": "string",
       "optionValue": "",
       "options": [],
@@ -255,8 +255,8 @@
       "defaultValue": "—"
     },
     {
-      "name": "tooltip-formatter ^(2.9.4)",
-      "desc": "使用 show-overflow-tooltip 时自定义 tooltip 内容",
+      "name": "tooltip-formatter",
+      "desc": "使用 show-overflow-tooltip 时自定义 tooltip 内容(2.9.4)",
       "type": "Function",
       "optionValue": "(data: { row: any, column: any, cellValue: any }) => VNode | string",
       "options": [],

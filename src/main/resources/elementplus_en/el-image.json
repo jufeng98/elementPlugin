@@ -32,8 +32,8 @@
       "defaultValue": "false"
     },
     {
-      "name": "loading ^(2.2.3)",
-      "desc": "<p>Indicates how the browser should load the image, same as <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-loading\">native</a>.</p>",
+      "name": "loading",
+      "desc": "<p>Indicates how the browser should load the image, same as <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-loading\">native</a>.(2.2.3)</p>",
       "type": "enum",
       "optionValue": "eager | lazy",
       "options": [
@@ -142,24 +142,24 @@
       "defaultValue": "1.2"
     },
     {
-      "name": "min-scale ^(2.4.0)",
-      "desc": "the min scale of the image viewer zoom event.",
+      "name": "min-scale",
+      "desc": "the min scale of the image viewer zoom event.(2.4.0)",
       "type": "number",
       "optionValue": "",
       "options": [],
       "defaultValue": "0.2"
     },
     {
-      "name": "max-scale ^(2.4.0)",
-      "desc": "the max scale of the image viewer zoom event.",
+      "name": "max-scale",
+      "desc": "the max scale of the image viewer zoom event.(2.4.0)",
       "type": "number",
       "optionValue": "",
       "options": [],
       "defaultValue": "7"
     },
     {
-      "name": "show-progress ^(2.9.4)",
-      "desc": "whether to display the preview image progress content.",
+      "name": "show-progress",
+      "desc": "whether to display the preview image progress content.(2.9.4)",
       "type": "boolean",
       "optionValue": "",
       "options": [],
@@ -220,8 +220,8 @@
   ],
   "methods": [
     {
-      "name": "showPreview ^(2.9.4)",
-      "desc": "manually open preview big image",
+      "name": "showPreview",
+      "desc": "manually open preview big image(2.9.4)",
       "param": "Function() => void"
     }
   ]

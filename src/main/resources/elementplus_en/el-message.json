@@ -25,8 +25,8 @@
       "defaultValue": "info"
     },
     {
-      "name": "plain ^(2.6.3)",
-      "desc": "whether message is plain",
+      "name": "plain",
+      "desc": "whether message is plain(2.6.3)",
       "type": "boolean",
       "optionValue": "",
       "options": [],

@@ -37,24 +37,24 @@
       "defaultValue": "false"
     },
     {
-      "name": "text ^(2.2.0)",
-      "desc": "是否为文字按钮",
+      "name": "text",
+      "desc": "是否为文字按钮(2.2.0)",
       "type": "boolean",
       "optionValue": "",
       "options": [],
       "defaultValue": "false"
     },
     {
-      "name": "bg ^(2.2.0)",
-      "desc": "是否显示文字按钮背景颜色",
+      "name": "bg",
+      "desc": "是否显示文字按钮背景颜色(2.2.0)",
       "type": "boolean",
       "optionValue": "",
       "options": [],
       "defaultValue": "false"
     },
     {
-      "name": "link ^(2.2.1)",
-      "desc": "是否为链接按钮",
+      "name": "link",
+      "desc": "是否为链接按钮(2.2.1)",
       "type": "boolean",
       "optionValue": "",
       "options": [],
@@ -153,8 +153,8 @@
       "defaultValue": "false"
     },
     {
-      "name": "tag ^(2.3.4)",
-      "desc": "自定义元素标签",
+      "name": "tag",
+      "desc": "自定义元素标签(2.3.4)",
       "type": "string / Component",
       "optionValue": "",
       "options": [],

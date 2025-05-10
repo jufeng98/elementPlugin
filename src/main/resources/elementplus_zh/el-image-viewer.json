@@ -50,24 +50,24 @@
       "defaultValue": "false"
     },
     {
-      "name": "zoom-rate ^(2.2.27)",
-      "desc": "图像查看器缩放事件的缩放速率。",
+      "name": "zoom-rate",
+      "desc": "图像查看器缩放事件的缩放速率。(2.2.27)",
       "type": "number",
       "optionValue": "",
       "options": [],
       "defaultValue": "1.2"
     },
     {
-      "name": "min-scale ^(2.4.0)",
-      "desc": "图像查看器缩放事件的最小缩放比例",
+      "name": "min-scale",
+      "desc": "图像查看器缩放事件的最小缩放比例(2.4.0)",
       "type": "number",
       "optionValue": "",
       "options": [],
       "defaultValue": "0.2"
     },
     {
-      "name": "max-scale ^(2.4.0)",
-      "desc": "图像查看器缩放事件的最大缩放比例",
+      "name": "max-scale",
+      "desc": "图像查看器缩放事件的最大缩放比例(2.4.0)",
       "type": "number",
       "optionValue": "",
       "options": [],
@@ -82,8 +82,8 @@
       "defaultValue": "true"
     },
     {
-      "name": "show-progress ^(2.9.4)",
-      "desc": "是否显示预览图片的进度条内容",
+      "name": "show-progress",
+      "desc": "是否显示预览图片的进度条内容(2.9.4)",
       "type": "boolean",
       "optionValue": "",
       "options": [],
@@ -106,8 +106,8 @@
       "param": "Function(index: number) => void"
     },
     {
-      "name": "@rotate ^(2.3.13)",
-      "desc": "旋转图像时触发。",
+      "name": "@rotate",
+      "desc": "旋转图像时触发。(2.3.13)",
       "param": "Function(deg: number) => void"
     }
   ],

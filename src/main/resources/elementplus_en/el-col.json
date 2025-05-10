@@ -114,8 +114,8 @@
       "defaultValue": "—"
     },
     {
-      "name": "width ^(required)",
-      "desc": "Width for the column",
+      "name": "width",
+      "desc": "Width for the column(required)",
       "type": "",
       "optionValue": "number",
       "options": [],

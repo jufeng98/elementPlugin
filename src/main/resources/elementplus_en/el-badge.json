@@ -48,40 +48,40 @@
       "defaultValue": "danger"
     },
     {
-      "name": "show-zero ^(2.6.0)",
-      "desc": "Whether to show badge when value is zero.",
+      "name": "show-zero",
+      "desc": "Whether to show badge when value is zero.(2.6.0)",
       "type": "boolean",
       "optionValue": "",
       "options": [],
       "defaultValue": "true"
     },
     {
-      "name": "color ^(2.6.3)",
-      "desc": "background color of the dot",
+      "name": "color",
+      "desc": "background color of the dot(2.6.3)",
       "type": "string",
       "optionValue": "",
       "options": [],
       "defaultValue": ""
     },
     {
-      "name": "offset ^(2.7.0)",
-      "desc": "offset of badge",
-      "type": "[ ",
-      "optionValue": "number",
+      "name": "offset",
+      "desc": "offset of badge(2.7.0)",
+      "type": "number / number",
+      "optionValue": "",
       "options": [],
       "defaultValue": "—"
     },
     {
-      "name": "badge-style ^(2.7.1)",
-      "desc": "custom style of badge",
+      "name": "badge-style",
+      "desc": "custom style of badge(2.7.1)",
       "type": "object",
       "optionValue": "CSSProperties",
       "options": [],
       "defaultValue": "—"
     },
     {
-      "name": "badge-class ^(2.7.1)",
-      "desc": "custom class of badge",
+      "name": "badge-class",
+      "desc": "custom class of badge(2.7.1)",
       "type": "string",
       "optionValue": "",
       "options": [],

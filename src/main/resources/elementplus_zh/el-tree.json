@@ -90,8 +90,8 @@
       "defaultValue": "false"
     },
     {
-      "name": "check-on-click-leaf ^(2.9.6)",
-      "desc": "点击叶节点(最后一个子节点)时是否检查或取消节点",
+      "name": "check-on-click-leaf",
+      "desc": "点击叶节点(最后一个子节点)时是否检查或取消节点(2.9.6)",
       "type": "boolean",
       "optionValue": "",
       "options": [],

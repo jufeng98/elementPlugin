@@ -66,24 +66,24 @@
       "defaultValue": "—"
     },
     {
-      "name": "header-class ^(2.9.3)",
-      "desc": "header 部分的自定义 class 名",
+      "name": "header-class",
+      "desc": "header 部分的自定义 class 名(2.9.3)",
       "type": "string",
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
     },
     {
-      "name": "body-class ^(2.9.3)",
-      "desc": "body 部分的自定义 class 名",
+      "name": "body-class",
+      "desc": "body 部分的自定义 class 名(2.9.3)",
       "type": "string",
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
     },
     {
-      "name": "footer-class ^(2.9.3)",
-      "desc": "footer 部分的自定义 class 名",
+      "name": "footer-class",
+      "desc": "footer 部分的自定义 class 名(2.9.3)",
       "type": "string",
       "optionValue": "",
       "options": [],
@@ -98,8 +98,8 @@
       "defaultValue": "false"
     },
     {
-      "name": "append-to ^(2.4.3)",
-      "desc": "Dialog 挂载到哪个 DOM 元素 将覆盖 append-to-body",
+      "name": "append-to",
+      "desc": "Dialog 挂载到哪个 DOM 元素 将覆盖 append-to-body(2.4.3)",
       "type": "CSSSelector / HTMLElement",
       "optionValue": "",
       "options": [],
@@ -170,8 +170,8 @@
       "defaultValue": "false"
     },
     {
-      "name": "overflow ^(2.5.4)",
-      "desc": "拖动范围可以超出可视区",
+      "name": "overflow",
+      "desc": "拖动范围可以超出可视区(2.5.4)",
       "type": "boolean",
       "optionValue": "",
       "options": [],
@@ -186,8 +186,8 @@
       "defaultValue": "false"
     },
     {
-      "name": "align-center ^(2.2.16)",
-      "desc": "是否水平垂直对齐对话框",
+      "name": "align-center",
+      "desc": "是否水平垂直对齐对话框(2.2.16)",
       "type": "boolean",
       "optionValue": "",
       "options": [],
@@ -218,16 +218,16 @@
       "defaultValue": "—"
     },
     {
-      "name": "header-aria-level ^(a11y)",
-      "desc": "header 的 aria-level 属性",
+      "name": "header-aria-level",
+      "desc": "header 的 aria-level 属性(a11y)",
       "type": "string",
       "optionValue": "",
       "options": [],
       "defaultValue": "2"
     },
     {
-      "name": "custom-class ^(deprecated)",
-      "desc": "Dialog 的自定义类名",
+      "name": "custom-class",
+      "desc": "Dialog 的自定义类名(deprecated)",
       "type": "string",
       "optionValue": "",
       "options": [],
@@ -289,13 +289,13 @@
   ],
   "methods": [
     {
-      "name": "resetPosition ^(2.8.1)",
-      "desc": "重置位置",
+      "name": "resetPosition",
+      "desc": "重置位置(2.8.1)",
       "param": "Function() => void"
     },
     {
-      "name": "handleClose ^(2.9.8)",
-      "desc": "关闭对话框",
+      "name": "handleClose",
+      "desc": "关闭对话框(2.9.8)",
       "param": "Function() => void"
     }
   ]

@@ -229,8 +229,8 @@
       "defaultValue": "—"
     },
     {
-      "name": "aria-label ^(a11y) ^(2.7.2)",
-      "desc": "same as aria-label in native input",
+      "name": "aria-label",
+      "desc": "same as aria-label in native input(a11y) (2.7.2)",
       "type": "string",
       "optionValue": "",
       "options": [],
@@ -261,8 +261,8 @@
       "defaultValue": "{}"
     },
     {
-      "name": "label ^(a11y) ^(deprecated)",
-      "desc": "same as aria-label in native input",
+      "name": "label",
+      "desc": "same as aria-label in native input(a11y) (deprecated)",
       "type": "string",
       "optionValue": "",
       "options": [],
@@ -364,8 +364,8 @@
       "param": "objectRef<StyleValue>"
     },
     {
-      "name": "isComposing ^(2.8.0)",
-      "desc": "is input composing",
+      "name": "isComposing",
+      "desc": "is input composing(2.8.0)",
       "param": "objectRef<boolean>"
     }
   ]

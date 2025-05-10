@@ -15,8 +15,8 @@
       "defaultValue": "hover"
     },
     {
-      "name": "trigger-keys ^(2.9.8)",
-      "desc": "When you click the mouse to focus on the trigger element, you can define a set of keyboard codes to control the display of popover through the keyboard",
+      "name": "trigger-keys",
+      "desc": "When you click the mouse to focus on the trigger element, you can define a set of keyboard codes to control the display of popover through the keyboard(2.9.8)",
       "type": "Array",
       "optionValue": "",
       "options": [],
@@ -191,8 +191,8 @@
       "defaultValue": "true"
     },
     {
-      "name": "append-to ^(2.9.10)",
-      "desc": "which element the popover CONTENT appends to",
+      "name": "append-to",
+      "desc": "which element the popover CONTENT appends to(2.9.10)",
       "type": "CSSSelector / HTMLElement",
       "optionValue": "",
       "options": [],

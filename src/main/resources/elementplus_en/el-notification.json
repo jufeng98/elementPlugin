@@ -126,8 +126,8 @@
       "defaultValue": "0"
     },
     {
-      "name": "closeIcon ^(2.9.8)",
-      "desc": "custom close icon",
+      "name": "closeIcon",
+      "desc": "custom close icon(2.9.8)",
       "type": "string / Component",
       "optionValue": "",
       "options": [],

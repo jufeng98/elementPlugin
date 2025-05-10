@@ -90,8 +90,8 @@
       "defaultValue": "false"
     },
     {
-      "name": "check-on-click-leaf ^(2.9.6)",
-      "desc": "whether to check or uncheck node when clicking on leaf node (last children).",
+      "name": "check-on-click-leaf",
+      "desc": "whether to check or uncheck node when clicking on leaf node (last children).(2.9.6)",
       "type": "boolean",
       "optionValue": "",
       "options": [],

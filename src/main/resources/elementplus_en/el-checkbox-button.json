@@ -2,8 +2,8 @@
   "name": "el-checkbox-button",
   "attributes": [
     {
-      "name": "value ^(2.6.0)",
-      "desc": "value of the checkbox when used inside a checkbox-group",
+      "name": "value",
+      "desc": "value of the checkbox when used inside a checkbox-group(2.6.0)",
       "type": "string / number / boolean / object",
       "optionValue": "",
       "options": [],
@@ -18,16 +18,16 @@
       "defaultValue": "—"
     },
     {
-      "name": "true-value ^(2.6.0)",
-      "desc": "value of the checkbox if it's checked",
+      "name": "true-value",
+      "desc": "value of the checkbox if it's checked(2.6.0)",
       "type": "string / number",
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
     },
     {
-      "name": "false-value ^(2.6.0)",
-      "desc": "value of the checkbox if it's not checked",
+      "name": "false-value",
+      "desc": "value of the checkbox if it's not checked(2.6.0)",
       "type": "string / number",
       "optionValue": "",
       "options": [],
@@ -58,16 +58,16 @@
       "defaultValue": "false"
     },
     {
-      "name": "true-label ^(deprecated)",
-      "desc": "value of the checkbox if it's checked",
+      "name": "true-label",
+      "desc": "value of the checkbox if it's checked(deprecated)",
       "type": "string / number",
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
     },
     {
-      "name": "false-label ^(deprecated)",
-      "desc": "value of the checkbox if it's not checked",
+      "name": "false-label",
+      "desc": "value of the checkbox if it's not checked(deprecated)",
       "type": "string / number",
       "optionValue": "",
       "options": [],

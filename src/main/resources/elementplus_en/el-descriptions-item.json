@@ -18,8 +18,8 @@
       "defaultValue": "1"
     },
     {
-      "name": "rowspan ^(2.8.1)",
-      "desc": "the number of rows a cell should span",
+      "name": "rowspan",
+      "desc": "the number of rows a cell should span(2.8.1)",
       "type": "number",
       "optionValue": "",
       "options": [],
@@ -42,8 +42,8 @@
       "defaultValue": ""
     },
     {
-      "name": "label-width ^(2.8.8)",
-      "desc": "column label width, if not set, it will be the same as the width of the column. Higher priority than the label-width of Descriptions",
+      "name": "label-width",
+      "desc": "column label width, if not set, it will be the same as the width of the column. Higher priority than the label-width of Descriptions(2.8.8)",
       "type": "string / number",
       "optionValue": "",
       "options": [],

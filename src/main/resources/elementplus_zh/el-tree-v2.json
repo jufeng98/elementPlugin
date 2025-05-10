@@ -50,8 +50,8 @@
       "defaultValue": "false"
     },
     {
-      "name": "check-on-click-leaf ^(2.9.6)",
-      "desc": "点击叶节点(最后一个子节点)时是否检查或取消节点",
+      "name": "check-on-click-leaf",
+      "desc": "点击叶节点(最后一个子节点)时是否检查或取消节点(2.9.6)",
       "type": "boolean",
       "optionValue": "",
       "options": [],
@@ -125,8 +125,8 @@
       "defaultValue": "—"
     },
     {
-      "name": "item-size ^(2.2.33)",
-      "desc": "自定义树节点的高度",
+      "name": "item-size",
+      "desc": "自定义树节点的高度(2.2.33)",
       "type": "number",
       "optionValue": "",
       "options": [],
@@ -167,8 +167,8 @@
       "defaultValue": "disabled"
     },
     {
-      "name": "class ^(2.9.0)",
-      "desc": "自定义节点类名",
+      "name": "class",
+      "desc": "自定义节点类名(2.9.0)",
       "type": "string / Function",
       "optionValue": "(data, node) => string",
       "options": [],
@@ -194,8 +194,8 @@
       "param": "(data: TreeNodeData, node: TreeNode, e: MouseEvent)"
     },
     {
-      "name": "@node-drop ^(2.8.3)",
-      "desc": "拖放到节点时触发器",
+      "name": "@node-drop",
+      "desc": "拖放到节点时触发器(2.8.3)",
       "param": "(data: TreeNodeData, node: TreeNode, e: DragEvent)"
     },
     {

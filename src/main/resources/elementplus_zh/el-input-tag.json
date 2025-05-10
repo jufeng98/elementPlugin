@@ -70,8 +70,8 @@
       "defaultValue": "false"
     },
     {
-      "name": "delimiter ^(2.9.9)",
-      "desc": "在匹配分隔符时添加标签",
+      "name": "delimiter",
+      "desc": "在匹配分隔符时添加标签(2.9.9)",
       "type": "string / regex",
       "optionValue": "",
       "options": [],
@@ -90,8 +90,8 @@
       "defaultValue": "—"
     },
     {
-      "name": "save-on-blur ^(2.9.7)",
-      "desc": "当输入失去焦点时是否保存输入值",
+      "name": "save-on-blur",
+      "desc": "当输入失去焦点时是否保存输入值(2.9.7)",
       "type": "boolean",
       "optionValue": "",
       "options": [],
@@ -186,8 +186,8 @@
       "defaultValue": "off"
     },
     {
-      "name": "aria-label ^(a11y)",
-      "desc": "等价于原生 <code> aria-label </code> 属性",
+      "name": "aria-label",
+      "desc": "等价于原生 <code> aria-label </code> 属性(a11y)",
       "type": "string",
       "optionValue": "",
       "options": [],

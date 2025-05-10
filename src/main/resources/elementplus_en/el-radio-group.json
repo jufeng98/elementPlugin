@@ -34,22 +34,6 @@
       "defaultValue": "false"
     },
     {
-      "name": "text-color",
-      "desc": "font color when button is active",
-      "type": "string",
-      "optionValue": "",
-      "options": [],
-      "defaultValue": "#ffffff"
-    },
-    {
-      "name": "fill",
-      "desc": "border and background color when button is active",
-      "type": "string",
-      "optionValue": "",
-      "options": [],
-      "defaultValue": "#409eff"
-    },
-    {
       "name": "validate-event",
       "desc": "whether to trigger form validation",
       "type": "boolean",
@@ -58,8 +42,8 @@
       "defaultValue": "true"
     },
     {
-      "name": "aria-label ^(a11y) ^(2.7.2)",
-      "desc": "same as aria-label in RadioGroup",
+      "name": "aria-label",
+      "desc": "same as aria-label in RadioGroup(a11y) (2.7.2)",
       "type": "string",
       "optionValue": "",
       "options": [],
@@ -82,8 +66,8 @@
       "defaultValue": "—"
     },
     {
-      "name": "label ^(a11y) ^(deprecated)",
-      "desc": "same as aria-label in RadioGroup",
+      "name": "label",
+      "desc": "same as aria-label in RadioGroup(a11y) (deprecated)",
       "type": "string",
       "optionValue": "",
       "options": [],

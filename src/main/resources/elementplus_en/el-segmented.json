@@ -26,8 +26,8 @@
       "defaultValue": "[]"
     },
     {
-      "name": "props ^(2.9.8)",
-      "desc": "configuration options, see the following table",
+      "name": "props",
+      "desc": "configuration options, see the following table(2.9.8)",
       "type": "object",
       "optionValue": "",
       "options": [],
@@ -86,16 +86,16 @@
       "defaultValue": "—"
     },
     {
-      "name": "aria-label ^(a11y)",
-      "desc": "native aria-label attribute",
+      "name": "aria-label",
+      "desc": "native aria-label attribute(a11y)",
       "type": "string",
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
     },
     {
-      "name": "direction ^(2.8.7)",
-      "desc": "display direction",
+      "name": "direction",
+      "desc": "display direction(2.8.7)",
       "type": "enum",
       "optionValue": "horizontal | vertical",
       "options": [

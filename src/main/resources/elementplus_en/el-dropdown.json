@@ -89,8 +89,8 @@
       "defaultValue": "hover"
     },
     {
-      "name": "triggerKeys ^(2.9.1)",
-      "desc": "specify which keys on the keyboard can trigger when pressed",
+      "name": "triggerKeys",
+      "desc": "specify which keys on the keyboard can trigger when pressed(2.9.1)",
       "type": "array",
       "optionValue": "string[]",
       "options": [],
@@ -162,16 +162,16 @@
       "defaultValue": "{modifiers: [{name: computeStyles,options: {gpuAcceleration: false}}]}"
     },
     {
-      "name": "teleported ^(2.2.20)",
-      "desc": "whether the dropdown popup is teleported to the body",
+      "name": "teleported",
+      "desc": "whether the dropdown popup is teleported to the body(2.2.20)",
       "type": "boolean",
       "optionValue": "",
       "options": [],
       "defaultValue": "true"
     },
     {
-      "name": "persistent ^(2.9.5)",
-      "desc": "when dropdown inactive and persistent is false , dropdown menu will be destroyed",
+      "name": "persistent",
+      "desc": "when dropdown inactive and persistent is false , dropdown menu will be destroyed(2.9.5)",
       "type": "boolean",
       "optionValue": "",
       "options": [],

@@ -70,8 +70,8 @@
       "defaultValue": "default"
     },
     {
-      "name": "readonly ^(2.2.16)",
-      "desc": "原生 readonly 属性，是否只读",
+      "name": "readonly",
+      "desc": "原生 readonly 属性，是否只读(2.2.16)",
       "type": "boolean",
       "optionValue": "",
       "options": [],
@@ -112,8 +112,8 @@
       "defaultValue": "—"
     },
     {
-      "name": "aria-label ^(a11y) ^(2.7.2)",
-      "desc": "等价于原生 input aria-label 属性",
+      "name": "aria-label",
+      "desc": "等价于原生 input aria-label 属性(a11y) (2.7.2)",
       "type": "string",
       "optionValue": "",
       "options": [],
@@ -136,8 +136,8 @@
       "defaultValue": "—"
     },
     {
-      "name": "value-on-clear ^(2.2.0)",
-      "desc": "当输入框被清空时显示的值",
+      "name": "value-on-clear",
+      "desc": "当输入框被清空时显示的值(2.2.0)",
       "type": "number / null / enum",
       "optionValue": "min | max",
       "options": [
@@ -155,8 +155,8 @@
       "defaultValue": "true"
     },
     {
-      "name": "label ^(a11y) ^(deprecated)",
-      "desc": "等价于原生 input aria-label 属性",
+      "name": "label",
+      "desc": "等价于原生 input aria-label 属性(a11y) (deprecated)",
       "type": "string",
       "optionValue": "",
       "options": [],

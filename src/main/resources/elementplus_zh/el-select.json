@@ -70,8 +70,8 @@
       "defaultValue": "false"
     },
     {
-      "name": "collapse-tags-tooltip ^(2.3.0)",
-      "desc": "当鼠标悬停于折叠标签的文本时，是否显示所有选中的标签。 要使用此属性，collapse-tags属性必须设定为 true",
+      "name": "collapse-tags-tooltip",
+      "desc": "当鼠标悬停于折叠标签的文本时，是否显示所有选中的标签。 要使用此属性，collapse-tags属性必须设定为 true(2.3.0)",
       "type": "boolean",
       "optionValue": "",
       "options": [],
@@ -233,8 +233,8 @@
       "defaultValue": "true"
     },
     {
-      "name": "append-to ^(2.8.4)",
-      "desc": "下拉框挂载到哪个 DOM 元素",
+      "name": "append-to",
+      "desc": "下拉框挂载到哪个 DOM 元素(2.8.4)",
       "type": "CSSSelector / HTMLElement",
       "optionValue": "",
       "options": [],
@@ -294,8 +294,8 @@
       "defaultValue": "info"
     },
     {
-      "name": "tag-effect ^(2.7.7)",
-      "desc": "标签效果",
+      "name": "tag-effect",
+      "desc": "标签效果(2.7.7)",
       "type": "enum",
       "optionValue": " | light | dark | plain",
       "options": [
@@ -314,24 +314,24 @@
       "defaultValue": "true"
     },
     {
-      "name": "offset ^(2.8.8)",
-      "desc": "下拉面板偏移量",
+      "name": "offset",
+      "desc": "下拉面板偏移量(2.8.8)",
       "type": "number",
       "optionValue": "",
       "options": [],
       "defaultValue": "12"
     },
     {
-      "name": "show-arrow ^(2.8.8)",
-      "desc": "下拉菜单的内容是否有箭头",
+      "name": "show-arrow",
+      "desc": "下拉菜单的内容是否有箭头(2.8.8)",
       "type": "boolean",
       "optionValue": "",
       "options": [],
       "defaultValue": "true"
     },
     {
-      "name": "placement ^(2.2.17)",
-      "desc": "下拉框出现的位置",
+      "name": "placement",
+      "desc": "下拉框出现的位置(2.2.17)",
       "type": "enum",
       "optionValue": "top | top-start | top-end | bottom | bottom-start | bottom-end | left | left-start | left-end | right | right-start | right-end",
       "options": [
@@ -351,16 +351,16 @@
       "defaultValue": "bottom-start"
     },
     {
-      "name": "fallback-placements ^(2.5.6)",
-      "desc": "<p>dropdown 可用的 positions 请查看<a href=\"https://popper.js.org/docs/v2/modifiers/flip/#fallbackplacements\">popper.js 文档</a></p>",
+      "name": "fallback-placements",
+      "desc": "<p>dropdown 可用的 positions 请查看<a href=\"https://popper.js.org/docs/v2/modifiers/flip/#fallbackplacements\">popper.js 文档</a>(2.5.6)</p>",
       "type": "array",
       "optionValue": "Placement[]",
       "options": [],
       "defaultValue": "[bottom-start, top-start, right, left]"
     },
     {
-      "name": "max-collapse-tags ^(2.3.0)",
-      "desc": "需要显示的 Tag 的最大数量 只有当 collapse-tags 设置为 true 时才会生效。",
+      "name": "max-collapse-tags",
+      "desc": "需要显示的 Tag 的最大数量 只有当 collapse-tags 设置为 true 时才会生效。(2.3.0)",
       "type": "number",
       "optionValue": "",
       "options": [],
@@ -375,40 +375,40 @@
       "defaultValue": "{}"
     },
     {
-      "name": "aria-label ^(a11y)",
-      "desc": "等价于原生 input aria-label 属性",
+      "name": "aria-label",
+      "desc": "等价于原生 input aria-label 属性(a11y)",
       "type": "string",
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
     },
     {
-      "name": "empty-values ^(2.7.0)",
-      "desc": "组件的空值配置 [参考config-provider](/en-US/component/config-provider#empty-values-configurations)",
+      "name": "empty-values",
+      "desc": "组件的空值配置 [参考config-provider](/en-US/component/config-provider#empty-values-configurations)(2.7.0)",
       "type": "array",
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
     },
     {
-      "name": "value-on-clear ^(2.7.0)",
-      "desc": "清空选项的值 [参考 config-provider](/en-US/component/config-provider#empty-values-configurations)",
+      "name": "value-on-clear",
+      "desc": "清空选项的值 [参考 config-provider](/en-US/component/config-provider#empty-values-configurations)(2.7.0)",
       "type": "string / number / boolean / Function",
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
     },
     {
-      "name": "suffix-transition ^(deprecated)",
-      "desc": "下拉菜单显示/消失时后缀图标的动画",
+      "name": "suffix-transition",
+      "desc": "下拉菜单显示/消失时后缀图标的动画(deprecated)",
       "type": "boolean",
       "optionValue": "",
       "options": [],
       "defaultValue": "true"
     },
     {
-      "name": "tabindex ^(2.9.0)",
-      "desc": "input 的 tabindex",
+      "name": "tabindex",
+      "desc": "input 的 tabindex(2.9.0)",
       "type": "string / number",
       "optionValue": "",
       "options": [],
@@ -484,8 +484,8 @@
       "param": "Function(event: FocusEvent) => void"
     },
     {
-      "name": "@popup-scroll ^(2.9.4)",
-      "desc": "下拉滚动时触发",
+      "name": "@popup-scroll",
+      "desc": "下拉滚动时触发(2.9.4)",
       "param": "Function(data:{scrollTop: number, scrollLeft: number}) => void"
     }
   ],
@@ -501,8 +501,8 @@
       "param": "Function() => void"
     },
     {
-      "name": "selectedLabel ^(2.8.5)",
-      "desc": "获取当前选中的标签",
+      "name": "selectedLabel",
+      "desc": "获取当前选中的标签(2.8.5)",
       "param": "objectComputedRef<string | string[>"
     }
   ]

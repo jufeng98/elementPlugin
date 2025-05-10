@@ -114,8 +114,8 @@
       "defaultValue": "—"
     },
     {
-      "name": "width ^(required)",
-      "desc": "列宽度",
+      "name": "width",
+      "desc": "列宽度(required)",
       "type": "",
       "optionValue": "number",
       "options": [],

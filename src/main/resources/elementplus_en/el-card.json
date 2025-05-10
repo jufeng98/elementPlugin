@@ -10,8 +10,8 @@
       "defaultValue": "—"
     },
     {
-      "name": "footer ^(2.4.3)",
-      "desc": "footer of the card. Also accepts a DOM passed by slot#footer",
+      "name": "footer",
+      "desc": "footer of the card. Also accepts a DOM passed by slot#footer(2.4.3)",
       "type": "string",
       "optionValue": "",
       "options": [],
@@ -26,24 +26,24 @@
       "defaultValue": "—"
     },
     {
-      "name": "header-class ^(2.9.8)",
-      "desc": "custom class name of card header",
+      "name": "header-class",
+      "desc": "custom class name of card header(2.9.8)",
       "type": "string",
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
     },
     {
-      "name": "body-class ^(2.3.10)",
-      "desc": "custom class name of card body",
+      "name": "body-class",
+      "desc": "custom class name of card body(2.3.10)",
       "type": "string",
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
     },
     {
-      "name": "footer-class ^(2.9.8)",
-      "desc": "custom class name of card footer",
+      "name": "footer-class",
+      "desc": "custom class name of card footer(2.9.8)",
       "type": "string",
       "optionValue": "",
       "options": [],

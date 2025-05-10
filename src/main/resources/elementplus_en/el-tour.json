@@ -60,7 +60,7 @@
       "type": "",
       "optionValue": "TourGap",
       "options": [],
-      "defaultValue": "^[Object]{ offset: 6, radius: 2}"
+      "defaultValue": "Object`{ offset: 6, radius: 2}`"
     },
     {
       "name": "type",
@@ -108,7 +108,7 @@
       "type": "",
       "optionValue": "boolean",
       "options": [],
-      "defaultValue": "^[Object]{ block: center }"
+      "defaultValue": "Object`{ block: 'center' }`"
     },
     {
       "name": "z-index",

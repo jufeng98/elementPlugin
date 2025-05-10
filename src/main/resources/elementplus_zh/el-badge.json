@@ -48,40 +48,40 @@
       "defaultValue": "danger"
     },
     {
-      "name": "show-zero ^(2.6.0)",
-      "desc": "值为零时是否显示 Badge",
+      "name": "show-zero",
+      "desc": "值为零时是否显示 Badge(2.6.0)",
       "type": "boolean",
       "optionValue": "",
       "options": [],
       "defaultValue": "true"
     },
     {
-      "name": "color ^(2.6.3)",
-      "desc": "背景色",
+      "name": "color",
+      "desc": "背景色(2.6.3)",
       "type": "string",
       "optionValue": "",
       "options": [],
       "defaultValue": ""
     },
     {
-      "name": "offset ^(2.7.0)",
-      "desc": "badge 的偏移量",
-      "type": "[ ",
-      "optionValue": "number",
+      "name": "offset",
+      "desc": "badge 的偏移量(2.7.0)",
+      "type": "number / number",
+      "optionValue": "",
       "options": [],
       "defaultValue": "—"
     },
     {
-      "name": "badge-style ^(2.7.1)",
-      "desc": "自定义 badge 样式",
+      "name": "badge-style",
+      "desc": "自定义 badge 样式(2.7.1)",
       "type": "object",
       "optionValue": "CSSProperties",
       "options": [],
       "defaultValue": "—"
     },
     {
-      "name": "badge-class ^(2.7.1)",
-      "desc": "自定义 badge 类名",
+      "name": "badge-class",
+      "desc": "自定义 badge 类名(2.7.1)",
       "type": "string",
       "optionValue": "",
       "options": [],

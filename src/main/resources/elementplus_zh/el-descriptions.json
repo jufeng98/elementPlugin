@@ -57,8 +57,8 @@
       "defaultValue": ""
     },
     {
-      "name": "label-width ^(2.8.8)",
-      "desc": "每一列的标签宽度",
+      "name": "label-width",
+      "desc": "每一列的标签宽度(2.8.8)",
       "type": "string / number",
       "optionValue": "",
       "options": [],

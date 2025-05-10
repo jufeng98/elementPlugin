@@ -18,8 +18,8 @@
       "defaultValue": "—"
     },
     {
-      "name": "label-position ^(2.7.7)",
-      "desc": "Position of item label. If set to 'left' or 'right', label-width prop is also required. Default extend label-postion of form.",
+      "name": "label-position",
+      "desc": "Position of item label. If set to 'left' or 'right', label-width prop is also required. Default extend label-postion of form.(2.7.7)",
       "type": "enum",
       "optionValue": "left | right | top",
       "options": [

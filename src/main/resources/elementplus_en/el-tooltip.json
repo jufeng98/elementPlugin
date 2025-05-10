@@ -114,8 +114,8 @@
       "defaultValue": "{}"
     },
     {
-      "name": "arrow-offset ^(2.9.10)",
-      "desc": "Controls the offset (padding) of the tooltip’s arrow relative to the popper.",
+      "name": "arrow-offset",
+      "desc": "Controls the offset (padding) of the tooltip’s arrow relative to the popper.(2.9.10)",
       "type": "number",
       "optionValue": "",
       "options": [],
@@ -223,8 +223,8 @@
       "defaultValue": "—"
     },
     {
-      "name": "aria-label ^(a11y)",
-      "desc": "same as aria-label",
+      "name": "aria-label",
+      "desc": "same as aria-label(a11y)",
       "type": "string",
       "optionValue": "",
       "options": [],

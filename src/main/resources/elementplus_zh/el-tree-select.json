@@ -2,8 +2,8 @@
   "name": "el-tree-select",
   "attributes": [
     {
-      "name": "cacheData ^(2.2.26)",
-      "desc": "懒加载节点的缓存数据，结构与数据相同，用于获取未加载数据的标签",
+      "name": "cacheData",
+      "desc": "懒加载节点的缓存数据，结构与数据相同，用于获取未加载数据的标签(2.2.26)",
       "type": "object",
       "optionValue": "CacheOption[]",
       "options": [],

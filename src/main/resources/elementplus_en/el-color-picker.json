@@ -93,8 +93,8 @@
       "defaultValue": "0"
     },
     {
-      "name": "aria-label ^(a11y) ^(2.7.2)",
-      "desc": "ColorPicker aria-label",
+      "name": "aria-label",
+      "desc": "ColorPicker aria-label(a11y) (2.7.2)",
       "type": "string",
       "optionValue": "",
       "options": [],
@@ -109,16 +109,16 @@
       "defaultValue": "—"
     },
     {
-      "name": "teleported ^(2.7.2)",
-      "desc": "whether color-picker popper is teleported to the body",
+      "name": "teleported",
+      "desc": "whether color-picker popper is teleported to the body(2.7.2)",
       "type": "boolean",
       "optionValue": "",
       "options": [],
       "defaultValue": "true"
     },
     {
-      "name": "label ^(a11y) ^(deprecated)",
-      "desc": "ColorPicker aria-label",
+      "name": "label",
+      "desc": "ColorPicker aria-label(a11y) (deprecated)",
       "type": "string",
       "optionValue": "",
       "options": [],
@@ -141,13 +141,13 @@
       "param": "Function(value: string) => void"
     },
     {
-      "name": "@focus ^(2.4.0)",
-      "desc": "triggers when Component focuses",
+      "name": "@focus",
+      "desc": "triggers when Component focuses(2.4.0)",
       "param": "Function(event: FocusEvent) => void"
     },
     {
-      "name": "@blur ^(2.4.0)",
-      "desc": "triggers when Component blurs",
+      "name": "@blur",
+      "desc": "triggers when Component blurs(2.4.0)",
       "param": "Function(event: FocusEvent) => void"
     }
   ],
@@ -158,23 +158,23 @@
       "param": "objectColor"
     },
     {
-      "name": "show ^(2.3.3)",
-      "desc": "manually show ColorPicker",
+      "name": "show",
+      "desc": "manually show ColorPicker(2.3.3)",
       "param": "Function() => void"
     },
     {
-      "name": "hide ^(2.3.3)",
-      "desc": "manually hide ColorPicker",
+      "name": "hide",
+      "desc": "manually hide ColorPicker(2.3.3)",
       "param": "Function() => void"
     },
     {
-      "name": "focus ^(2.3.13)",
-      "desc": "focus the picker element",
+      "name": "focus",
+      "desc": "focus the picker element(2.3.13)",
       "param": "Function() => void"
     },
     {
-      "name": "blur ^(2.3.13)",
-      "desc": "blur the picker element",
+      "name": "blur",
+      "desc": "blur the picker element(2.3.13)",
       "param": "Function() => void"
     }
   ]

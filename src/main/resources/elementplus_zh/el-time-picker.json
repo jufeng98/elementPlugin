@@ -158,8 +158,8 @@
       "defaultValue": ""
     },
     {
-      "name": "aria-label ^(a11y) ^(2.7.2)",
-      "desc": "等价于原生 input aria-label 属性",
+      "name": "aria-label",
+      "desc": "等价于原生 input aria-label 属性(a11y) (2.7.2)",
       "type": "string",
       "optionValue": "",
       "options": [],
@@ -222,24 +222,24 @@
       "defaultValue": "0"
     },
     {
-      "name": "empty-values ^(2.7.0)",
-      "desc": "组件的空值配置 [参考config-provider](/en-US/component/config-provider#empty-values-configurations)",
+      "name": "empty-values",
+      "desc": "组件的空值配置 [参考config-provider](/en-US/component/config-provider#empty-values-configurations)(2.7.0)",
       "type": "array",
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
     },
     {
-      "name": "value-on-clear ^(2.7.0)",
-      "desc": "清空选项的值 [参考 config-provider](/en-US/component/config-provider#empty-values-configurations)",
+      "name": "value-on-clear",
+      "desc": "清空选项的值 [参考 config-provider](/en-US/component/config-provider#empty-values-configurations)(2.7.0)",
       "type": "string / number / boolean / Function",
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
     },
     {
-      "name": "label ^(a11y) ^(deprecated)",
-      "desc": "等价于原生 input aria-label 属性",
+      "name": "label",
+      "desc": "等价于原生 input aria-label 属性(a11y) (deprecated)",
       "type": "string",
       "optionValue": "",
       "options": [],
@@ -267,8 +267,8 @@
       "param": "Function(e: FocusEvent) => void"
     },
     {
-      "name": "@clear ^(2.7.7)",
-      "desc": "可清空的模式下用户点击清空按钮时触发",
+      "name": "@clear",
+      "desc": "可清空的模式下用户点击清空按钮时触发(2.7.7)",
       "param": "Function() => void"
     },
     {
@@ -289,13 +289,13 @@
       "param": "Function() => void"
     },
     {
-      "name": "handleOpen ^(2.2.16)",
-      "desc": "打开时间选择器弹窗",
+      "name": "handleOpen",
+      "desc": "打开时间选择器弹窗(2.2.16)",
       "param": "Function() => void"
     },
     {
-      "name": "handleClose ^(2.2.16)",
-      "desc": "关闭时间选择器弹窗",
+      "name": "handleClose",
+      "desc": "关闭时间选择器弹窗(2.2.16)",
       "param": "Function() => void"
     }
   ]

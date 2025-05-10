@@ -18,8 +18,8 @@
       "defaultValue": "—"
     },
     {
-      "name": "value ^(2.6.0)",
-      "desc": "the value of Radio",
+      "name": "value",
+      "desc": "the value of Radio(2.6.0)",
       "type": "string / number / boolean",
       "optionValue": "",
       "options": [],

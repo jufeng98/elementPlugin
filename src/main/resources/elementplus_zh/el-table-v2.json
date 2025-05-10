@@ -178,16 +178,16 @@
       "defaultValue": "false"
     },
     {
-      "name": "width ^(required)",
-      "desc": "表格的宽度",
+      "name": "width",
+      "desc": "表格的宽度(required)",
       "type": "",
       "optionValue": "number",
       "options": [],
       "defaultValue": "—"
     },
     {
-      "name": "height ^(required)",
-      "desc": "表格的高度",
+      "name": "height",
+      "desc": "表格的高度(required)",
       "type": "",
       "optionValue": "number",
       "options": [],

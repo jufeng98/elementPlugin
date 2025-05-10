@@ -90,32 +90,32 @@
       "defaultValue": "20"
     },
     {
-      "name": "id ^(2.4.0)",
-      "desc": "id of view",
+      "name": "id",
+      "desc": "id of view(2.4.0)",
       "type": "string",
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
     },
     {
-      "name": "role ^(2.4.0) ^(a11y)",
-      "desc": "role of view",
+      "name": "role",
+      "desc": "role of view(2.4.0) (a11y)",
       "type": "string",
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
     },
     {
-      "name": "aria-label ^(2.4.0) ^(a11y)",
-      "desc": "aria-label of view",
+      "name": "aria-label",
+      "desc": "aria-label of view(2.4.0) (a11y)",
       "type": "string",
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
     },
     {
-      "name": "aria-orientation ^(2.4.0) ^(a11y)",
-      "desc": "aria-orientation of view",
+      "name": "aria-orientation",
+      "desc": "aria-orientation of view(2.4.0) (a11y)",
       "type": "enum",
       "optionValue": "horizontal | vertical",
       "options": [
@@ -125,8 +125,8 @@
       "defaultValue": "—"
     },
     {
-      "name": "tabindex ^(2.8.3)",
-      "desc": "tabindex of wrap container",
+      "name": "tabindex",
+      "desc": "tabindex of wrap container(2.8.3)",
       "type": "number / string",
       "optionValue": "",
       "options": [],

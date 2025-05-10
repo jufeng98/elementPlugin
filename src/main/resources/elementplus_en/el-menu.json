@@ -29,16 +29,16 @@
       "defaultValue": "true"
     },
     {
-      "name": "ellipsis-icon ^(2.4.4)",
-      "desc": "custom ellipsis icon (available only in horizontal mode and ellipsis is true)",
+      "name": "ellipsis-icon",
+      "desc": "custom ellipsis icon (available only in horizontal mode and ellipsis is true)(2.4.4)",
       "type": "string / Component",
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
     },
     {
-      "name": "popper-offset ^(2.4.4)",
-      "desc": "offset of the popper (effective for all submenus)",
+      "name": "popper-offset",
+      "desc": "offset of the popper (effective for all submenus)(2.4.4)",
       "type": "number",
       "optionValue": "",
       "options": [],
@@ -96,8 +96,8 @@
       "defaultValue": "true"
     },
     {
-      "name": "popper-effect ^(2.2.26)",
-      "desc": "Tooltip theme, built-in theme: dark / light when menu is collapsed",
+      "name": "popper-effect",
+      "desc": "Tooltip theme, built-in theme: dark / light when menu is collapsed(2.2.26)",
       "type": "enum",
       "optionValue": "dark | light",
       "options": [
@@ -107,64 +107,64 @@
       "defaultValue": "dark"
     },
     {
-      "name": "close-on-click-outside ^(2.4.4)",
-      "desc": "optional, whether menu is collapsed when clicking outside",
+      "name": "close-on-click-outside",
+      "desc": "optional, whether menu is collapsed when clicking outside(2.4.4)",
       "type": "boolean",
       "optionValue": "",
       "options": [],
       "defaultValue": "false"
     },
     {
-      "name": "popper-class ^(2.5.0)",
-      "desc": "custom class name for all popup menus",
+      "name": "popper-class",
+      "desc": "custom class name for all popup menus(2.5.0)",
       "type": "string",
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
     },
     {
-      "name": "show-timeout ^(2.5.0)",
-      "desc": "control timeout for all menus before showing",
+      "name": "show-timeout",
+      "desc": "control timeout for all menus before showing(2.5.0)",
       "type": "number",
       "optionValue": "",
       "options": [],
       "defaultValue": "300"
     },
     {
-      "name": "hide-timeout ^(2.5.0)",
-      "desc": "control timeout for all menus before hiding",
+      "name": "hide-timeout",
+      "desc": "control timeout for all menus before hiding(2.5.0)",
       "type": "number",
       "optionValue": "",
       "options": [],
       "defaultValue": "300"
     },
     {
-      "name": "background-color ^(deprecated)",
-      "desc": "background color of Menu (hex format) (use --el-menu-bg-color in a style class instead)",
+      "name": "background-color",
+      "desc": "background color of Menu (hex format) (use --el-menu-bg-color in a style class instead)(deprecated)",
       "type": "string",
       "optionValue": "",
       "options": [],
       "defaultValue": "#ffffff"
     },
     {
-      "name": "text-color ^(deprecated)",
-      "desc": "text color of Menu (hex format) ( use --el-menu-text-color in a style class instead)",
+      "name": "text-color",
+      "desc": "text color of Menu (hex format) ( use --el-menu-text-color in a style class instead)(deprecated)",
       "type": "string",
       "optionValue": "",
       "options": [],
       "defaultValue": "#303133"
     },
     {
-      "name": "active-text-color ^(deprecated)",
-      "desc": "text color of currently active menu item (hex format) ( use --el-menu-active-color in a style class instead)",
+      "name": "active-text-color",
+      "desc": "text color of currently active menu item (hex format) ( use --el-menu-active-color in a style class instead)(deprecated)",
       "type": "string",
       "optionValue": "",
       "options": [],
       "defaultValue": "#409eff"
     },
     {
-      "name": "persistent ^(2.9.5)",
-      "desc": "when menu inactive and persistent is false , dropdown menu will be destroyed",
+      "name": "persistent",
+      "desc": "when menu inactive and persistent is false , dropdown menu will be destroyed(2.9.5)",
       "type": "boolean",
       "optionValue": "",
       "options": [],
@@ -209,8 +209,8 @@
       "param": "Function(index: string) => void"
     },
     {
-      "name": "updateActiveIndex ^(2.9.8)",
-      "desc": "set index of active menu",
+      "name": "updateActiveIndex",
+      "desc": "set index of active menu(2.9.8)",
       "param": "Function(index: string) => void"
     }
   ]

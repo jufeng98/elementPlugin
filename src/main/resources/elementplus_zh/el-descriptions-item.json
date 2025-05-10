@@ -18,8 +18,8 @@
       "defaultValue": "1"
     },
     {
-      "name": "rowspan ^(2.8.1)",
-      "desc": "单元格应该跨越的行数",
+      "name": "rowspan",
+      "desc": "单元格应该跨越的行数(2.8.1)",
       "type": "number",
       "optionValue": "",
       "options": [],
@@ -42,8 +42,8 @@
       "defaultValue": ""
     },
     {
-      "name": "label-width ^(2.8.8)",
-      "desc": "列标签宽，如果未设置，它将与列宽度相同。 比 Descriptions 的 label-width  优先级高",
+      "name": "label-width",
+      "desc": "列标签宽，如果未设置，它将与列宽度相同。 比 Descriptions 的 label-width  优先级高(2.8.8)",
       "type": "string / number",
       "optionValue": "",
       "options": [],

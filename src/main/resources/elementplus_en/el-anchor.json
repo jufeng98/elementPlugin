@@ -64,8 +64,8 @@
       "defaultValue": "vertical"
     },
     {
-      "name": "select-scroll-top ^(2.9.2)",
-      "desc": "scroll whether link is selected at the top",
+      "name": "select-scroll-top",
+      "desc": "scroll whether link is selected at the top(2.9.2)",
       "type": "boolean",
       "optionValue": "",
       "options": [],

@@ -18,8 +18,8 @@
       "defaultValue": "—"
     },
     {
-      "name": "value ^(2.6.0)",
-      "desc": "选中状态的值（只有在checkbox-group或者绑定对象类型为array时有效）",
+      "name": "value",
+      "desc": "选中状态的值（只有在checkbox-group或者绑定对象类型为array时有效）(2.6.0)",
       "type": "string / number / boolean / object",
       "optionValue": "",
       "options": [],
@@ -34,16 +34,16 @@
       "defaultValue": "—"
     },
     {
-      "name": "true-value ^(2.6.0)",
-      "desc": "选中时的值",
+      "name": "true-value",
+      "desc": "选中时的值(2.6.0)",
       "type": "string / number",
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
     },
     {
-      "name": "false-value ^(2.6.0)",
-      "desc": "没有选中时的值",
+      "name": "false-value",
+      "desc": "没有选中时的值(2.6.0)",
       "type": "string / number",
       "optionValue": "",
       "options": [],
@@ -126,32 +126,32 @@
       "defaultValue": "—"
     },
     {
-      "name": "aria-controls ^(a11y) ^(2.7.2)",
-      "desc": "<p>与 <a href=\"https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-controls\">aria-control</a>一致, 当 indeterminate为 true时生效</p>",
+      "name": "aria-controls",
+      "desc": "<p>与 <a href=\"https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-controls\">aria-control</a>一致, 当 indeterminate为 true时生效(a11y) (2.7.2)</p>",
       "type": "string",
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
     },
     {
-      "name": "true-label ^(deprecated)",
-      "desc": "选中时的值",
+      "name": "true-label",
+      "desc": "选中时的值(deprecated)",
       "type": "string / number",
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
     },
     {
-      "name": "false-label ^(deprecated)",
-      "desc": "没有选中时的值",
+      "name": "false-label",
+      "desc": "没有选中时的值(deprecated)",
       "type": "string / number",
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
     },
     {
-      "name": "controls ^(a11y) ^(deprecated)",
-      "desc": "<p>和 <a href=\"https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-controls\">aria-control</a>一致。当 indeterminate 为 true 时生效</p>",
+      "name": "controls",
+      "desc": "<p>和 <a href=\"https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-controls\">aria-control</a>一致。当 indeterminate 为 true 时生效(a11y) (deprecated)</p>",
       "type": "string",
       "optionValue": "",
       "options": [],

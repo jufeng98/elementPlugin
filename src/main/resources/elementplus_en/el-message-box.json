@@ -57,8 +57,8 @@
       "defaultValue": ""
     },
     {
-      "name": "closeIcon ^(2.9.5)",
-      "desc": "custom close icon component, default is Close",
+      "name": "closeIcon",
+      "desc": "custom close icon component, default is Close(2.9.5)",
       "type": "string / Component",
       "optionValue": "",
       "options": [],
@@ -161,16 +161,16 @@
       "defaultValue": "OK"
     },
     {
-      "name": "cancelButtonLoadingIcon ^(2.7.7)",
-      "desc": "loading icon content of cancel button",
+      "name": "cancelButtonLoadingIcon",
+      "desc": "loading icon content of cancel button(2.7.7)",
       "type": "string / Component",
       "optionValue": "",
       "options": [],
       "defaultValue": "Loading"
     },
     {
-      "name": "confirmButtonLoadingIcon ^(2.7.7)",
-      "desc": "loading icon content of confirm button",
+      "name": "confirmButtonLoadingIcon",
+      "desc": "loading icon content of confirm button(2.7.7)",
       "type": "string / Component",
       "optionValue": "",
       "options": [],
@@ -289,8 +289,8 @@
       "defaultValue": "false"
     },
     {
-      "name": "overflow ^(2.5.4)",
-      "desc": "draggable MessageBox can overflow the viewport",
+      "name": "overflow",
+      "desc": "draggable MessageBox can overflow the viewport(2.5.4)",
       "type": "boolean",
       "optionValue": "",
       "options": [],
@@ -317,8 +317,8 @@
       "defaultValue": "default"
     },
     {
-      "name": "appendTo ^(2.2.19)",
-      "desc": "set the root element for the message box",
+      "name": "appendTo",
+      "desc": "set the root element for the message box(2.2.19)",
       "type": "CSSSelector / HTMLElement",
       "optionValue": "",
       "options": [],

@@ -133,8 +133,8 @@
       "param": "objectRef<TabPaneName>"
     },
     {
-      "name": "tabNavRef ^(2.9.10)",
-      "desc": "tab-nav component instance",
+      "name": "tabNavRef",
+      "desc": "tab-nav component instance(2.9.10)",
       "param": "objectRef<TabNavInstance | undefined>"
     }
   ]

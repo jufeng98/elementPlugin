@@ -18,16 +18,16 @@
       "defaultValue": "false"
     },
     {
-      "name": "disabled ^(2.8.2)",
-      "desc": "whether the check-tag is disabled",
+      "name": "disabled",
+      "desc": "whether the check-tag is disabled(2.8.2)",
       "type": "boolean",
       "optionValue": "",
       "options": [],
       "defaultValue": "false"
     },
     {
-      "name": "type ^(2.5.4)",
-      "desc": "type of CheckTag",
+      "name": "type",
+      "desc": "type of CheckTag(2.5.4)",
       "type": "enum",
       "optionValue": "primary | success | info | warning | danger",
       "options": [

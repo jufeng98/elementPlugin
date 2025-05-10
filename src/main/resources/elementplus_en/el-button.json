@@ -37,24 +37,24 @@
       "defaultValue": "false"
     },
     {
-      "name": "text ^(2.2.0)",
-      "desc": "determine whether it's a text button",
+      "name": "text",
+      "desc": "determine whether it's a text button(2.2.0)",
       "type": "boolean",
       "optionValue": "",
       "options": [],
       "defaultValue": "false"
     },
     {
-      "name": "bg ^(2.2.0)",
-      "desc": "determine whether the text button background color is always on",
+      "name": "bg",
+      "desc": "determine whether the text button background color is always on(2.2.0)",
       "type": "boolean",
       "optionValue": "",
       "options": [],
       "defaultValue": "false"
     },
     {
-      "name": "link ^(2.2.1)",
-      "desc": "determine whether it's a link button",
+      "name": "link",
+      "desc": "determine whether it's a link button(2.2.1)",
       "type": "boolean",
       "optionValue": "",
       "options": [],
@@ -153,8 +153,8 @@
       "defaultValue": "false"
     },
     {
-      "name": "tag ^(2.3.4)",
-      "desc": "custom element tag",
+      "name": "tag",
+      "desc": "custom element tag(2.3.4)",
       "type": "string / Component",
       "optionValue": "",
       "options": [],

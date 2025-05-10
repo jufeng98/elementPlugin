@@ -163,8 +163,8 @@
       "defaultValue": "info"
     },
     {
-      "name": "tag-effect ^(2.7.8)",
-      "desc": "tag effect",
+      "name": "tag-effect",
+      "desc": "tag effect(2.7.8)",
       "type": "enum",
       "optionValue": "light | dark | plain",
       "options": [
@@ -183,48 +183,48 @@
       "defaultValue": "true"
     },
     {
-      "name": "max-collapse-tags ^(2.3.10)",
-      "desc": "需要显示的 Tag 的最大数量 只有当 collapse-tags 设置为 true 时才会生效。",
+      "name": "max-collapse-tags",
+      "desc": "需要显示的 Tag 的最大数量 只有当 collapse-tags 设置为 true 时才会生效。(2.3.10)",
       "type": "number",
       "optionValue": "",
       "options": [],
       "defaultValue": "1"
     },
     {
-      "name": "empty-values ^(2.7.0)",
-      "desc": "组件的空值配置 [参考config-provider](/en-US/component/config-provider#empty-values-configurations)",
+      "name": "empty-values",
+      "desc": "组件的空值配置 [参考config-provider](/en-US/component/config-provider#empty-values-configurations)(2.7.0)",
       "type": "array",
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
     },
     {
-      "name": "value-on-clear ^(2.7.0)",
-      "desc": "清空选项的值  [参考 config-provider](/en-US/component/config-provider#empty-values-configurations)",
+      "name": "value-on-clear",
+      "desc": "清空选项的值  [参考 config-provider](/en-US/component/config-provider#empty-values-configurations)(2.7.0)",
       "type": "string / number / boolean / Function",
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
     },
     {
-      "name": "persistent ^(2.7.8)",
-      "desc": "当下拉框未被激活并且persistent设置为false，下拉框容器会被删除。",
+      "name": "persistent",
+      "desc": "当下拉框未被激活并且persistent设置为false，下拉框容器会被删除。(2.7.8)",
       "type": "boolean",
       "optionValue": "",
       "options": [],
       "defaultValue": "true"
     },
     {
-      "name": "fallback-placements ^(2.8.1)",
-      "desc": "<p>Tooltip 可用的 positions 请查看<a href=\"https://popper.js.org/docs/v2/modifiers/flip/#fallbackplacements\">popper.js 文档</a></p>",
+      "name": "fallback-placements",
+      "desc": "<p>Tooltip 可用的 positions 请查看<a href=\"https://popper.js.org/docs/v2/modifiers/flip/#fallbackplacements\">popper.js 文档</a>(2.8.1)</p>",
       "type": "arrary",
       "optionValue": "Placement[]",
       "options": [],
       "defaultValue": "—"
     },
     {
-      "name": "placement ^(2.8.1)",
-      "desc": "下拉框出现的位置",
+      "name": "placement",
+      "desc": "下拉框出现的位置(2.8.1)",
       "type": "enum",
       "optionValue": "top | top-start | top-end | bottom | bottom-start | bottom-end | left | left-start | left-end | right | right-start | right-end",
       "options": [
@@ -244,8 +244,8 @@
       "defaultValue": "bottom-start"
     },
     {
-      "name": "popper-append-to-body ^(deprecated)",
-      "desc": "是否将弹出的内容直接插入到 body 元素。 在弹出内容的边框定位出现问题时，可将该属性设置为 false",
+      "name": "popper-append-to-body",
+      "desc": "是否将弹出的内容直接插入到 body 元素。 在弹出内容的边框定位出现问题时，可将该属性设置为 false(deprecated)",
       "type": "boolean",
       "optionValue": "",
       "options": [],
@@ -395,8 +395,8 @@
       "param": "Function(event: FocusEvent) => void"
     },
     {
-      "name": "@clear ^(2.7.7)",
-      "desc": "可清空的单选模式下用户点击清空按钮时触发",
+      "name": "@clear",
+      "desc": "可清空的单选模式下用户点击清空按钮时触发(2.7.7)",
       "param": "Function() => void"
     },
     {
@@ -422,8 +422,8 @@
       "param": "objectComputedRef<any>"
     },
     {
-      "name": "togglePopperVisible ^(2.2.31)",
-      "desc": "切换 popper 可见状态",
+      "name": "togglePopperVisible",
+      "desc": "切换 popper 可见状态(2.2.31)",
       "param": "Function(visible?: boolean) => void"
     },
     {
@@ -432,8 +432,8 @@
       "param": "objectComputedRef<any>"
     },
     {
-      "name": "presentText ^(2.8.4)",
-      "desc": "选中的内容文本",
+      "name": "presentText",
+      "desc": "选中的内容文本(2.8.4)",
       "param": "objectComputedRef<string>"
     }
   ]

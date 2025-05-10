@@ -78,8 +78,8 @@
       "defaultValue": ""
     },
     {
-      "name": "cardScale ^(2.7.8)",
-      "desc": "when type is card, scaled size of secondary cards",
+      "name": "cardScale",
+      "desc": "when type is card, scaled size of secondary cards(2.7.8)",
       "type": "number",
       "optionValue": "",
       "options": [],
@@ -113,8 +113,8 @@
       "defaultValue": "true"
     },
     {
-      "name": "motion-blur ^(2.6.0)",
-      "desc": "infuse dynamism and smoothness into the carousel",
+      "name": "motion-blur",
+      "desc": "infuse dynamism and smoothness into the carousel(2.6.0)",
       "type": "boolean",
       "optionValue": "",
       "options": [],
@@ -139,8 +139,8 @@
   ],
   "methods": [
     {
-      "name": "activeIndex ^(2.7.8)",
-      "desc": "active slide index",
+      "name": "activeIndex",
+      "desc": "active slide index(2.7.8)",
       "param": "number"
     },
     {

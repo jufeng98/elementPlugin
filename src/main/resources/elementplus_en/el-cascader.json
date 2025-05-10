@@ -163,8 +163,8 @@
       "defaultValue": "info"
     },
     {
-      "name": "tag-effect ^(2.7.8)",
-      "desc": "tag effect",
+      "name": "tag-effect",
+      "desc": "tag effect(2.7.8)",
       "type": "enum",
       "optionValue": "light | dark | plain",
       "options": [
@@ -183,48 +183,48 @@
       "defaultValue": "true"
     },
     {
-      "name": "max-collapse-tags ^(2.3.10)",
-      "desc": "The max tags number to be shown. To use this, collpase-tags must be true",
+      "name": "max-collapse-tags",
+      "desc": "The max tags number to be shown. To use this, collpase-tags must be true(2.3.10)",
       "type": "number",
       "optionValue": "",
       "options": [],
       "defaultValue": "1"
     },
     {
-      "name": "empty-values ^(2.7.0)",
-      "desc": "empty values of component, [see config-provider](/en-US/component/config-provider#empty-values-configurations)",
+      "name": "empty-values",
+      "desc": "empty values of component, [see config-provider](/en-US/component/config-provider#empty-values-configurations)(2.7.0)",
       "type": "array",
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
     },
     {
-      "name": "value-on-clear ^(2.7.0)",
-      "desc": "clear return value, [see config-provider](/en-US/component/config-provider#empty-values-configurations)",
+      "name": "value-on-clear",
+      "desc": "clear return value, [see config-provider](/en-US/component/config-provider#empty-values-configurations)(2.7.0)",
       "type": "string / number / boolean / Function",
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
     },
     {
-      "name": "persistent ^(2.7.8)",
-      "desc": "when dropdown is inactive and persistent is false, dropdown will be destroyed",
+      "name": "persistent",
+      "desc": "when dropdown is inactive and persistent is false, dropdown will be destroyed(2.7.8)",
       "type": "boolean",
       "optionValue": "",
       "options": [],
       "defaultValue": "true"
     },
     {
-      "name": "fallback-placements ^(2.8.1)",
-      "desc": "<p>list of possible positions for Tooltip <a href=\"https://popper.js.org/docs/v2/modifiers/flip/#fallbackplacements\">popper.js</a></p>",
+      "name": "fallback-placements",
+      "desc": "<p>list of possible positions for Tooltip <a href=\"https://popper.js.org/docs/v2/modifiers/flip/#fallbackplacements\">popper.js</a>(2.8.1)</p>",
       "type": "arrary",
       "optionValue": "Placement[]",
       "options": [],
       "defaultValue": "—"
     },
     {
-      "name": "placement ^(2.8.1)",
-      "desc": "position of dropdown",
+      "name": "placement",
+      "desc": "position of dropdown(2.8.1)",
       "type": "enum",
       "optionValue": "top | top-start | top-end | bottom | bottom-start | bottom-end | left | left-start | left-end | right | right-start | right-end",
       "options": [
@@ -244,8 +244,8 @@
       "defaultValue": "bottom-start"
     },
     {
-      "name": "popper-append-to-body ^(deprecated)",
-      "desc": "whether to append the popper menu to body. If the positioning of the popper is wrong, you can try to set this prop to false",
+      "name": "popper-append-to-body",
+      "desc": "whether to append the popper menu to body. If the positioning of the popper is wrong, you can try to set this prop to false(deprecated)",
       "type": "boolean",
       "optionValue": "",
       "options": [],
@@ -395,8 +395,8 @@
       "param": "Function(event: FocusEvent) => void"
     },
     {
-      "name": "@clear ^(2.7.7)",
-      "desc": "triggers when the clear icon is clicked in a clearable Select",
+      "name": "@clear",
+      "desc": "triggers when the clear icon is clicked in a clearable Select(2.7.7)",
       "param": "Function() => void"
     },
     {
@@ -422,8 +422,8 @@
       "param": "objectComputedRef<any>"
     },
     {
-      "name": "togglePopperVisible ^(2.2.31)",
-      "desc": "toggle the visible type of popper",
+      "name": "togglePopperVisible",
+      "desc": "toggle the visible type of popper(2.2.31)",
       "param": "Function(visible?: boolean) => void"
     },
     {
@@ -432,8 +432,8 @@
       "param": "objectComputedRef<any>"
     },
     {
-      "name": "presentText ^(2.8.4)",
-      "desc": "selected content text",
+      "name": "presentText",
+      "desc": "selected content text(2.8.4)",
       "param": "objectComputedRef<string>"
     }
   ]

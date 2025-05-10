@@ -201,16 +201,16 @@
       "defaultValue": "dark"
     },
     {
-      "name": "tooltip-options ^(2.2.28)",
-      "desc": "the options for the overflow tooltip, [see the following tooltip component](tooltip.html#attributes)",
+      "name": "tooltip-options",
+      "desc": "the options for the overflow tooltip, [see the following tooltip component](tooltip.html#attributes)(2.2.28)",
       "type": "object",
       "optionValue": "Pick<ElTooltipProps, effect | enterable | hideAfter | offset | placement | popperClass | popperOptions | showAfter | showArrow>",
       "options": [],
-      "defaultValue": "^[object]{ enterable: true, placement: top, showArrow: true, hideAfter: 200, popperOptions: { strategy: fixed } }"
+      "defaultValue": "object`{ enterable: true, placement: 'top', showArrow: true, hideAfter: 200, popperOptions: { strategy: 'fixed' } }`"
     },
     {
-      "name": "append-filter-panel-to ^(2.8.4)",
-      "desc": "which element the filter panels appends to",
+      "name": "append-filter-panel-to",
+      "desc": "which element the filter panels appends to(2.8.4)",
       "type": "string",
       "optionValue": "",
       "options": [],
@@ -286,7 +286,7 @@
       "type": "object",
       "optionValue": "{ hasChildren?: string, children?: string, checkStrictly?: boolean }",
       "options": [],
-      "defaultValue": "^[object]{ hasChildren: hasChildren, children: children, checkStrictly: false }"
+      "defaultValue": "object`{ hasChildren: 'hasChildren', children: 'children', checkStrictly: false }`"
     },
     {
       "name": "table-layout",
@@ -316,40 +316,40 @@
       "defaultValue": "—"
     },
     {
-      "name": "flexible ^(2.2.1)",
-      "desc": "ensure main axis minimum-size doesn't follow the content",
+      "name": "flexible",
+      "desc": "ensure main axis minimum-size doesn't follow the content(2.2.1)",
       "type": "boolean",
       "optionValue": "",
       "options": [],
       "defaultValue": "false"
     },
     {
-      "name": "scrollbar-tabindex ^(2.8.3)",
-      "desc": "body scrollbar's wrap container tabindex",
+      "name": "scrollbar-tabindex",
+      "desc": "body scrollbar's wrap container tabindex(2.8.3)",
       "type": "string / number",
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
     },
     {
-      "name": "allow-drag-last-column ^(2.9.2)",
-      "desc": "whether to allow drag the last column",
+      "name": "allow-drag-last-column",
+      "desc": "whether to allow drag the last column(2.9.2)",
       "type": "boolean",
       "optionValue": "",
       "options": [],
       "defaultValue": "true"
     },
     {
-      "name": "tooltip-formatter ^(2.9.4)",
-      "desc": "customize tooltip content when using show-overflow-tooltip",
+      "name": "tooltip-formatter",
+      "desc": "customize tooltip content when using show-overflow-tooltip(2.9.4)",
       "type": "Function",
       "optionValue": "(data: { row: any, column: any, cellValue: any }) => VNode | string",
       "options": [],
       "defaultValue": "—"
     },
     {
-      "name": "preserve-expanded-content ^(2.9.7)",
-      "desc": "whether to preserve expanded row content in DOM when collapsed",
+      "name": "preserve-expanded-content",
+      "desc": "whether to preserve expanded row content in DOM when collapsed(2.9.7)",
       "type": "boolean",
       "optionValue": "",
       "options": [],
@@ -465,8 +465,8 @@
       "param": "Function(row: any, expandedRows: any[) => void & (row: any, expanded: boolean) => void"
     },
     {
-      "name": "@scroll ^(2.9.0)",
-      "desc": "Invoked after scrolled",
+      "name": "@scroll",
+      "desc": "Invoked after scrolled(2.9.0)",
       "param": "Function({ scrollLeft: number, scrollTop: number }) => void"
     }
   ],
@@ -537,13 +537,13 @@
       "param": "Function(left?: number) => void"
     },
     {
-      "name": "columns ^(2.7.6)",
-      "desc": "Get table columns context.",
+      "name": "columns",
+      "desc": "Get table columns context.(2.7.6)",
       "param": "arrayTableColumnCtx<T>["
     },
     {
-      "name": "updateKeyChildren ^(2.8.4)",
-      "desc": "used in lazy Table, must set `rowKey`, update key children",
+      "name": "updateKeyChildren",
+      "desc": "used in lazy Table, must set `rowKey`, update key children(2.8.4)",
       "param": "Function(key: string, data: T[) => void"
     }
   ]

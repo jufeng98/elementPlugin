@@ -105,8 +105,8 @@
       "defaultValue": "—"
     },
     {
-      "name": "aria-label ^(a11y) ^(2.7.2)",
-      "desc": "原生 aria-label属性",
+      "name": "aria-label",
+      "desc": "原生 aria-label属性(a11y) (2.7.2)",
       "type": "string",
       "optionValue": "",
       "options": [],
@@ -137,8 +137,8 @@
       "defaultValue": "true"
     },
     {
-      "name": "append-to ^(2.9.9)",
-      "desc": "下拉框挂载到哪个 DOM 元素",
+      "name": "append-to",
+      "desc": "下拉框挂载到哪个 DOM 元素(2.9.9)",
       "type": "CSSSelector / HTMLElement",
       "optionValue": "",
       "options": [],
@@ -161,8 +161,8 @@
       "defaultValue": "false"
     },
     {
-      "name": "popper-append-to-body ^(deprecated)",
-      "desc": "是否将下拉列表插入至 body 元素。 在下拉列表的定位出现问题时，可将该属性设置为 false",
+      "name": "popper-append-to-body",
+      "desc": "是否将下拉列表插入至 body 元素。 在下拉列表的定位出现问题时，可将该属性设置为 false(deprecated)",
       "type": "boolean",
       "optionValue": "",
       "options": [],
@@ -292,8 +292,8 @@
       "param": "objectRef<record<string, any>>"
     },
     {
-      "name": "getData ^(2.8.4)",
-      "desc": "加载建议列表",
+      "name": "getData",
+      "desc": "加载建议列表(2.8.4)",
       "param": "Function(queryString: string) => void"
     }
   ]

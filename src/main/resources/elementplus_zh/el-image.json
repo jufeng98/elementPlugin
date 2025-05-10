@@ -32,8 +32,8 @@
       "defaultValue": "false"
     },
     {
-      "name": "loading ^(2.2.3)",
-      "desc": "<p>浏览器加载图像的策略，和 <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-loading\">浏览器原生</a>能力一致</p>",
+      "name": "loading",
+      "desc": "<p>浏览器加载图像的策略，和 <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-loading\">浏览器原生</a>能力一致(2.2.3)</p>",
       "type": "enum",
       "optionValue": "eager | lazy",
       "options": [
@@ -142,24 +142,24 @@
       "defaultValue": "1.2"
     },
     {
-      "name": "min-scale ^(2.4.0)",
-      "desc": "图像查看器缩放事件的最小缩放比例",
+      "name": "min-scale",
+      "desc": "图像查看器缩放事件的最小缩放比例(2.4.0)",
       "type": "number",
       "optionValue": "",
       "options": [],
       "defaultValue": "0.2"
     },
     {
-      "name": "max-scale ^(2.4.0)",
-      "desc": "图像查看器缩放事件的最大缩放比例",
+      "name": "max-scale",
+      "desc": "图像查看器缩放事件的最大缩放比例(2.4.0)",
       "type": "number",
       "optionValue": "",
       "options": [],
       "defaultValue": "7"
     },
     {
-      "name": "show-progress ^(2.9.4)",
-      "desc": "是否在预览图片时显示进度条",
+      "name": "show-progress",
+      "desc": "是否在预览图片时显示进度条(2.9.4)",
       "type": "boolean",
       "optionValue": "",
       "options": [],
@@ -220,8 +220,8 @@
   ],
   "methods": [
     {
-      "name": "showPreview ^(2.9.4)",
-      "desc": "手动打开大图预览",
+      "name": "showPreview",
+      "desc": "手动打开大图预览(2.9.4)",
       "param": "Function() => void"
     }
   ]

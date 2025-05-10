@@ -10,32 +10,32 @@
       "defaultValue": "—"
     },
     {
-      "name": "grouping ^(2.8.2)",
-      "desc": "merge messages with the same content, type of VNode message is not supported",
+      "name": "grouping",
+      "desc": "merge messages with the same content, type of VNode message is not supported(2.8.2)",
       "type": "boolean",
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
     },
     {
-      "name": "duration ^(2.8.2)",
-      "desc": "display duration, millisecond. If set to 0, it will not turn off automatically",
+      "name": "duration",
+      "desc": "display duration, millisecond. If set to 0, it will not turn off automatically(2.8.2)",
       "type": "number",
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
     },
     {
-      "name": "showClose ^(2.8.2)",
-      "desc": "whether to show a close button",
+      "name": "showClose",
+      "desc": "whether to show a close button(2.8.2)",
       "type": "boolean",
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
     },
     {
-      "name": "offset ^(2.8.2)",
-      "desc": "set the distance to the top of viewport",
+      "name": "offset",
+      "desc": "set the distance to the top of viewport(2.8.2)",
       "type": "number",
       "optionValue": "",
       "options": [],

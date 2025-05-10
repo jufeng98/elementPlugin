@@ -26,8 +26,8 @@
       "defaultValue": "false"
     },
     {
-      "name": "append-to ^(2.8.0)",
-      "desc": "which element the Drawer appends to. Will override append-to-body",
+      "name": "append-to",
+      "desc": "which element the Drawer appends to. Will override append-to-body(2.8.0)",
       "type": "CSSSelector / HTMLElement",
       "optionValue": "",
       "options": [],
@@ -151,24 +151,24 @@
       "defaultValue": "—"
     },
     {
-      "name": "header-class ^(2.9.3)",
-      "desc": "custom class names for header wrapper",
+      "name": "header-class",
+      "desc": "custom class names for header wrapper(2.9.3)",
       "type": "string",
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
     },
     {
-      "name": "body-class ^(2.9.3)",
-      "desc": "custom class names for body wrapper",
+      "name": "body-class",
+      "desc": "custom class names for body wrapper(2.9.3)",
       "type": "string",
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
     },
     {
-      "name": "footer-class ^(2.9.3)",
-      "desc": "custom class names for footer wrapper",
+      "name": "footer-class",
+      "desc": "custom class names for footer wrapper(2.9.3)",
       "type": "string",
       "optionValue": "",
       "options": [],
@@ -183,16 +183,16 @@
       "defaultValue": "—"
     },
     {
-      "name": "header-aria-level ^(a11y)",
-      "desc": "header's aria-level attribute",
+      "name": "header-aria-level",
+      "desc": "header's aria-level attribute(a11y)",
       "type": "string",
       "optionValue": "",
       "options": [],
       "defaultValue": "2"
     },
     {
-      "name": "custom-class ^(deprecated)",
-      "desc": "Extra class names for Drawer",
+      "name": "custom-class",
+      "desc": "Extra class names for Drawer(deprecated)",
       "type": "string",
       "optionValue": "",
       "options": [],

@@ -2,8 +2,8 @@
   "name": "el-radio-button",
   "attributes": [
     {
-      "name": "value ^(2.6.0)",
-      "desc": "the value of Radio",
+      "name": "value",
+      "desc": "the value of Radio(2.6.0)",
       "type": "string / number / boolean",
       "optionValue": "",
       "options": [],
@@ -32,6 +32,22 @@
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
+    },
+    {
+      "name": "text-color",
+      "desc": "font color when button is active",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "#ffffff"
+    },
+    {
+      "name": "fill",
+      "desc": "border and background color when button is active",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "#409eff"
     }
   ],
   "props": [],

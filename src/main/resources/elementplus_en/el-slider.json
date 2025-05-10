@@ -138,8 +138,8 @@
       "defaultValue": "—"
     },
     {
-      "name": "aria-label ^(a11y) ^(2.7.2)",
-      "desc": "native aria-label attribute",
+      "name": "aria-label",
+      "desc": "native aria-label attribute(a11y) (2.7.2)",
       "type": "string",
       "optionValue": "",
       "options": [],
@@ -223,16 +223,16 @@
       "defaultValue": "true"
     },
     {
-      "name": "persistent ^(2.9.5)",
-      "desc": "when slider tooltip inactive and persistent is false , popconfirm will be destroyed. persistent always be false when show-tooltip  is false",
+      "name": "persistent",
+      "desc": "when slider tooltip inactive and persistent is false , popconfirm will be destroyed. persistent always be false when show-tooltip  is false(2.9.5)",
       "type": "boolean",
       "optionValue": "",
       "options": [],
       "defaultValue": "true"
     },
     {
-      "name": "label ^(a11y) ^(deprecated)",
-      "desc": "native aria-label attribute",
+      "name": "label",
+      "desc": "native aria-label attribute(a11y) (deprecated)",
       "type": "string",
       "optionValue": "",
       "options": [],

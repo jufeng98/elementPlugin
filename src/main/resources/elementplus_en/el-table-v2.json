@@ -178,16 +178,16 @@
       "defaultValue": "false"
     },
     {
-      "name": "width ^(required)",
-      "desc": "Width of the table",
+      "name": "width",
+      "desc": "Width of the table(required)",
       "type": "",
       "optionValue": "number",
       "options": [],
       "defaultValue": "—"
     },
     {
-      "name": "height ^(required)",
-      "desc": "Height of the table",
+      "name": "height",
+      "desc": "Height of the table(required)",
       "type": "",
       "optionValue": "number",
       "options": [],

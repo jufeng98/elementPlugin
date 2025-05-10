@@ -187,8 +187,8 @@
       "param": "objectRef<TooltipInstance | null>"
     },
     {
-      "name": "dropdownVisible ^(2.8.5)",
-      "desc": "tooltip display status",
+      "name": "dropdownVisible",
+      "desc": "tooltip display status(2.8.5)",
       "param": "objectComputedRef<boolean>"
     }
   ]

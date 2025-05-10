@@ -2,8 +2,8 @@
   "name": "el-radio-button",
   "attributes": [
     {
-      "name": "value ^(2.6.0)",
-      "desc": "单选框的值",
+      "name": "value",
+      "desc": "单选框的值(2.6.0)",
       "type": "string / number / boolean",
       "optionValue": "",
       "options": [],

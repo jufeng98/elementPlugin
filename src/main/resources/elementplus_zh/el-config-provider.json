@@ -10,32 +10,32 @@
       "defaultValue": "—"
     },
     {
-      "name": "grouping ^(2.8.2)",
-      "desc": "合并内容相同的消息，不支持 VNode 类型的消息",
+      "name": "grouping",
+      "desc": "合并内容相同的消息，不支持 VNode 类型的消息(2.8.2)",
       "type": "boolean",
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
     },
     {
-      "name": "duration ^(2.8.2)",
-      "desc": "显示时间，单位为毫秒。 设为 0 则不会自动关闭",
+      "name": "duration",
+      "desc": "显示时间，单位为毫秒。 设为 0 则不会自动关闭(2.8.2)",
       "type": "number",
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
     },
     {
-      "name": "showClose ^(2.8.2)",
-      "desc": "是否显示关闭按钮",
+      "name": "showClose",
+      "desc": "是否显示关闭按钮(2.8.2)",
       "type": "boolean",
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
     },
     {
-      "name": "offset ^(2.8.2)",
-      "desc": "Message 距离窗口顶部的偏移量",
+      "name": "offset",
+      "desc": "Message 距离窗口顶部的偏移量(2.8.2)",
       "type": "number",
       "optionValue": "",
       "options": [],

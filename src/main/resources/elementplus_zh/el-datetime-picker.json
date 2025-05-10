@@ -158,16 +158,16 @@
       "defaultValue": "—"
     },
     {
-      "name": "date-format ^(2.4.0)",
-      "desc": "可选，时间选择器下拉列表中显示的日期格式",
+      "name": "date-format",
+      "desc": "可选，时间选择器下拉列表中显示的日期格式(2.4.0)",
       "type": "string see [date formats(https://day.js.org/docs/en/display/format)",
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
     },
     {
-      "name": "time-format ^(2.4.0)",
-      "desc": "可选，时间选择器下拉列表中显示的时间格式",
+      "name": "time-format",
+      "desc": "可选，时间选择器下拉列表中显示的时间格式(2.4.0)",
       "type": "string see [date formats(https://day.js.org/docs/en/display/format)",
       "optionValue": "",
       "options": [],
@@ -246,24 +246,24 @@
       "defaultValue": "true"
     },
     {
-      "name": "empty-values ^(2.7.0)",
-      "desc": "组件的空值配置 [参考config-provider](/en-US/component/config-provider#empty-values-configurations)",
+      "name": "empty-values",
+      "desc": "组件的空值配置 [参考config-provider](/en-US/component/config-provider#empty-values-configurations)(2.7.0)",
       "type": "array",
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
     },
     {
-      "name": "value-on-clear ^(2.7.0)",
-      "desc": "清空选项的值 [参考 config-provider](/en-US/component/config-provider#empty-values-configurations)",
+      "name": "value-on-clear",
+      "desc": "清空选项的值 [参考 config-provider](/en-US/component/config-provider#empty-values-configurations)(2.7.0)",
       "type": "string / number / boolean / Function",
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
     },
     {
-      "name": "show-now ^(2.8.7)",
-      "desc": "是否显示 now 按钮",
+      "name": "show-now",
+      "desc": "是否显示 now 按钮(2.8.7)",
       "type": "boolean",
       "optionValue": "",
       "options": [],
@@ -316,8 +316,8 @@
       "param": "(e: FocusEvent)"
     },
     {
-      "name": "@clear ^(2.7.7)",
-      "desc": "可清空的模式下用户点击清空按钮时触发",
+      "name": "@clear",
+      "desc": "可清空的模式下用户点击清空按钮时触发(2.7.7)",
       "param": "Function() => void"
     },
     {
@@ -338,8 +338,8 @@
       "param": "Function() => void"
     },
     {
-      "name": "blur ^(2.8.7)",
-      "desc": "使组件失去焦点",
+      "name": "blur",
+      "desc": "使组件失去焦点(2.8.7)",
       "param": "Function() => void"
     }
   ]

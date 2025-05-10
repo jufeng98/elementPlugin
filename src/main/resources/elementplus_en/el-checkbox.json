@@ -18,8 +18,8 @@
       "defaultValue": "—"
     },
     {
-      "name": "value ^(2.6.0)",
-      "desc": "value of the Checkbox when used inside a checkbox-group",
+      "name": "value",
+      "desc": "value of the Checkbox when used inside a checkbox-group(2.6.0)",
       "type": "string / number / boolean / object",
       "optionValue": "",
       "options": [],
@@ -34,16 +34,16 @@
       "defaultValue": "—"
     },
     {
-      "name": "true-value ^(2.6.0)",
-      "desc": "value of the Checkbox if it's checked",
+      "name": "true-value",
+      "desc": "value of the Checkbox if it's checked(2.6.0)",
       "type": "string / number",
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
     },
     {
-      "name": "false-value ^(2.6.0)",
-      "desc": "value of the Checkbox if it's not checked",
+      "name": "false-value",
+      "desc": "value of the Checkbox if it's not checked(2.6.0)",
       "type": "string / number",
       "optionValue": "",
       "options": [],
@@ -126,32 +126,32 @@
       "defaultValue": "—"
     },
     {
-      "name": "aria-controls ^(a11y) ^(2.7.2)",
-      "desc": "<p>same as <a href=\"https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-controls\">aria-controls</a>, takes effect when indeterminate is true</p>",
+      "name": "aria-controls",
+      "desc": "<p>same as <a href=\"https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-controls\">aria-controls</a>, takes effect when indeterminate is true(a11y) (2.7.2)</p>",
       "type": "string",
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
     },
     {
-      "name": "true-label ^(deprecated)",
-      "desc": "value of the Checkbox if it's checked",
+      "name": "true-label",
+      "desc": "value of the Checkbox if it's checked(deprecated)",
       "type": "string / number",
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
     },
     {
-      "name": "false-label ^(deprecated)",
-      "desc": "value of the Checkbox if it's not checked",
+      "name": "false-label",
+      "desc": "value of the Checkbox if it's not checked(deprecated)",
       "type": "string / number",
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
     },
     {
-      "name": "controls ^(a11y) ^(deprecated)",
-      "desc": "<p>same as <a href=\"https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-controls\">aria-controls</a>, takes effect when indeterminate is true</p>",
+      "name": "controls",
+      "desc": "<p>same as <a href=\"https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-controls\">aria-controls</a>, takes effect when indeterminate is true(a11y) (deprecated)</p>",
       "type": "string",
       "optionValue": "",
       "options": [],

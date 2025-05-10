@@ -2,8 +2,8 @@
   "name": "el-upload",
   "attributes": [
     {
-      "name": "action ^(required)",
-      "desc": "请求 URL",
+      "name": "action",
+      "desc": "请求 URL(required)",
       "type": "string",
       "optionValue": "",
       "options": [],

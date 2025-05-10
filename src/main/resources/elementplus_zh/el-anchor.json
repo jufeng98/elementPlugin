@@ -64,8 +64,8 @@
       "defaultValue": "vertical"
     },
     {
-      "name": "select-scroll-top ^(2.9.2)",
-      "desc": "滚动时，链接是否选中位于顶部",
+      "name": "select-scroll-top",
+      "desc": "滚动时，链接是否选中位于顶部(2.9.2)",
       "type": "boolean",
       "optionValue": "",
       "options": [],

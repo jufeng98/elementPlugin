@@ -78,16 +78,16 @@
       "defaultValue": "—"
     },
     {
-      "name": "active-action-icon ^(2.3.9)",
-      "desc": " on 状态下显示的图标组件",
+      "name": "active-action-icon",
+      "desc": " on 状态下显示的图标组件(2.3.9)",
       "type": "string / Component",
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
     },
     {
-      "name": "inactive-action-icon ^(2.3.9)",
-      "desc": " off 状态下显示的图标组件",
+      "name": "inactive-action-icon",
+      "desc": " off 状态下显示的图标组件(2.3.9)",
       "type": "string / Component",
       "optionValue": "",
       "options": [],
@@ -166,40 +166,40 @@
       "defaultValue": "—"
     },
     {
-      "name": "aria-label ^(a11y) ^(2.7.2)",
-      "desc": "等价于原生 input aria-label 属性",
+      "name": "aria-label",
+      "desc": "等价于原生 input aria-label 属性(a11y) (2.7.2)",
       "type": "string",
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
     },
     {
-      "name": "active-color ^(deprecated)",
-      "desc": "当在 on 状态时的背景颜色(推荐使用 CSS var --el-switch-on-color )",
+      "name": "active-color",
+      "desc": "当在 on 状态时的背景颜色(推荐使用 CSS var --el-switch-on-color )(deprecated)",
       "type": "string",
       "optionValue": "",
       "options": [],
       "defaultValue": ""
     },
     {
-      "name": "inactive-color ^(deprecated)",
-      "desc": "off 状态时的背景颜色(推荐使用 CSS var --el-switch-off-color )",
+      "name": "inactive-color",
+      "desc": "off 状态时的背景颜色(推荐使用 CSS var --el-switch-off-color )(deprecated)",
       "type": "string",
       "optionValue": "",
       "options": [],
       "defaultValue": ""
     },
     {
-      "name": "border-color ^(deprecated)",
-      "desc": "开关的边框颜色 ( 推荐使用 CSS var --el-switch-border-color )",
+      "name": "border-color",
+      "desc": "开关的边框颜色 ( 推荐使用 CSS var --el-switch-border-color )(deprecated)",
       "type": "string",
       "optionValue": "",
       "options": [],
       "defaultValue": ""
     },
     {
-      "name": "label ^(a11y) ^(deprecated)",
-      "desc": "等价于原生 input aria-label 属性",
+      "name": "label",
+      "desc": "等价于原生 input aria-label 属性(a11y) (deprecated)",
       "type": "string",
       "optionValue": "",
       "options": [],

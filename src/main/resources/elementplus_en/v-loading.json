@@ -141,16 +141,16 @@
       "defaultValue": "—"
     },
     {
-      "name": "beforeClose ^(2.7.8)",
-      "desc": "Function executed before loading attempts to close. If this function returns false, the closing process will be aborted. Otherwise, the loading will close.",
+      "name": "beforeClose",
+      "desc": "Function executed before loading attempts to close. If this function returns false, the closing process will be aborted. Otherwise, the loading will close.(2.7.8)",
       "type": "Function",
       "optionValue": "() => boolean",
       "options": [],
       "defaultValue": "—"
     },
     {
-      "name": "closed ^(2.7.8)",
-      "desc": "Function triggered after loading has completely closed",
+      "name": "closed",
+      "desc": "Function triggered after loading has completely closed(2.7.8)",
       "type": "Function",
       "optionValue": "() => void",
       "options": [],

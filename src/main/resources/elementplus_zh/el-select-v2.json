@@ -26,8 +26,8 @@
       "defaultValue": "—"
     },
     {
-      "name": "props ^(2.4.2)",
-      "desc": "配置选项，具体看下表",
+      "name": "props",
+      "desc": "配置选项，具体看下表(2.4.2)",
       "type": "object",
       "optionValue": "",
       "options": [],
@@ -217,8 +217,8 @@
       "defaultValue": "true"
     },
     {
-      "name": "append-to ^(2.8.8)",
-      "desc": "下拉框挂载到哪个 DOM 元素",
+      "name": "append-to",
+      "desc": "下拉框挂载到哪个 DOM 元素(2.8.8)",
       "type": "CSSSelector / HTMLElement",
       "optionValue": "",
       "options": [],
@@ -249,16 +249,16 @@
       "defaultValue": "false"
     },
     {
-      "name": "fit-input-width ^(2.9.2)",
-      "desc": "无论下拉框的宽度是否与输入框相同，如果值为number，则宽度是固定的。",
+      "name": "fit-input-width",
+      "desc": "无论下拉框的宽度是否与输入框相同，如果值为number，则宽度是固定的。(2.9.2)",
       "type": "boolean / number",
       "optionValue": "",
       "options": [],
       "defaultValue": "true"
     },
     {
-      "name": "suffix-icon ^(2.9.8)",
-      "desc": "自定义后缀图标组件",
+      "name": "suffix-icon",
+      "desc": "自定义后缀图标组件(2.9.8)",
       "type": "string / object",
       "optionValue": "Component",
       "options": [],
@@ -313,16 +313,16 @@
       "defaultValue": "true"
     },
     {
-      "name": "offset ^(2.8.8)",
-      "desc": "下拉面板偏移量",
+      "name": "offset",
+      "desc": "下拉面板偏移量(2.8.8)",
       "type": "number",
       "optionValue": "",
       "options": [],
       "defaultValue": "12"
     },
     {
-      "name": "show-arrow ^(2.8.8)",
-      "desc": "下拉菜单的内容是否有箭头",
+      "name": "show-arrow",
+      "desc": "下拉菜单的内容是否有箭头(2.8.8)",
       "type": "boolean",
       "optionValue": "",
       "options": [],
@@ -350,32 +350,32 @@
       "defaultValue": "bottom-start"
     },
     {
-      "name": "fallback-placements ^(2.5.6)",
-      "desc": "<p>dropdown 可用的 positions 请查看<a href=\"https://popper.js.org/docs/v2/modifiers/flip/#fallbackplacements\">popper.js 文档</a></p>",
+      "name": "fallback-placements",
+      "desc": "<p>dropdown 可用的 positions 请查看<a href=\"https://popper.js.org/docs/v2/modifiers/flip/#fallbackplacements\">popper.js 文档</a>(2.5.6)</p>",
       "type": "array",
       "optionValue": "Placement[]",
       "options": [],
       "defaultValue": "[bottom-start, top-start, right, left]"
     },
     {
-      "name": "collapse-tags-tooltip ^(2.3.0)",
-      "desc": "当鼠标悬停于折叠标签的文本时，是否显示所有选中的标签。 只有当 collapse-tags 设置为 true 时才会生效。",
+      "name": "collapse-tags-tooltip",
+      "desc": "当鼠标悬停于折叠标签的文本时，是否显示所有选中的标签。 只有当 collapse-tags 设置为 true 时才会生效。(2.3.0)",
       "type": "boolean",
       "optionValue": "",
       "options": [],
       "defaultValue": "false"
     },
     {
-      "name": "max-collapse-tags ^(2.3.0)",
-      "desc": "需要显示的 Tag 的最大数量。 只有当 collapse-tags 设置为 true 时才会生效。",
+      "name": "max-collapse-tags",
+      "desc": "需要显示的 Tag 的最大数量。 只有当 collapse-tags 设置为 true 时才会生效。(2.3.0)",
       "type": "number",
       "optionValue": "",
       "options": [],
       "defaultValue": "1"
     },
     {
-      "name": "tag-type ^(2.5.0)",
-      "desc": "标签类型",
+      "name": "tag-type",
+      "desc": "标签类型(2.5.0)",
       "type": "enum",
       "optionValue": " | success | info | warning | danger",
       "options": [
@@ -387,8 +387,8 @@
       "defaultValue": "info"
     },
     {
-      "name": "tag-effect ^(2.7.7)",
-      "desc": "标签效果",
+      "name": "tag-effect",
+      "desc": "标签效果(2.7.7)",
       "type": "enum",
       "optionValue": " | light | dark | plain",
       "options": [
@@ -399,40 +399,40 @@
       "defaultValue": "light"
     },
     {
-      "name": "aria-label ^(a11y) ^(2.5.0)",
-      "desc": "等价于原生 input aria-label 属性",
+      "name": "aria-label",
+      "desc": "等价于原生 input aria-label 属性(a11y) (2.5.0)",
       "type": "string",
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
     },
     {
-      "name": "empty-values ^(2.7.0)",
-      "desc": "组件的空值配置 [参考config-provider](/en-US/component/config-provider#empty-values-configurations)",
+      "name": "empty-values",
+      "desc": "组件的空值配置 [参考config-provider](/en-US/component/config-provider#empty-values-configurations)(2.7.0)",
       "type": "array",
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
     },
     {
-      "name": "value-on-clear ^(2.7.0)",
-      "desc": "清空选项的值 [参考 config-provider](/en-US/component/config-provider#empty-values-configurations)",
+      "name": "value-on-clear",
+      "desc": "清空选项的值 [参考 config-provider](/en-US/component/config-provider#empty-values-configurations)(2.7.0)",
       "type": "string / number / boolean / Function",
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
     },
     {
-      "name": "popper-append-to-body ^(deprecated)",
-      "desc": "是否将弹出框插入至 body 元素 当弹出框的位置出现问题时，你可以尝试将该属性设置为false。",
+      "name": "popper-append-to-body",
+      "desc": "是否将弹出框插入至 body 元素 当弹出框的位置出现问题时，你可以尝试将该属性设置为false。(deprecated)",
       "type": "boolean",
       "optionValue": "",
       "options": [],
       "defaultValue": "false"
     },
     {
-      "name": "tabindex ^(2.9.0)",
-      "desc": "input 的 tabindex",
+      "name": "tabindex",
+      "desc": "input 的 tabindex(2.9.0)",
       "type": "string / number",
       "optionValue": "",
       "options": [],
@@ -553,8 +553,8 @@
       "param": "Function() => void"
     },
     {
-      "name": "selectedLabel ^(2.8.5)",
-      "desc": "获取当前选中的标签",
+      "name": "selectedLabel",
+      "desc": "获取当前选中的标签(2.8.5)",
       "param": "objectComputedRef<string | string[>"
     }
   ]

@@ -2,8 +2,8 @@
   "name": "el-pagination",
   "attributes": [
     {
-      "name": "size ^(2.7.6)",
-      "desc": "分页大小",
+      "name": "size",
+      "desc": "分页大小(2.7.6)",
       "type": "enum",
       "optionValue": "large | default | small",
       "options": [
@@ -120,8 +120,8 @@
       "defaultValue": "[10, 20, 30, 40, 50, 100]"
     },
     {
-      "name": "append-size-to ^(2.8.4)",
-      "desc": "下拉框挂载到哪个 DOM 元素",
+      "name": "append-size-to",
+      "desc": "下拉框挂载到哪个 DOM 元素(2.8.4)",
       "type": "string",
       "optionValue": "",
       "options": [],
@@ -176,8 +176,8 @@
       "defaultValue": "false"
     },
     {
-      "name": "teleported ^(2.3.13)",
-      "desc": "是否将下拉菜单teleport至 body",
+      "name": "teleported",
+      "desc": "是否将下拉菜单teleport至 body(2.3.13)",
       "type": "boolean",
       "optionValue": "",
       "options": [],
@@ -192,8 +192,8 @@
       "defaultValue": "false"
     },
     {
-      "name": "small ^(deprecated)",
-      "desc": "是否使用小型分页样式",
+      "name": "small",
+      "desc": "是否使用小型分页样式(deprecated)",
       "type": "boolean",
       "optionValue": "",
       "options": [],
@@ -221,8 +221,8 @@
       "param": "Function(value: number) => void"
     },
     {
-      "name": "@change ^(2.4.4)",
-      "desc": "`current-page` 或 `page-size` 更改时触发",
+      "name": "@change",
+      "desc": "`current-page` 或 `page-size` 更改时触发(2.4.4)",
       "param": "Function(currentPage: number, pageSize: number) => void"
     },
     {

@@ -223,8 +223,8 @@
       "defaultValue": "—"
     },
     {
-      "name": "filter-class-name ^(2.5.0)",
-      "desc": "className for the filter dropdown",
+      "name": "filter-class-name",
+      "desc": "className for the filter dropdown(2.5.0)",
       "type": "string",
       "optionValue": "",
       "options": [],
@@ -255,8 +255,8 @@
       "defaultValue": "—"
     },
     {
-      "name": "tooltip-formatter ^(2.9.4)",
-      "desc": "customize tooltip content when using show-overflow-tooltip",
+      "name": "tooltip-formatter",
+      "desc": "customize tooltip content when using show-overflow-tooltip(2.9.4)",
       "type": "Function",
       "optionValue": "(data: { row: any, column: any, cellValue: any }) => VNode | string",
       "options": [],

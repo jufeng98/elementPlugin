@@ -2,8 +2,8 @@
   "name": "el-submenu",
   "attributes": [
     {
-      "name": "index ^(required)",
-      "desc": "unique identification",
+      "name": "index",
+      "desc": "unique identification(required)",
       "type": "string",
       "optionValue": "",
       "options": [],

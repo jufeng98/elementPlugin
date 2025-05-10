@@ -126,5 +126,16 @@
       "param": "Function(paneName: TabPaneName | undefined, action: remove | add) => void"
     }
   ],
-  "methods": []
+  "methods": [
+    {
+      "name": "currentName",
+      "desc": "current active pane name",
+      "param": "objectRef<TabPaneName>"
+    },
+    {
+      "name": "tabNavRef",
+      "desc": "tab-nav component instance(2.9.10)",
+      "param": "objectRef<TabNavInstance | undefined>"
+    }
+  ]
 }

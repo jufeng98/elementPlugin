@@ -26,8 +26,8 @@
       "defaultValue": "[]"
     },
     {
-      "name": "props ^(2.9.8)",
-      "desc": "配置选项，详见下表",
+      "name": "props",
+      "desc": "配置选项，详见下表(2.9.8)",
       "type": "object",
       "optionValue": "",
       "options": [],
@@ -86,16 +86,16 @@
       "defaultValue": "—"
     },
     {
-      "name": "aria-label ^(a11y)",
-      "desc": "原生 aria-label 属性",
+      "name": "aria-label",
+      "desc": "原生 aria-label 属性(a11y)",
       "type": "string",
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
     },
     {
-      "name": "direction ^(2.8.7)",
-      "desc": "展示的方向",
+      "name": "direction",
+      "desc": "展示的方向(2.8.7)",
       "type": "enum",
       "optionValue": "horizontal | vertical",
       "options": [

@@ -93,8 +93,8 @@
       "defaultValue": "0"
     },
     {
-      "name": "aria-label ^(a11y) ^(2.7.2)",
-      "desc": "ColorPicker 的 aria-label",
+      "name": "aria-label",
+      "desc": "ColorPicker 的 aria-label(a11y) (2.7.2)",
       "type": "string",
       "optionValue": "",
       "options": [],
@@ -109,16 +109,16 @@
       "defaultValue": "—"
     },
     {
-      "name": "teleported ^(2.7.2)",
-      "desc": "是否将 popover 的下拉列表渲染至 body 下",
+      "name": "teleported",
+      "desc": "是否将 popover 的下拉列表渲染至 body 下(2.7.2)",
       "type": "boolean",
       "optionValue": "",
       "options": [],
       "defaultValue": "true"
     },
     {
-      "name": "label ^(a11y) ^(deprecated)",
-      "desc": "ColorPicker 的 aria-label",
+      "name": "label",
+      "desc": "ColorPicker 的 aria-label(a11y) (deprecated)",
       "type": "string",
       "optionValue": "",
       "options": [],
@@ -141,13 +141,13 @@
       "param": "Function(value: string) => void"
     },
     {
-      "name": "@focus ^(2.4.0)",
-      "desc": "当获得焦点时触发",
+      "name": "@focus",
+      "desc": "当获得焦点时触发(2.4.0)",
       "param": "Function(event: FocusEvent) => void"
     },
     {
-      "name": "@blur ^(2.4.0)",
-      "desc": "当失去焦点时触发",
+      "name": "@blur",
+      "desc": "当失去焦点时触发(2.4.0)",
       "param": "Function(event: FocusEvent) => void"
     }
   ],
@@ -158,23 +158,23 @@
       "param": "objectColor"
     },
     {
-      "name": "show ^(2.3.3)",
-      "desc": "手动显示颜色选择器",
+      "name": "show",
+      "desc": "手动显示颜色选择器(2.3.3)",
       "param": "Function() => void"
     },
     {
-      "name": "hide ^(2.3.3)",
-      "desc": "手动隐藏颜色选择器",
+      "name": "hide",
+      "desc": "手动隐藏颜色选择器(2.3.3)",
       "param": "Function() => void"
     },
     {
-      "name": "focus ^(2.3.13)",
-      "desc": "使 picker 获得焦点",
+      "name": "focus",
+      "desc": "使 picker 获得焦点(2.3.13)",
       "param": "Function() => void"
     },
     {
-      "name": "blur ^(2.3.13)",
-      "desc": "使 picker 失去焦点",
+      "name": "blur",
+      "desc": "使 picker 失去焦点(2.3.13)",
       "param": "Function() => void"
     }
   ]

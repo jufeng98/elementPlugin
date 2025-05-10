@@ -29,16 +29,16 @@
       "defaultValue": "true"
     },
     {
-      "name": "ellipsis-icon ^(2.4.4)",
-      "desc": "自定义省略图标 (仅在水平模式下可用)",
+      "name": "ellipsis-icon",
+      "desc": "自定义省略图标 (仅在水平模式下可用)(2.4.4)",
       "type": "string / Component",
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
     },
     {
-      "name": "popper-offset ^(2.4.4)",
-      "desc": "弹出层的偏移量(对所有子菜单有效)",
+      "name": "popper-offset",
+      "desc": "弹出层的偏移量(对所有子菜单有效)(2.4.4)",
       "type": "number",
       "optionValue": "",
       "options": [],
@@ -96,8 +96,8 @@
       "defaultValue": "true"
     },
     {
-      "name": "popper-effect ^(2.2.26)",
-      "desc": "Tooltip 主题，内置了 dark / light 两种主题，当菜单折叠时生效。",
+      "name": "popper-effect",
+      "desc": "Tooltip 主题，内置了 dark / light 两种主题，当菜单折叠时生效。(2.2.26)",
       "type": "enum",
       "optionValue": "dark | light",
       "options": [
@@ -107,64 +107,64 @@
       "defaultValue": "dark"
     },
     {
-      "name": "close-on-click-outside ^(2.4.4)",
-      "desc": "可选，单击外部时是否折叠菜单",
+      "name": "close-on-click-outside",
+      "desc": "可选，单击外部时是否折叠菜单(2.4.4)",
       "type": "boolean",
       "optionValue": "",
       "options": [],
       "defaultValue": "false"
     },
     {
-      "name": "popper-class ^(2.5.0)",
-      "desc": "为 popper 添加类名",
+      "name": "popper-class",
+      "desc": "为 popper 添加类名(2.5.0)",
       "type": "string",
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
     },
     {
-      "name": "show-timeout ^(2.5.0)",
-      "desc": "菜单出现前的延迟",
+      "name": "show-timeout",
+      "desc": "菜单出现前的延迟(2.5.0)",
       "type": "number",
       "optionValue": "",
       "options": [],
       "defaultValue": "300"
     },
     {
-      "name": "hide-timeout ^(2.5.0)",
-      "desc": "菜单消失前的延迟",
+      "name": "hide-timeout",
+      "desc": "菜单消失前的延迟(2.5.0)",
       "type": "number",
       "optionValue": "",
       "options": [],
       "defaultValue": "300"
     },
     {
-      "name": "background-color ^(deprecated)",
-      "desc": "菜单的背景颜色 (十六进制格式) (推荐在样式类中使用 --el-menu-bg-color)",
+      "name": "background-color",
+      "desc": "菜单的背景颜色 (十六进制格式) (推荐在样式类中使用 --el-menu-bg-color)(deprecated)",
       "type": "string",
       "optionValue": "",
       "options": [],
       "defaultValue": "#ffffff"
     },
     {
-      "name": "text-color ^(deprecated)",
-      "desc": "菜单的文字颜色 (十六进制格式) (推荐在样式类中使用 --el-menu-text-color)",
+      "name": "text-color",
+      "desc": "菜单的文字颜色 (十六进制格式) (推荐在样式类中使用 --el-menu-text-color)(deprecated)",
       "type": "string",
       "optionValue": "",
       "options": [],
       "defaultValue": "#303133"
     },
     {
-      "name": "active-text-color ^(deprecated)",
-      "desc": "活动菜单项的文本颜色（十六进制格式）（推荐使用 css var --el-menu-active-color）",
+      "name": "active-text-color",
+      "desc": "活动菜单项的文本颜色（十六进制格式）（推荐使用 css var --el-menu-active-color）(deprecated)",
       "type": "string",
       "optionValue": "",
       "options": [],
       "defaultValue": "#409eff"
     },
     {
-      "name": "persistent ^(2.9.5)",
-      "desc": "当菜单处于非活动状态且 persistent 为 false 时，下拉菜单将被销毁",
+      "name": "persistent",
+      "desc": "当菜单处于非活动状态且 persistent 为 false 时，下拉菜单将被销毁(2.9.5)",
       "type": "boolean",
       "optionValue": "",
       "options": [],
@@ -209,8 +209,8 @@
       "param": "Function(index: string) => void"
     },
     {
-      "name": "updateActiveIndex ^(2.9.8)",
-      "desc": "通过索引激活指定菜单",
+      "name": "updateActiveIndex",
+      "desc": "通过索引激活指定菜单(2.9.8)",
       "param": "Function(index: string) => void"
     }
   ]

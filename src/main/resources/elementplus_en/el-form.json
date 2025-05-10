@@ -133,8 +133,8 @@
       "defaultValue": "false"
     },
     {
-      "name": "scroll-into-view-options ^(2.3.2)",
-      "desc": "<p>When validation fails, it scrolls to the first error item based on the scrollIntoView option. <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollIntoView\">scrollIntoView</a>.</p>",
+      "name": "scroll-into-view-options",
+      "desc": "<p>When validation fails, it scrolls to the first error item based on the scrollIntoView option. <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollIntoView\">scrollIntoView</a>.(2.3.2)</p>",
       "type": "object",
       "optionValue": "Record<string, any>",
       "options": [],
@@ -184,8 +184,8 @@
       "param": "Function(props?: Arrayable<FormItemProp> | undefined) => void"
     },
     {
-      "name": "fields ^(2.7.3)",
-      "desc": "Get all fields context.",
+      "name": "fields",
+      "desc": "Get all fields context.(2.7.3)",
       "param": "arrayFormItemContext["
     }
   ]

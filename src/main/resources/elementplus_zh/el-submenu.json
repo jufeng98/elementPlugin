@@ -2,8 +2,8 @@
   "name": "el-submenu",
   "attributes": [
     {
-      "name": "index ^(required)",
-      "desc": "唯一标志",
+      "name": "index",
+      "desc": "唯一标志(required)",
       "type": "string",
       "optionValue": "",
       "options": [],

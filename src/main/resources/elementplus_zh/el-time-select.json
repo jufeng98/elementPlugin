@@ -42,8 +42,8 @@
       "defaultValue": "true"
     },
     {
-      "name": "include-end-time ^(2.9.3)",
-      "desc": "是否在选项中包含end",
+      "name": "include-end-time",
+      "desc": "是否在选项中包含end(2.9.3)",
       "type": "boolean",
       "optionValue": "",
       "options": [],
@@ -153,16 +153,16 @@
       "defaultValue": "HH:mm"
     },
     {
-      "name": "empty-values ^(2.7.0)",
-      "desc": "组件的空值配置 [参考config-provider](/en-US/component/config-provider#empty-values-configurations)",
+      "name": "empty-values",
+      "desc": "组件的空值配置 [参考config-provider](/en-US/component/config-provider#empty-values-configurations)(2.7.0)",
       "type": "array",
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
     },
     {
-      "name": "value-on-clear ^(2.7.0)",
-      "desc": "清空选项的值 [参考 config-provider](/en-US/component/config-provider#empty-values-configurations)",
+      "name": "value-on-clear",
+      "desc": "清空选项的值 [参考 config-provider](/en-US/component/config-provider#empty-values-configurations)(2.7.0)",
       "type": "string / number / boolean / Function",
       "optionValue": "",
       "options": [],
@@ -190,8 +190,8 @@
       "param": "Function(event: FocusEvent) => void"
     },
     {
-      "name": "@clear ^(2.7.7)",
-      "desc": "可清空的单选模式下用户点击清空按钮时触发",
+      "name": "@clear",
+      "desc": "可清空的单选模式下用户点击清空按钮时触发(2.7.7)",
       "param": "Function() => void"
     }
   ],

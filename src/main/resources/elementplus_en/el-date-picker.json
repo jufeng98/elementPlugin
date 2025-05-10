@@ -243,32 +243,32 @@
       "defaultValue": "true"
     },
     {
-      "name": "empty-values ^(2.7.0)",
-      "desc": "empty values of component, [see config-provider](/en-US/component/config-provider#empty-values-configurations)",
+      "name": "empty-values",
+      "desc": "empty values of component, [see config-provider](/en-US/component/config-provider#empty-values-configurations)(2.7.0)",
       "type": "array",
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
     },
     {
-      "name": "value-on-clear ^(2.7.0)",
-      "desc": "clear return value, [see config-provider](/en-US/component/config-provider#empty-values-configurations)",
+      "name": "value-on-clear",
+      "desc": "clear return value, [see config-provider](/en-US/component/config-provider#empty-values-configurations)(2.7.0)",
       "type": "string / number / boolean / Function",
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
     },
     {
-      "name": "fallback-placements ^(2.8.4)",
-      "desc": "<p>list of possible positions for Tooltip <a href=\"https://popper.js.org/docs/v2/modifiers/flip/#fallbackplacements\">popper.js</a></p>",
+      "name": "fallback-placements",
+      "desc": "<p>list of possible positions for Tooltip <a href=\"https://popper.js.org/docs/v2/modifiers/flip/#fallbackplacements\">popper.js</a>(2.8.4)</p>",
       "type": "arrary",
       "optionValue": "Placement[]",
       "options": [],
       "defaultValue": "—"
     },
     {
-      "name": "placement ^(2.8.4)",
-      "desc": "position of dropdown",
+      "name": "placement",
+      "desc": "position of dropdown(2.8.4)",
       "type": "",
       "optionValue": "Placement",
       "options": [],
@@ -321,8 +321,8 @@
       "param": "Function(e: FocusEvent) => void"
     },
     {
-      "name": "@clear ^(2.7.7)",
-      "desc": "triggers when the clear icon is clicked in a clearable DatePicker",
+      "name": "@clear",
+      "desc": "triggers when the clear icon is clicked in a clearable DatePicker(2.7.7)",
       "param": "Function() => void"
     },
     {
@@ -348,18 +348,18 @@
       "param": "Function() => void"
     },
     {
-      "name": "blur ^(2.8.7)",
-      "desc": "blur the DatePicker component",
+      "name": "blur",
+      "desc": "blur the DatePicker component(2.8.7)",
       "param": "Function() => void"
     },
     {
-      "name": "handleOpen ^(2.2.16)",
-      "desc": "open the DatePicker popper",
+      "name": "handleOpen",
+      "desc": "open the DatePicker popper(2.2.16)",
       "param": "Function() => void"
     },
     {
-      "name": "handleClose ^(2.2.16)",
-      "desc": "close the DatePicker popper",
+      "name": "handleClose",
+      "desc": "close the DatePicker popper(2.2.16)",
       "param": "Function() => void"
     }
   ]

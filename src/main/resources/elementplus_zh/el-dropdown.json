@@ -89,8 +89,8 @@
       "defaultValue": "hover"
     },
     {
-      "name": "triggerKeys ^(2.9.1)",
-      "desc": "指定键盘上哪些按键可以触发操作",
+      "name": "triggerKeys",
+      "desc": "指定键盘上哪些按键可以触发操作(2.9.1)",
       "type": "array",
       "optionValue": "string[]",
       "options": [],
@@ -162,16 +162,16 @@
       "defaultValue": "{modifiers: [{name: computeStyles,options: {gpuAcceleration: false}}]}"
     },
     {
-      "name": "teleported ^(2.2.20)",
-      "desc": "是否将下拉列表插入至 body 元素",
+      "name": "teleported",
+      "desc": "是否将下拉列表插入至 body 元素(2.2.20)",
       "type": "boolean",
       "optionValue": "",
       "options": [],
       "defaultValue": "true"
     },
     {
-      "name": "persistent ^(2.9.5)",
-      "desc": "当下拉菜单处于非活动状态且 persistent 为 false 时，下拉菜单将被销毁",
+      "name": "persistent",
+      "desc": "当下拉菜单处于非活动状态且 persistent 为 false 时，下拉菜单将被销毁(2.9.5)",
       "type": "boolean",
       "optionValue": "",
       "options": [],

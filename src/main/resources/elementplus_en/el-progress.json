@@ -2,8 +2,8 @@
   "name": "el-progress",
   "attributes": [
     {
-      "name": "percentage ^(required)",
-      "desc": "percentage",
+      "name": "percentage",
+      "desc": "percentage(required)",
       "type": "number",
       "optionValue": "(0-100)",
       "options": [],
@@ -110,16 +110,16 @@
       "defaultValue": "—"
     },
     {
-      "name": "striped ^(2.3.4)",
-      "desc": "stripe over the progress bar's color",
+      "name": "striped",
+      "desc": "stripe over the progress bar's color(2.3.4)",
       "type": "boolean",
       "optionValue": "",
       "options": [],
       "defaultValue": "false"
     },
     {
-      "name": "striped-flow ^(2.3.4)",
-      "desc": "get the stripes to flow",
+      "name": "striped-flow",
+      "desc": "get the stripes to flow(2.3.4)",
       "type": "boolean",
       "optionValue": "",
       "options": [],

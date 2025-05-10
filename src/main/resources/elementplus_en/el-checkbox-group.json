@@ -54,8 +54,8 @@
       "defaultValue": "—"
     },
     {
-      "name": "aria-label ^(a11y) ^(2.7.2)",
-      "desc": "native aria-label attribute",
+      "name": "aria-label",
+      "desc": "native aria-label attribute(a11y) (2.7.2)",
       "type": "string",
       "optionValue": "",
       "options": [],
@@ -94,8 +94,8 @@
       "defaultValue": "true"
     },
     {
-      "name": "label ^(a11y) ^(deprecated)",
-      "desc": "native aria-label attribute",
+      "name": "label",
+      "desc": "native aria-label attribute(a11y) (deprecated)",
       "type": "string",
       "optionValue": "",
       "options": [],

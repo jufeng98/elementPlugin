@@ -36,8 +36,8 @@
       "defaultValue": "false"
     },
     {
-      "name": "line-clamp ^(2.4.0)",
-      "desc": "maximum lines",
+      "name": "line-clamp",
+      "desc": "maximum lines(2.4.0)",
       "type": "string / number",
       "optionValue": "",
       "options": [],

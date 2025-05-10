@@ -36,8 +36,8 @@
       "defaultValue": "false"
     },
     {
-      "name": "line-clamp ^(2.4.0)",
-      "desc": "最大行数",
+      "name": "line-clamp",
+      "desc": "最大行数(2.4.0)",
       "type": "string / number",
       "optionValue": "",
       "options": [],

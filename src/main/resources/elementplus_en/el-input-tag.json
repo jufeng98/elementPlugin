@@ -70,8 +70,8 @@
       "defaultValue": "false"
     },
     {
-      "name": "delimiter ^(2.9.9)",
-      "desc": "add a tag when a delimiter is matched",
+      "name": "delimiter",
+      "desc": "add a tag when a delimiter is matched(2.9.9)",
       "type": "string / regex",
       "optionValue": "",
       "options": [],
@@ -90,8 +90,8 @@
       "defaultValue": "—"
     },
     {
-      "name": "save-on-blur ^(2.9.7)",
-      "desc": "whether to save the input value when the input loses focus",
+      "name": "save-on-blur",
+      "desc": "whether to save the input value when the input loses focus(2.9.7)",
       "type": "boolean",
       "optionValue": "",
       "options": [],
@@ -186,8 +186,8 @@
       "defaultValue": "off"
     },
     {
-      "name": "aria-label ^(a11y)",
-      "desc": "native aria-label attribute",
+      "name": "aria-label",
+      "desc": "native aria-label attribute(a11y)",
       "type": "string",
       "optionValue": "",
       "options": [],

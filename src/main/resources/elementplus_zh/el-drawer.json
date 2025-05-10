@@ -26,8 +26,8 @@
       "defaultValue": "false"
     },
     {
-      "name": "append-to ^(2.8.0)",
-      "desc": "挂载到哪个 DOM 元素 将覆盖 append-to-body",
+      "name": "append-to",
+      "desc": "挂载到哪个 DOM 元素 将覆盖 append-to-body(2.8.0)",
       "type": "CSSSelector / HTMLElement",
       "optionValue": "",
       "options": [],
@@ -151,24 +151,24 @@
       "defaultValue": "—"
     },
     {
-      "name": "header-class ^(2.9.3)",
-      "desc": "header 部分的自定义 class 名",
+      "name": "header-class",
+      "desc": "header 部分的自定义 class 名(2.9.3)",
       "type": "string",
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
     },
     {
-      "name": "body-class ^(2.9.3)",
-      "desc": "body 部分的自定义 class 名",
+      "name": "body-class",
+      "desc": "body 部分的自定义 class 名(2.9.3)",
       "type": "string",
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
     },
     {
-      "name": "footer-class ^(2.9.3)",
-      "desc": "footer 部分的自定义 class 名",
+      "name": "footer-class",
+      "desc": "footer 部分的自定义 class 名(2.9.3)",
       "type": "string",
       "optionValue": "",
       "options": [],
@@ -183,16 +183,16 @@
       "defaultValue": "—"
     },
     {
-      "name": "header-aria-level ^(a11y)",
-      "desc": "header 的 aria-level 属性",
+      "name": "header-aria-level",
+      "desc": "header 的 aria-level 属性(a11y)",
       "type": "string",
       "optionValue": "",
       "options": [],
       "defaultValue": "2"
     },
     {
-      "name": "custom-class ^(deprecated)",
-      "desc": "Drawer 的自定义类名",
+      "name": "custom-class",
+      "desc": "Drawer 的自定义类名(deprecated)",
       "type": "string",
       "optionValue": "",
       "options": [],

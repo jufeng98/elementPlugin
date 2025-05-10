@@ -18,8 +18,8 @@
       "defaultValue": ""
     },
     {
-      "name": "icon ^(2.8.3)",
-      "desc": "icon of the collapse item",
+      "name": "icon",
+      "desc": "icon of the collapse item(2.8.3)",
       "type": "string / Component",
       "optionValue": "",
       "options": [],

@@ -90,32 +90,32 @@
       "defaultValue": "20"
     },
     {
-      "name": "id ^(2.4.0)",
-      "desc": "视图ID",
+      "name": "id",
+      "desc": "视图ID(2.4.0)",
       "type": "string",
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
     },
     {
-      "name": "role ^(2.4.0) ^(a11y)",
-      "desc": "视图的角色",
+      "name": "role",
+      "desc": "视图的角色(2.4.0) (a11y)",
       "type": "string",
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
     },
     {
-      "name": "aria-label ^(2.4.0) ^(a11y)",
-      "desc": "视图的 aria-label",
+      "name": "aria-label",
+      "desc": "视图的 aria-label(2.4.0) (a11y)",
       "type": "string",
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
     },
     {
-      "name": "aria-orientation ^(2.4.0) ^(a11y)",
-      "desc": "视图的 aria-orientation",
+      "name": "aria-orientation",
+      "desc": "视图的 aria-orientation(2.4.0) (a11y)",
       "type": "enum",
       "optionValue": "horizontal | vertical",
       "options": [
@@ -125,8 +125,8 @@
       "defaultValue": "—"
     },
     {
-      "name": "tabindex ^(2.8.3)",
-      "desc": "容器的tabindex",
+      "name": "tabindex",
+      "desc": "容器的tabindex(2.8.3)",
       "type": "number / string",
       "optionValue": "",
       "options": [],

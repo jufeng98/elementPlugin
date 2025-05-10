@@ -2,8 +2,8 @@
   "name": "el-tree-select",
   "attributes": [
     {
-      "name": "cacheData ^(2.2.26)",
-      "desc": "The cached data of the lazy node, the structure is the same as the data, used to get the label of the unloaded data",
+      "name": "cacheData",
+      "desc": "The cached data of the lazy node, the structure is the same as the data, used to get the label of the unloaded data(2.2.26)",
       "type": "object",
       "optionValue": "CacheOption[]",
       "options": [],

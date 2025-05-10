@@ -2,8 +2,8 @@
   "name": "el-pagination",
   "attributes": [
     {
-      "name": "size ^(2.7.6)",
-      "desc": "pagination size",
+      "name": "size",
+      "desc": "pagination size(2.7.6)",
       "type": "enum",
       "optionValue": "large | default | small",
       "options": [
@@ -120,8 +120,8 @@
       "defaultValue": "[10, 20, 30, 40, 50, 100]"
     },
     {
-      "name": "append-size-to ^(2.8.4)",
-      "desc": "which element the size dropdown appends to",
+      "name": "append-size-to",
+      "desc": "which element the size dropdown appends to(2.8.4)",
       "type": "string",
       "optionValue": "",
       "options": [],
@@ -176,8 +176,8 @@
       "defaultValue": "false"
     },
     {
-      "name": "teleported ^(2.3.13)",
-      "desc": "whether Pagination select dropdown is teleported to the body",
+      "name": "teleported",
+      "desc": "whether Pagination select dropdown is teleported to the body(2.3.13)",
       "type": "boolean",
       "optionValue": "",
       "options": [],
@@ -192,8 +192,8 @@
       "defaultValue": "false"
     },
     {
-      "name": "small ^(deprecated)",
-      "desc": "whether to use small pagination",
+      "name": "small",
+      "desc": "whether to use small pagination(deprecated)",
       "type": "boolean",
       "optionValue": "",
       "options": [],
@@ -221,8 +221,8 @@
       "param": "Function(value: number) => void"
     },
     {
-      "name": "@change ^(2.4.4)",
-      "desc": "triggers when `current-page` or `page-size` changes",
+      "name": "@change",
+      "desc": "triggers when `current-page` or `page-size` changes(2.4.4)",
       "param": "Function(currentPage: number, pageSize: number) => void"
     },
     {

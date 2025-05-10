@@ -15,8 +15,8 @@
       "defaultValue": "hover"
     },
     {
-      "name": "trigger-keys ^(2.9.8)",
-      "desc": "当鼠标点击或者聚焦在触发元素上时， 可以定义一组键盘按键并且通过它们来控制 Popover 的显示",
+      "name": "trigger-keys",
+      "desc": "当鼠标点击或者聚焦在触发元素上时， 可以定义一组键盘按键并且通过它们来控制 Popover 的显示(2.9.8)",
       "type": "Array",
       "optionValue": "",
       "options": [],
@@ -191,8 +191,8 @@
       "defaultValue": "true"
     },
     {
-      "name": "append-to ^(2.8.4)",
-      "desc": "指示 Tooltip 的内容将附加在哪一个网页元素上",
+      "name": "append-to",
+      "desc": "which element the popover CONTENT appends to(2.9.10)",
       "type": "CSSSelector / HTMLElement",
       "optionValue": "",
       "options": [],

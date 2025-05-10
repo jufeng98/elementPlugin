@@ -18,8 +18,8 @@
       "defaultValue": "—"
     },
     {
-      "name": "label-position ^(2.7.7)",
-      "desc": "表单域标签的位置， 当设置为 left 或 right 时，则也需要设置 label-width 属性 默认会继承 Form的label-position",
+      "name": "label-position",
+      "desc": "表单域标签的位置， 当设置为 left 或 right 时，则也需要设置 label-width 属性 默认会继承 Form的label-position(2.7.7)",
       "type": "enum",
       "optionValue": "left | right | top",
       "options": [

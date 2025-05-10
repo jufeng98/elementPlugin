@@ -78,8 +78,8 @@
       "defaultValue": ""
     },
     {
-      "name": "cardScale ^(2.7.8)",
-      "desc": "当 type 为 card时，二级卡的缩放大小",
+      "name": "cardScale",
+      "desc": "当 type 为 card时，二级卡的缩放大小(2.7.8)",
       "type": "number",
       "optionValue": "",
       "options": [],
@@ -113,8 +113,8 @@
       "defaultValue": "true"
     },
     {
-      "name": "motion-blur ^(2.6.0)",
-      "desc": "添加动态模糊以给走马灯注入活力和流畅性。",
+      "name": "motion-blur",
+      "desc": "添加动态模糊以给走马灯注入活力和流畅性。(2.6.0)",
       "type": "boolean",
       "optionValue": "",
       "options": [],
@@ -139,8 +139,8 @@
   ],
   "methods": [
     {
-      "name": "activeIndex ^(2.7.8)",
-      "desc": "当前幻灯片的索引",
+      "name": "activeIndex",
+      "desc": "当前幻灯片的索引(2.7.8)",
       "param": "number"
     },
     {

@@ -2,8 +2,8 @@
   "name": "el-checkbox-button",
   "attributes": [
     {
-      "name": "value ^(2.6.0)",
-      "desc": "选中状态的值，只有在绑定对象类型为 array 时有效。",
+      "name": "value",
+      "desc": "选中状态的值，只有在绑定对象类型为 array 时有效。(2.6.0)",
       "type": "string / number / boolean / object",
       "optionValue": "",
       "options": [],
@@ -18,16 +18,16 @@
       "defaultValue": "—"
     },
     {
-      "name": "true-value ^(2.6.0)",
-      "desc": "选中时的值",
+      "name": "true-value",
+      "desc": "选中时的值(2.6.0)",
       "type": "string / number",
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
     },
     {
-      "name": "false-value ^(2.6.0)",
-      "desc": "没有选中时的值",
+      "name": "false-value",
+      "desc": "没有选中时的值(2.6.0)",
       "type": "string / number",
       "optionValue": "",
       "options": [],
@@ -58,16 +58,16 @@
       "defaultValue": "false"
     },
     {
-      "name": "true-label ^(deprecated)",
-      "desc": "选中时的值",
+      "name": "true-label",
+      "desc": "选中时的值(deprecated)",
       "type": "string / number",
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
     },
     {
-      "name": "false-label ^(deprecated)",
-      "desc": "没有选中时的值",
+      "name": "false-label",
+      "desc": "没有选中时的值(deprecated)",
       "type": "string / number",
       "optionValue": "",
       "options": [],

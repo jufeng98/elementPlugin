@@ -57,8 +57,8 @@
       "defaultValue": ""
     },
     {
-      "name": "label-width ^(2.8.8)",
-      "desc": "label width of every column",
+      "name": "label-width",
+      "desc": "label width of every column(2.8.8)",
       "type": "string / number",
       "optionValue": "",
       "options": [],

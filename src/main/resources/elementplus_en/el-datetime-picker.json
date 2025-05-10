@@ -158,16 +158,16 @@
       "defaultValue": "—"
     },
     {
-      "name": "date-format ^(2.4.0)",
-      "desc": "optional, format of the date displayed value in TimePicker's dropdown",
+      "name": "date-format",
+      "desc": "optional, format of the date displayed value in TimePicker's dropdown(2.4.0)",
       "type": "string see [date formats(https://day.js.org/docs/en/display/format)",
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
     },
     {
-      "name": "time-format ^(2.4.0)",
-      "desc": "optional, format of the time displayed value in TimePicker's dropdown",
+      "name": "time-format",
+      "desc": "optional, format of the time displayed value in TimePicker's dropdown(2.4.0)",
       "type": "string see [date formats(https://day.js.org/docs/en/display/format)",
       "optionValue": "",
       "options": [],
@@ -246,24 +246,24 @@
       "defaultValue": "true"
     },
     {
-      "name": "empty-values ^(2.7.0)",
-      "desc": "empty values of component, [see config-provider](/en-US/component/config-provider#empty-values-configurations)",
+      "name": "empty-values",
+      "desc": "empty values of component, [see config-provider](/en-US/component/config-provider#empty-values-configurations)(2.7.0)",
       "type": "array",
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
     },
     {
-      "name": "value-on-clear ^(2.7.0)",
-      "desc": "clear return value, [see config-provider](/en-US/component/config-provider#empty-values-configurations)",
+      "name": "value-on-clear",
+      "desc": "clear return value, [see config-provider](/en-US/component/config-provider#empty-values-configurations)(2.7.0)",
       "type": "string / number / boolean / Function",
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
     },
     {
-      "name": "show-now ^(2.8.7)",
-      "desc": "whether to show the now button",
+      "name": "show-now",
+      "desc": "whether to show the now button(2.8.7)",
       "type": "boolean",
       "optionValue": "",
       "options": [],
@@ -316,8 +316,8 @@
       "param": "(e: FocusEvent)"
     },
     {
-      "name": "@clear ^(2.7.7)",
-      "desc": "triggers when the clear icon is clicked in a clearable DateTimePicker",
+      "name": "@clear",
+      "desc": "triggers when the clear icon is clicked in a clearable DateTimePicker(2.7.7)",
       "param": "Function() => void"
     },
     {
@@ -338,8 +338,8 @@
       "param": "Function() => void"
     },
     {
-      "name": "blur ^(2.8.7)",
-      "desc": "blur the DatePicker component",
+      "name": "blur",
+      "desc": "blur the DatePicker component(2.8.7)",
       "param": "Function() => void"
     }
   ]

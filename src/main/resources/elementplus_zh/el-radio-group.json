@@ -42,8 +42,8 @@
       "defaultValue": "true"
     },
     {
-      "name": "aria-label ^(a11y) ^(2.7.2)",
-      "desc": "与 RadioGroup 中的 aria-label 属性相同",
+      "name": "aria-label",
+      "desc": "与 RadioGroup 中的 aria-label 属性相同(a11y) (2.7.2)",
       "type": "string",
       "optionValue": "",
       "options": [],
@@ -66,8 +66,8 @@
       "defaultValue": "—"
     },
     {
-      "name": "label ^(a11y) ^(deprecated)",
-      "desc": "与 RadioGroup 中的 aria-label 属性相同",
+      "name": "label",
+      "desc": "与 RadioGroup 中的 aria-label 属性相同(a11y) (deprecated)",
       "type": "string",
       "optionValue": "",
       "options": [],

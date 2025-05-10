@@ -18,13 +18,13 @@
       "param": "Function() => boolean"
     },
     {
-      "name": "tabListRef ^(2.9.10)",
-      "desc": "el_tabs\\_\\_nav html element",
+      "name": "tabListRef",
+      "desc": "el_tabs\\_\\_nav html element(2.9.10)",
       "param": "objectRef<HTMLDivElement | undefined>"
     },
     {
-      "name": "tabBarRef ^(2.9.10)",
-      "desc": "el_tabs\\_\\_nav bar instance",
+      "name": "tabBarRef",
+      "desc": "el_tabs\\_\\_nav bar instance(2.9.10)",
       "param": "objectRef<TabBarInstance | undefined>"
     }
   ]

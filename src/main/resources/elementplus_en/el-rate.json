@@ -158,8 +158,8 @@
       "defaultValue": "{value}"
     },
     {
-      "name": "clearable ^(2.2.18)",
-      "desc": "whether value can be reset to 0",
+      "name": "clearable",
+      "desc": "whether value can be reset to 0(2.2.18)",
       "type": "boolean",
       "optionValue": "",
       "options": [],
@@ -174,16 +174,16 @@
       "defaultValue": "—"
     },
     {
-      "name": "aria-label ^(a11y) ^(2.7.2)",
-      "desc": "same as aria-label in Rate",
+      "name": "aria-label",
+      "desc": "same as aria-label in Rate(a11y) (2.7.2)",
       "type": "string",
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
     },
     {
-      "name": "label ^(a11y) ^(deprecated)",
-      "desc": "same as aria-label in Rate",
+      "name": "label",
+      "desc": "same as aria-label in Rate(a11y) (deprecated)",
       "type": "string",
       "optionValue": "",
       "options": [],

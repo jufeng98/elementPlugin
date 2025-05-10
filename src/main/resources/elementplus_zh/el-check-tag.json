@@ -18,16 +18,16 @@
       "defaultValue": "false"
     },
     {
-      "name": "disabled ^(2.8.2)",
-      "desc": "是否禁用",
+      "name": "disabled",
+      "desc": "是否禁用(2.8.2)",
       "type": "boolean",
       "optionValue": "",
       "options": [],
       "defaultValue": "false"
     },
     {
-      "name": "type ^(2.5.4)",
-      "desc": "CheckTag 类型",
+      "name": "type",
+      "desc": "CheckTag 类型(2.5.4)",
       "type": "enum",
       "optionValue": "primary | success | info | warning | danger",
       "options": [
