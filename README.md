@@ -25,7 +25,9 @@
 - 抑制 ElementUI / Element Plus 标签的 Unknown html tag 警告
 
 #### 标签及属性输入智能提示补全
-
+![tag-tip.png](images/tag-tip.png)
+![tag-plus-tip.png](images/tag-plus-tip.png)
+![attr-method-tip.png](images/attr-method-tip.png)
 ![input-tip.gif](images/input-tip.gif)
 
 #### 标签悬浮文档提示
@@ -35,6 +37,7 @@
 #### 属性悬浮文档提示
 
 ![attr-hover.png](images/attr-hover.png)
+![attr-method-hover.png](images/attr-method-hover.png)
 
 #### 实时模板
 
