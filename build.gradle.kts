@@ -7,7 +7,6 @@ plugins {
 }
 
 group = "org.javamaster"
-version = "3.0.0"
 
 repositories {
     maven { url = URI("https://maven.aliyun.com/nexus/content/groups/public/") }
@@ -52,7 +51,6 @@ tasks {
 
     runIde {
         autoReloadPlugins.set(false)
-        jvmArgs("-Xms1024m", "-Xmx2048m")
     }
 
     patchPluginXml {

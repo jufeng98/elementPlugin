@@ -1,6 +1,7 @@
 <idea-plugin>
     <id>org.javamaster.elementui</id>
     <name>ElementUI</name>
+    <version>3.5.0</version>
     <vendor email="375709770@qq.com" url="https://www.zhihu.com/people/liang-yu-dong-44">
         jufeng98
     </vendor>
@@ -35,6 +36,11 @@
     <change-notes>
         <![CDATA[
             <ul>
+                <li><b>3.5.0</b></li>
+                <ul>
+                    <li>完善 Element Plus 标签及属性提示的文档内容</li>
+                    <li>bug修复</li>
+                </ul>
                 <li><b>3.0.0</b></li>
                 <ul>
                     <li>支持 Element Plus 框架</li>
@@ -53,7 +59,7 @@
     <depends>com.intellij.modules.platform</depends>
     <depends>JavaScript</depends>
     <depends>org.jetbrains.plugins.vue</depends>
-    <depends>org.intellij.plugins.markdown</depends>
+    <depends optional="true" config-file="markdown.xml">org.intellij.plugins.markdown</depends>
     <depends>com.intellij.modules.ultimate</depends>
 
     <extensions defaultExtensionNs="com.intellij">
@@ -75,11 +81,13 @@
     </extensions>
 
     <actions>
-        <!--        <action id="ConvertAction" class="org.javamaster.elementui.convert.ConvertAction" text="ConvertAction">-->
-        <!--            <add-to-group group-id="HelpMenu" anchor="first"/>-->
-        <!--        </action>-->
-        <!--        <action id="ConvertPlusAction" class="org.javamaster.elementui.convert.ConvertPlusAction" text="ConvertPlusAction">-->
-        <!--            <add-to-group group-id="HelpMenu" anchor="first"/>-->
-        <!--        </action>-->
+        <action id="ConvertElementAction" class="org.javamaster.elementui.action.ConvertAction"
+                text="ConvertElementAction(Test)">
+            <add-to-group group-id="HelpMenu" anchor="first"/>
+        </action>
+        <action id="ConvertElementPlusAction" class="org.javamaster.elementui.action.ConvertPlusAction"
+                text="ConvertElementPlusAction(Test)">
+            <add-to-group group-id="HelpMenu" anchor="first"/>
+        </action>
     </actions>
 </idea-plugin>
