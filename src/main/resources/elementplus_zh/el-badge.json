@@ -66,7 +66,7 @@
     {
       "name": "offset",
       "desc": "badge 的偏移量(2.7.0)",
-      "type": "number / number",
+      "type": "[number,number]",
       "optionValue": "",
       "options": [],
       "defaultValue": "—"

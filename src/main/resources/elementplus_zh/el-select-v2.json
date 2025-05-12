@@ -235,7 +235,7 @@
     {
       "name": "popper-options",
       "desc": "<p><a href=\"https://popper.js.org/docs/v2/\">popper.js</a> parameters</p>",
-      "type": "objectrefer to [popper.js(https://popper.js.org/docs/v2/) doc",
+      "type": "<p>objectrefer to [popper.js(https://popper.js.org/docs/v2/) doc</p>",
       "optionValue": "",
       "options": [],
       "defaultValue": "{}"

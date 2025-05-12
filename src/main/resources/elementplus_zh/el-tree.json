@@ -28,7 +28,7 @@
     {
       "name": "props",
       "desc": "配置选项，具体看下表",
-      "type": "[Props(#props)",
+      "type": "[Props](#props)",
       "optionValue": "",
       "options": [],
       "defaultValue": "—"

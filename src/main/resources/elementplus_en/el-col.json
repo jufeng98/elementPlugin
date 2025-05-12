@@ -4,7 +4,7 @@
     {
       "name": "align",
       "desc": "Alignment of the table cell content",
-      "type": "[Alignment(https://github.com/element-plus/element-plus/blob/b92b22932758f0ddea98810ae248f6ca62f77e25/packages/components/table-v2/src/constants.ts#L6)",
+      "type": "<p><a href=\"https://github.com/element-plus/element-plus/blob/b92b22932758f0ddea98810ae248f6ca62f77e25/packages/components/table-v2/src/constants.ts#L6\">Alignment</a></p>",
       "optionValue": "",
       "options": [],
       "defaultValue": "left"
@@ -20,7 +20,7 @@
     {
       "name": "key",
       "desc": "Unique identification",
-      "type": "[KeyType(#typings)",
+      "type": "[KeyType](#typings)",
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
@@ -28,7 +28,7 @@
     {
       "name": "dataKey",
       "desc": "Unique identification of data",
-      "type": "[KeyType(#typings)",
+      "type": "[KeyType](#typings)",
       "optionValue": "",
       "options": [],
       "defaultValue": "—"

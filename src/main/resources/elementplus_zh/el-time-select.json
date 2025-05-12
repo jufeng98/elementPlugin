@@ -147,7 +147,7 @@
     {
       "name": "format",
       "desc": "设置时间格式",
-      "type": "string see [formats(https://day.js.org/docs/en/display/format#list-of-all-available-formats)",
+      "type": "<p>string see [formats(https://day.js.org/docs/en/display/format#list-of-all-available-formats)</p>",
       "optionValue": "",
       "options": [],
       "defaultValue": "HH:mm"

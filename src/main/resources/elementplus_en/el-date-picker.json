@@ -109,7 +109,7 @@
     {
       "name": "format",
       "desc": "format of the displayed value in the input box",
-      "type": "string see [date formats(/en-US/component/date-picker#date-formats)",
+      "type": "<p>string see <a href=\"https://day.js.org/docs/en/display/format#list-of-all-available-formats\">date format</a></p>",
       "optionValue": "",
       "options": [],
       "defaultValue": "YYYY-MM-DD"
@@ -157,7 +157,7 @@
     {
       "name": "value-format",
       "desc": "optional, format of binding value. If not specified, the binding value will be a Date object",
-      "type": "string see [date formats(/en-US/component/date-picker#date-formats)",
+      "type": "<p>string see <a href=\"https://day.js.org/docs/en/display/format#list-of-all-available-formats\">date format</a></p>",
       "optionValue": "",
       "options": [],
       "defaultValue": "—"

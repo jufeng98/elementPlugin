@@ -56,7 +56,7 @@
         "_self",
         "_top"
       ],
-      "defaultValue": "\\_self"
+      "defaultValue": "_self"
     },
     {
       "name": "icon",

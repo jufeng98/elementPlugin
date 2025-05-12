@@ -66,7 +66,7 @@
     {
       "name": "offset",
       "desc": "offset of badge(2.7.0)",
-      "type": "number / number",
+      "type": "[number,number]",
       "optionValue": "",
       "options": [],
       "defaultValue": "—"

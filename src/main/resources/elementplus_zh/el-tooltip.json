@@ -108,7 +108,7 @@
     {
       "name": "popper-options",
       "desc": "<p><a href=\"https://popper.js.org/docs/v2/\">popper.js</a> 参数</p>",
-      "type": "object 请参考 [popper.js(https://popper.js.org/docs/v2/) 文档",
+      "type": "<p>object 请参考 [popper.js(https://popper.js.org/docs/v2/) 文档</p>",
       "optionValue": "",
       "options": [],
       "defaultValue": "{}"

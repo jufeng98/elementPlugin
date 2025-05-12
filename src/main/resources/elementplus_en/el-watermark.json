@@ -52,7 +52,7 @@
     {
       "name": "font",
       "desc": "Text style",
-      "type": "[Font(#font)",
+      "type": "[Font](#font)",
       "optionValue": "",
       "options": [],
       "defaultValue": "[Font](#font)"
@@ -63,7 +63,7 @@
       "type": "object",
       "optionValue": "[number, number]",
       "options": [],
-      "defaultValue": "\\[100, 100\\]"
+      "defaultValue": "[100, 100]"
     },
     {
       "name": "offset",
@@ -71,7 +71,7 @@
       "type": "object",
       "optionValue": "[number, number]",
       "options": [],
-      "defaultValue": "\\[gap\\[0\\]/2, gap\\[1\\]/2\\]"
+      "defaultValue": "[gap[0]/2, gap[1]/2]"
     }
   ],
   "props": [],

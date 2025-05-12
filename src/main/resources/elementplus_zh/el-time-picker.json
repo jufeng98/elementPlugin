@@ -120,7 +120,7 @@
     {
       "name": "format",
       "desc": "显示在输入框中的格式",
-      "type": "string see [date formats(/en-US/component/date-picker#date-formats)",
+      "type": "<p>string see <a href=\"https://day.js.org/docs/en/display/format#list-of-all-available-formats\">date format</a></p>",
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
@@ -136,7 +136,7 @@
     {
       "name": "value-format",
       "desc": "可选，绑定值的格式。 不指定则绑定值为 Date 对象",
-      "type": "string 参考 [日期格式(/en-US/component/date-picker#date-formats)",
+      "type": "<p>string see <a href=\"https://day.js.org/docs/en/display/format#list-of-all-available-formats\">date format</a></p>",
       "optionValue": "",
       "options": [],
       "defaultValue": "—"

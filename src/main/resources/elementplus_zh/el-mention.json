@@ -12,7 +12,7 @@
     {
       "name": "prefix",
       "desc": "触发字段的前缀。 字符串长度必须且只能为 1",
-      "type": "string \\\\| array",
+      "type": "string | array",
       "optionValue": "string[]",
       "options": [],
       "defaultValue": "@"
@@ -28,7 +28,7 @@
     {
       "name": "filter-option",
       "desc": "定制筛选器选项逻辑",
-      "type": "false \\\\| Function",
+      "type": "false | Function",
       "optionValue": "(pattern: string, option: MentionOption) => boolean",
       "options": [],
       "defaultValue": "—"
@@ -111,21 +111,13 @@
     {
       "name": "popper-options",
       "desc": "<p><a href=\"https://popper.js.org/docs/v2/\">popper.js</a> 参数</p>",
-      "type": "object refer to [popper.js doc(https://popper.js.org/docs/v2/)",
+      "type": "<p>[object] refer to <a href=\"https://popper.js.org/docs/v2/\">popper.js doc</a></p>",
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
     },
     {
-      "name": "[input props](.",
-      "desc": "—",
-      "type": "—",
-      "optionValue": "",
-      "options": [],
-      "defaultValue": "—"
-    },
-    {
-      "name": "input.md#attributes)",
+      "name": "[input props](./input.md#attributes)",
       "desc": "—",
       "type": "—",
       "optionValue": "",

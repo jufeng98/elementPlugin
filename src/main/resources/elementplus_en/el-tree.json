@@ -28,7 +28,7 @@
     {
       "name": "props",
       "desc": "configuration options, see the following table",
-      "type": "[props(#props)",
+      "type": "[props](#props)",
       "optionValue": "",
       "options": [],
       "defaultValue": "—"

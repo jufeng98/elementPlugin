@@ -108,7 +108,7 @@
     {
       "name": "columns",
       "desc": "An array of column definitions.",
-      "type": "[Column[(#column-attribute)",
+      "type": "[Column[]](#column-attribute)",
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
@@ -116,7 +116,7 @@
     {
       "name": "data",
       "desc": "An array of data to be rendered in the table.",
-      "type": "[Data[(#typings)",
+      "type": "[Data[]](#typings)",
       "optionValue": "",
       "options": [],
       "defaultValue": "[]"
@@ -124,7 +124,7 @@
     {
       "name": "data-getter",
       "desc": "A method to customize data fetch from the data source.",
-      "type": "Function<[DataGetter\\<T\\>(#typings)>",
+      "type": "Function<[DataGetter<T>](#typings)>",
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
@@ -148,7 +148,7 @@
     {
       "name": "expanded-row-keys",
       "desc": "An array of keys for expanded rows, can be used with v-model",
-      "type": "[KeyType[(#typings)",
+      "type": "[KeyType[]](#typings)",
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
@@ -156,7 +156,7 @@
     {
       "name": "default-expanded-row-keys",
       "desc": "An array of keys for default expanded rows, **NON REACTIVE**",
-      "type": "[KeyType[(#typings)",
+      "type": "[KeyType[]](#typings)",
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
