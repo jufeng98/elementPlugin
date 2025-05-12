@@ -1,14 +1,14 @@
-package org.javamaster.elementui.convert
+package org.javamaster.elementui.action
 
-import com.intellij.openapi.actionSystem.AnAction
 import com.intellij.openapi.actionSystem.AnActionEvent
+import org.javamaster.elementui.convert.ConvertMd
 
 /**
  * @author yudong
  */
-class ConvertAction : AnAction() {
+class ConvertAction : TestAction() {
 
-    override fun actionPerformed(e: AnActionEvent) {
+    override fun wash(e: AnActionEvent) {
         ConvertMd.wash(e.project!!, "zh-CN", "zh")
         ConvertMd.wash(e.project!!, "en-US", "en")
     }

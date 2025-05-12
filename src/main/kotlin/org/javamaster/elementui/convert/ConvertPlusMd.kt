@@ -241,7 +241,11 @@ object ConvertPlusMd {
     private fun initAttr(it: MarkdownTableRow, clz: Class<out ElementUIComponentAttr>): List<ElementUIComponentAttr> {
         val name = it.getCell(0)!!.text.trim()
 
-        val names = name.split("/")
+        val names = if (name.contains("[")) {
+            name.split("==")
+        } else {
+            name.split("/")
+        }
 
         return names.map { innerIt ->
             val attr = clz.getDeclaredConstructor().newInstance()
@@ -260,16 +264,30 @@ object ConvertPlusMd {
                 }
             }
 
-            val tmpStr = it.getCell(2)!!.text.trim()
+            val tmpStr = it.getCell(2)!!.text.replace("\\", "").trim()
             val strs = tmpStr.split("`")
 
-            attr.type = strs[0].replace("^[", "").replace("]", "")
+            val tmpType = strs[0]
+            if (tmpType.contains("^")) {
+                attr.type = tmpType.replace("^[", "").replace("]", "")
+            } else {
+                attr.type = tmpType
+            }
+
+            if (attr.type.contains("/en-US/component/date-picker#date-formats")) {
+                attr.type =
+                    "string see [date format](https://day.js.org/docs/en/display/format#list-of-all-available-formats)"
+            }
+
+            if (attr.type.contains("https")) {
+                attr.type = markdownToHtml(attr.type)
+            }
 
             if (strs.size > 1) {
                 attr.optionValue = strs[1].replace("'", "").replace("\\", "")
             }
 
-            val tmpDefault = it.getCell(3)?.text?.trim()
+            val tmpDefault = it.getCell(3)?.text?.trim()?.replace("\\", "")
             if (tmpDefault != null) {
                 if (tmpDefault == "[]") {
                     attr.defaultValue = tmpDefault
