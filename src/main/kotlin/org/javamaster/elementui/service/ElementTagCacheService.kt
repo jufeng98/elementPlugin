@@ -1,14 +1,16 @@
-package org.javamaster.elementui.support
+package org.javamaster.elementui.service
 
+import com.intellij.openapi.components.Service
 import com.intellij.openapi.project.Project
 import org.javamaster.elementui.convert.ConvertMd
 import org.javamaster.elementui.enums.AttributeType
 import org.javamaster.elementui.nls.NlsBundle
-import org.javamaster.elementui.service.ElementDetectService
+import org.javamaster.elementui.support.*
 import org.javamaster.elementui.xml.ElementUIXmlAttributeDescriptor
 import java.nio.charset.StandardCharsets
 
-object ElementUITagCacheHelper {
+@Service(Service.Level.PROJECT)
+class ElementTagCacheService(private val project: Project) {
     private val classloader = this::class.java.classLoader
     private val showDateFormatTagSet = setOf(
         "el-time-picker",
@@ -23,9 +25,6 @@ object ElementUITagCacheHelper {
     private val uiComponentMap = mutableMapOf<String, ElementUIComponent?>()
     private val tagHtmlMap = mutableMapOf<String, String?>()
     private val tagAttributeMap = mutableMapOf<String, Array<ElementUIXmlAttributeDescriptor>>()
-
-    const val V_INFINITE_SCROLL = "v-infinite-scroll"
-    const val V_LOADING = "v-loading"
 
     private val loadingAttrs = arrayOf(
         ElementUIXmlAttributeDescriptor(
@@ -51,11 +50,11 @@ object ElementUITagCacheHelper {
         "loading", AttributeType.PARAM
     )
 
-    fun getTagHtml(tagName: String, project: Project): String? {
+    fun getTagHtml(tagName: String): String? {
         val elementDetectService = ElementDetectService.getInstance(project)
         val dirPrefix = elementDetectService.dirPrefix
 
-        return getTagHtml(tagName, "${dirPrefix}_${NlsBundle.language}/${tagName}.json", project)
+        return getTagHtml(tagName, "${dirPrefix}_${NlsBundle.language}/${tagName}.json")
     }
 
     private fun getUiComponent(tagName: String, filePath: String): ElementUIComponent? {
@@ -81,7 +80,7 @@ object ElementUITagCacheHelper {
         }
     }
 
-    private fun getTagHtml(tagName: String, filePath: String, project: Project): String? {
+    private fun getTagHtml(tagName: String, filePath: String): String? {
         if (tagHtmlMap.containsKey(tagName)) {
             return tagHtmlMap[tagName]
         }
@@ -99,7 +98,7 @@ object ElementUITagCacheHelper {
 
             val elementDetectService = ElementDetectService.getInstance(project)
 
-            val content = convertToHtml(uiComponent, project)
+            val content = convertToHtml(uiComponent)
 
             val html = """
                         <!DOCTYPE html>                
@@ -120,7 +119,7 @@ object ElementUITagCacheHelper {
 
     }
 
-    private fun convertToHtml(uiComponent: ElementUIComponent, project: Project): String {
+    private fun convertToHtml(uiComponent: ElementUIComponent): String {
         val sb = StringBuilder()
 
         if (uiComponent.name == V_LOADING) {
@@ -149,14 +148,14 @@ object ElementUITagCacheHelper {
         sb.append(content)
 
         if (showDateFormatTagSet.contains(uiComponent.name)) {
-            val html = getDateFormatHtml(project)
+            val html = getDateFormatHtml()
             sb.append(html)
         }
 
         return sb.toString()
     }
 
-    private fun getDateFormatHtml(project: Project): String {
+    private fun getDateFormatHtml(): String {
         val elementDetectService = ElementDetectService.getInstance(project)
         val dirPrefix = elementDetectService.dirPrefix
 
@@ -168,9 +167,8 @@ object ElementUITagCacheHelper {
         tagName: String,
         attrName: String,
         descriptor: ElementUIXmlAttributeDescriptor,
-        project: Project,
     ): String {
-        var tagAttr = getUiTagAttr(tagName, attrName, project)
+        var tagAttr = getUiTagAttr(tagName, attrName)
         if (tagAttr == null) {
             tagAttr = ElementUIComponentAttr()
             tagAttr.name = descriptor.name
@@ -182,7 +180,7 @@ object ElementUITagCacheHelper {
 
         var content = convertAttrs(listOf(tagAttr), "Attributes")
         if (showDateFormatTagSet.contains(tagName) && showDateFormatAttrSet.contains(attrName)) {
-            val html = getDateFormatHtml(project)
+            val html = getDateFormatHtml()
             content += html
         }
 
@@ -207,9 +205,8 @@ object ElementUITagCacheHelper {
         tagName: String,
         attrName: String,
         descriptor: ElementUIXmlAttributeDescriptor,
-        project: Project,
     ): String {
-        var event = getUiTagEventAttr(tagName, attrName, project)
+        var event = getUiTagEventAttr(tagName, attrName)
         if (event == null) {
             event = ElementUIComponentEvent()
             event.name = descriptor.name
@@ -382,15 +379,15 @@ object ElementUITagCacheHelper {
         return sb.toString()
     }
 
-    fun getTagAttr(tagName: String, attrName: String, project: Project): ElementUIXmlAttributeDescriptor? {
-        val descriptors = getTagAttrs(tagName, project)
+    fun getTagAttr(tagName: String, attrName: String): ElementUIXmlAttributeDescriptor? {
+        val descriptors = getTagAttrs(tagName)
 
         return descriptors.firstOrNull {
             it.name == attrName
         }
     }
 
-    private fun getUiTagAttr(tagName: String, attrName: String, project: Project): ElementUIComponentAttr? {
+    private fun getUiTagAttr(tagName: String, attrName: String): ElementUIComponentAttr? {
         val elementDetectService = ElementDetectService.getInstance(project)
         val dirPrefix = elementDetectService.dirPrefix
 
@@ -401,7 +398,7 @@ object ElementUITagCacheHelper {
             .firstOrNull { it.name == attrName }
     }
 
-    private fun getUiTagEventAttr(tagName: String, attrName: String, project: Project): ElementUIComponentEvent? {
+    private fun getUiTagEventAttr(tagName: String, attrName: String): ElementUIComponentEvent? {
         val elementDetectService = ElementDetectService.getInstance(project)
         val dirPrefix = elementDetectService.dirPrefix
 
@@ -412,7 +409,7 @@ object ElementUITagCacheHelper {
             .firstOrNull { it.name == attrName }
     }
 
-    fun getTagAttrs(tagName: String, project: Project): Array<ElementUIXmlAttributeDescriptor> {
+    fun getTagAttrs(tagName: String): Array<ElementUIXmlAttributeDescriptor> {
         val elementDetectService = ElementDetectService.getInstance(project)
         val dirPrefix = elementDetectService.dirPrefix
 
@@ -425,15 +422,15 @@ object ElementUITagCacheHelper {
     }
 
     private fun getInfiniteScrollAttrs(dirPrefix: String): Array<ElementUIXmlAttributeDescriptor> {
-        val filePath = "${dirPrefix}_${NlsBundle.language}/${V_INFINITE_SCROLL}.json"
+        val filePath = "${dirPrefix}_${NlsBundle.language}/$V_INFINITE_SCROLL.json"
 
         val uiComponent = getUiComponent(V_INFINITE_SCROLL, filePath)!!
 
         return arrayOf(infiniteScrollAttr, *getTagAttrs(V_INFINITE_SCROLL, uiComponent))
     }
 
-    fun getVLoadingAttrHtml(project: Project): String {
-        return getTagHtml(V_LOADING, project)!!
+    fun getVLoadingAttrHtml(): String {
+        return getTagHtml(V_LOADING)!!
     }
 
 
@@ -486,6 +483,15 @@ object ElementUITagCacheHelper {
         list.addAll(descriptors)
 
         return list.toTypedArray()
+    }
+
+    companion object {
+        const val V_INFINITE_SCROLL = "v-infinite-scroll"
+        const val V_LOADING = "v-loading"
+
+        fun getInstance(project: Project): ElementTagCacheService {
+            return project.getService(ElementTagCacheService::class.java)
+        }
     }
 
 }

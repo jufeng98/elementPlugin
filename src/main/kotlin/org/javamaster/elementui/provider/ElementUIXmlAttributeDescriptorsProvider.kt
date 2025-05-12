@@ -4,7 +4,8 @@ import com.intellij.psi.html.HtmlTag
 import com.intellij.psi.xml.XmlTag
 import com.intellij.xml.XmlAttributeDescriptor
 import com.intellij.xml.XmlAttributeDescriptorsProvider
-import org.javamaster.elementui.support.ElementUITagCacheHelper
+import org.javamaster.elementui.service.ElementDetectService
+import org.javamaster.elementui.service.ElementTagCacheService
 
 /**
  * @author yudong
@@ -12,18 +13,28 @@ import org.javamaster.elementui.support.ElementUITagCacheHelper
 class ElementUIXmlAttributeDescriptorsProvider : XmlAttributeDescriptorsProvider {
 
     override fun getAttributeDescriptors(xmlTag: XmlTag): Array<out XmlAttributeDescriptor> {
+        val elementDetectService = ElementDetectService.getInstance(xmlTag.project)
+        if (elementDetectService.notExistsElement) {
+            return emptyArray()
+        }
+
         if (xmlTag !is HtmlTag) {
             return XmlAttributeDescriptor.EMPTY
         }
 
-        return ElementUITagCacheHelper.getTagAttrs(xmlTag.name, xmlTag.project)
+        return ElementTagCacheService.getInstance(xmlTag.project).getTagAttrs(xmlTag.name)
     }
 
     override fun getAttributeDescriptor(s: String, xmlTag: XmlTag): XmlAttributeDescriptor? {
+        val elementDetectService = ElementDetectService.getInstance(xmlTag.project)
+        if (elementDetectService.notExistsElement) {
+            return null
+        }
+
         if (xmlTag !is HtmlTag) {
             return null
         }
 
-        return ElementUITagCacheHelper.getTagAttr(xmlTag.name, s, xmlTag.project)
+        return ElementTagCacheService.getInstance(xmlTag.project).getTagAttr(xmlTag.name, s)
     }
 }

@@ -1,8 +1,11 @@
 package org.javamaster.elementui.service
 
+import com.intellij.codeInsight.completion.XmlTagInsertHandler
+import com.intellij.codeInsight.lookup.LookupElementBuilder
 import com.intellij.javascript.nodejs.packageJson.PackageJsonFileManager
 import com.intellij.openapi.components.Service
 import com.intellij.openapi.project.Project
+import com.intellij.openapi.vfs.VfsUtil
 import com.intellij.openapi.vfs.readText
 import org.javamaster.elementui.nls.NlsBundle
 import org.javamaster.elementui.support.ElementUIIcons
@@ -12,8 +15,16 @@ class ElementDetectService(private val project: Project) {
     private val ui = "elementui"
     private val plus = "elementplus"
 
-    private val elementPlus by lazy {
+    private val elementFlag by lazy {
         detectElementPlus()
+    }
+
+    private val elementPlus by lazy {
+        elementFlag!!
+    }
+
+    val notExistsElement by lazy {
+        elementFlag == null
     }
 
     val elementName by lazy {
@@ -56,16 +67,41 @@ class ElementDetectService(private val project: Project) {
         }
     }
 
-    private fun detectElementPlus(): Boolean {
+    val elementTagLookupElements by lazy {
+        val dirPrefix = dirPrefix
+        val icon = icon
+        val elementName = elementName
+
+        val url = this::class.java.classLoader.getResource("${dirPrefix}_${NlsBundle.language}/el-alert.json")!!
+        val files = VfsUtil.findFileByURL(url)!!.parent.children
+
+        files.map {
+            LookupElementBuilder.create(it.nameWithoutExtension)
+                .withInsertHandler(XmlTagInsertHandler.INSTANCE)
+                .withTypeText(elementName)
+                .withIcon(icon)
+        }
+    }
+
+    private fun detectElementPlus(): Boolean? {
         val packageJsonFileManager = PackageJsonFileManager.getInstance(project)
 
         val validPackageJsonFiles = packageJsonFileManager.validPackageJsonFiles
-
-        return validPackageJsonFiles.any {
-            val content = it.readText()
-
-            return content.contains("element-plus")
+        if (validPackageJsonFiles.isEmpty()) {
+            return null
         }
+
+        for (validPackageJsonFile in validPackageJsonFiles) {
+            val content = validPackageJsonFile.readText()
+
+            if (content.contains("element-plus")) {
+                return true
+            } else if (content.contains("element-ui")) {
+                return false
+            }
+        }
+
+        return null
     }
 
     companion object {
