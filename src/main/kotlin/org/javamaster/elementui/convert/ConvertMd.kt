@@ -4,7 +4,6 @@ import com.google.gson.Gson
 import com.google.gson.GsonBuilder
 import com.intellij.openapi.project.Project
 import com.intellij.openapi.vfs.VfsUtil
-import com.intellij.openapi.vfs.VirtualFileManager
 import com.intellij.psi.util.PsiTreeUtil
 import com.intellij.psi.util.PsiUtilCore
 import org.intellij.markdown.flavours.commonmark.CommonMarkFlavourDescriptor
@@ -140,8 +139,6 @@ object ConvertMd {
 
         uiComponent.name = "el-dropdown-menu"
         saveComp(uiComponent, lang)
-
-        VirtualFileManager.getInstance().asyncRefresh()
     }
 
     private fun initComp(tables: List<MarkdownTable>, fileName: String): ElementUIComponent {

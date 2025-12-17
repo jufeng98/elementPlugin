@@ -1,11 +1,9 @@
 package org.javamaster.elementui.action
 
-import com.intellij.ide.plugins.PluginManager
 import com.intellij.openapi.actionSystem.ActionUpdateThread
 import com.intellij.openapi.actionSystem.AnAction
 import com.intellij.openapi.actionSystem.AnActionEvent
-import com.intellij.openapi.extensions.PluginId
-import kotlin.io.path.pathString
+import com.intellij.openapi.vfs.VirtualFileManager
 
 abstract class TestAction : AnAction() {
     private val sandBox by lazy {
@@ -26,13 +24,22 @@ abstract class TestAction : AnAction() {
         }
 
         wash(e)
+
+        val virtualFileManager = VirtualFileManager.getInstance()
+
+        try {
+            val clz = virtualFileManager::class.java
+            val method = clz.getMethod("asyncRefresh")
+            method.isAccessible = true
+            method.invoke(virtualFileManager)
+        } catch (e: NoSuchMethodException) {
+            System.err.println(e.message)
+        }
     }
 
     private fun inSandbox(): Boolean {
-        val pluginManager = PluginManager.getInstance()
-        val plugin = pluginManager.findEnabledPlugin(PluginId.findId("org.javamaster.elementui")!!)!!
-        val pluginPath = plugin.pluginPath.pathString
-        return pluginPath.contains("idea-sandbox")
+        val path = System.getProperty("idea.log.path")
+        return path != null && path.contains("sandbox")
     }
 
     abstract fun wash(e: AnActionEvent)

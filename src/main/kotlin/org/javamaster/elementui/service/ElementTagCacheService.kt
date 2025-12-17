@@ -71,12 +71,38 @@ class ElementTagCacheService(private val project: Project) {
             if (url == null) {
                 uiComponentMap[tagName] = null
                 return null
-            } else {
-                val jsonStr = url.readText(StandardCharsets.UTF_8)
-                val uiComponent = ConvertMd.gson.fromJson(jsonStr, ElementUIComponent::class.java)
-                uiComponentMap[tagName] = uiComponent
-                return uiComponent
             }
+
+            val jsonStr = url.readText(StandardCharsets.UTF_8)
+
+            val uiComponent = ConvertMd.gson.fromJson(jsonStr, ElementUIComponent::class.java)
+
+            replaceLinkType(uiComponent)
+
+            uiComponentMap[tagName] = uiComponent
+
+            return uiComponent
+        }
+    }
+
+    private fun replaceLinkType(uiComponent: ElementUIComponent) {
+        val attributes = uiComponent.attributes as MutableList
+        val nameMap = attributes.groupBy { it.name }
+
+        val list = nameMap["reference-to-other"] ?: return
+
+        val elementDetectService = ElementDetectService.getInstance(project)
+        val dirPrefix = elementDetectService.dirPrefix
+
+        attributes.removeAll(list)
+
+        for (attr in list) {
+            val filePath = "${dirPrefix}_${NlsBundle.language}/${attr.type}.json"
+            val url = classloader.getResource(filePath)!!
+            val jsonStr = url.readText(StandardCharsets.UTF_8)
+            val uiComponent = ConvertMd.gson.fromJson(jsonStr, ElementUIComponent::class.java)
+
+            attributes.addAll(uiComponent.attributes)
         }
     }
 

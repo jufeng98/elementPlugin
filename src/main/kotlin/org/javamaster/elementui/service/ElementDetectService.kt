@@ -29,7 +29,7 @@ class ElementDetectService(private val project: Project) {
 
     val elementName by lazy {
         if (elementPlus) {
-            "Element Plus(2.9.10)"
+            "Element Plus(2.12.0)"
         } else {
             "Element UI(2.15.14)"
         }

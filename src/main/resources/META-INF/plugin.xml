@@ -1,7 +1,7 @@
 <idea-plugin>
     <id>org.javamaster.elementui</id>
     <name>ElementUI</name>
-    <version>3.5.0</version>
+    <version>4.0.0</version>
     <vendor email="375709770@qq.com" url="https://www.zhihu.com/people/liang-yu-dong-44">
         jufeng98
     </vendor>
@@ -12,7 +12,7 @@
             Notice: before use this plugin, please install the <a rel="nofollow" href="https://plugins.jetbrains.com/plugin/9442-vue-js" target="_blank">Vue.js</a> plugin first<br>
             <b>features</b>
             <ol>
-                <li>Base on ElementUI 2.15.14 version and Element Plus 2.9.10 version</li>
+                <li>Base on ElementUI 2.15.14 version and Element Plus 2.12.0 version</li>
                 <li>Support ElementUI / Element Plus tag name completion</li>
                 <li>Support ElementUI / Element Plus tag name documentation</li>
                 <li>Support ElementUI / Element Plus tag attribute completion</li>
@@ -24,7 +24,7 @@
             注意: 在使用插件之前, 请先安装 <a rel="nofollow" href="https://plugins.jetbrains.com/plugin/9442-vue-js" target="_blank">Vue.js</a> 插件<br>
             <b>特性</b>
             <ol>
-                <li>基于 ElementUI 2.15.14 版本和 Element Plus 2.9.10 版本</li>
+                <li>基于 ElementUI 2.15.14 版本和 Element Plus 2.12.0 版本</li>
                 <li>支持 ElementUI / Element Plus 标签智能提示补全</li>
                 <li>支持 ElementUI / Element Plus 标签文档提示</li>
                 <li>支持 ElementUI / Element Plus 标签属性智能提示补全</li>
@@ -36,7 +36,12 @@
     <change-notes>
         <![CDATA[
             <ul>
-                <li><b>3.5.0</b></li>
+                <li><b>4.0.0</b></li>
+                <ul>
+                    <li>适配 Element Plus 2.12.0</li>
+                    <li>支持 253</li>
+                </ul>
+                <li><b>3.5.0</b></li>x
                 <ul>
                     <li>完善 Element Plus 标签及属性提示的文档内容</li>
                     <li>bug修复</li>

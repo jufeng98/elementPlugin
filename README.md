@@ -5,7 +5,7 @@
 #### Notice: before use this plugin, please install the <a rel="nofollow" href="https://plugins.jetbrains.com/plugin/9442-vue-js" target="_blank">Vue.js</a> plugin first
 
 ## features
-- Base on ElementUI 2.15.14 version and Element Plus 2.9.10 version
+- Base on ElementUI 2.15.14 version and Element Plus 2.12.0 version
 - Support ElementUI / Element Plus tag name completion
 - Support ElementUI / Element Plus tag name documentation
 - Support ElementUI / Element Plus tag attribute completion
@@ -17,7 +17,7 @@
 #### 注意: 在使用插件之前,请先安装 [Vue.js 插件](https://plugins.jetbrains.com/plugin/9442-vue-js).
 
 ## 特性:
-- 基于 ElementUI 2.15.14 版本和 Element Plus 2.9.10 版本
+- 基于 ElementUI 2.15.14 版本和 Element Plus 2.12.0 版本
 - 支持 ElementUI / Element Plus 标签智能提示补全
 - 支持 ElementUI / Element Plus 标签文档提示
 - 支持 ElementUI / Element Plus 标签属性智能提示补全
