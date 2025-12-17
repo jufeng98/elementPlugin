@@ -26,9 +26,9 @@
       "defaultValue": "—"
     },
     {
-      "name": "props",
+      "name": "[props](#props)",
       "desc": "configuration options, see the following table",
-      "type": "[props](#props)",
+      "type": "object",
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
@@ -256,12 +256,12 @@
   "shortcuts": [],
   "slots": [
     {
-      "name": "—",
-      "desc": "Custom content for tree nodes. The scope parameter is `{ node, data }`"
+      "name": "default",
+      "desc": "custom content for tree nodes"
     },
     {
       "name": "empty ^(2.3.4)",
-      "desc": "empty you can customize content when data is empty."
+      "desc": "custom content when data is empty"
     }
   ],
   "events": [
@@ -331,5 +331,96 @@
       "param": "four parameters: node object corresponding to the dragging node, node object corresponding to the dropped node, node drop type (before / after / inner), event."
     }
   ],
-  "methods": []
+  "methods": [
+    {
+      "name": "filter",
+      "desc": "filter all tree nodes, filtered nodes will be hidden",
+      "param": "Accept a parameter which will be used as first parameter for filter-node-method"
+    },
+    {
+      "name": "updateKeyChildren",
+      "desc": "set new data to node, only works when `node-key` is assigned",
+      "param": "(key, data) Accept two parameters: 1. key of node 2. new data"
+    },
+    {
+      "name": "getCheckedNodes",
+      "desc": "If the node can be selected (`show-checkbox` is `true`), it returns the currently selected array of nodes",
+      "param": "(leafOnly, includeHalfChecked) Accept two boolean type parameters: 1. default value is false. If the parameter is true, it only returns the currently selected array of sub-nodes. 2. default value is false. If the parameter is true, the return value contains halfchecked nodes"
+    },
+    {
+      "name": "setCheckedNodes",
+      "desc": "set certain nodes to be checked, only works when `node-key` is assigned",
+      "param": "(nodes, leafOnly) Accept two parameters: 1. an array of node objects to be checked 2. a boolean parameter. If set to true, only the checked status of leaf nodes will be set. The default value is false."
+    },
+    {
+      "name": "getCheckedKeys",
+      "desc": "If the node can be selected (`show-checkbox` is `true`), it returns the currently selected array of node's keys",
+      "param": "(leafOnly) Accept a boolean type parameter whose default value is false. If the parameter is true, it only returns the currently selected array of sub-nodes."
+    },
+    {
+      "name": "setCheckedKeys",
+      "desc": "set certain nodes to be checked, only works when `node-key` is assigned",
+      "param": "(keys, leafOnly) Accept two parameters: 1. an array of nodes keys to be checked 2. a boolean parameter. If set to true, only the checked status of leaf nodes will be set. The default value is false."
+    },
+    {
+      "name": "setChecked",
+      "desc": "set node to be checked or not, only works when `node-key` is assigned",
+      "param": "(key/data, checked, deep) Accept three parameters: 1. nodes key or data to be checked 2. a boolean typed parameter indicating checked or not. 3. a boolean typed parameter indicating deep or not (note that check-strictly must be false)."
+    },
+    {
+      "name": "getHalfCheckedNodes",
+      "desc": "If the node can be selected (`show-checkbox` is `true`), it returns the currently half selected array of nodes",
+      "param": "—"
+    },
+    {
+      "name": "getHalfCheckedKeys",
+      "desc": "If the node can be selected (`show-checkbox` is `true`), it returns the currently half selected array of node's keys",
+      "param": "—"
+    },
+    {
+      "name": "getCurrentKey",
+      "desc": "return the highlight node's key (null if no node is highlighted)",
+      "param": "—"
+    },
+    {
+      "name": "getCurrentNode",
+      "desc": "return the highlight node's data (null if no node is highlighted)",
+      "param": "—"
+    },
+    {
+      "name": "setCurrentKey",
+      "desc": "set highlighted node by key, only works when `node-key` is assigned",
+      "param": "(key, shouldAutoExpandParent=true) 1. the nodes key to be highlighted. If null, cancel the currently highlighted node 2. whether to automatically expand parent node"
+    },
+    {
+      "name": "setCurrentNode",
+      "desc": "set highlighted node, only works when `node-key` is assigned",
+      "param": "(node, shouldAutoExpandParent=true) 1. the node to be highlighted 2. whether to automatically expand parent node"
+    },
+    {
+      "name": "getNode",
+      "desc": "get node by data or key",
+      "param": "(data) the nodes data or key"
+    },
+    {
+      "name": "remove",
+      "desc": "remove a node, only works when node-key is assigned",
+      "param": "(data) the nodes data or node to be deleted"
+    },
+    {
+      "name": "append",
+      "desc": "append a child node to a given node in the tree",
+      "param": "(data, parentNode) 1. child nodes data to be appended 2. parent nodes data, key or node"
+    },
+    {
+      "name": "insertBefore",
+      "desc": "insert a node before a given node in the tree",
+      "param": "(data, refNode) 1. nodes data to be inserted 2. reference nodes data, key or node"
+    },
+    {
+      "name": "insertAfter",
+      "desc": "insert a node after a given node in the tree",
+      "param": "(data, refNode) 1. nodes data to be inserted 2. reference nodes data, key or node"
+    }
+  ]
 }

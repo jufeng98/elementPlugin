@@ -26,6 +26,17 @@
         "info"
       ],
       "defaultValue": "—"
+    },
+    {
+      "name": "direction",
+      "desc": "展示的方向(2.11.9)",
+      "type": "enum",
+      "optionValue": "horizontal | vertical",
+      "options": [
+        "horizontal",
+        "vertical"
+      ],
+      "defaultValue": "horizontal"
     }
   ],
   "props": [],

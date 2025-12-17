@@ -17,14 +17,15 @@
       "name": "type",
       "desc": "button type, when setting color, the latter prevails",
       "type": "enum",
-      "optionValue": "primary | success | warning | danger | info | text (deprecated)",
+      "optionValue": "default | primary | success | warning | danger | info |  | text (deprecated)",
       "options": [
+        "default",
         "primary",
         "success",
         "warning",
         "danger",
         "info",
-        "text (deprecated)"
+        "text"
       ],
       "defaultValue": "—"
     },

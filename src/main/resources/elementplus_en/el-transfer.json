@@ -94,7 +94,7 @@
       "defaultValue": "{}"
     },
     {
-      "name": "props",
+      "name": "[props](#type-declarations)",
       "desc": "prop aliases for data source",
       "type": "object",
       "optionValue": "TransferPropsAlias",
@@ -132,7 +132,7 @@
   "slots": [
     {
       "name": "default",
-      "desc": "Custom content for data items. The scope parameter is `{ option }`"
+      "desc": "Custom content for data items."
     },
     {
       "name": "left-footer",

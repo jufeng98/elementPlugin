@@ -4,8 +4,8 @@
     {
       "name": "data",
       "desc": "展示数据",
-      "type": "array",
-      "optionValue": "",
+      "type": "object",
+      "optionValue": "Array<{[key: string]: any}>",
       "options": [],
       "defaultValue": "—"
     },
@@ -18,7 +18,7 @@
       "defaultValue": "—"
     },
     {
-      "name": "props",
+      "name": "[props](#props)",
       "desc": "配置选项，具体看下表",
       "type": "object",
       "optionValue": "",
@@ -60,8 +60,8 @@
     {
       "name": "default-expanded-keys",
       "desc": "默认展开的节点的 key 的数组",
-      "type": "array",
-      "optionValue": "",
+      "type": "object",
+      "optionValue": "Array<string | number>",
       "options": [],
       "defaultValue": "—"
     },
@@ -84,8 +84,8 @@
     {
       "name": "default-checked-keys",
       "desc": "默认勾选的节点的 key 的数组",
-      "type": "array",
-      "optionValue": "",
+      "type": "object",
+      "optionValue": "Array<string | number>",
       "options": [],
       "defaultValue": "—"
     },
@@ -100,8 +100,8 @@
     {
       "name": "filter-method",
       "desc": "对树节点进行筛选时执行的方法，返回 true 表示这个节点可以显示， 返回 false 则表示这个节点会被隐藏",
-      "type": "Function(value, data, node)",
-      "optionValue": "",
+      "type": "Function",
+      "optionValue": "(query: string, data: TreeNodeData, node: TreeNode) => boolean",
       "options": [],
       "defaultValue": "—"
     },
@@ -115,13 +115,10 @@
     },
     {
       "name": "icon",
-      "desc": "自定义树节点的图标",
-      "type": "",
-      "optionValue": "string | Component",
-      "options": [
-        "string",
-        "Component"
-      ],
+      "desc": "自定义树节点图标组件",
+      "type": "string / Component",
+      "optionValue": "",
+      "options": [],
       "defaultValue": "—"
     },
     {
@@ -131,6 +128,22 @@
       "optionValue": "",
       "options": [],
       "defaultValue": "26"
+    },
+    {
+      "name": "scrollbar-always-on",
+      "desc": "总是显示滚动条(2.10.4)",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "height",
+      "desc": "tree 的高度",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "200"
     }
   ],
   "props": [
@@ -170,7 +183,7 @@
       "name": "class",
       "desc": "自定义节点类名(2.9.0)",
       "type": "string / Function",
-      "optionValue": "(data, node) => string",
+      "optionValue": "(data: TreeNodeData, node: TreeNode) => string | {[key: string]: boolean}",
       "options": [],
       "defaultValue": "—"
     }
@@ -179,8 +192,8 @@
   "shortcuts": [],
   "slots": [
     {
-      "name": "-",
-      "desc": "自定义树节点的内容。 作用域参数为 `{ node: TreeNode, data: TreeNodeData }`"
+      "name": "default",
+      "desc": "自定义树节点的内容。"
     },
     {
       "name": "empty ^(2.9.0)",
@@ -200,17 +213,17 @@
     },
     {
       "name": "@node-contextmenu",
-      "desc": "当节点被鼠标右键点击时会触发该事件",
+      "desc": "当某一节点被鼠标右键点击时会触发该事件",
       "param": "(e: Event, data: TreeNodeData, node: TreeNode)"
     },
     {
       "name": "@check-change",
-      "desc": "节点选中状态发生变化时的回调",
+      "desc": "当复选框被点击的时候触发",
       "param": "(data: TreeNodeData, checked: boolean)"
     },
     {
       "name": "@check",
-      "desc": "当复选框被点击的时候触发",
+      "desc": "点击节点复选框之后触发",
       "param": "(data: TreeNodeData, info: { checkedKeys: TreeKey[,checkedNodes: TreeData, halfCheckedKeys: TreeKey[, halfCheckedNodes: TreeData,})"
     },
     {
@@ -225,9 +238,95 @@
     },
     {
       "name": "@node-collapse",
-      "desc": "节点被收起时触发的事件",
+      "desc": "节点被关闭时触发的事件",
       "param": "(data: TreeNodeData, node: TreeNode)"
     }
   ],
-  "methods": []
+  "methods": [
+    {
+      "name": "filter",
+      "desc": "过滤所有树节点，过滤后的节点将被隐藏",
+      "param": "(query: string)"
+    },
+    {
+      "name": "getCheckedNodes",
+      "desc": "如果节点可以被选中，(`show-checkbox` 为 `true`), 本方法将返回当前选中节点的数组",
+      "param": "(leafOnly: boolean)"
+    },
+    {
+      "name": "getCheckedKeys",
+      "desc": "若节点可用被选中 (`show-checkbox` 为 `true`), 它将返回当前选中节点 key 的数组",
+      "param": "(leafOnly: boolean)"
+    },
+    {
+      "name": "setCheckedKeys",
+      "desc": "通过 keys 设置目前勾选的节点",
+      "param": "(keys: TreeKey[)"
+    },
+    {
+      "name": "setChecked",
+      "desc": "通过 key 设置某个节点的勾选状态",
+      "param": "(key: TreeKey, checked: boolean)"
+    },
+    {
+      "name": "setExpandedKeys",
+      "desc": "设置当前展开的节点",
+      "param": "(keys: TreeKey[)"
+    },
+    {
+      "name": "getHalfCheckedNodes",
+      "desc": "如果节点可用被选中 (`show-checkbox` 为 `true`), 它将返回当前半选中的节点组成的数组",
+      "param": ":::"
+    },
+    {
+      "name": "getHalfCheckedKeys",
+      "desc": "若节点可被选中(`show-checkbox` 为 `true`)，则返回目前半选中的节点的 key 所组成的数组",
+      "param": ":::"
+    },
+    {
+      "name": "getCurrentKey",
+      "desc": "获取当前被选中节点的 key，若没有节点被选中则返回 `undefined`",
+      "param": ":::"
+    },
+    {
+      "name": "getCurrentNode",
+      "desc": "获取当前被选中节点的 data，若没有节点被选中则返回 `undefined`",
+      "param": ":::"
+    },
+    {
+      "name": "setCurrentKey",
+      "desc": "通过 key 设置某个节点的当前选中状态",
+      "param": "(key: TreeKey)"
+    },
+    {
+      "name": "getNode",
+      "desc": "通过 key 或 data 获取节点",
+      "param": "(data: TreeKey | TreeNodeData)"
+    },
+    {
+      "name": "expandNode",
+      "desc": "展开指定节点",
+      "param": "(node: TreeNode)"
+    },
+    {
+      "name": "collapseNode",
+      "desc": "折叠指定节点",
+      "param": "(node: TreeNode)"
+    },
+    {
+      "name": "setData",
+      "desc": "当数据量非常庞大的时候，总是使用响应式数据将导致性能表现不佳，所以我们提供一种显式设置的方式来避免此种情况",
+      "param": "(data: TreeData)"
+    },
+    {
+      "name": "scrollTo",
+      "desc": "滚动到给定位置(2.8.0)",
+      "param": "(offset: number)"
+    },
+    {
+      "name": "scrollToNode",
+      "desc": "使用给定的滚动策略滚动至指定位置(2.8.0)",
+      "param": "(key: TreeKey, strategy?: auto | smart | center | start | end)"
+    }
+  ]
 }

@@ -51,7 +51,7 @@
       "type": "boolean",
       "optionValue": "",
       "options": [],
-      "defaultValue": "—"
+      "defaultValue": "你好"
     },
     {
       "name": "disabled",
@@ -105,7 +105,32 @@
       "defaultValue": "horizontal"
     }
   ],
-  "props": [],
+  "props": [
+    {
+      "name": "value",
+      "desc": "指定键为节点对象的某个属性值",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "value"
+    },
+    {
+      "name": "label",
+      "desc": "指定标签为节点对象的某个属性值",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "label"
+    },
+    {
+      "name": "disabled",
+      "desc": "指定禁用状态为节点对象的某个属性值",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "disabled"
+    }
+  ],
   "options": [],
   "shortcuts": [],
   "slots": [

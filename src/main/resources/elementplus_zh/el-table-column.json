@@ -77,7 +77,7 @@
       "name": "render-header",
       "desc": "列标题 Label 区域渲染使用的 Function",
       "type": "Function",
-      "optionValue": "(data: { column: any, $index: number }) => void",
+      "optionValue": "(data: { column: TableColumnCtx<T>, $index: number }) => void",
       "options": [],
       "defaultValue": "—"
     },
@@ -125,7 +125,7 @@
       "name": "formatter",
       "desc": "用来格式化内容",
       "type": "function",
-      "optionValue": "(row: any, column: any, cellValue: any, index: number) => VNode | string",
+      "optionValue": "(row: any, column: TableColumnCtx<T>, cellValue: any, index: number) => VNode | string",
       "options": [],
       "defaultValue": "—"
     },
@@ -242,7 +242,7 @@
       "name": "filter-method",
       "desc": "数据过滤使用的方法， 如果是多选的筛选项，对每一条数据会执行多次，任意一次返回 true 就会显示。",
       "type": "function",
-      "optionValue": "(value: any, row: any, column: any) => void",
+      "optionValue": "(value: any, row: any, column: TableColumnCtx<T>) => void",
       "options": [],
       "defaultValue": "—"
     },
@@ -258,7 +258,7 @@
       "name": "tooltip-formatter",
       "desc": "使用 show-overflow-tooltip 时自定义 tooltip 内容(2.9.4)",
       "type": "Function",
-      "optionValue": "(data: { row: any, column: any, cellValue: any }) => VNode | string",
+      "optionValue": "(data: { row: any, column: TableColumnCtx<T>, cellValue: any }) => VNode | string",
       "options": [],
       "defaultValue": "—"
     }
@@ -278,6 +278,10 @@
     {
       "name": "filter-icon ^(2.7.8)",
       "desc": "自定义 filter 图标"
+    },
+    {
+      "name": "expand ^(2.10.0)",
+      "desc": "展开列的自定义内容"
     }
   ],
   "events": [],

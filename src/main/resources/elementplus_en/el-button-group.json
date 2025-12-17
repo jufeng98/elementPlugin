@@ -26,6 +26,17 @@
         "info"
       ],
       "defaultValue": "—"
+    },
+    {
+      "name": "direction",
+      "desc": "display direction(2.11.9)",
+      "type": "enum",
+      "optionValue": "horizontal | vertical",
+      "options": [
+        "horizontal",
+        "vertical"
+      ],
+      "defaultValue": "horizontal"
     }
   ],
   "props": [],

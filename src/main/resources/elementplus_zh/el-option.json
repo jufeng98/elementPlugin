@@ -15,7 +15,7 @@
       "type": "string / number",
       "optionValue": "",
       "options": [],
-      "defaultValue": "—"
+      "defaultValue": ":::"
     },
     {
       "name": "disabled",

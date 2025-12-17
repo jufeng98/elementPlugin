@@ -35,7 +35,7 @@
     },
     {
       "name": "type",
-      "desc": "badge type.",
+      "desc": "badge 类型。",
       "type": "enum",
       "optionValue": "primary | success | warning | danger | info",
       "options": [
@@ -66,8 +66,8 @@
     {
       "name": "offset",
       "desc": "badge 的偏移量(2.7.0)",
-      "type": "[number,number]",
-      "optionValue": "",
+      "type": "array",
+      "optionValue": "[number, number]",
       "options": [],
       "defaultValue": "—"
     },

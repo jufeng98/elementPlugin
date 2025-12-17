@@ -105,7 +105,7 @@
       "name": "cell-class-name",
       "desc": "单元格的 className 的回调方法，也可以使用字符串为所有单元格设置一个固定的 className。",
       "type": "Function",
-      "optionValue": "(data: { row: any, column: any, rowIndex: number, columnIndex: number }) => string",
+      "optionValue": "(data: { row: any, column: TableColumnCtx<T>, rowIndex: number, columnIndex: number }) => string",
       "options": [],
       "defaultValue": "—"
     },
@@ -113,7 +113,7 @@
       "name": "cell-style",
       "desc": "单元格的 style 的回调方法，也可以使用一个固定的 Object 为所有单元格设置一样的 Style。",
       "type": "Function",
-      "optionValue": "(data: { row: any, column: any, rowIndex: number, columnIndex: number }) => CSSProperties",
+      "optionValue": "(data: { row: any, column: TableColumnCtx<T>, rowIndex: number, columnIndex: number }) => CSSProperties",
       "options": [],
       "defaultValue": "—"
     },
@@ -137,7 +137,7 @@
       "name": "header-cell-class-name",
       "desc": "表头单元格的 className 的回调方法，也可以使用字符串为所有表头单元格设置一个固定的 className。",
       "type": "Function",
-      "optionValue": "(data: { row: any, column: any, rowIndex: number, columnIndex: number }) => string",
+      "optionValue": "(data: { row: any, column: TableColumnCtx<T>, rowIndex: number, columnIndex: number }) => string",
       "options": [],
       "defaultValue": "—"
     },
@@ -145,7 +145,7 @@
       "name": "header-cell-style",
       "desc": "表头单元格的 style 的回调方法，也可以使用一个固定的 Object 为所有表头单元格设置一样的 Style。",
       "type": "Function",
-      "optionValue": "(data: { row: any, column: any, rowIndex: number, columnIndex: number }) => CSSProperties",
+      "optionValue": "(data: { row: any, column: TableColumnCtx<T>, rowIndex: number, columnIndex: number }) => CSSProperties",
       "options": [],
       "defaultValue": "—"
     },
@@ -176,8 +176,8 @@
     {
       "name": "expand-row-keys",
       "desc": "可以通过该属性设置 Table 目前的展开行，需要设置 row-key 属性才能使用，该属性为展开行的 keys 数组。",
-      "type": "array",
-      "optionValue": "string[]",
+      "type": "object",
+      "optionValue": "Array<string>",
       "options": [],
       "defaultValue": "—"
     },
@@ -244,7 +244,7 @@
       "name": "span-method",
       "desc": "合并行或列的计算方法",
       "type": "Function",
-      "optionValue": "(data: { row: any, column: any, rowIndex: number, columnIndex: number }) => number[] | { rowspan: number, colspan: number } | void",
+      "optionValue": "(data: { row: any, column: TableColumnCtx<T>, rowIndex: number, columnIndex: number }) => number[] | { rowspan: number, colspan: number } | void",
       "options": [],
       "defaultValue": "—"
     },
@@ -343,13 +343,21 @@
       "name": "tooltip-formatter",
       "desc": "自定义 show-overflow-tooltip 时的 tooltip 内容(2.9.4)",
       "type": "Function",
-      "optionValue": "(data: { row: any, column: any, cellValue: any }) => VNode | string",
+      "optionValue": "(data: { row: any, column: TableColumnCtx<T>, cellValue: any }) => VNode | string",
       "options": [],
       "defaultValue": "—"
     },
     {
       "name": "preserve-expanded-content",
       "desc": "在折叠后是否在DOM中保留展开行内容(2.9.7)",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "native-scrollbar",
+      "desc": "是否使用原生滚动条样式(2.10.5)",
       "type": "boolean",
       "optionValue": "",
       "options": [],
@@ -392,61 +400,61 @@
     {
       "name": "@cell-mouse-enter",
       "desc": "当单元格 hover 进入时会触发该事件",
-      "param": "Function(row: any, column: any, cell: HTMLTableCellElement, event: Event) => void"
+      "param": "Function(row: any, column: TableColumnCtx<T>, cell: HTMLTableCellElement, event: Event) => void"
     },
     {
       "name": "@cell-mouse-leave",
       "desc": "当单元格 hover 退出时会触发该事件",
-      "param": "Function(row: any, column: any, cell: HTMLTableCellElement, event: Event) => void"
+      "param": "Function(row: any, column: TableColumnCtx<T>, cell: HTMLTableCellElement, event: Event) => void"
     },
     {
       "name": "@cell-click",
       "desc": "当某个单元格被点击时会触发该事件",
-      "param": "Function(row: any, column: any, cell: HTMLTableCellElement, event: Event) => void"
+      "param": "Function(row: any, column: TableColumnCtx<T>, cell: HTMLTableCellElement, event: Event) => void"
     },
     {
       "name": "@cell-dblclick",
       "desc": "当某个单元格被双击击时会触发该事件",
-      "param": "Function(row: any, column: any, cell: HTMLTableCellElement, event: Event) => void"
+      "param": "Function(row: any, column: TableColumnCtx<T>, cell: HTMLTableCellElement, event: Event) => void"
     },
     {
       "name": "@cell-contextmenu",
       "desc": "当某个单元格被鼠标右键点击时会触发该事件",
-      "param": "Function(row: any, column: any, cell: HTMLTableCellElement, event: Event) => void"
+      "param": "Function(row: any, column: TableColumnCtx<T>, cell: HTMLTableCellElement, event: Event) => void"
     },
     {
       "name": "@row-click",
       "desc": "当某一行被点击时会触发该事件",
-      "param": "Function(row: any, column: any, event: Event) => void"
+      "param": "Function(row: any, column: TableColumnCtx<T>, event: Event) => void"
     },
     {
       "name": "@row-contextmenu",
       "desc": "当某一行被鼠标右键点击时会触发该事件",
-      "param": "Function(row: any, column: any, event: Event) => void"
+      "param": "Function(row: any, column: TableColumnCtx<T>, event: Event) => void"
     },
     {
       "name": "@row-dblclick",
       "desc": "当某一行被双击时会触发该事件",
-      "param": "Function(row: any, column: any, event: Event) => void"
+      "param": "Function(row: any, column: TableColumnCtx<T>, event: Event) => void"
     },
     {
       "name": "@header-click",
       "desc": "当某一列的表头被点击时会触发该事件",
-      "param": "Function(column: any, event: Event) => void"
+      "param": "Function(column: TableColumnCtx<T>, event: Event) => void"
     },
     {
       "name": "@header-contextmenu",
       "desc": "当某一列的表头被鼠标右键点击时触发该事件",
-      "param": "Function(column: any, event: Event) => void"
+      "param": "Function(column: TableColumnCtx<T>, event: Event) => void"
     },
     {
       "name": "@sort-change",
       "desc": "当表格的排序条件发生变化的时候会触发该事件",
-      "param": "Function(data: {column: any, prop: string, order: any }) => void"
+      "param": "Function(data: {column: TableColumnCtx<T>, prop: string, order: any }) => void"
     },
     {
       "name": "@filter-change",
-      "desc": "column 的 key， 如果需要使用 filter-change 事件，则需要此属性标识是哪个 column 的筛选条件",
+      "desc": "当表格的过滤条件发生变化的时候会触发该事件",
       "param": "Function(newFilters: any) => void"
     },
     {
@@ -457,7 +465,7 @@
     {
       "name": "@header-dragend",
       "desc": "当拖动表头改变了列的宽度的时候会触发该事件",
-      "param": "Function(newWidth: number, oldWidth: number, column: any, event: MouseEvent) => void"
+      "param": "Function(newWidth: number, oldWidth: number, column: TableColumnCtx<T>, event: MouseEvent) => void"
     },
     {
       "name": "@expand-change",

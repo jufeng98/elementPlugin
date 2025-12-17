@@ -63,7 +63,15 @@
     {
       "name": "popper-class",
       "desc": "ColorPicker 下拉框的类名",
-      "type": "string",
+      "type": "string / object",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "popper-style",
+      "desc": "ColorPicker 下拉面板的自定义样式(2.11.4)",
+      "type": "string / object",
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
@@ -101,6 +109,22 @@
       "defaultValue": "—"
     },
     {
+      "name": "empty-values",
+      "desc": "组件的空值配置 [参考config-provider](/en-US/component/config-provider#empty-values-configurations)(2.10.3)",
+      "type": "array",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "value-on-clear",
+      "desc": "清空选项的值 [参考 config-provider](/en-US/component/config-provider#empty-values-configurations)(2.10.3)",
+      "type": "string / number / boolean / Function",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
       "name": "id",
       "desc": "ColorPicker 的 id",
       "type": "string",
@@ -123,6 +147,22 @@
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
+    },
+    {
+      "name": "persistent",
+      "desc": "当颜色选择器未激活且 persistent 为 false 时，颜色面板将被销毁。(2.10.5)",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "append-to",
+      "desc": "挂载到哪个 DOM 元素(2.10.5)",
+      "type": "CSSSelector / HTMLElement",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "-"
     }
   ],
   "props": [],

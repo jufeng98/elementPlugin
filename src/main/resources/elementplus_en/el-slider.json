@@ -170,14 +170,6 @@
       "defaultValue": "—"
     },
     {
-      "name": "debounce",
-      "desc": "debounce delay when typing, in milliseconds, works when show-input is true",
-      "type": "number",
-      "optionValue": "",
-      "options": [],
-      "defaultValue": "300"
-    },
-    {
       "name": "tooltip-class",
       "desc": "custom class name for the tooltip",
       "type": "string",
@@ -224,7 +216,7 @@
     },
     {
       "name": "persistent",
-      "desc": "when slider tooltip inactive and persistent is false , popconfirm will be destroyed. persistent always be false when show-tooltip  is false(2.9.5)",
+      "desc": "when slider tooltip inactive and persistent is false , tooltip will be destroyed. persistent always be false when show-tooltip  is false(2.9.5)",
       "type": "boolean",
       "optionValue": "",
       "options": [],

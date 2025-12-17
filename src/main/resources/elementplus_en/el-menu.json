@@ -116,8 +116,16 @@
     },
     {
       "name": "popper-class",
-      "desc": "custom class name for all popup menus(2.5.0)",
+      "desc": "custom class name for all popup menus and titles' tooltips(2.5.0)",
       "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "popper-style",
+      "desc": "custom style for all popup menus and titles' tooltips(2.11.5)",
+      "type": "string / object",
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
@@ -207,6 +215,11 @@
       "name": "close",
       "desc": "close a specific sub-menu, the param is index of the sub-menu to close",
       "param": "Function(index: string) => void"
+    },
+    {
+      "name": "handleResize",
+      "desc": "manually trigger menu width recalculation",
+      "param": "Function() => void"
     },
     {
       "name": "updateActiveIndex",

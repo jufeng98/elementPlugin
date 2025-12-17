@@ -23,7 +23,7 @@
       "type": "string / number / boolean",
       "optionValue": "",
       "options": [],
-      "defaultValue": "—"
+      "defaultValue": ":::"
     },
     {
       "name": "label",
@@ -31,7 +31,7 @@
       "type": "string / number / boolean",
       "optionValue": "",
       "options": [],
-      "defaultValue": "—"
+      "defaultValue": ":::"
     },
     {
       "name": "disabled",

@@ -58,6 +58,14 @@
       "defaultValue": "1.2"
     },
     {
+      "name": "scale",
+      "desc": "the preview image scale.(2.11.3)",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "1"
+    },
+    {
       "name": "min-scale",
       "desc": "the min scale of the image viewer zoom event.(2.4.0)",
       "type": "number",
@@ -93,12 +101,34 @@
   "props": [],
   "options": [],
   "shortcuts": [],
-  "slots": [],
+  "slots": [
+    {
+      "name": "viewer",
+      "desc": "custom content"
+    },
+    {
+      "name": "progress ^(2.9.4)",
+      "desc": "custom progress content (Priority is higher than `show-progress` prop)"
+    },
+    {
+      "name": "toolbar ^(2.9.4)",
+      "desc": "custom toolbar content"
+    },
+    {
+      "name": "viewer-error ^(2.11.3)",
+      "desc": "custom image load failed content."
+    }
+  ],
   "events": [
     {
       "name": "@close",
       "desc": "trigger when clicking on close button or when `hide-on-click-modal` enabled clicking on backdrop.",
       "param": "Function() => void"
+    },
+    {
+      "name": "@error",
+      "desc": "same as native error.(2.11.3)",
+      "param": "Function(e: Event) => void"
     },
     {
       "name": "@switch",

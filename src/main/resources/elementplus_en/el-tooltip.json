@@ -123,7 +123,7 @@
     },
     {
       "name": "show-after",
-      "desc": "delay of appearance, in millisecond",
+      "desc": "delay of appearance, in millisecond, not valid in controlled mode",
       "type": "number",
       "optionValue": "",
       "options": [],
@@ -139,7 +139,7 @@
     },
     {
       "name": "hide-after",
-      "desc": "delay of disappear, in millisecond",
+      "desc": "delay of disappear, in millisecond, not valid in controlled mode",
       "type": "number",
       "optionValue": "",
       "options": [],
@@ -147,7 +147,7 @@
     },
     {
       "name": "auto-close",
-      "desc": "timeout in milliseconds to hide tooltip",
+      "desc": "timeout in milliseconds to hide tooltip, not valid in controlled mode",
       "type": "number",
       "optionValue": "",
       "options": [],
@@ -157,6 +157,14 @@
       "name": "popper-class",
       "desc": "custom class name for Tooltip's popper",
       "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "popper-style",
+      "desc": "custom style for Tooltip's popper",
+      "type": "string / object",
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
@@ -179,7 +187,7 @@
     },
     {
       "name": "trigger",
-      "desc": "How should the tooltip be triggered (to show)",
+      "desc": "How should the tooltip be triggered (to show), not valid in controlled mode",
       "type": "enum",
       "optionValue": "hover | click | focus | contextmenu",
       "options": [
@@ -208,7 +216,7 @@
     },
     {
       "name": "trigger-keys",
-      "desc": "When you click the mouse to focus on the trigger element, you can define a set of keyboard codes to control the display of tooltip through the keyboard",
+      "desc": "When you click the mouse to focus on the trigger element, you can define a set of keyboard codes to control the display of tooltip through the keyboard, not valid in controlled mode",
       "type": "Array",
       "optionValue": "",
       "options": [],
@@ -216,7 +224,7 @@
     },
     {
       "name": "persistent",
-      "desc": "when tooltip inactive and persistent is false , popconfirm will be destroyed",
+      "desc": "when tooltip inactive and persistent is false , tooltip will be destroyed",
       "type": "boolean",
       "optionValue": "",
       "options": [],
@@ -229,6 +237,14 @@
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
+    },
+    {
+      "name": "focus-on-target",
+      "desc": "when triggering tooltips through hover, whether to focus the trigger element, which improves accessibility(2.11.2)",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
     }
   ],
   "props": [],
@@ -237,14 +253,35 @@
   "slots": [
     {
       "name": "default",
-      "desc": "Tooltip triggering & reference element"
+      "desc": "Tooltip triggering & reference element, only a single root element is accepted"
     },
     {
       "name": "content",
       "desc": "customize content"
     }
   ],
-  "events": [],
+  "events": [
+    {
+      "name": "@before-show",
+      "desc": "Triggers before tooltip is shown. Passes trigger reason as argument.",
+      "param": "Function(event?: Event) => void"
+    },
+    {
+      "name": "@show",
+      "desc": "Triggers when tooltip is shown. Passes trigger reason as argument.",
+      "param": "Function(event?: Event) => void"
+    },
+    {
+      "name": "@before-hide",
+      "desc": "Triggers before tooltip is hidden. Passes trigger reason as argument.",
+      "param": "Function(event?: Event) => void"
+    },
+    {
+      "name": "@hide",
+      "desc": "Triggers when tooltip is hidden. Passes trigger reason as argument.",
+      "param": "Function(event?: Event) => void"
+    }
+  ],
   "methods": [
     {
       "name": "popperRef",

@@ -21,8 +21,9 @@
       "name": "icon",
       "desc": "icon type of result",
       "type": "enum",
-      "optionValue": "success | warning | info | error",
+      "optionValue": "primary (2.9.11) | success | warning | info | error",
       "options": [
+        "primary",
         "success",
         "warning",
         "info",

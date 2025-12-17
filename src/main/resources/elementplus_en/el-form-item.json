@@ -19,7 +19,7 @@
     },
     {
       "name": "label-position",
-      "desc": "Position of item label. If set to 'left' or 'right', label-width prop is also required. Default extend label-postion of form.(2.7.7)",
+      "desc": "Position of item label. If set to 'left' or 'right', label-width prop is also required. Default extend label-position of form.(2.7.7)",
       "type": "enum",
       "optionValue": "left | right | top",
       "options": [
@@ -35,7 +35,7 @@
       "type": "string / number",
       "optionValue": "",
       "options": [],
-      "defaultValue": ""
+      "defaultValue": "—"
     },
     {
       "name": "required",
@@ -72,10 +72,10 @@
     {
       "name": "inline-message",
       "desc": "Inline style validate message.",
-      "type": "string / boolean",
+      "type": "boolean",
       "optionValue": "",
       "options": [],
-      "defaultValue": ""
+      "defaultValue": "false"
     },
     {
       "name": "size",

@@ -17,14 +17,15 @@
       "name": "type",
       "desc": "按钮类型，在设置color时，后者优先。",
       "type": "enum",
-      "optionValue": "primary | success | warning | danger | info | text (deprecated)",
+      "optionValue": "default | primary | success | warning | danger | info |  | text (deprecated)",
       "options": [
+        "default",
         "primary",
         "success",
         "warning",
         "danger",
         "info",
-        "text (deprecated)"
+        "text"
       ],
       "defaultValue": "—"
     },

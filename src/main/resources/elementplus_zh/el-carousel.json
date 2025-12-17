@@ -78,7 +78,7 @@
       "defaultValue": ""
     },
     {
-      "name": "cardScale",
+      "name": "card-scale",
       "desc": "当 type 为 card时，二级卡的缩放大小(2.7.8)",
       "type": "number",
       "optionValue": "",

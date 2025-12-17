@@ -18,6 +18,14 @@
       "defaultValue": "—"
     },
     {
+      "name": "default-value",
+      "desc": "The value of the tab that should be active when initially rendered. (avoid initial transition)(2.11.9)",
+      "type": "string / number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
       "name": "type",
       "desc": "type of Tab",
       "type": "enum",
@@ -80,6 +88,14 @@
       "optionValue": "(activeName: TabPaneName, oldActiveName: TabPaneName) => Awaitable<void | boolean>",
       "options": [],
       "defaultValue": "() => true"
+    },
+    {
+      "name": "tabindex",
+      "desc": "tabs tabindex(2.11.7)",
+      "type": "string / number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "0"
     }
   ],
   "props": [],

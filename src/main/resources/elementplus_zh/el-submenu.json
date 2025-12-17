@@ -18,6 +18,14 @@
       "defaultValue": "—"
     },
     {
+      "name": "popper-style",
+      "desc": "为 popper 添加自定义样式(2.11.5)",
+      "type": "string / object",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
       "name": "show-timeout",
       "desc": "子菜单出现之前的延迟，(继承 menu 的 show-timeout 配置)",
       "type": "number",

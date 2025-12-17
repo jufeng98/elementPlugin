@@ -98,6 +98,14 @@
       "defaultValue": "true"
     },
     {
+      "name": "modal-penetrable",
+      "desc": "是否允许穿透遮罩层。 modal 属性必须为 false。(2.11.7)",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
       "name": "direction",
       "desc": "Drawer 打开的方向",
       "type": "enum",
@@ -109,6 +117,14 @@
         "btt"
       ],
       "defaultValue": "rtl"
+    },
+    {
+      "name": "resizable",
+      "desc": "为抽屉启用可调整大小的功能(2.11.0)",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
     },
     {
       "name": "show-close",
@@ -250,6 +266,21 @@
       "name": "@close-auto-focus",
       "desc": "输入焦点从 Drawer 内容失焦时的回调",
       "param": "Function() => void"
+    },
+    {
+      "name": "@resize-start",
+      "desc": "当开始调整大小时触发（当启用 ` resizable ` 时）(2.11.8)",
+      "param": "Function(evt: MouseEvent, size: number) => void"
+    },
+    {
+      "name": "@resize",
+      "desc": "调整大小时触发（启用 ` resizable ` 时）(2.11.8)",
+      "param": "Function(evt: MouseEvent, size: number) => void"
+    },
+    {
+      "name": "@resize-end",
+      "desc": "当调整大小结束时触发（当启用 ` resizable ` 时）(2.11.8)",
+      "param": "Function(evt: MouseEvent, size: number) => void"
     }
   ],
   "methods": [

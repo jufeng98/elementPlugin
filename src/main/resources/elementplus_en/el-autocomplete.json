@@ -123,7 +123,15 @@
     {
       "name": "popper-class",
       "desc": "custom class name for autocomplete's dropdown",
-      "type": "string",
+      "type": "string / object",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "popper-style",
+      "desc": "custom style for autocomplete's dropdown(2.11.4)",
+      "type": "string / object",
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
@@ -167,6 +175,22 @@
       "optionValue": "",
       "options": [],
       "defaultValue": "false"
+    },
+    {
+      "name": "loop-navigation",
+      "desc": "whether keyboard navigation loops from end to start(2.11.4)",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "reference-to-other",
+      "desc": "—",
+      "type": "el-input",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
     }
   ],
   "props": [],
@@ -176,6 +200,14 @@
     {
       "name": "default",
       "desc": "custom content for input suggestions"
+    },
+    {
+      "name": "header ^(2.10.6)",
+      "desc": "content at the top of the dropdown"
+    },
+    {
+      "name": "footer ^(2.10.6)",
+      "desc": "content at the bottom of the dropdown"
     },
     {
       "name": "prefix",
@@ -222,7 +254,7 @@
     {
       "name": "@select",
       "desc": "triggers when a suggestion is clicked",
-      "param": "Function(item: typeof modelValue | any) => void"
+      "param": "Function(item: Record<string, any>) => void"
     },
     {
       "name": "@change",
@@ -294,7 +326,7 @@
     {
       "name": "getData",
       "desc": "loading suggestion list(2.8.4)",
-      "param": "Function(queryString: string) => void"
+      "param": "Function(queryString: string) => promise<void>"
     }
   ]
 }

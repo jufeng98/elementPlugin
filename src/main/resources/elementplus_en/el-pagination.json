@@ -136,6 +136,14 @@
       "defaultValue": ""
     },
     {
+      "name": "popper-style",
+      "desc": "custom style for the page size Select's dropdown(2.11.5)",
+      "type": "string / object",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
       "name": "prev-text",
       "desc": "text for the prev button",
       "type": "string",

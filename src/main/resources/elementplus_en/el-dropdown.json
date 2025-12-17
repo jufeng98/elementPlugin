@@ -77,19 +77,30 @@
       "defaultValue": "bottom"
     },
     {
+      "name": "effect",
+      "desc": "Tooltip theme, built-in theme: dark / light",
+      "type": "enum",
+      "optionValue": "dark | light",
+      "options": [
+        "dark",
+        "light"
+      ],
+      "defaultValue": "light"
+    },
+    {
       "name": "trigger",
       "desc": "how to trigger",
       "type": "enum",
-      "optionValue": "hover | click | contextmenu",
+      "optionValue": "click | hover | contextmenu",
       "options": [
-        "hover",
         "click",
+        "hover",
         "contextmenu"
       ],
       "defaultValue": "hover"
     },
     {
-      "name": "triggerKeys",
+      "name": "trigger-keys",
       "desc": "specify which keys on the keyboard can trigger when pressed(2.9.1)",
       "type": "array",
       "optionValue": "string[]",
@@ -97,8 +108,32 @@
       "defaultValue": "[Enter, Space, ArrowDown, NumpadEnter]"
     },
     {
+      "name": "virtual-triggering",
+      "desc": "indicates whether virtual triggering is enabled(2.11.3)",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "virtual-ref",
+      "desc": "indicates the reference element to which the dropdown is attached(2.11.3)",
+      "type": "HTMLElement",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
       "name": "hide-on-click",
       "desc": "whether to hide menu after clicking menu-item",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "show-arrow",
+      "desc": "whether the tooltip content has an arrow(2.11.3)",
       "type": "boolean",
       "optionValue": "",
       "options": [],
@@ -148,10 +183,18 @@
     {
       "name": "popper-class",
       "desc": "custom class name for Dropdown's dropdown",
-      "type": "string",
+      "type": "string / object",
       "optionValue": "",
       "options": [],
       "defaultValue": ""
+    },
+    {
+      "name": "popper-style",
+      "desc": "custom style for Dropdown's dropdown(2.11.5)",
+      "type": "string / object",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
     },
     {
       "name": "popper-options",
@@ -168,6 +211,14 @@
       "optionValue": "",
       "options": [],
       "defaultValue": "true"
+    },
+    {
+      "name": "append-to",
+      "desc": "which element the dropdown CONTENT appends to(2.13.0)",
+      "type": "CSSSelector / HTMLElement",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
     },
     {
       "name": "persistent",

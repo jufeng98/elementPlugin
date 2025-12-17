@@ -1,0 +1,84 @@
+{
+  "name": "el-splitter",
+  "attributes": [
+    {
+      "name": "size",
+      "desc": "面板大小(像素或百分比)",
+      "type": "string / number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "-"
+    },
+    {
+      "name": "v-model:size",
+      "desc": "面板大小(像素或百分比)",
+      "type": "string / number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "-"
+    },
+    {
+      "name": "min",
+      "desc": "面板最小尺寸(像素或百分比)",
+      "type": "string / number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "-"
+    },
+    {
+      "name": "max",
+      "desc": "面板的最大尺寸(像素或百分比)",
+      "type": "string / number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "-"
+    },
+    {
+      "name": "resizable",
+      "desc": "是否可以调整面板大小",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "collapsible",
+      "desc": "面板是否可折叠。",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "default",
+      "desc": "面板的默认内容"
+    },
+    {
+      "name": "start-collapsible",
+      "desc": "自定义起始折叠按钮的内容"
+    },
+    {
+      "name": "end-collapsible",
+      "desc": "结束可折叠按钮的自定义内容"
+    }
+  ],
+  "events": [
+    {
+      "name": "@update:size",
+      "desc": "当面板大小改变时触发",
+      "param": "Function(size: number) => void"
+    }
+  ],
+  "methods": [
+    {
+      "name": "splitterPanelRef",
+      "desc": "splitter-面板 html 元素(2.11.9)",
+      "param": "objectRef<HTMLDivElement>"
+    }
+  ]
+}

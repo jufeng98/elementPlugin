@@ -21,7 +21,7 @@
       "name": "options",
       "desc": "选项的数据源， value 和 label 可以通过 CascaderProps 自定义.",
       "type": "object",
-      "optionValue": "Record<string, unknown>[]",
+      "optionValue": "CascaderOption[]",
       "options": [],
       "defaultValue": "—"
     },
@@ -51,7 +51,12 @@
     {
       "name": "@change",
       "desc": "当选中节点变化时触发",
-      "param": "Function(value: CascaderValue) => void"
+      "param": "Function(value: CascaderValue | undefined) => void"
+    },
+    {
+      "name": "@update:modelValue",
+      "desc": "当绑定值变化时触发的事件",
+      "param": "Function(value: CascaderValue | undefined) => void"
     },
     {
       "name": "@expand-change",

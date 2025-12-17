@@ -10,6 +10,14 @@
       "defaultValue": "[]"
     },
     {
+      "name": "props",
+      "desc": "options 的配置(2.11.3)",
+      "type": "object",
+      "optionValue": "MentionOptionProps",
+      "options": [],
+      "defaultValue": "{value: value, label: label, disabled: disabled}"
+    },
+    {
       "name": "prefix",
       "desc": "触发字段的前缀。 字符串长度必须且只能为 1",
       "type": "string | array",
@@ -103,15 +111,23 @@
     {
       "name": "popper-class",
       "desc": "自定义浮层类名",
-      "type": "string",
+      "type": "string / object",
       "optionValue": "",
       "options": [],
-      "defaultValue": "—"
+      "defaultValue": "string"
+    },
+    {
+      "name": "popper-style",
+      "desc": "自定义浮层类名(2.11.5)",
+      "type": "string / object",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ":::"
     },
     {
       "name": "popper-options",
       "desc": "<p><a href=\"https://popper.js.org/docs/v2/\">popper.js</a> 参数</p>",
-      "type": "<p>[object] refer to <a href=\"https://popper.js.org/docs/v2/\">popper.js doc</a></p>",
+      "type": "<p>object refer to [popper.js doc(https://popper.js.org/docs/v2/)</p>",
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
@@ -160,6 +176,11 @@
       "name": "@select",
       "desc": "当用户选择选项时触发",
       "param": "Function(option: MentionOption, prefix: string) => void"
+    },
+    {
+      "name": "@whole-remove",
+      "desc": "当整个 mention 被移除，且 `whole` 为 `true` 或 `check-is-whole` 为 `true` 时触发。(2.10.4)",
+      "param": "Function(pattern: string, prefix: string) => void"
     },
     {
       "name": "@[input events](./input.md#events)",

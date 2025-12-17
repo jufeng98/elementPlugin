@@ -35,6 +35,22 @@
       "optionValue": "",
       "options": [],
       "defaultValue": "100"
+    },
+    {
+      "name": "teleported",
+      "desc": "whether affix element is teleported, if true it will be teleported to where append-to sets(2.13.0)",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "append-to",
+      "desc": "which element the affix element appends to(2.13.0)",
+      "type": "CSSSelector / HTMLElement",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "body"
     }
   ],
   "props": [],

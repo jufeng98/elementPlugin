@@ -26,7 +26,7 @@
       "defaultValue": "-22"
     },
     {
-      "name": "zIndex",
+      "name": "z-index",
       "desc": "The z-index of the appended watermark element",
       "type": "number",
       "optionValue": "",
@@ -47,7 +47,7 @@
       "type": "string/object",
       "optionValue": "string[]",
       "options": [],
-      "defaultValue": "—"
+      "defaultValue": "Element Plus"
     },
     {
       "name": "font",

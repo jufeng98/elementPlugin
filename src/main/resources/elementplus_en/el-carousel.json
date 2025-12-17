@@ -78,7 +78,7 @@
       "defaultValue": ""
     },
     {
-      "name": "cardScale",
+      "name": "card-scale",
       "desc": "when type is card, scaled size of secondary cards(2.7.8)",
       "type": "number",
       "optionValue": "",

@@ -62,7 +62,7 @@
       "type": "string / number",
       "optionValue": "",
       "options": [],
-      "defaultValue": ""
+      "defaultValue": ":::"
     }
   ],
   "props": [],

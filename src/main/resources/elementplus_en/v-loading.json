@@ -95,8 +95,8 @@
     {
       "name": "text",
       "desc": "loading text that displays under the spinner",
-      "type": "string",
-      "optionValue": "",
+      "type": "string / VNode / array",
+      "optionValue": "VNode[]",
       "options": [],
       "defaultValue": "—"
     },

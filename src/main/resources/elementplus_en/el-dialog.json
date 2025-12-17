@@ -7,7 +7,7 @@
       "type": "boolean",
       "optionValue": "",
       "options": [],
-      "defaultValue": "—"
+      "defaultValue": "false"
     },
     {
       "name": "v-model",
@@ -15,7 +15,7 @@
       "type": "boolean",
       "optionValue": "",
       "options": [],
-      "defaultValue": "—"
+      "defaultValue": "false"
     },
     {
       "name": "title",
@@ -56,6 +56,14 @@
       "optionValue": "",
       "options": [],
       "defaultValue": "true"
+    },
+    {
+      "name": "modal-penetrable",
+      "desc": "whether the mask is penetrable. The modal attribute must be false.(2.10.5)",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
     },
     {
       "name": "modal-class",
@@ -224,6 +232,14 @@
       "optionValue": "",
       "options": [],
       "defaultValue": "2"
+    },
+    {
+      "name": "transition",
+      "desc": "custom transition configuration for dialog animation. Can be a string (transition name) or an object with Vue transition props(2.10.5)",
+      "type": "string / object",
+      "optionValue": "TransitionProps",
+      "options": [],
+      "defaultValue": "dialog-fade"
     },
     {
       "name": "custom-class",

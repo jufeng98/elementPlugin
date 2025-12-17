@@ -118,7 +118,7 @@
     },
     {
       "name": "disabled",
-      "desc": "Whether to disable all components in this form. If set to true, it will override the disabled prop of the inner component.",
+      "desc": "Whether to disable all components in this form. Before ^(2.12.0), if set to true, it will override the disabled prop of the inner component. After ^(2.12.0), the configuration of the internal components takes precedence.",
       "type": "boolean",
       "optionValue": "",
       "options": [],
@@ -136,9 +136,9 @@
       "name": "scroll-into-view-options",
       "desc": "<p>When validation fails, it scrolls to the first error item based on the scrollIntoView option. <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollIntoView\">scrollIntoView</a>.(2.3.2)</p>",
       "type": "object",
-      "optionValue": "Record<string, any>",
+      "optionValue": "ScrollIntoViewOptions",
       "options": [],
-      "defaultValue": "—"
+      "defaultValue": "true"
     }
   ],
   "props": [],
@@ -187,6 +187,11 @@
       "name": "fields",
       "desc": "Get all fields context.(2.7.3)",
       "param": "arrayFormItemContext["
+    },
+    {
+      "name": "getField",
+      "desc": "Get a field context.(2.10.2)",
+      "param": "Function(prop: FormItemProp) => FormItemContext | undefined"
     }
   ]
 }

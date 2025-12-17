@@ -32,22 +32,6 @@
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
-    },
-    {
-      "name": "text-color",
-      "desc": "font color when button is active",
-      "type": "string",
-      "optionValue": "",
-      "options": [],
-      "defaultValue": "#ffffff"
-    },
-    {
-      "name": "fill",
-      "desc": "border and background color when button is active",
-      "type": "string",
-      "optionValue": "",
-      "options": [],
-      "defaultValue": "#409eff"
     }
   ],
   "props": [],

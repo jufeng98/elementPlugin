@@ -1,0 +1,208 @@
+{
+  "name": "el-date-picker-panel",
+  "attributes": [
+    {
+      "name": "model-value",
+      "desc": "binding value, if it is an range picker, the length of the array should be 2",
+      "type": "number / string / Date / array",
+      "optionValue": "number[] | string[] | Date[]",
+      "options": [
+        "number[]",
+        "string[]",
+        "Date[]"
+      ],
+      "defaultValue": ""
+    },
+    {
+      "name": "v-model",
+      "desc": "binding value, if it is an range picker, the length of the array should be 2",
+      "type": "number / string / Date / array",
+      "optionValue": "number[] | string[] | Date[]",
+      "options": [
+        "number[]",
+        "string[]",
+        "Date[]"
+      ],
+      "defaultValue": ""
+    },
+    {
+      "name": "border",
+      "desc": "whether the date picker is bordered",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "disabled",
+      "desc": "whether DatePicker is disabled",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "clearable",
+      "desc": "whether to show clear button",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "type",
+      "desc": "type of the picker",
+      "type": "enum",
+      "optionValue": "year | years |month | months | date | dates | datetime | week | datetimerange | daterange | monthrange | yearrange",
+      "options": [
+        "year",
+        "years",
+        "month",
+        "months",
+        "date",
+        "dates",
+        "datetime",
+        "week",
+        "datetimerange",
+        "daterange",
+        "monthrange",
+        "yearrange"
+      ],
+      "defaultValue": "date"
+    },
+    {
+      "name": "default-value",
+      "desc": "optional, default date of the calendar",
+      "type": "object",
+      "optionValue": "Date | [Date, Date]",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "default-time",
+      "desc": "optional, the time value to use when selecting date range",
+      "type": "object",
+      "optionValue": "Date | [Date, Date]",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "value-format",
+      "desc": "optional, format of binding value. If not specified, the binding value will be a Date object",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "date-format",
+      "desc": "optional, format of the date displayed in input's inner panel",
+      "type": "<p>string see [date formats(https://day.js.org/docs/en/display/format)</p>",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "YYYY-MM-DD"
+    },
+    {
+      "name": "time-format",
+      "desc": "optional, format of the time displayed in input's inner panel",
+      "type": "<p>string see [date formats(https://day.js.org/docs/en/display/format)</p>",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "HH:mm:ss"
+    },
+    {
+      "name": "unlink-panels",
+      "desc": "unlink two date-panels in range-picker",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "disabled-date",
+      "desc": "a function determining if a date is disabled with that date as its parameter. Should return a Boolean",
+      "type": "Function",
+      "optionValue": "(data: Date) => boolean",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "shortcuts",
+      "desc": "an object array to set shortcut options",
+      "type": "object",
+      "optionValue": "Array<{ text: string, value: Date | Function }>",
+      "options": [],
+      "defaultValue": "[]"
+    },
+    {
+      "name": "cell-class-name",
+      "desc": "set custom className",
+      "type": "Function",
+      "optionValue": "(data: Date) => string",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "show-footer",
+      "desc": "whether to show footer where the date picker is one ^[enum]'dates' \\| 'months' \\| 'years' \\| 'datetime' \\| 'datetimerange'",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "show-confirm",
+      "desc": "whether to show the confirm button",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "show-week-number",
+      "desc": "show the week number besides the week",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    }
+  ],
+  "props": [],
+  "options": [],
+  "shortcuts": [],
+  "slots": [
+    {
+      "name": "default",
+      "desc": "custom cell content"
+    },
+    {
+      "name": "prev-month",
+      "desc": "prev month icon"
+    },
+    {
+      "name": "next-month",
+      "desc": "next month icon"
+    },
+    {
+      "name": "prev-year",
+      "desc": "prev year icon"
+    },
+    {
+      "name": "next-year",
+      "desc": "next year icon"
+    }
+  ],
+  "events": [
+    {
+      "name": "@calendar-change",
+      "desc": "triggers when the calendar selected date is changed. Only for `range`",
+      "param": "Function(val: [Date, null | Date) => void"
+    },
+    {
+      "name": "@panel-change",
+      "desc": "triggers when the navigation button click.",
+      "param": "Function(date: Date | [Date, Date, mode: month | year, view?: string) => void"
+    }
+  ],
+  "methods": []
+}

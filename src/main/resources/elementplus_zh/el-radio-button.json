@@ -15,7 +15,7 @@
       "type": "string / number / boolean",
       "optionValue": "",
       "options": [],
-      "defaultValue": "—"
+      "defaultValue": ":::"
     },
     {
       "name": "disabled",
@@ -31,23 +31,7 @@
       "type": "string",
       "optionValue": "",
       "options": [],
-      "defaultValue": "—"
-    },
-    {
-      "name": "text-color",
-      "desc": "按钮形式的 Radio 激活时的文本颜色",
-      "type": "string",
-      "optionValue": "",
-      "options": [],
-      "defaultValue": "#ffffff"
-    },
-    {
-      "name": "fill",
-      "desc": "按钮形式的 Radio 激活时的填充色和边框色",
-      "type": "string",
-      "optionValue": "",
-      "options": [],
-      "defaultValue": "#409eff"
+      "defaultValue": ":::"
     }
   ],
   "props": [],

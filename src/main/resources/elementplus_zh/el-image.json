@@ -142,6 +142,14 @@
       "defaultValue": "1.2"
     },
     {
+      "name": "scale",
+      "desc": "预览图像缩放。(2.11.3)",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "1"
+    },
+    {
       "name": "min-scale",
       "desc": "图像查看器缩放事件的最小缩放比例(2.4.0)",
       "type": "number",
@@ -179,16 +187,8 @@
       "desc": "自定义图像加载失败的内容"
     },
     {
-      "name": "viewer",
-      "desc": "当图像预览时自定义内容"
-    },
-    {
-      "name": "progress ^(2.9.4)",
-      "desc": "图片预览时自定义进度条内容 （优先级高于 `show-progress` 属性）"
-    },
-    {
-      "name": "toolbar ^(2.9.4)",
-      "desc": "当图像预览时，自定义工具栏内容"
+      "name": "[\\[image viewer slots\\](#image-viewer-slots)](#image-viewer-slots)",
+      "desc": "当你允许大的图像预览时，可以使用图像预览的插槽。"
     }
   ],
   "events": [

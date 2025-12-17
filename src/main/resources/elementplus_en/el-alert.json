@@ -13,8 +13,9 @@
       "name": "type",
       "desc": "alert type.",
       "type": "enum",
-      "optionValue": "success | warning | info | error ",
+      "optionValue": "primary(2.9.11) | success | warning | info | error ",
       "options": [
+        "primary",
         "success",
         "warning",
         "info",
@@ -72,6 +73,30 @@
         "dark"
       ],
       "defaultValue": "light"
+    },
+    {
+      "name": "show-after",
+      "desc": "delay of appearance, in millisecond(2.10.0) (deprecated)",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "0"
+    },
+    {
+      "name": "hide-after",
+      "desc": "delay of disappear, in millisecond(2.10.0) (deprecated)",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "200"
+    },
+    {
+      "name": "auto-close",
+      "desc": "timeout in milliseconds to hide alert(2.10.0) (deprecated)",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "0"
     }
   ],
   "props": [],
@@ -96,6 +121,11 @@
       "name": "@close",
       "desc": "trigger when alert is closed.",
       "param": "Function(event: MouseEvent) => void"
+    },
+    {
+      "name": "@open",
+      "desc": "trigger when alert is opened.(2.10.0)(deprecated)",
+      "param": "Function() => void"
     }
   ],
   "methods": []

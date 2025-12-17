@@ -10,6 +10,17 @@
       "defaultValue": "—"
     },
     {
+      "name": "effect",
+      "desc": "Tooltip 主题，内置了 dark / light 两种(2.11.2)",
+      "type": "enum",
+      "optionValue": "dark | light",
+      "options": [
+        "dark",
+        "light"
+      ],
+      "defaultValue": "light"
+    },
+    {
       "name": "confirm-button-text",
       "desc": "确认按钮文字",
       "type": "string",
@@ -110,6 +121,14 @@
       "optionValue": "",
       "options": [],
       "defaultValue": "150"
+    },
+    {
+      "name": "reference-to-other",
+      "desc": "继承自 Tooltip 的所有属性，但不包括：popper-class、popper-style、fallback-placements",
+      "type": "el-tooltip",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
     }
   ],
   "props": [],
@@ -137,5 +156,16 @@
       "param": "Function(e: MouseEvent) => void"
     }
   ],
-  "methods": []
+  "methods": [
+    {
+      "name": "popperRef",
+      "desc": "el-popper 组件实例(2.10.7)",
+      "param": "objectRef<PopperInstance | undefined>"
+    },
+    {
+      "name": "hide",
+      "desc": "hide popconfirm(2.10.7)",
+      "param": "Function() => void"
+    }
+  ]
 }

@@ -76,7 +76,7 @@
       "type": "",
       "optionValue": "boolean",
       "options": [],
-      "defaultValue": "—"
+      "defaultValue": "false"
     },
     {
       "name": "v-model",
@@ -84,7 +84,7 @@
       "type": "",
       "optionValue": "boolean",
       "options": [],
-      "defaultValue": "—"
+      "defaultValue": "false"
     },
     {
       "name": "current",
@@ -92,7 +92,7 @@
       "type": "",
       "optionValue": "number",
       "options": [],
-      "defaultValue": "—"
+      "defaultValue": "0"
     },
     {
       "name": "v-model:current",
@@ -100,7 +100,7 @@
       "type": "",
       "optionValue": "number",
       "options": [],
-      "defaultValue": "—"
+      "defaultValue": "0"
     },
     {
       "name": "scroll-into-view-options",
@@ -161,7 +161,7 @@
     },
     {
       "name": "indicators",
-      "desc": "自定义指示器, scope 参数是 `{ current, total }`"
+      "desc": "自定义指示器"
     }
   ],
   "events": [

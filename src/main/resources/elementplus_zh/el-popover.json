@@ -3,7 +3,7 @@
   "attributes": [
     {
       "name": "trigger",
-      "desc": "触发方式",
+      "desc": "popover 触发方式，在受控模式下无效。",
       "type": "enum",
       "optionValue": "click | focus | hover | contextmenu",
       "options": [
@@ -16,7 +16,7 @@
     },
     {
       "name": "trigger-keys",
-      "desc": "当鼠标点击或者聚焦在触发元素上时， 可以定义一组键盘按键并且通过它们来控制 Popover 的显示(2.9.8)",
+      "desc": "当通过鼠标点击使触发元素获得焦点时，可以定义一组键盘按键代码，通过键盘控制气泡框的显示，在受控模式下无效。(2.9.8)",
       "type": "Array",
       "optionValue": "",
       "options": [],
@@ -152,7 +152,7 @@
     },
     {
       "name": "show-after",
-      "desc": "在触发后多久显示内容，单位毫秒",
+      "desc": "延迟显示时间（以毫秒为单位），在受控模式下无效。",
       "type": "number",
       "optionValue": "",
       "options": [],
@@ -160,7 +160,7 @@
     },
     {
       "name": "hide-after",
-      "desc": "延迟关闭，单位毫秒",
+      "desc": "消失延迟时间（以毫秒为单位），在受控模式下无效。",
       "type": "number",
       "optionValue": "",
       "options": [],
@@ -168,7 +168,7 @@
     },
     {
       "name": "auto-close",
-      "desc": "tooltip 出现后自动隐藏延时，单位毫秒",
+      "desc": "隐藏提示框的超时时间（以毫秒为单位），在受控模式下无效。",
       "type": "number",
       "optionValue": "",
       "options": [],
@@ -192,7 +192,7 @@
     },
     {
       "name": "append-to",
-      "desc": "which element the popover CONTENT appends to(2.9.10)",
+      "desc": "指示 Tooltip 的内容将附加在哪一个网页元素上(2.8.4)",
       "type": "CSSSelector / HTMLElement",
       "optionValue": "",
       "options": [],
@@ -221,6 +221,14 @@
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
+    },
+    {
+      "name": "reference-to-other",
+      "desc": "继承自 Tooltip 的所有属性",
+      "type": "el-tooltip",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
     }
   ],
   "props": [],
@@ -233,7 +241,7 @@
     },
     {
       "name": "reference",
-      "desc": "触发 Popover 显示的 HTML 元素"
+      "desc": "触发弹出框的 HTML 元素，只接受单个根元素。"
     }
   ],
   "events": [

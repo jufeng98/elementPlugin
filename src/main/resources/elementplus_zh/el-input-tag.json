@@ -90,6 +90,22 @@
       "defaultValue": "—"
     },
     {
+      "name": "collapse-tags",
+      "desc": "多选时是否将选中值按文字的形式展示(2.11.0)",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "collapse-tags-tooltip",
+      "desc": "当鼠标悬停于折叠标签的文本时，是否显示所有选中的标签。 要使用此功能，<code>collapse-tags</code>的值必须为true(2.11.0)",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
       "name": "save-on-blur",
       "desc": "当输入失去焦点时是否保存输入值(2.9.7)",
       "type": "boolean",
@@ -104,6 +120,14 @@
       "optionValue": "",
       "options": [],
       "defaultValue": "false"
+    },
+    {
+      "name": "clear-icon",
+      "desc": "自定义清除图标(2.11.0)",
+      "type": "string / object",
+      "optionValue": "Component",
+      "options": [],
+      "defaultValue": "CircleClose"
     },
     {
       "name": "disabled",
@@ -152,6 +176,14 @@
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
+    },
+    {
+      "name": "max-collapse-tags",
+      "desc": "需要显示的 Tag 的最大数量 要使用此功能，<code>collapse-tags</code>的值必须为true(2.11.0)",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "1"
     },
     {
       "name": "maxlength",
@@ -225,12 +257,17 @@
     {
       "name": "@add-tag",
       "desc": "tag 被添加时触发",
-      "param": "Function(value: string) => void"
+      "param": "Function(value: string | string [) => void"
     },
     {
       "name": "@remove-tag",
       "desc": "tag 被移除时触发",
-      "param": "Function(value: string) => void"
+      "param": "Function(value: string, index: number) => void"
+    },
+    {
+      "name": "@drag-tag",
+      "desc": "tag 被拖动时触发(2.11.3)",
+      "param": "Function(oldIndex: number, newIndex: number, value: string) => void"
     },
     {
       "name": "@focus",

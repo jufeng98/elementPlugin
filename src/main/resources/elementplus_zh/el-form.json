@@ -118,7 +118,7 @@
     },
     {
       "name": "disabled",
-      "desc": "是否禁用该表单内的所有组件。 如果设置为 true, 它将覆盖内部组件的 disabled 属性",
+      "desc": "是否禁用该表单内的所有组件。 Before ^(2.12.0), if set to true, it will override the disabled prop of the inner component. After ^(2.12.0), the configuration of the internal components takes precedence.",
       "type": "boolean",
       "optionValue": "",
       "options": [],
@@ -136,9 +136,9 @@
       "name": "scroll-into-view-options",
       "desc": "<p>当校验有失败结果时，滚动到第一个失败的表单项目 可通过 <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollIntoView\">scrollIntoView</a> 配置(2.3.2)</p>",
       "type": "object",
-      "optionValue": "Record<string, any>",
+      "optionValue": "ScrollIntoViewOptions",
       "options": [],
-      "defaultValue": "—"
+      "defaultValue": "true"
     }
   ],
   "props": [],
@@ -187,6 +187,11 @@
       "name": "fields",
       "desc": "获取所有字段的 context(2.7.3)",
       "param": "arrayFormItemContext["
+    },
+    {
+      "name": "getField",
+      "desc": "获取字段的 context(2.10.2)",
+      "param": "Function(prop: FormItemProp) => FormItemContext | undefined"
     }
   ]
 }

@@ -18,6 +18,14 @@
       "defaultValue": "—"
     },
     {
+      "name": "popper-style",
+      "desc": "custom style for the popup menu(2.11.5)",
+      "type": "string / object",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
       "name": "show-timeout",
       "desc": "timeout before showing a sub-menu(inherit show-timeout of the menu by default.)",
       "type": "number",

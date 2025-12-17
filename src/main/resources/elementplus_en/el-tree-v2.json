@@ -4,8 +4,8 @@
     {
       "name": "data",
       "desc": "tree data",
-      "type": "array",
-      "optionValue": "",
+      "type": "object",
+      "optionValue": "Array<{[key: string]: any}>",
       "options": [],
       "defaultValue": "—"
     },
@@ -18,7 +18,7 @@
       "defaultValue": "—"
     },
     {
-      "name": "props",
+      "name": "[props](#props)",
       "desc": "configuration options, see the following table",
       "type": "object",
       "optionValue": "",
@@ -60,8 +60,8 @@
     {
       "name": "default-expanded-keys",
       "desc": "array of keys of initially expanded nodes",
-      "type": "array",
-      "optionValue": "",
+      "type": "object",
+      "optionValue": "Array<string | number>",
       "options": [],
       "defaultValue": "—"
     },
@@ -84,8 +84,8 @@
     {
       "name": "default-checked-keys",
       "desc": "array of keys of initially checked nodes",
-      "type": "array",
-      "optionValue": "",
+      "type": "object",
+      "optionValue": "Array<string | number>",
       "options": [],
       "defaultValue": "—"
     },
@@ -100,8 +100,8 @@
     {
       "name": "filter-method",
       "desc": "this function will be executed on each node when use filter method. if return false, tree node will be hidden.",
-      "type": "Function(value, data, node)",
-      "optionValue": "",
+      "type": "Function",
+      "optionValue": "(query: string, data: TreeNodeData, node: TreeNode) => boolean",
       "options": [],
       "defaultValue": "—"
     },
@@ -115,13 +115,10 @@
     },
     {
       "name": "icon",
-      "desc": "custom tree node icon",
-      "type": "",
-      "optionValue": "string | Component",
-      "options": [
-        "string",
-        "Component"
-      ],
+      "desc": "custom tree node icon component",
+      "type": "string / Component",
+      "optionValue": "",
+      "options": [],
       "defaultValue": "—"
     },
     {
@@ -131,6 +128,22 @@
       "optionValue": "",
       "options": [],
       "defaultValue": "26"
+    },
+    {
+      "name": "scrollbar-always-on",
+      "desc": "always show scrollbar(2.10.4)",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "height",
+      "desc": "height of the tree",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "200"
     }
   ],
   "props": [
@@ -170,7 +183,7 @@
       "name": "class",
       "desc": "custom node class name(2.9.0)",
       "type": "string / Function",
-      "optionValue": "(data, node) => string",
+      "optionValue": "(data: TreeNodeData, node: TreeNode) => string | {[key: string]: boolean}",
       "options": [],
       "defaultValue": "—"
     }
@@ -179,12 +192,12 @@
   "shortcuts": [],
   "slots": [
     {
-      "name": "-",
-      "desc": "Custom content for tree nodes. The scope parameter is `{ node: TreeNode, data: TreeNodeData }`"
+      "name": "default",
+      "desc": "custom content for tree nodes"
     },
     {
       "name": "empty ^(2.9.0)",
-      "desc": "empty you can customize content when data is empty."
+      "desc": "custom content when data is empty"
     }
   ],
   "events": [
@@ -195,7 +208,7 @@
     },
     {
       "name": "@node-drop",
-      "desc": "triggers when drag someting and drop on a node(2.8.3)",
+      "desc": "triggers when drag something and drop on a node(2.8.3)",
       "param": "(data: TreeNodeData, node: TreeNode, e: DragEvent)"
     },
     {
@@ -229,5 +242,91 @@
       "param": "(data: TreeNodeData, node: TreeNode)"
     }
   ],
-  "methods": []
+  "methods": [
+    {
+      "name": "filter",
+      "desc": "filter all tree nodes, filtered nodes will be hidden",
+      "param": "(query: string)"
+    },
+    {
+      "name": "getCheckedNodes",
+      "desc": "If the node can be selected (`show-checkbox` is `true`), it returns the currently selected array of nodes",
+      "param": "(leafOnly: boolean)"
+    },
+    {
+      "name": "getCheckedKeys",
+      "desc": "If the node can be selected (`show-checkbox` is `true`), it returns the currently selected array of node's keys",
+      "param": "(leafOnly: boolean)"
+    },
+    {
+      "name": "setCheckedKeys",
+      "desc": "set certain nodes to be checked",
+      "param": "(keys: TreeKey[)"
+    },
+    {
+      "name": "setChecked",
+      "desc": "set node to be checked or not",
+      "param": "(key: TreeKey, checked: boolean)"
+    },
+    {
+      "name": "setExpandedKeys",
+      "desc": "set certain nodes to be expanded",
+      "param": "(keys: TreeKey[)"
+    },
+    {
+      "name": "getHalfCheckedNodes",
+      "desc": "If the node can be selected (`show-checkbox` is `true`), it returns the currently half selected array of nodes",
+      "param": "—"
+    },
+    {
+      "name": "getHalfCheckedKeys",
+      "desc": "If the node can be selected (`show-checkbox` is `true`), it returns the currently half selected array of node's keys",
+      "param": "—"
+    },
+    {
+      "name": "getCurrentKey",
+      "desc": "return the highlight node's key (undefined if no node is highlighted)",
+      "param": "—"
+    },
+    {
+      "name": "getCurrentNode",
+      "desc": "return the highlight node's data (undefined if no node is highlighted)",
+      "param": "—"
+    },
+    {
+      "name": "setCurrentKey",
+      "desc": "set highlighted node by key",
+      "param": "(key: TreeKey)"
+    },
+    {
+      "name": "getNode",
+      "desc": "get node by key or data",
+      "param": "(data: TreeKey | TreeNodeData)"
+    },
+    {
+      "name": "expandNode",
+      "desc": "expand specified node",
+      "param": "(node: TreeNode)"
+    },
+    {
+      "name": "collapseNode",
+      "desc": "collapse specified node",
+      "param": "(node: TreeNode)"
+    },
+    {
+      "name": "setData",
+      "desc": "When the data is very large, using reactive data will cause the poor performance, so we provide a way to avoid this situation",
+      "param": "(data: TreeData)"
+    },
+    {
+      "name": "scrollTo",
+      "desc": "scroll to a given position(2.8.0)",
+      "param": "(offset: number)"
+    },
+    {
+      "name": "scrollToNode",
+      "desc": "scroll to a given tree key with specified scroll strategy(2.8.0)",
+      "param": "(key: TreeKey, strategy?: auto | smart | center | start | end)"
+    }
+  ]
 }

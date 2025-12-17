@@ -145,7 +145,7 @@
       "name": "before-change",
       "desc": "before-change hook before the switch state changes. If false is returned or a Promise is returned and then is rejected, will stop switching",
       "type": "Function",
-      "optionValue": "() => Promise<boolean> | boolen",
+      "optionValue": "() => Promise<boolean> | boolean",
       "options": [],
       "defaultValue": "—"
     },
@@ -217,6 +217,14 @@
     {
       "name": "inactive-action ^(2.4.4)",
       "desc": "customize inactive action"
+    },
+    {
+      "name": "active ^(2.13.0)",
+      "desc": "customize active content"
+    },
+    {
+      "name": "inactive ^(2.13.0)",
+      "desc": "customize inactive content"
     }
   ],
   "events": [

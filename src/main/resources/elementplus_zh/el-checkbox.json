@@ -134,6 +134,14 @@
       "defaultValue": "—"
     },
     {
+      "name": "aria-label",
+      "desc": "原生 aria-label属性(a11y)",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
       "name": "true-label",
       "desc": "选中时的值(deprecated)",
       "type": "string / number",

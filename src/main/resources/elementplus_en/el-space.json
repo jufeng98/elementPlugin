@@ -34,7 +34,7 @@
       "defaultValue": "horizontal"
     },
     {
-      "name": "prefixCls",
+      "name": "prefix-cls",
       "desc": "Prefix for space-items",
       "type": "string",
       "optionValue": "",

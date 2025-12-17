@@ -3,19 +3,27 @@
   "attributes": [
     {
       "name": "model-value",
-      "desc": "binding value, if it is an array, the length should be 2",
-      "type": "number / string / object",
-      "optionValue": "Date | [Date, Date] | [string, string]",
-      "options": [],
-      "defaultValue": "—"
+      "desc": "binding value, if it is an range picker, the length of the array should be 2",
+      "type": "number / string / Date / array",
+      "optionValue": "number[] | string[] | Date[]",
+      "options": [
+        "number[]",
+        "string[]",
+        "Date[]"
+      ],
+      "defaultValue": ""
     },
     {
       "name": "v-model",
-      "desc": "binding value, if it is an array, the length should be 2",
-      "type": "number / string / object",
-      "optionValue": "Date | [Date, Date] | [string, string]",
-      "options": [],
-      "defaultValue": "—"
+      "desc": "binding value, if it is an range picker, the length of the array should be 2",
+      "type": "number / string / Date / array",
+      "optionValue": "number[] | string[] | Date[]",
+      "options": [
+        "number[]",
+        "string[]",
+        "Date[]"
+      ],
+      "defaultValue": ""
     },
     {
       "name": "readonly",
@@ -126,6 +134,38 @@
       "defaultValue": "—"
     },
     {
+      "name": "popper-style",
+      "desc": "custom style for DateTimePicker's dropdown",
+      "type": "string / object",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "popper-options",
+      "desc": "<p>Customized popper option see more at <a href=\"https://popper.js.org/docs/v2/\">popper.js</a></p>",
+      "type": "object",
+      "optionValue": "Partial<PopperOptions>",
+      "options": [],
+      "defaultValue": "{}"
+    },
+    {
+      "name": "fallback-placements",
+      "desc": "<p>list of possible positions for Tooltip <a href=\"https://popper.js.org/docs/v2/modifiers/flip/#fallbackplacements\">popper.js</a>(2.8.4)</p>",
+      "type": "array",
+      "optionValue": "Placement[]",
+      "options": [],
+      "defaultValue": "[bottom, top, right, left]"
+    },
+    {
+      "name": "placement",
+      "desc": "position of dropdown(2.8.4)",
+      "type": "",
+      "optionValue": "Placement",
+      "options": [],
+      "defaultValue": "bottom"
+    },
+    {
       "name": "range-separator",
       "desc": "range separator",
       "type": "string",
@@ -159,19 +199,19 @@
     },
     {
       "name": "date-format",
-      "desc": "optional, format of the date displayed value in TimePicker's dropdown(2.4.0)",
+      "desc": "optional, format of the date displayed in input's inner panel(2.4.0)",
       "type": "<p>string see [date formats(https://day.js.org/docs/en/display/format)</p>",
       "optionValue": "",
       "options": [],
-      "defaultValue": "—"
+      "defaultValue": "YYYY-MM-DD"
     },
     {
       "name": "time-format",
-      "desc": "optional, format of the time displayed value in TimePicker's dropdown(2.4.0)",
+      "desc": "optional, format of the time displayed in input's inner panel(2.4.0)",
       "type": "<p>string see [date formats(https://day.js.org/docs/en/display/format)</p>",
       "optionValue": "",
       "options": [],
-      "defaultValue": "—"
+      "defaultValue": "HH:mm:ss"
     },
     {
       "name": "id",
@@ -230,6 +270,30 @@
       "defaultValue": "—"
     },
     {
+      "name": "disabled-hours",
+      "desc": "To specify the array of hours that cannot be selected",
+      "type": "Function",
+      "optionValue": "(role: string, comparingDate?: Dayjs) => number[]",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "disabled-minutes",
+      "desc": "To specify the array of minutes that cannot be selected",
+      "type": "Function",
+      "optionValue": "(hour: number, role: string, comparingDate?: Dayjs) => number[]",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "disabled-seconds",
+      "desc": "To specify the array of seconds that cannot be selected",
+      "type": "Function",
+      "optionValue": "(hour: number, minute: number, role: string, comparingDate?: Dayjs) => number[]",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
       "name": "cell-class-name",
       "desc": "set custom className",
       "type": "Function",
@@ -268,6 +332,30 @@
       "optionValue": "",
       "options": [],
       "defaultValue": "true"
+    },
+    {
+      "name": "show-footer",
+      "desc": "whether to show footer where the date picker is one ^[enum]'datetime' \\| 'datetimerange'(2.10.5)",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "show-confirm",
+      "desc": "whether to show the confirm button(2.11.0)",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "show-week-number",
+      "desc": "show the week number besides the week(2.10.3)",
+      "type": "",
+      "optionValue": "boolean",
+      "options": [],
+      "defaultValue": "false"
     }
   ],
   "props": [],
@@ -302,18 +390,18 @@
   "events": [
     {
       "name": "@change",
-      "desc": "triggers when user confirms the value",
-      "param": "components binding value"
+      "desc": "triggers when user confirms the value or click outside",
+      "param": "Function(val: typeof v-model) => void"
     },
     {
       "name": "@blur",
       "desc": "triggers when Input blurs",
-      "param": "(e: FocusEvent)"
+      "param": "Function(e: FocusEvent) => void"
     },
     {
       "name": "@focus",
       "desc": "triggers when Input focuses",
-      "param": "(e: FocusEvent)"
+      "param": "Function(e: FocusEvent) => void"
     },
     {
       "name": "@clear",
@@ -322,13 +410,18 @@
     },
     {
       "name": "@calendar-change",
-      "desc": "triggers when the calendar selected date is changed. Only for `datetimerange`",
-      "param": "[Date, Date"
+      "desc": "triggers when the calendar selected date is changed. Only for `range`",
+      "param": "Function(val: [Date, null | Date) => void"
+    },
+    {
+      "name": "@panel-change",
+      "desc": "triggers when the navigation button click.",
+      "param": "Function(date: Date | [Date, Date, mode: month | year, view?: string) => void"
     },
     {
       "name": "@visible-change",
       "desc": "triggers when the DateTimePicker's dropdown appears/disappears",
-      "param": "true when it appears, and false otherwise"
+      "param": "Function(visibility: boolean) => void"
     }
   ],
   "methods": [

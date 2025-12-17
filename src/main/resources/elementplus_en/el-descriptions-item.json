@@ -47,7 +47,7 @@
       "type": "string / number",
       "optionValue": "",
       "options": [],
-      "defaultValue": ""
+      "defaultValue": "—"
     },
     {
       "name": "align",
@@ -71,7 +71,7 @@
         "center",
         "right"
       ],
-      "defaultValue": ""
+      "defaultValue": "—"
     },
     {
       "name": "class-name",

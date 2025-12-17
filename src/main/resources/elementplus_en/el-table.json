@@ -105,7 +105,7 @@
       "name": "cell-class-name",
       "desc": "function that returns custom class names for a cell, or a string assigning class names for every cell",
       "type": "Function",
-      "optionValue": "(data: { row: any, column: any, rowIndex: number, columnIndex: number }) => string",
+      "optionValue": "(data: { row: any, column: TableColumnCtx<T>, rowIndex: number, columnIndex: number }) => string",
       "options": [],
       "defaultValue": "—"
     },
@@ -113,7 +113,7 @@
       "name": "cell-style",
       "desc": "function that returns custom style for a cell, or an object assigning custom style for every cell",
       "type": "Function",
-      "optionValue": "(data: { row: any, column: any, rowIndex: number, columnIndex: number }) => CSSProperties",
+      "optionValue": "(data: { row: any, column: TableColumnCtx<T>, rowIndex: number, columnIndex: number }) => CSSProperties",
       "options": [],
       "defaultValue": "—"
     },
@@ -137,7 +137,7 @@
       "name": "header-cell-class-name",
       "desc": "function that returns custom class names for a cell in table header, or a string assigning class names for every cell in table header",
       "type": "Function",
-      "optionValue": "(data: { row: any, column: any, rowIndex: number, columnIndex: number }) => string",
+      "optionValue": "(data: { row: any, column: TableColumnCtx<T>, rowIndex: number, columnIndex: number }) => string",
       "options": [],
       "defaultValue": "—"
     },
@@ -145,7 +145,7 @@
       "name": "header-cell-style",
       "desc": "function that returns custom style for a cell in table header, or an object assigning custom style for every cell in table header",
       "type": "Function",
-      "optionValue": "(data: { row: any, column: any, rowIndex: number, columnIndex: number }) => CSSProperties",
+      "optionValue": "(data: { row: any, column: TableColumnCtx<T>, rowIndex: number, columnIndex: number }) => CSSProperties",
       "options": [],
       "defaultValue": "—"
     },
@@ -175,9 +175,9 @@
     },
     {
       "name": "expand-row-keys",
-      "desc": "set expanded rows by this prop, prop's value is the keys of expand rows, you should set row-key before using this prop",
-      "type": "array",
-      "optionValue": "string[]",
+      "desc": "set expanded rows by this prop, prop's value is the keys of expand rows, you should set row-key before using this prop.",
+      "type": "object",
+      "optionValue": "Array<string>",
       "options": [],
       "defaultValue": "—"
     },
@@ -244,7 +244,7 @@
       "name": "span-method",
       "desc": "method that returns rowspan and colspan",
       "type": "Function",
-      "optionValue": "(data: { row: any, column: any, rowIndex: number, columnIndex: number }) => number[] | { rowspan: number, colspan: number } | void",
+      "optionValue": "(data: { row: any, column: TableColumnCtx<T>, rowIndex: number, columnIndex: number }) => number[] | { rowspan: number, colspan: number } | void",
       "options": [],
       "defaultValue": "—"
     },
@@ -343,13 +343,21 @@
       "name": "tooltip-formatter",
       "desc": "customize tooltip content when using show-overflow-tooltip(2.9.4)",
       "type": "Function",
-      "optionValue": "(data: { row: any, column: any, cellValue: any }) => VNode | string",
+      "optionValue": "(data: { row: any, column: TableColumnCtx<T>, cellValue: any }) => VNode | string",
       "options": [],
       "defaultValue": "—"
     },
     {
       "name": "preserve-expanded-content",
       "desc": "whether to preserve expanded row content in DOM when collapsed(2.9.7)",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "native-scrollbar",
+      "desc": "whether to use native scrollbars(2.10.5)",
       "type": "boolean",
       "optionValue": "",
       "options": [],
@@ -392,61 +400,61 @@
     {
       "name": "@cell-mouse-enter",
       "desc": "triggers when hovering into a cell",
-      "param": "Function(row: any, column: any, cell: HTMLTableCellElement, event: Event) => void"
+      "param": "Function(row: any, column: TableColumnCtx<T>, cell: HTMLTableCellElement, event: Event) => void"
     },
     {
       "name": "@cell-mouse-leave",
       "desc": "triggers when hovering out of a cell",
-      "param": "Function(row: any, column: any, cell: HTMLTableCellElement, event: Event) => void"
+      "param": "Function(row: any, column: TableColumnCtx<T>, cell: HTMLTableCellElement, event: Event) => void"
     },
     {
       "name": "@cell-click",
       "desc": "triggers when clicking a cell",
-      "param": "Function(row: any, column: any, cell: HTMLTableCellElement, event: Event) => void"
+      "param": "Function(row: any, column: TableColumnCtx<T>, cell: HTMLTableCellElement, event: Event) => void"
     },
     {
       "name": "@cell-dblclick",
       "desc": "triggers when double clicking a cell",
-      "param": "Function(row: any, column: any, cell: HTMLTableCellElement, event: Event) => void"
+      "param": "Function(row: any, column: TableColumnCtx<T>, cell: HTMLTableCellElement, event: Event) => void"
     },
     {
       "name": "@cell-contextmenu",
       "desc": "triggers when user right clicks on a cell",
-      "param": "Function(row: any, column: any, cell: HTMLTableCellElement, event: Event) => void"
+      "param": "Function(row: any, column: TableColumnCtx<T>, cell: HTMLTableCellElement, event: Event) => void"
     },
     {
       "name": "@row-click",
       "desc": "triggers when clicking a row",
-      "param": "Function(row: any, column: any, event: Event) => void"
+      "param": "Function(row: any, column: TableColumnCtx<T>, event: Event) => void"
     },
     {
       "name": "@row-contextmenu",
       "desc": "triggers when user right clicks on a row",
-      "param": "Function(row: any, column: any, event: Event) => void"
+      "param": "Function(row: any, column: TableColumnCtx<T>, event: Event) => void"
     },
     {
       "name": "@row-dblclick",
       "desc": "triggers when double clicking a row",
-      "param": "Function(row: any, column: any, event: Event) => void"
+      "param": "Function(row: any, column: TableColumnCtx<T>, event: Event) => void"
     },
     {
       "name": "@header-click",
       "desc": "triggers when clicking a column header",
-      "param": "Function(column: any, event: Event) => void"
+      "param": "Function(column: TableColumnCtx<T>, event: Event) => void"
     },
     {
       "name": "@header-contextmenu",
       "desc": "triggers when user right clicks on a column header",
-      "param": "Function(column: any, event: Event) => void"
+      "param": "Function(column: TableColumnCtx<T>, event: Event) => void"
     },
     {
       "name": "@sort-change",
       "desc": "triggers when Table's sorting changes",
-      "param": "Function(data: {column: any, prop: string, order: any }) => void"
+      "param": "Function(data: {column: TableColumnCtx<T>, prop: string, order: any }) => void"
     },
     {
       "name": "@filter-change",
-      "desc": "column's key. If you need to use the filter-change event, this attribute is mandatory to identify which column is being filtered",
+      "desc": "triggers when the table's filter changes",
       "param": "Function(newFilters: any) => void"
     },
     {
@@ -457,7 +465,7 @@
     {
       "name": "@header-dragend",
       "desc": "triggers after changing a column's width by dragging the column header's border",
-      "param": "Function(newWidth: number, oldWidth: number, column: any, event: MouseEvent) => void"
+      "param": "Function(newWidth: number, oldWidth: number, column: TableColumnCtx<T>, event: MouseEvent) => void"
     },
     {
       "name": "@expand-change",

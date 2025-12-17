@@ -15,7 +15,7 @@
       "type": "",
       "optionValue": "boolean",
       "options": [],
-      "defaultValue": "true"
+      "defaultValue": "—"
     },
     {
       "name": "title",
@@ -68,7 +68,7 @@
       "type": "",
       "optionValue": "boolean",
       "options": [],
-      "defaultValue": "true"
+      "defaultValue": "—"
     },
     {
       "name": "type",
@@ -114,7 +114,7 @@
       "type": "",
       "optionValue": "boolean",
       "options": [],
-      "defaultValue": "true"
+      "defaultValue": "—"
     },
     {
       "name": "close-icon",
@@ -131,11 +131,11 @@
   "slots": [
     {
       "name": "default",
-      "desc": "description"
+      "desc": "custom description"
     },
     {
       "name": "header",
-      "desc": "header"
+      "desc": "custom header content"
     }
   ],
   "events": [

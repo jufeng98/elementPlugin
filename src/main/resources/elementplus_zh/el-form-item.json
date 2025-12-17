@@ -35,7 +35,7 @@
       "type": "string / number",
       "optionValue": "",
       "options": [],
-      "defaultValue": ""
+      "defaultValue": "—"
     },
     {
       "name": "required",
@@ -72,10 +72,10 @@
     {
       "name": "inline-message",
       "desc": "是否在行内显示校验信息",
-      "type": "string / boolean",
+      "type": "boolean",
       "optionValue": "",
       "options": [],
-      "defaultValue": ""
+      "defaultValue": "false"
     },
     {
       "name": "size",

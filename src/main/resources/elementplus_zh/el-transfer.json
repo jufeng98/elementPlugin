@@ -94,7 +94,7 @@
       "defaultValue": "{}"
     },
     {
-      "name": "props",
+      "name": "[props](#type-declarations)",
       "desc": "数据源的字段别名",
       "type": "object",
       "optionValue": "TransferPropsAlias",
@@ -132,7 +132,7 @@
   "slots": [
     {
       "name": "default",
-      "desc": "自定义数据项的内容， 参数为 `{ option }`"
+      "desc": "自定义数据项的内容，"
     },
     {
       "name": "left-footer",

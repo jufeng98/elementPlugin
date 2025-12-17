@@ -18,6 +18,14 @@
       "defaultValue": "—"
     },
     {
+      "name": "default-value",
+      "desc": "在初始渲染时处于激活状态的标签的值。 （避免初始化时变动）(2.11.9)",
+      "type": "string / number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
       "name": "type",
       "desc": "风格类型",
       "type": "enum",
@@ -80,6 +88,14 @@
       "optionValue": "(activeName: TabPaneName, oldActiveName: TabPaneName) => Awaitable<void | boolean>",
       "options": [],
       "defaultValue": "() => true"
+    },
+    {
+      "name": "tabindex",
+      "desc": "tabs 的 tabindex(2.11.7)",
+      "type": "string / number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "0"
     }
   ],
   "props": [],
@@ -129,12 +145,12 @@
   "methods": [
     {
       "name": "currentName",
-      "desc": "current active pane name",
+      "desc": "当前活动的面板名称",
       "param": "objectRef<TabPaneName>"
     },
     {
       "name": "tabNavRef",
-      "desc": "tab-nav component instance(2.9.10)",
+      "desc": "tab-nav 组件实例(2.9.10)",
       "param": "objectRef<TabNavInstance | undefined>"
     }
   ]

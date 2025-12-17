@@ -90,6 +90,22 @@
       "defaultValue": "—"
     },
     {
+      "name": "collapse-tags",
+      "desc": "whether to collapse tags to a text when multiple selecting(2.11.0)",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "collapse-tags-tooltip",
+      "desc": "whether show all selected tags when mouse hover text of collapse-tags. To use this, collapse-tags must be true(2.11.0)",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
       "name": "save-on-blur",
       "desc": "whether to save the input value when the input loses focus(2.9.7)",
       "type": "boolean",
@@ -104,6 +120,14 @@
       "optionValue": "",
       "options": [],
       "defaultValue": "false"
+    },
+    {
+      "name": "clear-icon",
+      "desc": "custom clear icon component(2.11.0)",
+      "type": "string / object",
+      "optionValue": "Component",
+      "options": [],
+      "defaultValue": "CircleClose"
     },
     {
       "name": "disabled",
@@ -152,6 +176,14 @@
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
+    },
+    {
+      "name": "max-collapse-tags",
+      "desc": "the max tags number to be shown. To use this, collapse-tags must be true(2.11.0)",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "1"
     },
     {
       "name": "maxlength",
@@ -225,12 +257,17 @@
     {
       "name": "@add-tag",
       "desc": "triggers when a tag is added",
-      "param": "Function(value: string) => void"
+      "param": "Function(value: string | string [) => void"
     },
     {
       "name": "@remove-tag",
       "desc": "triggers when a tag is removed",
-      "param": "Function(value: string) => void"
+      "param": "Function(value: string, index: number) => void"
+    },
+    {
+      "name": "@drag-tag",
+      "desc": "triggers when a tag is dragged(2.11.3)",
+      "param": "Function(oldIndex: number, newIndex: number, value: string) => void"
     },
     {
       "name": "@focus",

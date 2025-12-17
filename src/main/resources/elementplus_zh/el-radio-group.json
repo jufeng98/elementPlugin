@@ -42,6 +42,22 @@
       "defaultValue": "true"
     },
     {
+      "name": "text-color",
+      "desc": "按钮形式的 Radio 激活时的文本颜色",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "#ffffff"
+    },
+    {
+      "name": "fill",
+      "desc": "按钮形式的 Radio 激活时的填充色和边框色",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "#409eff"
+    },
+    {
       "name": "aria-label",
       "desc": "与 RadioGroup 中的 aria-label 属性相同(a11y) (2.7.2)",
       "type": "string",
@@ -72,6 +88,33 @@
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
+    },
+    {
+      "name": "options",
+      "desc": "选项的数据源， value 的 key 和 label 和  disabled可以通过 props自定义.(2.11.2)",
+      "type": "array",
+      "optionValue": "Array<{[key: string]: any}>",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "props",
+      "desc": "options 的配置(2.11.2)",
+      "type": "object",
+      "optionValue": "{ value?: string, label?: string, disabled?: boolean}",
+      "options": [],
+      "defaultValue": "{value: value, label: label, disabled: disabled}"
+    },
+    {
+      "name": "type",
+      "desc": "用于渲染选项的组件类型（例如 'button'）(2.11.5)",
+      "type": "enum",
+      "optionValue": "radio | button",
+      "options": [
+        "radio",
+        "button"
+      ],
+      "defaultValue": "radio"
     }
   ],
   "props": [],

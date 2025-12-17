@@ -110,6 +110,38 @@
       "defaultValue": ""
     },
     {
+      "name": "popper-style",
+      "desc": "custom style for TimePicker's dropdown",
+      "type": "string / object",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "popper-options",
+      "desc": "<p>Customized popper option see more at <a href=\"https://popper.js.org/docs/v2/\">popper.js</a></p>",
+      "type": "object",
+      "optionValue": "Partial<PopperOptions>",
+      "options": [],
+      "defaultValue": "{}"
+    },
+    {
+      "name": "fallback-placements",
+      "desc": "<p>list of possible positions for Tooltip <a href=\"https://popper.js.org/docs/v2/modifiers/flip/#fallbackplacements\">popper.js</a>(2.8.4)</p>",
+      "type": "array",
+      "optionValue": "Placement[]",
+      "options": [],
+      "defaultValue": "[bottom, top, right, left]"
+    },
+    {
+      "name": "placement",
+      "desc": "position of dropdown(2.8.4)",
+      "type": "",
+      "optionValue": "Placement",
+      "options": [],
+      "defaultValue": "bottom"
+    },
+    {
       "name": "range-separator",
       "desc": "range separator",
       "type": "string",

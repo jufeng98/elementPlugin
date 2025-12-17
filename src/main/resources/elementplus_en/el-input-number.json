@@ -4,7 +4,7 @@
     {
       "name": "model-value",
       "desc": "binding value",
-      "type": "number",
+      "type": "number / null",
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
@@ -12,7 +12,7 @@
     {
       "name": "v-model",
       "desc": "binding value",
-      "type": "number",
+      "type": "number / null",
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
@@ -23,7 +23,7 @@
       "type": "number",
       "optionValue": "",
       "options": [],
-      "defaultValue": "-Infinity"
+      "defaultValue": "Number.MIN_SAFE_INTEGER"
     },
     {
       "name": "max",
@@ -31,7 +31,7 @@
       "type": "number",
       "optionValue": "",
       "options": [],
-      "defaultValue": "Infinity"
+      "defaultValue": "Number.MAX_SAFE_INTEGER"
     },
     {
       "name": "step",
@@ -161,6 +161,34 @@
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
+    },
+    {
+      "name": "inputmode",
+      "desc": "same as inputmode in native input(2.10.3)",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "align",
+      "desc": "alignment for the inner input text(2.10.5)",
+      "type": "enum",
+      "optionValue": "left | center | right",
+      "options": [
+        "left",
+        "center",
+        "right"
+      ],
+      "defaultValue": "center"
+    },
+    {
+      "name": "disabled-scientific",
+      "desc": "disables input of scientific notation (e.g. 'e')(2.10.5)",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
     }
   ],
   "props": [],

@@ -167,6 +167,22 @@
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
+    },
+    {
+      "name": "popper-class",
+      "desc": "custom class name for TimeSelect's dropdown(2.11.4)",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "popper-style",
+      "desc": "custom style for TimeSelect's dropdown(2.11.4)",
+      "type": "string / object",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
     }
   ],
   "props": [],

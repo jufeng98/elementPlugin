@@ -40,6 +40,29 @@
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
+    },
+    {
+      "name": "plain",
+      "desc": "whether message is plain(2.9.11)",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "placement",
+      "desc": "message placement position(2.11.0)",
+      "type": "enum",
+      "optionValue": "top | top-left | top-right | bottom | bottom-left | bottom-right",
+      "options": [
+        "top",
+        "top-left",
+        "top-right",
+        "bottom",
+        "bottom-left",
+        "bottom-right"
+      ],
+      "defaultValue": "—"
     }
   ],
   "props": [],

@@ -3,7 +3,7 @@
   "attributes": [
     {
       "name": "trigger",
-      "desc": "how the popover is triggered",
+      "desc": "how the popover is triggered, not valid in controlled mode",
       "type": "enum",
       "optionValue": "click | focus | hover | contextmenu",
       "options": [
@@ -16,7 +16,7 @@
     },
     {
       "name": "trigger-keys",
-      "desc": "When you click the mouse to focus on the trigger element, you can define a set of keyboard codes to control the display of popover through the keyboard(2.9.8)",
+      "desc": "When you click the mouse to focus on the trigger element, you can define a set of keyboard codes to control the display of popover through the keyboard, not valid in controlled mode(2.9.8)",
       "type": "Array",
       "optionValue": "",
       "options": [],
@@ -152,7 +152,7 @@
     },
     {
       "name": "show-after",
-      "desc": "delay of appearance, in millisecond",
+      "desc": "delay of appearance, in millisecond, not valid in controlled mode",
       "type": "number",
       "optionValue": "",
       "options": [],
@@ -160,7 +160,7 @@
     },
     {
       "name": "hide-after",
-      "desc": "delay of disappear, in millisecond",
+      "desc": "delay of disappear, in millisecond, not valid in controlled mode",
       "type": "number",
       "optionValue": "",
       "options": [],
@@ -168,7 +168,7 @@
     },
     {
       "name": "auto-close",
-      "desc": "timeout in milliseconds to hide tooltip",
+      "desc": "timeout in milliseconds to hide tooltip, not valid in controlled mode",
       "type": "number",
       "optionValue": "",
       "options": [],
@@ -221,6 +221,14 @@
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
+    },
+    {
+      "name": "reference-to-other",
+      "desc": "Inherits all attributes from Tooltip",
+      "type": "el-tooltip",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
     }
   ],
   "props": [],
@@ -233,7 +241,7 @@
     },
     {
       "name": "reference",
-      "desc": "HTML element that triggers popover"
+      "desc": "HTML element that triggers popover, only a single root element is accepted"
     }
   ],
   "events": [

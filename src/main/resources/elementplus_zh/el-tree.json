@@ -26,9 +26,9 @@
       "defaultValue": "—"
     },
     {
-      "name": "props",
+      "name": "[props](#props)",
       "desc": "配置选项，具体看下表",
-      "type": "[Props](#props)",
+      "type": "object",
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
@@ -91,7 +91,7 @@
     },
     {
       "name": "check-on-click-leaf",
-      "desc": "点击叶节点(最后一个子节点)时是否检查或取消节点(2.9.6)",
+      "desc": "点击叶节点(最后一个子节点)时是否选中或取消选中节点。(2.9.6)",
       "type": "boolean",
       "optionValue": "",
       "options": [],
@@ -256,8 +256,8 @@
   "shortcuts": [],
   "slots": [
     {
-      "name": "—",
-      "desc": "自定义树节点的内容， 自定义树节点的内容， 参数为 ` { node, data }`"
+      "name": "default",
+      "desc": "自定义树节点的内容。"
     },
     {
       "name": "empty ^(2.3.4)",
@@ -331,5 +331,96 @@
       "param": "共四个参数，依次为：被拖拽节点对应的 Node、结束拖拽时最后进入的节点、被拖拽节点的放置位置（before、after、inner）、event"
     }
   ],
-  "methods": []
+  "methods": [
+    {
+      "name": "filter",
+      "desc": "过滤所有树节点，过滤后的节点将被隐藏",
+      "param": "接收一个参数并指定为 filter-node-method 属性的第一个参数"
+    },
+    {
+      "name": "updateKeyChildren",
+      "desc": "为节点设置新数据，只有当设置 `node-key` 属性的时候才可用",
+      "param": "(key, data) 接收两个参数: 1. 节点的 key 2. 新数据"
+    },
+    {
+      "name": "getCheckedNodes",
+      "desc": "如果节点可以被选中，(`show-checkbox` 为 `true`), 本方法将返回当前选中节点的数组",
+      "param": "(leafOnly, includeHalfChecked) 接收两个布尔类型参数: 1. 默认值为 false. 若参数为 true, 它将返回当前选中节点的子节点 2. 默认值为 false. 如果参数为 true, 返回值包含半选中节点数据"
+    },
+    {
+      "name": "setCheckedNodes",
+      "desc": "设置目前选中的节点，使用此方法必须设置 `node-key` 属性",
+      "param": "(nodes, leafOnly) 接收两个参数: 1. 要选中的节点对象构成的数组 2. 布尔类型的值 如果设置为 true，将只设置选中的叶子节点状态。 默认值是 false."
+    },
+    {
+      "name": "getCheckedKeys",
+      "desc": "若节点可用被选中 (`show-checkbox` 为 `true`), 它将返回当前选中节点 key 的数组",
+      "param": "(leafOnly) 接收一个布尔类型参数，默认为 false. 若参数为 true, 它将返回当前选中节点的子节点"
+    },
+    {
+      "name": "setCheckedKeys",
+      "desc": "设置目前选中的节点，使用此方法必须设置 `node-key` 属性",
+      "param": "(keys, leafOnly) 接收两个参数: 1. 一个需要被选中的多节点 key 的数组 2. 布尔类型的值 如果设置为 true，将只设置选中的叶子节点状态。 默认值是 false."
+    },
+    {
+      "name": "setChecked",
+      "desc": "设置节点是否被选中, 使用此方法必须设置 `node-key` 属性",
+      "param": "(key/data, checked, deep) 接收三个参数: 1. 要选中的节点的 key 或者数据 2. 一个布尔类型参数表明是否选中. 3. 一个布尔类型的参数，用于指示是否为深层（deep）操作（注意：check-strictly 必须为 false）。"
+    },
+    {
+      "name": "getHalfCheckedNodes",
+      "desc": "如果节点可用被选中 (`show-checkbox` 为 `true`), 它将返回当前半选中的节点组成的数组",
+      "param": ":::"
+    },
+    {
+      "name": "getHalfCheckedKeys",
+      "desc": "若节点可被选中(`show-checkbox` 为 `true`)，则返回目前半选中的节点的 key 所组成的数组",
+      "param": ":::"
+    },
+    {
+      "name": "getCurrentKey",
+      "desc": "返回当前被选中节点的数据 (如果没有则返回 null)",
+      "param": ":::"
+    },
+    {
+      "name": "getCurrentNode",
+      "desc": "返回当前被选中节点的数据 (如果没有则返回 null)",
+      "param": ":::"
+    },
+    {
+      "name": "setCurrentKey",
+      "desc": "通过 key 设置某个节点的当前选中状态，使用此方法必须设置 `node-key ` 属性",
+      "param": "(key, shouldAutoExpandParent=true) 1. 待被选节点的 key， 如果为 null, 取消当前选中的节点 2. 是否展开父节点"
+    },
+    {
+      "name": "setCurrentNode",
+      "desc": "设置节点为选中状态，使用此方法必须设置 `node-key `属性",
+      "param": "(node, shouldAutoExpandParent=true) 1. 待被选中的节点 2. 是否展开父节点"
+    },
+    {
+      "name": "getNode",
+      "desc": "根据 data 或者 key 拿到 Tree 组件中的 node",
+      "param": "(data) 节点的 data 或 key"
+    },
+    {
+      "name": "remove",
+      "desc": "删除 Tree 中的一个节点，使用此方法必须设置 node-key 属性",
+      "param": "(data) 要删除的节点的 data 或者 node 对象"
+    },
+    {
+      "name": "append",
+      "desc": "为 Tree 中的一个节点追加一个子节点",
+      "param": "(data, parentNode) 1. 要追加的子节点的 data 2. 父节点的 data, key 或 node"
+    },
+    {
+      "name": "insertBefore",
+      "desc": "在 Tree 中给定节点前插入一个节点",
+      "param": "(data, refNode) 1. 要增加的节点的 data 2. 参考节点的 data, key 或 node"
+    },
+    {
+      "name": "insertAfter",
+      "desc": "在 Tree 中给定节点后插入一个节点",
+      "param": "(data, refNode) 1. 要增加的节点的 data 2. 参考节点的 data, key 或 node"
+    }
+  ]
 }

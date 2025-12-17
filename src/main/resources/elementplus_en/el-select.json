@@ -26,6 +26,22 @@
       "defaultValue": "false"
     },
     {
+      "name": "options",
+      "desc": "data of the options, the key of value and label and disabled can be customize by props(2.10.5)",
+      "type": "array",
+      "optionValue": "Array<{[key: string]: any}>",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "[props](#props)",
+      "desc": "configuration options(2.10.5)",
+      "type": "object",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
       "name": "disabled",
       "desc": "whether Select is disabled",
       "type": "boolean",
@@ -86,6 +102,14 @@
       "defaultValue": "0"
     },
     {
+      "name": "id",
+      "desc": "native input id input",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
       "name": "name",
       "desc": "the name attribute of select input",
       "type": "string",
@@ -138,9 +162,9 @@
     },
     {
       "name": "filter-method",
-      "desc": "custom filter method",
+      "desc": "custom filter method, the first parameter is the current input value. To use this, filterable must be true",
       "type": "Function",
-      "optionValue": "() => void",
+      "optionValue": "(query: string) => void",
       "options": [],
       "defaultValue": "—"
     },
@@ -153,10 +177,18 @@
       "defaultValue": "false"
     },
     {
+      "name": "debounce",
+      "desc": "debounce delay during remote search, in milliseconds(2.11.7)",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "300"
+    },
+    {
       "name": "remote-method",
-      "desc": "custom remote search method",
+      "desc": "function that gets called when the input value changes. Its parameter is the current input value. To use this, filterable must be true",
       "type": "Function",
-      "optionValue": "() => void",
+      "optionValue": "(query: string) => void",
       "options": [],
       "defaultValue": "—"
     },
@@ -202,11 +234,19 @@
     },
     {
       "name": "popper-class",
-      "desc": "custom class name for Select's dropdown",
+      "desc": "custom class name for Select's dropdown and tags' tooltip",
       "type": "string",
       "optionValue": "",
       "options": [],
       "defaultValue": ""
+    },
+    {
+      "name": "popper-style",
+      "desc": "custom style for Select's dropdown and tags' tooltip(2.11.0)",
+      "type": "string / object",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
     },
     {
       "name": "reserve-keyword",
@@ -415,7 +455,40 @@
       "defaultValue": "—"
     }
   ],
-  "props": [],
+  "props": [
+    {
+      "name": "value",
+      "desc": "specify which key of node object is used as the node's value",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "value"
+    },
+    {
+      "name": "label",
+      "desc": "specify which key of node object is used as the node's label",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "label"
+    },
+    {
+      "name": "options",
+      "desc": "specify which key of node object is used as the node's children(2.11.0)",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "options"
+    },
+    {
+      "name": "disabled",
+      "desc": "specify which key of node object is used as the node's disabled",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "disabled"
+    }
+  ],
   "options": [],
   "shortcuts": [],
   "slots": [
@@ -441,7 +514,7 @@
     },
     {
       "name": "tag ^(2.5.0)",
-      "desc": "content as Select tag"
+      "desc": "content as Select tag, subTags `data`, `selectDisabled` and `deleteTag` introduced in ^(2.10.3)"
     },
     {
       "name": "loading ^(2.5.2)",
@@ -449,7 +522,7 @@
     },
     {
       "name": "label ^(2.7.4)",
-      "desc": "content as Select label"
+      "desc": "content as Select label. `index` introduced in ^(2.11.2)"
     }
   ],
   "events": [

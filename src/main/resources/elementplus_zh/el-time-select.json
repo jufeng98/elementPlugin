@@ -167,6 +167,22 @@
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
+    },
+    {
+      "name": "popper-class",
+      "desc": "为 TimeSelect 下拉面板设置自定义类名(2.11.4)",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "popper-style",
+      "desc": "为 TimeSelect 下拉面板设置自定义样式(2.11.4)",
+      "type": "string / object",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ":::"
     }
   ],
   "props": [],

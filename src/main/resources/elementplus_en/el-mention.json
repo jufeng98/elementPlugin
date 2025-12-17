@@ -10,6 +10,14 @@
       "defaultValue": "[]"
     },
     {
+      "name": "props",
+      "desc": "configuration options(2.11.3)",
+      "type": "object",
+      "optionValue": "MentionOptionProps",
+      "options": [],
+      "defaultValue": "{value: value, label: label, disabled: disabled}"
+    },
+    {
       "name": "prefix",
       "desc": "prefix character to trigger mentions. The string length must be exactly 1",
       "type": "string | array",
@@ -103,7 +111,15 @@
     {
       "name": "popper-class",
       "desc": "custom class name for dropdown panel",
-      "type": "string",
+      "type": "string / object",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "popper-style",
+      "desc": "custom style for dropdown panel(2.11.5)",
+      "type": "string / object",
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
@@ -111,7 +127,7 @@
     {
       "name": "popper-options",
       "desc": "<p><a href=\"https://popper.js.org/docs/v2/\">popper.js</a> parameters</p>",
-      "type": "<p>[object] refer to <a href=\"https://popper.js.org/docs/v2/\">popper.js doc</a></p>",
+      "type": "<p>object refer to [popper.js doc(https://popper.js.org/docs/v2/)</p>",
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
@@ -160,6 +176,11 @@
       "name": "@select",
       "desc": "trigger when user select the option",
       "param": "Function(option: MentionOption, prefix: string) => void"
+    },
+    {
+      "name": "@whole-remove",
+      "desc": "trigger when a whole mention is removed and `whole` is `true` or `check-is-whole` is `true`(2.10.4)",
+      "param": "Function(pattern: string, prefix: string) => void"
     },
     {
       "name": "@[input events](./input.md#events)",

@@ -63,7 +63,15 @@
     {
       "name": "popper-class",
       "desc": "custom class name for ColorPicker's dropdown",
-      "type": "string",
+      "type": "string / object",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "popper-style",
+      "desc": "custom style for ColorPicker's dropdown(2.11.4)",
+      "type": "string / object",
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
@@ -101,6 +109,22 @@
       "defaultValue": "—"
     },
     {
+      "name": "empty-values",
+      "desc": "empty values of component, [see config-provider](/en-US/component/config-provider#empty-values-configurations)(2.10.3)",
+      "type": "array",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "value-on-clear",
+      "desc": "clear return value, [see config-provider](/en-US/component/config-provider#empty-values-configurations)(2.10.3)",
+      "type": "string / number / boolean / Function",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
       "name": "id",
       "desc": "ColorPicker id",
       "type": "string",
@@ -123,6 +147,22 @@
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
+    },
+    {
+      "name": "persistent",
+      "desc": "when color-picker inactive and persistent is false, the color panel will be destroyed(2.10.5)",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "append-to",
+      "desc": "which element the color-picker panel appends to(2.10.5)",
+      "type": "CSSSelector / HTMLElement",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "-"
     }
   ],
   "props": [],

@@ -77,19 +77,30 @@
       "defaultValue": "bottom"
     },
     {
+      "name": "effect",
+      "desc": "Tooltip 主题，内置了 dark / light 两种主题",
+      "type": "enum",
+      "optionValue": "dark | light",
+      "options": [
+        "dark",
+        "light"
+      ],
+      "defaultValue": "light"
+    },
+    {
       "name": "trigger",
       "desc": "触发下拉的行为",
       "type": "enum",
-      "optionValue": "hover | click | contextmenu",
+      "optionValue": "click | hover | contextmenu",
       "options": [
-        "hover",
         "click",
+        "hover",
         "contextmenu"
       ],
       "defaultValue": "hover"
     },
     {
-      "name": "triggerKeys",
+      "name": "trigger-keys",
       "desc": "指定键盘上哪些按键可以触发操作(2.9.1)",
       "type": "array",
       "optionValue": "string[]",
@@ -97,8 +108,32 @@
       "defaultValue": "[Enter, Space, ArrowDown, NumpadEnter]"
     },
     {
+      "name": "virtual-triggering",
+      "desc": "是否启用虚拟触发器(2.11.3)",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "virtual-ref",
+      "desc": "指示下拉框所依附的参考元素(2.11.3)",
+      "type": "HTMLElement",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
       "name": "hide-on-click",
       "desc": "是否在点击菜单项后隐藏菜单",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "show-arrow",
+      "desc": "tooltip 的内容是否有箭头(2.11.3)",
       "type": "boolean",
       "optionValue": "",
       "options": [],
@@ -148,10 +183,18 @@
     {
       "name": "popper-class",
       "desc": "自定义浮层类名",
-      "type": "string",
+      "type": "string / object",
       "optionValue": "",
       "options": [],
       "defaultValue": ""
+    },
+    {
+      "name": "popper-style",
+      "desc": "自定义浮层类名(2.11.5)",
+      "type": "string / object",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
     },
     {
       "name": "popper-options",
@@ -168,6 +211,14 @@
       "optionValue": "",
       "options": [],
       "defaultValue": "true"
+    },
+    {
+      "name": "append-to",
+      "desc": "which element the dropdown CONTENT appends to(2.13.0)",
+      "type": "CSSSelector / HTMLElement",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ":::"
     },
     {
       "name": "persistent",

@@ -26,7 +26,7 @@
       "defaultValue": "—"
     },
     {
-      "name": "props",
+      "name": "[props](#props)",
       "desc": "配置选项，具体看下表(2.4.2)",
       "type": "object",
       "optionValue": "",
@@ -102,6 +102,14 @@
       "defaultValue": "0"
     },
     {
+      "name": "id",
+      "desc": "原生 input 的 id",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
       "name": "name",
       "desc": "选择器的原生name属性",
       "type": "string",
@@ -138,7 +146,7 @@
     },
     {
       "name": "filterable",
-      "desc": "是否可筛选",
+      "desc": "Select 组件是否可筛选",
       "type": "boolean",
       "optionValue": "",
       "options": [],
@@ -154,9 +162,9 @@
     },
     {
       "name": "filter-method",
-      "desc": "自定义筛选方法",
+      "desc": "自定义筛选方法的第一个参数是当前输入的值。 当filterable设置为 true 时才会生效",
       "type": "Function",
-      "optionValue": "() => void",
+      "optionValue": "(query: string) => void",
       "options": [],
       "defaultValue": "—"
     },
@@ -185,6 +193,14 @@
       "defaultValue": "true"
     },
     {
+      "name": "default-first-option",
+      "desc": "是否在输入框按下回车时，选择第一个匹配项。 需配合 filterable 或 remote 使用",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
       "name": "no-match-text",
       "desc": "搜索条件无匹配时显示的文字，也可以使用 empty 插槽设置，默认是 “No matching data'”",
       "type": "string",
@@ -202,11 +218,19 @@
     },
     {
       "name": "popper-class",
-      "desc": "选择器下拉菜单的自定义类名",
-      "type": "string",
+      "desc": "Select 下拉菜单和标签提示的自定义类名",
+      "type": "string / object",
       "optionValue": "",
       "options": [],
       "defaultValue": ""
+    },
+    {
+      "name": "popper-style",
+      "desc": "Select 下拉菜单和标签提示的自定义样式(2.11.0)",
+      "type": "string / object",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
     },
     {
       "name": "teleported",
@@ -297,12 +321,28 @@
       "defaultValue": "false"
     },
     {
+      "name": "debounce",
+      "desc": "远程搜索时的防抖延迟（以毫秒为单位）(2.11.7)",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "300"
+    },
+    {
       "name": "remote-method",
       "desc": "当输入值发生变化时触发的函数。 它的参数就是当前的输入值。 当filterable设置为 true 时才会生效",
       "type": "Function",
-      "optionValue": "(keyword: string) => void",
+      "optionValue": "(query: string) => void",
       "options": [],
       "defaultValue": "—"
+    },
+    {
+      "name": "",
+      "desc": "远程搜索方法显示后缀图标",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
     },
     {
       "name": "validate-event",
@@ -359,7 +399,7 @@
     },
     {
       "name": "collapse-tags-tooltip",
-      "desc": "当鼠标悬停于折叠标签的文本时，是否显示所有选中的标签。 只有当 collapse-tags 设置为 true 时才会生效。(2.3.0)",
+      "desc": "当鼠标悬停于折叠标签的文本时，是否显示所有选中的标签。 要使用此功能，collapse-tags的值必须为true(2.3.0)",
       "type": "boolean",
       "optionValue": "",
       "options": [],
@@ -425,10 +465,10 @@
     {
       "name": "popper-append-to-body",
       "desc": "是否将弹出框插入至 body 元素 当弹出框的位置出现问题时，你可以尝试将该属性设置为false。(deprecated)",
-      "type": "boolean",
+      "type": "",
       "optionValue": "",
       "options": [],
-      "defaultValue": "false"
+      "defaultValue": ""
     },
     {
       "name": "tabindex",
@@ -498,7 +538,7 @@
     },
     {
       "name": "tag ^(2.5.0)",
-      "desc": "select 组件自定义标签内容"
+      "desc": "作为 Select 组件的内容时，子标签 `data`、`selectDisabled` 和 `deleteTag` 是在版本 ^(2.10.3) 中新增的。"
     },
     {
       "name": "loading ^(2.5.2)",
@@ -506,7 +546,7 @@
     },
     {
       "name": "label ^(2.7.4)",
-      "desc": "select 组件自定义标签内容"
+      "desc": "select 组件自定义标签内容 `index` 引入于^(2.11.2)"
     }
   ],
   "events": [

@@ -170,14 +170,6 @@
       "defaultValue": "—"
     },
     {
-      "name": "debounce",
-      "desc": "输入时的去抖延迟，毫秒，仅在 show-input 等于 true 时有效",
-      "type": "number",
-      "optionValue": "",
-      "options": [],
-      "defaultValue": "300"
-    },
-    {
       "name": "tooltip-class",
       "desc": "tooltip 的自定义类名",
       "type": "string",
@@ -224,7 +216,7 @@
     },
     {
       "name": "persistent",
-      "desc": "当 slider 的 tooltip 处于非活动状态且 persistent 为 false 时，Popconfirm 将被销毁。 当 show-tooltip 为 false 时，persistent 将始终为 false。(2.9.5)",
+      "desc": "当 slider 的 tooltip 处于非活动状态且 persistent 为 false 时，tooltip 将被销毁。 当 show-tooltip 为 false 时，persistent 将始终为 false。(2.9.5)",
       "type": "boolean",
       "optionValue": "",
       "options": [],

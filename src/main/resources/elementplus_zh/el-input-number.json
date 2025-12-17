@@ -4,7 +4,7 @@
     {
       "name": "model-value",
       "desc": "选中项绑定值",
-      "type": "number",
+      "type": "number / null",
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
@@ -12,7 +12,7 @@
     {
       "name": "v-model",
       "desc": "选中项绑定值",
-      "type": "number",
+      "type": "number / null",
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
@@ -23,7 +23,7 @@
       "type": "number",
       "optionValue": "",
       "options": [],
-      "defaultValue": "-Infinity"
+      "defaultValue": "Number.MIN_SAFE_INTEGER"
     },
     {
       "name": "max",
@@ -31,7 +31,7 @@
       "type": "number",
       "optionValue": "",
       "options": [],
-      "defaultValue": "Infinity"
+      "defaultValue": "Number.MAX_SAFE_INTEGER"
     },
     {
       "name": "step",
@@ -161,6 +161,34 @@
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
+    },
+    {
+      "name": "inputmode",
+      "desc": "等价于原生 input  inputmode  属性(2.10.3)",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "align",
+      "desc": "内部输入文本对齐(2.10.5)",
+      "type": "enum",
+      "optionValue": "left | center | right",
+      "options": [
+        "left",
+        "center",
+        "right"
+      ],
+      "defaultValue": "center"
+    },
+    {
+      "name": "disabled-scientific",
+      "desc": "禁用科学计数法的输入（例如输入 'e'）(2.10.5)",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
     }
   ],
   "props": [],

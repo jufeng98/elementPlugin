@@ -131,6 +131,14 @@
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
+    },
+    {
+      "name": "distance",
+      "desc": "触发到达底部事件的距离（像素）(2.10.5)",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "0"
     }
   ],
   "props": [],
@@ -147,6 +155,11 @@
       "name": "@scroll",
       "desc": "当触发滚动事件时，返回滚动的距离",
       "param": "Function({ scrollLeft: number, scrollTop: number }) => void"
+    },
+    {
+      "name": "@end-reached",
+      "desc": "触发滚动结束时的触发器(2.10.0)",
+      "param": "Function(direction: top | bottom | left | right) => void"
     }
   ],
   "methods": [

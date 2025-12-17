@@ -110,6 +110,38 @@
       "defaultValue": ""
     },
     {
+      "name": "popper-style",
+      "desc": "为 TimePicke 的下拉菜单自定义样式",
+      "type": "string / object",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "popper-options",
+      "desc": "<p>自定义 popper 选项，更多请参考 <a href=\"https://popper.js.org/docs/v2/\">popper.js</a></p>",
+      "type": "object",
+      "optionValue": "Partial<PopperOptions>",
+      "options": [],
+      "defaultValue": "{}"
+    },
+    {
+      "name": "fallback-placements",
+      "desc": "<p>Tooltip 可用的 positions 请查看<a href=\"https://popper.js.org/docs/v2/modifiers/flip/#fallbackplacements\">popper.js 文档</a>(2.8.4)</p>",
+      "type": "array",
+      "optionValue": "Placement[]",
+      "options": [],
+      "defaultValue": "[bottom, top, right, left]"
+    },
+    {
+      "name": "placement",
+      "desc": "下拉框出现的位置(2.8.4)",
+      "type": "",
+      "optionValue": "展示位置",
+      "options": [],
+      "defaultValue": "bottom"
+    },
+    {
       "name": "range-separator",
       "desc": "选择范围时的分隔符",
       "type": "string",
@@ -243,7 +275,7 @@
       "type": "string",
       "optionValue": "",
       "options": [],
-      "defaultValue": "—"
+      "defaultValue": ":::"
     }
   ],
   "props": [],

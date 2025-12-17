@@ -55,7 +55,7 @@
   "methods": [
     {
       "name": "isActive",
-      "desc": "whether the current collapse item is active",
+      "desc": "当前折叠项是否激活",
       "param": "objectComputedRef<boolean | undefined>"
     }
   ]

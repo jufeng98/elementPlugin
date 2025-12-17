@@ -26,6 +26,22 @@
       "defaultValue": "false"
     },
     {
+      "name": "options",
+      "desc": "选项的数据源， value 的 key 和 label 和  disabled可以通过 props自定义.(2.10.5)",
+      "type": "array",
+      "optionValue": "Array<{[key: string]: any}>",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "[props](#props)",
+      "desc": "options 的配置(2.10.5)",
+      "type": "object",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
       "name": "disabled",
       "desc": "是否禁用",
       "type": "boolean",
@@ -86,6 +102,14 @@
       "defaultValue": "0"
     },
     {
+      "name": "id",
+      "desc": "原生 input 的 id",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
       "name": "name",
       "desc": "Select 输入框的原生 name 属性",
       "type": "string",
@@ -138,9 +162,9 @@
     },
     {
       "name": "filter-method",
-      "desc": "自定义筛选方法",
+      "desc": "自定义筛选方法的第一个参数是当前输入的值。 当filterable设置为 true 时才会生效",
       "type": "Function",
-      "optionValue": "() => void",
+      "optionValue": "(query: string) => void",
       "options": [],
       "defaultValue": "—"
     },
@@ -153,10 +177,18 @@
       "defaultValue": "false"
     },
     {
+      "name": "debounce",
+      "desc": "远程搜索时的防抖延迟（以毫秒为单位）(2.11.7)",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "300"
+    },
+    {
       "name": "remote-method",
-      "desc": "自定义远程搜索方法",
+      "desc": "当输入值发生变化时触发的函数。 它的参数就是当前的输入值。 当filterable设置为 true 时才会生效",
       "type": "Function",
-      "optionValue": "() => void",
+      "optionValue": "(query: string) => void",
       "options": [],
       "defaultValue": "—"
     },
@@ -202,11 +234,19 @@
     },
     {
       "name": "popper-class",
-      "desc": "选择器下拉菜单的自定义类名",
+      "desc": "为 Select 下拉菜单和标签提示设置自定义类名",
       "type": "string",
       "optionValue": "",
       "options": [],
       "defaultValue": ""
+    },
+    {
+      "name": "popper-style",
+      "desc": "为 Select 下拉菜单和标签提示设置自定义样式(2.11.0)",
+      "type": "string / object",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
     },
     {
       "name": "reserve-keyword",
@@ -415,7 +455,40 @@
       "defaultValue": "—"
     }
   ],
-  "props": [],
+  "props": [
+    {
+      "name": "value",
+      "desc": "指定选项的值为选项对象的某个属性值",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "value"
+    },
+    {
+      "name": "label",
+      "desc": "指定节点标签为节点对象的某个属性值",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "label"
+    },
+    {
+      "name": "options",
+      "desc": "指定选项的子选项为选项对象的某个属性值(2.11.0)",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "options"
+    },
+    {
+      "name": "disabled",
+      "desc": "指定选项的禁用为选项对象的某个属性值",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "disabled"
+    }
+  ],
   "options": [],
   "shortcuts": [],
   "slots": [
@@ -441,7 +514,7 @@
     },
     {
       "name": "tag ^(2.5.0)",
-      "desc": "select 组件自定义标签内容"
+      "desc": "作为 Select 组件的内容时，子标签 `data`、`selectDisabled` 和 `deleteTag` 是在版本 ^(2.10.3) 中新增的。"
     },
     {
       "name": "loading ^(2.5.2)",
@@ -449,7 +522,7 @@
     },
     {
       "name": "label ^(2.7.4)",
-      "desc": "select 组件自定义标签内容"
+      "desc": "select 组件自定义标签内容 `index` 引入于^(2.11.2)"
     }
   ],
   "events": [

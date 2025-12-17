@@ -13,8 +13,9 @@
       "name": "type",
       "desc": "Alert 类型。",
       "type": "enum",
-      "optionValue": "success | warning | info | error",
+      "optionValue": "primary(2.9.11) | success | warning | info | error",
       "options": [
+        "primary",
         "success",
         "warning",
         "info",
@@ -72,6 +73,30 @@
         "dark"
       ],
       "defaultValue": "light"
+    },
+    {
+      "name": "show-after",
+      "desc": "在触发后多久显示内容，单位毫秒(2.10.0) (deprecated)",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "0"
+    },
+    {
+      "name": "hide-after",
+      "desc": "延迟关闭，单位毫秒(2.10.0) (deprecated)",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "200"
+    },
+    {
+      "name": "auto-close",
+      "desc": "alert 出现后自动隐藏延时，单位毫秒(2.10.0) (deprecated)",
+      "type": "number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "0"
     }
   ],
   "props": [],
@@ -96,6 +121,11 @@
       "name": "@close",
       "desc": "关闭 Alert 时触发的事件",
       "param": "Function(event: MouseEvent) => void"
+    },
+    {
+      "name": "@open",
+      "desc": "开启 Alert 时触发的事件(2.10.0)(deprecated)",
+      "param": "Function() => void"
     }
   ],
   "methods": []

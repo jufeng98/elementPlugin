@@ -4,7 +4,7 @@
     {
       "name": "model-value",
       "desc": "binding value",
-      "type": "string/number/object",
+      "type": "string / number /object",
       "optionValue": "string[] | number[] | any",
       "options": [],
       "defaultValue": "—"
@@ -12,7 +12,7 @@
     {
       "name": "v-model",
       "desc": "binding value",
-      "type": "string/number/object",
+      "type": "string / number /object",
       "optionValue": "string[] | number[] | any",
       "options": [],
       "defaultValue": "—"
@@ -21,7 +21,7 @@
       "name": "options",
       "desc": "data of the options, the key of value and label can be customize by CascaderProps.",
       "type": "object",
-      "optionValue": "Record<string, unknown>[]",
+      "optionValue": "CascaderOption[]",
       "options": [],
       "defaultValue": "—"
     },
@@ -70,6 +70,14 @@
       "defaultValue": "—"
     },
     {
+      "name": "clear-icon",
+      "desc": "custom clear icon component(2.11.0)",
+      "type": "string / object",
+      "optionValue": "Component",
+      "options": [],
+      "defaultValue": "CircleClose"
+    },
+    {
       "name": "show-all-levels",
       "desc": "whether to display all levels of the selected value in the input",
       "type": "boolean",
@@ -92,6 +100,14 @@
       "optionValue": "",
       "options": [],
       "defaultValue": "false"
+    },
+    {
+      "name": "max-collapse-tags-tooltip-height",
+      "desc": "max height of collapse-tags tooltip.(2.10.2)",
+      "type": "string / number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
     },
     {
       "name": "separator",
@@ -135,11 +151,19 @@
     },
     {
       "name": "popper-class",
-      "desc": "custom class name for Cascader's dropdown",
+      "desc": "custom class name for Cascader's dropdown and tags' tooltip",
       "type": "string",
       "optionValue": "",
       "options": [],
       "defaultValue": ""
+    },
+    {
+      "name": "popper-style",
+      "desc": "custom style for Cascader's dropdown and tags' tooltip",
+      "type": "string / object",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
     },
     {
       "name": "teleported",
@@ -148,6 +172,17 @@
       "optionValue": "",
       "options": [],
       "defaultValue": "true"
+    },
+    {
+      "name": "effect",
+      "desc": "tooltip theme, built-in theme: dark / light(2.10.5)",
+      "type": "enum",
+      "optionValue": "dark | light",
+      "options": [
+        "dark",
+        "light"
+      ],
+      "defaultValue": "light"
     },
     {
       "name": "tag-type",
@@ -184,7 +219,7 @@
     },
     {
       "name": "max-collapse-tags",
-      "desc": "The max tags number to be shown. To use this, collpase-tags must be true(2.3.10)",
+      "desc": "The max tags number to be shown. To use this, collapse-tags must be true(2.3.10)",
       "type": "number",
       "optionValue": "",
       "options": [],
@@ -217,7 +252,7 @@
     {
       "name": "fallback-placements",
       "desc": "<p>list of possible positions for Tooltip <a href=\"https://popper.js.org/docs/v2/modifiers/flip/#fallbackplacements\">popper.js</a>(2.8.1)</p>",
-      "type": "arrary",
+      "type": "array",
       "optionValue": "Placement[]",
       "options": [],
       "defaultValue": "—"
@@ -250,6 +285,17 @@
       "optionValue": "",
       "options": [],
       "defaultValue": "true"
+    },
+    {
+      "name": "show-checked-strategy",
+      "desc": "strategy for displaying checked nodes in multiple selection mode. Use parent when you want things tidy. Use child when every single item matters(2.10.5)",
+      "type": "enum",
+      "optionValue": "parent | child",
+      "options": [
+        "parent",
+        "child"
+      ],
+      "defaultValue": "child"
     }
   ],
   "props": [
@@ -298,9 +344,9 @@
     },
     {
       "name": "lazyLoad",
-      "desc": "method for loading child nodes data, only works when lazy is true",
+      "desc": "method for loading child nodes data, only works when lazy is true. The reject parameter is supported after version ^(2.11.5).",
       "type": "Function",
-      "optionValue": "(node: Node, resolve: Resolve) => void",
+      "optionValue": "(node: Node, resolve: Resolve, reject: () => void) => void",
       "options": [],
       "defaultValue": "—"
     },
@@ -351,6 +397,30 @@
       "optionValue": "",
       "options": [],
       "defaultValue": "500"
+    },
+    {
+      "name": "checkOnClickNode",
+      "desc": "whether to check or uncheck node when clicking on the node(2.10.5)",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "checkOnClickLeaf",
+      "desc": "whether to check or uncheck node when clicking on leaf node (last children).(2.10.5)",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "showPrefix",
+      "desc": "whether to show the radio or checkbox prefix(2.10.5)",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
     }
   ],
   "options": [],
@@ -371,6 +441,18 @@
     {
       "name": "suggestion-item ^(2.9.5)",
       "desc": "custom content for suggestion item when searching"
+    },
+    {
+      "name": "tag ^(2.10.3)",
+      "desc": "custom tags style"
+    },
+    {
+      "name": "header ^(2.10.5)",
+      "desc": "content at the top of the dropdown"
+    },
+    {
+      "name": "footer ^(2.10.5)",
+      "desc": "content at the bottom of the dropdown"
     }
   ],
   "events": [
@@ -435,6 +517,16 @@
       "name": "presentText",
       "desc": "selected content text(2.8.4)",
       "param": "objectComputedRef<string>"
+    },
+    {
+      "name": "focus",
+      "desc": "focus the input element(2.11.8)",
+      "param": "Function() => void"
+    },
+    {
+      "name": "blur",
+      "desc": "blur the input element(2.11.8)",
+      "param": "Function() => void"
     }
   ]
 }

@@ -115,7 +115,7 @@
     },
     {
       "name": "arrow-offset",
-      "desc": "Controls the offset (padding) of the tooltip’s arrow relative to the popper.(2.9.10)",
+      "desc": "控制Tooltip的箭头相对于弹出窗口的偏移(添加)。(2.9.10)",
       "type": "number",
       "optionValue": "",
       "options": [],
@@ -123,7 +123,7 @@
     },
     {
       "name": "show-after",
-      "desc": "在触发后多久显示内容，单位毫秒",
+      "desc": "延迟显示时间（以毫秒为单位），在受控模式下无效。",
       "type": "number",
       "optionValue": "",
       "options": [],
@@ -139,7 +139,7 @@
     },
     {
       "name": "hide-after",
-      "desc": "延迟关闭，单位毫秒",
+      "desc": "消失延迟时间（以毫秒为单位），在受控模式下无效。",
       "type": "number",
       "optionValue": "",
       "options": [],
@@ -147,7 +147,7 @@
     },
     {
       "name": "auto-close",
-      "desc": "tooltip 出现后自动隐藏延时，单位毫秒",
+      "desc": "隐藏提示框的超时时间（以毫秒为单位），在受控模式下无效。",
       "type": "number",
       "optionValue": "",
       "options": [],
@@ -157,6 +157,14 @@
       "name": "popper-class",
       "desc": "为 Tooltip 的 popper 添加类名",
       "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "popper-style",
+      "desc": "为 Tooltip 的 popper 添加自定义样式",
+      "type": "string / object",
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
@@ -179,7 +187,7 @@
     },
     {
       "name": "trigger",
-      "desc": "如何触发 Tooltip",
+      "desc": "提示框的触发方式（用于显示），在受控模式下无效。",
       "type": "enum",
       "optionValue": "hover | click | focus | contextmenu",
       "options": [
@@ -208,7 +216,7 @@
     },
     {
       "name": "trigger-keys",
-      "desc": "当鼠标点击或者聚焦在触发元素上时， 可以定义一组键盘按键并且通过它们来控制 Tooltip 的显示",
+      "desc": "当通过鼠标点击使触发元素获得焦点时，可以定义一组键盘按键代码，通过键盘控制提示框的显示，在受控模式下无效。",
       "type": "Array",
       "optionValue": "",
       "options": [],
@@ -216,7 +224,7 @@
     },
     {
       "name": "persistent",
-      "desc": "当 tooltip 组件长时间不触发且 persistent 属性设置为 false 时, popconfirm 将会被删除",
+      "desc": "当tooltip未激活且 persistent 为 false 时，tooltip将被销毁。",
       "type": "boolean",
       "optionValue": "",
       "options": [],
@@ -228,7 +236,15 @@
       "type": "string",
       "optionValue": "",
       "options": [],
-      "defaultValue": "—"
+      "defaultValue": ":::"
+    },
+    {
+      "name": "focus-on-target",
+      "desc": "当通过悬停触发提示时，是否聚焦触发元素，以提升可访问性(2.11.2)",
+      "type": "false",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "你好"
     }
   ],
   "props": [],
@@ -237,14 +253,35 @@
   "slots": [
     {
       "name": "default",
-      "desc": "Tooltip 触发 & 引用的元素"
+      "desc": "提示框触发及参考元素，只接受单个根元素。"
     },
     {
       "name": "content",
       "desc": "自定义内容"
     }
   ],
-  "events": [],
+  "events": [
+    {
+      "name": "@before-show",
+      "desc": "在显示提示框之前触发。 将触发原因作为参数传入。",
+      "param": "Function(event?: Event) => void"
+    },
+    {
+      "name": "@show",
+      "desc": "在提示框显示时触发。 将触发原因作为参数传入。",
+      "param": "Function(event?: Event) => void"
+    },
+    {
+      "name": "@before-hide",
+      "desc": "在提示框隐藏之前触发。 将触发原因作为参数传入。",
+      "param": "Function(event?: Event) => void"
+    },
+    {
+      "name": "@hide",
+      "desc": "在提示框隐藏时触发。 将触发原因作为参数传入。",
+      "param": "Function(event?: Event) => void"
+    }
+  ],
   "methods": [
     {
       "name": "popperRef",

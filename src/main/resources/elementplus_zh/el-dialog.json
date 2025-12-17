@@ -7,7 +7,7 @@
       "type": "boolean",
       "optionValue": "",
       "options": [],
-      "defaultValue": "—"
+      "defaultValue": "你好"
     },
     {
       "name": "v-model",
@@ -15,7 +15,7 @@
       "type": "boolean",
       "optionValue": "",
       "options": [],
-      "defaultValue": "—"
+      "defaultValue": "你好"
     },
     {
       "name": "title",
@@ -56,6 +56,14 @@
       "optionValue": "",
       "options": [],
       "defaultValue": "true"
+    },
+    {
+      "name": "modal-penetrable",
+      "desc": "是否允许穿透遮罩层。 modal 属性必须为 false。(2.10.5)",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
     },
     {
       "name": "modal-class",
@@ -224,6 +232,14 @@
       "optionValue": "",
       "options": [],
       "defaultValue": "2"
+    },
+    {
+      "name": "transition",
+      "desc": "对话框动画的自定义过渡配置。 可以是一个字符串（过渡名称），也可以是一个包含 Vue 过渡属性的对象。(2.10.5)",
+      "type": "string / object",
+      "optionValue": "TransitionProps",
+      "options": [],
+      "defaultValue": "dialog-fade"
     },
     {
       "name": "custom-class",

@@ -123,7 +123,15 @@
     {
       "name": "popper-class",
       "desc": "下拉列表的类名",
-      "type": "string",
+      "type": "string / object",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "popper-style",
+      "desc": "autocomplete 下拉列表的类名(2.11.4)",
+      "type": "string / object",
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
@@ -167,6 +175,22 @@
       "optionValue": "",
       "options": [],
       "defaultValue": "false"
+    },
+    {
+      "name": "loop-navigation",
+      "desc": "键盘导航是否从末尾循环到开头(2.11.4)",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "reference-to-other",
+      "desc": "—",
+      "type": "el-input",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
     }
   ],
   "props": [],
@@ -176,6 +200,14 @@
     {
       "name": "default",
       "desc": "自定义输入建议的内容。"
+    },
+    {
+      "name": "header ^(2.10.6)",
+      "desc": "下拉列表顶部的内容"
+    },
+    {
+      "name": "footer ^(2.10.6)",
+      "desc": "下拉列表底部的内容"
     },
     {
       "name": "prefix",
@@ -222,7 +254,7 @@
     {
       "name": "@select",
       "desc": "点击选中建议项时触发",
-      "param": "Function(item: typeof modelValue | any) => void"
+      "param": "Function(item: Record<string, any>) => void"
     },
     {
       "name": "@change",
@@ -294,7 +326,7 @@
     {
       "name": "getData",
       "desc": "加载建议列表(2.8.4)",
-      "param": "Function(queryString: string) => void"
+      "param": "Function(queryString: string) => promise<void>"
     }
   ]
 }

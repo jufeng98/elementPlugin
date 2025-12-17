@@ -116,8 +116,16 @@
     },
     {
       "name": "popper-class",
-      "desc": "为 popper 添加类名(2.5.0)",
+      "desc": "用于所有弹出菜单和标题提示的自定义类名(2.5.0)",
       "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "popper-style",
+      "desc": "用于所有弹出菜单和标题提示的自定义样式(2.11.5)",
+      "type": "string / object",
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
@@ -207,6 +215,11 @@
       "name": "close",
       "desc": "关闭一个特定的子菜单，参数是要关闭子菜单的索引",
       "param": "Function(index: string) => void"
+    },
+    {
+      "name": "handleResize",
+      "desc": "手动触发菜单宽度重新计算",
+      "param": "Function() => void"
     },
     {
       "name": "updateActiveIndex",

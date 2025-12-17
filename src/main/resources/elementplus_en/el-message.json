@@ -15,8 +15,9 @@
       "name": "type",
       "desc": "message type",
       "type": "enum",
-      "optionValue": "success | warning | info | error",
+      "optionValue": "primary (2.9.11) | success | warning | info | error",
       "options": [
+        "primary",
         "success",
         "warning",
         "info",
@@ -82,11 +83,26 @@
     },
     {
       "name": "offset",
-      "desc": "set the distance to the top of viewport",
+      "desc": "set the distance to the viewport edge (top when placement is 'top', bottom when placement is 'bottom')",
       "type": "number",
       "optionValue": "",
       "options": [],
       "defaultValue": "16"
+    },
+    {
+      "name": "placement",
+      "desc": "message placement position(2.11.0)",
+      "type": "enum",
+      "optionValue": "top | top-left | top-right | bottom | bottom-left | bottom-right",
+      "options": [
+        "top",
+        "top-left",
+        "top-right",
+        "bottom",
+        "bottom-left",
+        "bottom-right"
+      ],
+      "defaultValue": "top"
     },
     {
       "name": "appendTo",

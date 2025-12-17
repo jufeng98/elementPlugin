@@ -3,18 +3,26 @@
   "attributes": [
     {
       "name": "model-value",
-      "desc": "绑定值，如果它是数组，长度应该是 2",
-      "type": "number / string / object",
-      "optionValue": "Date | [Date, Date] | [string, string]",
-      "options": [],
+      "desc": "绑定值，如果是 range 选择器，数组长度应为 2",
+      "type": "number / string / Date / array",
+      "optionValue": "number[] | string[] | Date[]",
+      "options": [
+        "number[]",
+        "string[]",
+        "Date[]"
+      ],
       "defaultValue": ""
     },
     {
       "name": "v-model",
-      "desc": "绑定值，如果它是数组，长度应该是 2",
-      "type": "number / string / object",
-      "optionValue": "Date | [Date, Date] | [string, string]",
-      "options": [],
+      "desc": "绑定值，如果是 range 选择器，数组长度应为 2",
+      "type": "number / string / Date / array",
+      "optionValue": "number[] | string[] | Date[]",
+      "options": [
+        "number[]",
+        "string[]",
+        "Date[]"
+      ],
       "defaultValue": ""
     },
     {
@@ -118,6 +126,14 @@
       "name": "popper-class",
       "desc": "DatePicker 下拉框的类名",
       "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "popper-style",
+      "desc": "弹出内容的自定义样式",
+      "type": "string / object",
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
@@ -261,10 +277,10 @@
     {
       "name": "fallback-placements",
       "desc": "<p>Tooltip 可用的 positions 请查看<a href=\"https://popper.js.org/docs/v2/modifiers/flip/#fallbackplacements\">popper.js 文档</a>(2.8.4)</p>",
-      "type": "arrary",
+      "type": "array",
       "optionValue": "Placement[]",
       "options": [],
-      "defaultValue": "—"
+      "defaultValue": "[bottom, top, right, left]"
     },
     {
       "name": "placement",
@@ -273,6 +289,38 @@
       "optionValue": "Placement",
       "options": [],
       "defaultValue": "bottom"
+    },
+    {
+      "name": "show-footer",
+      "desc": "是否显示 footer(2.10.5)",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "show-confirm",
+      "desc": "是否显示确定按钮(2.11.0)",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "show-week-number",
+      "desc": "显示周数(除周外)(2.10.3)",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "automatic-dropdown",
+      "desc": "该属性决定在输入框获得焦点时日期选择面板是否弹出。 （在 3.0 版本中，默认值将设置为 false）(2.11.4)",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
     }
   ],
   "props": [],
@@ -307,7 +355,7 @@
   "events": [
     {
       "name": "@change",
-      "desc": "用户确认选定的值时触发",
+      "desc": "当用户确认值或点击外部时触发",
       "param": "Function(val: typeof v-model) => void"
     },
     {
@@ -327,7 +375,7 @@
     },
     {
       "name": "@calendar-change",
-      "desc": "在日历所选日期更改时触发",
+      "desc": "在日历所选日期更改时触发 仅用于 `range`",
       "param": "Function(val: [Date, null | Date) => void"
     },
     {

@@ -145,7 +145,7 @@
       "name": "before-change",
       "desc": "switch 状态改变前的钩子， 返回 false 或者返回 Promise 且被 reject 则停止切换",
       "type": "Function",
-      "optionValue": "() => Promise<boolean> | boolen",
+      "optionValue": "() => Promise<boolean> | boolean",
       "options": [],
       "defaultValue": "—"
     },
@@ -217,6 +217,14 @@
     {
       "name": "inactive-action ^(2.4.4)",
       "desc": "自定义 inactive 行为"
+    },
+    {
+      "name": "active ^(2.13.0)",
+      "desc": "customize active content"
+    },
+    {
+      "name": "inactive ^(2.13.0)",
+      "desc": "customize inactive content"
     }
   ],
   "events": [

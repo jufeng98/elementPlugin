@@ -100,6 +100,33 @@
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
+    },
+    {
+      "name": "options",
+      "desc": "data of the options, the key of value and label and disabled can be customize by props(2.11.2)",
+      "type": "array",
+      "optionValue": "Array<{[key: string]: any}>",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "props",
+      "desc": "configuration options(2.11.2)",
+      "type": "object",
+      "optionValue": "{ value?: string, label?: string, disabled?: boolean}",
+      "options": [],
+      "defaultValue": "{value: value, label: label, disabled: disabled}"
+    },
+    {
+      "name": "type",
+      "desc": "component type to render options (e.g. 'button')(2.11.5)",
+      "type": "enum",
+      "optionValue": "checkbox | button",
+      "options": [
+        "checkbox",
+        "button"
+      ],
+      "defaultValue": "checkbox"
     }
   ],
   "props": [],

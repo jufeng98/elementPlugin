@@ -1,6 +1,15 @@
 {
   "name": "el-timeline",
-  "attributes": [],
+  "attributes": [
+    {
+      "name": "reverse",
+      "desc": "whether reverse order(2.11.9)",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    }
+  ],
   "props": [],
   "options": [],
   "shortcuts": [],

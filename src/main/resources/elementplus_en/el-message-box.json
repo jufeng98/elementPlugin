@@ -39,8 +39,9 @@
       "name": "type",
       "desc": "message type, used for icon display",
       "type": "enum",
-      "optionValue": "success | info | warning | error",
+      "optionValue": "primary (2.9.11) | success | info | warning | error",
       "options": [
+        "primary",
         "success",
         "info",
         "warning",
@@ -79,6 +80,14 @@
       "optionValue": "",
       "options": [],
       "defaultValue": "{}"
+    },
+    {
+      "name": "modal",
+      "desc": "whether a mask is displayed",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
     },
     {
       "name": "modalClass",
@@ -234,10 +243,19 @@
     },
     {
       "name": "inputType",
-      "desc": "type of input",
+      "desc": "<p>type of input, see more in <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#Form_%3Cinput%3E_types\">MDN</a></p>",
       "type": "string",
-      "optionValue": "",
-      "options": [],
+      "optionValue": "text | textarea | number | password | email | search | tel |  url",
+      "options": [
+        "text",
+        "textarea",
+        "number",
+        "password",
+        "email",
+        "search",
+        "tel",
+        "url"
+      ],
       "defaultValue": "text"
     },
     {

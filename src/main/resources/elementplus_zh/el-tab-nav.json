@@ -9,22 +9,22 @@
   "methods": [
     {
       "name": "scrollToActiveTab",
-      "desc": "scroll to the active tab",
+      "desc": "滚动到活动标签",
       "param": "Function() => Promise<void>"
     },
     {
       "name": "removeFocus",
-      "desc": "remove focus status",
+      "desc": "移除聚焦状态",
       "param": "Function() => boolean"
     },
     {
       "name": "tabListRef",
-      "desc": "el_tabs\\_\\_nav html element(2.9.10)",
+      "desc": "el_tabs\\_\\_nav html 元素(2.9.10)",
       "param": "objectRef<HTMLDivElement | undefined>"
     },
     {
       "name": "tabBarRef",
-      "desc": "el_tabs\\_\\_nav bar instance(2.9.10)",
+      "desc": "el_tabs\\_\\_nav bar 实例(2.9.10)",
       "param": "objectRef<TabBarInstance | undefined>"
     }
   ]

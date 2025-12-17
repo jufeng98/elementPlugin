@@ -98,6 +98,14 @@
       "defaultValue": "true"
     },
     {
+      "name": "modal-penetrable",
+      "desc": "whether the mask is penetrable. The modal attribute must be false.(2.11.7)",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
       "name": "direction",
       "desc": "Drawer's opening direction",
       "type": "enum",
@@ -109,6 +117,14 @@
         "btt"
       ],
       "defaultValue": "rtl"
+    },
+    {
+      "name": "resizable",
+      "desc": "enable resizable feature for Drawer(2.11.0)",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
     },
     {
       "name": "show-close",
@@ -135,8 +151,8 @@
       "defaultValue": "—"
     },
     {
-      "name": "withHeader",
-      "desc": "Flag that controls the header section's existance, default to true, when withHeader set to false, both title attribute and title slot won't work",
+      "name": "with-header",
+      "desc": "Flag that controls the header section's existence, default to true, when withHeader set to false, both title attribute and title slot won't work",
       "type": "boolean",
       "optionValue": "",
       "options": [],
@@ -250,6 +266,21 @@
       "name": "@close-auto-focus",
       "desc": "triggers after Drawer closed and content focused",
       "param": "Function() => void"
+    },
+    {
+      "name": "@resize-start",
+      "desc": "Triggered when resizing starts (when `resizable` is enabled)(2.11.8)",
+      "param": "Function(evt: MouseEvent, size: number) => void"
+    },
+    {
+      "name": "@resize",
+      "desc": "Triggered while resizing (when `resizable` is enabled)(2.11.8)",
+      "param": "Function(evt: MouseEvent, size: number) => void"
+    },
+    {
+      "name": "@resize-end",
+      "desc": "Triggered when resizing ends (when `resizable` is enabled)(2.11.8)",
+      "param": "Function(evt: MouseEvent, size: number) => void"
     }
   ],
   "methods": [

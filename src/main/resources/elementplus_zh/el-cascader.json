@@ -4,7 +4,7 @@
     {
       "name": "model-value",
       "desc": "选中项绑定值",
-      "type": "string/number/object",
+      "type": "string / number /object",
       "optionValue": "string[] | number[] | any",
       "options": [],
       "defaultValue": "—"
@@ -12,7 +12,7 @@
     {
       "name": "v-model",
       "desc": "选中项绑定值",
-      "type": "string/number/object",
+      "type": "string / number /object",
       "optionValue": "string[] | number[] | any",
       "options": [],
       "defaultValue": "—"
@@ -21,7 +21,7 @@
       "name": "options",
       "desc": "选项的数据源， value 和 label 可以通过 CascaderProps 自定义.",
       "type": "object",
-      "optionValue": "Record<string, unknown>[]",
+      "optionValue": "CascaderOption[]",
       "options": [],
       "defaultValue": "—"
     },
@@ -70,6 +70,14 @@
       "defaultValue": "—"
     },
     {
+      "name": "clear-icon",
+      "desc": "自定义清除图标(2.11.0)",
+      "type": "string / object",
+      "optionValue": "Component",
+      "options": [],
+      "defaultValue": "CircleClose"
+    },
+    {
       "name": "show-all-levels",
       "desc": "输入框中是否显示选中值的完整路径",
       "type": "boolean",
@@ -92,6 +100,14 @@
       "optionValue": "",
       "options": [],
       "defaultValue": "false"
+    },
+    {
+      "name": "max-collapse-tags-tooltip-height",
+      "desc": "collapse tags 的最大高度(2.10.2)",
+      "type": "string / number",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
     },
     {
       "name": "separator",
@@ -135,11 +151,19 @@
     },
     {
       "name": "popper-class",
-      "desc": "弹出内容的自定义类名",
+      "desc": "Cascader 下拉菜单和标签提示的自定义类名",
       "type": "string",
       "optionValue": "",
       "options": [],
       "defaultValue": ""
+    },
+    {
+      "name": "popper-style",
+      "desc": "Cascader 下拉菜单和标签提示的自定义样式",
+      "type": "string / object",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
     },
     {
       "name": "teleported",
@@ -148,6 +172,17 @@
       "optionValue": "",
       "options": [],
       "defaultValue": "true"
+    },
+    {
+      "name": "effect",
+      "desc": "tooltip 主题，内置了 dark / light 两种(2.10.5)",
+      "type": "enum",
+      "optionValue": "dark | light",
+      "options": [
+        "dark",
+        "light"
+      ],
+      "defaultValue": "light"
     },
     {
       "name": "tag-type",
@@ -184,7 +219,7 @@
     },
     {
       "name": "max-collapse-tags",
-      "desc": "需要显示的 Tag 的最大数量 只有当 collapse-tags 设置为 true 时才会生效。(2.3.10)",
+      "desc": "需要显示的 Tag 的最大数量 要使用此功能，collapse-tags的值必须为true(2.3.10)",
       "type": "number",
       "optionValue": "",
       "options": [],
@@ -217,7 +252,7 @@
     {
       "name": "fallback-placements",
       "desc": "<p>Tooltip 可用的 positions 请查看<a href=\"https://popper.js.org/docs/v2/modifiers/flip/#fallbackplacements\">popper.js 文档</a>(2.8.1)</p>",
-      "type": "arrary",
+      "type": "array",
       "optionValue": "Placement[]",
       "options": [],
       "defaultValue": "—"
@@ -250,6 +285,17 @@
       "optionValue": "",
       "options": [],
       "defaultValue": "true"
+    },
+    {
+      "name": "show-checked-strategy",
+      "desc": "多选模式下已选节点的展示策略。 当你想让显示更简洁时，使用 parent。 当你想显示每个子项时，使用 child。(2.10.5)",
+      "type": "enum",
+      "optionValue": "parent | child",
+      "options": [
+        "parent",
+        "child"
+      ],
+      "defaultValue": "child"
     }
   ],
   "props": [
@@ -298,9 +344,9 @@
     },
     {
       "name": "lazyLoad",
-      "desc": "加载动态数据的方法，仅在 lazy 为 true 时有效",
+      "desc": "加载动态数据的方法，仅在 lazy 为 true 时有效 reject 参数在 ^(2.11.5) 版本及以上支持。",
       "type": "Function",
-      "optionValue": "(node: Node, resolve: Resolve) => void",
+      "optionValue": "(node: Node, resolve: Resolve, reject: () => void) => void",
       "options": [],
       "defaultValue": "—"
     },
@@ -351,6 +397,30 @@
       "optionValue": "",
       "options": [],
       "defaultValue": "500"
+    },
+    {
+      "name": "checkOnClickNode",
+      "desc": "点击节点时是否选中或取消选中该节点(2.10.5)",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "false"
+    },
+    {
+      "name": "checkOnClickLeaf",
+      "desc": "点击叶子节点（最后一级子节点）时，是否选中或取消选中该节点(2.10.5)",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
+    },
+    {
+      "name": "showPrefix",
+      "desc": "是否显示单选框或复选框的前缀（图标）(2.10.5)",
+      "type": "boolean",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "true"
     }
   ],
   "options": [],
@@ -371,6 +441,18 @@
     {
       "name": "suggestion-item ^(2.9.5)",
       "desc": "搜索时自定义建议项内容"
+    },
+    {
+      "name": "tag ^(2.10.3)",
+      "desc": "自定义tag样式"
+    },
+    {
+      "name": "header ^(2.10.5)",
+      "desc": "下拉列表顶部的内容"
+    },
+    {
+      "name": "footer ^(2.10.5)",
+      "desc": "下拉列表底部的内容"
     }
   ],
   "events": [
@@ -435,6 +517,16 @@
       "name": "presentText",
       "desc": "选中的内容文本(2.8.4)",
       "param": "objectComputedRef<string>"
+    },
+    {
+      "name": "focus",
+      "desc": "使 input 获取焦点(2.11.8)",
+      "param": "Function() => void"
+    },
+    {
+      "name": "blur",
+      "desc": "使 input 失去焦点(2.11.8)",
+      "param": "Function() => void"
     }
   ]
 }

@@ -134,6 +134,14 @@
       "defaultValue": "—"
     },
     {
+      "name": "aria-label",
+      "desc": "native aria-label attribute(a11y)",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
       "name": "true-label",
       "desc": "value of the Checkbox if it's checked(deprecated)",
       "type": "string / number",

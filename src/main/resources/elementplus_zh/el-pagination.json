@@ -136,6 +136,14 @@
       "defaultValue": ""
     },
     {
+      "name": "popper-style",
+      "desc": "每页显示个数选择器的下拉框样式(2.11.5)",
+      "type": "string / object",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "aaa"
+    },
+    {
       "name": "prev-text",
       "desc": "替代图标显示的上一页文字",
       "type": "string",

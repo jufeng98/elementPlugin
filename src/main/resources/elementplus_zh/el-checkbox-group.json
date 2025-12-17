@@ -99,7 +99,34 @@
       "type": "string",
       "optionValue": "",
       "options": [],
-      "defaultValue": "—"
+      "defaultValue": ":::"
+    },
+    {
+      "name": "options",
+      "desc": "选项的数据源， value 的 key 和 label 和  disabled可以通过 props自定义.(2.11.2)",
+      "type": "array",
+      "optionValue": "Array<{[key: string]: any}>",
+      "options": [],
+      "defaultValue": ":::"
+    },
+    {
+      "name": "props",
+      "desc": "options 的配置(2.11.2)",
+      "type": "object",
+      "optionValue": "{ value?: string, label?: string, disabled?: boolean}",
+      "options": [],
+      "defaultValue": "{value: value, label: label, disabled: disabled}"
+    },
+    {
+      "name": "type",
+      "desc": "用于渲染选项的组件类型（例如 'button'）(2.11.5)",
+      "type": "enum",
+      "optionValue": "checkbox | button",
+      "options": [
+        "checkbox",
+        "button"
+      ],
+      "defaultValue": "checkbox"
     }
   ],
   "props": [],

@@ -21,8 +21,9 @@
       "name": "icon",
       "desc": "result 组件的图标类型",
       "type": "enum",
-      "optionValue": "success | warning | info | error",
+      "optionValue": "primary (2.9.11) | success | warning | info | error",
       "options": [
+        "primary",
         "success",
         "warning",
         "info",

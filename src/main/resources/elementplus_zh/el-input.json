@@ -3,19 +3,18 @@
   "attributes": [
     {
       "name": "type",
-      "desc": "类型",
+      "desc": "<p>输入类型，更多信息请参见 <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#Form_%3Cinput%3E_types\">MDN</a></p>",
       "type": "string",
-      "optionValue": "text | textarea | password | button | checkbox | file | number | radio | ...",
+      "optionValue": "text | textarea | number | password | email | search | tel |  url",
       "options": [
         "text",
         "textarea",
-        "password",
-        "button",
-        "checkbox",
-        "file",
         "number",
-        "radio",
-        "..."
+        "password",
+        "email",
+        "search",
+        "tel",
+        "url"
       ],
       "defaultValue": "text"
     },
@@ -32,6 +31,14 @@
       "desc": "绑定值",
       "type": "string / number",
       "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
+    },
+    {
+      "name": "model-modifiers",
+      "desc": "<p>v-model 修饰符，参考 <a href=\"https://vuejs.org/guide/essentials/forms.html#modifiers\">Vue 修饰符</a>(2.11.5)</p>",
+      "type": "object",
+      "optionValue": "{ lazy?: boolean, number?: boolean, trim?: boolean }",
       "options": [],
       "defaultValue": "—"
     },
@@ -60,6 +67,17 @@
       "defaultValue": "false"
     },
     {
+      "name": "word-limit-position",
+      "desc": "字数统计的位置，仅当 show-word-limit 为 true 时生效。(2.11.5)",
+      "type": "enum",
+      "optionValue": "inside | outside",
+      "options": [
+        "inside",
+        "outside"
+      ],
+      "defaultValue": "\"inside\""
+    },
+    {
       "name": "placeholder",
       "desc": "输入框占位文本",
       "type": "string",
@@ -74,6 +92,14 @@
       "optionValue": "",
       "options": [],
       "defaultValue": "false"
+    },
+    {
+      "name": "clear-icon",
+      "desc": "自定义清除图标(2.11.0)",
+      "type": "string / object",
+      "optionValue": "Component",
+      "options": [],
+      "defaultValue": "CircleClose"
     },
     {
       "name": "formatter",
@@ -194,7 +220,7 @@
     {
       "name": "step",
       "desc": "原生属性，设置输入字段的合法数字间隔",
-      "type": "—",
+      "type": ":::",
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
@@ -267,6 +293,14 @@
       "optionValue": "",
       "options": [],
       "defaultValue": "—"
+    },
+    {
+      "name": "inputmode",
+      "desc": "等价于原生 input  inputmode  属性(2.10.3)",
+      "type": "string",
+      "optionValue": "",
+      "options": [],
+      "defaultValue": "—"
     }
   ],
   "props": [],
@@ -304,7 +338,7 @@
     {
       "name": "@change",
       "desc": "仅当 modelValue 改变时，当输入框失去焦点或用户按Enter时触发",
-      "param": "Function(value: string | number) => void"
+      "param": "Function(value: string | number, evt?: Event) => void"
     },
     {
       "name": "@input",
@@ -315,6 +349,36 @@
       "name": "@clear",
       "desc": "在点击由 `clearable` 属性生成的清空按钮时触发",
       "param": "Function() => void"
+    },
+    {
+      "name": "@keydown",
+      "desc": "按下键时触发",
+      "param": "Function(event: KeyboardEvent | Event) => void"
+    },
+    {
+      "name": "@mouseleave",
+      "desc": "当鼠标离开输入元素时触发",
+      "param": "Function(event: MouseEvent) => void"
+    },
+    {
+      "name": "@mouseenter",
+      "desc": "当鼠标进入输入元素时触发",
+      "param": "Function(event: MouseEvent) => void"
+    },
+    {
+      "name": "@compositionstart",
+      "desc": "输入法输入开始时触发",
+      "param": "Function(event: CompositionEvent) => void"
+    },
+    {
+      "name": "@compositionupdate",
+      "desc": "输入法输入改变时触发",
+      "param": "Function(event: CompositionEvent) => void"
+    },
+    {
+      "name": "@compositionend",
+      "desc": "输入法输入完成时触发",
+      "param": "Function(event: CompositionEvent) => void"
     }
   ],
   "methods": [

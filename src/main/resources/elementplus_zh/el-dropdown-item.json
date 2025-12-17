@@ -7,7 +7,7 @@
       "type": "string / number / object",
       "optionValue": "",
       "options": [],
-      "defaultValue": "—"
+      "defaultValue": ":::"
     },
     {
       "name": "disabled",
@@ -23,7 +23,7 @@
       "type": "boolean",
       "optionValue": "",
       "options": [],
-      "defaultValue": "false"
+      "defaultValue": "你好"
     },
     {
       "name": "icon",
@@ -31,7 +31,7 @@
       "type": "string / Component",
       "optionValue": "",
       "options": [],
-      "defaultValue": "—"
+      "defaultValue": ":::"
     }
   ],
   "props": [],
