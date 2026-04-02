@@ -5,6 +5,7 @@ import com.intellij.codeInsight.template.TemplateContextType
 import com.intellij.lang.javascript.JavascriptLanguage
 import com.intellij.openapi.fileTypes.SyntaxHighlighter
 import com.intellij.psi.util.PsiUtilCore
+import org.javamaster.elementui.service.ElementDetectService
 import org.jetbrains.vuejs.lang.expr.highlighting.VueJSSyntaxHighlighter
 import org.jetbrains.vuejs.lang.html.VueFile
 
@@ -14,6 +15,12 @@ import org.jetbrains.vuejs.lang.html.VueFile
 class ElementUIOtherTemplateContextType : TemplateContextType("InVueJs") {
 
     override fun isInContext(templateActionContext: TemplateActionContext): Boolean {
+        val project = templateActionContext.file.project
+        val elementDetectService = ElementDetectService.getInstance(project)
+        if (elementDetectService.notExistsElement) {
+            return false
+        }
+
         val file = templateActionContext.file
         val offset = templateActionContext.startOffset
         return file is VueFile && PsiUtilCore.getLanguageAtOffset(file, offset).isKindOf(JavascriptLanguage.INSTANCE)

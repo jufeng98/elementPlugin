@@ -6,6 +6,7 @@ import com.intellij.ide.highlighter.HtmlFileHighlighter
 import com.intellij.lang.html.HTMLLanguage
 import com.intellij.openapi.fileTypes.SyntaxHighlighter
 import com.intellij.psi.util.PsiUtilCore
+import org.javamaster.elementui.service.ElementDetectService
 import org.jetbrains.vuejs.lang.html.VueFile
 
 /**
@@ -14,6 +15,12 @@ import org.jetbrains.vuejs.lang.html.VueFile
 class ElementUIVueTemplateContextType : TemplateContextType("InVue") {
 
     override fun isInContext(templateActionContext: TemplateActionContext): Boolean {
+        val project = templateActionContext.file.project
+        val elementDetectService = ElementDetectService.getInstance(project)
+        if (elementDetectService.notExistsElement) {
+            return false
+        }
+
         val file = templateActionContext.file
         val offset = templateActionContext.startOffset
         return file is VueFile && PsiUtilCore.getLanguageAtOffset(file, offset).isKindOf(HTMLLanguage.INSTANCE)
