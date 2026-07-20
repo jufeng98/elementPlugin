@@ -1,7 +1,7 @@
 <idea-plugin>
     <id>org.javamaster.elementui</id>
     <name>ElementUI</name>
-    <version>4.0.2</version>
+    <version>4.0.3</version>
     <vendor email="375709770@qq.com" url="https://www.zhihu.com/people/liang-yu-dong-44">
         jufeng98
     </vendor>
@@ -36,6 +36,10 @@
     <change-notes>
         <![CDATA[
             <ul>
+                <li><b>4.0.3</b></li>
+                <ul>
+                    <li>支持262</li>
+                </ul>
                 <li><b>4.0.1</b></li>
                 <ul>
                     <li>bug修复</li>
